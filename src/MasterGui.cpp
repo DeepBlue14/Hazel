@@ -30,44 +30,44 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
 
 void MasterGui::initMenus()
 {
-    fileMenuPtr = menuBar()->addMenu(tr("&File"));
+    fileMenuPtr = menuBar()->addMenu(tr("&File") );
     masterMenus->initFileMenuPtr(fileMenuPtr); 
     
-    editMenuPtr = menuBar()->addMenu(tr("&Edit"));
+    editMenuPtr = menuBar()->addMenu(tr("&Edit") );
     masterMenus->initEditMenuPtr(editMenuPtr);
     
-    viewMenuPtr = menuBar()->addMenu(tr("&View"));
+    viewMenuPtr = menuBar()->addMenu(tr("&View") );
+    masterMenus->initViewMenuPtr(viewMenuPtr);
     
+    navigateMenuPtr = menuBar()->addMenu(tr("&Navigate") );
+    masterMenus->initNavigateMenuPtr(navigateMenuPtr);
     
-    navigateMenuPtr = menuBar()->addMenu(tr("&Navigate"));
+    sourceMenuPtr = menuBar()->addMenu(tr("&Source") );
+    masterMenus->initSourceMenuPtr(sourceMenuPtr);
     
+    refactorMenuPtr = menuBar()->addMenu(tr("&Refactor") );
+    masterMenus->initRefactorMenuPtr(refactorMenuPtr);
     
-    sourceMenuPtr = menuBar()->addMenu(tr("&Source"));
+    runMenuPtr = menuBar()->addMenu(tr("&Run") );
+    masterMenus->initRunMenuPtr(runMenuPtr);
     
+    debugMenuPtr = menuBar()->addMenu(tr("&Debug") );
+    masterMenus->initDebugMenuPtr(debugMenuPtr);
     
-    refactorMenuPtr = menuBar()->addMenu(tr("&Refactor"));
+    profileMenuPtr = menuBar()->addMenu(tr("&Profile") );
+    masterMenus->initProfileMenuPtr(profileMenuPtr);
     
+    teamMenuPtr = menuBar()->addMenu(tr("&Team") );
+    masterMenus->initTeamMenuPtr(teamMenuPtr);
     
-    runMenuPtr = menuBar()->addMenu(tr("&Run"));
+    toolsMenuPtr = menuBar()->addMenu(tr("&Tools") );
+    masterMenus->initToolsMenuPtr(toolsMenuPtr);
     
+    windowMenuPtr = menuBar()->addMenu(tr("&Window") );
+    masterMenus->initWindowMenuPtr(windowMenuPtr);
     
-    debugMenuPtr = menuBar()->addMenu(tr("&Debug"));
-    
-    
-    profileMenuPtr = menuBar()->addMenu(tr("&Profile"));
-    
-    
-    teamMenuPtr = menuBar()->addMenu(tr("&Team"));
-    
-    
-    toolsMenuPtr = menuBar()->addMenu(tr("&Tools"));
-    
-    
-    windowMenuPtr = menuBar()->addMenu(tr("&Window"));
-    
-    
-    helpMenuPtr = menuBar()->addMenu(tr("&Help"));
-    
+    helpMenuPtr = menuBar()->addMenu(tr("&Help") );
+    masterMenus->initHelpMenuPtr(helpMenuPtr);
     
 }
 
