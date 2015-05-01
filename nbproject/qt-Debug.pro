@@ -1,0 +1,24 @@
+# This file is generated automatically. Do not edit.
+# Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
+TEMPLATE = app
+DESTDIR = dist/Debug/GNU-Linux-x86
+TARGET = Hazel
+VERSION = 1.0.0
+CONFIG -= debug_and_release app_bundle lib_bundle
+CONFIG += debug 
+PKGCONFIG +=
+QT = core gui widgets
+SOURCES += src/Highlighter.cpp src/MasterActions.cpp src/MasterGui.cpp src/MasterMenus.cpp src/MasterTabs.cpp src/MasterToolBars.cpp src/NewFileGui.cpp src/NewProjectGui.cpp src/Terminal.cpp src/main.cpp
+HEADERS += src/Highlighter.h src/MasterActions.h src/MasterGui.h src/MasterMenus.h src/MasterTabs.h src/MasterToolBars.h src/NewFileGui.h src/NewProjectGui.h src/Terminal.h
+FORMS +=
+RESOURCES +=
+TRANSLATIONS +=
+OBJECTS_DIR = build/Debug/GNU-Linux-x86
+MOC_DIR = src/moc
+RCC_DIR = 
+UI_DIR = 
+QMAKE_CC = gcc
+QMAKE_CXX = g++
+DEFINES += 
+INCLUDEPATH += 
+LIBS += -lX11  

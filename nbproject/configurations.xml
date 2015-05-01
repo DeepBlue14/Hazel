@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/Highlighter.h</itemPath>
+        <itemPath>src/MasterActions.h</itemPath>
+        <itemPath>src/MasterGui.h</itemPath>
+        <itemPath>src/MasterMenus.h</itemPath>
+        <itemPath>src/MasterTabs.h</itemPath>
+        <itemPath>src/MasterToolBars.h</itemPath>
+        <itemPath>src/NewFileGui.h</itemPath>
+        <itemPath>src/NewProjectGui.h</itemPath>
+        <itemPath>src/Terminal.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>Keywords.json</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/Highlighter.cpp</itemPath>
+        <itemPath>src/MasterActions.cpp</itemPath>
+        <itemPath>src/MasterGui.cpp</itemPath>
+        <itemPath>src/MasterMenus.cpp</itemPath>
+        <itemPath>src/MasterTabs.cpp</itemPath>
+        <itemPath>src/MasterToolBars.cpp</itemPath>
+        <itemPath>src/NewFileGui.cpp</itemPath>
+        <itemPath>src/NewProjectGui.cpp</itemPath>
+        <itemPath>src/Terminal.cpp</itemPath>
+        <itemPath>src/main.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+        <mocDir>src/moc</mocDir>
+      </qt>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>X11</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="Keywords.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterMenus.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterTabs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterTabs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewProjectGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Keywords.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterMenus.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterTabs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterTabs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewProjectGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
