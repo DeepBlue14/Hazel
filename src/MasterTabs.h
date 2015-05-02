@@ -2,6 +2,8 @@
  * File:   MasterTabs.h
  * Author: James Kuczynski
  *
+ * Reference: http://codeprogress.com/cpp/libraries/qt/QTabWidgetClosableTabs.php#.VUQ7AXXd_CI
+ * 
  * Created on May 1, 2015, 12:38 AM
  */
 

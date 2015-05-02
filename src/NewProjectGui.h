@@ -9,7 +9,7 @@
 #define	NEWPROJECT_H
 
 #include <QWidget>
-#include <QComboBox>
+#include <QListWidget>
 #include <QPushButton>
 #include <QStringList>
 #include <QIcon>
@@ -23,7 +23,7 @@ class NewProjectGui : public QWidget
             
 private:
     QStringList* projectTypeStrList;
-    QComboBox* projectTypeCb; //maxVisibleItems : int
+    QListWidget* projectTypeLw; //maxVisibleItems : int
     
     QPushButton* backBtn;
     QPushButton* nextBtn;
@@ -39,7 +39,7 @@ private slots:
     
 public:
     NewProjectGui(QWidget* parent = 0);
-    void initProjectTypeCb();
+    void initProjectTypeLw();
     void initBtns();
     ~NewProjectGui();
     

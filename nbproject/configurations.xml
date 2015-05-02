@@ -13,6 +13,7 @@
         <itemPath>src/MasterToolBars.h</itemPath>
         <itemPath>src/NewFileGui.h</itemPath>
         <itemPath>src/NewProjectGui.h</itemPath>
+        <itemPath>src/OpeningGui.h</itemPath>
         <itemPath>src/Terminal.h</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -33,6 +34,7 @@
         <itemPath>src/MasterToolBars.cpp</itemPath>
         <itemPath>src/NewFileGui.cpp</itemPath>
         <itemPath>src/NewProjectGui.cpp</itemPath>
+        <itemPath>src/OpeningGui.cpp</itemPath>
         <itemPath>src/Terminal.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
@@ -105,6 +107,10 @@
       </item>
       <item path="src/NewProjectGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/OpeningGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
@@ -169,6 +175,10 @@
       <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/NewProjectGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OpeningGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>

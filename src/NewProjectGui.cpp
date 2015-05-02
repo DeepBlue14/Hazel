@@ -5,14 +5,14 @@ NewProjectGui::NewProjectGui(QWidget* parent) : QWidget(parent)
 {
     outerLayout = new QGridLayout(this);
     
-    initProjectTypeCb();
+    initProjectTypeLw();
     initBtns();
     
     this->setLayout(outerLayout);
 }
 
 
-void NewProjectGui::initProjectTypeCb()
+void NewProjectGui::initProjectTypeLw()
 {   
     projectTypeStrList = new QStringList();
     projectTypeStrList->push_back("C/C++");
@@ -20,11 +20,10 @@ void NewProjectGui::initProjectTypeCb()
     projectTypeStrList->push_back("Java");
     projectTypeStrList->push_back("Lisp");
     
-    projectTypeCb = new QComboBox(this);
-    projectTypeCb->addItems(*projectTypeStrList);
-    projectTypeCb->setMaxVisibleItems(5);
+    projectTypeLw = new QListWidget(this);
+    projectTypeLw->addItems(*projectTypeStrList);
     
-    outerLayout->addWidget(projectTypeCb, 0, 0, Qt::AlignCenter);
+    outerLayout->addWidget(projectTypeLw, 0, 0, Qt::AlignCenter);
 }
 
 

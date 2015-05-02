@@ -7,6 +7,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     
     masterActions = new MasterActions();
     masterToolBars = new MasterToolBars();
+    openingGui = new OpeningGui();
     masterMenus = new MasterMenus();
     
     masterToolBars->setMasterActionsPtr(masterActions);
@@ -19,11 +20,14 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     newProjectGui = new NewProjectGui();
     //----------------
     QTabWidget* tabWidget = new QTabWidget();
-    tabWidget->addTab(editor, tr("File1"));
+    tabWidget->setTabsClosable(true);
+    tabWidget->addTab(openingGui, tr("Start Page"));
+    //tabWidget->addTab(editor, tr("File1"));
     
     this->setCentralWidget(tabWidget);
     //----------------
-    //this->setCentralWidget(editor);
+    
+    
     this->resize(500, 600);
 }
 
@@ -97,7 +101,7 @@ void MasterGui::initEditor()
     editor = new QTextEdit;
     editor->setFont(font);
 
-    //highlighter = new Highlighter(editor->document() );
+    highlighter = new Highlighter(editor->document() );
 
     QFile file("mainwindow.h");
     if (file.open(QFile::ReadOnly | QFile::Text) )

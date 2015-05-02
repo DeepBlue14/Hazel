@@ -13,6 +13,7 @@
 
 #include <iostream>
 
+#include "NewFileGui.h"
 #include "NewProjectGui.h"
 
 using namespace std;
@@ -36,6 +37,7 @@ class MasterActions : public QWidget
         QAction* debugActionPtr;
         QAction* profileProjActionPtr;
         
+        NewFileGui* newFileGuiPtr;
         NewProjectGui* newProjectGuiPtr;
         
         

@@ -1,4 +1,4 @@
-###**Hazel IDE**
+#**Hazel IDE**
 ![Logo](https://github.com/K-Engineering/Hazel/blob/master/images/hazel.jpg)
 
 ###**Index**

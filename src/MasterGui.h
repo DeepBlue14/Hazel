@@ -26,6 +26,7 @@
 #include "NewProjectGui.h"
 #include "MasterActions.h"
 #include "MasterToolBars.h"
+#include "OpeningGui.h"
 #include "MasterMenus.h"
 
 using namespace std;
@@ -59,6 +60,7 @@ class MasterGui : public QMainWindow
         NewProjectGui* newProjectGui;
         MasterActions* masterActions;
         MasterToolBars* masterToolBars;
+        OpeningGui* openingGui;
         MasterMenus* masterMenus;
         
     private slots:
