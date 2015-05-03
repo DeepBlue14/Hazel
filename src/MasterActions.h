@@ -1,6 +1,8 @@
 /* 
  * File:   MasterActions.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on April 29, 2015, 12:57 AM
  */
@@ -10,10 +12,13 @@
 
 #include <QWidget>
 #include <QAction>
+#include <QFile>
 
 #include <iostream>
 
 #include "NewFileGui.h"
+#include "Highlighter.h"
+#include "File.h"
 #include "NewProjectGui.h"
 
 using namespace std;
@@ -37,6 +42,9 @@ class MasterActions : public QWidget
         QAction* debugActionPtr;
         QAction* profileProjActionPtr;
         
+        QTabWidget* masterTabWidgetPtr;
+        Highlighter* highlighter;
+        
         NewFileGui* newFileGuiPtr;
         NewProjectGui* newProjectGuiPtr;
         
@@ -59,6 +67,9 @@ class MasterActions : public QWidget
     public:
         MasterActions(QWidget* parent = 0);
         void initActions();
+        
+        void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        QTabWidget* getMasterTabWidgetPtr();
         
         QAction* getNewFileActionPtr();
         QAction* getNewTerminalActionPtr();

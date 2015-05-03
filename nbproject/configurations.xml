@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/File.h</itemPath>
         <itemPath>src/Highlighter.h</itemPath>
         <itemPath>src/MasterActions.h</itemPath>
         <itemPath>src/MasterGui.h</itemPath>
@@ -26,6 +27,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/File.cpp</itemPath>
         <itemPath>src/Highlighter.cpp</itemPath>
         <itemPath>src/MasterActions.cpp</itemPath>
         <itemPath>src/MasterGui.cpp</itemPath>
@@ -74,6 +76,10 @@
         </linkerTool>
       </compileType>
       <item path="Keywords.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/File.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -143,6 +149,10 @@
         </asmTool>
       </compileType>
       <item path="Keywords.json" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/File.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>

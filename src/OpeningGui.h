@@ -11,6 +11,7 @@
 #include <QWidget>
 #include <QPixmap>
 #include <QLabel>
+#include <QGridLayout>
 
 class OpeningGui : public QWidget
 {
@@ -20,7 +21,7 @@ private:
     QLabel* organizationNameLabelPtr;
     QLabel* applicationNameLabelPtr;
     QLabel* githubLabelPtr;
-    
+    QGridLayout* outerLayoutPtr;
 
 private slots:
     ;

@@ -45,7 +45,8 @@ OBJECTS_DIR   = build/Debug/GNU-Linux-x86/
 
 ####### Files
 
-SOURCES       = src/Highlighter.cpp \
+SOURCES       = src/File.cpp \
+		src/Highlighter.cpp \
 		src/MasterActions.cpp \
 		src/MasterGui.cpp \
 		src/MasterMenus.cpp \
@@ -55,7 +56,8 @@ SOURCES       = src/Highlighter.cpp \
 		src/NewProjectGui.cpp \
 		src/OpeningGui.cpp \
 		src/Terminal.cpp \
-		src/main.cpp src/moc/moc_Highlighter.cpp \
+		src/main.cpp src/moc/moc_File.cpp \
+		src/moc/moc_Highlighter.cpp \
 		src/moc/moc_MasterActions.cpp \
 		src/moc/moc_MasterGui.cpp \
 		src/moc/moc_MasterMenus.cpp \
@@ -65,7 +67,8 @@ SOURCES       = src/Highlighter.cpp \
 		src/moc/moc_NewProjectGui.cpp \
 		src/moc/moc_OpeningGui.cpp \
 		src/moc/moc_Terminal.cpp
-OBJECTS       = build/Debug/GNU-Linux-x86/Highlighter.o \
+OBJECTS       = build/Debug/GNU-Linux-x86/File.o \
+		build/Debug/GNU-Linux-x86/Highlighter.o \
 		build/Debug/GNU-Linux-x86/MasterActions.o \
 		build/Debug/GNU-Linux-x86/MasterGui.o \
 		build/Debug/GNU-Linux-x86/MasterMenus.o \
@@ -76,6 +79,7 @@ OBJECTS       = build/Debug/GNU-Linux-x86/Highlighter.o \
 		build/Debug/GNU-Linux-x86/OpeningGui.o \
 		build/Debug/GNU-Linux-x86/Terminal.o \
 		build/Debug/GNU-Linux-x86/main.o \
+		build/Debug/GNU-Linux-x86/moc_File.o \
 		build/Debug/GNU-Linux-x86/moc_Highlighter.o \
 		build/Debug/GNU-Linux-x86/moc_MasterActions.o \
 		build/Debug/GNU-Linux-x86/moc_MasterGui.o \
@@ -312,7 +316,7 @@ qmake_all: FORCE
 
 dist: 
 	@test -d build/Debug/GNU-Linux-x86/Hazel1.0.0 || mkdir -p build/Debug/GNU-Linux-x86/Hazel1.0.0
-	$(COPY_FILE) --parents $(SOURCES) $(DIST) build/Debug/GNU-Linux-x86/Hazel1.0.0/ && $(COPY_FILE) --parents src/Highlighter.h src/MasterActions.h src/MasterGui.h src/MasterMenus.h src/MasterTabs.h src/MasterToolBars.h src/NewFileGui.h src/NewProjectGui.h src/OpeningGui.h src/Terminal.h build/Debug/GNU-Linux-x86/Hazel1.0.0/ && $(COPY_FILE) --parents src/Highlighter.cpp src/MasterActions.cpp src/MasterGui.cpp src/MasterMenus.cpp src/MasterTabs.cpp src/MasterToolBars.cpp src/NewFileGui.cpp src/NewProjectGui.cpp src/OpeningGui.cpp src/Terminal.cpp src/main.cpp build/Debug/GNU-Linux-x86/Hazel1.0.0/ && (cd `dirname build/Debug/GNU-Linux-x86/Hazel1.0.0` && $(TAR) Hazel1.0.0.tar Hazel1.0.0 && $(COMPRESS) Hazel1.0.0.tar) && $(MOVE) `dirname build/Debug/GNU-Linux-x86/Hazel1.0.0`/Hazel1.0.0.tar.gz . && $(DEL_FILE) -r build/Debug/GNU-Linux-x86/Hazel1.0.0
+	$(COPY_FILE) --parents $(SOURCES) $(DIST) build/Debug/GNU-Linux-x86/Hazel1.0.0/ && $(COPY_FILE) --parents src/File.h src/Highlighter.h src/MasterActions.h src/MasterGui.h src/MasterMenus.h src/MasterTabs.h src/MasterToolBars.h src/NewFileGui.h src/NewProjectGui.h src/OpeningGui.h src/Terminal.h build/Debug/GNU-Linux-x86/Hazel1.0.0/ && $(COPY_FILE) --parents src/File.cpp src/Highlighter.cpp src/MasterActions.cpp src/MasterGui.cpp src/MasterMenus.cpp src/MasterTabs.cpp src/MasterToolBars.cpp src/NewFileGui.cpp src/NewProjectGui.cpp src/OpeningGui.cpp src/Terminal.cpp src/main.cpp build/Debug/GNU-Linux-x86/Hazel1.0.0/ && (cd `dirname build/Debug/GNU-Linux-x86/Hazel1.0.0` && $(TAR) Hazel1.0.0.tar Hazel1.0.0 && $(COMPRESS) Hazel1.0.0.tar) && $(MOVE) `dirname build/Debug/GNU-Linux-x86/Hazel1.0.0`/Hazel1.0.0.tar.gz . && $(DEL_FILE) -r build/Debug/GNU-Linux-x86/Hazel1.0.0
 
 
 clean:compiler_clean 
@@ -335,9 +339,129 @@ check: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterTabs.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_Terminal.cpp
+compiler_moc_header_make_all: src/moc/moc_File.cpp src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterTabs.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_Terminal.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterTabs.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_Terminal.cpp
+	-$(DEL_FILE) src/moc/moc_File.cpp src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterTabs.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_Terminal.cpp
+src/moc/moc_File.cpp: /usr/include/qt5/QtWidgets/QWidget \
+		/usr/include/qt5/QtWidgets/qwidget.h \
+		/usr/include/qt5/QtGui/qwindowdefs.h \
+		/usr/include/qt5/QtCore/qglobal.h \
+		/usr/include/qt5/QtCore/qconfig.h \
+		/usr/include/qt5/QtCore/qfeatures.h \
+		/usr/include/qt5/QtCore/qsystemdetection.h \
+		/usr/include/qt5/QtCore/qprocessordetection.h \
+		/usr/include/qt5/QtCore/qcompilerdetection.h \
+		/usr/include/qt5/QtCore/qglobalstatic.h \
+		/usr/include/qt5/QtCore/qatomic.h \
+		/usr/include/qt5/QtCore/qbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		/usr/include/qt5/QtCore/qgenericatomic.h \
+		/usr/include/qt5/QtCore/qatomic_msvc.h \
+		/usr/include/qt5/QtCore/qatomic_integrity.h \
+		/usr/include/qt5/QtCore/qoldbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_vxworks.h \
+		/usr/include/qt5/QtCore/qatomic_power.h \
+		/usr/include/qt5/QtCore/qatomic_alpha.h \
+		/usr/include/qt5/QtCore/qatomic_armv7.h \
+		/usr/include/qt5/QtCore/qatomic_armv6.h \
+		/usr/include/qt5/QtCore/qatomic_armv5.h \
+		/usr/include/qt5/QtCore/qatomic_bfin.h \
+		/usr/include/qt5/QtCore/qatomic_ia64.h \
+		/usr/include/qt5/QtCore/qatomic_mips.h \
+		/usr/include/qt5/QtCore/qatomic_s390.h \
+		/usr/include/qt5/QtCore/qatomic_sh4a.h \
+		/usr/include/qt5/QtCore/qatomic_sparc.h \
+		/usr/include/qt5/QtCore/qatomic_gcc.h \
+		/usr/include/qt5/QtCore/qatomic_x86.h \
+		/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		/usr/include/qt5/QtCore/qatomic_unix.h \
+		/usr/include/qt5/QtCore/qmutex.h \
+		/usr/include/qt5/QtCore/qlogging.h \
+		/usr/include/qt5/QtCore/qflags.h \
+		/usr/include/qt5/QtCore/qtypeinfo.h \
+		/usr/include/qt5/QtCore/qtypetraits.h \
+		/usr/include/qt5/QtCore/qsysinfo.h \
+		/usr/include/qt5/QtCore/qobjectdefs.h \
+		/usr/include/qt5/QtCore/qnamespace.h \
+		/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		/usr/include/qt5/QtCore/qobject.h \
+		/usr/include/qt5/QtCore/qstring.h \
+		/usr/include/qt5/QtCore/qchar.h \
+		/usr/include/qt5/QtCore/qbytearray.h \
+		/usr/include/qt5/QtCore/qrefcount.h \
+		/usr/include/qt5/QtCore/qarraydata.h \
+		/usr/include/qt5/QtCore/qstringbuilder.h \
+		/usr/include/qt5/QtCore/qlist.h \
+		/usr/include/qt5/QtCore/qalgorithms.h \
+		/usr/include/qt5/QtCore/qiterator.h \
+		/usr/include/qt5/QtCore/qcoreevent.h \
+		/usr/include/qt5/QtCore/qscopedpointer.h \
+		/usr/include/qt5/QtCore/qmetatype.h \
+		/usr/include/qt5/QtCore/qvarlengtharray.h \
+		/usr/include/qt5/QtCore/qcontainerfwd.h \
+		/usr/include/qt5/QtCore/qisenum.h \
+		/usr/include/qt5/QtCore/qobject_impl.h \
+		/usr/include/qt5/QtCore/qmargins.h \
+		/usr/include/qt5/QtCore/qrect.h \
+		/usr/include/qt5/QtCore/qsize.h \
+		/usr/include/qt5/QtCore/qpoint.h \
+		/usr/include/qt5/QtGui/qpaintdevice.h \
+		/usr/include/qt5/QtGui/qpalette.h \
+		/usr/include/qt5/QtGui/qcolor.h \
+		/usr/include/qt5/QtGui/qrgb.h \
+		/usr/include/qt5/QtCore/qstringlist.h \
+		/usr/include/qt5/QtCore/qdatastream.h \
+		/usr/include/qt5/QtCore/qiodevice.h \
+		/usr/include/qt5/QtCore/qpair.h \
+		/usr/include/qt5/QtCore/qregexp.h \
+		/usr/include/qt5/QtCore/qstringmatcher.h \
+		/usr/include/qt5/QtGui/qbrush.h \
+		/usr/include/qt5/QtCore/qvector.h \
+		/usr/include/qt5/QtGui/qmatrix.h \
+		/usr/include/qt5/QtGui/qpolygon.h \
+		/usr/include/qt5/QtGui/qregion.h \
+		/usr/include/qt5/QtCore/qline.h \
+		/usr/include/qt5/QtGui/qtransform.h \
+		/usr/include/qt5/QtGui/qpainterpath.h \
+		/usr/include/qt5/QtGui/qimage.h \
+		/usr/include/qt5/QtGui/qpixmap.h \
+		/usr/include/qt5/QtCore/qsharedpointer.h \
+		/usr/include/qt5/QtCore/qshareddata.h \
+		/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		/usr/include/qt5/QtCore/qhash.h \
+		/usr/include/qt5/QtGui/qfont.h \
+		/usr/include/qt5/QtGui/qfontmetrics.h \
+		/usr/include/qt5/QtGui/qfontinfo.h \
+		/usr/include/qt5/QtWidgets/qsizepolicy.h \
+		/usr/include/qt5/QtGui/qcursor.h \
+		/usr/include/qt5/QtGui/qkeysequence.h \
+		/usr/include/qt5/QtGui/qevent.h \
+		/usr/include/qt5/QtCore/qvariant.h \
+		/usr/include/qt5/QtCore/qmap.h \
+		/usr/include/qt5/QtCore/qdebug.h \
+		/usr/include/qt5/QtCore/qtextstream.h \
+		/usr/include/qt5/QtCore/qlocale.h \
+		/usr/include/qt5/QtCore/qset.h \
+		/usr/include/qt5/QtCore/qcontiguouscache.h \
+		/usr/include/qt5/QtCore/qurl.h \
+		/usr/include/qt5/QtCore/qurlquery.h \
+		/usr/include/qt5/QtCore/qfile.h \
+		/usr/include/qt5/QtCore/qfiledevice.h \
+		/usr/include/qt5/QtGui/qvector2d.h \
+		/usr/include/qt5/QtGui/qtouchdevice.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		src/File.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/File.h -o src/moc/moc_File.cpp
+
 src/moc/moc_Highlighter.cpp: /usr/include/qt5/QtGui/QSyntaxHighlighter \
 		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
 		/usr/include/qt5/QtCore/qglobal.h \
@@ -556,14 +680,32 @@ src/moc/moc_MasterActions.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtGui/qicon.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtCore/QFile \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
 		/usr/include/qt5/QtWidgets/qlistview.h \
 		/usr/include/qt5/QtWidgets/qabstractitemview.h \
-		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
-		/usr/include/qt5/QtWidgets/qframe.h \
 		/usr/include/qt5/QtCore/qabstractitemmodel.h \
 		/usr/include/qt5/QtCore/qitemselectionmodel.h \
 		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -726,15 +868,6 @@ src/moc/moc_MasterGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QFile \
-		src/Highlighter.h \
-		/usr/include/qt5/QtGui/QSyntaxHighlighter \
-		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
-		/usr/include/qt5/QtGui/qtextobject.h \
-		/usr/include/qt5/QtGui/qglyphrun.h \
-		/usr/include/qt5/QtGui/qrawfont.h \
-		/usr/include/qt5/QtGui/qfontdatabase.h \
-		/usr/include/qt5/QtCore/QHash \
-		/usr/include/qt5/QtGui/QTextCharFormat \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
@@ -766,6 +899,16 @@ src/moc/moc_MasterGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/MasterActions.h \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
 		src/MasterToolBars.h \
 		src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
@@ -890,14 +1033,32 @@ src/moc/moc_MasterMenus.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
 		src/MasterActions.h \
 		/usr/include/qt5/QtWidgets/QAction \
+		/usr/include/qt5/QtCore/QFile \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
 		/usr/include/qt5/QtWidgets/qlistview.h \
 		/usr/include/qt5/QtWidgets/qabstractitemview.h \
-		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
-		/usr/include/qt5/QtWidgets/qframe.h \
 		/usr/include/qt5/QtCore/qabstractitemmodel.h \
 		/usr/include/qt5/QtCore/qitemselectionmodel.h \
 		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -1189,7 +1350,25 @@ src/moc/moc_MasterToolBars.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QAction \
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtCore/QFile \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
 		src/MasterToolBars.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/MasterToolBars.h -o src/moc/moc_MasterToolBars.cpp
 
@@ -1559,6 +1738,11 @@ src/moc/moc_OpeningGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QLabel \
 		/usr/include/qt5/QtWidgets/qlabel.h \
 		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtWidgets/QGridLayout \
+		/usr/include/qt5/QtWidgets/qgridlayout.h \
+		/usr/include/qt5/QtWidgets/qlayout.h \
+		/usr/include/qt5/QtWidgets/qlayoutitem.h \
+		/usr/include/qt5/QtWidgets/qboxlayout.h \
 		src/OpeningGui.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/OpeningGui.h -o src/moc/moc_OpeningGui.cpp
 
@@ -1882,6 +2066,126 @@ compiler_lex_clean:
 compiler_clean: compiler_moc_header_clean 
 
 ####### Compile
+
+build/Debug/GNU-Linux-x86/File.o: src/File.cpp src/File.h \
+		/usr/include/qt5/QtWidgets/QWidget \
+		/usr/include/qt5/QtWidgets/qwidget.h \
+		/usr/include/qt5/QtGui/qwindowdefs.h \
+		/usr/include/qt5/QtCore/qglobal.h \
+		/usr/include/qt5/QtCore/qconfig.h \
+		/usr/include/qt5/QtCore/qfeatures.h \
+		/usr/include/qt5/QtCore/qsystemdetection.h \
+		/usr/include/qt5/QtCore/qprocessordetection.h \
+		/usr/include/qt5/QtCore/qcompilerdetection.h \
+		/usr/include/qt5/QtCore/qglobalstatic.h \
+		/usr/include/qt5/QtCore/qatomic.h \
+		/usr/include/qt5/QtCore/qbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		/usr/include/qt5/QtCore/qgenericatomic.h \
+		/usr/include/qt5/QtCore/qatomic_msvc.h \
+		/usr/include/qt5/QtCore/qatomic_integrity.h \
+		/usr/include/qt5/QtCore/qoldbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_vxworks.h \
+		/usr/include/qt5/QtCore/qatomic_power.h \
+		/usr/include/qt5/QtCore/qatomic_alpha.h \
+		/usr/include/qt5/QtCore/qatomic_armv7.h \
+		/usr/include/qt5/QtCore/qatomic_armv6.h \
+		/usr/include/qt5/QtCore/qatomic_armv5.h \
+		/usr/include/qt5/QtCore/qatomic_bfin.h \
+		/usr/include/qt5/QtCore/qatomic_ia64.h \
+		/usr/include/qt5/QtCore/qatomic_mips.h \
+		/usr/include/qt5/QtCore/qatomic_s390.h \
+		/usr/include/qt5/QtCore/qatomic_sh4a.h \
+		/usr/include/qt5/QtCore/qatomic_sparc.h \
+		/usr/include/qt5/QtCore/qatomic_gcc.h \
+		/usr/include/qt5/QtCore/qatomic_x86.h \
+		/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		/usr/include/qt5/QtCore/qatomic_unix.h \
+		/usr/include/qt5/QtCore/qmutex.h \
+		/usr/include/qt5/QtCore/qlogging.h \
+		/usr/include/qt5/QtCore/qflags.h \
+		/usr/include/qt5/QtCore/qtypeinfo.h \
+		/usr/include/qt5/QtCore/qtypetraits.h \
+		/usr/include/qt5/QtCore/qsysinfo.h \
+		/usr/include/qt5/QtCore/qobjectdefs.h \
+		/usr/include/qt5/QtCore/qnamespace.h \
+		/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		/usr/include/qt5/QtCore/qobject.h \
+		/usr/include/qt5/QtCore/qstring.h \
+		/usr/include/qt5/QtCore/qchar.h \
+		/usr/include/qt5/QtCore/qbytearray.h \
+		/usr/include/qt5/QtCore/qrefcount.h \
+		/usr/include/qt5/QtCore/qarraydata.h \
+		/usr/include/qt5/QtCore/qstringbuilder.h \
+		/usr/include/qt5/QtCore/qlist.h \
+		/usr/include/qt5/QtCore/qalgorithms.h \
+		/usr/include/qt5/QtCore/qiterator.h \
+		/usr/include/qt5/QtCore/qcoreevent.h \
+		/usr/include/qt5/QtCore/qscopedpointer.h \
+		/usr/include/qt5/QtCore/qmetatype.h \
+		/usr/include/qt5/QtCore/qvarlengtharray.h \
+		/usr/include/qt5/QtCore/qcontainerfwd.h \
+		/usr/include/qt5/QtCore/qisenum.h \
+		/usr/include/qt5/QtCore/qobject_impl.h \
+		/usr/include/qt5/QtCore/qmargins.h \
+		/usr/include/qt5/QtCore/qrect.h \
+		/usr/include/qt5/QtCore/qsize.h \
+		/usr/include/qt5/QtCore/qpoint.h \
+		/usr/include/qt5/QtGui/qpaintdevice.h \
+		/usr/include/qt5/QtGui/qpalette.h \
+		/usr/include/qt5/QtGui/qcolor.h \
+		/usr/include/qt5/QtGui/qrgb.h \
+		/usr/include/qt5/QtCore/qstringlist.h \
+		/usr/include/qt5/QtCore/qdatastream.h \
+		/usr/include/qt5/QtCore/qiodevice.h \
+		/usr/include/qt5/QtCore/qpair.h \
+		/usr/include/qt5/QtCore/qregexp.h \
+		/usr/include/qt5/QtCore/qstringmatcher.h \
+		/usr/include/qt5/QtGui/qbrush.h \
+		/usr/include/qt5/QtCore/qvector.h \
+		/usr/include/qt5/QtGui/qmatrix.h \
+		/usr/include/qt5/QtGui/qpolygon.h \
+		/usr/include/qt5/QtGui/qregion.h \
+		/usr/include/qt5/QtCore/qline.h \
+		/usr/include/qt5/QtGui/qtransform.h \
+		/usr/include/qt5/QtGui/qpainterpath.h \
+		/usr/include/qt5/QtGui/qimage.h \
+		/usr/include/qt5/QtGui/qpixmap.h \
+		/usr/include/qt5/QtCore/qsharedpointer.h \
+		/usr/include/qt5/QtCore/qshareddata.h \
+		/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		/usr/include/qt5/QtCore/qhash.h \
+		/usr/include/qt5/QtGui/qfont.h \
+		/usr/include/qt5/QtGui/qfontmetrics.h \
+		/usr/include/qt5/QtGui/qfontinfo.h \
+		/usr/include/qt5/QtWidgets/qsizepolicy.h \
+		/usr/include/qt5/QtGui/qcursor.h \
+		/usr/include/qt5/QtGui/qkeysequence.h \
+		/usr/include/qt5/QtGui/qevent.h \
+		/usr/include/qt5/QtCore/qvariant.h \
+		/usr/include/qt5/QtCore/qmap.h \
+		/usr/include/qt5/QtCore/qdebug.h \
+		/usr/include/qt5/QtCore/qtextstream.h \
+		/usr/include/qt5/QtCore/qlocale.h \
+		/usr/include/qt5/QtCore/qset.h \
+		/usr/include/qt5/QtCore/qcontiguouscache.h \
+		/usr/include/qt5/QtCore/qurl.h \
+		/usr/include/qt5/QtCore/qurlquery.h \
+		/usr/include/qt5/QtCore/qfile.h \
+		/usr/include/qt5/QtCore/qfiledevice.h \
+		/usr/include/qt5/QtGui/qvector2d.h \
+		/usr/include/qt5/QtGui/qtouchdevice.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/File.o src/File.cpp
 
 build/Debug/GNU-Linux-x86/Highlighter.o: src/Highlighter.cpp /usr/include/qt5/QtGui/QtGui \
 		/usr/include/qt5/QtGui/QtGuiDepends \
@@ -2302,14 +2606,32 @@ build/Debug/GNU-Linux-x86/MasterActions.o: src/MasterActions.cpp src/MasterActio
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtGui/qicon.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtCore/QFile \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
 		/usr/include/qt5/QtWidgets/qlistview.h \
 		/usr/include/qt5/QtWidgets/qabstractitemview.h \
-		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
-		/usr/include/qt5/QtWidgets/qframe.h \
 		/usr/include/qt5/QtCore/qabstractitemmodel.h \
 		/usr/include/qt5/QtCore/qitemselectionmodel.h \
 		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -2472,15 +2794,6 @@ build/Debug/GNU-Linux-x86/MasterGui.o: src/MasterGui.cpp src/MasterGui.h \
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QFile \
-		src/Highlighter.h \
-		/usr/include/qt5/QtGui/QSyntaxHighlighter \
-		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
-		/usr/include/qt5/QtGui/qtextobject.h \
-		/usr/include/qt5/QtGui/qglyphrun.h \
-		/usr/include/qt5/QtGui/qrawfont.h \
-		/usr/include/qt5/QtGui/qfontdatabase.h \
-		/usr/include/qt5/QtCore/QHash \
-		/usr/include/qt5/QtGui/QTextCharFormat \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
@@ -2512,6 +2825,16 @@ build/Debug/GNU-Linux-x86/MasterGui.o: src/MasterGui.cpp src/MasterGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/MasterActions.h \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
 		src/MasterToolBars.h \
 		src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
@@ -2636,14 +2959,32 @@ build/Debug/GNU-Linux-x86/MasterMenus.o: src/MasterMenus.cpp src/MasterMenus.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
 		src/MasterActions.h \
 		/usr/include/qt5/QtWidgets/QAction \
+		/usr/include/qt5/QtCore/QFile \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
 		/usr/include/qt5/QtWidgets/qlistview.h \
 		/usr/include/qt5/QtWidgets/qabstractitemview.h \
-		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
-		/usr/include/qt5/QtWidgets/qframe.h \
 		/usr/include/qt5/QtCore/qabstractitemmodel.h \
 		/usr/include/qt5/QtCore/qitemselectionmodel.h \
 		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
@@ -2935,7 +3276,25 @@ build/Debug/GNU-Linux-x86/MasterToolBars.o: src/MasterToolBars.cpp src/MasterToo
 		/usr/include/qt5/QtWidgets/QAction \
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
-		src/NewFileGui.h
+		/usr/include/qt5/QtCore/QFile \
+		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
+		/usr/include/qt5/QtWidgets/QTextEdit \
+		/usr/include/qt5/QtWidgets/qtextedit.h \
+		/usr/include/qt5/QtGui/qtextdocument.h \
+		/usr/include/qt5/QtGui/qtextcursor.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/MasterToolBars.o src/MasterToolBars.cpp
 
 build/Debug/GNU-Linux-x86/NewFileGui.o: src/NewFileGui.cpp src/NewFileGui.h \
@@ -3304,7 +3663,12 @@ build/Debug/GNU-Linux-x86/OpeningGui.o: src/OpeningGui.cpp src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
 		/usr/include/qt5/QtWidgets/qlabel.h \
-		/usr/include/qt5/QtWidgets/qframe.h
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtWidgets/QGridLayout \
+		/usr/include/qt5/QtWidgets/qgridlayout.h \
+		/usr/include/qt5/QtWidgets/qlayout.h \
+		/usr/include/qt5/QtWidgets/qlayoutitem.h \
+		/usr/include/qt5/QtWidgets/qboxlayout.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/OpeningGui.o src/OpeningGui.cpp
 
 build/Debug/GNU-Linux-x86/Terminal.o: src/Terminal.cpp src/Terminal.h \
@@ -3756,15 +4120,6 @@ build/Debug/GNU-Linux-x86/main.o: src/main.cpp /usr/include/qt5/QtWidgets/QAppli
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QFile \
-		src/Highlighter.h \
-		/usr/include/qt5/QtGui/QSyntaxHighlighter \
-		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
-		/usr/include/qt5/QtGui/qtextobject.h \
-		/usr/include/qt5/QtGui/qglyphrun.h \
-		/usr/include/qt5/QtGui/qrawfont.h \
-		/usr/include/qt5/QtGui/qfontdatabase.h \
-		/usr/include/qt5/QtCore/QHash \
-		/usr/include/qt5/QtGui/QTextCharFormat \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
@@ -3796,6 +4151,16 @@ build/Debug/GNU-Linux-x86/main.o: src/main.cpp /usr/include/qt5/QtWidgets/QAppli
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/MasterActions.h \
 		src/NewFileGui.h \
+		src/Highlighter.h \
+		/usr/include/qt5/QtGui/QSyntaxHighlighter \
+		/usr/include/qt5/QtGui/qsyntaxhighlighter.h \
+		/usr/include/qt5/QtGui/qtextobject.h \
+		/usr/include/qt5/QtGui/qglyphrun.h \
+		/usr/include/qt5/QtGui/qrawfont.h \
+		/usr/include/qt5/QtGui/qfontdatabase.h \
+		/usr/include/qt5/QtCore/QHash \
+		/usr/include/qt5/QtGui/QTextCharFormat \
+		src/File.h \
 		src/MasterToolBars.h \
 		src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
@@ -3803,6 +4168,9 @@ build/Debug/GNU-Linux-x86/main.o: src/main.cpp /usr/include/qt5/QtWidgets/QAppli
 		/usr/include/qt5/QtWidgets/qlabel.h \
 		src/MasterMenus.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/main.o src/main.cpp
+
+build/Debug/GNU-Linux-x86/moc_File.o: src/moc/moc_File.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/moc_File.o src/moc/moc_File.cpp
 
 build/Debug/GNU-Linux-x86/moc_Highlighter.o: src/moc/moc_Highlighter.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/moc_Highlighter.o src/moc/moc_Highlighter.cpp

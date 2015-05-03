@@ -21,7 +21,6 @@
 
 #include <iostream>
 
-#include "Highlighter.h"
 //#include "NewFileGui.h"
 #include "NewProjectGui.h"
 #include "MasterActions.h"
@@ -54,8 +53,9 @@ class MasterGui : public QMainWindow
         QToolBar* groupTwoToolBarPtr;
         QToolBar* groupThreeToolBarPtr;
         
+        QTabWidget* tabWidget;
+        
         QTextEdit* editor;
-        Highlighter* highlighter;
         
         NewProjectGui* newProjectGui;
         MasterActions* masterActions;
@@ -70,7 +70,6 @@ class MasterGui : public QMainWindow
         MasterGui(QMainWindow* parent = 0);
         void initToolBars();
         void initMenus();
-        void initEditor();
         ~MasterGui();
             
 };

@@ -15,13 +15,13 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     
     initMenus();
     initToolBars();
-    initEditor();
     
     newProjectGui = new NewProjectGui();
     //----------------
-    QTabWidget* tabWidget = new QTabWidget();
+    tabWidget = new QTabWidget();
     tabWidget->setTabsClosable(true);
     tabWidget->addTab(openingGui, tr("Start Page"));
+    masterActions->setMasterTabWidgetPtr(tabWidget);
     //tabWidget->addTab(editor, tr("File1"));
     
     this->setCentralWidget(tabWidget);
@@ -87,27 +87,6 @@ void MasterGui::initToolBars()
     groupThreeToolBarPtr = addToolBar(tr("Debug") );
     masterToolBars->initGroupThreeToolBar(groupThreeToolBarPtr);
 
-}
-
-
-void MasterGui::initEditor()
-{
-    QFont font;
-    font.setFamily("Courier");
-    font.setFixedPitch(true);
-    font.setPointSize(12);
-    font.setWeight(10);
-
-    editor = new QTextEdit;
-    editor->setFont(font);
-
-    highlighter = new Highlighter(editor->document() );
-
-    QFile file("mainwindow.h");
-    if (file.open(QFile::ReadOnly | QFile::Text) )
-        editor->setPlainText(file.readAll() );
-    
-    //editor->setStyleSheet("QTextEdit { background-color: rgb(0, 0, 0) }");
 }
 
 
