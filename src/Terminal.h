@@ -13,35 +13,27 @@
 #include <QProcess>
 #include <QtGui>
 #include <X11/Xlib.h>
-#undef Bool
 
-//class QProcess;
+class QProcess;
 
 
 class Terminal : public QWidget
 {
 	Q_OBJECT
 
-    public:
-	Terminal(QWidget* parent = 0);
+public:
+	Terminal(QWidget * = 0);
+	~Terminal();
+
 	bool isRunning();
-        ~Terminal();
 
-    public slots:
+public slots:
 	bool start();
-	bool tryTerminate();
 
-    protected slots:
-	void termProcessExited();
-
-    signals:
+signals:
 	void exited();
 
-    protected:
-	void closeEvent(QCloseEvent *);
-	void resizeEvent(QResizeEvent *);
-
-    private:
+private:
 	int cols, rows;
 	QProcess *termProcess;
 };

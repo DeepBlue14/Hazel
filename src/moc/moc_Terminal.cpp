@@ -22,7 +22,7 @@ static const uint qt_meta_data_Terminal[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -34,15 +34,12 @@ static const uint qt_meta_data_Terminal[] = {
 
  // slots: signature, parameters, type, tag, flags
       24,    9,   19,    9, 0x0a,
-      32,    9,   19,    9, 0x0a,
-      47,    9,    9,    9, 0x09,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_Terminal[] = {
     "Terminal\0\0exited()\0bool\0start()\0"
-    "tryTerminate()\0termProcessExited()\0"
 };
 
 void Terminal::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -54,9 +51,6 @@ void Terminal::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 0: _t->exited(); break;
         case 1: { bool _r = _t->start();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
-        case 2: { bool _r = _t->tryTerminate();
-            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
-        case 3: _t->termProcessExited(); break;
         default: ;
         }
     }
@@ -94,9 +88,9 @@ int Terminal::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 2;
     }
     return _id;
 }

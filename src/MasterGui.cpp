@@ -19,6 +19,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     newProjectGui = new NewProjectGui();
     //----------------
     tabWidget = new QTabWidget();
+    //tabWidget->setTabShape(QTabWidget::Triangular);
     tabWidget->setTabsClosable(true);
     tabWidget->addTab(openingGui, tr("Start Page"));
     masterActions->setMasterTabWidgetPtr(tabWidget);

@@ -111,6 +111,10 @@ void MasterActions::handleNewFileActionSlot()
 void MasterActions::handleNewTerminalActionSlot()
 {
     cout << "New Terminal activated" << endl;
+    
+    Terminal* term = new Terminal();
+    masterTabWidgetPtr->addTab(term, tr("RosTerm"));
+    term->start();
 }
 
 

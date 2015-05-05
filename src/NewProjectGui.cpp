@@ -42,7 +42,7 @@ void NewProjectGui::handleHelpBntSlot()
 
 void NewProjectGui::handleCancelBtnSlot()
 {
-    ;
+    this->close();
 }
 
 
@@ -52,6 +52,7 @@ void NewProjectGui::initBtns()
     backBtn->setEnabled(false);
     nextBtn = new QPushButton("Next >", this);
     finishBtn = new QPushButton("Finish", this);
+    finishBtn->setEnabled(false);
     helpBtn = new QPushButton("Help", this);
     cancelBtn = new QPushButton("Cancel", this);
     
@@ -88,6 +89,7 @@ void NewProjectGui::swapBackPage()
             loadPage_2();
             currentPage = PAGE_TWO;
             nextBtn->setEnabled(true);
+            finishBtn->setEnabled(false);
             break;
         default:
             cerr << "ERROR in switch at: NewProjectGui::swapBackPage()" << endl;
@@ -110,6 +112,7 @@ void NewProjectGui::swapNextPage()
             loadPage_3();
             currentPage = PAGE_THREE;
             nextBtn->setEnabled(false);
+            finishBtn->setEnabled(true);
             break;
         default:
             cerr << "ERROR in switch at: NewProjectGui::swapNextPage()" << endl;

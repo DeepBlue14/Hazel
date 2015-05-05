@@ -20,6 +20,7 @@
 #include "Highlighter.h"
 #include "File.h"
 #include "NewProjectGui.h"
+#include "Terminal.h"
 
 using namespace std;
 
@@ -47,6 +48,8 @@ class MasterActions : public QWidget
         
         NewFileGui* newFileGuiPtr;
         NewProjectGui* newProjectGuiPtr;
+        Terminal* terminalPtr;
+        
         
         
     private slots:
