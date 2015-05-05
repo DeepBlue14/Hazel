@@ -7,6 +7,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     
     masterActions = new MasterActions();
     masterToolBars = new MasterToolBars();
+    openingGui = new OpeningGui();
     masterMenus = new MasterMenus();
     
     masterToolBars->setMasterActionsPtr(masterActions);
@@ -14,60 +15,64 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     
     initMenus();
     initToolBars();
-    initEditor();
     
     newProjectGui = new NewProjectGui();
     //----------------
-    QTabWidget* tabWidget = new QTabWidget();
-    tabWidget->addTab(editor, tr("File1"));
+    tabWidget = new QTabWidget();
+    //tabWidget->setTabShape(QTabWidget::Triangular);
+    tabWidget->setTabsClosable(true);
+    tabWidget->addTab(openingGui, tr("Start Page"));
+    masterActions->setMasterTabWidgetPtr(tabWidget);
+    //tabWidget->addTab(editor, tr("File1"));
     
     this->setCentralWidget(tabWidget);
     //----------------
-    //this->setCentralWidget(editor);
+    
+    
     this->resize(500, 600);
 }
 
 
 void MasterGui::initMenus()
 {
-    fileMenuPtr = menuBar()->addMenu(tr("&File"));
+    fileMenuPtr = menuBar()->addMenu(tr("&File") );
     masterMenus->initFileMenuPtr(fileMenuPtr); 
     
-    editMenuPtr = menuBar()->addMenu(tr("&Edit"));
+    editMenuPtr = menuBar()->addMenu(tr("&Edit") );
     masterMenus->initEditMenuPtr(editMenuPtr);
     
-    viewMenuPtr = menuBar()->addMenu(tr("&View"));
+    viewMenuPtr = menuBar()->addMenu(tr("&View") );
+    masterMenus->initViewMenuPtr(viewMenuPtr);
     
+    navigateMenuPtr = menuBar()->addMenu(tr("&Navigate") );
+    masterMenus->initNavigateMenuPtr(navigateMenuPtr);
     
-    navigateMenuPtr = menuBar()->addMenu(tr("&Navigate"));
+    sourceMenuPtr = menuBar()->addMenu(tr("&Source") );
+    masterMenus->initSourceMenuPtr(sourceMenuPtr);
     
+    refactorMenuPtr = menuBar()->addMenu(tr("&Refactor") );
+    masterMenus->initRefactorMenuPtr(refactorMenuPtr);
     
-    sourceMenuPtr = menuBar()->addMenu(tr("&Source"));
+    runMenuPtr = menuBar()->addMenu(tr("&Run") );
+    masterMenus->initRunMenuPtr(runMenuPtr);
     
+    debugMenuPtr = menuBar()->addMenu(tr("&Debug") );
+    masterMenus->initDebugMenuPtr(debugMenuPtr);
     
-    refactorMenuPtr = menuBar()->addMenu(tr("&Refactor"));
+    profileMenuPtr = menuBar()->addMenu(tr("&Profile") );
+    masterMenus->initProfileMenuPtr(profileMenuPtr);
     
+    teamMenuPtr = menuBar()->addMenu(tr("&Team") );
+    masterMenus->initTeamMenuPtr(teamMenuPtr);
     
-    runMenuPtr = menuBar()->addMenu(tr("&Run"));
+    toolsMenuPtr = menuBar()->addMenu(tr("&Tools") );
+    masterMenus->initToolsMenuPtr(toolsMenuPtr);
     
+    windowMenuPtr = menuBar()->addMenu(tr("&Window") );
+    masterMenus->initWindowMenuPtr(windowMenuPtr);
     
-    debugMenuPtr = menuBar()->addMenu(tr("&Debug"));
-    
-    
-    profileMenuPtr = menuBar()->addMenu(tr("&Profile"));
-    
-    
-    teamMenuPtr = menuBar()->addMenu(tr("&Team"));
-    
-    
-    toolsMenuPtr = menuBar()->addMenu(tr("&Tools"));
-    
-    
-    windowMenuPtr = menuBar()->addMenu(tr("&Window"));
-    
-    
-    helpMenuPtr = menuBar()->addMenu(tr("&Help"));
-    
+    helpMenuPtr = menuBar()->addMenu(tr("&Help") );
+    masterMenus->initHelpMenuPtr(helpMenuPtr);
     
 }
 
@@ -83,27 +88,6 @@ void MasterGui::initToolBars()
     groupThreeToolBarPtr = addToolBar(tr("Debug") );
     masterToolBars->initGroupThreeToolBar(groupThreeToolBarPtr);
 
-}
-
-
-void MasterGui::initEditor()
-{
-    QFont font;
-    font.setFamily("Courier");
-    font.setFixedPitch(true);
-    font.setPointSize(12);
-    font.setWeight(10);
-
-    editor = new QTextEdit;
-    editor->setFont(font);
-
-    //highlighter = new Highlighter(editor->document() );
-
-    QFile file("mainwindow.h");
-    if (file.open(QFile::ReadOnly | QFile::Text) )
-        editor->setPlainText(file.readAll() );
-    
-    //editor->setStyleSheet("QTextEdit { background-color: rgb(0, 0, 0) }");
 }
 
 

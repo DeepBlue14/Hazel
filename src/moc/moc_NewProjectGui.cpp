@@ -22,25 +22,43 @@ static const uint qt_meta_data_NewProjectGui[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: signature, parameters, type, tag, flags
+      15,   14,   14,   14, 0x08,
+      35,   14,   14,   14, 0x08,
+      55,   14,   14,   14, 0x08,
+      77,   14,   14,   14, 0x08,
+      97,   14,   14,   14, 0x08,
+
        0        // eod
 };
 
 static const char qt_meta_stringdata_NewProjectGui[] = {
-    "NewProjectGui\0"
+    "NewProjectGui\0\0handleBackBtnSlot()\0"
+    "handleNextBtnSlot()\0handleFinishBtnSlot()\0"
+    "handleHelpBntSlot()\0handleCancelBtnSlot()\0"
 };
 
 void NewProjectGui::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        NewProjectGui *_t = static_cast<NewProjectGui *>(_o);
+        switch (_id) {
+        case 0: _t->handleBackBtnSlot(); break;
+        case 1: _t->handleNextBtnSlot(); break;
+        case 2: _t->handleFinishBtnSlot(); break;
+        case 3: _t->handleHelpBntSlot(); break;
+        case 4: _t->handleCancelBtnSlot(); break;
+        default: ;
+        }
+    }
     Q_UNUSED(_a);
 }
 
@@ -75,6 +93,11 @@ int NewProjectGui::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 5)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 5;
+    }
     return _id;
 }
 QT_END_MOC_NAMESPACE

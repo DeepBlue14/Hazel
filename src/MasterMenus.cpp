@@ -36,67 +36,67 @@ void MasterMenus::initEditMenuPtr(QMenu* menu)
 
 void MasterMenus::initViewMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initNavigateMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initSourceMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initRefactorMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initRunMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initDebugMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initProfileMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initTeamMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initToolsMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initWindowMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 
 void MasterMenus::initHelpMenuPtr(QMenu* menu)
 {
-    ;
+    menu = menu; // ***method stub***
 }
 
 

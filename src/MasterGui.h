@@ -21,11 +21,11 @@
 
 #include <iostream>
 
-#include "Highlighter.h"
 //#include "NewFileGui.h"
 #include "NewProjectGui.h"
 #include "MasterActions.h"
 #include "MasterToolBars.h"
+#include "OpeningGui.h"
 #include "MasterMenus.h"
 
 using namespace std;
@@ -53,12 +53,14 @@ class MasterGui : public QMainWindow
         QToolBar* groupTwoToolBarPtr;
         QToolBar* groupThreeToolBarPtr;
         
+        QTabWidget* tabWidget;
+        
         QTextEdit* editor;
-        Highlighter* highlighter;
         
         NewProjectGui* newProjectGui;
         MasterActions* masterActions;
         MasterToolBars* masterToolBars;
+        OpeningGui* openingGui;
         MasterMenus* masterMenus;
         
     private slots:
@@ -68,7 +70,6 @@ class MasterGui : public QMainWindow
         MasterGui(QMainWindow* parent = 0);
         void initToolBars();
         void initMenus();
-        void initEditor();
         ~MasterGui();
             
 };

@@ -84,13 +84,37 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
 
 void MasterActions::handleNewFileActionSlot()
 {
+    newFileGuiPtr = new NewFileGui();
+    //newFileGuiPtr->show();
     cout << "New File activated" << endl;
+    
+    
+    QFont font;
+    font.setFamily("Courier");
+    font.setFixedPitch(true);
+    font.setPointSize(12);
+    font.setWeight(10);
+
+    File* editor = new File();
+    editor->setFont(font);
+
+    highlighter = new Highlighter(editor->document() );
+
+    QFile file("mainwindow.h");
+    if (file.open(QFile::ReadOnly | QFile::Text) )
+        editor->setPlainText(file.readAll() );
+    
+    masterTabWidgetPtr->addTab(editor, tr("File1"));
 }
 
 
 void MasterActions::handleNewTerminalActionSlot()
 {
     cout << "New Terminal activated" << endl;
+    
+    Terminal* term = new Terminal();
+    masterTabWidgetPtr->addTab(term, tr("RosTerm"));
+    term->start();
 }
 
 
@@ -164,6 +188,18 @@ void MasterActions::handleProfileProjActionSlot()
 void MasterActions::initActions()
 {
     ;
+}
+
+
+void MasterActions::setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+{
+    this->masterTabWidgetPtr = masterTabWidgetPtr;
+}
+
+
+QTabWidget* MasterActions::getMasterTabWidgetPtr()
+{
+    return masterTabWidgetPtr;
 }
 
 
