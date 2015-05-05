@@ -17,13 +17,23 @@
 #include <QGridLayout>
 #include <QHBoxLayout>
 
+#include "NewProjectPage_1.h"
+#include "NewProjectPage_2.h"
+#include "NewProjectPage_3.h"
+
 class NewProjectGui : public QWidget
 {
     Q_OBJECT
             
 private:
-    QStringList* projectTypeStrList;
-    QListWidget* projectTypeLw; //maxVisibleItems : int
+    enum Page
+    {
+        PAGE_ONE,
+        PAGE_TWO,
+        PAGE_THREE,
+    };
+    
+    Page currentPage;
     
     QPushButton* backBtn;
     QPushButton* nextBtn;
@@ -34,13 +44,28 @@ private:
     QGridLayout* outerLayout;
     QHBoxLayout* buttonLayout;
     
+    NewProjectPage_1* newProjectPage_1Ptr;
+    NewProjectPage_2* newProjectPage_2Ptr;
+    NewProjectPage_3* newProjectPage_3Ptr;
+    
 private slots:
-    ;
+    void handleBackBtnSlot();
+    void handleNextBtnSlot();
+    void handleFinishBtnSlot();
+    void handleHelpBntSlot();
+    void handleCancelBtnSlot();
     
 public:
     NewProjectGui(QWidget* parent = 0);
-    void initProjectTypeLw();
     void initBtns();
+    void swapNextPage();
+    void swapBackPage();
+    void loadPage_1();
+    void unloadPage_1();
+    void loadPage_2();
+    void unloadPage_2();
+    void loadPage_3();
+    void unloadPage_3();    
     ~NewProjectGui();
     
 };

@@ -19,7 +19,9 @@ class OpeningGui : public QWidget
             
 private:
     QLabel* organizationNameLabelPtr;
+    QLabel* organizationNameIconLabelPtr;
     QLabel* applicationNameLabelPtr;
+    QLabel* applicationNameIconLabelPtr;
     QLabel* githubLabelPtr;
     QGridLayout* outerLayoutPtr;
 
