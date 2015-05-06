@@ -1,3 +1,5 @@
+#include <qt5/QtCore/qfile.h>
+
 #include "NewProjectGui.h"
 
 
@@ -13,6 +15,11 @@ NewProjectGui::NewProjectGui(QWidget* parent) : QWidget(parent)
     initBtns();
     
     this->setLayout(outerLayout);
+    QFile file("/home/james/NetBeansProjects/Hazel/src/qss/Dark.css");
+    file.open(QFile::ReadOnly);
+    QString styleSheet = QLatin1String(file.readAll());
+    backBtn->setStyleSheet(styleSheet);
+    //backBtn->setStyleSheet("color: blue; background-color: yellow");
 }
 
 

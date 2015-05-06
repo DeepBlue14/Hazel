@@ -14,8 +14,6 @@
 #include <QtGui>
 #include <X11/Xlib.h>
 
-class QProcess;
-
 
 class Terminal : public QWidget
 {
@@ -25,10 +23,10 @@ public:
 	Terminal(QWidget * = 0);
 	~Terminal();
 
-	bool isRunning();
+	int isRunning();
 
 public slots:
-	bool start();
+	int start();
 
 signals:
 	void exited();

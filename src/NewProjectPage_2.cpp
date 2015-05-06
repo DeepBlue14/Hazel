@@ -1,5 +1,3 @@
-#include <qt4/QtGui/qlistwidget.h>
-
 #include "NewProjectPage_2.h"
 
 

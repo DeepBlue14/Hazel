@@ -12,6 +12,7 @@
 
 #include <QWidget>
 #include <QStringList>
+#include <QLineEdit>
 #include <QListWidget>
 #include <QFormLayout>
 #include <QGridLayout>

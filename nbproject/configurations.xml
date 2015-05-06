@@ -6,6 +6,7 @@
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
         <itemPath>src/File.h</itemPath>
+        <itemPath>src/FileTreeGui.h</itemPath>
         <itemPath>src/Highlighter.h</itemPath>
         <itemPath>src/MasterActions.h</itemPath>
         <itemPath>src/MasterGui.h</itemPath>
@@ -24,13 +25,14 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>Keywords.json</itemPath>
+      <itemPath>Dark.css</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
         <itemPath>src/File.cpp</itemPath>
+        <itemPath>src/FileTreeGui.cpp</itemPath>
         <itemPath>src/Highlighter.cpp</itemPath>
         <itemPath>src/MasterActions.cpp</itemPath>
         <itemPath>src/MasterGui.cpp</itemPath>
@@ -81,11 +83,15 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="Keywords.json" ex="false" tool="3" flavor2="0">
+      <item path="Dark.css" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/File.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -166,11 +172,15 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Keywords.json" ex="false" tool="3" flavor2="0">
+      <item path="Dark.css" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/File.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>

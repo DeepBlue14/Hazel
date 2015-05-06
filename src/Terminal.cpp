@@ -8,13 +8,13 @@ Terminal::Terminal(QWidget *parent):
 }
 
 
-bool Terminal::isRunning()
+int Terminal::isRunning()
 {
 	return termProcess && termProcess->state() == QProcess::Running;
 }
 
 
-bool Terminal::start()
+int Terminal::start()
 {
 	if(!termProcess)
 		termProcess = new QProcess;
@@ -41,7 +41,7 @@ bool Terminal::start()
 		Display *dsp = XOpenDisplay(NULL);
 		Window wnd = winId();
 
-		bool childFound = false;
+		int childFound = 0;
 		while(!childFound && termProcess->state() == QProcess::Running) {
 			Window root, parent, *children;
 			uint numwin;

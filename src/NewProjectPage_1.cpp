@@ -1,6 +1,3 @@
-#include <qt4/QtGui/qlabel.h>
-#include <qt4/QtGui/qlineedit.h>
-
 #include "NewProjectPage_1.h"
 
 
