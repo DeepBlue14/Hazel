@@ -12,6 +12,7 @@
 #include <QListWidget>
 #include <QPushButton>
 #include <QStringList>
+#include <QFile>
 #include <QIcon>
 #include <QString>
 #include <QGridLayout>

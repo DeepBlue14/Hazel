@@ -15,17 +15,17 @@
 #include <QMenuBar>
 #include <QMenu>
 #include <QAction>
-#include <QTabWidget> //temp?
+//#include <QTabWidget> //temp?
 #include <QTextEdit>
 #include <QFile>
 
 #include <iostream>
 
-//#include "NewFileGui.h"
-#include "NewProjectGui.h"
+//#include "NewProjectGui.h"
 #include "MasterActions.h"
 #include "MasterToolBars.h"
-#include "OpeningGui.h"
+//#include "OpeningGui.h"
+#include "CentralGui.h"
 #include "MasterMenus.h"
 
 using namespace std;
@@ -57,11 +57,12 @@ class MasterGui : public QMainWindow
         
         QTextEdit* editor;
         
-        NewProjectGui* newProjectGui;
+        //NewProjectGui* newProjectGui;
         MasterActions* masterActions;
         MasterToolBars* masterToolBars;
-        OpeningGui* openingGui;
+        //OpeningGui* openingGui;
         MasterMenus* masterMenus;
+        CentralGui* centralGui;
         
     private slots:
         ;

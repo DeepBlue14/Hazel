@@ -33,13 +33,13 @@ static const uint qt_meta_data_Terminal[] = {
       10,    9,    9,    9, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      24,    9,   19,    9, 0x0a,
+      23,    9,   19,    9, 0x0a,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_Terminal[] = {
-    "Terminal\0\0exited()\0bool\0start()\0"
+    "Terminal\0\0exited()\0int\0start()\0"
 };
 
 void Terminal::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -49,8 +49,8 @@ void Terminal::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         Terminal *_t = static_cast<Terminal *>(_o);
         switch (_id) {
         case 0: _t->exited(); break;
-        case 1: { bool _r = _t->start();
-            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
+        case 1: { int _r = _t->start();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = _r; }  break;
         default: ;
         }
     }

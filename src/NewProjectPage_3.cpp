@@ -28,8 +28,14 @@ NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
 void NewProjectPage_3::handleAddToListBtnPtrSlot()
 {
     //dependsLePtr->selectedText()
+    if(dependsLePtr->text() == "")
+    {
+        return;
+    }
+    
     QString* tmp = new QString();
     *tmp = dependsLePtr->text();
+    dependsLePtr->setText("");
     *tmp = tmp->simplified();
     tmp->replace(" ", "");
     
@@ -51,6 +57,15 @@ void NewProjectPage_3::handleRmFromListBtnPtrSlot()
     //cout << dependsEnteredTypeLw->selectedItems().at(0)->text().toStdString() << endl;
     QListWidgetItem* tmp = dependsEnteredTypeLw->selectedItems().at(0);
     dependsEnteredTypeLw->removeItemWidget(tmp);
+    
+    for(size_t i = 0; i < dependsEnteredStrList->length(); i++)
+    {
+        if(dependsEnteredStrList->at(i) == tmp->text() )
+        {
+            dependsEnteredStrList->removeAt(i);
+        }
+    }
+    
     delete tmp;
 }
 
