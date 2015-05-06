@@ -8,7 +8,10 @@ and open the template in the editor.
     Author     : james
 */
 
-
+QWidget {
+    background-color: darkgrey;
+    border-color: black;
+}
 QPushButton {
     color: blue;
     background-color: yellow;

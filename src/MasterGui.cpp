@@ -7,26 +7,25 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     
     masterActions = new MasterActions();
     masterToolBars = new MasterToolBars();
-    openingGui = new OpeningGui();
+    //openingGui = new OpeningGui();
     masterMenus = new MasterMenus();
+    centralGui = new CentralGui();
     
     masterToolBars->setMasterActionsPtr(masterActions);
     masterMenus->setMasterActionsPtr(masterActions);
     
     initMenus();
     initToolBars();
-    
-    newProjectGui = new NewProjectGui();
-    //----------------
-    tabWidget = new QTabWidget();
-    //tabWidget->setTabShape(QTabWidget::Triangular);
-    tabWidget->setTabsClosable(true);
-    tabWidget->addTab(openingGui, tr("Start Page"));
-    masterActions->setMasterTabWidgetPtr(tabWidget);
-    //tabWidget->addTab(editor, tr("File1"));
-    
-    this->setCentralWidget(tabWidget);
-    //----------------
+    /*
+    //--------------------------------------------------------------------------
+    QFile file("/home/james/NetBeansProjects/Hazel/src/qss/Dark.css");
+    file.open(QFile::ReadOnly);
+    QString styleSheet = QLatin1String(file.readAll());
+    this->setStyleSheet(styleSheet);
+    //--------------------------------------------------------------------------
+    */
+    this->setCentralWidget(centralGui);
+    masterActions->setMasterTabWidgetPtr(centralGui->getCentralTabsPtr()->getTabWidget());
     
     
     this->resize(500, 600);

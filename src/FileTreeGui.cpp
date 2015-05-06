@@ -1,35 +1,32 @@
+#include <qt4/QtGui/qfilesystemmodel.h>
+#include <qt4/QtGui/qlistview.h>
+
 #include "FileTreeGui.h"
 
 
 FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 {
-    tree = new QTreeView();
+    //tree = new QTreeView();
+    //splitter = new QSplitter();
+    //splitter->addWidget(tree);
     splitter = new QSplitter();
-    splitter->addWidget(tree);
     
+    QFileSystemModel* model = new QFileSystemModel();
+    model->setRootPath(QDir::currentPath());
     
+    tree = new QTreeView(splitter);
+    tree->setModel(model);
+    tree->setRootIndex(model->index(QDir::currentPath()));
     
-  QStandardItemModel model( 5, 2 );
-  for( int r=0; r<5; r++ ) 
-    for( int c=0; c<2; c++) 
-    {
-      QStandardItem *item = new QStandardItem( QString("Row:%0, Column:%1").arg(r).arg(c) );
-      
-      if( c == 0 )
-        for( int i=0; i<3; i++ )
-        {
-          QStandardItem *child = new QStandardItem( QString("Item %0").arg(i) );
-          child->setEditable( false );
-          item->appendRow( child );
-        }
-      
-      model.setItem(r, c, item);
-    }
-
-  model.setHorizontalHeaderItem( 0, new QStandardItem( "Foo" ) );
-  model.setHorizontalHeaderItem( 1, new QStandardItem( "Bar-Baz" ) );
-
-  tree->setModel( &model );
+    list = new QListView(splitter);
+    list->setModel(model);
+    list->setRootIndex(model->index(QDir::currentPath()));
+    splitter->setOrientation(Qt::Vertical);
+  
+  outerLayout = new QGridLayout();
+  outerLayout->addWidget(splitter, 0, 0);
+  
+  this->setLayout(outerLayout);
 }
 
 

@@ -5,13 +5,14 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/CentralGui.h</itemPath>
+        <itemPath>src/CentralTabs.h</itemPath>
         <itemPath>src/File.h</itemPath>
         <itemPath>src/FileTreeGui.h</itemPath>
         <itemPath>src/Highlighter.h</itemPath>
         <itemPath>src/MasterActions.h</itemPath>
         <itemPath>src/MasterGui.h</itemPath>
         <itemPath>src/MasterMenus.h</itemPath>
-        <itemPath>src/MasterTabs.h</itemPath>
         <itemPath>src/MasterToolBars.h</itemPath>
         <itemPath>src/NewFileGui.h</itemPath>
         <itemPath>src/NewProjectGui.h</itemPath>
@@ -19,25 +20,29 @@
         <itemPath>src/NewProjectPage_2.h</itemPath>
         <itemPath>src/NewProjectPage_3.h</itemPath>
         <itemPath>src/OpeningGui.h</itemPath>
+        <itemPath>src/OutputGui.h</itemPath>
         <itemPath>src/Terminal.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>Dark.css</itemPath>
+      <logicalFolder name="qss" displayName="qss" projectFiles="true">
+        <itemPath>src/qss/Dark.css</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/CentralGui.cpp</itemPath>
+        <itemPath>src/CentralTabs.cpp</itemPath>
         <itemPath>src/File.cpp</itemPath>
         <itemPath>src/FileTreeGui.cpp</itemPath>
         <itemPath>src/Highlighter.cpp</itemPath>
         <itemPath>src/MasterActions.cpp</itemPath>
         <itemPath>src/MasterGui.cpp</itemPath>
         <itemPath>src/MasterMenus.cpp</itemPath>
-        <itemPath>src/MasterTabs.cpp</itemPath>
         <itemPath>src/MasterToolBars.cpp</itemPath>
         <itemPath>src/NewFileGui.cpp</itemPath>
         <itemPath>src/NewProjectGui.cpp</itemPath>
@@ -45,6 +50,7 @@
         <itemPath>src/NewProjectPage_2.cpp</itemPath>
         <itemPath>src/NewProjectPage_3.cpp</itemPath>
         <itemPath>src/OpeningGui.cpp</itemPath>
+        <itemPath>src/OutputGui.cpp</itemPath>
         <itemPath>src/Terminal.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
@@ -83,7 +89,13 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="Dark.css" ex="false" tool="3" flavor2="0">
+      <item path="src/CentralGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CentralGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CentralTabs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CentralTabs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -108,10 +120,6 @@
       <item path="src/MasterMenus.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MasterTabs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterTabs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -141,11 +149,17 @@
       </item>
       <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/OutputGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputGui.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qss/Dark.css" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="4">
@@ -172,7 +186,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Dark.css" ex="false" tool="3" flavor2="0">
+      <item path="src/CentralGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CentralGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CentralTabs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CentralTabs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -197,10 +217,6 @@
       <item path="src/MasterMenus.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MasterTabs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterTabs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -230,11 +246,17 @@
       </item>
       <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/OutputGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputGui.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qss/Dark.css" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

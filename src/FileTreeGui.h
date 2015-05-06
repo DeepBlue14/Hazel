@@ -11,7 +11,9 @@
 #include <QWidget>
 #include <QSplitter>
 #include <QTreeView>
+#include <QListView>
 #include <QStandardItemModel>
+#include <QGridLayout>
 
 class FileTreeGui : public QWidget
 {
@@ -19,7 +21,10 @@ class FileTreeGui : public QWidget
             
     private:
         QTreeView* tree;
+        QListView* list;
         QSplitter* splitter;
+        
+        QGridLayout* outerLayout;
         
     public:
         FileTreeGui(QWidget* parent = 0);
@@ -27,4 +32,3 @@ class FileTreeGui : public QWidget
 };
 
 #endif	/* FILETREEGUI_H */
-
