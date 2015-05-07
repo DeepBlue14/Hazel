@@ -11,6 +11,7 @@
 #include <QWidget>
 #include <QSplitter>
 #include <QTreeView>
+#include <QFileSystemModel>
 #include <QListView>
 #include <QStandardItemModel>
 #include <QGridLayout>

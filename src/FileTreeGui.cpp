@@ -1,6 +1,3 @@
-#include <qt4/QtGui/qfilesystemmodel.h>
-#include <qt4/QtGui/qlistview.h>
-
 #include "FileTreeGui.h"
 
 
