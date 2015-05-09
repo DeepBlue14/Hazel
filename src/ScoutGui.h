@@ -9,6 +9,9 @@
 #define	SCOUT_GUI_H
 
 #include <QMenu>
+#include <QStringList>
+#include <QVector>
+#include <QAction>
 
 #include <iostream>
 
@@ -20,7 +23,7 @@ class ScoutGui : public QMenu
             
     private:
         QStringList* methodPrototypeLstPtr;
-        
+        QVector<QAction*> prototypeActionVec;
         
     private slots:
         ;
@@ -30,6 +33,7 @@ class ScoutGui : public QMenu
         void setMethodPrototypeLstPtr(QStringList* methodPrototypeLstPtr);
         QStringList* getMethodPrototypeLstPtr();
         void fillScoutMenu();
+        void implement();
         ~ScoutGui();
 };
 

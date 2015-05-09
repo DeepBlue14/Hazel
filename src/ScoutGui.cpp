@@ -23,9 +23,16 @@ void ScoutGui::fillScoutMenu()
 {
     for(size_t i = 0; i < getMethodPrototypeLstPtr()->length(); i++)
     {
-        //create action for each prototype
-        //this->addAction()
+        prototypeActionVec.push_back(new QAction(tr(getMethodPrototypeLstPtr()->at(i).toUtf8()), this));
+        connect(prototypeActionVec.at(i), SIGNAL(triggered()), this, SLOT(implement()));
+        this->addAction(prototypeActionVec.at(i));
     }
+}
+
+
+void ScoutGui::implement()
+{
+    cout << "implement!" << endl;
 }
 
 
