@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<NetBeans>
+  <Cpp>
+    <Character                           Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Comment                             Foreground="#969696" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Doxygen_HTML_tag                    Foreground="#969696" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Doxygen_Tab                         Foreground="#969696" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Error                               Foreground="#000000" Background="#ffffff" Effects="Wave_Underlined" Effect_Color="#ff0000" />
+    <Fields                              Foreground="#009900" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Functions_Declaration               Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Functions_Usage                     Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Identifier                          Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Inactive_Preprocessor_Block         Foreground="#c0c0c0" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Keyword                             Foreground="#0000e6" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Keyword_Directive                   Foreground="#0000e6" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Literal                             Foreground="#0000e6" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Macro_Defined_in_Code               Foreground="#2e92c7" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Macro_Defined_in_Project            Foreground="#2e92c7" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Mark_Occurrences                    Foreground="#000000" Background="#eceba3" Effects="None"            Effect_Color="NULL" />
+    <Number                              Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <OpenMP_Keyword_Directive            Foreground="#2e92c7" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <OpenMP_Symbol                       Foreground="#2e92c7" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Operator                            Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Predifined_Macros                   Foreground="#2e92c7" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Preprocessor_Identifier             Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Preprocessor_Keyword                Foreground="#009b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Preprocessor_Keyword_Directive      Foreground="#009b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Preprocessor_Symbol                 Foreground="#009b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Separator                           Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <String                              Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <String_Escape_Sequence              Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <String_Escape_Sequence_invalid      Foreground="#ce7b00" Background="#ffffff" Effects="Wave_Underlined" Effect_Color="#ce7b00" />
+    <System_Include                      Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Typedefs                            Foreground="#2e92c7" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Unused_Variables                    Foreground="#000000" Background="#ffffff" Effects="Wave_Underlined" Effect_Color="#999999" />
+    <User_Include                        Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Whitespace                          Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+  </Cpp>
+  <Java>
+    <Abstract_Element                    Foreground="#000000" Background="#ffffff" Effects="None"     Effect_Color="NULL" />
+    <Annotation_Declaration              Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Annotation_Use                      Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Character                           Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Character_Escape_Sequence           Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Character_Escape_Sequence_invalid   Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Class_Declaration                   Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Class_Use                           Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Comment                             Foreground="#969696" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Constructor_Declaration             Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Constructor_Use                     Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Deprecated_Element                  Foreground="#000000" Background="#ffffff" Effects="Strike_Through"  Effect_Color="#000000" />
+    <Enum_Declaration                    Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Enum_Use                            Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Field_Declaration                   Foreground="#009900" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Field_Use                           Foreground="#009900" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Identifier                          Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Interface_Declaration               Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Interface_Use                       Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Javadoc_first_Sentence              Foreground="#969696" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Javadoc_HTML_tag                    Foreground="#9999ff" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Javadoc_Identifier                  Foreground="#969696" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Javadoc_Tag                         Foreground="#969696" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Keyword                             Foreground="#0000e6" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Keyword_Directive                   Foreground="#0000e6" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Literal                             Foreground="#0000e6" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Local_Variable_Declaration          Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Local_Variable_Use                  Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Mark_Occurrences                    Foreground="#000000" Background="#eceba3" Effects="None"            Effect_Color="NULL" />
+    <Method_Declaration                  Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Method_Use                          Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Number                              Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Operator                            Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Package_Private_Element             Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Parameter_Declaration               Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Parameter_Use                       Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Private_Element                     Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Protected_Element                   Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Public_Element                      Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Separator                           Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Static_Element                      Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <String                              Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <String_Escape_Sequence              Foreground="#ce7b00" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <String_Escape_Sequence_invalid      Foreground="#ce7b00" Background="#ffffff" Effects="Wave_Underlined" Effect_Color="#ce7b00" />
+    <Unused_Element                      Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+    <Whitespace                          Foreground="#000000" Background="#ffffff" Effects="None"            Effect_Color="NULL" />
+  </Java>
+</NetBeans>
+	

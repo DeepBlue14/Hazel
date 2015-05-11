@@ -42,7 +42,7 @@
 
 #include "LineNumberArea.h"
 
-#include "File.h"
+#include "FileGui.h"
 
 
 LineNumberArea::LineNumberArea(File* f) : QWidget(f)

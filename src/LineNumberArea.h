@@ -2,7 +2,7 @@
  * File:   LineNumberArea.h
  * Author: james
  *
- * /****************************************************************************
+ * ****************************************************************************
  **
  ** Copyright (C) 2010 Nokia Corporation and/or its subsidiary(-ies).
  ** All rights reserved.
@@ -53,7 +53,7 @@
 #include <QPaintEvent>
 #include <QSize>
 
-#include "File.h"
+#include "FileGui.h"
 
 class LineNumberArea : public QWidget
 {
