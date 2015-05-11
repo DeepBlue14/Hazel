@@ -7,9 +7,9 @@ ParseFontConfigXml::ParseFontConfigXml()
 }
 
 
-void ParseFontConfigXml::loadFile(QFile* xmlFile)
+void ParseFontConfigXml::loadFile(/*QFile* xmlFile*/)
 {
-    filePtr = new QFile("testXmlFile.xml");
+    filePtr = new QFile("/home/james/NetBeansProjects/Hazel/config/SyntaxColors/NetBeans.xml");
     xmlDomDocPtr = new QDomDocument();
     
     if(!filePtr->open(QIODevice::ReadOnly) )
@@ -29,56 +29,33 @@ void ParseFontConfigXml::readDocRoot()
     //extract the root markup
     QDomElement root = xmlDomDocPtr->documentElement();
     
-    //get root names adn attributes
-    QString Type = root.tagName();
-    QString Board = root.attribute("BOARD", "No name");
-    int Year = root.attribute("YEAR", "1900").toInt();
+    //get root names and attributes
+    QString type = root.tagName();
+    cout << "<" << type.toStdString() << ">" << endl;
     
-    //display root data
-    cout << "Type = " << Type.toStdString().c_str() << endl;
-    cout << "Board = " << Board.toStdString().c_str() << endl;
-    cout << "Year = " << Year << endl;
+    QDomElement component = root.firstChild().toElement();
+    cout << "  <" << component.tagName().toStdString() << ">" << endl;
     
-    //parse the rest of the doc
-    QDomElement Component=root.firstChild().toElement();
- 
-// Loop while there is a child
-while(!Component.isNull())
-{    
-    // Check if the child tag name is COMPONENT
-    if (Component.tagName()=="COMPONENT")
-    {
- 
-        // Read and display the component ID
-        QString ID=Component.attribute("ID","No ID");
- 
-        // Get the first child of the component
-        QDomElement Child=Component.firstChild().toElement();
- 
-        QString Name;
-        double Value;
- 
-        // Read each child of the component node
-        while (!Child.isNull())
-        {
-            // Read Name and value
-            if (Child.tagName()=="NAME") Name=Child.firstChild().toText().data();
-            if (Child.tagName()=="VALUE") Value=Child.firstChild().toText().data().toDouble();
- 
-            // Next child
-            Child = Child.nextSibling().toElement();
-        }
- 
-        // Display component data
-        std::cout << "Component " << ID.toStdString().c_str() << std::endl;
-        std::cout << "   Name  = " << Name.toStdString().c_str() << std::endl;
-        std::cout << "   Value = " << Value << std::endl;
-        std::cout << std::endl;        
-    }
- 
-    // Next component
-    Component = Component.nextSibling().toElement();
-}
+    component = component.firstChild().toElement();
+    QString foreground = component.attribute("Foreground", "no value");
+    QString background = component.attribute("Background", "no value");
+    QString effects = component.attribute("Effects", "no value");
+    QString effect_color = component.attribute("Effect_Color", "no value");
+    
+    cout << "     <" << component.tagName().toStdString() << "\""
+         << " Foreground=\"" << foreground.toStdString() << "\""
+         << " Background=\"" << background.toStdString() << "\""
+         << " Effects=\"" << effects.toStdString() << "\""
+         << " \"Effect_Color=\"" << effect_color.toStdString() << "\""
+         << "/>" << endl;
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 

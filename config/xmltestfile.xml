@@ -1,5 +1,4 @@
 <!-- File billofmaterial.xml-->
-<!--http://www.lucidarme.me/?p=2534 -->
 <BOM BOARD="Motor controller" YEAR="2014">
  
    <COMPONENT ID="R1">
