@@ -90,9 +90,9 @@ void MasterActions::handleNewFileActionSlot()
     
     
     QFont font;
-    font.setFamily("Courier");
+    font.setFamily("Monospace");
     font.setFixedPitch(true);
-    font.setPointSize(12);
+    font.setPointSize(10);
     font.setWeight(10);
 
     File* editor = new File();

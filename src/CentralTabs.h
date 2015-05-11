@@ -31,7 +31,6 @@ class CentralTabs : public QWidget
         QGridLayout* outerLayout;
         
         OpeningGui* openingGui;
-        
     private slots:
         ;
     

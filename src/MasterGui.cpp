@@ -16,19 +16,12 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     
     initMenus();
     initToolBars();
-    /*
-    //--------------------------------------------------------------------------
-    QFile file("/home/james/NetBeansProjects/Hazel/src/qss/Dark.css");
-    file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String(file.readAll());
-    this->setStyleSheet(styleSheet);
-    //--------------------------------------------------------------------------
-    */
+
     this->setCentralWidget(centralGui);
     masterActions->setMasterTabWidgetPtr(centralGui->getCentralTabsPtr()->getTabWidget());
     
     
-    this->resize(500, 600);
+    this->resize(800, 600);
 }
 
 

@@ -4,10 +4,11 @@
 CentralTabs::CentralTabs(QWidget* parent) : QWidget(parent)
 {
     openingGui = new OpeningGui();
+    
     tabWidget = new QTabWidget();
     tabWidget->setTabsClosable(true);
     tabWidget->addTab(openingGui, tr("Start Page"));
-    
+
     outerLayout = new QGridLayout();
     outerLayout->addWidget(tabWidget, 0, 0);
     

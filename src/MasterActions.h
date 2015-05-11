@@ -18,7 +18,7 @@
 
 #include "NewFileGui.h"
 #include "Highlighter.h"
-#include "File.h"
+#include "FileGui.h"
 #include "NewProjectGui.h"
 #include "Terminal.h"
 

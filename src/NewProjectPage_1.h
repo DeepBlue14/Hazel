@@ -34,6 +34,9 @@ class NewProjectPage_1 : public QWidget
         QFormLayout* formLayout;
         QGridLayout* outerLayout;
         
+    private slots:
+        ;
+        
     public:
         NewProjectPage_1(QWidget* parent = 0);
         ~NewProjectPage_1();
