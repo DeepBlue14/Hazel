@@ -3,7 +3,13 @@
 
 ScoutGui::ScoutGui(QMenu* parent) : QMenu(parent)
 {
-    ;
+    methodPrototypeLstPtr = new QStringList();
+}
+
+
+void ScoutGui::implement()
+{
+    cout << "implement!" << endl;
 }
 
 
@@ -14,7 +20,7 @@ void ScoutGui::setMethodPrototypeLstPtr(QStringList* methodPrototypeLstPtr)
 
 
 QStringList* ScoutGui::getMethodPrototypeLstPtr()
-{
+{ 
     return methodPrototypeLstPtr;
 }
 
@@ -27,12 +33,6 @@ void ScoutGui::fillScoutMenu()
         connect(prototypeActionVec.at(i), SIGNAL(triggered()), this, SLOT(implement()));
         this->addAction(prototypeActionVec.at(i));
     }
-}
-
-
-void ScoutGui::implement()
-{
-    cout << "implement!" << endl;
 }
 
 

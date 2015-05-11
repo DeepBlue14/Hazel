@@ -2,7 +2,7 @@
 
 
 Terminal::Terminal(QWidget *parent):
-	QWidget(parent), cols(80), rows(30), termProcess(0)
+	QWidget(parent), cols(80), rows(50), termProcess(0)
 {
     ;
 }

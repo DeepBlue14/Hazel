@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/Build.h</itemPath>
         <itemPath>src/CentralGui.h</itemPath>
         <itemPath>src/CentralTabs.h</itemPath>
         <itemPath>src/File.h</itemPath>
@@ -37,6 +38,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/Build.cpp</itemPath>
         <itemPath>src/CentralGui.cpp</itemPath>
         <itemPath>src/CentralTabs.cpp</itemPath>
         <itemPath>src/File.cpp</itemPath>
@@ -93,6 +95,10 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Build.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/CentralGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/CentralGui.h" ex="false" tool="3" flavor2="0">
@@ -198,6 +204,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Build.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/CentralGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/CentralGui.h" ex="false" tool="3" flavor2="0">

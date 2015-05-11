@@ -26,14 +26,13 @@ class ScoutGui : public QMenu
         QVector<QAction*> prototypeActionVec;
         
     private slots:
-        ;
+        void implement();
         
     public:
         ScoutGui(QMenu* parent = 0);
         void setMethodPrototypeLstPtr(QStringList* methodPrototypeLstPtr);
         QStringList* getMethodPrototypeLstPtr();
         void fillScoutMenu();
-        void implement();
         ~ScoutGui();
 };
 
