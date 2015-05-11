@@ -22,26 +22,39 @@ static const uint qt_meta_data_File[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       0,    0, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
+ // slots: signature, parameters, type, tag, flags
+      20,    6,    5,    5, 0x08,
+      51,    5,    5,    5, 0x08,
+      76,   74,    5,    5, 0x08,
+
        0        // eod
 };
 
 static const char qt_meta_stringdata_File[] = {
-    "File\0"
+    "File\0\0newBlockCount\0updateLineNumberAreaWidth(int)\0"
+    "highlightCurrentLine()\0,\0"
+    "updateLineNumberArea(QRect,int)\0"
 };
 
 void File::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    Q_UNUSED(_o);
-    Q_UNUSED(_id);
-    Q_UNUSED(_c);
-    Q_UNUSED(_a);
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
+        File *_t = static_cast<File *>(_o);
+        switch (_id) {
+        case 0: _t->updateLineNumberAreaWidth((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: _t->highlightCurrentLine(); break;
+        case 2: _t->updateLineNumberArea((*reinterpret_cast< const QRect(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        default: ;
+        }
+    }
 }
 
 const QMetaObjectExtraData File::staticMetaObjectExtraData = {
@@ -49,7 +62,7 @@ const QMetaObjectExtraData File::staticMetaObjectExtraData = {
 };
 
 const QMetaObject File::staticMetaObject = {
-    { &QTextEdit::staticMetaObject, qt_meta_stringdata_File,
+    { &QPlainTextEdit::staticMetaObject, qt_meta_stringdata_File,
       qt_meta_data_File, &staticMetaObjectExtraData }
 };
 
@@ -67,14 +80,19 @@ void *File::qt_metacast(const char *_clname)
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_File))
         return static_cast<void*>(const_cast< File*>(this));
-    return QTextEdit::qt_metacast(_clname);
+    return QPlainTextEdit::qt_metacast(_clname);
 }
 
 int File::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QTextEdit::qt_metacall(_c, _id, _a);
+    _id = QPlainTextEdit::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
+    }
     return _id;
 }
 QT_END_MOC_NAMESPACE
