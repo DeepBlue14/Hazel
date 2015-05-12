@@ -58,10 +58,10 @@
 class LineNumberArea : public QWidget
 {
     private:
-        File* file;
+        FileGui* file;
         
     public:
-        LineNumberArea(File* parent = 0);
+        LineNumberArea(FileGui* parent = 0);
         QSize sizeHint() const;
         void paintEvent(QPaintEvent* event);
         ~LineNumberArea();

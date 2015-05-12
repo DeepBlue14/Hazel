@@ -43,7 +43,7 @@
 #include "LineNumberArea.h"
 
 
-File::File(QWidget* parent) : QPlainTextEdit(parent)
+FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent)
 {
     lineNumberArea = new LineNumberArea(this);
     
@@ -56,7 +56,7 @@ File::File(QWidget* parent) : QPlainTextEdit(parent)
 }
 
 
-int File::lineNumberAreaWidth()
+int FileGui::lineNumberAreaWidth()
 {
     int digits = 1;
     int max = qMax(1, blockCount());
@@ -72,13 +72,13 @@ int File::lineNumberAreaWidth()
 }
 
 
-void File::updateLineNumberAreaWidth(int )
+void FileGui::updateLineNumberAreaWidth(int )
 {
     setViewportMargins(lineNumberAreaWidth(), 0, 0, 0);
 }
 
 
-void File::updateLineNumberArea(const QRect& rect, int dy)
+void FileGui::updateLineNumberArea(const QRect& rect, int dy)
 {
     if(dy)
         lineNumberArea->scroll(0, dy);
@@ -90,7 +90,7 @@ void File::updateLineNumberArea(const QRect& rect, int dy)
 }
 
 
-void File::resizeEvent(QResizeEvent* e)
+void FileGui::resizeEvent(QResizeEvent* e)
 {
     QPlainTextEdit::resizeEvent(e);
     
@@ -99,7 +99,7 @@ void File::resizeEvent(QResizeEvent* e)
 }
 
 
-void File::highlightCurrentLine()
+void FileGui::highlightCurrentLine()
 {
     QList<QTextEdit::ExtraSelection> extraSelections;
     
@@ -120,7 +120,7 @@ void File::highlightCurrentLine()
 }
 
 
-void File::lineNumberAreaPaintEvent(QPaintEvent* event)
+void FileGui::lineNumberAreaPaintEvent(QPaintEvent* event)
 {
     QPainter painter(lineNumberArea);
     painter.fillRect(event->rect(), Qt::lightGray);
@@ -150,7 +150,7 @@ void File::lineNumberAreaPaintEvent(QPaintEvent* event)
 }
 
 
-File::~File()
+FileGui::~FileGui()
 {
     ;
 }

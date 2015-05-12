@@ -16,7 +16,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_File[] = {
+static const uint qt_meta_data_FileGui[] = {
 
  // content:
        6,       // revision
@@ -30,24 +30,25 @@ static const uint qt_meta_data_File[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      20,    6,    5,    5, 0x08,
-      51,    5,    5,    5, 0x08,
-      76,   74,    5,    5, 0x08,
+      23,    9,    8,    8, 0x08,
+      54,    8,    8,    8, 0x08,
+      79,   77,    8,    8, 0x08,
 
        0        // eod
 };
 
-static const char qt_meta_stringdata_File[] = {
-    "File\0\0newBlockCount\0updateLineNumberAreaWidth(int)\0"
+static const char qt_meta_stringdata_FileGui[] = {
+    "FileGui\0\0newBlockCount\0"
+    "updateLineNumberAreaWidth(int)\0"
     "highlightCurrentLine()\0,\0"
     "updateLineNumberArea(QRect,int)\0"
 };
 
-void File::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void FileGui::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         Q_ASSERT(staticMetaObject.cast(_o));
-        File *_t = static_cast<File *>(_o);
+        FileGui *_t = static_cast<FileGui *>(_o);
         switch (_id) {
         case 0: _t->updateLineNumberAreaWidth((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 1: _t->highlightCurrentLine(); break;
@@ -57,33 +58,33 @@ void File::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void *
     }
 }
 
-const QMetaObjectExtraData File::staticMetaObjectExtraData = {
+const QMetaObjectExtraData FileGui::staticMetaObjectExtraData = {
     0,  qt_static_metacall 
 };
 
-const QMetaObject File::staticMetaObject = {
-    { &QPlainTextEdit::staticMetaObject, qt_meta_stringdata_File,
-      qt_meta_data_File, &staticMetaObjectExtraData }
+const QMetaObject FileGui::staticMetaObject = {
+    { &QPlainTextEdit::staticMetaObject, qt_meta_stringdata_FileGui,
+      qt_meta_data_FileGui, &staticMetaObjectExtraData }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &File::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &FileGui::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *File::metaObject() const
+const QMetaObject *FileGui::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *File::qt_metacast(const char *_clname)
+void *FileGui::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_File))
-        return static_cast<void*>(const_cast< File*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_FileGui))
+        return static_cast<void*>(const_cast< FileGui*>(this));
     return QPlainTextEdit::qt_metacast(_clname);
 }
 
-int File::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int FileGui::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QPlainTextEdit::qt_metacall(_c, _id, _a);
     if (_id < 0)

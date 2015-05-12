@@ -10,6 +10,7 @@
 
 #include <QtXml>
 #include <QFile>
+#include <QIODevice>
 
 #include <iostream>
 
@@ -23,8 +24,8 @@ class ParseFontConfigXml
         
     public:
         ParseFontConfigXml();
-        void loadFile(QFile* xmlFile);
-        void readDocRoot();
+        void loadFile(/*QFile* xmlFile*/);
+        void readDoc();
         void parseDoc();
         ~ParseFontConfigXml();
 };

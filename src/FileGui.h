@@ -62,7 +62,7 @@
 
 using namespace std;
 
-class File : public QPlainTextEdit
+class FileGui : public QPlainTextEdit
 {
     Q_OBJECT
     
@@ -75,11 +75,11 @@ class File : public QPlainTextEdit
         void updateLineNumberArea(const QRect&, int);
          
     public:
-        File(QWidget* parent = 0);
+        FileGui(QWidget* parent = 0);
         void lineNumberAreaPaintEvent(QPaintEvent* event);
         int lineNumberAreaWidth();
         void resizeEvent(QResizeEvent* event);
-        ~File();
+        ~FileGui();
         
 };
 
