@@ -1,19 +1,19 @@
-#include "File.h"
+#include "Files.h"
 
 
-File::File()
+Files::Files()
 {
     ;
 }
 
 
-QFile* File::createFile(QString* fileName, QString* fileExtension)
+QFile* Files::createFile(QString* fileName, QString* fileExtension)
 {
     return new QFile(fileName->append(fileExtension));
 }
 
 
-bool File::openRdFile(QFile* file)
+bool Files::openRdFile(QFile* file)
 {
     //the "::Text" tells it to convert Windows-style line terminators ("\r\n") to C++-style terminators ("\n")
     if(!file->open(QIODevice::ReadOnly | QIODevice::Text))
@@ -25,7 +25,7 @@ bool File::openRdFile(QFile* file)
 }
 
 
-bool File::openWrFile(QFile* file)
+bool Files::openWrFile(QFile* file)
 {
     if(!file->open(QIODevice::WriteOnly | QIODevice::Text))
     {
@@ -36,7 +36,7 @@ bool File::openWrFile(QFile* file)
 }
 
 
-bool File::openRdWrFile(QFile* file)
+bool Files::openRdWrFile(QFile* file)
 {
     if(!file->open(QIODevice::ReadWrite | QIODevice::Text))
     {
@@ -47,13 +47,13 @@ bool File::openRdWrFile(QFile* file)
 }
 
 
-QString* File::readFile(QFile* file)
+QString* Files::readFile(QFile* file)
 {
     return new QString(file->readAll() );
 }
 
 
-bool File::writeFile(QFile* file, QString* text)
+bool Files::writeFile(QFile* file, QString* text)
 {
     file->write(*toQByteArray(text) );
     
@@ -61,7 +61,7 @@ bool File::writeFile(QFile* file, QString* text)
 }
 
 
-bool File::closeFile(QFile* file)
+bool Files::closeFile(QFile* file)
 {
     if(!file->exists() )
     {
@@ -73,13 +73,13 @@ bool File::closeFile(QFile* file)
 }
 
 
-bool File::deleteFile(QFile* file)
+bool Files::deleteFile(QFile* file)
 {
     return file->remove();
 }
 
 
-QByteArray* File::toQByteArray(QString* string)
+QByteArray* Files::toQByteArray(QString* string)
 {
     return new QByteArray(string->toStdString().c_str() );
 }
@@ -93,7 +93,7 @@ QByteArray* File::toQByteArray(QString* string)
 }*/
 
 
-File::~File()
+Files::~Files()
 {
     ;
 }

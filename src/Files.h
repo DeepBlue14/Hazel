@@ -1,19 +1,23 @@
 /* 
- * File:   File.h
- * Author: james
+ * File:   Files.h
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description:
  *
  * Created on May 12, 2015, 12:28 AM
  */
 
-#ifndef FILE_H
-#define	FILE_H
+#ifndef FILES_H
+#define	FILES_H
 
 #include <QWidget>
 #include <QFile>
+#include <QDir>
 #include <QByteArray>
 #include <QString>
+#include <QVector>
 
-class File
+class Files
 {
     private:
         enum FileTypes
@@ -36,7 +40,7 @@ class File
         //QString* fromQByteArray(QByteArray* byteArray);
         
     public:
-        File();
+        Files();
         QFile* createFile(QString* fileName, QString* fileExtention);
         bool openRdFile(QFile* file);
         bool openWrFile(QFile* file);
@@ -45,8 +49,12 @@ class File
         bool writeFile(QFile* file, QString* text);
         bool closeFile(QFile* file);
         bool deleteFile(QFile* file);
-        ~File();
+        
+        bool addFileToVecPtr(QFile* file);
+        bool subFileFromVecPtr(QFile* file);
+        bool getFileVecPtr(QDir* dir);
+        
+        ~Files();
 };
 
-#endif	/* FILE_H */
-
+#endif	/* FILES_H */
