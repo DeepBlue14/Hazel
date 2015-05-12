@@ -26,8 +26,7 @@ int main(int argc, char *argv[]) {
     //masterGui.show();
     ParseFontConfigXml parseFontConfigXml;
     parseFontConfigXml.loadFile();
-    parseFontConfigXml.readDocRoot();
-    parseFontConfigXml.parseDoc();
+    parseFontConfigXml.readDoc();
     
     //return app.exec();
     return 0;

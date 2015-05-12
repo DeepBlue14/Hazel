@@ -24,7 +24,7 @@ void ParseFontConfigXml::loadFile(/*QFile* xmlFile*/)
 }
 
 
-void ParseFontConfigXml::readDocRoot()
+void ParseFontConfigXml::readDoc()
 {
     //extract the root markup
     QDomElement root = xmlDomDocPtr->documentElement();
@@ -35,33 +35,34 @@ void ParseFontConfigXml::readDocRoot()
     
     QDomElement component = root.firstChild().toElement();
     cout << "  <" << component.tagName().toStdString() << ">" << endl;
-    
+
     component = component.firstChild().toElement();
-    QString foreground = component.attribute("Foreground", "no value");
-    QString background = component.attribute("Background", "no value");
-    QString effects = component.attribute("Effects", "no value");
-    QString effect_color = component.attribute("Effect_Color", "no value");
     
-    cout << "     <" << component.tagName().toStdString() << "\""
-         << " Foreground=\"" << foreground.toStdString() << "\""
-         << " Background=\"" << background.toStdString() << "\""
-         << " Effects=\"" << effects.toStdString() << "\""
-         << " \"Effect_Color=\"" << effect_color.toStdString() << "\""
-         << "/>" << endl;
+    while(!component.isNull() )
+    {
+        QString foreground = component.attribute("Foreground", "no value");
+        QString background = component.attribute("Background", "no value");
+        QString effects = component.attribute("Effects", "no value");
+        QString effect_color = component.attribute("Effect_Color", "no value");
     
-    
-    
-    
-    
-    
-    
-    
-}
+        cout << "     <" << component.tagName().toStdString()
+             << " Foreground=\"" << foreground.toStdString() << "\""
+             << " Background=\"" << background.toStdString() << "\""
+             << " Effects=\"" << effects.toStdString() << "\""
+             << " \"Effect_Color=\"" << effect_color.toStdString() << "\""
+             << "/>" << endl;
+        
+        component = component.nextSibling().toElement();
+    }
 
-
-void ParseFontConfigXml::parseDoc()
-{
-    ;
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 

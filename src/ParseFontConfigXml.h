@@ -25,7 +25,7 @@ class ParseFontConfigXml
     public:
         ParseFontConfigXml();
         void loadFile(/*QFile* xmlFile*/);
-        void readDocRoot();
+        void readDoc();
         void parseDoc();
         ~ParseFontConfigXml();
 };
