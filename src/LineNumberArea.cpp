@@ -45,7 +45,7 @@
 #include "FileGui.h"
 
 
-LineNumberArea::LineNumberArea(File* f) : QWidget(f)
+LineNumberArea::LineNumberArea(FileGui* f) : QWidget(f)
 {
     file = f;
     

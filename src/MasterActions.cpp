@@ -95,7 +95,7 @@ void MasterActions::handleNewFileActionSlot()
     font.setPointSize(10);
     font.setWeight(10);
 
-    File* editor = new File();
+    FileGui* editor = new FileGui();
     editor->setFont(font);
 
     highlighter = new Highlighter(editor->document() );
