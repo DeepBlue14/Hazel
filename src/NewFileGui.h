@@ -5,8 +5,8 @@
  * Created on April 22, 2015, 12:25 AM
  */
 
-#ifndef NEWFILE_H
-#define	NEWFILE_H
+#ifndef NEWFILEGUI_H
+#define	NEWFILEGUI_H
 
 #include <QWidget>
 
@@ -26,5 +26,5 @@ public:
         
 };
 
-#endif	/* NEWFILE_H */
+#endif	/* NEWFILEGUI_H */
 
