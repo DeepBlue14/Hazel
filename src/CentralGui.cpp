@@ -7,14 +7,19 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
     fileTreeGuiPtr = new FileTreeGui();
     outputGuiPtr = new OutputGui();
     
-    //centralTabsPtr.
     
+    QSplitter* splitter0 = new QSplitter();
+    splitter0->setOrientation(Qt::Horizontal);
+    splitter0->addWidget(fileTreeGuiPtr);
+    splitter0->addWidget(centralTabsPtr);
     
+    QSplitter* splitter1 = new QSplitter();
+    splitter1->setOrientation(Qt::Vertical);
+    splitter1->addWidget(splitter0);
+    splitter1->addWidget(outputGuiPtr);
     
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(fileTreeGuiPtr, 0, 0);
-    outerLayout->addWidget(centralTabsPtr, 0, 1);
-    outerLayout->addWidget(outputGuiPtr, 1, 0, 1, 2);
+    outerLayout->addWidget(splitter1, 1, 0, 1, 2);
     
     this->setLayout(outerLayout);
 }

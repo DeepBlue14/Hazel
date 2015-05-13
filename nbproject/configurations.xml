@@ -8,9 +8,10 @@
         <itemPath>src/Build.h</itemPath>
         <itemPath>src/CentralGui.h</itemPath>
         <itemPath>src/CentralTabs.h</itemPath>
-        <itemPath>src/File.h</itemPath>
+        <itemPath>src/Directories.h</itemPath>
         <itemPath>src/FileGui.h</itemPath>
         <itemPath>src/FileTreeGui.h</itemPath>
+        <itemPath>src/Files.h</itemPath>
         <itemPath>src/GenRosPkg.h</itemPath>
         <itemPath>src/Highlighter.h</itemPath>
         <itemPath>src/LineNumberArea.h</itemPath>
@@ -44,9 +45,10 @@
         <itemPath>src/Build.cpp</itemPath>
         <itemPath>src/CentralGui.cpp</itemPath>
         <itemPath>src/CentralTabs.cpp</itemPath>
-        <itemPath>src/File.cpp</itemPath>
+        <itemPath>src/Directories.cpp</itemPath>
         <itemPath>src/FileGui.cpp</itemPath>
         <itemPath>src/FileTreeGui.cpp</itemPath>
+        <itemPath>src/Files.cpp</itemPath>
         <itemPath>src/GenRosPkg.cpp</itemPath>
         <itemPath>src/Highlighter.cpp</itemPath>
         <itemPath>src/LineNumberArea.cpp</itemPath>
@@ -113,9 +115,9 @@
       </item>
       <item path="src/CentralTabs.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/Directories.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/File.h" ex="false" tool="3" flavor2="0">
+      <item path="src/Directories.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -124,6 +126,10 @@
       <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Files.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Files.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/GenRosPkg.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -234,9 +240,9 @@
       </item>
       <item path="src/CentralTabs.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/Directories.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/File.h" ex="false" tool="3" flavor2="0">
+      <item path="src/Directories.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -245,6 +251,10 @@
       <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Files.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Files.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/GenRosPkg.cpp" ex="false" tool="1" flavor2="0">
       </item>
