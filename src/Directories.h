@@ -20,22 +20,19 @@ using namespace std;
 class Directories
 {
     private:
-        QVector<QDir*>* dirPtrVecPtr;
-        QVector<QDir*>* nodePtrVecPtr;
-        QVector<QDir*>* pkgPtrVecPtr;
+        QVector<QDir*> dirPtrVecPtr;
+        QVector<QDir*> nodePtrVecPtr;
+        QVector<QDir*> pkgPtrVecPtr;
         
     public:
         Directories();
         void createDir(QString* dirName);
-        bool closeDir(QString* dirName);
         bool deleteDir(QString* dirName);
         
         void createNode(QString* nodeName);
-        bool closeNode(QString* nodeName);
         bool deleteNode(QString* nodeName);
         
         void createPackage(QString* pkgName);
-        bool closePackage(QString* pkgName);
         bool deletePackage(QString* pkgName);
         
         bool addDirToVecPtr(QDir* dirName);

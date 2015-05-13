@@ -3,37 +3,35 @@
 
 Directories::Directories()
 {
-    dirPtrVecPtr = new QVector<QString*>;
-    nodePtrVecPtr = new QVector<QString*>;
-    pkgPtrVecPtr = new QVector<QString*>;
+    ;
 }
 
 
 void Directories::createDir(QString* dirName)
 {
-    ;
-}
-
-
-bool Directories::closeDir(QString* dirName)
-{
-    ;
+    addDirToVecPtr(new QDir(*dirName));
 }
 
 
 bool Directories::deleteDir(QString* dirName)
 {
-    ;
+    for(size_t i = 0; i < dirPtrVecPtr.length(); i++)
+    {
+        if(dirPtrVecPtr.at(i)->dirName() == dirName)
+        {
+            if(dirPtrVecPtr.at(i)->exists())
+            {
+                dirPtrVecPtr.at(i)->removeRecursively();
+                return true;
+            }
+        }
+    }
+    
+    return false;
 }
 
 
 void Directories::createNode(QString* nodeName)
-{
-    ;
-}
-
-
-bool Directories::closeNode(QString* nodeName)
 {
     ;
 }
@@ -46,12 +44,6 @@ bool Directories::deleteNode(QString* nodeName)
 
 
 void Directories::createPackage(QString* pkgName)
-{
-    ;
-}
-
-
-bool Directories::closePackage(QString* pkgName)
 {
     ;
 }

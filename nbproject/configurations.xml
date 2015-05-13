@@ -8,6 +8,7 @@
         <itemPath>src/Build.h</itemPath>
         <itemPath>src/CentralGui.h</itemPath>
         <itemPath>src/CentralTabs.h</itemPath>
+        <itemPath>src/Directories.h</itemPath>
         <itemPath>src/FileGui.h</itemPath>
         <itemPath>src/FileTreeGui.h</itemPath>
         <itemPath>src/Files.h</itemPath>
@@ -45,7 +46,6 @@
         <itemPath>src/CentralGui.cpp</itemPath>
         <itemPath>src/CentralTabs.cpp</itemPath>
         <itemPath>src/Directories.cpp</itemPath>
-        <itemPath>src/Directories.h</itemPath>
         <itemPath>src/FileGui.cpp</itemPath>
         <itemPath>src/FileTreeGui.cpp</itemPath>
         <itemPath>src/Files.cpp</itemPath>
