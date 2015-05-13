@@ -8,15 +8,15 @@ GenRosPkg::GenRosPkg(QWidget* parent) : QWidget(parent), PKG_NAME_LOC(0)
 }
 
 
-void GenRosPkg::setDirPathPtr(QString* dirPathPtr)
+void GenRosPkg::setPkgPathPtr(QString* dirPathPtr)
 {
-    this->dirPathPtr = dirPathPtr;
+    this->pkgPathPtr = dirPathPtr;
 }
 
 
-QString* GenRosPkg::getDirPathPtr()
+QString* GenRosPkg::getPkgPathPtr()
 {
-    return dirPathPtr;
+    return pkgPathPtr;
 }
 
 
@@ -34,7 +34,7 @@ QStringList* GenRosPkg::getArgsLstPtr()
 
 bool GenRosPkg::initRosPkg()
 {
-    genRosPkgProcessPtr->setWorkingDirectory(*dirPathPtr);
+    genRosPkgProcessPtr->setWorkingDirectory(*pkgPathPtr);
     genRosPkgProcessPtr->start("catkin_create_pkg", *argsLstPtr);
     
     return true; // *** CODE STUB--REPLACE ME ***
