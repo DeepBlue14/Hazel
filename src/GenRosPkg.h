@@ -11,6 +11,8 @@
 #include <QWidget>
 #include <QString>
 #include <QStringList>
+#include <QDir>
+#include <QVector>
 #include <QProcess>
 
 #include <iostream>
