@@ -13,6 +13,8 @@
 #include <QWidget>
 #include <QStringList>
 #include <QLineEdit>
+#include <QFileDialog>
+#include <QPushButton>
 #include <QListWidget>
 #include <QFormLayout>
 #include <QGridLayout>
@@ -28,14 +30,17 @@ class NewProjectPage_1 : public QWidget
     private:
         QLineEdit* projectNameLePtr;
         QLineEdit* projectLocationLePtr;
+        QFileDialog* dirDialogPtr;
+        QPushButton* locPbPtr;
         QStringList* projectTypeStrList;
         QListWidget* projectTypeLw; //maxVisibleItems : int
         
+        QGridLayout* locationLayout;
         QFormLayout* formLayout;
         QGridLayout* outerLayout;
         
     private slots:
-        ;
+        void handleLocPbPtrSlot();
         
     public:
         NewProjectPage_1(QWidget* parent = 0);

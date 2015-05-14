@@ -1,8 +1,10 @@
 #########################################################
+# File: Installer_Linux.bash
+# Author: James Kuczynski
+# Email: jkuczyns@cs.uml.edu
+# File Description:
 #
-#
-#
-#
+# Last Modified 05/14/2015
 #
 #########################################################
 
@@ -29,7 +31,7 @@ if [ "$CHOICE" == "" ]; then
     echo "Installing to /usr..."
     cd /usr
     git clone https://github.com/DeepBlue14/Hazel.git
-    xrbd ./Hazel/config/Xresources
+    xrdb ./Hazel/config/.Xresources
 fi
 
 
