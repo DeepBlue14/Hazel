@@ -24,15 +24,15 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     // create and show your widgets here
-    MasterGui masterGui;
-    masterGui.show();
+    //MasterGui masterGui;
+    //masterGui.show();
     
     //ParseFontConfigXml parseFontConfigXml;
     //parseFontConfigXml.loadFile();
     //parseFontConfigXml.readDoc();
     
-    //NewFileGui newFileGui;
-    //newFileGui.show();
+    NewFileGui newFileGui;
+    newFileGui.show();
     
     return app.exec();
     //return 0;

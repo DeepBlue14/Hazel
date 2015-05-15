@@ -1,119 +1,178 @@
 #include "NewFileGui.h"
 
+
 NewFileGui::NewFileGui(QWidget* parent) : QWidget(parent)
 {
-    fileNameLePtr = new QLineEdit();
-    fileExtsStrLstPtr = new QStringList();
-    fileExtCbPtr = new QComboBox();
-    defaultFileExtChbPtr = new QCheckBox();
-    projectLePtr = new QLineEdit();
-    locCbPtr = new QComboBox();
-    folderLePtr = new QLineEdit();
-    folderDialogPtr = new QFileDialog();
-    folderPbPtr = new QPushButton("Browse...");
-    createdFileLePtr = new QLineEdit();
+    outerLayout = new QGridLayout(this);
+    newFilePage_1Ptr = new NewFilePage_1();
+    newFilePage_2Ptr = new NewFilePage_2();
+    newFilePage_3Ptr = new NewFilePage_3();
     
-    fileNameStrPtr = new QString("newfile");
-    projectStrPtr = new QString();
-    locStrPtr = new QString();
-    folderStrPtr = new QString();
-    createdFileStrPtr = new QString();
+    currentPage = PAGE_ONE;
     
-    folderLayoutPtr = new QGridLayout();
-    folderLayoutPtr->addWidget(folderLePtr, 0, 0);
-    folderLayoutPtr->addWidget(folderPbPtr, 0, 1);
+    initBtns();
     
-    formLayoutPtr = new QFormLayout();
-    formLayoutPtr->addRow(tr("File &Name:"), fileNameLePtr);
-    formLayoutPtr->addRow(tr("&Extension:"), fileExtCbPtr);
-    formLayoutPtr->addRow(tr(""), defaultFileExtChbPtr);
-    formLayoutPtr->addRow(tr("&Project:"), projectLePtr);
-    formLayoutPtr->addRow(tr("Loca&tion"), locCbPtr);
-    formLayoutPtr->addRow(tr("Folder"), folderLayoutPtr);
-    formLayoutPtr->addRow(tr("&Created File:"), createdFileLePtr);
+    this->setLayout(outerLayout);
+    /*
+    //--------------------------------------------------------------------------
+    QFile file("/home/james/NetBeansFiles/Hazel/src/qss/Dark.css");
+    file.open(QFile::ReadOnly);
+    QString styleSheet = QLatin1String(file.readAll());
+    backBtn->setStyleSheet(styleSheet);
+    //--------------------------------------------------------------------------
+    */
+}
+
+
+void NewFileGui::handleBackBtnSlot()
+{
+    swapBackPage();
+}
+
+
+void NewFileGui::handleNextBtnSlot()
+{
+    swapNextPage();
+}
+
+
+void NewFileGui::handleFinishBtnSlot()
+{
+    ;
+}
+
+
+void NewFileGui::handleHelpBntSlot()
+{
+    ;
+}
+
+
+void NewFileGui::handleCancelBtnSlot()
+{
+    this->close();
+}
+
+
+void NewFileGui::initBtns()
+{
+    backBtn = new QPushButton("< Back", this);
+    backBtn->setEnabled(false);
+    nextBtn = new QPushButton("Next >", this);
+    finishBtn = new QPushButton("Finish", this);
+    finishBtn->setEnabled(false);
+    helpBtn = new QPushButton("Help", this);
+    cancelBtn = new QPushButton("Cancel", this);
     
-    outerLayoutPtr = new QGridLayout();
-    outerLayoutPtr->addLayout(formLayoutPtr, 0, 0);
+    buttonLayout = new QHBoxLayout();
+    buttonLayout->addWidget(backBtn);
+    buttonLayout->addWidget(nextBtn);
+    buttonLayout->addWidget(finishBtn);
+    buttonLayout->addWidget(helpBtn);
+    buttonLayout->addWidget(cancelBtn);
     
-    this->setLayout(outerLayoutPtr);
+    connect(backBtn, SIGNAL(released() ), this, SLOT(handleBackBtnSlot() ) );
+    connect(nextBtn, SIGNAL(released() ), this, SLOT(handleNextBtnSlot() ) );
+    connect(finishBtn, SIGNAL(released() ), this, SLOT(handleFinishBtnSlot() ) );
+    connect(helpBtn, SIGNAL(released() ), this, SLOT(handleHelpBntSlot() ) );
+    connect(cancelBtn, SIGNAL(released() ), this, SLOT(handleCancelBtnSlot() ) );
+    
+    outerLayout->addWidget(newFilePage_1Ptr, 0, 0);
+    outerLayout->addLayout(buttonLayout, 1, 0, Qt::AlignBottom);
 }
 
 
-void NewFileGui::handleFolderPbPtrSlot()
+void NewFileGui::swapBackPage()
 {
-    QString dirName = folderDialogPtr->getExistingDirectory(this, tr("&Open Directory"),
-            "/home",
-            QFileDialog::ShowDirsOnly
-            | QFileDialog::DontResolveSymlinks);
+    switch(currentPage)
+    {
+        case PAGE_TWO:
+            unloadPage_2();
+            loadPage_1();
+            currentPage = PAGE_ONE;
+            backBtn->setEnabled(false);
+            break;
+        case PAGE_THREE:
+            unloadPage_3();
+            loadPage_2();
+            currentPage = PAGE_TWO;
+            nextBtn->setEnabled(true);
+            finishBtn->setEnabled(false);
+            break;
+        default:
+            cerr << "ERROR in switch at: NewFileGui::swapBackPage()" << endl;
+    }
 }
 
 
-void NewFileGui::initCore()
+void NewFileGui::swapNextPage()
 {
-    fileExtsStrLstPtr->push_back("cpp");
-    fileExtsStrLstPtr->push_back("c");
-    fileExtCbPtr->addItems(*fileExtsStrLstPtr);
-    connect(folderPbPtr, SIGNAL(released()), this, SLOT(handleFolderPbPtrSlot()));
+    switch(currentPage)
+    {
+        case PAGE_ONE:
+            unloadPage_1();
+            loadPage_2();
+            currentPage = PAGE_TWO;
+            backBtn->setEnabled(true);
+            break;
+        case PAGE_TWO:
+            unloadPage_2();
+            loadPage_3();
+            currentPage = PAGE_THREE;
+            nextBtn->setEnabled(false);
+            finishBtn->setEnabled(true);
+            break;
+        default:
+            cerr << "ERROR in switch at: NewFileGui::swapNextPage()" << endl;
+    }
 }
 
 
-void NewFileGui::setFileNameStrPtr(QString* fileNameStrPtr)
+void NewFileGui::loadPage_1()
 {
-    this->fileNameStrPtr = fileNameStrPtr;
+    outerLayout->addWidget(newFilePage_1Ptr, 0, 0);
+    newFilePage_1Ptr->setVisible(true);
+    newFilePage_1Ptr->setEnabled(true);
 }
 
 
-QString* NewFileGui::getFileNameStrPtr()
+void NewFileGui::unloadPage_1()
 {
-    return fileNameStrPtr;
+    outerLayout->removeWidget(newFilePage_1Ptr);
+    newFilePage_1Ptr->setVisible(false);
+    newFilePage_1Ptr->setEnabled(false);
 }
 
 
-void NewFileGui::setProjectStrPtr(QString* projectStrPtr)
+void NewFileGui::loadPage_2()
 {
-    this->projectStrPtr = projectStrPtr;
+    outerLayout->addWidget(newFilePage_2Ptr, 0, 0);
+    newFilePage_2Ptr->setVisible(true);
+    newFilePage_2Ptr->setEnabled(true);
 }
 
 
-QString* NewFileGui::getProjectStrPtr()
+void NewFileGui::unloadPage_2()
 {
-    return projectStrPtr;
+    outerLayout->removeWidget(newFilePage_2Ptr);
+    newFilePage_2Ptr->setVisible(false);
+    newFilePage_2Ptr->setEnabled(false);
 }
 
 
-void NewFileGui::setLocStrPtr(QString* locStrPtr)
+void NewFileGui::loadPage_3()
 {
-    this->locStrPtr = locStrPtr;
+    outerLayout->addWidget(newFilePage_3Ptr, 0, 0);
+    newFilePage_3Ptr->setVisible(true);
+    newFilePage_3Ptr->setEnabled(true);
 }
 
 
-QString* NewFileGui::getLocStrPtr()
+void NewFileGui::unloadPage_3()
 {
-    return locStrPtr;
-}
-
-
-void NewFileGui::setFolderStrPtr(QString* folderStrPtr)
-{
-    this->folderStrPtr = folderStrPtr;
-}
-
-
-QString* NewFileGui::getFolderStrPtr()
-{
-    return folderStrPtr;
-}
-
-
-void NewFileGui::setCreatedFileStrPtr(QString* createdFileStrPtr)
-{
-    this->createdFileStrPtr = createdFileStrPtr;
-}
-
-
-QString* NewFileGui::getCreatedFileStrPtr()
-{
-    return createdFileStrPtr;
+    outerLayout->removeWidget(newFilePage_3Ptr);
+    newFilePage_3Ptr->setVisible(false);
+    newFilePage_3Ptr->setEnabled(false);
 }
 
 

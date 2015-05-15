@@ -25,6 +25,9 @@
           <itemPath>src/MasterToolBars.h</itemPath>
           <itemPath>src/NavigatorGui.h</itemPath>
           <itemPath>src/NewFileGui.h</itemPath>
+          <itemPath>src/NewFilePage_1.h</itemPath>
+          <itemPath>src/NewFilePage_2.h</itemPath>
+          <itemPath>src/NewFilePage_3.h</itemPath>
           <itemPath>src/NewProjectGui.h</itemPath>
           <itemPath>src/NewProjectPage_1.h</itemPath>
           <itemPath>src/NewProjectPage_2.h</itemPath>
@@ -66,6 +69,9 @@
           <itemPath>src/MasterToolBars.cpp</itemPath>
           <itemPath>src/NavigatorGui.cpp</itemPath>
           <itemPath>src/NewFileGui.cpp</itemPath>
+          <itemPath>src/NewFilePage_1.cpp</itemPath>
+          <itemPath>src/NewFilePage_2.cpp</itemPath>
+          <itemPath>src/NewFilePage_3.cpp</itemPath>
           <itemPath>src/NewProjectGui.cpp</itemPath>
           <itemPath>src/NewProjectPage_1.cpp</itemPath>
           <itemPath>src/NewProjectPage_2.cpp</itemPath>
@@ -170,6 +176,18 @@
       <item path="src/NewFileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/NewFileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -295,6 +313,18 @@
       <item path="src/NewFileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/NewFileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

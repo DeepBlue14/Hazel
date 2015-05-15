@@ -18,51 +18,57 @@
 #include <QFormLayout>
 #include <QGridLayout>
 
+#include "NewFilePage_1.h"
+#include "NewFilePage_2.h"
+#include "NewFilePage_3.h"
 
 class NewFileGui : public QWidget
 {
     Q_OBJECT
             
 private:
-    QLineEdit* fileNameLePtr;
-    QStringList* fileExtsStrLstPtr;
-    QComboBox* fileExtCbPtr;
-    QCheckBox* defaultFileExtChbPtr;
-    QLineEdit* projectLePtr;
-    QComboBox* locCbPtr;
-    QLineEdit* folderLePtr;
-    QFileDialog* folderDialogPtr;
-    QPushButton* folderPbPtr;
-    QLineEdit* createdFileLePtr;
+    enum Page
+    {
+        PAGE_ONE,
+        PAGE_TWO,
+        PAGE_THREE,
+    };
     
-    QString* fileNameStrPtr;
-    QString* projectStrPtr;
-    QString* locStrPtr;
-    QString* folderStrPtr;
-    QString* createdFileStrPtr;
+    Page currentPage;
     
-    QGridLayout* folderLayoutPtr;
-    QFormLayout* formLayoutPtr;
-    QGridLayout* outerLayoutPtr;
-
+    QPushButton* backBtn;
+    QPushButton* nextBtn;
+    QPushButton* finishBtn;
+    QPushButton* helpBtn;
+    QPushButton* cancelBtn;
+    
+    QGridLayout* outerLayout;
+    QHBoxLayout* buttonLayout;
+    
+    NewFilePage_1* newFilePage_1Ptr;
+    NewFilePage_2* newFilePage_2Ptr;
+    NewFilePage_3* newFilePage_3Ptr;
+    
 private slots:
-    void handleFolderPbPtrSlot();
+    void handleBackBtnSlot();
+    void handleNextBtnSlot();
+    void handleFinishBtnSlot();
+    void handleHelpBntSlot();
+    void handleCancelBtnSlot();
     
 public:
     NewFileGui(QWidget* parent = 0);
-    void initCore();
-    void setFileNameStrPtr(QString* fileNameStrPtr);
-    QString* getFileNameStrPtr();
-    void setProjectStrPtr(QString* projectStrPtr);
-    QString* getProjectStrPtr();
-    void setLocStrPtr(QString* locStrPtr);
-    QString* getLocStrPtr();
-    void setFolderStrPtr(QString* folderStrPtr);
-    QString* getFolderStrPtr();
-    void setCreatedFileStrPtr(QString* createdFileStrPtr);
-    QString* getCreatedFileStrPtr();
+    void initBtns();
+    void swapNextPage();
+    void swapBackPage();
+    void loadPage_1();
+    void unloadPage_1();
+    void loadPage_2();
+    void unloadPage_2();
+    void loadPage_3();
+    void unloadPage_3();    
     ~NewFileGui();
-        
+    
 };
 
 #endif	/* NEWFILEGUI_H */
