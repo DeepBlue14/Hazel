@@ -3,9 +3,6 @@
 
 FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 {
-    //tree = new QTreeView();
-    //splitter = new QSplitter();
-    //splitter->addWidget(tree);
     splitter = new QSplitter();
     
     QFileSystemModel* model = new QFileSystemModel();
@@ -14,6 +11,9 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     tree = new QTreeView(splitter);
     tree->setModel(model);
     tree->setRootIndex(model->index(QDir::currentPath()));
+    tree->setColumnHidden(1, true);
+    tree->setColumnHidden(2, true);
+    tree->setColumnHidden(3, true);
     
     list = new QListView(splitter);
     list->setModel(model);

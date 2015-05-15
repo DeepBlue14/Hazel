@@ -1,5 +1,3 @@
-#include <qt4/QtGui/qgridlayout.h>
-
 #include "NewFileGui.h"
 
 NewFileGui::NewFileGui(QWidget* parent) : QWidget(parent)
@@ -31,9 +29,11 @@ NewFileGui::NewFileGui(QWidget* parent) : QWidget(parent)
     formLayoutPtr->addRow(tr(""), defaultFileExtChbPtr);
     formLayoutPtr->addRow(tr("&Project:"), projectLePtr);
     formLayoutPtr->addRow(tr("Loca&tion"), locCbPtr);
-    formLayoutPtr->addRow(tr("Fo&lder"), folderLayoutPtr);
+    formLayoutPtr->addRow(tr("Folder"), folderLayoutPtr);
     formLayoutPtr->addRow(tr("&Created File:"), createdFileLePtr);
+    
     outerLayoutPtr = new QGridLayout();
+    outerLayoutPtr->addLayout(formLayoutPtr, 0, 0);
     
     this->setLayout(outerLayoutPtr);
 }
