@@ -28,6 +28,7 @@
           <itemPath>src/NewFilePage_1.h</itemPath>
           <itemPath>src/NewFilePage_2.h</itemPath>
           <itemPath>src/NewFilePage_3.h</itemPath>
+          <itemPath>src/NewFilePage_4.h</itemPath>
           <itemPath>src/NewProjectGui.h</itemPath>
           <itemPath>src/NewProjectPage_1.h</itemPath>
           <itemPath>src/NewProjectPage_2.h</itemPath>
@@ -72,6 +73,7 @@
           <itemPath>src/NewFilePage_1.cpp</itemPath>
           <itemPath>src/NewFilePage_2.cpp</itemPath>
           <itemPath>src/NewFilePage_3.cpp</itemPath>
+          <itemPath>src/NewFilePage_4.cpp</itemPath>
           <itemPath>src/NewProjectGui.cpp</itemPath>
           <itemPath>src/NewProjectPage_1.cpp</itemPath>
           <itemPath>src/NewProjectPage_2.cpp</itemPath>
@@ -188,6 +190,10 @@
       <item path="src/NewFilePage_3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/NewFilePage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -325,6 +331,10 @@
       <item path="src/NewFilePage_3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/NewFilePage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

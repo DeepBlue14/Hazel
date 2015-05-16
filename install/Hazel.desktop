@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Hazel
+Commnet=Hazel--an IDE for ROS.
+Exec=/home/james/NetBeansProjects/Hazel/dist/Debug/GNU-Linux-x86/Hazel
+Path=/home/james/NetBeansProjects/Hazel/dist/Debug/GNU-Linux-x86
+Icon=/home/james/NetBeansProjects/Hazel/images/Hazel.xpm
+Terminal=false
+Type=Application
+Categories=Utility;Application;Development;
+
+

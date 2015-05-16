@@ -7,6 +7,7 @@ NewFileGui::NewFileGui(QWidget* parent) : QWidget(parent)
     newFilePage_1Ptr = new NewFilePage_1();
     newFilePage_2Ptr = new NewFilePage_2();
     newFilePage_3Ptr = new NewFilePage_3();
+    newFilePage_4Ptr = new NewFilePage_4();
     
     currentPage = PAGE_ONE;
     
@@ -96,6 +97,11 @@ void NewFileGui::swapBackPage()
             unloadPage_3();
             loadPage_2();
             currentPage = PAGE_TWO;
+            break;
+        case PAGE_FOUR:
+            unloadPage_4();
+            loadPage_3();
+            currentPage = PAGE_THREE;
             nextBtn->setEnabled(true);
             finishBtn->setEnabled(false);
             break;
@@ -119,9 +125,13 @@ void NewFileGui::swapNextPage()
             unloadPage_2();
             loadPage_3();
             currentPage = PAGE_THREE;
+            break;
+        case PAGE_THREE:
+            unloadPage_3();
+            loadPage_4();
+            currentPage = PAGE_FOUR;
             nextBtn->setEnabled(false);
             finishBtn->setEnabled(true);
-            break;
         default:
             cerr << "ERROR in switch at: NewFileGui::swapNextPage()" << endl;
     }
@@ -173,6 +183,22 @@ void NewFileGui::unloadPage_3()
     outerLayout->removeWidget(newFilePage_3Ptr);
     newFilePage_3Ptr->setVisible(false);
     newFilePage_3Ptr->setEnabled(false);
+}
+
+
+void NewFileGui::loadPage_4()
+{
+    outerLayout->addWidget(newFilePage_4Ptr, 0, 0);
+    newFilePage_4Ptr->setVisible(true);
+    newFilePage_4Ptr->setEnabled(true);
+}
+
+
+void NewFileGui::unloadPage_4()
+{
+    outerLayout->removeWidget(newFilePage_4Ptr);
+    newFilePage_4Ptr->setVisible(false);
+    newFilePage_4Ptr->setEnabled(false);
 }
 
 

@@ -21,6 +21,7 @@
 #include "NewFilePage_1.h"
 #include "NewFilePage_2.h"
 #include "NewFilePage_3.h"
+#include "NewFilePage_4.h"
 
 class NewFileGui : public QWidget
 {
@@ -32,6 +33,7 @@ private:
         PAGE_ONE,
         PAGE_TWO,
         PAGE_THREE,
+        PAGE_FOUR
     };
     
     Page currentPage;
@@ -48,6 +50,7 @@ private:
     NewFilePage_1* newFilePage_1Ptr;
     NewFilePage_2* newFilePage_2Ptr;
     NewFilePage_3* newFilePage_3Ptr;
+    NewFilePage_4* newFilePage_4Ptr;
     
 private slots:
     void handleBackBtnSlot();
@@ -66,7 +69,9 @@ public:
     void loadPage_2();
     void unloadPage_2();
     void loadPage_3();
-    void unloadPage_3();    
+    void unloadPage_3();
+    void loadPage_4();
+    void unloadPage_4();    
     ~NewFileGui();
     
 };

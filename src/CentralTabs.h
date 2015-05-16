@@ -1,7 +1,9 @@
 /* 
  * File:   MasterTabs.h
  * Author: James Kuczynski
- *
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This file creates the tab widget that will be contained
+ *                   within the central gui.
  * Reference: http://codeprogress.com/cpp/libraries/qt/QTabWidgetClosableTabs.php#.VUQ7AXXd_CI
  * 
  * Created on May 1, 2015, 12:38 AM

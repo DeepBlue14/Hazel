@@ -13,6 +13,7 @@
 #include <QStringList>
 #include <QListWidget>
 #include <QTextEdit>
+#include <QGridLayout>
 
 class NewFilePage_1 : public QWidget
 {
@@ -20,6 +21,9 @@ class NewFilePage_1 : public QWidget
             
     private:
         QStringList* langsStrLstPtr;
+        QListWidget* langsLwPtr;
+        
+        QGridLayout* outerLayoutPtr;
         
     private slots:
         ;

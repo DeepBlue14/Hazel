@@ -1,5 +1,3 @@
-#include <qt4/QtCore/qstringlist.h>
-
 #include "NewFilePage_1.h"
 
 
@@ -23,7 +21,13 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     langsStrLstPtr->push_back("CMakeLists");
     langsStrLstPtr->push_back("package");
     
+    langsLwPtr = new QListWidget();
+    langsLwPtr->addItems(*langsStrLstPtr);
+    
+    outerLayoutPtr = new QGridLayout();
+    outerLayoutPtr->addWidget(langsLwPtr);
 
+    this->setLayout(outerLayoutPtr);
 }
 
 
