@@ -1,0 +1,35 @@
+<fuerte>
+    <actionlib_msgs>
+	</>
+	</>
+	</>
+	</>
+	</>
+	</>
+	</>
+	</>
+    </actionlib_msgs>
+    <geometry_msgs>
+	</>
+	</>
+	</>
+	</>
+	</>
+	</>
+	</>
+	</>
+    </geometry_msgs>
+    <nav_msgs>
+	</>
+	</>
+	</>
+	</>
+    </nav_msgs>
+    <sensor_msgs>
+	</>
+	</>
+	</>
+	</>
+	</>
+    </sensor_msgs>
+</fuerte>

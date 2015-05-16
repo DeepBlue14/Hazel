@@ -11,6 +11,7 @@
 #include <QWidget>
 #include <QString>
 #include <QStringList>
+#include <QVector>
 #include <QListWidget>
 #include <QTextEdit>
 #include <QGridLayout>
@@ -21,12 +22,14 @@ class NewFilePage_1 : public QWidget
             
     private:
         QStringList* langsStrLstPtr;
+        QVector<QStringList*> fileTypeStrLstPtrVec;
         QListWidget* langsLwPtr;
+        QListWidget* fileTypeLw;
         
         QGridLayout* outerLayoutPtr;
         
     private slots:
-        ;
+        void handleSwapOptionsSlot();
         
     public:
         NewFilePage_1(QWidget* parent = 0);

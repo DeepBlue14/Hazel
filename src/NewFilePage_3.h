@@ -15,6 +15,10 @@
 #include <QLineEdit>
 #include <QGridLayout>
 
+#include <iostream>
+
+using namespace std;
+
 class NewFilePage_3 : public QWidget
 {
     Q_OBJECT
@@ -28,7 +32,7 @@ class NewFilePage_3 : public QWidget
         QGridLayout* outerLayoutPtr;
         
     private slots:
-        ;
+        void handleSwapOptionsSlot();
         
     public:
         NewFilePage_3(QWidget* parent = 0);

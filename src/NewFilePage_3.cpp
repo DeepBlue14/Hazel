@@ -7,7 +7,6 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     msgCatagoryStrLstPtr->push_back("std_msgs");
     msgCatagoryStrLstPtr->push_back("sensor_msgs");
     msgCatagoryStrLstPtr->push_back("geometry_msgs");
-    msgCatagoryStrLstPtr->push_back("...");
 
     
     QStringList* std_msgsStrLstPtr = new QStringList();
@@ -30,6 +29,7 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     
     msgCatagoryLwPtr = new QListWidget();
     msgCatagoryLwPtr->addItems(*msgCatagoryStrLstPtr);
+    connect(msgCatagoryLwPtr, SIGNAL(itemSelectionChanged()), this, SLOT(handleSwapOptionsSlot()));
     specificMsgLwPtr = new QListWidget();
     specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(0)) ); // default: first option
     
@@ -38,6 +38,16 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     outerLayoutPtr->addWidget(specificMsgLwPtr, 0, 1);
     
     this->setLayout(outerLayoutPtr);
+}
+
+
+void NewFilePage_3::handleSwapOptionsSlot()
+{
+    cout << "swapping!" << endl;
+    specificMsgLwPtr->clear();
+    cout << "\tcleared selection" << endl;
+    specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(msgCatagoryLwPtr->currentRow()) ) ); // currentIndex() returns qt specific type
+    cout << "\tadding list at index:" << msgCatagoryLwPtr->currentRow() << endl;
 }
 
 
