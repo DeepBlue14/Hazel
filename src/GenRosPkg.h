@@ -11,6 +11,8 @@
 #include <QWidget>
 #include <QString>
 #include <QStringList>
+#include <QDir>
+#include <QVector>
 #include <QProcess>
 
 #include <iostream>
@@ -23,19 +25,24 @@ class GenRosPkg : public QWidget
             
     private:
         const int PKG_NAME_LOC;
-        QString* dirPathPtr;
+        QString* pkgPathPtr;
         QStringList* argsLstPtr;
         QProcess* genRosPkgProcessPtr;
+
+        QVector<QDir*>* pkgPtrVecPtr;
         
     private slots:
         ;
         
     public:
         GenRosPkg(QWidget* parent = 0);
-        void setDirPathPtr(QString* dirPathPtr);
-        QString* getDirPathPtr();
+        void setPkgPathPtr(QString* dirPathPtr);
+        QString* getPkgPathPtr();
         void setArgsLstPtr(QStringList* argsLstPtr);
         QStringList* getArgsLstPtr();
+        void addToPkgPtrVecPtr(QDir* pkg);//---
+        QDir* subFromPkgPtrVecPtr(QDir* pkg);
+        QVector<QDir*>* getPkgPtrVecPtr();//---
         bool initRosPkg();
         bool testRosPkg();
         ~GenRosPkg();

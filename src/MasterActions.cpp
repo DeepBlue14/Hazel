@@ -82,6 +82,7 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
 }
 
 
+/*
 void MasterActions::handleNewFileActionSlot()
 {
     newFileGuiPtr = new NewFileGui();
@@ -106,7 +107,15 @@ void MasterActions::handleNewFileActionSlot()
     
     masterTabWidgetPtr->addTab(editor, tr("File1"));
 }
-
+*/
+void MasterActions::handleNewFileActionSlot()
+{
+    newFileGuiPtr = new NewFileGui();
+    newFileGuiPtr->show();
+    
+    
+    
+}
 
 void MasterActions::handleNewTerminalActionSlot()
 {

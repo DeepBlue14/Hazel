@@ -12,7 +12,9 @@
 #include <QApplication>
 
 #include "MasterGui.h"
+
 #include "ParseFontConfigXml.h"
+#include "NewFileGui.h"
 
 
 int main(int argc, char *argv[]) {
@@ -22,11 +24,15 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     // create and show your widgets here
-    MasterGui masterGui;
-    masterGui.show();
+    //MasterGui masterGui;
+    //masterGui.show();
+    
     //ParseFontConfigXml parseFontConfigXml;
     //parseFontConfigXml.loadFile();
     //parseFontConfigXml.readDoc();
+    
+    NewFileGui newFileGui;
+    newFileGui.show();
     
     return app.exec();
     //return 0;

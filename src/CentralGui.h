@@ -1,6 +1,9 @@
 /* 
  * File:   CentralGui.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This file will contain the qcentralwidget of the
+ *                   qmainwindow.
  *
  * Created on May 6, 2015, 4:33 PM
  */
