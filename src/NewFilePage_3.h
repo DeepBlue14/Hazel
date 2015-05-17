@@ -36,6 +36,8 @@ class NewFilePage_3 : public QWidget
         
     public:
         NewFilePage_3(QWidget* parent = 0);
+        QString* getMsgCatagoryStrPtr();
+        QString* getSpecificMsgStrPtr();
         ~NewFilePage_3();
 };
 

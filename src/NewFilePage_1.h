@@ -11,6 +11,7 @@
 #include <QWidget>
 #include <QString>
 #include <QStringList>
+#include <QStringListModel>
 #include <QVector>
 #include <QListWidget>
 #include <QTextEdit>
@@ -24,7 +25,7 @@ class NewFilePage_1 : public QWidget
         QStringList* langsStrLstPtr;
         QVector<QStringList*> fileTypeStrLstPtrVec;
         QListWidget* langsLwPtr;
-        QListWidget* fileTypeLw;
+        QListWidget* fileTypeLwPtr;
         
         QGridLayout* outerLayoutPtr;
         
@@ -33,6 +34,9 @@ class NewFilePage_1 : public QWidget
         
     public:
         NewFilePage_1(QWidget* parent = 0);
+        QString* getLangStrPtr();
+        QString* getFileTypeStrPtr();
+        QString* toString();
         ~NewFilePage_1();
 };
 

@@ -1,5 +1,3 @@
-#include <qt4/QtGui/qstringlistmodel.h>
-
 #include "NewFilePage_1.h"
 
 
@@ -63,12 +61,12 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     fileTypeStrLstPtrVec.push_back(shellScriptsStrLstPtr);
     fileTypeStrLstPtrVec.push_back(otherStrLstPtr);
     
-    fileTypeLw = new QListWidget();
-    fileTypeLw->addItems(*(fileTypeStrLstPtrVec.at(0)) ); // default
+    fileTypeLwPtr = new QListWidget();
+    fileTypeLwPtr->addItems(*(fileTypeStrLstPtrVec.at(0)) ); // default
     
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addWidget(langsLwPtr, 0, 0);
-    outerLayoutPtr->addWidget(fileTypeLw, 0, 1);
+    outerLayoutPtr->addWidget(fileTypeLwPtr, 0, 1);
 
     this->setLayout(outerLayoutPtr);
 }
@@ -76,8 +74,30 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
 
 void NewFilePage_1::handleSwapOptionsSlot()
 {
-    fileTypeLw->clear();
-    fileTypeLw->addItems(*(fileTypeStrLstPtrVec.at(langsLwPtr->currentRow()) ) );
+    fileTypeLwPtr->clear();
+    fileTypeLwPtr->addItems(*(fileTypeStrLstPtrVec.at(langsLwPtr->currentRow()) ) );
+}
+
+
+QString* NewFilePage_1::getLangStrPtr()
+{
+    return new QString(langsLwPtr->currentItem()->text() );
+}
+
+
+QString* NewFilePage_1::getFileTypeStrPtr()
+{
+    return new QString(fileTypeLwPtr->currentItem()->text() );
+}
+
+
+QString* NewFilePage_1::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("Language: " + langsLwPtr->currentItem()->text() );
+    tmp->append("\nFile Type: " + fileTypeLwPtr->currentItem()->text() );
+    
+    return tmp;
 }
 
 

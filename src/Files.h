@@ -20,21 +20,7 @@
 class Files
 {
     private:
-        enum FileTypes
-        {
-            DOT_H,      // C header file
-            DOT_C,      // C source file
-            DOT_HPP,    // C++ header file
-            DOT_CPP,    //C++ source file
-            DOT_PY,     //Python source file
-            DOT_CFG,    //Python dynamic configuration file
-            DOT_XML,    //XML file
-            DOT_JSON,   //JSON file
-            DOT_LAUNCH, //ROS Launch file
-            DOT_JAVA,   //Java source file
-            DOT_LISP,   //Common Lisp source file
-            DOT_DB      //Database file
-        };
+        ;
         
         QByteArray* toQByteArray(QString* string);
         //QString* fromQByteArray(QByteArray* byteArray);

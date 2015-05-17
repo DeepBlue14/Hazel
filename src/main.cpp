@@ -15,7 +15,8 @@
 
 #include "ParseFontConfigXml.h"
 #include "NewFileGui.h"
-
+#include "Files.h"
+#include <QString>
 
 int main(int argc, char *argv[]) {
     // initialize resources, if needed
@@ -31,9 +32,12 @@ int main(int argc, char *argv[]) {
     //parseFontConfigXml.loadFile();
     //parseFontConfigXml.readDoc();
     
-    NewFileGui newFileGui;
-    newFileGui.show();
+    //NewFileGui newFileGui;
+    //newFileGui.show();
+    Files files;
+    QFile* tmp = new QFile(); tmp = files.createFile(new QString("Test_File"), new QString(".cpp") );
+    //files.openRdWrFile(tmp);
     
-    return app.exec();
-    //return 0;
+    //return app.exec();
+    return 0;
 }

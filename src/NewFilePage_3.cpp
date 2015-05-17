@@ -51,6 +51,18 @@ void NewFilePage_3::handleSwapOptionsSlot()
 }
 
 
+QString* NewFilePage_3::getMsgCatagoryStrPtr()
+{
+    return new QString(msgCatagoryLwPtr->currentItem()->text() );
+}
+
+
+QString* NewFilePage_3::getSpecificMsgStrPtr()
+{
+    return new QString(specificMsgLwPtr->currentItem()->text() );
+}
+
+
 NewFilePage_3::~NewFilePage_3()
 {
     ;
