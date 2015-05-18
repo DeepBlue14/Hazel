@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux-x86
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=Hazel
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/Hazel
+CND_ARTIFACT_NAME_Debug=ride
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/ride
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=Hazel.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/Hazel.tar
+CND_PACKAGE_NAME_Debug=ride.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/ride.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=Hazel
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/Hazel
+CND_ARTIFACT_NAME_Release=ride
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/ride
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=Hazel.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/Hazel.tar
+CND_PACKAGE_NAME_Release=ride.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/ride.tar
 #
 # include compiler specific variables
 #
