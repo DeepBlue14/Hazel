@@ -3,41 +3,32 @@
 
 NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
 {
-    projectNameLePtr = new QLineEdit(this);
-    projectLocationLePtr = new QLineEdit(this);
-    dirDialogPtr = new QFileDialog(this);
-    locPbPtr = new QPushButton("Select", this);
+    rosVersionsStrLstPtr = new QStringList();
+    rosVersionsStrLstPtr->push_back("Fuerte");
+    rosVersionsStrLstPtr->push_back("Groovy");
+    rosVersionsStrLstPtr->push_back("Hydro");
+    rosVersionsStrLstPtr->push_back("Indigo");
+    rosVersionsStrLstPtr->push_back("Jade");
     
-    connect(locPbPtr, SIGNAL(released()), this, SLOT(handleLocPbPtrSlot()));
+    rosVersionsLwPtr = new QListWidget();
+    rosVersionsLwPtr->addItems(*rosVersionsStrLstPtr);
+        
+    outerLayoutPtr = new QGridLayout();
+    outerLayoutPtr->addWidget(rosVersionsLwPtr);
     
-    locationLayout = new QGridLayout();
-    locationLayout->addWidget(projectLocationLePtr, 0, 0);
-    locationLayout->addWidget(locPbPtr, 0, 1);
-    
-    formLayout = new QFormLayout(this);
-    formLayout->addRow(tr("&Package Name"), projectNameLePtr);
-    formLayout->addRow(tr("Package Location"), locationLayout);
-    
-    projectTypeStrList = new QStringList();
-    projectTypeStrList->push_back("C/C++");
-    projectTypeStrList->push_back("Python");
-    projectTypeStrList->push_back("Java");
-    projectTypeStrList->push_back("Lisp");
-    
-    projectTypeLw = new QListWidget(this);
-    projectTypeLw->addItems(*projectTypeStrList);
-    formLayout->addRow(tr("&Type"), projectTypeLw);
-    
-    this->setLayout(formLayout);
+    this->setLayout(outerLayoutPtr);
 }
 
 
-void NewProjectPage_1::handleLocPbPtrSlot()
+void NewProjectPage_1::setRosVersionStrPtr()
 {
-    QString dirName = dirDialogPtr->getExistingDirectory(this, tr("&Open Directory"),
-            "/home",
-            QFileDialog::ShowDirsOnly
-            | QFileDialog::DontResolveSymlinks);
+    ;
+}
+
+
+QString* NewProjectPage_1::getRosVersionStrPtr()
+{
+    return rosVersionStrPtr;
 }
 
 

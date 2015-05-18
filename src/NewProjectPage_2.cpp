@@ -3,52 +3,41 @@
 
 NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
 {
-    authorNameLePtr = new QLineEdit();
-    authorEmailLePtr = new QLineEdit();
-    licenseListPtr = new QStringList();
-    licenseListPtr->push_back("BSD");
-    licenseListPtr->push_back("MIT");
-    licenseListPtr->push_back("GPL2");
-    licenseListPtr->push_back("Other");
-    licenseCbPtr = new QComboBox();
-    licenseCbPtr->addItems(*licenseListPtr);
-    connect (licenseCbPtr, SIGNAL(currentIndexChanged(const QString&)), this, SLOT(handleOtherLicenseSlot()));
-    licenseLePtr = new QLineEdit();
-    licenseLePtr->setVisible(false);
-    licenseLePtr->setEnabled(false);
-        
-    dependsLePtr = new QLineEdit();
-    dependsEnteredStrList = new QStringList();
-    dependsEnteredTypeLw = new QListWidget();
-        
-    formLayout = new QFormLayout();
-    formLayout->addRow(tr("&Author's Name"), authorNameLePtr);
-    formLayout->addRow(tr("&Author's Email"), authorEmailLePtr);
-    formLayout->addRow(tr("&License"), licenseCbPtr);
-    formLayout->addRow("", licenseLePtr);
+    projectNameLePtr = new QLineEdit(this);
+    projectLocationLePtr = new QLineEdit(this);
+    dirDialogPtr = new QFileDialog(this);
+    locPbPtr = new QPushButton("Select", this);
     
-    outerLayout = new QGridLayout();
-    outerLayout->addLayout(formLayout, 0, 0, Qt::AlignCenter);
+    connect(locPbPtr, SIGNAL(released()), this, SLOT(handleLocPbPtrSlot()));
     
-    this->setLayout(outerLayout);
+    locationLayout = new QGridLayout();
+    locationLayout->addWidget(projectLocationLePtr, 0, 0);
+    locationLayout->addWidget(locPbPtr, 0, 1);
+    
+    formLayout = new QFormLayout(this);
+    formLayout->addRow(tr("&Package Name"), projectNameLePtr);
+    formLayout->addRow(tr("Package Location"), locationLayout);
+    
+    projectTypeStrList = new QStringList();
+    projectTypeStrList->push_back("C/C++");
+    projectTypeStrList->push_back("Python");
+    projectTypeStrList->push_back("Java");
+    projectTypeStrList->push_back("Lisp");
+    
+    projectTypeLw = new QListWidget(this);
+    projectTypeLw->addItems(*projectTypeStrList);
+    formLayout->addRow(tr("&Type"), projectTypeLw);
+    
+    this->setLayout(formLayout);
 }
 
 
-void NewProjectPage_2::handleOtherLicenseSlot()
+void NewProjectPage_2::handleLocPbPtrSlot()
 {
-    //cout << "calling" << endl;
-    if(licenseCbPtr->currentText() == "Other")
-    {
-        cout << "display!" << endl;
-        licenseLePtr->setVisible(true);
-        licenseLePtr->setEnabled(true);
-    }
-    else
-    {
-        cout << "hide!" << endl;
-        licenseLePtr->setVisible(false);
-        licenseLePtr->setEnabled(false);
-    }
+    QString dirName = dirDialogPtr->getExistingDirectory(this, tr("&Open Directory"),
+            "/home",
+            QFileDialog::ShowDirsOnly
+            | QFileDialog::DontResolveSymlinks);
 }
 
 

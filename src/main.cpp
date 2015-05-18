@@ -13,9 +13,10 @@
 
 #include "MasterGui.h"
 
-#include "ParseFontConfigXml.h"
-#include "NewFileGui.h"
-
+//#include "ParseFontConfigXml.h"
+//#include "NewFileGui.h"
+//#include "File.h"
+//#include <QString>
 
 int main(int argc, char *argv[]) {
     // initialize resources, if needed
@@ -24,16 +25,20 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     // create and show your widgets here
-    //MasterGui masterGui;
-    //masterGui.show();
+    MasterGui masterGui;
+    masterGui.show();
     
     //ParseFontConfigXml parseFontConfigXml;
     //parseFontConfigXml.loadFile();
     //parseFontConfigXml.readDoc();
     
-    NewFileGui newFileGui;
-    newFileGui.show();
+    //NewFileGui newFileGui;
+    //newFileGui.show();
+    //Files files;
+    //QFile* tmp = new QFile(); tmp = files.createFile(new QString("/home/james/NetBeansProjects/Hazel/src/"),
+    //                                                 new QString("Test_File"),
+    //                                                 new QString(".cpp") );
+    //files.openRdWrFile(tmp);
     
     return app.exec();
-    //return 0;
 }

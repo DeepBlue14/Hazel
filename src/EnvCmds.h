@@ -1,12 +1,16 @@
 /* 
- * File:   GenRosPkg.h
- * Author: james
+ * File:   EnvCmds.h
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description:
+ * 
+ * Note: Change this class to an namespace?
  *
- * Created on May 8, 2015, 10:37 PM
+ * Created on May 17, 2015, 9:51 PM
  */
 
-#ifndef GENROSPKG_H
-#define	GENROSPKG_H
+#ifndef ENVCMDS_H
+#define	ENVCMDS_H
 
 #include <QWidget>
 #include <QString>
@@ -19,11 +23,11 @@
 
 using namespace std;
 
-class GenRosPkg : public QWidget
+class EnvCmds : public QWidget
 {
     Q_OBJECT
             
-    private:
+    private:   
         const int PKG_NAME_LOC;
         QString* pkgPathPtr;
         QStringList* argsLstPtr;
@@ -35,7 +39,7 @@ class GenRosPkg : public QWidget
         ;
         
     public:
-        GenRosPkg(QWidget* parent = 0);
+        EnvCmds(QWidget* parent = 0);
         void setPkgPathPtr(QString* dirPathPtr);
         QString* getPkgPathPtr();
         void setArgsLstPtr(QStringList* argsLstPtr);
@@ -45,7 +49,8 @@ class GenRosPkg : public QWidget
         QVector<QDir*>* getPkgPtrVecPtr();//---
         bool initRosPkg();
         bool testRosPkg();
-        ~GenRosPkg();
+        ~EnvCmds();
 };
 
-#endif	/* GENROSPKG_H */
+#endif	/* ENVCMDS_H */
+

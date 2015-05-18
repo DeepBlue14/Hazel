@@ -33,6 +33,8 @@ class NewFilePage_2 : public QWidget
         
     public:
         NewFilePage_2(QWidget* parent = 0);
+        QString* getOption();
+        QString* toString();
         ~NewFilePage_2();
 };
 

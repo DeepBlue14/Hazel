@@ -3,70 +3,52 @@
 
 NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
 {
-    dependsEnteredStrList = new QStringList();
+    authorNameLePtr = new QLineEdit();
+    authorEmailLePtr = new QLineEdit();
+    licenseListPtr = new QStringList();
+    licenseListPtr->push_back("BSD");
+    licenseListPtr->push_back("MIT");
+    licenseListPtr->push_back("GPL2");
+    licenseListPtr->push_back("Other");
+    licenseCbPtr = new QComboBox();
+    licenseCbPtr->addItems(*licenseListPtr);
+    connect (licenseCbPtr, SIGNAL(currentIndexChanged(const QString&)), this, SLOT(handleOtherLicenseSlot()));
+    licenseLePtr = new QLineEdit();
+    licenseLePtr->setVisible(false);
+    licenseLePtr->setEnabled(false);
+        
     dependsLePtr = new QLineEdit();
-    addToListBtnPtr = new QPushButton("->", this);
-    addToListBtnPtr->setToolTip("Add ros depend");
+    dependsEnteredStrList = new QStringList();
     dependsEnteredTypeLw = new QListWidget();
-    rmFromListBtnPtr = new QPushButton();
-    rmFromListBtnPtr->setIcon(QIcon("/home/james/NetBeansProjects/Hazel/images/RecycleBin.png"));
-    rmFromListBtnPtr->setIconSize(QSize(50, 50));
+        
+    formLayout = new QFormLayout();
+    formLayout->addRow(tr("&Author's Name"), authorNameLePtr);
+    formLayout->addRow(tr("&Author's Email"), authorEmailLePtr);
+    formLayout->addRow(tr("&License"), licenseCbPtr);
+    formLayout->addRow("", licenseLePtr);
     
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(dependsLePtr, 0, 0);
-    outerLayout->addWidget(addToListBtnPtr, 0, 1);
-    outerLayout->addWidget(dependsEnteredTypeLw, 0, 2);
-    outerLayout->addWidget(rmFromListBtnPtr, 1, 2);
-    
-    connect(addToListBtnPtr, SIGNAL(released() ), this, SLOT(handleAddToListBtnPtrSlot() ) );
-    connect(rmFromListBtnPtr, SIGNAL(released() ), this, SLOT(handleRmFromListBtnPtrSlot() ) );
+    outerLayout->addLayout(formLayout, 0, 0, Qt::AlignCenter);
     
     this->setLayout(outerLayout);
 }
 
 
-void NewProjectPage_3::handleAddToListBtnPtrSlot()
+void NewProjectPage_3::handleOtherLicenseSlot()
 {
-    //dependsLePtr->selectedText()
-    if(dependsLePtr->text() == "")
+    //cout << "calling" << endl;
+    if(licenseCbPtr->currentText() == "Other")
     {
-        return;
+        cout << "display!" << endl;
+        licenseLePtr->setVisible(true);
+        licenseLePtr->setEnabled(true);
     }
-    
-    QString* tmp = new QString();
-    *tmp = dependsLePtr->text();
-    dependsLePtr->setText("");
-    *tmp = tmp->simplified();
-    tmp->replace(" ", "");
-    
-    for(size_t i = 0; i < dependsEnteredStrList->length(); i++)
+    else
     {
-        if(tmp == dependsEnteredStrList->at(i) )
-        {
-            return; //if match is found, don't re-add it
-        }
+        cout << "hide!" << endl;
+        licenseLePtr->setVisible(false);
+        licenseLePtr->setEnabled(false);
     }
-
-    dependsEnteredStrList->push_back(*tmp);
-    dependsEnteredTypeLw->addItem(*tmp);
-}
-
-
-void NewProjectPage_3::handleRmFromListBtnPtrSlot()
-{
-    //cout << dependsEnteredTypeLw->selectedItems().at(0)->text().toStdString() << endl;
-    QListWidgetItem* tmp = dependsEnteredTypeLw->selectedItems().at(0);
-    dependsEnteredTypeLw->removeItemWidget(tmp);
-    
-    for(size_t i = 0; i < dependsEnteredStrList->length(); i++)
-    {
-        if(dependsEnteredStrList->at(i) == tmp->text() )
-        {
-            dependsEnteredStrList->removeAt(i);
-        }
-    }
-    
-    delete tmp;
 }
 
 

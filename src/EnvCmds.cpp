@@ -1,38 +1,38 @@
-#include "GenRosPkg.h"
+#include "EnvCmds.h"
 
 
-GenRosPkg::GenRosPkg(QWidget* parent) : QWidget(parent), PKG_NAME_LOC(0)
+EnvCmds::EnvCmds(QWidget* parent) : QWidget(parent), PKG_NAME_LOC(0)
 {
     argsLstPtr = new QStringList();
     genRosPkgProcessPtr = new QProcess();
 }
 
 
-void GenRosPkg::setPkgPathPtr(QString* dirPathPtr)
+void EnvCmds::setPkgPathPtr(QString* dirPathPtr)
 {
     this->pkgPathPtr = dirPathPtr;
 }
 
 
-QString* GenRosPkg::getPkgPathPtr()
+QString* EnvCmds::getPkgPathPtr()
 {
     return pkgPathPtr;
 }
 
 
-void GenRosPkg::setArgsLstPtr(QStringList* argsLstPtr)
+void EnvCmds::setArgsLstPtr(QStringList* argsLstPtr)
 {
     this->argsLstPtr = argsLstPtr;
 }
 
 
-QStringList* GenRosPkg::getArgsLstPtr()
+QStringList* EnvCmds::getArgsLstPtr()
 {
     return argsLstPtr;
 }
 
 
-bool GenRosPkg::initRosPkg()
+bool EnvCmds::initRosPkg()
 {
     genRosPkgProcessPtr->setWorkingDirectory(*pkgPathPtr);
     genRosPkgProcessPtr->start("catkin_create_pkg", *argsLstPtr);
@@ -41,7 +41,7 @@ bool GenRosPkg::initRosPkg()
 }
 
 
-bool GenRosPkg::testRosPkg()
+bool EnvCmds::testRosPkg()
 {
     if(genRosPkgProcessPtr->state() == QProcess::NotRunning)
     {
@@ -56,8 +56,7 @@ bool GenRosPkg::testRosPkg()
     return true; // *** CODE STUB--REPLACE ME ***
 }
 
-
-GenRosPkg::~GenRosPkg()
+EnvCmds::~EnvCmds()
 {
     ;
 }

@@ -132,6 +132,7 @@ void NewFileGui::swapNextPage()
             currentPage = PAGE_FOUR;
             nextBtn->setEnabled(false);
             finishBtn->setEnabled(true);
+            break;
         default:
             cerr << "ERROR in switch at: NewFileGui::swapNextPage()" << endl;
     }
