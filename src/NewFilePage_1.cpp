@@ -84,7 +84,14 @@ void NewFilePage_1::handleSwapOptionsSlot()
 
 void NewFilePage_1::setLangStrPtr()
 {
-    langStrPtr = new QString(langsLwPtr->currentItem()->text() );
+    if(langsLwPtr->selectedItems().size() != 0)
+    {
+        langStrPtr = new QString(langsLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_1::setLangStrPtr()" << endl;
+    }
 }
 
 
@@ -96,7 +103,14 @@ QString* NewFilePage_1::getLangStrPtr()
 
 void NewFilePage_1::setFileTypeStrPtr()
 {
-    fileTypeStrPtr = new QString(fileTypeLwPtr->currentItem()->text() );
+    if(fileTypeLwPtr->selectedItems().size() != 0)
+    {
+        fileTypeStrPtr = new QString(fileTypeLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_1::setFileTypeStrPtr()" << endl;
+    }
 }
 
 

@@ -58,7 +58,14 @@ void NewFilePage_3::handleSwapOptionsSlot()
 
 void NewFilePage_3::setMsgCatagoryStrPtr()
 {
-    msgCatagoryStrPtr = new QString(msgCatagoryLwPtr->currentItem()->text() );
+    if(msgCatagoryLwPtr->selectedItems().size() != 0)
+    {
+        msgCatagoryStrPtr = new QString(msgCatagoryLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_3::setMsgCatagoryStrPtr()" << endl;
+    }
 }
 
 
@@ -70,7 +77,14 @@ QString* NewFilePage_3::getMsgCatagoryStrPtr()
 
 void NewFilePage_3::setSpecificMsgStrPtr()
 {
-    specificMsgStrPtr = new QString(specificMsgLwPtr->currentItem()->text() );
+    if(specificMsgLwPtr->selectedItems().size() != 0)
+    {
+        specificMsgStrPtr = new QString(specificMsgLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_3::setSpecificMsgStrPtr()" << endl;
+    }
 }
 
 

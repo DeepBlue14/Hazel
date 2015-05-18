@@ -19,6 +19,10 @@
 #include <QTextEdit>
 #include <QGridLayout>
 
+#include <iostream>
+
+using namespace std;
+
 class NewFilePage_1 : public QWidget
 {
     Q_OBJECT

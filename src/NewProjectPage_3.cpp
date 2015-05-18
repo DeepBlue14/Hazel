@@ -54,7 +54,14 @@ void NewProjectPage_3::handleOtherLicenseSlot()
 
 void NewProjectPage_3::setAuthorNameStrPtr()
 {
-    authorNameStrPtr = new QString(authorNameLePtr->text() );
+    if(authorNameLePtr->text() != "")
+    {
+        authorNameStrPtr = new QString(authorNameLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_3::setAuthorNameStrPtr()" << endl;
+    }
 }
 
 
@@ -66,7 +73,14 @@ QString* NewProjectPage_3::getAuthorNameStrPtr()
 
 void NewProjectPage_3::setAuthorEmailStrPtr()
 {
-    authorEmailStrPtr = new QString(authorEmailLePtr->text() );
+    if(authorEmailLePtr->text() != "")
+    {
+        authorEmailStrPtr = new QString(authorEmailLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_3::setAuthorEmailStrPtr()" << endl;
+    }
 }
 
 
@@ -78,7 +92,14 @@ QString* NewProjectPage_3::getAuthorEmailStrPtr()
 
 void NewProjectPage_3::setLicenseStrPtr()
 {
-    licenseStrPtr = new QString(licenseCbPtr->currentText() );
+    if(licenseCbPtr->currentText() != "")
+    {
+        licenseStrPtr = new QString(licenseCbPtr->currentText() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_3::setLicenseStrPtr()" << endl;
+    }
 }
 
 

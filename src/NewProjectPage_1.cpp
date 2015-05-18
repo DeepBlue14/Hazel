@@ -28,6 +28,10 @@ void NewProjectPage_1::setRosVersionStrPtr()
     {
         rosVersionStrPtr = new QString(rosVersionsLwPtr->currentItem()->text() );
     }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_1::setRosVersionStrPtr()" << endl;
+    }
 }
 
 

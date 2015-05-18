@@ -1,7 +1,7 @@
 /* 
  * File:   NewFilePage_2.h
- * Author: james
- * Email: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description:
  *
  * Created on May 15, 2015, 9:25 AM

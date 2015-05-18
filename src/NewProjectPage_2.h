@@ -1,7 +1,7 @@
 /* 
  * File:   NewProjectPage_1.h
- * Author: james
- * Email: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
  * Created on May 5, 2015, 11:13 AM

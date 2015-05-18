@@ -49,7 +49,14 @@ void NewProjectPage_2::handleLocPbPtrSlot()
 
 void NewProjectPage_2::setProjectNameStrPtr()
 {
-    projectNameStrPtr = new QString(projectNameLePtr->text() );
+    if(projectNameLePtr->text() != "")
+    {
+        projectNameStrPtr = new QString(projectNameLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_2::setProjectNameStrPtr()" << endl;
+    }
 }
 
 
@@ -61,7 +68,14 @@ QString* NewProjectPage_2::getProjectNameStrPtr()
 
 void NewProjectPage_2::setProjectLocStrPtr()
 {
-    projectLocStrPtr = new QString(projectLocLePtr->text() );
+    if(projectLocLePtr->text() != "")
+    {
+        projectLocStrPtr = new QString(projectLocLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_2::setProjectLocStrPtr()" << endl;
+    }
 }
 
 
@@ -73,7 +87,14 @@ QString* NewProjectPage_2::getProjectLocStrPtr()
 
 void NewProjectPage_2::setProjectTypeStrPtr()
 {
-    projectTypeStrPtr = new QString(projectTypeLwPtr->currentItem()->text() );
+    if(projectTypeLwPtr->selectedItems().size() != 0)
+    {
+        projectTypeStrPtr = new QString(projectTypeLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_2::setProjectTypeStrPtr()" << endl;
+    }
 }
 
 

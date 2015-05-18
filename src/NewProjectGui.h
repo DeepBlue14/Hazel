@@ -29,53 +29,53 @@ class NewProjectGui : public QWidget
 {
     Q_OBJECT
             
-private:
-    enum Page
-    {
-        PAGE_ONE,
-        PAGE_TWO,
-        PAGE_THREE,
-        PAGE_FOUR
-    };
+    private:
+        enum Page
+        {
+            PAGE_ONE,
+            PAGE_TWO,
+            PAGE_THREE,
+            PAGE_FOUR
+        };
     
-    Page currentPage;
+        Page currentPage;
     
-    QPushButton* backBtn;
-    QPushButton* nextBtn;
-    QPushButton* finishBtn;
-    QPushButton* helpBtn;
-    QPushButton* cancelBtn;
+        QPushButton* backBtn;
+        QPushButton* nextBtn;
+        QPushButton* finishBtn;
+        QPushButton* helpBtn;
+        QPushButton* cancelBtn;
     
-    QGridLayout* outerLayout;
-    QHBoxLayout* buttonLayout;
+        QGridLayout* outerLayout;
+        QHBoxLayout* buttonLayout;
     
-    NewProjectPage_1* newProjectPage_1Ptr;
-    NewProjectPage_2* newProjectPage_2Ptr;
-    NewProjectPage_3* newProjectPage_3Ptr;
-    NewProjectPage_4* newProjectPage_4Ptr;
+        NewProjectPage_1* newProjectPage_1Ptr;
+        NewProjectPage_2* newProjectPage_2Ptr;
+        NewProjectPage_3* newProjectPage_3Ptr;
+        NewProjectPage_4* newProjectPage_4Ptr;
     
-private slots:
-    void handleBackBtnSlot();
-    void handleNextBtnSlot();
-    void handleFinishBtnSlot();
-    void handleHelpBntSlot();
-    void handleCancelBtnSlot();
+    private slots:
+        void handleBackBtnSlot();
+        void handleNextBtnSlot();
+        void handleFinishBtnSlot();
+        void handleHelpBntSlot();
+        void handleCancelBtnSlot();
     
-public:
-    NewProjectGui(QWidget* parent = 0);
-    void initBtns();
-    void swapNextPage();
-    void swapBackPage();
-    void loadPage_1();
-    void unloadPage_1();
-    void loadPage_2();
-    void unloadPage_2();
-    void loadPage_3();
-    void unloadPage_3();
-    void loadPage_4();
-    void unloadPage_4();
-    QString* toString();
-    ~NewProjectGui();
+    public:
+        NewProjectGui(QWidget* parent = 0);
+        void initBtns();
+        void swapNextPage();
+        void swapBackPage();
+        void loadPage_1();
+        void unloadPage_1();
+        void loadPage_2();
+        void unloadPage_2();
+        void loadPage_3();
+        void unloadPage_3();
+        void loadPage_4();
+        void unloadPage_4();
+        QString* toString();
+        S~NewProjectGui();
     
 };
 

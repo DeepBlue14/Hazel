@@ -63,7 +63,14 @@ void NewFilePage_4::initCore()
 
 void NewFilePage_4::setFileNameStrPtr()
 {
-    fileNameStrPtr = new QString(fileNameLePtr->text() );
+    if(fileNameLePtr->text() != "")
+    {
+        fileNameStrPtr = new QString(fileNameLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setFileNameStrPtr()" << endl;
+    }
 }
 
 
@@ -75,7 +82,14 @@ QString* NewFilePage_4::getFileNameStrPtr()
 
 void NewFilePage_4::setProjectStrPtr()
 {
-    projectStrPtr = new QString(projectLePtr->text() );
+    if(projectLePtr->text() != "")
+    {
+        projectStrPtr = new QString(projectLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setProjectStrPtr()" << endl;
+    }
 }
 
 
@@ -87,7 +101,14 @@ QString* NewFilePage_4::getProjectStrPtr()
 
 void NewFilePage_4::setLocStrPtr()
 {
-    this->locStrPtr = new QString(locCbPtr->currentText() );
+    if(locCbPtr->currentText() != "")
+    {
+        this->locStrPtr = new QString(locCbPtr->currentText() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setLocStrPtr()" << endl;
+    }
 }
 
 
@@ -99,7 +120,14 @@ QString* NewFilePage_4::getLocStrPtr()
 
 void NewFilePage_4::setFolderStrPtr()
 {
-    folderStrPtr = new QString(folderLePtr->text() );
+    if(folderLePtr->text() != "")
+    {
+        folderStrPtr = new QString(folderLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setFolderStrPtr()" << endl;
+    }
 }
 
 
@@ -111,7 +139,14 @@ QString* NewFilePage_4::getFolderStrPtr()
 
 void NewFilePage_4::setCreatedFileStrPtr()
 {
-    createdFileStrPtr = new QString(createdFileLePtr->text() );
+    if(createdFileLePtr->text() != "")
+    {
+        createdFileStrPtr = new QString(createdFileLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setCreatedFileStrPtr()" << endl;
+    }
 }
 
 

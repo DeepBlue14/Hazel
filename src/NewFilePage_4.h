@@ -1,5 +1,5 @@
 /* 
- * File:   NewFilePage_3.h
+ * File:   NewFilePage_4.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: 
@@ -20,52 +20,55 @@
 #include <QFormLayout>
 #include <QGridLayout>
 
+#include <iostream>
+
+using namespace std;
 
 class NewFilePage_4 : public QWidget
 {
     Q_OBJECT
             
-private:
-    QLineEdit* fileNameLePtr;
-    QStringList* fileExtsStrLstPtr;
-    QComboBox* fileExtCbPtr;
-    QCheckBox* defaultFileExtChbPtr;
-    QLineEdit* projectLePtr;
-    QComboBox* locCbPtr;
-    QLineEdit* folderLePtr;
-    QFileDialog* folderDialogPtr;
-    QPushButton* folderPbPtr;
-    QLineEdit* createdFileLePtr;
+    private:
+        QLineEdit* fileNameLePtr;
+        QStringList* fileExtsStrLstPtr;
+        QComboBox* fileExtCbPtr;
+        QCheckBox* defaultFileExtChbPtr;
+        QLineEdit* projectLePtr;
+        QComboBox* locCbPtr;
+        QLineEdit* folderLePtr;
+        QFileDialog* folderDialogPtr;
+        QPushButton* folderPbPtr;
+        QLineEdit* createdFileLePtr;
     
-    QGridLayout* folderLayoutPtr;
-    QFormLayout* formLayoutPtr;
-    QGridLayout* outerLayoutPtr;
+        QGridLayout* folderLayoutPtr;
+        QFormLayout* formLayoutPtr;
+        QGridLayout* outerLayoutPtr;
     
-    QString* fileNameStrPtr;
-    QString* projectStrPtr;
-    QString* locStrPtr;
-    QString* folderStrPtr;
-    QString* createdFileStrPtr;
+        QString* fileNameStrPtr;
+        QString* projectStrPtr;
+        QString* locStrPtr;
+        QString* folderStrPtr;
+        QString* createdFileStrPtr;
 
-private slots:
-    void handleFolderPbPtrSlot();
+    private slots:
+        void handleFolderPbPtrSlot();
     
-public:
-    NewFilePage_4(QWidget* parent = 0);
-    void initCore();
-    void setFileNameStrPtr();
-    QString* getFileNameStrPtr();
-    void setProjectStrPtr();
-    QString* getProjectStrPtr();
-    void setLocStrPtr();
-    QString* getLocStrPtr();
-    void setFolderStrPtr();
-    QString* getFolderStrPtr();
-    void setCreatedFileStrPtr();
-    QString* getCreatedFileStrPtr();
-    void triggerMutators();
-    QString* toString();
-    ~NewFilePage_4();
+    public:
+        NewFilePage_4(QWidget* parent = 0);
+        void initCore();
+        void setFileNameStrPtr();
+        QString* getFileNameStrPtr();
+        void setProjectStrPtr();
+        QString* getProjectStrPtr();
+        void setLocStrPtr();
+        QString* getLocStrPtr();
+        void setFolderStrPtr();
+        QString* getFolderStrPtr();
+        void setCreatedFileStrPtr();
+        QString* getCreatedFileStrPtr();
+        void triggerMutators();
+        QString* toString();
+        ~NewFilePage_4();
         
 };
 
