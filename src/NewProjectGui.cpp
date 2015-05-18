@@ -33,13 +33,22 @@ void NewProjectGui::handleBackBtnSlot()
 
 void NewProjectGui::handleNextBtnSlot()
 {
+    
     swapNextPage();
 }
 
 
 void NewProjectGui::handleFinishBtnSlot()
 {
-    ;
+    cout << "\"Finish\" button selected" << endl;
+    newProjectPage_1Ptr->triggerMutators();
+    cout << "successfully triggered p1" << endl;
+    newProjectPage_2Ptr->triggerMutators();
+    cout << "successfully triggered p2" << endl;
+    newProjectPage_3Ptr->triggerMutators();
+    cout << "successfully triggered p3" << endl;
+    //newProjectPage_4Ptr updates automatically
+    cout << toString()->toStdString() << endl;
 }
 
 
@@ -198,6 +207,27 @@ void NewProjectGui::unloadPage_4()
     outerLayout->removeWidget(newProjectPage_4Ptr);
     newProjectPage_4Ptr->setVisible(false);
     newProjectPage_4Ptr->setEnabled(false);
+}
+
+
+QString* NewProjectGui::toString()
+{
+    QString* tmp = new QString("NewProjectGui");
+    tmp->append("\n- - - - - - - - - -\n");
+    cout << "Fine here (0)" << endl;
+    tmp->append(newProjectPage_1Ptr->toString() );
+    cout << "Fine here (1)" << endl;
+    tmp->append("\n");
+    tmp->append(newProjectPage_2Ptr->toString() );
+    cout << "Fine here (2)" << endl;
+    tmp->append("\n");
+    tmp->append(newProjectPage_3Ptr->toString() );
+    cout << "Fine here (3)" << endl;
+    tmp->append("\n");
+    tmp->append(newProjectPage_4Ptr->toString() );
+    cout << "Fine here (4)" << endl;
+    
+    return tmp;
 }
 
 

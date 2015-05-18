@@ -39,7 +39,15 @@ void NewFileGui::handleNextBtnSlot()
 
 void NewFileGui::handleFinishBtnSlot()
 {
-    ;
+    cout << "\"Finish\" button selected" << endl;
+    newFilePage_1Ptr->triggerMutators();
+    cout << "successfully triggered f1" << endl;
+    newFilePage_2Ptr->triggerMutators();
+    cout << "successfully triggered f2" << endl;
+    newFilePage_3Ptr->triggerMutators();
+    cout << "successfully triggered f3" << endl;
+    //newFilePage_4Ptr updates automatically
+    cout << toString()->toStdString() << endl;
 }
 
 
@@ -200,6 +208,22 @@ void NewFileGui::unloadPage_4()
     outerLayout->removeWidget(newFilePage_4Ptr);
     newFilePage_4Ptr->setVisible(false);
     newFilePage_4Ptr->setEnabled(false);
+}
+
+
+QString* NewFileGui::toString()
+{
+    QString* tmp = new QString("NewProjectGui");
+    tmp->append("\n- - - - - - - - - -\n");
+    tmp->append(newFilePage_1Ptr->toString() );
+    tmp->append("\n");
+    tmp->append(newFilePage_2Ptr->toString() );
+    tmp->append("\n");
+    tmp->append(newFilePage_3Ptr->toString() );
+    tmp->append("\n");
+    tmp->append(newFilePage_4Ptr->toString() );
+    
+    return tmp;
 }
 
 

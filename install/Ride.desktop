@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Ride
+Commnet=Ride--an IDE for ROS.
+Exec=/home/james/NetBeansProjects/ride/dist/Debug/GNU-Linux-x86/Hazel
+Path=/home/james/NetBeansProjects/ride/dist/Debug/GNU-Linux-x86
+Icon=/home/james/NetBeansProjects/ride/images/Hazel.xpm
+Terminal=false
+Type=Application
+Categories=Utility;Application;Development;
+
+

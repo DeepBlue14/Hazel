@@ -16,6 +16,10 @@
 #include <QListWidget>
 #include <QGridLayout>
 
+#include <iostream>
+
+using namespace std;
+
 class NewProjectPage_1 : public QWidget
 {
     Q_OBJECT
@@ -34,6 +38,7 @@ class NewProjectPage_1 : public QWidget
         NewProjectPage_1(QWidget* parent = 0);
         void setRosVersionStrPtr();
         QString* getRosVersionStrPtr();
+        void triggerMutators();
         QString* toString();
         ~NewProjectPage_1();
 };

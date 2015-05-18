@@ -7,8 +7,8 @@
  * Created on May 15, 2015, 2:56 PM
  */
 
-#ifndef NEWFILEPAGE_4_H
-#define	NEWFILEPAGE_4_H
+#ifndef NEW_FILE_PAGE_4_H
+#define	NEW_FILE_PAGE_4_H
 
 #include <QWidget>
 #include <QString>
@@ -53,20 +53,20 @@ private slots:
 public:
     NewFilePage_4(QWidget* parent = 0);
     void initCore();
-    void setFileNameStrPtr(QString* fileNameStrPtr);
+    void setFileNameStrPtr();
     QString* getFileNameStrPtr();
-    void setProjectStrPtr(QString* projectStrPtr);
+    void setProjectStrPtr();
     QString* getProjectStrPtr();
-    void setLocStrPtr(QString* locStrPtr);
+    void setLocStrPtr();
     QString* getLocStrPtr();
-    void setFolderStrPtr(QString* folderStrPtr);
+    void setFolderStrPtr();
     QString* getFolderStrPtr();
-    void setCreatedFileStrPtr(QString* createdFileStrPtr);
+    void setCreatedFileStrPtr();
     QString* getCreatedFileStrPtr();
+    void triggerMutators();
     QString* toString();
     ~NewFilePage_4();
         
 };
 
-#endif	/* NEWFILEPAGE_4_H */
-
+#endif	/* NEW_FILE_PAGE_4_H */

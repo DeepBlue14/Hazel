@@ -3,6 +3,9 @@
 
 NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
 {
+    langStrPtr = new QString("");
+    fileTypeStrPtr = new QString("");
+    
     langsStrLstPtr = new QStringList();
     langsStrLstPtr->push_back("C");
     langsStrLstPtr->push_back("C++");
@@ -100,6 +103,13 @@ void NewFilePage_1::setFileTypeStrPtr()
 QString* NewFilePage_1::getFileTypeStrPtr()
 {
     return fileTypeStrPtr;
+}
+
+
+void NewFilePage_1::triggerMutators()
+{
+    setLangStrPtr();
+    setFileTypeStrPtr();
 }
 
 

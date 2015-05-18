@@ -12,6 +12,7 @@
 
 #include <QWidget>
 #include <QStringList>
+#include <QString>
 #include <QLineEdit>
 #include <QFileDialog>
 #include <QPushButton>
@@ -54,6 +55,7 @@ class NewProjectPage_2 : public QWidget
         QString* getProjectLocStrPtr();
         void setProjectTypeStrPtr();
         QString* getProjectTypeStrPtr();
+        void triggerMutators();
         QString* toString();
         ~NewProjectPage_2();
 };

@@ -7,8 +7,8 @@
  * Created on May 15, 2015, 10:53 PM
  */
 
-#ifndef NEWFILEPAGE_3_H
-#define	NEWFILEPAGE_3_H
+#ifndef NEW_FILE_PAGE_3_H
+#define	NEW_FILE_PAGE_3_H
 
 #include <QWidget>
 #include <QStringList>
@@ -45,8 +45,9 @@ class NewFilePage_3 : public QWidget
         QString* getMsgCatagoryStrPtr();
         void setSpecificMsgStrPtr();
         QString* getSpecificMsgStrPtr();
+        void triggerMutators();
         QString* toString();
         ~NewFilePage_3();
 };
 
-#endif	/* NEWFILEPAGE_3_H */
+#endif	/* NEW_FILE_PAGE_3_H */

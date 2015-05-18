@@ -36,4 +36,17 @@ Alternatively, you may append the whole name off the type to the variable.  For 
 - Slots: ```handle[name of variable]Slot()```
 - Signals: ```handle[name of variable]Signal()```
 
+**Structure of Frontend class:
 
+```C++
+private:
+    //QT GUI stuff
+    //Layout stuff
+    //Variables which will be set/get
+
+private slots:
+    ;
+
+public:
+    ;
+```

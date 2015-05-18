@@ -1,12 +1,14 @@
 /* 
  * File:   NewFile.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on April 22, 2015, 12:25 AM
  */
 
-#ifndef NEWFILEGUI_H
-#define	NEWFILEGUI_H
+#ifndef NEW_FILE_GUI_H
+#define	NEW_FILE_GUI_H
 
 #include <QWidget>
 #include <QString>
@@ -71,10 +73,11 @@ public:
     void loadPage_3();
     void unloadPage_3();
     void loadPage_4();
-    void unloadPage_4();    
+    void unloadPage_4();
+    QString* toString();
     ~NewFileGui();
     
 };
 
-#endif	/* NEWFILEGUI_H */
+#endif	/* NEW_FILE_GUI_H */
 

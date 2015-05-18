@@ -1,6 +1,7 @@
 /* 
  * File:   NewProjectPage_2.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: for package.xml data
  *
  * Created on May 5, 2015, 11:14 AM
@@ -50,6 +51,7 @@ class NewProjectPage_3 : public QWidget
         QString* getAuthorEmailStrPtr();
         void setLicenseStrPtr();
         QString* getLicenseStrPtr();
+        void triggerMutators();
         QString* toString();
         ~NewProjectPage_3();
 };

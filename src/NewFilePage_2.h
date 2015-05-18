@@ -38,6 +38,7 @@ class NewFilePage_2 : public QWidget
         NewFilePage_2(QWidget* parent = 0);
         void setOptionStrPtr();
         QString* getOptionStrPtr();
+        void triggerMutators();
         QString* toString();
         ~NewFilePage_2();
 };

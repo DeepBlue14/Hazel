@@ -43,6 +43,7 @@ class NewFilePage_1 : public QWidget
         QString* getLangStrPtr();
         void setFileTypeStrPtr();
         QString* getFileTypeStrPtr();
+        void triggerMutators();
         QString* toString();
         ~NewFilePage_1();
 };

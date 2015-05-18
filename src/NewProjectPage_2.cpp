@@ -5,6 +5,10 @@
 
 NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
 {
+    projectNameStrPtr = new QString("");
+    projectLocStrPtr = new QString("");
+    projectTypeStrPtr = new QString("");
+        
     projectNameLePtr = new QLineEdit(this);
     projectLocLePtr = new QLineEdit(this);
     dirDialogPtr = new QFileDialog(this);
@@ -89,6 +93,14 @@ QString* NewProjectPage_2::toString()
     tmp->append(getProjectTypeStrPtr() );
     
     return tmp;
+}
+
+
+void NewProjectPage_2::triggerMutators()
+{
+    setProjectNameStrPtr();
+    setProjectLocStrPtr();
+    setProjectTypeStrPtr();
 }
 
 

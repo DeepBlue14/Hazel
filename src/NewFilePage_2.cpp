@@ -3,6 +3,8 @@
 
 NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
 {
+    optionStrPtr = new QString("");
+    
     buttonGroupPtr = new QButtonGroup();
     buttonGroupPtr->addButton(new QRadioButton(tr("Empty")));
     buttonGroupPtr->addButton(new QRadioButton(tr("Class")));
@@ -29,6 +31,12 @@ void NewFilePage_2::setOptionStrPtr()
 QString* NewFilePage_2::getOptionStrPtr()
 {
     return optionStrPtr;
+}
+
+
+void NewFilePage_2::triggerMutators()
+{
+    setOptionStrPtr();
 }
 
 

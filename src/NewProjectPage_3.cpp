@@ -3,6 +3,10 @@
 
 NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
 {
+    authorNameStrPtr = new QString("");
+    authorEmailStrPtr = new QString("");
+    licenseStrPtr = new QString("");
+    
     authorNameLePtr = new QLineEdit();
     authorEmailLePtr = new QLineEdit();
     licenseListPtr = new QStringList();
@@ -94,6 +98,14 @@ QString* NewProjectPage_3::toString()
     tmp->append(getLicenseStrPtr() );
     
     return tmp;
+}
+
+
+void NewProjectPage_3::triggerMutators()
+{
+    setAuthorNameStrPtr();
+    setAuthorEmailStrPtr();
+    setLicenseStrPtr();
 }
 
 

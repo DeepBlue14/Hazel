@@ -30,8 +30,8 @@ read CHOICE
 if [ "$CHOICE" == "" ]; then
     echo "Installing to /usr..."
     cd /usr
-    git clone https://github.com/DeepBlue14/Hazel.git
-    xrdb ./Hazel/config/.Xresources
+    git clone https://github.com/DeepBlue14/ride.git
+    xrdb ./ride/config/.Xresources
 fi
 
 
@@ -40,7 +40,7 @@ echo "Would you like to create a desktop shortcut? (Y/n)"
 read CHOICE
 
 if [ "$CHOICE" == "Y" ] || [ "$CHOICE" == "y" ] || [ "$CHOICE" == "" ]; then
-    mv ./Hazel/install/Hazel.desktop ~/Desktop/Hazel.desktop
+    mv ./ride/install/Ride.desktop ~/Desktop/Ride.desktop
 fi    
 
 

@@ -1,8 +1,13 @@
+#include <qt4/QtCore/qstring.h>
+
 #include "NewFilePage_3.h"
 
 
 NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
 {
+    msgCatagoryStrPtr = new QString("");
+    specificMsgStrPtr = new QString("");
+    
     msgCatagoryStrLstPtr = new QStringList();
     msgCatagoryStrLstPtr->push_back("std_msgs");
     msgCatagoryStrLstPtr->push_back("sensor_msgs");
@@ -72,6 +77,13 @@ void NewFilePage_3::setSpecificMsgStrPtr()
 QString* NewFilePage_3::getSpecificMsgStrPtr()
 {
     return specificMsgStrPtr;
+}
+
+
+void NewFilePage_3::triggerMutators()
+{
+    setMsgCatagoryStrPtr();
+    setSpecificMsgStrPtr();
 }
 
 

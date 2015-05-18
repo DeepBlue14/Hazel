@@ -1,12 +1,14 @@
 /* 
  * File:   NewProject.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on April 22, 2015, 12:25 AM
  */
 
-#ifndef NEWPROJECT_H
-#define	NEWPROJECT_H
+#ifndef NEW_PROJECT_H
+#define	NEW_PROJECT_H
 
 #include <QWidget>
 #include <QListWidget>
@@ -71,10 +73,11 @@ public:
     void loadPage_3();
     void unloadPage_3();
     void loadPage_4();
-    void unloadPage_4();    
+    void unloadPage_4();
+    QString* toString();
     ~NewProjectGui();
     
 };
 
-#endif	/* NEWPROJECT_H */
+#endif	/* NEW_PROJECT_H */
 
