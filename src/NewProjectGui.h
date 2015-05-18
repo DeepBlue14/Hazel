@@ -21,6 +21,7 @@
 #include "NewProjectPage_1.h"
 #include "NewProjectPage_2.h"
 #include "NewProjectPage_3.h"
+#include "NewProjectPage_4.h"
 
 class NewProjectGui : public QWidget
 {
@@ -32,6 +33,7 @@ private:
         PAGE_ONE,
         PAGE_TWO,
         PAGE_THREE,
+        PAGE_FOUR
     };
     
     Page currentPage;
@@ -48,6 +50,7 @@ private:
     NewProjectPage_1* newProjectPage_1Ptr;
     NewProjectPage_2* newProjectPage_2Ptr;
     NewProjectPage_3* newProjectPage_3Ptr;
+    NewProjectPage_4* newProjectPage_4Ptr;
     
 private slots:
     void handleBackBtnSlot();
@@ -66,7 +69,9 @@ public:
     void loadPage_2();
     void unloadPage_2();
     void loadPage_3();
-    void unloadPage_3();    
+    void unloadPage_3();
+    void loadPage_4();
+    void unloadPage_4();    
     ~NewProjectGui();
     
 };

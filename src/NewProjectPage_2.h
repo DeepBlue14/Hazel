@@ -1,19 +1,21 @@
 /* 
- * File:   NewProjectPage_2.h
+ * File:   NewProjectPage_1.h
  * Author: james
- * File Description: for package.xml data
+ * Email: 
+ * File Description: 
  *
- * Created on May 5, 2015, 11:14 AM
+ * Created on May 5, 2015, 11:13 AM
  */
 
 #ifndef NEW_PROJECT_PAGE_2_H
 #define	NEW_PROJECT_PAGE_2_H
 
 #include <QWidget>
-#include <QLineEdit>
 #include <QStringList>
+#include <QLineEdit>
+#include <QFileDialog>
+#include <QPushButton>
 #include <QListWidget>
-#include <QComboBox>
 #include <QFormLayout>
 #include <QGridLayout>
 
@@ -26,25 +28,22 @@ class NewProjectPage_2 : public QWidget
     Q_OBJECT
            
     private:
-        QLineEdit* authorNameLePtr;
-        QLineEdit* authorEmailLePtr;
-        QStringList* licenseListPtr;
-        QComboBox* licenseCbPtr;
-        QLineEdit* licenseLePtr;
+        QLineEdit* projectNameLePtr;
+        QLineEdit* projectLocationLePtr;
+        QFileDialog* dirDialogPtr;
+        QPushButton* locPbPtr;
+        QStringList* projectTypeStrList;
+        QListWidget* projectTypeLw; //maxVisibleItems : int
         
-        QLineEdit* dependsLePtr;
-        QStringList* dependsEnteredStrList;
-        QListWidget* dependsEnteredTypeLw;
-        
+        QGridLayout* locationLayout;
         QFormLayout* formLayout;
         QGridLayout* outerLayout;
         
     private slots:
-        void handleOtherLicenseSlot();
+        void handleLocPbPtrSlot();
         
     public:
         NewProjectPage_2(QWidget* parent = 0);
-        
         ~NewProjectPage_2();
 };
 

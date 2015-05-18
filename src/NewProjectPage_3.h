@@ -1,18 +1,20 @@
 /* 
- * File:   NewProjectPage_3.h
+ * File:   NewProjectPage_2.h
  * Author: james
+ * File Description: for package.xml data
  *
- * Created on May 5, 2015, 1:36 PM
+ * Created on May 5, 2015, 11:14 AM
  */
 
-#ifndef NEWPROJECTPAGE_3_H
-#define	NEWPROJECTPAGE_3_H
+#ifndef NEW_PROJECT_PAGE_3_H
+#define	NEW_PROJECT_PAGE_3_H
 
 #include <QWidget>
-#include <QListWidget>
-#include <QStringList>
 #include <QLineEdit>
-#include <QPushButton>
+#include <QStringList>
+#include <QListWidget>
+#include <QComboBox>
+#include <QFormLayout>
 #include <QGridLayout>
 
 #include <iostream>
@@ -24,22 +26,27 @@ class NewProjectPage_3 : public QWidget
     Q_OBJECT
            
     private:
-        QStringList* dependsEnteredStrList;
-        QLineEdit* dependsLePtr;
-        QPushButton* addToListBtnPtr;
-        QListWidget* dependsEnteredTypeLw;
-        QPushButton* rmFromListBtnPtr;
+        QLineEdit* authorNameLePtr;
+        QLineEdit* authorEmailLePtr;
+        QStringList* licenseListPtr;
+        QComboBox* licenseCbPtr;
+        QLineEdit* licenseLePtr;
         
+        QLineEdit* dependsLePtr;
+        QStringList* dependsEnteredStrList;
+        QListWidget* dependsEnteredTypeLw;
+        
+        QFormLayout* formLayout;
         QGridLayout* outerLayout;
-
+        
     private slots:
-        void handleAddToListBtnPtrSlot();
-        void handleRmFromListBtnPtrSlot();
+        void handleOtherLicenseSlot();
         
     public:
         NewProjectPage_3(QWidget* parent = 0);
+        
         ~NewProjectPage_3();
 };
 
-#endif	/* NEWPROJECTPAGE_3_H */
+#endif	/* NEW_PROJECT_PAGE_3_H */
 

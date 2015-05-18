@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_NewProjectPage_2_t {
     QByteArrayData data[3];
-    char stringdata[42];
+    char stringdata[38];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,10 +30,10 @@ struct qt_meta_stringdata_NewProjectPage_2_t {
 static const qt_meta_stringdata_NewProjectPage_2_t qt_meta_stringdata_NewProjectPage_2 = {
     {
 QT_MOC_LITERAL(0, 0, 16),
-QT_MOC_LITERAL(1, 17, 22),
-QT_MOC_LITERAL(2, 40, 0)
+QT_MOC_LITERAL(1, 17, 18),
+QT_MOC_LITERAL(2, 36, 0)
     },
-    "NewProjectPage_2\0handleOtherLicenseSlot\0"
+    "NewProjectPage_2\0handleLocPbPtrSlot\0"
     "\0"
 };
 #undef QT_MOC_LITERAL
@@ -65,7 +65,7 @@ void NewProjectPage_2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     if (_c == QMetaObject::InvokeMetaMethod) {
         NewProjectPage_2 *_t = static_cast<NewProjectPage_2 *>(_o);
         switch (_id) {
-        case 0: _t->handleOtherLicenseSlot(); break;
+        case 0: _t->handleLocPbPtrSlot(); break;
         default: ;
         }
     }

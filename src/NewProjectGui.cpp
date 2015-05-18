@@ -7,6 +7,7 @@ NewProjectGui::NewProjectGui(QWidget* parent) : QWidget(parent)
     newProjectPage_1Ptr = new NewProjectPage_1();
     newProjectPage_2Ptr = new NewProjectPage_2();
     newProjectPage_3Ptr = new NewProjectPage_3();
+    newProjectPage_4Ptr = new NewProjectPage_4();
     
     currentPage = PAGE_ONE;
     
@@ -96,9 +97,13 @@ void NewProjectGui::swapBackPage()
             unloadPage_3();
             loadPage_2();
             currentPage = PAGE_TWO;
+            break;
+        case PAGE_FOUR:
+            unloadPage_4();
+            loadPage_3();
+            currentPage = PAGE_THREE;
             nextBtn->setEnabled(true);
             finishBtn->setEnabled(false);
-            break;
         default:
             cerr << "ERROR in switch at: NewProjectGui::swapBackPage()" << endl;
     }
@@ -119,9 +124,13 @@ void NewProjectGui::swapNextPage()
             unloadPage_2();
             loadPage_3();
             currentPage = PAGE_THREE;
+            break;
+        case PAGE_THREE:
+            unloadPage_3();
+            loadPage_4();
+            currentPage = PAGE_FOUR;
             nextBtn->setEnabled(false);
             finishBtn->setEnabled(true);
-            break;
         default:
             cerr << "ERROR in switch at: NewProjectGui::swapNextPage()" << endl;
     }
@@ -173,6 +182,22 @@ void NewProjectGui::unloadPage_3()
     outerLayout->removeWidget(newProjectPage_3Ptr);
     newProjectPage_3Ptr->setVisible(false);
     newProjectPage_3Ptr->setEnabled(false);
+}
+
+
+void NewProjectGui::loadPage_4()
+{
+    outerLayout->addWidget(newProjectPage_4Ptr, 0, 0);
+    newProjectPage_4Ptr->setVisible(true);
+    newProjectPage_4Ptr->setEnabled(true);
+}
+
+
+void NewProjectGui::unloadPage_4()
+{
+    outerLayout->removeWidget(newProjectPage_4Ptr);
+    newProjectPage_4Ptr->setVisible(false);
+    newProjectPage_4Ptr->setEnabled(false);
 }
 
 
