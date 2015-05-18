@@ -20,16 +20,22 @@ NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
 }
 
 
-QString* NewFilePage_2::getOption()
+void NewFilePage_2::setOptionStrPtr()
 {
-    return new QString(buttonGroupPtr->checkedButton()->text() );
+    optionStrPtr = new QString(buttonGroupPtr->checkedButton()->text() );
+}
+
+
+QString* NewFilePage_2::getOptionStrPtr()
+{
+    return optionStrPtr;
 }
 
 
 QString* NewFilePage_2::toString()
 {
-    QString* tmp = new QString();
-    tmp->append("File Subtype: " + buttonGroupPtr->checkedButton()->text() );
+    QString* tmp = new QString("File Subtype: ");
+    tmp->append(getOptionStrPtr() );
     
     return tmp;
 }

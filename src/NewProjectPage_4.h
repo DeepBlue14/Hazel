@@ -11,6 +11,7 @@
 #include <QWidget>
 #include <QListWidget>
 #include <QStringList>
+#include <QString>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QGridLayout>
@@ -31,6 +32,7 @@ class NewProjectPage_4 : public QWidget
         QPushButton* rmFromListBtnPtr;
         
         QGridLayout* outerLayout;
+        
 
     private slots:
         void handleAddToListBtnPtrSlot();
@@ -38,6 +40,7 @@ class NewProjectPage_4 : public QWidget
         
     public:
         NewProjectPage_4(QWidget* parent = 0);
+        QString* toString();
         ~NewProjectPage_4();
 };
 

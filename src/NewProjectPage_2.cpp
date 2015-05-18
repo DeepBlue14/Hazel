@@ -1,17 +1,19 @@
+#include <qt4/QtCore/qstring.h>
+
 #include "NewProjectPage_2.h"
 
 
 NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
 {
     projectNameLePtr = new QLineEdit(this);
-    projectLocationLePtr = new QLineEdit(this);
+    projectLocLePtr = new QLineEdit(this);
     dirDialogPtr = new QFileDialog(this);
     locPbPtr = new QPushButton("Select", this);
     
     connect(locPbPtr, SIGNAL(released()), this, SLOT(handleLocPbPtrSlot()));
     
     locationLayout = new QGridLayout();
-    locationLayout->addWidget(projectLocationLePtr, 0, 0);
+    locationLayout->addWidget(projectLocLePtr, 0, 0);
     locationLayout->addWidget(locPbPtr, 0, 1);
     
     formLayout = new QFormLayout(this);
@@ -24,9 +26,9 @@ NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
     projectTypeStrList->push_back("Java");
     projectTypeStrList->push_back("Lisp");
     
-    projectTypeLw = new QListWidget(this);
-    projectTypeLw->addItems(*projectTypeStrList);
-    formLayout->addRow(tr("&Type"), projectTypeLw);
+    projectTypeLwPtr = new QListWidget(this);
+    projectTypeLwPtr->addItems(*projectTypeStrList);
+    formLayout->addRow(tr("&Type"), projectTypeLwPtr);
     
     this->setLayout(formLayout);
 }
@@ -38,6 +40,55 @@ void NewProjectPage_2::handleLocPbPtrSlot()
             "/home",
             QFileDialog::ShowDirsOnly
             | QFileDialog::DontResolveSymlinks);
+}
+
+
+void NewProjectPage_2::setProjectNameStrPtr()
+{
+    projectNameStrPtr = new QString(projectNameLePtr->text() );
+}
+
+
+QString* NewProjectPage_2::getProjectNameStrPtr()
+{
+    return projectNameStrPtr;
+}
+
+
+void NewProjectPage_2::setProjectLocStrPtr()
+{
+    projectLocStrPtr = new QString(projectLocLePtr->text() );
+}
+
+
+QString* NewProjectPage_2::getProjectLocStrPtr()
+{
+    return projectLocStrPtr;
+}
+
+
+void NewProjectPage_2::setProjectTypeStrPtr()
+{
+    projectTypeStrPtr = new QString(projectTypeLwPtr->currentItem()->text() );
+}
+
+
+QString* NewProjectPage_2::getProjectTypeStrPtr()
+{
+    return projectTypeStrPtr;
+}
+
+
+QString* NewProjectPage_2::toString()
+{
+    QString* tmp = new QString("Project Name: ");
+    tmp->append(getProjectNameStrPtr() );
+    tmp->append("\nProject Location: ");
+    tmp->append(getProjectLocStrPtr() );
+    tmp->append("\nProject Type: ");
+    tmp->append(getProjectTypeStrPtr() );
+    
+    return tmp;
 }
 
 

@@ -11,6 +11,7 @@
 #define	NEW_FILE_PAGE_2_H
 
 #include <QWidget>
+#include <QString>
 #include <QRadioButton>
 #include <QButtonGroup>
 #include <QGridLayout>
@@ -28,12 +29,15 @@ class NewFilePage_2 : public QWidget
         
         QGridLayout* outerLayoutPtr;
         
+        QString* optionStrPtr;
+        
     private slots:
         ;
         
     public:
         NewFilePage_2(QWidget* parent = 0);
-        QString* getOption();
+        void setOptionStrPtr();
+        QString* getOptionStrPtr();
         QString* toString();
         ~NewFilePage_2();
 };

@@ -32,19 +32,25 @@ class NewProjectPage_3 : public QWidget
         QComboBox* licenseCbPtr;
         QLineEdit* licenseLePtr;
         
-        QLineEdit* dependsLePtr;
-        QStringList* dependsEnteredStrList;
-        QListWidget* dependsEnteredTypeLw;
-        
         QFormLayout* formLayout;
         QGridLayout* outerLayout;
+        
+        QString* authorNameStrPtr;
+        QString* authorEmailStrPtr;
+        QString* licenseStrPtr;
         
     private slots:
         void handleOtherLicenseSlot();
         
     public:
         NewProjectPage_3(QWidget* parent = 0);
-        
+        void setAuthorNameStrPtr();
+        QString* getAuthorNameStrPtr();
+        void setAuthorEmailStrPtr();
+        QString* getAuthorEmailStrPtr();
+        void setLicenseStrPtr();
+        QString* getLicenseStrPtr();
+        QString* toString();
         ~NewProjectPage_3();
 };
 

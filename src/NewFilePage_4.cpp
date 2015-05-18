@@ -117,6 +117,23 @@ QString* NewFilePage_4::getCreatedFileStrPtr()
 }
 
 
+QString* NewFilePage_4::toString()
+{
+    QString* tmp = new QString("File Name: ");
+    tmp->append(getFileNameStrPtr() );
+    tmp->append("\nProject Name: ");
+    tmp->append(getProjectStrPtr() );
+    tmp->append("\nLocation: ");
+    tmp->append(getLocStrPtr() );
+    tmp->append("\nFolder: ");
+    tmp->append(getFolderStrPtr() );
+    tmp->append("\nCreated File: ");
+    tmp->append(getCreatedFileStrPtr() );
+    
+    return tmp;
+}
+
+
 NewFilePage_4::~NewFilePage_4()
 {
     ;

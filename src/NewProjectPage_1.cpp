@@ -22,13 +22,22 @@ NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
 
 void NewProjectPage_1::setRosVersionStrPtr()
 {
-    ;
+    rosVersionStrPtr = new QString(rosVersionsLwPtr->currentItem()->text() );
 }
 
 
 QString* NewProjectPage_1::getRosVersionStrPtr()
 {
     return rosVersionStrPtr;
+}
+
+
+QString* NewProjectPage_1::toString()
+{
+    QString* tmp = new QString("Ros Version: ");
+    tmp->append(getRosVersionStrPtr() );
+    
+    return tmp;
 }
 
 

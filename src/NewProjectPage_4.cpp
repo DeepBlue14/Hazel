@@ -70,6 +70,20 @@ void NewProjectPage_4::handleRmFromListBtnPtrSlot()
 }
 
 
+QString* NewProjectPage_4::toString()
+{
+    QString* tmp = new QString("ROS Depends:");
+    
+    for(size_t i = 0; i < dependsEnteredStrList->size(); i++)
+    {
+        tmp->append("\n\t");
+        tmp->append(dependsEnteredStrList->at(i) );
+    }
+    
+    return tmp;
+}
+
+
 NewProjectPage_4::~NewProjectPage_4()
 {
     ;

@@ -79,23 +79,36 @@ void NewFilePage_1::handleSwapOptionsSlot()
 }
 
 
+void NewFilePage_1::setLangStrPtr()
+{
+    langStrPtr = new QString(langsLwPtr->currentItem()->text() );
+}
+
+
 QString* NewFilePage_1::getLangStrPtr()
 {
-    return new QString(langsLwPtr->currentItem()->text() );
+    return langStrPtr;
+}
+
+
+void NewFilePage_1::setFileTypeStrPtr()
+{
+    fileTypeStrPtr = new QString(fileTypeLwPtr->currentItem()->text() );
 }
 
 
 QString* NewFilePage_1::getFileTypeStrPtr()
 {
-    return new QString(fileTypeLwPtr->currentItem()->text() );
+    return fileTypeStrPtr;
 }
 
 
 QString* NewFilePage_1::toString()
 {
-    QString* tmp = new QString();
-    tmp->append("Language: " + langsLwPtr->currentItem()->text() );
-    tmp->append("\nFile Type: " + fileTypeLwPtr->currentItem()->text() );
+    QString* tmp = new QString("Language: ");
+    tmp->append(getLangStrPtr() );
+    tmp->append("\nFile Type: ");
+    tmp->append(getFileTypeStrPtr() );
     
     return tmp;
 }

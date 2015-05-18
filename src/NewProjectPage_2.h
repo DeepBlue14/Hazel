@@ -29,21 +29,32 @@ class NewProjectPage_2 : public QWidget
            
     private:
         QLineEdit* projectNameLePtr;
-        QLineEdit* projectLocationLePtr;
+        QLineEdit* projectLocLePtr;
         QFileDialog* dirDialogPtr;
         QPushButton* locPbPtr;
         QStringList* projectTypeStrList;
-        QListWidget* projectTypeLw; //maxVisibleItems : int
+        QListWidget* projectTypeLwPtr; //maxVisibleItems : int
         
         QGridLayout* locationLayout;
         QFormLayout* formLayout;
         QGridLayout* outerLayout;
+        
+        QString* projectNameStrPtr;
+        QString* projectLocStrPtr;
+        QString* projectTypeStrPtr;
         
     private slots:
         void handleLocPbPtrSlot();
         
     public:
         NewProjectPage_2(QWidget* parent = 0);
+        void setProjectNameStrPtr();
+        QString* getProjectNameStrPtr();
+        void setProjectLocStrPtr();
+        QString* getProjectLocStrPtr();
+        void setProjectTypeStrPtr();
+        QString* getProjectTypeStrPtr();
+        QString* toString();
         ~NewProjectPage_2();
 };
 

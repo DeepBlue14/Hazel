@@ -1,6 +1,8 @@
 /* 
  * File:   NewFilePage_3.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on May 15, 2015, 2:56 PM
  */
@@ -35,15 +37,15 @@ private:
     QPushButton* folderPbPtr;
     QLineEdit* createdFileLePtr;
     
+    QGridLayout* folderLayoutPtr;
+    QFormLayout* formLayoutPtr;
+    QGridLayout* outerLayoutPtr;
+    
     QString* fileNameStrPtr;
     QString* projectStrPtr;
     QString* locStrPtr;
     QString* folderStrPtr;
     QString* createdFileStrPtr;
-    
-    QGridLayout* folderLayoutPtr;
-    QFormLayout* formLayoutPtr;
-    QGridLayout* outerLayoutPtr;
 
 private slots:
     void handleFolderPbPtrSlot();
@@ -61,6 +63,7 @@ public:
     QString* getFolderStrPtr();
     void setCreatedFileStrPtr(QString* createdFileStrPtr);
     QString* getCreatedFileStrPtr();
+    QString* toString();
     ~NewFilePage_4();
         
 };

@@ -1,6 +1,8 @@
 /* 
  * File:   NewFilePage_3.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on May 15, 2015, 10:53 PM
  */
@@ -31,13 +33,19 @@ class NewFilePage_3 : public QWidget
         
         QGridLayout* outerLayoutPtr;
         
+        QString* msgCatagoryStrPtr;
+        QString* specificMsgStrPtr;
+        
     private slots:
         void handleSwapOptionsSlot();
         
     public:
         NewFilePage_3(QWidget* parent = 0);
+        void setMsgCatagoryStrPtr();
         QString* getMsgCatagoryStrPtr();
+        void setSpecificMsgStrPtr();
         QString* getSpecificMsgStrPtr();
+        QString* toString();
         ~NewFilePage_3();
 };
 
