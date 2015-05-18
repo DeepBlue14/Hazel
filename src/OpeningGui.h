@@ -18,8 +18,8 @@ class OpeningGui : public QWidget
     Q_OBJECT
             
 private:
-    QLabel* organizationNameLabelPtr;
-    QLabel* organizationNameIconLabelPtr;
+    //QLabel* organizationNameLabelPtr;
+    //QLabel* organizationNameIconLabelPtr;
     QLabel* applicationNameLabelPtr;
     QLabel* applicationNameIconLabelPtr;
     QLabel* githubLabelPtr;

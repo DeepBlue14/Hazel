@@ -2,8 +2,8 @@
 
 MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
 {
-    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/Hazel/images/hazel.xpm") );
-    this->setWindowTitle("Hazel IDE");
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowTitle("Ride");
     
     masterActions = new MasterActions();
     masterToolBars = new MasterToolBars();

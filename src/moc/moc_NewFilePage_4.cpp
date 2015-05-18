@@ -1,47 +1,25 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'NewFilePage_4.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
+** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.6)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include "../NewFilePage_4.h"
-#include <QtCore/qbytearray.h>
-#include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'NewFilePage_4.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.2.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.6. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_NewFilePage_4_t {
-    QByteArrayData data[3];
-    char stringdata[38];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    offsetof(qt_meta_stringdata_NewFilePage_4_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData) \
-    )
-static const qt_meta_stringdata_NewFilePage_4_t qt_meta_stringdata_NewFilePage_4 = {
-    {
-QT_MOC_LITERAL(0, 0, 13),
-QT_MOC_LITERAL(1, 14, 21),
-QT_MOC_LITERAL(2, 36, 0)
-    },
-    "NewFilePage_4\0handleFolderPbPtrSlot\0"
-    "\0"
-};
-#undef QT_MOC_LITERAL
-
 static const uint qt_meta_data_NewFilePage_4[] = {
 
  // content:
-       7,       // revision
+       6,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -51,18 +29,20 @@ static const uint qt_meta_data_NewFilePage_4[] = {
        0,       // flags
        0,       // signalCount
 
- // slots: name, argc, parameters, tag, flags
-       1,    0,   19,    2, 0x08,
-
- // slots: parameters
-    QMetaType::Void,
+ // slots: signature, parameters, type, tag, flags
+      15,   14,   14,   14, 0x08,
 
        0        // eod
+};
+
+static const char qt_meta_stringdata_NewFilePage_4[] = {
+    "NewFilePage_4\0\0handleFolderPbPtrSlot()\0"
 };
 
 void NewFilePage_4::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
         NewFilePage_4 *_t = static_cast<NewFilePage_4 *>(_o);
         switch (_id) {
         case 0: _t->handleFolderPbPtrSlot(); break;
@@ -72,21 +52,28 @@ void NewFilePage_4::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_a);
 }
 
-const QMetaObject NewFilePage_4::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_NewFilePage_4.data,
-      qt_meta_data_NewFilePage_4,  qt_static_metacall, 0, 0}
+const QMetaObjectExtraData NewFilePage_4::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
 };
 
+const QMetaObject NewFilePage_4::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_NewFilePage_4,
+      qt_meta_data_NewFilePage_4, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &NewFilePage_4::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
 
 const QMetaObject *NewFilePage_4::metaObject() const
 {
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
 void *NewFilePage_4::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_NewFilePage_4.stringdata))
+    if (!strcmp(_clname, qt_meta_stringdata_NewFilePage_4))
         return static_cast<void*>(const_cast< NewFilePage_4*>(this));
     return QWidget::qt_metacast(_clname);
 }
@@ -99,10 +86,6 @@ int NewFilePage_4::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
-            *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 1;
     }
     return _id;

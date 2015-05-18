@@ -8,16 +8,16 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     font->setBold(true);
     font->setPointSize(14);
     
-    applicationNameLabelPtr = new QLabel("Hazel IDE", this);
+    applicationNameLabelPtr = new QLabel("Ride", this);
     applicationNameLabelPtr->setFont(*font);
     applicationNameIconLabelPtr = new QLabel();
     
     //QPixmap organizationLogoPixmapPtr("/home/james/NetBeansProjects/Hazel/images/cs.xpm");
-    QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/Hazel/images/hazel.xpm");
+    //QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/Hazel/images/hazel.xpm");
     
     //organizationNameLabelPtr->setPixmap(organizationLogoPixmapPtr);
     //;
-    applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(50, 50, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
+    //applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(50, 50, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
     
     //QLabel::setOpenExternalLinks(true); //this is Qt > 4.2?
     githubLabelPtr = new QLabel("<u><a href=\"http://www.qtcentre.org\">QtCentre</a></u>");
