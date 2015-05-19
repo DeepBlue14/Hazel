@@ -3,6 +3,8 @@
 
 NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
 {
+    optionStrPtr = new QString("");
+    
     buttonGroupPtr = new QButtonGroup();
     buttonGroupPtr->addButton(new QRadioButton(tr("Empty")));
     buttonGroupPtr->addButton(new QRadioButton(tr("Class")));
@@ -20,16 +22,28 @@ NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
 }
 
 
-QString* NewFilePage_2::getOption()
+void NewFilePage_2::setOptionStrPtr()
 {
-    return new QString(buttonGroupPtr->checkedButton()->text() );
+    optionStrPtr = new QString(buttonGroupPtr->checkedButton()->text() );
+}
+
+
+QString* NewFilePage_2::getOptionStrPtr()
+{
+    return optionStrPtr;
+}
+
+
+void NewFilePage_2::triggerMutators()
+{
+    setOptionStrPtr();
 }
 
 
 QString* NewFilePage_2::toString()
 {
-    QString* tmp = new QString();
-    tmp->append("File Subtype: " + buttonGroupPtr->checkedButton()->text() );
+    QString* tmp = new QString("File Subtype: ");
+    tmp->append(getOptionStrPtr() );
     
     return tmp;
 }

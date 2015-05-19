@@ -1,6 +1,7 @@
 /* 
  * File:   NewProjectPage_2.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: for package.xml data
  *
  * Created on May 5, 2015, 11:14 AM
@@ -12,6 +13,7 @@
 #include <QWidget>
 #include <QLineEdit>
 #include <QStringList>
+#include <QString>
 #include <QListWidget>
 #include <QComboBox>
 #include <QFormLayout>
@@ -32,19 +34,26 @@ class NewProjectPage_3 : public QWidget
         QComboBox* licenseCbPtr;
         QLineEdit* licenseLePtr;
         
-        QLineEdit* dependsLePtr;
-        QStringList* dependsEnteredStrList;
-        QListWidget* dependsEnteredTypeLw;
-        
         QFormLayout* formLayout;
         QGridLayout* outerLayout;
+        
+        QString* authorNameStrPtr;
+        QString* authorEmailStrPtr;
+        QString* licenseStrPtr;
         
     private slots:
         void handleOtherLicenseSlot();
         
     public:
         NewProjectPage_3(QWidget* parent = 0);
-        
+        void setAuthorNameStrPtr();
+        QString* getAuthorNameStrPtr();
+        void setAuthorEmailStrPtr();
+        QString* getAuthorEmailStrPtr();
+        void setLicenseStrPtr();
+        QString* getLicenseStrPtr();
+        void triggerMutators();
+        QString* toString();
         ~NewProjectPage_3();
 };
 

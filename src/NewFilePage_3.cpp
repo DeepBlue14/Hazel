@@ -3,6 +3,9 @@
 
 NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
 {
+    msgCatagoryStrPtr = new QString("");
+    specificMsgStrPtr = new QString("");
+    
     msgCatagoryStrLstPtr = new QStringList();
     msgCatagoryStrLstPtr->push_back("std_msgs");
     msgCatagoryStrLstPtr->push_back("sensor_msgs");
@@ -51,15 +54,59 @@ void NewFilePage_3::handleSwapOptionsSlot()
 }
 
 
+void NewFilePage_3::setMsgCatagoryStrPtr()
+{
+    if(msgCatagoryLwPtr->selectedItems().size() != 0)
+    {
+        msgCatagoryStrPtr = new QString(msgCatagoryLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_3::setMsgCatagoryStrPtr()" << endl;
+    }
+}
+
+
 QString* NewFilePage_3::getMsgCatagoryStrPtr()
 {
-    return new QString(msgCatagoryLwPtr->currentItem()->text() );
+    return msgCatagoryStrPtr;
+}
+
+
+void NewFilePage_3::setSpecificMsgStrPtr()
+{
+    if(specificMsgLwPtr->selectedItems().size() != 0)
+    {
+        specificMsgStrPtr = new QString(specificMsgLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_3::setSpecificMsgStrPtr()" << endl;
+    }
 }
 
 
 QString* NewFilePage_3::getSpecificMsgStrPtr()
 {
-    return new QString(specificMsgLwPtr->currentItem()->text() );
+    return specificMsgStrPtr;
+}
+
+
+void NewFilePage_3::triggerMutators()
+{
+    setMsgCatagoryStrPtr();
+    setSpecificMsgStrPtr();
+}
+
+
+QString* NewFilePage_3::toString()
+{
+    QString* tmp = new QString("Msg Catagory: ");
+    tmp->append(getMsgCatagoryStrPtr() );
+    tmp->append("Specific Msg: ");
+    tmp->append(specificMsgStrPtr);
+    
+    return tmp;
 }
 
 

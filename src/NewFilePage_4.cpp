@@ -13,11 +13,11 @@ NewFilePage_4::NewFilePage_4(QWidget* parent) : QWidget(parent)
     folderPbPtr = new QPushButton("Browse...");
     createdFileLePtr = new QLineEdit();
     
-    fileNameStrPtr = new QString("newfile");
-    projectStrPtr = new QString();
-    locStrPtr = new QString();
-    folderStrPtr = new QString();
-    createdFileStrPtr = new QString();
+    fileNameStrPtr = new QString("");
+    projectStrPtr = new QString("");
+    locStrPtr = new QString("");
+    folderStrPtr = new QString("");
+    createdFileStrPtr = new QString("");
     
     folderLayoutPtr = new QGridLayout();
     folderLayoutPtr->addWidget(folderLePtr, 0, 0);
@@ -31,6 +31,8 @@ NewFilePage_4::NewFilePage_4(QWidget* parent) : QWidget(parent)
     formLayoutPtr->addRow(tr("Loca&tion"), locCbPtr);
     formLayoutPtr->addRow(tr("Folder"), folderLayoutPtr);
     formLayoutPtr->addRow(tr("&Created File:"), createdFileLePtr);
+    
+    initCore();
     
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addLayout(formLayoutPtr, 0, 0);
@@ -50,16 +52,25 @@ void NewFilePage_4::handleFolderPbPtrSlot()
 
 void NewFilePage_4::initCore()
 {
-    fileExtsStrLstPtr->push_back("cpp");
-    fileExtsStrLstPtr->push_back("c");
+    fileExtsStrLstPtr->push_back(".h");
+    fileExtsStrLstPtr->push_back(".hpp");
+    fileExtsStrLstPtr->push_back(".c");
+    fileExtsStrLstPtr->push_back(".cpp");
     fileExtCbPtr->addItems(*fileExtsStrLstPtr);
     connect(folderPbPtr, SIGNAL(released()), this, SLOT(handleFolderPbPtrSlot()));
 }
 
 
-void NewFilePage_4::setFileNameStrPtr(QString* fileNameStrPtr)
+void NewFilePage_4::setFileNameStrPtr()
 {
-    this->fileNameStrPtr = fileNameStrPtr;
+    if(fileNameLePtr->text() != "")
+    {
+        fileNameStrPtr = new QString(fileNameLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setFileNameStrPtr()" << endl;
+    }
 }
 
 
@@ -69,9 +80,16 @@ QString* NewFilePage_4::getFileNameStrPtr()
 }
 
 
-void NewFilePage_4::setProjectStrPtr(QString* projectStrPtr)
+void NewFilePage_4::setProjectStrPtr()
 {
-    this->projectStrPtr = projectStrPtr;
+    if(projectLePtr->text() != "")
+    {
+        projectStrPtr = new QString(projectLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setProjectStrPtr()" << endl;
+    }
 }
 
 
@@ -81,9 +99,16 @@ QString* NewFilePage_4::getProjectStrPtr()
 }
 
 
-void NewFilePage_4::setLocStrPtr(QString* locStrPtr)
+void NewFilePage_4::setLocStrPtr()
 {
-    this->locStrPtr = locStrPtr;
+    if(locCbPtr->currentText() != "")
+    {
+        this->locStrPtr = new QString(locCbPtr->currentText() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setLocStrPtr()" << endl;
+    }
 }
 
 
@@ -93,9 +118,16 @@ QString* NewFilePage_4::getLocStrPtr()
 }
 
 
-void NewFilePage_4::setFolderStrPtr(QString* folderStrPtr)
+void NewFilePage_4::setFolderStrPtr()
 {
-    this->folderStrPtr = folderStrPtr;
+    if(folderLePtr->text() != "")
+    {
+        folderStrPtr = new QString(folderLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setFolderStrPtr()" << endl;
+    }
 }
 
 
@@ -105,15 +137,49 @@ QString* NewFilePage_4::getFolderStrPtr()
 }
 
 
-void NewFilePage_4::setCreatedFileStrPtr(QString* createdFileStrPtr)
+void NewFilePage_4::setCreatedFileStrPtr()
 {
-    this->createdFileStrPtr = createdFileStrPtr;
+    if(createdFileLePtr->text() != "")
+    {
+        createdFileStrPtr = new QString(createdFileLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_4::setCreatedFileStrPtr()" << endl;
+    }
 }
 
 
 QString* NewFilePage_4::getCreatedFileStrPtr()
 {
     return createdFileStrPtr;
+}
+
+
+void NewFilePage_4::triggerMutators()
+{
+    setFileNameStrPtr();
+    setProjectStrPtr();
+    setLocStrPtr();
+    setFolderStrPtr();
+    setCreatedFileStrPtr();
+}
+
+
+QString* NewFilePage_4::toString()
+{
+    QString* tmp = new QString("File Name: ");
+    tmp->append(getFileNameStrPtr() );
+    tmp->append("\nProject Name: ");
+    tmp->append(getProjectStrPtr() );
+    tmp->append("\nLocation: ");
+    tmp->append(getLocStrPtr() );
+    tmp->append("\nFolder: ");
+    tmp->append(getFolderStrPtr() );
+    tmp->append("\nCreated File: ");
+    tmp->append(getCreatedFileStrPtr() );
+    
+    return tmp;
 }
 
 

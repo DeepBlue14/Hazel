@@ -33,13 +33,55 @@ void NewProjectGui::handleBackBtnSlot()
 
 void NewProjectGui::handleNextBtnSlot()
 {
+    
     swapNextPage();
 }
 
 
 void NewProjectGui::handleFinishBtnSlot()
 {
-    ;
+    cout << "\"Finish\" button selected" << endl;
+    newProjectPage_1Ptr->triggerMutators();
+    cout << "successfully triggered p1" << endl;
+    newProjectPage_2Ptr->triggerMutators();
+    cout << "successfully triggered p2" << endl;
+    newProjectPage_3Ptr->triggerMutators();
+    cout << "successfully triggered p3" << endl;
+    //newProjectPage_4Ptr updates automatically
+    cout << toString()->toStdString() << endl;
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    QProcess* process = new QProcess();
+    QDir dir; dir.setPath(*newProjectPage_2Ptr->getProjectLocStrPtr() );
+    process->setWorkingDirectory(dir.absolutePath() );
+    QDir::setCurrent(dir.absolutePath() );
+
+    QStringList* args = new QStringList();
+    
+    args->push_back("--rosdistro");
+    args->push_back(*newProjectPage_1Ptr->getRosVersionStrPtr() );
+    args->push_back(*newProjectPage_2Ptr->getProjectNameStrPtr() );
+    for(size_t i = 0; i < newProjectPage_4Ptr->getDependsEnteredStrList()->size(); i++)
+    {
+        args->push_back(newProjectPage_4Ptr->getDependsEnteredStrList()->at(i) );
+    }
+
+    //args->push_front("indigo");
+    //args->push_front("--rosdistro");
+
+    QStringList tmp0; tmp0.push_back("./../devel/setup.bash");
+    
+    process->setWorkingDirectory(dir.absolutePath() );
+    QDir::setCurrent(dir.absolutePath() );
+    process->execute("source", tmp0);
+    cout << "exe? " << process->startDetached("catkin_create_pkg", *args) << endl;
+
+    
+    process->waitForFinished();
+    QString output(process->readAllStandardOutput());
+    cout << output.toStdString() << endl;
+    cout << "\nfinished create!-------------------------" << endl;
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 }
 
 
@@ -198,6 +240,27 @@ void NewProjectGui::unloadPage_4()
     outerLayout->removeWidget(newProjectPage_4Ptr);
     newProjectPage_4Ptr->setVisible(false);
     newProjectPage_4Ptr->setEnabled(false);
+}
+
+
+QString* NewProjectGui::toString()
+{
+    QString* tmp = new QString("NewProjectGui");
+    tmp->append("\n- - - - - - - - - -\n");
+    cout << "Fine here (0)" << endl;
+    tmp->append(newProjectPage_1Ptr->toString() );
+    cout << "Fine here (1)" << endl;
+    tmp->append("\n");
+    tmp->append(newProjectPage_2Ptr->toString() );
+    cout << "Fine here (2)" << endl;
+    tmp->append("\n");
+    tmp->append(newProjectPage_3Ptr->toString() );
+    cout << "Fine here (3)" << endl;
+    tmp->append("\n");
+    tmp->append(newProjectPage_4Ptr->toString() );
+    cout << "Fine here (4)" << endl;
+    
+    return tmp;
 }
 
 

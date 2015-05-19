@@ -7,8 +7,8 @@
  * Created on May 12, 2015, 12:28 AM
  */
 
-#ifndef FILES_H
-#define	FILES_H
+#ifndef FILE_H
+#define	FILE_H
 
 #include <QWidget>
 #include <QFile>
@@ -79,4 +79,4 @@ class File
         ~File();
 };
 
-#endif	/* FILES_H */
+#endif	/* FILE_H */

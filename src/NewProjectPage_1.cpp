@@ -3,6 +3,8 @@
 
 NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
 {
+    rosVersionStrPtr = new QString("");
+    
     rosVersionsStrLstPtr = new QStringList();
     rosVersionsStrLstPtr->push_back("Fuerte");
     rosVersionsStrLstPtr->push_back("Groovy");
@@ -22,13 +24,35 @@ NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
 
 void NewProjectPage_1::setRosVersionStrPtr()
 {
-    ;
+    if(rosVersionsLwPtr->selectedItems().size() != 0)
+    {
+        rosVersionStrPtr = new QString(rosVersionsLwPtr->currentItem()->text().toLower() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_1::setRosVersionStrPtr()" << endl;
+    }
 }
 
 
 QString* NewProjectPage_1::getRosVersionStrPtr()
 {
     return rosVersionStrPtr;
+}
+
+
+QString* NewProjectPage_1::toString()
+{
+    QString* tmp = new QString("Ros Version: ");
+    tmp->append(getRosVersionStrPtr() );
+    
+    return tmp;
+}
+
+
+void NewProjectPage_1::triggerMutators()
+{
+    setRosVersionStrPtr();
 }
 
 

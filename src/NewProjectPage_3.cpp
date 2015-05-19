@@ -3,6 +3,10 @@
 
 NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
 {
+    authorNameStrPtr = new QString("");
+    authorEmailStrPtr = new QString("");
+    licenseStrPtr = new QString("");
+    
     authorNameLePtr = new QLineEdit();
     authorEmailLePtr = new QLineEdit();
     licenseListPtr = new QStringList();
@@ -16,10 +20,6 @@ NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
     licenseLePtr = new QLineEdit();
     licenseLePtr->setVisible(false);
     licenseLePtr->setEnabled(false);
-        
-    dependsLePtr = new QLineEdit();
-    dependsEnteredStrList = new QStringList();
-    dependsEnteredTypeLw = new QListWidget();
         
     formLayout = new QFormLayout();
     formLayout->addRow(tr("&Author's Name"), authorNameLePtr);
@@ -49,6 +49,84 @@ void NewProjectPage_3::handleOtherLicenseSlot()
         licenseLePtr->setVisible(false);
         licenseLePtr->setEnabled(false);
     }
+}
+
+
+void NewProjectPage_3::setAuthorNameStrPtr()
+{
+    if(authorNameLePtr->text() != "")
+    {
+        authorNameStrPtr = new QString(authorNameLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_3::setAuthorNameStrPtr()" << endl;
+    }
+}
+
+
+QString* NewProjectPage_3::getAuthorNameStrPtr()
+{
+    return authorNameStrPtr;
+}
+
+
+void NewProjectPage_3::setAuthorEmailStrPtr()
+{
+    if(authorEmailLePtr->text() != "")
+    {
+        authorEmailStrPtr = new QString(authorEmailLePtr->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_3::setAuthorEmailStrPtr()" << endl;
+    }
+}
+
+
+QString* NewProjectPage_3::getAuthorEmailStrPtr()
+{
+    return authorEmailStrPtr;
+}
+
+
+void NewProjectPage_3::setLicenseStrPtr()
+{
+    if(licenseCbPtr->currentText() != "")
+    {
+        licenseStrPtr = new QString(licenseCbPtr->currentText() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewProjectPage_3::setLicenseStrPtr()" << endl;
+    }
+}
+
+
+QString* NewProjectPage_3::getLicenseStrPtr()
+{
+    return licenseStrPtr;
+}
+
+
+QString* NewProjectPage_3::toString()
+{
+    QString* tmp = new QString("Author's Name: ");
+    tmp->append(getAuthorNameStrPtr() );
+    tmp->append("\nAuthor's Email: ");
+    tmp->append(getAuthorEmailStrPtr() );
+    tmp->append("\nLicense: ");
+    tmp->append(getLicenseStrPtr() );
+    
+    return tmp;
+}
+
+
+void NewProjectPage_3::triggerMutators()
+{
+    setAuthorNameStrPtr();
+    setAuthorEmailStrPtr();
+    setLicenseStrPtr();
 }
 
 

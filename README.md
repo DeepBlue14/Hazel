@@ -1,5 +1,5 @@
 #**Ride**
-####*(ROS Integrated Development Environment)*
+####_(**R**OS **I**ntegrated **D**evelopment **E**nvironment)_
 
 ###**Index**
 

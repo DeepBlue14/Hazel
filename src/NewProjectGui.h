@@ -1,12 +1,14 @@
 /* 
  * File:   NewProject.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on April 22, 2015, 12:25 AM
  */
 
-#ifndef NEWPROJECT_H
-#define	NEWPROJECT_H
+#ifndef NEW_PROJECT_H
+#define	NEW_PROJECT_H
 
 #include <QWidget>
 #include <QListWidget>
@@ -14,6 +16,7 @@
 #include <QStringList>
 #include <QFile>
 #include <QIcon>
+#include <QProcess>
 #include <QString>
 #include <QGridLayout>
 #include <QHBoxLayout>
@@ -27,54 +30,55 @@ class NewProjectGui : public QWidget
 {
     Q_OBJECT
             
-private:
-    enum Page
-    {
-        PAGE_ONE,
-        PAGE_TWO,
-        PAGE_THREE,
-        PAGE_FOUR
-    };
+    private:
+        enum Page
+        {
+            PAGE_ONE,
+            PAGE_TWO,
+            PAGE_THREE,
+            PAGE_FOUR
+        };
     
-    Page currentPage;
+        Page currentPage;
     
-    QPushButton* backBtn;
-    QPushButton* nextBtn;
-    QPushButton* finishBtn;
-    QPushButton* helpBtn;
-    QPushButton* cancelBtn;
+        QPushButton* backBtn;
+        QPushButton* nextBtn;
+        QPushButton* finishBtn;
+        QPushButton* helpBtn;
+        QPushButton* cancelBtn;
     
-    QGridLayout* outerLayout;
-    QHBoxLayout* buttonLayout;
+        QGridLayout* outerLayout;
+        QHBoxLayout* buttonLayout;
     
-    NewProjectPage_1* newProjectPage_1Ptr;
-    NewProjectPage_2* newProjectPage_2Ptr;
-    NewProjectPage_3* newProjectPage_3Ptr;
-    NewProjectPage_4* newProjectPage_4Ptr;
+        NewProjectPage_1* newProjectPage_1Ptr;
+        NewProjectPage_2* newProjectPage_2Ptr;
+        NewProjectPage_3* newProjectPage_3Ptr;
+        NewProjectPage_4* newProjectPage_4Ptr;
     
-private slots:
-    void handleBackBtnSlot();
-    void handleNextBtnSlot();
-    void handleFinishBtnSlot();
-    void handleHelpBntSlot();
-    void handleCancelBtnSlot();
+    private slots:
+        void handleBackBtnSlot();
+        void handleNextBtnSlot();
+        void handleFinishBtnSlot();
+        void handleHelpBntSlot();
+        void handleCancelBtnSlot();
     
-public:
-    NewProjectGui(QWidget* parent = 0);
-    void initBtns();
-    void swapNextPage();
-    void swapBackPage();
-    void loadPage_1();
-    void unloadPage_1();
-    void loadPage_2();
-    void unloadPage_2();
-    void loadPage_3();
-    void unloadPage_3();
-    void loadPage_4();
-    void unloadPage_4();    
-    ~NewProjectGui();
+    public:
+        NewProjectGui(QWidget* parent = 0);
+        void initBtns();
+        void swapNextPage();
+        void swapBackPage();
+        void loadPage_1();
+        void unloadPage_1();
+        void loadPage_2();
+        void unloadPage_2();
+        void loadPage_3();
+        void unloadPage_3();
+        void loadPage_4();
+        void unloadPage_4();
+        QString* toString();
+        ~NewProjectGui();
     
 };
 
-#endif	/* NEWPROJECT_H */
+#endif	/* NEW_PROJECT_H */
 

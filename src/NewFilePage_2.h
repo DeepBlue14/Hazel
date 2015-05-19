@@ -1,7 +1,7 @@
 /* 
  * File:   NewFilePage_2.h
- * Author: james
- * Email: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description:
  *
  * Created on May 15, 2015, 9:25 AM
@@ -11,6 +11,7 @@
 #define	NEW_FILE_PAGE_2_H
 
 #include <QWidget>
+#include <QString>
 #include <QRadioButton>
 #include <QButtonGroup>
 #include <QGridLayout>
@@ -28,12 +29,16 @@ class NewFilePage_2 : public QWidget
         
         QGridLayout* outerLayoutPtr;
         
+        QString* optionStrPtr;
+        
     private slots:
         ;
         
     public:
         NewFilePage_2(QWidget* parent = 0);
-        QString* getOption();
+        void setOptionStrPtr();
+        QString* getOptionStrPtr();
+        void triggerMutators();
         QString* toString();
         ~NewFilePage_2();
 };

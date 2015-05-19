@@ -3,6 +3,9 @@
 
 NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
 {
+    langStrPtr = new QString("");
+    fileTypeStrPtr = new QString("");
+    
     langsStrLstPtr = new QStringList();
     langsStrLstPtr->push_back("C");
     langsStrLstPtr->push_back("C++");
@@ -79,23 +82,57 @@ void NewFilePage_1::handleSwapOptionsSlot()
 }
 
 
+void NewFilePage_1::setLangStrPtr()
+{
+    if(langsLwPtr->selectedItems().size() != 0)
+    {
+        langStrPtr = new QString(langsLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_1::setLangStrPtr()" << endl;
+    }
+}
+
+
 QString* NewFilePage_1::getLangStrPtr()
 {
-    return new QString(langsLwPtr->currentItem()->text() );
+    return langStrPtr;
+}
+
+
+void NewFilePage_1::setFileTypeStrPtr()
+{
+    if(fileTypeLwPtr->selectedItems().size() != 0)
+    {
+        fileTypeStrPtr = new QString(fileTypeLwPtr->currentItem()->text() );
+    }
+    else
+    {
+        cerr << "Invalid input at NewFilePage_1::setFileTypeStrPtr()" << endl;
+    }
 }
 
 
 QString* NewFilePage_1::getFileTypeStrPtr()
 {
-    return new QString(fileTypeLwPtr->currentItem()->text() );
+    return fileTypeStrPtr;
+}
+
+
+void NewFilePage_1::triggerMutators()
+{
+    setLangStrPtr();
+    setFileTypeStrPtr();
 }
 
 
 QString* NewFilePage_1::toString()
 {
-    QString* tmp = new QString();
-    tmp->append("Language: " + langsLwPtr->currentItem()->text() );
-    tmp->append("\nFile Type: " + fileTypeLwPtr->currentItem()->text() );
+    QString* tmp = new QString("Language: ");
+    tmp->append(getLangStrPtr() );
+    tmp->append("\nFile Type: ");
+    tmp->append(getFileTypeStrPtr() );
     
     return tmp;
 }

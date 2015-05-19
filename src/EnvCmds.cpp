@@ -1,7 +1,7 @@
 #include "EnvCmds.h"
 
 
-EnvCmds::EnvCmds(QWidget* parent) : QWidget(parent), PKG_NAME_LOC(0)
+EnvCmds::EnvCmds(QWidget* parent) : QWidget(parent)
 {
     argsLstPtr = new QStringList();
     genRosPkgProcessPtr = new QProcess();
@@ -46,7 +46,7 @@ bool EnvCmds::testRosPkg()
     if(genRosPkgProcessPtr->state() == QProcess::NotRunning)
     {
         genRosPkgProcessPtr->start("source", *(new QStringList("devel/setup.bash")));
-        genRosPkgProcessPtr->start("catkin_make", *(new QStringList(argsLstPtr->at(PKG_NAME_LOC))));
+        genRosPkgProcessPtr->start("catkin_make", *(new QStringList(argsLstPtr->at(0))));
     }
     else
     {

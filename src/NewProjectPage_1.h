@@ -1,18 +1,24 @@
 /* 
  * File:   NewProjectPage_1.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description:
  *
  * Created on May 17, 2015, 11:20 PM
  */
 
-#ifndef NEWPROJECTPAGE_1_H
-#define	NEWPROJECTPAGE_1_H
+#ifndef NEW_PROJECT_PAGE_1_H
+#define	NEW_PROJECT_PAGE_1_H
 
 #include <QWidget>
 #include <QString>
 #include <QStringList>
 #include <QListWidget>
 #include <QGridLayout>
+
+#include <iostream>
+
+using namespace std;
 
 class NewProjectPage_1 : public QWidget
 {
@@ -32,8 +38,10 @@ class NewProjectPage_1 : public QWidget
         NewProjectPage_1(QWidget* parent = 0);
         void setRosVersionStrPtr();
         QString* getRosVersionStrPtr();
+        void triggerMutators();
+        QString* toString();
         ~NewProjectPage_1();
 };
 
-#endif	/* NEWPROJECTPAGE_1_H */
+#endif	/* NEW_PROJECT_PAGE_1_H */
 

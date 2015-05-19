@@ -1,6 +1,8 @@
 /* 
  * File:   NewProjectPage_3.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on May 5, 2015, 1:36 PM
  */
@@ -11,6 +13,7 @@
 #include <QWidget>
 #include <QListWidget>
 #include <QStringList>
+#include <QString>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QGridLayout>
@@ -31,6 +34,7 @@ class NewProjectPage_4 : public QWidget
         QPushButton* rmFromListBtnPtr;
         
         QGridLayout* outerLayout;
+        
 
     private slots:
         void handleAddToListBtnPtrSlot();
@@ -38,6 +42,8 @@ class NewProjectPage_4 : public QWidget
         
     public:
         NewProjectPage_4(QWidget* parent = 0);
+        QStringList* getDependsEnteredStrList();
+        QString* toString();
         ~NewProjectPage_4();
 };
 

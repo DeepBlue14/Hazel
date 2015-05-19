@@ -130,7 +130,16 @@ QByteArray* File::toQByteArray(QString* string)
 
 QString* File::toString()
 {
-    return new QString("***METHOD STUB***");
+    QString* tmp = new QString("File");
+    tmp->append("\n- - - - - - - - - - -\n");
+    tmp->append("Name: ");
+    tmp->append(getFilePtr()->fileName() );
+    //tmp->append("\nFile Language: ");
+    //tmp->append(getFileLangPtr() );
+    //tmp->append("\nFile Type");
+    //tmp->append(getFileTypePtr() );
+    
+    return tmp;
 }
 
 
