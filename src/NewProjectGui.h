@@ -16,6 +16,7 @@
 #include <QStringList>
 #include <QFile>
 #include <QIcon>
+#include <QProcess>
 #include <QString>
 #include <QGridLayout>
 #include <QHBoxLayout>
@@ -75,7 +76,7 @@ class NewProjectGui : public QWidget
         void loadPage_4();
         void unloadPage_4();
         QString* toString();
-        S~NewProjectGui();
+        ~NewProjectGui();
     
 };
 

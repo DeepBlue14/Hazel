@@ -1,12 +1,10 @@
-#include <qt4/QtCore/qstring.h>
-
 #include "NewProjectPage_2.h"
 
 
 NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
 {
     projectNameStrPtr = new QString("");
-    projectLocStrPtr = new QString("");
+    projectLocStrPtr = new QString("NULL");
     projectTypeStrPtr = new QString("");
         
     projectNameLePtr = new QLineEdit(this);
@@ -44,6 +42,8 @@ void NewProjectPage_2::handleLocPbPtrSlot()
             "/home",
             QFileDialog::ShowDirsOnly
             | QFileDialog::DontResolveSymlinks);
+    
+    projectLocLePtr->setText(dirName);
 }
 
 
@@ -67,7 +67,7 @@ QString* NewProjectPage_2::getProjectNameStrPtr()
 
 
 void NewProjectPage_2::setProjectLocStrPtr()
-{
+{ cout << "*** " << projectLocLePtr->text().toStdString() << " ***" << endl;
     if(projectLocLePtr->text() != "")
     {
         projectLocStrPtr = new QString(projectLocLePtr->text() );

@@ -28,7 +28,6 @@ class EnvCmds : public QWidget
     Q_OBJECT
             
     private:   
-        const int PKG_NAME_LOC;
         QString* pkgPathPtr;
         QStringList* argsLstPtr;
         QProcess* genRosPkgProcessPtr;

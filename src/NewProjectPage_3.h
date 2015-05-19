@@ -13,6 +13,7 @@
 #include <QWidget>
 #include <QLineEdit>
 #include <QStringList>
+#include <QString>
 #include <QListWidget>
 #include <QComboBox>
 #include <QFormLayout>

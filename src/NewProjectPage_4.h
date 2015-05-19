@@ -42,6 +42,7 @@ class NewProjectPage_4 : public QWidget
         
     public:
         NewProjectPage_4(QWidget* parent = 0);
+        QStringList* getDependsEnteredStrList();
         QString* toString();
         ~NewProjectPage_4();
 };

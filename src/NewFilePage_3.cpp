@@ -1,5 +1,3 @@
-#include <qt4/QtCore/qstring.h>
-
 #include "NewFilePage_3.h"
 
 
