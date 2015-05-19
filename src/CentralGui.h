@@ -16,7 +16,7 @@
 
 #include <iostream>
 
-#include "CentralTabs.h"
+#include "CentralCenterGui.h"
 #include "FileTreeGui.h"
 #include "OutputGui.h"
 
@@ -27,7 +27,7 @@ class CentralGui : public QWidget
     Q_OBJECT
             
     private:
-        CentralTabs* centralTabsPtr;
+        CentralCenterGui* centralTabsPtr;
         FileTreeGui* fileTreeGuiPtr;
         OutputGui* outputGuiPtr;
         
@@ -38,7 +38,7 @@ class CentralGui : public QWidget
         
     public:
         CentralGui(QWidget* parent = 0);
-        CentralTabs* getCentralTabsPtr();
+        CentralCenterGui* getCentralTabsPtr();
         ~CentralGui();
 };
 

@@ -26,7 +26,7 @@ void NewProjectPage_1::setRosVersionStrPtr()
 {
     if(rosVersionsLwPtr->selectedItems().size() != 0)
     {
-        rosVersionStrPtr = new QString(rosVersionsLwPtr->currentItem()->text() );
+        rosVersionStrPtr = new QString(rosVersionsLwPtr->currentItem()->text().toLower() );
     }
     else
     {

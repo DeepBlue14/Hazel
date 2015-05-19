@@ -50,42 +50,33 @@ void NewProjectGui::handleFinishBtnSlot()
     //newProjectPage_4Ptr updates automatically
     cout << toString()->toStdString() << endl;
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    /*
-    cout << "(at " << newProjectPage_2Ptr->getProjectLocStrPtr()->toStdString();
-    cout << ")\ncatkin_create_pkg ";
-    cout << newProjectPage_2Ptr->getProjectNameStrPtr()->toStdString();
-    
-    
-    for(size_t i = 0; i < newProjectPage_4Ptr->getDependsEnteredStrList()->size(); i++)
-    {
-        cout << " ";
-        cout << newProjectPage_4Ptr->getDependsEnteredStrList()->at(i).toStdString();
-    }
-    */
-    ///*
+
     QProcess* process = new QProcess();
     QDir dir; dir.setPath(*newProjectPage_2Ptr->getProjectLocStrPtr() );
     process->setWorkingDirectory(dir.absolutePath() );
     QDir::setCurrent(dir.absolutePath() );
-    cout << "***FROM: " << newProjectPage_2Ptr->getProjectLocStrPtr()->toStdString() << endl;
-    cout << "***FROM: " << dir.absolutePath().toStdString() << endl;
+
     QStringList* args = new QStringList();
-    args->push_back(*newProjectPage_2Ptr->getProjectNameStrPtr() );
     
+    args->push_back("--rosdistro");
+    args->push_back(*newProjectPage_1Ptr->getRosVersionStrPtr() );
+    args->push_back(*newProjectPage_2Ptr->getProjectNameStrPtr() );
     for(size_t i = 0; i < newProjectPage_4Ptr->getDependsEnteredStrList()->size(); i++)
     {
         args->push_back(newProjectPage_4Ptr->getDependsEnteredStrList()->at(i) );
     }
-    //*/
-    cout << "about to create!------------------------" << endl;
-    cout << "catkin_create_pkg";
-    for(size_t i = 0; i < args->size(); i++)
-        cout << " " << args->at(i).toStdString();
+
+    //args->push_front("indigo");
+    //args->push_front("--rosdistro");
+
     QStringList tmp0; tmp0.push_back("./../devel/setup.bash");
+    
     process->setWorkingDirectory(dir.absolutePath() );
     QDir::setCurrent(dir.absolutePath() );
-    process->start("catkin_create_pkg", *args);
-    //process->start("ls");
+    process->execute("source", tmp0);
+    cout << "exe? " << process->startDetached("catkin_create_pkg", *args) << endl;
+
+    
     process->waitForFinished();
     QString output(process->readAllStandardOutput());
     cout << output.toStdString() << endl;
