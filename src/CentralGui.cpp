@@ -3,7 +3,7 @@
 
 CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
 {
-    centralTabsPtr = new CentralCenterGui();
+    centralTabsPtr = new TabGui();
     fileTreeGuiPtr = new FileTreeGui();
     outputGuiPtr = new OutputGui();
     
@@ -25,7 +25,7 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
 }
 
 
-CentralCenterGui* CentralGui::getCentralTabsPtr()
+TabGui* CentralGui::getCentralTabsPtr()
 {
     return centralTabsPtr;
 }
