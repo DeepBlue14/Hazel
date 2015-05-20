@@ -93,7 +93,11 @@ void NewFileGui::handleFinishBtnSlot()
     
     masterTabWidgetPtr->addTab(editor, tr("File1") );
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     
+    //create physical file
+    
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 }
 
 
