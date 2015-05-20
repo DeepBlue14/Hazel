@@ -111,10 +111,8 @@ void MasterActions::handleNewFileActionSlot()
 void MasterActions::handleNewFileActionSlot()
 {
     newFileGuiPtr = new NewFileGui();
+    newFileGuiPtr->setMasterTabWidgetPtr(masterTabWidgetPtr);
     newFileGuiPtr->show();
-    
-    
-    
 }
 
 void MasterActions::handleNewTerminalActionSlot()

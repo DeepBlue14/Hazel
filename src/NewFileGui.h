@@ -16,10 +16,13 @@
 #include <QComboBox>
 #include <QCheckBox>
 #include <QPushButton>
+#include <QTabWidget>
 #include <QFileDialog>
 #include <QFormLayout>
 #include <QGridLayout>
 
+#include "FileGui.h"
+#include "Highlighter.h"
 #include "NewFilePage_1.h"
 #include "NewFilePage_2.h"
 #include "NewFilePage_3.h"
@@ -49,6 +52,10 @@ private:
     QGridLayout* outerLayout;
     QHBoxLayout* buttonLayout;
     
+    QTabWidget* masterTabWidgetPtr;
+    Highlighter* highlighterPtr;
+    FileGui* editor;
+    
     NewFilePage_1* newFilePage_1Ptr;
     NewFilePage_2* newFilePage_2Ptr;
     NewFilePage_3* newFilePage_3Ptr;
@@ -62,7 +69,11 @@ private slots:
     void handleCancelBtnSlot();
     
 public:
-    NewFileGui(QWidget* parent = 0);
+    NewFileGui(QWidget* parent = 0/*, QTabWidget* masterTabWidgetPtr = 0*/);
+    void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+    QTabWidget* getMasterTabWidgetPtr();
+    void setHighlighterPtr(Highlighter* highlighterPtr);
+    Highlighter* getHighlighterPtr();
     void initBtns();
     void swapNextPage();
     void swapBackPage();

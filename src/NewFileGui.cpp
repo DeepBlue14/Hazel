@@ -1,8 +1,8 @@
 #include "NewFileGui.h"
 
 
-NewFileGui::NewFileGui(QWidget* parent) : QWidget(parent)
-{
+NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent)
+{   
     outerLayout = new QGridLayout(this);
     newFilePage_1Ptr = new NewFilePage_1();
     newFilePage_2Ptr = new NewFilePage_2();
@@ -22,6 +22,30 @@ NewFileGui::NewFileGui(QWidget* parent) : QWidget(parent)
     backBtn->setStyleSheet(styleSheet);
     //--------------------------------------------------------------------------
     */
+}
+
+
+void NewFileGui::setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+{
+    this->masterTabWidgetPtr = masterTabWidgetPtr;
+}
+
+
+QTabWidget* NewFileGui::getMasterTabWidgetPtr()
+{
+    return masterTabWidgetPtr;
+}
+
+
+void NewFileGui::setHighlighterPtr(Highlighter* highlighter)
+{
+    this->highlighterPtr = highlighter;
+}
+
+
+Highlighter* NewFileGui::getHighlighterPtr()
+{
+    return highlighterPtr;
 }
 
 
@@ -48,6 +72,32 @@ void NewFileGui::handleFinishBtnSlot()
     cout << "successfully triggered f3" << endl;
     //newFilePage_4Ptr updates automatically
     cout << toString()->toStdString() << endl;
+    
+    //create file
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - -
+    cout << "***creating the actual file!***" << endl;
+    QFont font;
+    font.setFamily("Monospace");
+    font.setFixedPitch(true);
+    font.setPointSize(10);
+    font.setWeight(10);
+
+    editor = new FileGui();
+    editor->setFont(font);
+
+    setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
+
+    QFile file("mainwindow.h");
+    if (file.open(QFile::ReadOnly | QFile::Text) )
+        editor->setPlainText(file.readAll() );
+    
+    masterTabWidgetPtr->addTab(editor, tr("File1") );
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
+    //create physical file
+    
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 }
 
 
