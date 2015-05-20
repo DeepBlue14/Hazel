@@ -48,6 +48,9 @@ void NewFileGui::handleFinishBtnSlot()
     cout << "successfully triggered f3" << endl;
     //newFilePage_4Ptr updates automatically
     cout << toString()->toStdString() << endl;
+    
+    //create file
+    
 }
 
 
