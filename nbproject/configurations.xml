@@ -38,6 +38,7 @@
           <itemPath>src/NewProjectPage_4.h</itemPath>
           <itemPath>src/OpeningGui.h</itemPath>
           <itemPath>src/OutputGui.h</itemPath>
+          <itemPath>src/RideFont.h</itemPath>
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
           <itemPath>src/TabGui.h</itemPath>
@@ -88,6 +89,7 @@
           <itemPath>src/NewProjectPage_4.cpp</itemPath>
           <itemPath>src/OpeningGui.cpp</itemPath>
           <itemPath>src/OutputGui.cpp</itemPath>
+          <itemPath>src/RideFont.cpp</itemPath>
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
           <itemPath>src/TabGui.cpp</itemPath>
@@ -244,6 +246,10 @@
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -405,6 +411,10 @@
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

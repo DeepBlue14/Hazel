@@ -1,68 +1,25 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'MasterActions.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
+** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.6)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include "../MasterActions.h"
-#include <QtCore/qbytearray.h>
-#include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'MasterActions.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.2.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.6. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_MasterActions_t {
-    QByteArrayData data[15];
-    char stringdata[344];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    offsetof(qt_meta_stringdata_MasterActions_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData) \
-    )
-static const qt_meta_stringdata_MasterActions_t qt_meta_stringdata_MasterActions = {
-    {
-QT_MOC_LITERAL(0, 0, 13),
-QT_MOC_LITERAL(1, 14, 23),
-QT_MOC_LITERAL(2, 38, 0),
-QT_MOC_LITERAL(3, 39, 27),
-QT_MOC_LITERAL(4, 67, 26),
-QT_MOC_LITERAL(5, 94, 27),
-QT_MOC_LITERAL(6, 122, 23),
-QT_MOC_LITERAL(7, 146, 20),
-QT_MOC_LITERAL(8, 167, 20),
-QT_MOC_LITERAL(9, 188, 32),
-QT_MOC_LITERAL(10, 221, 21),
-QT_MOC_LITERAL(11, 243, 29),
-QT_MOC_LITERAL(12, 273, 19),
-QT_MOC_LITERAL(13, 293, 21),
-QT_MOC_LITERAL(14, 315, 27)
-    },
-    "MasterActions\0handleNewFileActionSlot\0"
-    "\0handleNewTerminalActionSlot\0"
-    "handleNewProjectActionSlot\0"
-    "handleOpenProjectActionSlot\0"
-    "handleSaveAllActionSlot\0handleUndoActionSlot\0"
-    "handleRedoActionSlot\0"
-    "handleSetProjectConfigActionSlot\0"
-    "handleBuildActionSlot\0"
-    "handleCleanAndBuildActionSlot\0"
-    "handleRunActionSlot\0handleDebugActionSlot\0"
-    "handleProfileProjActionSlot\0"
-};
-#undef QT_MOC_LITERAL
-
 static const uint qt_meta_data_MasterActions[] = {
 
  // content:
-       7,       // revision
+       6,       // revision
        0,       // classname
        0,    0, // classinfo
       13,   14, // methods
@@ -72,42 +29,42 @@ static const uint qt_meta_data_MasterActions[] = {
        0,       // flags
        0,       // signalCount
 
- // slots: name, argc, parameters, tag, flags
-       1,    0,   79,    2, 0x08,
-       3,    0,   80,    2, 0x08,
-       4,    0,   81,    2, 0x08,
-       5,    0,   82,    2, 0x08,
-       6,    0,   83,    2, 0x08,
-       7,    0,   84,    2, 0x08,
-       8,    0,   85,    2, 0x08,
-       9,    0,   86,    2, 0x08,
-      10,    0,   87,    2, 0x08,
-      11,    0,   88,    2, 0x08,
-      12,    0,   89,    2, 0x08,
-      13,    0,   90,    2, 0x08,
-      14,    0,   91,    2, 0x08,
-
- // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void,
+ // slots: signature, parameters, type, tag, flags
+      15,   14,   14,   14, 0x08,
+      41,   14,   14,   14, 0x08,
+      71,   14,   14,   14, 0x08,
+     100,   14,   14,   14, 0x08,
+     130,   14,   14,   14, 0x08,
+     156,   14,   14,   14, 0x08,
+     179,   14,   14,   14, 0x08,
+     202,   14,   14,   14, 0x08,
+     237,   14,   14,   14, 0x08,
+     261,   14,   14,   14, 0x08,
+     293,   14,   14,   14, 0x08,
+     315,   14,   14,   14, 0x08,
+     339,   14,   14,   14, 0x08,
 
        0        // eod
+};
+
+static const char qt_meta_stringdata_MasterActions[] = {
+    "MasterActions\0\0handleNewFileActionSlot()\0"
+    "handleNewTerminalActionSlot()\0"
+    "handleNewProjectActionSlot()\0"
+    "handleOpenProjectActionSlot()\0"
+    "handleSaveAllActionSlot()\0"
+    "handleUndoActionSlot()\0handleRedoActionSlot()\0"
+    "handleSetProjectConfigActionSlot()\0"
+    "handleBuildActionSlot()\0"
+    "handleCleanAndBuildActionSlot()\0"
+    "handleRunActionSlot()\0handleDebugActionSlot()\0"
+    "handleProfileProjActionSlot()\0"
 };
 
 void MasterActions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
+        Q_ASSERT(staticMetaObject.cast(_o));
         MasterActions *_t = static_cast<MasterActions *>(_o);
         switch (_id) {
         case 0: _t->handleNewFileActionSlot(); break;
@@ -129,21 +86,28 @@ void MasterActions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_a);
 }
 
-const QMetaObject MasterActions::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_MasterActions.data,
-      qt_meta_data_MasterActions,  qt_static_metacall, 0, 0}
+const QMetaObjectExtraData MasterActions::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
 };
 
+const QMetaObject MasterActions::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_MasterActions,
+      qt_meta_data_MasterActions, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &MasterActions::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
 
 const QMetaObject *MasterActions::metaObject() const
 {
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
 void *MasterActions::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_MasterActions.stringdata))
+    if (!strcmp(_clname, qt_meta_stringdata_MasterActions))
         return static_cast<void*>(const_cast< MasterActions*>(this));
     return QWidget::qt_metacast(_clname);
 }
@@ -156,10 +120,6 @@ int MasterActions::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         if (_id < 13)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 13)
-            *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 13;
     }
     return _id;
