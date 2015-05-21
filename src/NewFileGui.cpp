@@ -14,14 +14,6 @@ NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QW
     initBtns();
     
     this->setLayout(outerLayout);
-    /*
-    //--------------------------------------------------------------------------
-    QFile file("/home/james/NetBeansFiles/Hazel/src/qss/Dark.css");
-    file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String(file.readAll());
-    backBtn->setStyleSheet(styleSheet);
-    //--------------------------------------------------------------------------
-    */
 }
 
 
@@ -89,6 +81,9 @@ void NewFileGui::handleFinishBtnSlot()
     //create physical file and tab
     RideFile* rideFile = new RideFile();
     QFile* tmp = new QFile();
+    //-----------------
+    cout << toString()->toStdString() << endl;
+    //-----------------
     tmp = rideFile->createFile(new QString("/home/james/NetBeansProjects/ride/"),
                                                      new QString("Test_File"),
                                                      new QString(".cpp") );
