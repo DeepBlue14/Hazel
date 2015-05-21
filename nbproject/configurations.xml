@@ -9,9 +9,9 @@
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
           <itemPath>src/EnvCmds.h</itemPath>
-          <itemPath>src/File.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
+          <itemPath>src/RideFile.h</itemPath>
           <itemPath>src/Terminal.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="frontend" projectFiles="true">
@@ -60,9 +60,9 @@
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
           <itemPath>src/EnvCmds.cpp</itemPath>
-          <itemPath>src/File.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
+          <itemPath>src/RideFile.cpp</itemPath>
           <itemPath>src/Terminal.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="frontend" projectFiles="true">
@@ -147,10 +147,6 @@
       </item>
       <item path="src/EnvCmds.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/File.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
@@ -246,6 +242,10 @@
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -312,10 +312,6 @@
       </item>
       <item path="src/EnvCmds.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/File.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
@@ -411,6 +407,10 @@
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>

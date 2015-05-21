@@ -75,7 +75,6 @@ void NewFileGui::handleFinishBtnSlot()
     
     //create file
     //- - - - - - - - - - - - - - - - - - - - - - - - - - -
-    cout << "***creating the actual file!***" << endl;
     QFont font;
     font.setFamily("Monospace");
     font.setFixedPitch(true);
@@ -87,17 +86,18 @@ void NewFileGui::handleFinishBtnSlot()
 
     setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
 
-    QFile file("mainwindow.h");
-    if (file.open(QFile::ReadOnly | QFile::Text) )
-        editor->setPlainText(file.readAll() );
-    
-    masterTabWidgetPtr->addTab(editor, tr("File1") );
-    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    
-    //create physical file
-    
-    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    //create physical file and tab
+    RideFile* rideFile = new RideFile();
+    QFile* tmp = new QFile();
+    tmp = rideFile->createFile(new QString("/home/james/NetBeansProjects/ride/"),
+                                                     new QString("Test_File"),
+                                                     new QString(".cpp") );
+    rideFile->openRdWrFile(tmp);
+    rideFile->setFilePtr(tmp);
+    editor->setPlainText(rideFile->getFilePtr()->readAll() );
+    masterTabWidgetPtr->addTab(editor, tr("File1"));
+    cout << "Successfully ended file creation sequence" << endl;
+    this->close();
 }
 
 
