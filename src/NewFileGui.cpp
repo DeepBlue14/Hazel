@@ -1,3 +1,5 @@
+#include <qt4/QtCore/qstring.h>
+
 #include "NewFileGui.h"
 
 
@@ -84,6 +86,8 @@ void NewFileGui::handleFinishBtnSlot()
     //-----------------
     cout << toString()->toStdString() << endl;
     //-----------------
+    QString* combine = new QString(newFilePage_4Ptr->getLocStrPtr()
+                            + newFilePage_4Ptr->getFileNameStrPtr() + newFilePage_4Ptr);
     tmp = rideFile->createFile(new QString("/home/james/NetBeansProjects/ride/"),
                                                      new QString("Test_File"),
                                                      new QString(".cpp") );

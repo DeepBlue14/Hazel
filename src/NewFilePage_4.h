@@ -45,6 +45,7 @@ class NewFilePage_4 : public QWidget
         QGridLayout* outerLayoutPtr;
     
         QString* fileNameStrPtr;
+        QString* fileExtStrPtr;
         QString* projectStrPtr;
         QString* locStrPtr;
         QString* folderStrPtr;
@@ -58,6 +59,8 @@ class NewFilePage_4 : public QWidget
         void initCore();
         void setFileNameStrPtr();
         QString* getFileNameStrPtr();
+        void setFileExtStrPtr();
+        QString* getFileExtStrPtr();
         void setProjectStrPtr();
         QString* getProjectStrPtr();
         void setLocStrPtr();

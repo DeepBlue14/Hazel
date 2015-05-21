@@ -80,6 +80,18 @@ QString* NewFilePage_4::getFileNameStrPtr()
 }
 
 
+void NewFilePage_4::setFileExtStrPtr()
+{
+    fileExtStrPtr = fileExtCbPtr->currentText();
+}
+
+
+QString NewFilePage_4::getFileExtStrPtr()
+{
+    return fileExtStrPtr;
+}
+
+
 void NewFilePage_4::setProjectStrPtr()
 {
     if(projectLePtr->text() != "")

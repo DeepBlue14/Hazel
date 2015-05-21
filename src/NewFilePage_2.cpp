@@ -24,14 +24,18 @@ NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
 
 void NewFilePage_2::setOptionStrPtr()
 {
-    //if()
-    //{
-        optionStrPtr = new QString(buttonGroupPtr->checkedButton()->text() );
-    //}
+    for(size_t i = 0; i < buttonGroupPtr->children().size(); i++)
+    {
+        if(buttonGroupPtr->button(i)->isChecked() )
+        {
+            optionStrPtr = new QString(buttonGroupPtr->checkedButton()->text() );
+            return;
+        }
+    }
+    
     //else
-    //{
-    //    cerr << "Invalid input at NewFilePage_2::setOptionStrPtr()" << endl;
-    //}
+    buttonGroupPtr->button(0)->setChecked(true);
+    optionStrPtr = new QString(buttonGroupPtr->checkedButton()->text() );
 }
 
 
