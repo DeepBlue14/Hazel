@@ -26,55 +26,61 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     
     saveAllActionPtr = new QAction(QIcon("images/save.jpg"), tr("&Save All"), this);
     saveAllActionPtr->setShortcut(QKeySequence::New);
-    saveAllActionPtr->setStatusTip("Open Existing Project");
+    saveAllActionPtr->setStatusTip("Save All");
     connect(saveAllActionPtr, SIGNAL(triggered() ), this, SLOT(handleSaveAllActionSlot() ) );
     
     
     undoActionPtr = new QAction(QIcon("images/undo.jpg"), tr("&Undo"), this);
     undoActionPtr->setShortcut(QKeySequence::New);
-    undoActionPtr->setStatusTip("Open Existing Project");
+    undoActionPtr->setStatusTip("Undo");
     connect(undoActionPtr, SIGNAL(triggered() ), this, SLOT(handleUndoActionSlot() ) );
     
     
     redoActionPtr = new QAction(QIcon("images/redo.jpg"), tr("&Redo"), this);
     redoActionPtr->setShortcut(QKeySequence::New);
-    redoActionPtr->setStatusTip("Open Existing Project");
+    redoActionPtr->setStatusTip("Redo");
     connect(redoActionPtr, SIGNAL(triggered() ), this, SLOT(handleRedoActionSlot() ) );
     
 
     setProjectConfigActionPtr = new QAction(QIcon("images/generate.jpg"), tr("&set Project Configuration"), this);
     setProjectConfigActionPtr->setShortcut(QKeySequence::New);
-    setProjectConfigActionPtr->setStatusTip("Open Existing Project");
+    setProjectConfigActionPtr->setStatusTip("Configure");
     connect(setProjectConfigActionPtr, SIGNAL(triggered() ), this, SLOT(handleSetProjectConfigActionSlot() ) );
     
     
     buildActionPtr = new QAction(QIcon("images/build.jpg"), tr("&Build Project"), this);
     buildActionPtr->setShortcut(QKeySequence::New);
-    buildActionPtr->setStatusTip("Open Existing Project");
+    buildActionPtr->setStatusTip("Build");
     connect(buildActionPtr, SIGNAL(triggered() ), this, SLOT(handleBuildActionSlot() ) );
     
     
     cleanAndBuildActionPtr = new QAction(QIcon("images/cleanAndBuild.jpg"), tr("&Clean and Build Project"), this);
     cleanAndBuildActionPtr->setShortcut(QKeySequence::New);
-    cleanAndBuildActionPtr->setStatusTip("Open Existing Project");
+    cleanAndBuildActionPtr->setStatusTip("Clean and Build");
     connect(cleanAndBuildActionPtr, SIGNAL(triggered() ), this, SLOT(handleCleanAndBuildActionSlot() ) );
+    
+    
+    configForRunActionPtr = new QAction(QIcon("images/configForRun.jpg"), tr("&Configure for Execution"), this);
+    configForRunActionPtr->setShortcut(QKeySequence::New);
+    configForRunActionPtr->setStatusTip("Configure for execution");
+    connect(configForRunActionPtr, SIGNAL(triggered() ), this, SLOT(handleConfigForRunActionSlot() ) );
     
     
     runActionPtr = new QAction(QIcon("images/run.jpg"), tr("&Run Project"), this);
     runActionPtr->setShortcut(QKeySequence::New);
-    runActionPtr->setStatusTip("Open Existing Project");
+    runActionPtr->setStatusTip("Run Project");
     connect(runActionPtr, SIGNAL(triggered() ), this, SLOT(handleRunActionSlot() ) );
     
     
     debugActionPtr = new QAction(QIcon("images/debug.jpg"), tr("&Debug Project"), this);
     debugActionPtr->setShortcut(QKeySequence::New);
-    debugActionPtr->setStatusTip("Open Existing Project");
+    debugActionPtr->setStatusTip("Debug");
     connect(debugActionPtr, SIGNAL(triggered() ), this, SLOT(handleDebugActionSlot() ) );
     
     
     profileProjActionPtr = new QAction(QIcon("images/profile.jpg"), tr("&Profile Project"), this);
     profileProjActionPtr->setShortcut(QKeySequence::New);
-    profileProjActionPtr->setStatusTip("Open Existing Project");
+    profileProjActionPtr->setStatusTip("Profile");
     connect(profileProjActionPtr, SIGNAL(triggered() ), this, SLOT(handleProfileProjActionSlot() ) );
 
 
@@ -169,6 +175,12 @@ void MasterActions::handleBuildActionSlot()
 
 
 void MasterActions::handleCleanAndBuildActionSlot()
+{
+    ;
+}
+
+
+void MasterActions::handleConfigForRunActionSlot()
 {
     ;
 }
@@ -270,6 +282,12 @@ QAction* MasterActions::getCleanAndBuildActionPtr()
 }
 
 
+QAction* MasterActions::getConfigForRunActionPtr()
+{
+    return configForRunActionPtr;
+}
+
+
 QAction* MasterActions::getRunActionPtr()
 {
     return runActionPtr;
@@ -355,6 +373,13 @@ template<class X>
 void MasterActions::connectToCleanAndBuildAction(X* component)
 {
     connect(component, SIGNAL(released() ), this, SLOT(handleCleanAndBuildActionSlot() ) );
+}
+
+
+template<class X>
+void MasterActions::connectToConfigForRunAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleConfigForRunActionSlot() ) );
 }
 
 

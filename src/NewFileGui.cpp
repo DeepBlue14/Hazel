@@ -1,5 +1,3 @@
-#include <qt4/QtCore/qstring.h>
-
 #include "NewFileGui.h"
 
 
@@ -65,6 +63,8 @@ void NewFileGui::handleFinishBtnSlot()
     newFilePage_3Ptr->triggerMutators();
     cout << "successfully triggered f3" << endl;
     //newFilePage_4Ptr updates automatically
+    newFilePage_4Ptr->triggerMutators();
+    cout << "successfully triggered f4" << endl;
     cout << toString()->toStdString() << endl;
     
     //create file
@@ -83,14 +83,19 @@ void NewFileGui::handleFinishBtnSlot()
     //create physical file and tab
     RideFile* rideFile = new RideFile();
     QFile* tmp = new QFile();
+
     //-----------------
-    cout << toString()->toStdString() << endl;
-    //-----------------
-    QString* combine = new QString(newFilePage_4Ptr->getLocStrPtr()
-                            + newFilePage_4Ptr->getFileNameStrPtr() + newFilePage_4Ptr);
-    tmp = rideFile->createFile(new QString("/home/james/NetBeansProjects/ride/"),
-                                                     new QString("Test_File"),
-                                                     new QString(".cpp") );
+    cout << "\t\tLoc: " << newFilePage_4Ptr->getLocStrPtr()->toStdString() << endl;
+    cout << "\t\tName: " << newFilePage_4Ptr->getFileNameStrPtr()->toStdString() << endl;
+    cout << "\t\tExt: " << newFilePage_4Ptr->getFileExtStrPtr()->toStdString() << endl;
+    
+    tmp = rideFile->createFile(newFilePage_4Ptr->getLocStrPtr(),
+                                newFilePage_4Ptr->getFileNameStrPtr(),
+                                newFilePage_4Ptr->getFileExtStrPtr() );
+    
+    //tmp = rideFile->createFile(new QString("/home/james/NetBeansProjects/ride/"),
+    //                                                 new QString("Test_File"),
+    //                                                 new QString(".cpp") );
     rideFile->openRdWrFile(tmp);
     rideFile->setFilePtr(tmp);
     editor->setPlainText(rideFile->getFilePtr()->readAll() );

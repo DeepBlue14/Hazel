@@ -22,7 +22,7 @@ static const uint qt_meta_data_MasterActions[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      13,   14, // methods
+      14,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -41,8 +41,9 @@ static const uint qt_meta_data_MasterActions[] = {
      237,   14,   14,   14, 0x08,
      261,   14,   14,   14, 0x08,
      293,   14,   14,   14, 0x08,
-     315,   14,   14,   14, 0x08,
-     339,   14,   14,   14, 0x08,
+     324,   14,   14,   14, 0x08,
+     346,   14,   14,   14, 0x08,
+     370,   14,   14,   14, 0x08,
 
        0        // eod
 };
@@ -57,6 +58,7 @@ static const char qt_meta_stringdata_MasterActions[] = {
     "handleSetProjectConfigActionSlot()\0"
     "handleBuildActionSlot()\0"
     "handleCleanAndBuildActionSlot()\0"
+    "handleConfigForRunActionSlot()\0"
     "handleRunActionSlot()\0handleDebugActionSlot()\0"
     "handleProfileProjActionSlot()\0"
 };
@@ -77,9 +79,10 @@ void MasterActions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 7: _t->handleSetProjectConfigActionSlot(); break;
         case 8: _t->handleBuildActionSlot(); break;
         case 9: _t->handleCleanAndBuildActionSlot(); break;
-        case 10: _t->handleRunActionSlot(); break;
-        case 11: _t->handleDebugActionSlot(); break;
-        case 12: _t->handleProfileProjActionSlot(); break;
+        case 10: _t->handleConfigForRunActionSlot(); break;
+        case 11: _t->handleRunActionSlot(); break;
+        case 12: _t->handleDebugActionSlot(); break;
+        case 13: _t->handleProfileProjActionSlot(); break;
         default: ;
         }
     }
@@ -118,9 +121,9 @@ int MasterActions::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 13)
+        if (_id < 14)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 13;
+        _id -= 14;
     }
     return _id;
 }

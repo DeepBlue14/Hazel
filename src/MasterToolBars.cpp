@@ -40,6 +40,7 @@ void MasterToolBars::initGroupThreeToolBar(QToolBar* toolbar)
     toolbar->addAction(getMasterActionsPtr()->getProfileProjActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getBuildActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getCleanAndBuildActionPtr() );
+    toolbar->addAction(getMasterActionsPtr()->getConfigForRunActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getRunActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getDebugActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getProfileProjActionPtr() );

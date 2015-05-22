@@ -33,9 +33,7 @@ void NewFilePage_2::setOptionStrPtr()
         }
     }
     
-    //else
-    buttonGroupPtr->button(0)->setChecked(true);
-    optionStrPtr = new QString(buttonGroupPtr->checkedButton()->text() );
+    //else don't try to retrieve a checked (because there isn't one)
 }
 
 

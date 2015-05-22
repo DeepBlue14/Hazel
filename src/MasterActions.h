@@ -39,6 +39,7 @@ class MasterActions : public QWidget
         QAction* setProjectConfigActionPtr;
         QAction* buildActionPtr;
         QAction* cleanAndBuildActionPtr;
+        QAction* configForRunActionPtr;
         QAction* runActionPtr;
         QAction* debugActionPtr;
         QAction* profileProjActionPtr;
@@ -63,6 +64,7 @@ class MasterActions : public QWidget
         void handleSetProjectConfigActionSlot();
         void handleBuildActionSlot();
         void handleCleanAndBuildActionSlot();
+        void handleConfigForRunActionSlot();
         void handleRunActionSlot();
         void handleDebugActionSlot();
         void handleProfileProjActionSlot();
@@ -84,6 +86,7 @@ class MasterActions : public QWidget
         QAction* getSetProjectConfigActionPtr();
         QAction* getBuildActionPtr();
         QAction* getCleanAndBuildActionPtr();
+        QAction* getConfigForRunActionPtr();
         QAction* getRunActionPtr();
         QAction* getDebugActionPtr();
         QAction* getProfileProjActionPtr();
@@ -117,6 +120,9 @@ class MasterActions : public QWidget
         
         template<class X>
         void connectToCleanAndBuildAction(X* component);
+        
+        template<class X>
+        void connectToConfigForRunAction(X* component);
         
         template<class X>
         void connectToRunAction(X* component);

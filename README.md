@@ -1,5 +1,5 @@
 #**Ride**
-####_(**R**OS **I**ntegrated **D**evelopment **E**nvironment)_
+####(**R**OS **I**ntegrated **D**evelopment **E**nvironment)
 
 ###**Index**
 
