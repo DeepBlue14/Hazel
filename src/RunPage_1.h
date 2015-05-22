@@ -12,13 +12,22 @@
 #include <QLineEdit>
 #include <QFileDialog>
 #include <QPushButton>
+#include <QButtonGroup>
+#include <QRadioButton>
+#include <QGridLayout>
+
+#include <iostream>
+
+using namespace std;
 
 class RunPage_1 : public QWidget
 {
     Q_OBJECT
             
     private:
-        ;
+        QButtonGroup* buttonGroupPtr;
+        
+        QGridLayout* outerLayoutPtr;
         
     public:
         RunPage_1(QWidget* parent = 0);

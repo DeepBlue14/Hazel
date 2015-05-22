@@ -14,16 +14,26 @@
 #include <QPushButton>
 #include <QGridLayout>
 
-class ExecutionGui : public QWidget
+#include "RunPage_1.h"
+#include "RunPage_2.h"
+#include "RunPage_3.h"
+
+
+class RunGui : public QWidget
 {
     Q_OBJECT
             
     private:
-        ;
+        
+        QGridLayout* outerLayoutPtr;
+        
+        RunPage_1* runPage_1Ptr;
+        RunPage_2* runPage_2Ptr;
+        RunPage_3* runPage_3Ptr;
         
     public:
-        ExecutionGui(QWidget* parent = 0);
-        ~ExecutionGui();
+        RunGui(QWidget* parent = 0);
+        ~RunGui();
 };
 
 #endif	/* RUN_GUI_H */
