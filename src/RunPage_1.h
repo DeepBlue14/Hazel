@@ -31,6 +31,8 @@ class RunPage_1 : public QWidget
         
     public:
         RunPage_1(QWidget* parent = 0);
+        QString* getRunOptionPtr();
+        QString* toString();
         ~RunPage_1();
 };
 

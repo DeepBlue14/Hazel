@@ -9,7 +9,7 @@ RunPage_3::RunPage_3(QWidget* parent) : QWidget(parent)
     addToListBtnPtr->setToolTip("Add rosrun command");
     cmdsEnteredTypeLw = new QListWidget();
     rmFromListBtnPtr = new QPushButton();
-    rmFromListBtnPtr->setIcon(QIcon("/home/james/NetBeansProjects/Hazel/images/RecycleBin.png"));
+    rmFromListBtnPtr->setIcon(QIcon("/home/james/NetBeansProjects/ride/images/RecycleBin.png"));
     rmFromListBtnPtr->setIconSize(QSize(50, 50));
     
     outerLayout = new QGridLayout();

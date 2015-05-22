@@ -21,6 +21,7 @@
 #include "FileGui.h"
 #include "NewProjectGui.h"
 #include "Terminal.h"
+#include "RunGui.h"
 
 using namespace std;
 
@@ -50,6 +51,7 @@ class MasterActions : public QWidget
         NewFileGui* newFileGuiPtr;
         NewProjectGui* newProjectGuiPtr;
         Terminal* terminalPtr;
+        RunGui* runGuiPtr;
         
         
         

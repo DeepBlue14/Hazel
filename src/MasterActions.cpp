@@ -3,6 +3,8 @@
 
 MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
 {
+    runGuiPtr = new RunGui();
+    
     newFileActionPtr = new QAction(QIcon("images/newFile.jpg"), tr("&New File"), this);
     newFileActionPtr->setShortcut(QKeySequence::New);
     newFileActionPtr->setStatusTip("New File");
@@ -182,7 +184,8 @@ void MasterActions::handleCleanAndBuildActionSlot()
 
 void MasterActions::handleConfigForRunActionSlot()
 {
-    ;
+    runGuiPtr->reset();
+    runGuiPtr->show();
 }
 
 
