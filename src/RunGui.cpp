@@ -3,6 +3,9 @@
 
 RunGui::RunGui(QWidget* parent) : QWidget(parent)
 {
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowTitle("Ride");
+    
     outerLayoutPtr = new QGridLayout();
     runPage_1Ptr = new RunPage_1();
     runPage_2Ptr = new RunPage_2();
@@ -113,9 +116,9 @@ void RunGui::swapNextPage()
     {
         case PAGE_ONE:
             unloadPage_1();
-            cout << "HERE (1)" << endl;
+            
             if(*runPage_1Ptr->getRunOptionPtr() == "Launch File")
-            {cout << "HERE (2)" << endl;
+            {
                 loadPage_2();
                 currentPage = PAGE_TWO;
                 

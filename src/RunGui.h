@@ -69,6 +69,7 @@ class RunGui : public QWidget
         void unloadPage_2();
         void loadPage_3();
         void unloadPage_3();
+        
         QString* toString();    
         ~RunGui();
 };

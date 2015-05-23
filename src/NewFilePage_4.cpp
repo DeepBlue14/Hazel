@@ -47,6 +47,8 @@ void NewFilePage_4::handleFolderPbPtrSlot()
             "/home",
             QFileDialog::ShowDirsOnly
             | QFileDialog::DontResolveSymlinks);
+    
+    createdFileLePtr->setText(dirName + "/" + fileNameLePtr->text() + fileExtCbPtr->currentText() );
 }
 
 

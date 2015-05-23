@@ -20,12 +20,20 @@ class RunPage_2 : public QWidget
             
     private:
         QLineEdit* launchFileLePtr;
+        QFileDialog* launchFileDialogPtr;
         QPushButton* selectLaunchFilePbPtr;
         
         QGridLayout* outerLayoutPtr;
         
+        QString* launchFileStrPtr;
+        
+    private slots:
+        void handleSelectLaunchFilePbPtrSlot();
+        
     public:
         RunPage_2(QWidget* parent = 0);
+        void setLaunchFileStrPtr();
+        QString* getLaunchFileStrPtr();
         ~RunPage_2();
 };
 

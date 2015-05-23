@@ -3,6 +3,9 @@
 
 NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent)
 {   
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowTitle("Ride");
+    
     outerLayout = new QGridLayout(this);
     newFilePage_1Ptr = new NewFilePage_1();
     newFilePage_2Ptr = new NewFilePage_2();
