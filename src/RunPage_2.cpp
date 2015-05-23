@@ -4,7 +4,7 @@
 RunPage_2::RunPage_2(QWidget* parent) : QWidget(parent)
 {
     launchFileLePtr = new QLineEdit();
-    selectLaunchFilePbPtr = new QPushButton();
+    selectLaunchFilePbPtr = new QPushButton("Select...");
         
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addWidget(launchFileLePtr, 0, 0);

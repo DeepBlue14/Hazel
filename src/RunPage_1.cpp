@@ -20,9 +20,9 @@ RunPage_1::RunPage_1(QWidget* parent) : QWidget(parent)
 
 QString* RunPage_1::getRunOptionPtr()
 {
-    for(size_t i = 0; i < buttonGroupPtr->children().size(); i++)
+    for(size_t i = 0; i < buttonGroupPtr->buttons().size(); i++)
     {
-        if(buttonGroupPtr->button(i)->isChecked() )
+        if(buttonGroupPtr->buttons().at(i)->isChecked() )
         {
             return new QString(buttonGroupPtr->checkedButton()->text() );
         }
