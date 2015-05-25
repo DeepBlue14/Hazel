@@ -37,6 +37,54 @@ RideFile::FileType* RideFile::getFileTypePtr()
 }
 
 
+void RideFile::setFileNameStrPtr(QString* fileNameStrPtr)
+{
+    this->fileNameStrPtr = fileNameStrPtr;
+}
+
+
+QString* RideFile::getFileNameStrPtr()
+{
+    return fileNameStrPtr;
+}
+
+
+void RideFile::setFileExtStrPtr(QString* fileExtStrPtr)
+{
+    this->fileExtStrPtr = fileExtStrPtr;
+}
+
+
+QString* RideFile::getFileExtStrPtr()
+{
+    return fileExtStrPtr;
+}
+
+
+void RideFile::setAbsFilePathStrPtr(QString* absFilePathStrPtr)
+{
+    this->absFilePathStrPtr = absFilePathStrPtr;
+}
+
+
+QString* RideFile::getAbsFilePathStrPtr()
+{
+    return absFilePathStrPtr;
+}
+
+
+void RideFile::setRelFilePathStrPtr(QString* relFilePathStrPtr)
+{
+    this->relFilePathStrPtr = relFilePathStrPtr;
+}
+
+
+QString* RideFile::getRelFilePathStrPtr()
+{
+    return relFilePathStrPtr;
+}
+
+
 bool RideFile::openRdFile()
 {
     //the "::Text" tells it to convert Windows-style line terminators ("\r\n") to C++-style terminators ("\n")

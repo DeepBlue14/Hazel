@@ -4,6 +4,8 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description:
  *
+ * tmp: https://blog.cedric.ws/opencv-simple-motion-detection
+ * 
  * Created on May 12, 2015, 12:28 AM
  */
 
@@ -56,7 +58,6 @@ class RideFile : public QFile
             EMPTY
         };
         
-        //QFile* filePtr;
         FileLang* fileLangPtr;
         FileType* fileTypePtr;
         QString* fileNameStrPtr;
@@ -74,6 +75,14 @@ class RideFile : public QFile
         FileLang* getFileLangPtr();
         void setFileTypePtr(FileType* fileTypePtr);
         FileType* getFileTypePtr();
+        void setFileNameStrPtr(QString* fileNameStrPtr);
+        QString* getFileNameStrPtr();
+        void setFileExtStrPtr(QString* fileExtStrPtr);
+        QString* getFileExtStrPtr();
+        void setAbsFilePathStrPtr(QString* absFilePathStrPtr);
+        QString* getAbsFilePathStrPtr();
+        void setRelFilePathStrPtr(QString* relFilePathStrPtr);
+        QString* getRelFilePathStrPtr();
         bool openRdFile();
         bool openWrFile();
         bool openRdWrFile();
