@@ -4,6 +4,7 @@
 MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
 {
     runGuiPtr = new RunGui();
+    openProjectGuiPtr = new OpenProjectGui();
     
     newFileActionPtr = new QAction(QIcon("images/newFile.jpg"), tr("&New File"), this);
     newFileActionPtr->setShortcut(QKeySequence::New);
@@ -142,7 +143,7 @@ void MasterActions::handleNewProjectActionSlot()
 
 void MasterActions::handleOpenProjectActionSlot()
 {
-    ;
+    openProjectGuiPtr->show();
 }
 
 

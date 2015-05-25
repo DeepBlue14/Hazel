@@ -22,6 +22,7 @@
 #include "NewProjectGui.h"
 #include "Terminal.h"
 #include "RunGui.h"
+#include "OpenProjectGui.h"
 
 using namespace std;
 
@@ -52,7 +53,7 @@ class MasterActions : public QWidget
         NewProjectGui* newProjectGuiPtr;
         Terminal* terminalPtr;
         RunGui* runGuiPtr;
-        
+        OpenProjectGui* openProjectGuiPtr;
         
         
     private slots:
