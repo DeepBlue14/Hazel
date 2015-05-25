@@ -45,5 +45,5 @@ fi
 
 
 #
-echo "Instalation complete!"
+echo "Installation complete!"
 

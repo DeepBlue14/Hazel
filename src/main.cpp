@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     //NewFileGui newFileGui;
     //newFileGui.show();
     //Files files;
-    //QFile* tmp = new QFile(); tmp = files.createFile(new QString("/home/james/NetBeansProjects/Hazel/src/"),
+    //QFile* tmp = new QFile(); tmp = files.createFile(new QString("/home/james/NetBeansProjects/ride/"),
     //                                                 new QString("Test_File"),
     //                                                 new QString(".cpp") );
     //files.openRdWrFile(tmp);

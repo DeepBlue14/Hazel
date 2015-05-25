@@ -22,7 +22,7 @@ static const uint qt_meta_data_FileGui[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -30,16 +30,17 @@ static const uint qt_meta_data_FileGui[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      23,    9,    8,    8, 0x08,
-      54,    8,    8,    8, 0x08,
-      79,   77,    8,    8, 0x08,
+      20,    9,    8,    8, 0x08,
+      60,   46,    8,    8, 0x08,
+      91,    8,    8,    8, 0x08,
+     116,  114,    8,    8, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_FileGui[] = {
-    "FileGui\0\0newBlockCount\0"
-    "updateLineNumberAreaWidth(int)\0"
+    "FileGui\0\0completion\0insertCompletion(QString)\0"
+    "newBlockCount\0updateLineNumberAreaWidth(int)\0"
     "highlightCurrentLine()\0,\0"
     "updateLineNumberArea(QRect,int)\0"
 };
@@ -50,9 +51,10 @@ void FileGui::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
         Q_ASSERT(staticMetaObject.cast(_o));
         FileGui *_t = static_cast<FileGui *>(_o);
         switch (_id) {
-        case 0: _t->updateLineNumberAreaWidth((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 1: _t->highlightCurrentLine(); break;
-        case 2: _t->updateLineNumberArea((*reinterpret_cast< const QRect(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 0: _t->insertCompletion((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 1: _t->updateLineNumberAreaWidth((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: _t->highlightCurrentLine(); break;
+        case 3: _t->updateLineNumberArea((*reinterpret_cast< const QRect(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
         default: ;
         }
     }
@@ -90,9 +92,9 @@ int FileGui::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     }
     return _id;
 }

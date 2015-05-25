@@ -3,6 +3,9 @@
 
 NewProjectGui::NewProjectGui(QWidget* parent) : QWidget(parent)
 {
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowTitle("Ride");
+    
     outerLayout = new QGridLayout(this);
     newProjectPage_1Ptr = new NewProjectPage_1();
     newProjectPage_2Ptr = new NewProjectPage_2();

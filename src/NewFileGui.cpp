@@ -1,8 +1,11 @@
 #include "NewFileGui.h"
 
 
-NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent)
+NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent), completer(0)
 {   
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowTitle("Ride");
+    
     outerLayout = new QGridLayout(this);
     newFilePage_1Ptr = new NewFilePage_1();
     newFilePage_2Ptr = new NewFilePage_2();
@@ -13,15 +16,10 @@ NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QW
     
     initBtns();
     
+    
+    
+    
     this->setLayout(outerLayout);
-    /*
-    //--------------------------------------------------------------------------
-    QFile file("/home/james/NetBeansFiles/Hazel/src/qss/Dark.css");
-    file.open(QFile::ReadOnly);
-    QString styleSheet = QLatin1String(file.readAll());
-    backBtn->setStyleSheet(styleSheet);
-    //--------------------------------------------------------------------------
-    */
 }
 
 
@@ -71,11 +69,12 @@ void NewFileGui::handleFinishBtnSlot()
     newFilePage_3Ptr->triggerMutators();
     cout << "successfully triggered f3" << endl;
     //newFilePage_4Ptr updates automatically
+    newFilePage_4Ptr->triggerMutators();
+    cout << "successfully triggered f4" << endl;
     cout << toString()->toStdString() << endl;
     
     //create file
     //- - - - - - - - - - - - - - - - - - - - - - - - - - -
-    cout << "***creating the actual file!***" << endl;
     QFont font;
     font.setFamily("Monospace");
     font.setFixedPitch(true);
@@ -84,20 +83,41 @@ void NewFileGui::handleFinishBtnSlot()
 
     editor = new FileGui();
     editor->setFont(font);
+    
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    completer = new QCompleter(this);
+    completer->setModel(modelFromFile("wordlist.txt"));
+    completer->setModelSorting(QCompleter::CaseInsensitivelySortedModel);
+    completer->setCaseSensitivity(Qt::CaseInsensitive);
+    editor->setCompleter(completer);
+    
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
     setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
 
-    QFile file("mainwindow.h");
-    if (file.open(QFile::ReadOnly | QFile::Text) )
-        editor->setPlainText(file.readAll() );
+    //create physical file and tab
+    RideFile* rideFile = new RideFile();
+    QFile* tmp = new QFile();
+
+    //-----------------
+    cout << "\t\tLoc: " << newFilePage_4Ptr->getLocStrPtr()->toStdString() << endl;
+    cout << "\t\tName: " << newFilePage_4Ptr->getFileNameStrPtr()->toStdString() << endl;
+    cout << "\t\tExt: " << newFilePage_4Ptr->getFileExtStrPtr()->toStdString() << endl;
     
-    masterTabWidgetPtr->addTab(editor, tr("File1") );
-    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    tmp = rideFile->createFile(newFilePage_4Ptr->getLocStrPtr(),
+                                newFilePage_4Ptr->getFileNameStrPtr(),
+                                newFilePage_4Ptr->getFileExtStrPtr() );
     
-    //create physical file
-    
-    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    //tmp = rideFile->createFile(new QString("/home/james/NetBeansProjects/ride/"),
+    //                                                 new QString("Test_File"),
+    //                                                 new QString(".cpp") );
+    rideFile->openRdWrFile(tmp);
+    rideFile->setFilePtr(tmp);
+    editor->setPlainText(rideFile->getFilePtr()->readAll() );
+    masterTabWidgetPtr->addTab(editor, tr("File1"));
+    cout << "Successfully ended file creation sequence" << endl;
+    this->close();
 }
 
 
@@ -110,6 +130,33 @@ void NewFileGui::handleHelpBntSlot()
 void NewFileGui::handleCancelBtnSlot()
 {
     this->close();
+}
+
+
+QAbstractItemModel* NewFileGui::modelFromFile(const QString& fileName)
+{
+    QFile file(fileName);
+    if(!file.open(QFile::ReadOnly))
+    {
+        cout << "ERROR trying to read file" << endl;
+        return new QStringListModel(completer);
+    }
+    else
+    {
+        cout << "SUCCESS reading file" << endl;
+    }
+        
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    QStringList words;
+
+    while (!file.atEnd()) {
+        QByteArray line = file.readLine();
+        if (!line.isEmpty())
+            words << line.trimmed();
+    }
+
+    QApplication::restoreOverrideCursor();
+    return new QStringListModel(words, completer);
 }
 
 

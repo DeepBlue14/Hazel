@@ -13,10 +13,10 @@ NewFilePage_4::NewFilePage_4(QWidget* parent) : QWidget(parent)
     folderPbPtr = new QPushButton("Browse...");
     createdFileLePtr = new QLineEdit();
     
-    fileNameStrPtr = new QString("");
-    projectStrPtr = new QString("");
-    locStrPtr = new QString("");
-    folderStrPtr = new QString("");
+    fileNameStrPtr = new QString("NewFile");
+    projectStrPtr = new QString("ProjectName");
+    locStrPtr = new QString("/home/james/NetBeansProjects/ride/");
+    folderStrPtr = new QString("/home/james/NetBeansProjects/ride/NewFile.cpp");
     createdFileStrPtr = new QString("");
     
     folderLayoutPtr = new QGridLayout();
@@ -47,6 +47,8 @@ void NewFilePage_4::handleFolderPbPtrSlot()
             "/home",
             QFileDialog::ShowDirsOnly
             | QFileDialog::DontResolveSymlinks);
+    
+    createdFileLePtr->setText(dirName + "/" + fileNameLePtr->text() + fileExtCbPtr->currentText() );
 }
 
 
@@ -77,6 +79,18 @@ void NewFilePage_4::setFileNameStrPtr()
 QString* NewFilePage_4::getFileNameStrPtr()
 {
     return fileNameStrPtr;
+}
+
+
+void NewFilePage_4::setFileExtStrPtr()
+{
+    fileExtStrPtr = new QString(fileExtCbPtr->currentText() );
+}
+
+
+QString* NewFilePage_4::getFileExtStrPtr()
+{
+    return fileExtStrPtr;
 }
 
 
@@ -159,6 +173,7 @@ QString* NewFilePage_4::getCreatedFileStrPtr()
 void NewFilePage_4::triggerMutators()
 {
     setFileNameStrPtr();
+    setFileExtStrPtr();
     setProjectStrPtr();
     setLocStrPtr();
     setFolderStrPtr();

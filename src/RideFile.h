@@ -7,8 +7,8 @@
  * Created on May 12, 2015, 12:28 AM
  */
 
-#ifndef FILE_H
-#define	FILE_H
+#ifndef RIDE_FILE_H
+#define	RIDE_FILE_H
 
 #include <QWidget>
 #include <QFile>
@@ -17,7 +17,7 @@
 #include <QString>
 #include <QVector>
 
-class File
+class RideFile : public QFile
 {
     private:
         enum FileLang
@@ -60,7 +60,7 @@ class File
         //QString* fromQByteArray(QByteArray* byteArray);
         
     public:
-        File();
+        RideFile();
         QFile* createFile(QString* absPath, QString* fileName, QString* fileExtention);
         void setFilePtr(QFile* filePtr);
         QFile* getFilePtr();
@@ -76,7 +76,7 @@ class File
         bool closeFile(QFile* file);
         bool deleteFile(QFile* file);
         QString* toString();
-        ~File();
+        ~RideFile();
 };
 
-#endif	/* FILE_H */
+#endif	/* RIDE_FILE_H */

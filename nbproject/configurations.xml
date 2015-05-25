@@ -9,9 +9,10 @@
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
           <itemPath>src/EnvCmds.h</itemPath>
-          <itemPath>src/File.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
+          <itemPath>src/RideFile.h</itemPath>
+          <itemPath>src/Run.h</itemPath>
           <itemPath>src/Terminal.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="frontend" projectFiles="true">
@@ -36,9 +37,14 @@
           <itemPath>src/NewProjectPage_2.h</itemPath>
           <itemPath>src/NewProjectPage_3.h</itemPath>
           <itemPath>src/NewProjectPage_4.h</itemPath>
+          <itemPath>src/OpenProjectGui.h</itemPath>
           <itemPath>src/OpeningGui.h</itemPath>
           <itemPath>src/OutputGui.h</itemPath>
           <itemPath>src/RideFont.h</itemPath>
+          <itemPath>src/RunGui.h</itemPath>
+          <itemPath>src/RunPage_1.h</itemPath>
+          <itemPath>src/RunPage_2.h</itemPath>
+          <itemPath>src/RunPage_3.h</itemPath>
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
           <itemPath>src/TabGui.h</itemPath>
@@ -60,9 +66,10 @@
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
           <itemPath>src/EnvCmds.cpp</itemPath>
-          <itemPath>src/File.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
+          <itemPath>src/RideFile.cpp</itemPath>
+          <itemPath>src/Run.cpp</itemPath>
           <itemPath>src/Terminal.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="frontend" projectFiles="true">
@@ -87,9 +94,14 @@
           <itemPath>src/NewProjectPage_2.cpp</itemPath>
           <itemPath>src/NewProjectPage_3.cpp</itemPath>
           <itemPath>src/NewProjectPage_4.cpp</itemPath>
+          <itemPath>src/OpenProjectGui.cpp</itemPath>
           <itemPath>src/OpeningGui.cpp</itemPath>
           <itemPath>src/OutputGui.cpp</itemPath>
           <itemPath>src/RideFont.cpp</itemPath>
+          <itemPath>src/RunGui.cpp</itemPath>
+          <itemPath>src/RunPage_1.cpp</itemPath>
+          <itemPath>src/RunPage_2.cpp</itemPath>
+          <itemPath>src/RunPage_3.cpp</itemPath>
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
           <itemPath>src/TabGui.cpp</itemPath>
@@ -146,10 +158,6 @@
       <item path="src/EnvCmds.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/EnvCmds.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/File.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -231,6 +239,10 @@
       </item>
       <item path="src/NewProjectPage_4.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/OpenProjectGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OpenProjectGui.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/OpeningGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
@@ -247,9 +259,33 @@
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Run.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Run.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunPage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunPage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunPage_3.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -312,10 +348,6 @@
       </item>
       <item path="src/EnvCmds.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/File.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/File.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
@@ -396,6 +428,10 @@
       </item>
       <item path="src/NewProjectPage_4.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/OpenProjectGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OpenProjectGui.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/OpeningGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
@@ -412,9 +448,33 @@
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Run.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Run.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunPage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunPage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunPage_3.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
