@@ -21,6 +21,7 @@
 #include <QCompleter>
 #include <QAbstractItemModel>
 #include <QTextEdit>
+#include <QByteArray>
 #include <QPlainTextEdit>
 #include <QProgressBar>
 #include <QApplication>

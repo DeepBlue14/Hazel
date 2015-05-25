@@ -7,21 +7,9 @@ RideFile::RideFile()
 }
 
 
-QFile* RideFile::createFile(QString* absPath, QString* fileName, QString* fileExtension)
+RideFile::RideFile(QString name)
 {
-    return new QFile(absPath->append(fileName->append(fileExtension)));
-}
-
-
-void RideFile::setFilePtr(QFile* filePtr)
-{
-    this->filePtr = filePtr;
-}
-
-
-QFile* RideFile::getFilePtr()
-{
-    return filePtr;
+    this->setFileName(name);
 }
 
 
@@ -49,10 +37,10 @@ RideFile::FileType* RideFile::getFileTypePtr()
 }
 
 
-bool RideFile::openRdFile(QFile* file)
+bool RideFile::openRdFile()
 {
     //the "::Text" tells it to convert Windows-style line terminators ("\r\n") to C++-style terminators ("\n")
-    if(!file->open(QIODevice::ReadOnly | QIODevice::Text))
+    if(!this->open(QIODevice::ReadOnly | QIODevice::Text))
     {
         return false;
     }
@@ -61,20 +49,9 @@ bool RideFile::openRdFile(QFile* file)
 }
 
 
-bool RideFile::openWrFile(QFile* file)
+bool RideFile::openWrFile()
 {
-    if(!file->open(QIODevice::WriteOnly | QIODevice::Text))
-    {
-        return false;
-    }
-    
-    return true;
-}
-
-
-bool RideFile::openRdWrFile(QFile* file)
-{
-    if(!file->open(QIODevice::ReadWrite | QIODevice::Text))
+    if(!this->open(QIODevice::WriteOnly | QIODevice::Text))
     {
         return false;
     }
@@ -83,35 +60,41 @@ bool RideFile::openRdWrFile(QFile* file)
 }
 
 
-QString* RideFile::readFile(QFile* file)
+bool RideFile::openRdWrFile()
 {
-    return new QString(file->readAll() );
+    if(!this->open(QIODevice::ReadWrite | QIODevice::Text))
+    {
+        cout << "FAILED to open file" << endl;
+        return false;
+    }
+    
+    return true;
 }
 
 
-bool RideFile::writeFile(QFile* file, QString* text)
+QString* RideFile::readFile()
 {
-    file->write(*toQByteArray(text) );
+    return new QString(this->readAll() );
+}
+
+
+bool RideFile::writeFile(QString* text)
+{
+    this->write(*toQByteArray(text) );
     
     return true; // ***method stub ***
 }
 
 
-bool RideFile::closeFile(QFile* file)
+bool RideFile::closeFile()
 {
-    if(!file->exists() )
+    if(!this->exists() )
     {
         return false;
     }
     
-    file->close();
+    this->close();
     return true;
-}
-
-
-bool RideFile::deleteFile(QFile* file)
-{
-    return file->remove();
 }
 
 
@@ -133,7 +116,6 @@ QString* RideFile::toString()
     QString* tmp = new QString("File");
     tmp->append("\n- - - - - - - - - - -\n");
     tmp->append("Name: ");
-    tmp->append(getFilePtr()->fileName() );
     //tmp->append("\nFile Language: ");
     //tmp->append(getFileLangPtr() );
     //tmp->append("\nFile Type");

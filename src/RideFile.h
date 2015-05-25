@@ -17,6 +17,10 @@
 #include <QString>
 #include <QVector>
 
+#include <iostream>
+
+using namespace std;
+
 class RideFile : public QFile
 {
     private:
@@ -52,29 +56,30 @@ class RideFile : public QFile
             EMPTY
         };
         
-        QFile* filePtr;
+        //QFile* filePtr;
         FileLang* fileLangPtr;
         FileType* fileTypePtr;
+        QString* fileNameStrPtr;
+        QString* fileExtStrPtr;
+        QString* absFilePathStrPtr;
+        QString* relFilePathStrPtr;
         
         QByteArray* toQByteArray(QString* string);
         //QString* fromQByteArray(QByteArray* byteArray);
         
     public:
         RideFile();
-        QFile* createFile(QString* absPath, QString* fileName, QString* fileExtention);
-        void setFilePtr(QFile* filePtr);
-        QFile* getFilePtr();
+        RideFile(QString name);
         void setFileLangPtr(FileLang* fileLangPtr);
         FileLang* getFileLangPtr();
         void setFileTypePtr(FileType* fileTypePtr);
         FileType* getFileTypePtr();
-        bool openRdFile(QFile* file);
-        bool openWrFile(QFile* file);
-        bool openRdWrFile(QFile* file);
-        QString* readFile(QFile* file);
-        bool writeFile(QFile* file, QString* text);
-        bool closeFile(QFile* file);
-        bool deleteFile(QFile* file);
+        bool openRdFile();
+        bool openWrFile();
+        bool openRdWrFile();
+        QString* readFile();
+        bool writeFile(QString* text);
+        bool closeFile();
         QString* toString();
         ~RideFile();
 };
