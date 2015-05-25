@@ -2,6 +2,10 @@
  * File:   Scout.h
  * Author: james
  *
+ * Reference: http://doc.qt.io/qt-4.8/qcompleter.html#details
+ *            http://www.trinitydesktop.org/docs/qt4/tools-completer.html
+ *            http://doc.qt.digia.com/4.6/tools-treemodelcompleter.html
+ * 
  * Created on May 8, 2015, 11:44 PM
  */
 

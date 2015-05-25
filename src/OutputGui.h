@@ -14,14 +14,18 @@
 #include <QWidget>
 #include <QTextEdit>
 #include <QGridLayout>
+#include <QTabWidget>
+#include <QVector>
+
 
 class OutputGui : public QWidget
 {
     Q_OBJECT
        
     private:
+        QTabWidget* tabWidgetPtr;
         QTextEdit* outputTePtr;
-        
+        QVector<QWidget*> tabPtrVec;
         QGridLayout* outerLayout;
         
     private slots:
@@ -29,6 +33,7 @@ class OutputGui : public QWidget
         
     public:
         OutputGui(QWidget* parent = 0);
+        void addTab(QWidget* tab, QString* tabName);
         ~OutputGui();
 };
 
