@@ -18,6 +18,13 @@
 #include <QPushButton>
 #include <QTabWidget>
 #include <QFileDialog>
+#include <QCompleter>
+#include <QAbstractItemModel>
+#include <QTextEdit>
+#include <QPlainTextEdit>
+#include <QProgressBar>
+#include <QApplication>
+#include <QMainWindow>
 #include <QFormLayout>
 #include <QGridLayout>
 
@@ -56,11 +63,14 @@ private:
     QTabWidget* masterTabWidgetPtr;
     Highlighter* highlighterPtr;
     FileGui* editor;
+    QCompleter* completer;
     
     NewFilePage_1* newFilePage_1Ptr;
     NewFilePage_2* newFilePage_2Ptr;
     NewFilePage_3* newFilePage_3Ptr;
     NewFilePage_4* newFilePage_4Ptr;
+    
+    QAbstractItemModel* modelFromFile(const QString& fileName);
     
 private slots:
     void handleBackBtnSlot();

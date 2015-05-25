@@ -1,7 +1,7 @@
 #include "NewFileGui.h"
 
 
-NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent)
+NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent), completer(0)
 {   
     this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
     this->setWindowTitle("Ride");
@@ -15,6 +15,9 @@ NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QW
     currentPage = PAGE_ONE;
     
     initBtns();
+    
+    
+    
     
     this->setLayout(outerLayout);
 }
@@ -80,7 +83,17 @@ void NewFileGui::handleFinishBtnSlot()
 
     editor = new FileGui();
     editor->setFont(font);
+    
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+    completer = new QCompleter(this);
+    completer->setModel(modelFromFile("wordlist.txt"));
+    completer->setModelSorting(QCompleter::CaseInsensitivelySortedModel);
+    completer->setCaseSensitivity(Qt::CaseInsensitive);
+    editor->setCompleter(completer);
+    
+    //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    
     setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
 
     //create physical file and tab
@@ -117,6 +130,33 @@ void NewFileGui::handleHelpBntSlot()
 void NewFileGui::handleCancelBtnSlot()
 {
     this->close();
+}
+
+
+QAbstractItemModel* NewFileGui::modelFromFile(const QString& fileName)
+{
+    QFile file(fileName);
+    if(!file.open(QFile::ReadOnly))
+    {
+        cout << "ERROR trying to read file" << endl;
+        return new QStringListModel(completer);
+    }
+    else
+    {
+        cout << "SUCCESS reading file" << endl;
+    }
+        
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    QStringList words;
+
+    while (!file.atEnd()) {
+        QByteArray line = file.readLine();
+        if (!line.isEmpty())
+            words << line.trimmed();
+    }
+
+    QApplication::restoreOverrideCursor();
+    return new QStringListModel(words, completer);
 }
 
 
