@@ -55,8 +55,27 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <logicalFolder name="file_templates"
+                     displayName="file_templates"
+                     projectFiles="true">
+        <itemPath>file_templates/Class_Header_Template.h</itemPath>
+        <itemPath>file_templates/Class_Source_Template.cpp</itemPath>
+      </logicalFolder>
       <logicalFolder name="qss" displayName="qss" projectFiles="true">
         <itemPath>src/qss/Dark.css</itemPath>
+      </logicalFolder>
+      <logicalFolder name="resources" displayName="resources" projectFiles="true">
+        <logicalFolder name="ride_project"
+                       displayName="ride_project"
+                       projectFiles="true">
+          <itemPath>resources/ride_project/configurations.xml</itemPath>
+        </logicalFolder>
+        <logicalFolder name="scout" displayName="scout" projectFiles="true">
+          <logicalFolder name="project" displayName="project" projectFiles="true">
+            <itemPath>resources/scout/project/test.txt</itemPath>
+          </logicalFolder>
+          <itemPath>resources/scout/scout.qrc</itemPath>
+        </logicalFolder>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
@@ -125,6 +144,8 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>src</Elem>
+    <Elem>file_templates</Elem>
+    <Elem>resources</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -145,6 +166,25 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="file_templates/Class_Header_Template.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="file_templates/Class_Source_Template.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="resources/ride_project/configurations.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Build.h" ex="false" tool="3" flavor2="0">
@@ -338,6 +378,25 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="file_templates/Class_Header_Template.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="file_templates/Class_Source_Template.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="resources/ride_project/configurations.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Build.h" ex="false" tool="3" flavor2="0">

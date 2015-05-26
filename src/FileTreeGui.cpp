@@ -15,6 +15,11 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     tree->setColumnHidden(2, true);
     tree->setColumnHidden(3, true);
     
+    tree->hideColumn(1);
+    tree->hideColumn(2);
+    tree->hideColumn(3);
+    tree->header()->hide();
+    
     list = new QListView(splitter);
     list->setModel(model);
     list->setRootIndex(model->index(QDir::currentPath()));

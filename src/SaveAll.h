@@ -1,6 +1,8 @@
 /* 
  * File:   SaveAll.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on May 25, 2015, 3:12 PM
  */

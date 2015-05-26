@@ -14,11 +14,11 @@ void SaveAll::removeFromRideFileVec(RideFile* rideFilePtr)
 {
     for(size_t i = 0; i < rideFilePtr->size(); i++)
     {
-        // !!!
-        /*if(rideFilePtrVec.at(i).)
+        
+        if(*rideFilePtrVec.at(i)->getFileNameStrPtr() == *rideFilePtr->getFileNameStrPtr() )
         {
-            ;
-        }*/
+            rideFilePtrVec.at(i)->remove();
+        }
         
     }
     
@@ -27,7 +27,7 @@ void SaveAll::removeFromRideFileVec(RideFile* rideFilePtr)
 
 QVector<RideFile*> SaveAll::getRideFilePtrVec()
 {
-    ;
+    return rideFilePtrVec;
 }
 
 

@@ -7,7 +7,6 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
     fileTreeGuiPtr = new FileTreeGui();
     outputGuiPtr = new OutputGui();
     
-    
     QSplitter* splitter0 = new QSplitter();
     splitter0->setOrientation(Qt::Horizontal);
     splitter0->addWidget(fileTreeGuiPtr);

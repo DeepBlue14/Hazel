@@ -4,7 +4,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
 {
     this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
     this->setWindowTitle("Ride");
-    
+      
     masterActions = new MasterActions();
     masterToolBars = new MasterToolBars();
     //openingGui = new OpeningGui();

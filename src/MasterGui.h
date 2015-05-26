@@ -1,12 +1,14 @@
 /* 
  * File:   MasterGui.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on April 18, 2015, 8:14 PM
  */
 
-#ifndef MASTERGUI_H
-#define	MASTERGUI_H
+#ifndef MASTER_GUI_H
+#define	MASTER_GUI_H
 
 #include <QWidget>
 #include <QMainWindow>
@@ -75,5 +77,5 @@ class MasterGui : public QMainWindow
             
 };
 
-#endif	/* MASTERGUI_H */
+#endif	/* MASTER_GUI_H */
 

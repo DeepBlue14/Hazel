@@ -4,15 +4,66 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : May 6, 2015, 12:35:25 AM
-    Author     : james
+ * File:   Dark.css
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
+ *
+ * Created on : May 6, 2015, 12:35:25 AM
 */
 
-QWidget {
+QWidget
+{
     background-color: darkgrey;
     border-color: black;
 }
-QPushButton {
-    color: blue;
-    background-color: yellow;
+
+
+QMainWindow
+{
+    background-color: darkgray;
+    border-color: black;
+    color: slategray;
+}
+
+
+QLineEdit
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QButtonGroup
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QCheckBox
+{
+    background-color: darkgrey;
+    color: lightgray;
+}
+
+
+QComboBox
+{
+    background-color: darkgray;
+    color: lightslategrey;
+}
+
+
+QPushButton
+{
+    background-color: darkgray;
+    color: darkslategrey;
+}
+
+
+QTreeView
+{
+    background-color: darkgray;
+    color: lightgray;
 }
