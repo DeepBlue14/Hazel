@@ -21,6 +21,8 @@
 
 #include <iostream>
 
+#include "FileGui.h"
+
 using namespace std;
 
 class RideFile : public QFile
@@ -65,6 +67,8 @@ class RideFile : public QFile
         QString* absFilePathStrPtr;
         QString* relFilePathStrPtr;
         
+        FileGui* parallelFileGuiPtr;
+        
         QByteArray* toQByteArray(QString* string);
         //QString* fromQByteArray(QByteArray* byteArray);
         
@@ -83,6 +87,8 @@ class RideFile : public QFile
         QString* getAbsFilePathStrPtr();
         void setRelFilePathStrPtr(QString* relFilePathStrPtr);
         QString* getRelFilePathStrPtr();
+        void setParallelFileGuiPtr(FileGui* parallelFileGuiPtr);
+        FileGui* getParallelFileGuiPtr();
         bool openRdFile();
         bool openWrFile();
         bool openRdWrFile();

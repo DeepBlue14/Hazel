@@ -33,5 +33,17 @@ QVector<RideFile*> SaveAll::getRideFilePtrVec()
 
 void SaveAll::save()
 {
-    ;
+    for(size_t i = 0; i < rideFilePtrVec.size(); i++)
+    {
+        if(!rideFilePtrVec.at(i)->openRdWrFile() )
+        {
+            cerr << "Failed to open file for rd wr" << endl;
+        }
+        else
+        {
+            QTextStream out(rideFilePtrVec.at(i) );
+            out << rideFilePtrVec.at(i)->getParallelFileGuiPtr()->toPlainText() << endl;
+        }
+    }
+    
 }

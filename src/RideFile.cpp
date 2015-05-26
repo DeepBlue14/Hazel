@@ -85,6 +85,18 @@ QString* RideFile::getRelFilePathStrPtr()
 }
 
 
+void RideFile::setParallelFileGuiPtr(FileGui* parallelFileGuiPtr)
+{
+    this->parallelFileGuiPtr = parallelFileGuiPtr;
+}
+
+
+FileGui* RideFile::getParallelFileGuiPtr()
+{
+    return parallelFileGuiPtr;
+}
+
+
 bool RideFile::openRdFile()
 {
     //the "::Text" tells it to convert Windows-style line terminators ("\r\n") to C++-style terminators ("\n")

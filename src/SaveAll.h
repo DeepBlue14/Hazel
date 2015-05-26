@@ -14,6 +14,7 @@
 #include <QFile>
 #include <QTextEdit>
 #include <QPlainTextEdit>
+#include <QTextStream>
 #include <QVector>
 
 #include <iostream>
