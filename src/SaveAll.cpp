@@ -40,7 +40,9 @@ void SaveAll::save()
             cerr << "Failed to open file for rd wr" << endl;
         }
         QTextStream out(rideFilePtrVec.at(i) );
+        rideFilePtrVec.at(i)->resize(0);
         out << rideFilePtrVec.at(i)->getParallelFileGuiPtr()->toPlainText() << endl;
+        //rideFilePtrVec.at(i)->resize(rideFilePtrVec.at(i)->pos());
     }
     
 }

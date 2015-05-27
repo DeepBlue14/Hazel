@@ -122,7 +122,7 @@ bool RideFile::openWrFile()
 
 bool RideFile::openRdWrFile()
 {
-    if(!this->open(QIODevice::ReadWrite | QIODevice::Text))
+    if(!this->open(QIODevice::ReadWrite | QIODevice::Text | QFile::Truncate))
     {
         cout << "FAILED to open file" << endl;
         return false;
