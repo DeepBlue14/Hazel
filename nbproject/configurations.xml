@@ -49,9 +49,9 @@
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
           <itemPath>src/TabGui.h</itemPath>
-          <itemPath>src/UnixConsoleText.h</itemPath>
-          <itemPath>src/WindowsConsoleText.h</itemPath>
         </logicalFolder>
+        <itemPath>src/UnixConsoleText.h</itemPath>
+        <itemPath>src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -128,9 +128,9 @@
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
           <itemPath>src/TabGui.cpp</itemPath>
-          <itemPath>src/UnixConsoleText.cpp</itemPath>
-          <itemPath>src/WindowsConsoleText.cpp</itemPath>
         </logicalFolder>
+        <itemPath>src/UnixConsoleText.cpp</itemPath>
+        <itemPath>src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>

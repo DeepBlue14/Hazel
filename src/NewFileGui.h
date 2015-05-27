@@ -36,6 +36,9 @@
 #include "NewFilePage_2.h"
 #include "NewFilePage_3.h"
 #include "NewFilePage_4.h"
+#include "SaveAll.h"
+
+using namespace SaveAll;
 
 class NewFileGui : public QWidget
 {

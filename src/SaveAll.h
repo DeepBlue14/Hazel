@@ -25,7 +25,7 @@ using namespace std;
 
 namespace SaveAll
 {
-    QVector<RideFile*> rideFilePtrVec;
+    extern QVector<RideFile*> rideFilePtrVec;
     
     void pushToRideFilePtrVec(RideFile* rideFilePtr);
     void removeFromRideFileVec(RideFile* rideFilePtr);

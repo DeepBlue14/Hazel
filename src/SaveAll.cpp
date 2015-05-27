@@ -1,7 +1,7 @@
 #include "SaveAll.h"
 
 
-QVector<RideFile*> rideFilePtrVec;
+QVector<RideFile*> SaveAll::rideFilePtrVec;
 
 
 void SaveAll::pushToRideFilePtrVec(RideFile* rideFilePtr)
@@ -39,11 +39,8 @@ void SaveAll::save()
         {
             cerr << "Failed to open file for rd wr" << endl;
         }
-        else
-        {
-            QTextStream out(rideFilePtrVec.at(i) );
-            out << rideFilePtrVec.at(i)->getParallelFileGuiPtr()->toPlainText() << endl;
-        }
+        QTextStream out(rideFilePtrVec.at(i) );
+        out << rideFilePtrVec.at(i)->getParallelFileGuiPtr()->toPlainText() << endl;
     }
     
 }

@@ -23,7 +23,9 @@
 #include "Terminal.h"
 #include "RunGui.h"
 #include "OpenProjectGui.h"
+#include "SaveAll.h"
 
+using namespace SaveAll;
 using namespace std;
 
 class MasterActions : public QWidget

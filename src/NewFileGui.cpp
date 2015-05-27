@@ -115,6 +115,10 @@ void NewFileGui::handleFinishBtnSlot()
     tmpBArr.append(editor->toPlainText());
     editor->setPlainText(rideFile->readAll() );
     masterTabWidgetPtr->addTab(editor, tr("File1"));
+    
+    rideFile->setParallelFileGuiPtr(editor);
+    SaveAll::pushToRideFilePtrVec(rideFile);
+    
     cout << "Successfully ended file creation sequence" << endl;
     this->close();
 }

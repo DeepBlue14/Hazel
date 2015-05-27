@@ -149,7 +149,7 @@ void MasterActions::handleOpenProjectActionSlot()
 
 void MasterActions::handleSaveAllActionSlot()
 {
-    ;
+    SaveAll::save();
 }
 
 
