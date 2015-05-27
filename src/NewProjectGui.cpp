@@ -85,6 +85,10 @@ void NewProjectGui::handleFinishBtnSlot()
     cout << output.toStdString() << endl;
     cout << "\nfinished create!-------------------------" << endl;
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    FileTreeGui::setProjectRootAbsPathStrPtr(new QString(*newProjectPage_2Ptr->getProjectLocStrPtr()
+                                                       + "/"
+                                                       + *newProjectPage_2Ptr->getProjectNameStrPtr() ));
+    FileTreeGui::refresh();
 }
 
 

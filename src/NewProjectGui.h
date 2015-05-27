@@ -25,6 +25,7 @@
 #include "NewProjectPage_2.h"
 #include "NewProjectPage_3.h"
 #include "NewProjectPage_4.h"
+#include "FileTreeGui.h"
 
 class NewProjectGui : public QWidget
 {

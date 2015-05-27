@@ -19,8 +19,8 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     model->setRootPath(*getProjectRootAbsPathStrPtr()/*QDir::currentPath()*/);
     
     
-    tree->setModel(model);
-    tree->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
+    //tree->setModel(model);
+    //tree->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
     tree->setColumnHidden(1, true);
     tree->setColumnHidden(2, true);
     tree->setColumnHidden(3, true);
@@ -31,8 +31,8 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     tree->header()->hide();
     
     
-    list->setModel(model);
-    list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
+    //list->setModel(model);
+    //list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
     splitter->setOrientation(Qt::Vertical);
   
     outerLayout = new QGridLayout();

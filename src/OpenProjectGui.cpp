@@ -38,6 +38,8 @@ void OpenProjectGui::handleOpenProjectPbPtrSlot()
 {
     setProjectStrPtr(new QString(projectLePtr->text() ) );
     this->close();
+    FileTreeGui::setProjectRootAbsPathStrPtr(getProjectStrPtr() );
+    FileTreeGui::refresh();
 }
 
 

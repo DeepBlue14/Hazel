@@ -18,6 +18,8 @@
 #include <QHBoxLayout>
 #include <QGridLayout>
 
+#include "FileTreeGui.h"
+
 class OpenProjectGui : public QWidget
 {
     Q_OBJECT
