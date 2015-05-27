@@ -1,14 +1,17 @@
 /* 
  * File:   FileTreeGui.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description:
  *
  * Created on May 6, 2015, 1:46 AM
  */
 
-#ifndef FILETREEGUI_H
-#define	FILETREEGUI_H
+#ifndef FILE_TREE_GUI_H
+#define	FILE_TREE_GUI_H
 
 #include <QWidget>
+#include <QString>
 #include <QSplitter>
 #include <QTreeView>
 #include <QHeaderView>
@@ -22,15 +25,21 @@ class FileTreeGui : public QWidget
     Q_OBJECT
             
     private:
-        QTreeView* tree;
-        QListView* list;
-        QSplitter* splitter;
+        static QTreeView* tree;
+        static QListView* list;
+        static QSplitter* splitter;
+        static QFileSystemModel* model;
         
         QGridLayout* outerLayout;
         
+        static QString* projectRootAbsPathStrPtr;
+        
     public:
         FileTreeGui(QWidget* parent = 0);
+        static void setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);
+        static QString* getProjectRootAbsPathStrPtr();
+        static void refresh();
         ~FileTreeGui();
 };
 
-#endif	/* FILETREEGUI_H */
+#endif	/* FILE_TREE_GUI_H */

@@ -8,8 +8,8 @@
  * Created on May 6, 2015, 4:33 PM
  */
 
-#ifndef CENTRALGUI_H
-#define	CENTRALGUI_H
+#ifndef CENTRAL_GUI_H
+#define	CENTRAL_GUI_H
 
 #include <QWidget>
 #include <QGridLayout>
@@ -42,5 +42,4 @@ class CentralGui : public QWidget
         ~CentralGui();
 };
 
-#endif	/* CENTRALGUI_H */
-
+#endif	/* CENTRAL_GUI_H */

@@ -46,6 +46,7 @@ class EnvCmds : public QWidget
         void addToPkgPtrVecPtr(QDir* pkg);//---
         QDir* subFromPkgPtrVecPtr(QDir* pkg);
         QVector<QDir*>* getPkgPtrVecPtr();//---
+        bool sourceEnv();
         bool initRosPkg();
         bool testRosPkg();
         ~EnvCmds();

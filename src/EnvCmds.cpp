@@ -32,6 +32,15 @@ QStringList* EnvCmds::getArgsLstPtr()
 }
 
 
+bool EnvCmds::sourceEnv()
+{
+    genRosPkgProcessPtr->setWorkingDirectory(*pkgPathPtr);
+    genRosPkgProcessPtr->start("source", *(new QStringList("devel/setup.bash")));
+    
+    return true; // ***CODE STUB--REPLACE ME ***
+}
+
+
 bool EnvCmds::initRosPkg()
 {
     genRosPkgProcessPtr->setWorkingDirectory(*pkgPathPtr);

@@ -42,7 +42,6 @@ void SaveAll::save()
         QTextStream out(rideFilePtrVec.at(i) );
         rideFilePtrVec.at(i)->resize(0);
         out << rideFilePtrVec.at(i)->getParallelFileGuiPtr()->toPlainText() << endl;
-        //rideFilePtrVec.at(i)->resize(rideFilePtrVec.at(i)->pos());
     }
     
 }

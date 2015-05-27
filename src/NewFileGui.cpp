@@ -114,7 +114,8 @@ void NewFileGui::handleFinishBtnSlot()
     QByteArray tmpBArr;
     tmpBArr.append(editor->toPlainText());
     editor->setPlainText(rideFile->readAll() );
-    masterTabWidgetPtr->addTab(editor, tr("File1"));
+    masterTabWidgetPtr->addTab(editor, *newFilePage_4Ptr->getFileNameStrPtr()
+                                        + *newFilePage_4Ptr->getFileExtStrPtr());
     
     rideFile->setParallelFileGuiPtr(editor);
     SaveAll::pushToRideFilePtrVec(rideFile);

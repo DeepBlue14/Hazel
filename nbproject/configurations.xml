@@ -12,7 +12,6 @@
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
           <itemPath>src/RideFile.h</itemPath>
-          <itemPath>src/Run.h</itemPath>
           <itemPath>src/SaveAll.h</itemPath>
           <itemPath>src/Terminal.h</itemPath>
         </logicalFolder>
@@ -91,7 +90,6 @@
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
           <itemPath>src/RideFile.cpp</itemPath>
-          <itemPath>src/Run.cpp</itemPath>
           <itemPath>src/SaveAll.cpp</itemPath>
           <itemPath>src/Terminal.cpp</itemPath>
         </logicalFolder>
@@ -313,10 +311,6 @@
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Run.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/Run.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunGui.h" ex="false" tool="3" flavor2="0">
@@ -532,10 +526,6 @@
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/Run.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/Run.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

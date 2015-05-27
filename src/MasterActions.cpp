@@ -91,32 +91,6 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
 }
 
 
-/*
-void MasterActions::handleNewFileActionSlot()
-{
-    newFileGuiPtr = new NewFileGui();
-    //newFileGuiPtr->show();
-    cout << "New File activated" << endl;
-    
-    
-    QFont font;
-    font.setFamily("Monospace");
-    font.setFixedPitch(true);
-    font.setPointSize(10);
-    font.setWeight(10);
-
-    FileGui* editor = new FileGui();
-    editor->setFont(font);
-
-    highlighter = new Highlighter(editor->document() );
-
-    QFile file("mainwindow.h");
-    if (file.open(QFile::ReadOnly | QFile::Text) )
-        editor->setPlainText(file.readAll() );
-    
-    masterTabWidgetPtr->addTab(editor, tr("File1"));
-}
-*/
 void MasterActions::handleNewFileActionSlot()
 {
     newFileGuiPtr = new NewFileGui();
