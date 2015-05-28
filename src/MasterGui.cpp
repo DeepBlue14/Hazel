@@ -10,6 +10,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     //openingGui = new OpeningGui();
     masterMenus = new MasterMenus();
     centralGui = new CentralGui();
+    centralGui->passMasterTabWidgetPtr(masterActions->getMasterTabWidgetPtr() );
     
     masterToolBars->setMasterActionsPtr(masterActions);
     masterMenus->setMasterActionsPtr(masterActions);
@@ -21,7 +22,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     masterActions->setMasterTabWidgetPtr(centralGui->getCentralTabsPtr()->getTabWidget());
     
     
-    this->resize(800, 600);
+    this->resize(1000, 800);
 }
 
 

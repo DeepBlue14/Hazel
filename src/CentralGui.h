@@ -13,6 +13,7 @@
 
 #include <QWidget>
 #include <QGridLayout>
+#include <QTabWidget>
 
 #include <iostream>
 
@@ -39,6 +40,7 @@ class CentralGui : public QWidget
     public:
         CentralGui(QWidget* parent = 0);
         TabGui* getCentralTabsPtr();
+        void passMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
         ~CentralGui();
 };
 

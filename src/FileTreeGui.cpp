@@ -1,3 +1,5 @@
+#include <qt5/QtWidgets/qmenu.h>
+
 #include "FileTreeGui.h"
 
 QTreeView* FileTreeGui::tree;
@@ -11,6 +13,7 @@ QString* FileTreeGui::projectRootAbsPathStrPtr;
 FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 {
     projectRootAbsPathStrPtr = new QString("");
+    
     splitter = new QSplitter();
     model = new QFileSystemModel();
     tree = new QTreeView(splitter);
@@ -30,6 +33,8 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     tree->hideColumn(3);
     tree->header()->hide();
     
+    tree->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(tree, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
     
     //list->setModel(model);
     //list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
@@ -39,6 +44,30 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     outerLayout->addWidget(splitter, 0, 0);
   
     this->setLayout(outerLayout);
+}
+
+
+void FileTreeGui::handleRightClickSlot(const QPoint& pos)
+{
+    cout << "right clicked !!!" << endl;
+    QPoint globalPos = tree->mapToGlobal(pos);
+    
+    QMenu myMenu;
+    myMenu.addAction("Open");
+    myMenu.addAction("Delete");
+    
+    QAction* selectedItem = myMenu.exec(globalPos);
+    if(selectedItem)
+    {
+        cout << selectedItem->text().toStdString() << endl;
+        //getMasterTabWidgetPtr()->addTab()
+    }
+    else
+    {
+        cout << selectedItem->text().toStdString() << endl;
+    }
+    
+    
 }
 
 
@@ -71,6 +100,18 @@ void FileTreeGui::refresh()
     list->setModel(model);
     list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
     splitter->setOrientation(Qt::Vertical);
+}
+
+
+void FileTreeGui::setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+{
+    this->masterTabWidgetPtr = masterTabWidgetPtr;
+}
+
+
+QTabWidget* FileTreeGui::getMasterTabWidgetPtr()
+{
+    return masterTabWidgetPtr;
 }
 
 

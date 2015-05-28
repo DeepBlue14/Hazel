@@ -30,6 +30,12 @@ TabGui* CentralGui::getCentralTabsPtr()
 }
 
 
+void CentralGui::passMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+{
+    fileTreeGuiPtr->setMasterTabWidgetPtr(masterTabWidgetPtr);
+}
+
+
 CentralGui::~CentralGui()
 {
     ;

@@ -1,12 +1,14 @@
 /* 
  * File:   MasterToolBars.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on April 29, 2015, 1:48 AM
  */
 
-#ifndef MASTERTOOLBARS_H
-#define	MASTERTOOLBARS_H
+#ifndef MASTER_TOOLBARS_H
+#define	MASTER_TOOLBARS_H
 
 #include <QWidget>
 #include <QToolBar>
@@ -40,5 +42,4 @@ class MasterToolBars : public QWidget
             
 };
 
-#endif	/* MASTERTOOLBARS_H */
-
+#endif	/* MASTER_TOOLBARS_H */

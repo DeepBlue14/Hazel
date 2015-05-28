@@ -37,6 +37,7 @@
 #include "NewFilePage_3.h"
 #include "NewFilePage_4.h"
 #include "SaveAll.h"
+#include "FileTreeGui.h"
 
 using namespace SaveAll;
 

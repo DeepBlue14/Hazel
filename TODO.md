@@ -1,1 +1,1 @@
-- allow opening files from treeview --> tabs: http://www.qtcentre.org/threads/44260-open-%28and-delete%29-a-file-with-a-button-on-qtreeview
+MasterGui->passMasterTabWidgetPtr ---> CentralGui->passMasterTabWidgetPtr ---> FileTreeGui->setMasterTabWidgetPtr()

@@ -18,7 +18,12 @@
 #include <QFileSystemModel>
 #include <QListView>
 #include <QStandardItemModel>
+#include <QPoint>
 #include <QGridLayout>
+
+#include <iostream>
+
+using namespace std;
 
 class FileTreeGui : public QWidget
 {
@@ -33,12 +38,18 @@ class FileTreeGui : public QWidget
         QGridLayout* outerLayout;
         
         static QString* projectRootAbsPathStrPtr;
+        QTabWidget* masterTabWidgetPtr;
+        
+    private slots:
+        void handleRightClickSlot(const QPoint&);
         
     public:
         FileTreeGui(QWidget* parent = 0);
         static void setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);
         static QString* getProjectRootAbsPathStrPtr();
         static void refresh();
+        void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        QTabWidget* getMasterTabWidgetPtr();
         ~FileTreeGui();
 };
 

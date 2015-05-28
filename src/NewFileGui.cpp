@@ -1,4 +1,5 @@
 #include "NewFileGui.h"
+#include "FileTreeGui.h"
 
 
 NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent), completer(0)
@@ -122,6 +123,8 @@ void NewFileGui::handleFinishBtnSlot()
     
     cout << "Successfully ended file creation sequence" << endl;
     this->close();
+    
+    FileTreeGui::refresh();
 }
 
 
