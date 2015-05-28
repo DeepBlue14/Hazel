@@ -1,6 +1,16 @@
 #include "EnvCmds.h"
 
 
+void EnvCmds::initPtrs()
+{
+    pkgPathStrPtr = new QString();
+    argsLstPtr = new QStringList();
+    processPtr = new QProcess();
+
+    pkgPtrVecPtr = new QVector<QDir*>();
+}
+
+
 void EnvCmds::setPkgPathPtr(QString* dirPathPtr)
 {
     pkgPathStrPtr = dirPathPtr;

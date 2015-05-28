@@ -28,9 +28,10 @@ namespace EnvCmds
     QString* pkgPathStrPtr;
     QStringList* argsLstPtr;
     QProcess* processPtr;
-
     QVector<QDir*>* pkgPtrVecPtr;
+    bool ptrsWereInited;
     
+    void initPtrs();
     void setPkgPathPtr(QString* dirPathPtr);
     QString* getPkgPathPtr();
     void setArgsLstPtr(QStringList* argsLstPtr);
