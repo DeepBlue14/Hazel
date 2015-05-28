@@ -9,8 +9,8 @@
  * Created on May 17, 2015, 9:51 PM
  */
 
-#ifndef ENVCMDS_H
-#define	ENVCMDS_H
+#ifndef ENV_CMDS_H
+#define	ENV_CMDS_H
 
 #include <QWidget>
 #include <QString>
@@ -23,34 +23,25 @@
 
 using namespace std;
 
-class EnvCmds : public QWidget
-{
-    Q_OBJECT
-            
-    private:   
-        QString* pkgPathPtr;
-        QStringList* argsLstPtr;
-        QProcess* genRosPkgProcessPtr;
+namespace EnvCmds
+{ 
+    QString* pkgPathStrPtr;
+    QStringList* argsLstPtr;
+    QProcess* processPtr;
 
-        QVector<QDir*>* pkgPtrVecPtr;
-        
-    private slots:
-        ;
-        
-    public:
-        EnvCmds(QWidget* parent = 0);
-        void setPkgPathPtr(QString* dirPathPtr);
-        QString* getPkgPathPtr();
-        void setArgsLstPtr(QStringList* argsLstPtr);
-        QStringList* getArgsLstPtr();
-        void addToPkgPtrVecPtr(QDir* pkg);//---
-        QDir* subFromPkgPtrVecPtr(QDir* pkg);
-        QVector<QDir*>* getPkgPtrVecPtr();//---
-        bool sourceEnv();
-        bool initRosPkg();
-        bool testRosPkg();
-        ~EnvCmds();
+    QVector<QDir*>* pkgPtrVecPtr;
+    
+    void setPkgPathPtr(QString* dirPathPtr);
+    QString* getPkgPathPtr();
+    void setArgsLstPtr(QStringList* argsLstPtr);
+    QStringList* getArgsLstPtr();
+    void genRideProjConfigs();
+    void addToPkgPtrVecPtr(QDir* pkg);//---
+    QDir* subFromPkgPtrVecPtr(QDir* pkg);
+    QVector<QDir*>* getPkgPtrVecPtr();//---
+    bool sourceEnv();
+    bool initRosPkg();
+    bool testRosPkg();
 };
 
-#endif	/* ENVCMDS_H */
-
+#endif	/* ENV_CMDS_H */

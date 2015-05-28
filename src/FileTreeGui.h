@@ -20,6 +20,7 @@
 #include <QStandardItemModel>
 #include <QPoint>
 #include <QGridLayout>
+#include <QMenu>
 
 #include <iostream>
 

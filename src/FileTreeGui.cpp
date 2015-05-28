@@ -1,5 +1,3 @@
-#include <qt5/QtWidgets/qmenu.h>
-
 #include "FileTreeGui.h"
 
 QTreeView* FileTreeGui::tree;

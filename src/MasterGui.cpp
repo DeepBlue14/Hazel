@@ -73,13 +73,13 @@ void MasterGui::initMenus()
 void MasterGui::initToolBars()
 {
     groupOneToolBarPtr = addToolBar(tr("New File") );
-    masterToolBars->initGroupOneToolBar(groupOneToolBarPtr);
+    masterToolBars->initNorthGroupOneToolBar(groupOneToolBarPtr);
     
     groupTwoToolBarPtr = addToolBar(tr("Undo") );
-    masterToolBars->initGroupTwoToolBar(groupTwoToolBarPtr);
+    masterToolBars->initNorthGroupTwoToolBar(groupTwoToolBarPtr);
     
     groupThreeToolBarPtr = addToolBar(tr("Debug") );
-    masterToolBars->initGroupThreeToolBar(groupThreeToolBarPtr);
+    masterToolBars->initNorthGroupThreeToolBar(groupThreeToolBarPtr);
 
 }
 

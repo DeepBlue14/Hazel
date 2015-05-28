@@ -7,8 +7,8 @@
  * Created on April 29, 2015, 1:48 AM
  */
 
-#ifndef MASTER_TOOLBARS_H
-#define	MASTER_TOOLBARS_H
+#ifndef NORTH_TOOLBARS_H
+#define	NORTH_TOOLBARS_H
 
 #include <QWidget>
 #include <QToolBar>
@@ -35,11 +35,14 @@ class MasterToolBars : public QWidget
         MasterToolBars(QWidget* parent = 0);
         void setMasterActionsPtr(MasterActions* masterActionsPtr);
         MasterActions* getMasterActionsPtr();
-        void initGroupOneToolBar(QToolBar* toolbarPtr); 
-        void initGroupTwoToolBar(QToolBar* toolbarPtr);
-        void initGroupThreeToolBar(QToolBar* toolbarPtr);
+        void initNorthGroupOneToolBar(QToolBar* toolbarPtr); 
+        void initNorthGroupTwoToolBar(QToolBar* toolbarPtr);
+        void initNorthGroupThreeToolBar(QToolBar* toolbarPtr);
+        void initSouthGroupOneToolBar(QToolBar* toolbarPtr);
+        void initEastGroupOneToolBar(QToolBar* toolbarPtr);
+        void initWestGroupOneToolBar(QToolBar* toolbarPtr);
         ~MasterToolBars();
             
 };
 
-#endif	/* MASTER_TOOLBARS_H */
+#endif	/* NORTH_TOOLBARS_H */

@@ -9,7 +9,6 @@
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
           <itemPath>src/EnvCmds.h</itemPath>
-          <itemPath>src/GenRideProjConfigs.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
           <itemPath>src/RideFile.h</itemPath>
@@ -49,7 +48,6 @@
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
           <itemPath>src/TabGui.h</itemPath>
-          <itemPath>src/WestToolBar.h</itemPath>
         </logicalFolder>
         <itemPath>src/UnixConsoleText.h</itemPath>
         <itemPath>src/WindowsConsoleText.h</itemPath>
@@ -89,7 +87,6 @@
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
           <itemPath>src/EnvCmds.cpp</itemPath>
-          <itemPath>src/GenRideProjConfigs.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
           <itemPath>src/RideFile.cpp</itemPath>
@@ -129,7 +126,6 @@
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
           <itemPath>src/TabGui.cpp</itemPath>
-          <itemPath>src/WestToolBar.cpp</itemPath>
         </logicalFolder>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
         <itemPath>src/WindowsConsoleText.cpp</itemPath>
@@ -215,10 +211,6 @@
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/GenRideProjConfigs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/GenRideProjConfigs.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
@@ -358,10 +350,6 @@
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/WestToolBar.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/WestToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -439,10 +427,6 @@
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/GenRideProjConfigs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/GenRideProjConfigs.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
@@ -582,10 +566,6 @@
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/WestToolBar.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/WestToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>

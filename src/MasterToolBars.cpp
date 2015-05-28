@@ -18,7 +18,7 @@ MasterActions* MasterToolBars::getMasterActionsPtr()
 }
 
 
-void MasterToolBars::initGroupOneToolBar(QToolBar* toolbar)
+void MasterToolBars::initNorthGroupOneToolBar(QToolBar* toolbar)
 {
     toolbar->addAction(getMasterActionsPtr()->getNewFileActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getNewTerminalActionPtr() );
@@ -28,14 +28,14 @@ void MasterToolBars::initGroupOneToolBar(QToolBar* toolbar)
 }
 
 
-void MasterToolBars::initGroupTwoToolBar(QToolBar* toolbar)
+void MasterToolBars::initNorthGroupTwoToolBar(QToolBar* toolbar)
 {
     toolbar->addAction(getMasterActionsPtr()->getUndoActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getRedoActionPtr() );
 }
 
 
-void MasterToolBars::initGroupThreeToolBar(QToolBar* toolbar)
+void MasterToolBars::initNorthGroupThreeToolBar(QToolBar* toolbar)
 {
     toolbar->addAction(getMasterActionsPtr()->getProfileProjActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getBuildActionPtr() );
@@ -44,6 +44,24 @@ void MasterToolBars::initGroupThreeToolBar(QToolBar* toolbar)
     toolbar->addAction(getMasterActionsPtr()->getRunActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getDebugActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getProfileProjActionPtr() );
+}
+
+
+void initSouthGroupOneToolBar(QToolBar* toolbarPtr)
+{
+    ;
+}
+
+
+void initEastGroupOneToolBar(QToolBar* toolbarPtr)
+{
+    ;
+}
+
+
+void initWestGroupOneToolBar(QToolBar* toolbarPtr)
+{
+    ;
 }
 
 
