@@ -51,6 +51,7 @@ void MasterToolBars::initSouthGroupOneToolBar(QToolBar* toolbarPtr)
 {
     toolbarPtr->addAction(getMasterActionsPtr()->getOutputSouthActionPtr() );
     toolbarPtr->addAction(getMasterActionsPtr()->getTerminalSouthActionPtr() );
+    //toolbarPtr->setOrientation(Qt::Vertical);
 }
 
 

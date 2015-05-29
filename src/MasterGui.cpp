@@ -73,21 +73,27 @@ void MasterGui::initMenus()
 void MasterGui::initToolBars()
 {
     groupOneToolBarPtr = addToolBar(tr("New File") );
+    addToolBar(Qt::TopToolBarArea, groupOneToolBarPtr);
     masterToolBars->initNorthGroupOneToolBar(groupOneToolBarPtr);
     
     groupTwoToolBarPtr = addToolBar(tr("Undo") );
+    addToolBar(Qt::TopToolBarArea, groupTwoToolBarPtr);
     masterToolBars->initNorthGroupTwoToolBar(groupTwoToolBarPtr);
     
     groupThreeToolBarPtr = addToolBar(tr("Debug") );
+    addToolBar(Qt::TopToolBarArea, groupThreeToolBarPtr);
     masterToolBars->initNorthGroupThreeToolBar(groupThreeToolBarPtr);
 
     southToolBarPtr = addToolBar(tr("South") );
+    addToolBar(Qt::BottomToolBarArea, southToolBarPtr);
     masterToolBars->initSouthGroupOneToolBar(southToolBarPtr);
     
     eastToolBarPtr = addToolBar(tr("East") );
+    addToolBar(Qt::RightToolBarArea, eastToolBarPtr);
     masterToolBars->initEastGroupOneToolBar(eastToolBarPtr);
     
     westToolBarPtr = addToolBar(tr("West") );
+    addToolBar(Qt::LeftToolBarArea, westToolBarPtr);
     masterToolBars->initWestGroupOneToolBar(westToolBarPtr);
 }
 

@@ -93,18 +93,18 @@ class MasterActions : public QWidget
         void handleProfileProjActionSlot();
         
         // South
-        void handleOutputSouthActionPtrSlot();
-        void handleTerminalSouthActionPtrSlot();
+        void handleOutputSouthActionSlot();
+        void handleTerminalSouthActionSlot();
         
         // East
-        void handleDebugEastActionPtrSlot();
-        void handleStartEastActionPtrSlot();
-        void handleStepIntoEastActionPtrSlot();
-        void handleStepOverEastActionPtrSlot();
+        void handleDebugEastActionSlot();
+        void handleStartEastActionSlot();
+        void handleStepIntoEastActionSlot();
+        void handleStepOverEastActionSlot();
         
         // West
-        void handleProjectWestActionPtrSlot();
-        void handleNavWestActionPtrSlot();
+        void handleProjectWestActionSlot();
+        void handleNavWestActionSlot();
     
     public:
         MasterActions(QWidget* parent = 0);

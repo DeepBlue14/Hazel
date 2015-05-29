@@ -78,12 +78,12 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     connect(profileProjActionPtr, SIGNAL(triggered() ), this, SLOT(handleProfileProjActionSlot() ) );
 
     // South
-    outputSouthActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    outputSouthActionPtr = new QAction(QIcon("images/output.jpg"), tr("&Output"), this);
     outputSouthActionPtr->setShortcut(QKeySequence::New);
     outputSouthActionPtr->setStatusTip("Output");
     connect(outputSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleOutputSouthActionSlot() ) );
     
-    terminalSouthActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    terminalSouthActionPtr = new QAction(QIcon("images/terminal.jpg"), tr("&Output"), this);
     terminalSouthActionPtr->setShortcut(QKeySequence::New);
     terminalSouthActionPtr->setStatusTip("Output");
     connect(terminalSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleTerminalSouthActionSlot() ) );
@@ -110,12 +110,12 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     connect(stepOverEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleStepOverEastActionSlot() ) );
     
     // West
-    projectWestActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    projectWestActionPtr = new QAction(QIcon("images/tree.jpg"), tr("&Output"), this);
     projectWestActionPtr->setShortcut(QKeySequence::New);
     projectWestActionPtr->setStatusTip("Output");
     connect(projectWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleProjectWestActionSlot() ) );
     
-    navWestActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    navWestActionPtr = new QAction(QIcon("images/navigator.jpg"), tr("&Output"), this);
     navWestActionPtr->setShortcut(QKeySequence::New);
     navWestActionPtr->setStatusTip("Output");
     connect(navWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleNavWestActionSlot() ) );
@@ -135,6 +135,7 @@ void MasterActions::handleNewTerminalActionSlot()
     
     Terminal* term = new Terminal();
     masterTabWidgetPtr->addTab(term, tr("RosTerm"));
+    masterTabWidgetPtr->setCurrentIndex( (masterTabWidgetPtr->children().size() - 1) );
     term->start();
 }
 
@@ -214,51 +215,51 @@ void MasterActions::handleProfileProjActionSlot()
 
 
 // South
-void MasterActions::handleOutputSouthActionPtrSlot()
+void MasterActions::handleOutputSouthActionSlot()
 {
     ;
 }
 
 
-void MasterActions::handleTerminalSouthActionPtrSlot()
+void MasterActions::handleTerminalSouthActionSlot()
 {
     ;
 }
 
 
 // East
-void MasterActions::handleDebugEastActionPtrSlot()
+void MasterActions::handleDebugEastActionSlot()
 {
     ;
 }
 
 
-void MasterActions::handleStartEastActionPtrSlot()
+void MasterActions::handleStartEastActionSlot()
 {
     ;
 }
 
 
-void MasterActions::handleStepIntoEastActionPtrSlot()
+void MasterActions::handleStepIntoEastActionSlot()
 {
     ;
 }
 
 
-void MasterActions::handleStepOverEastActionPtrSlot()
+void MasterActions::handleStepOverEastActionSlot()
 {
     ;
 }
 
 
 // West
-void MasterActions::handleProjectWestActionPtrSlot()
+void MasterActions::handleProjectWestActionSlot()
 {
     ;
 }
 
 
-void MasterActions::handleNavWestActionPtrSlot()
+void MasterActions::handleNavWestActionSlot()
 {
     ;
 }

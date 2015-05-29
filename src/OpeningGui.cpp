@@ -13,7 +13,7 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     applicationNameIconLabelPtr = new QLabel();
     
     //QPixmap organizationLogoPixmapPtr("/home/james/NetBeansProjects/Hazel/images/cs.xpm");
-    QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/ride0.jpg");
+    QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/ride1.xpm");
     
     appLabelPtr = new QLabel();
     QFont* subheaderFont = new QFont("Serif");
