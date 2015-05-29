@@ -2,7 +2,7 @@
 
 MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
 {
-    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/ride1.jpg") );
     this->setWindowTitle("Ride");
       
     masterActions = new MasterActions();

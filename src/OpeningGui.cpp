@@ -13,7 +13,7 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     applicationNameIconLabelPtr = new QLabel();
     
     //QPixmap organizationLogoPixmapPtr("/home/james/NetBeansProjects/Hazel/images/cs.xpm");
-    //QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/Hazel/images/hazel.xpm");
+    QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/ride0.jpg");
     
     appLabelPtr = new QLabel();
     QFont* subheaderFont = new QFont("Serif");
@@ -21,8 +21,7 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     appLabelPtr->setText("----------<b>R</b>OS <b>I</b>ntegrated <b>D</b>evelopment <b>E</b>nvironment----------");
     
     //organizationNameLabelPtr->setPixmap(organizationLogoPixmapPtr);
-    //;
-    //applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(50, 50, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
+    applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(250, 200, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
     
     //QLabel::setOpenExternalLinks(true); //this is Qt > 4.2?
     githubLabelPtr = new QLabel("<u><a href=\"http://www.qtcentre.org\">QtCentre</a></u>");
