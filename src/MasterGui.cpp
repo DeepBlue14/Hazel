@@ -81,6 +81,14 @@ void MasterGui::initToolBars()
     groupThreeToolBarPtr = addToolBar(tr("Debug") );
     masterToolBars->initNorthGroupThreeToolBar(groupThreeToolBarPtr);
 
+    southToolBarPtr = addToolBar(tr("South") );
+    masterToolBars->initSouthGroupOneToolBar(southToolBarPtr);
+    
+    eastToolBarPtr = addToolBar(tr("East") );
+    masterToolBars->initEastGroupOneToolBar(eastToolBarPtr);
+    
+    westToolBarPtr = addToolBar(tr("West") );
+    masterToolBars->initWestGroupOneToolBar(westToolBarPtr);
 }
 
 

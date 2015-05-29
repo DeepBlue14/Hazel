@@ -54,6 +54,9 @@ class MasterGui : public QMainWindow
         QToolBar* groupOneToolBarPtr;
         QToolBar* groupTwoToolBarPtr;
         QToolBar* groupThreeToolBarPtr;
+        QToolBar* southToolBarPtr;
+        QToolBar* eastToolBarPtr;
+        QToolBar* westToolBarPtr;
         
         QTabWidget* tabWidget;
         

@@ -6,6 +6,7 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     runGuiPtr = new RunGui();
     openProjectGuiPtr = new OpenProjectGui();
     
+    // North
     newFileActionPtr = new QAction(QIcon("images/newFile.jpg"), tr("&New File"), this);
     newFileActionPtr->setShortcut(QKeySequence::New);
     newFileActionPtr->setStatusTip("New File");
@@ -26,68 +27,98 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     openProjectActionPtr->setStatusTip("Open Existing Project");
     connect(openProjectActionPtr, SIGNAL(triggered() ), this, SLOT(handleOpenProjectActionSlot() ) );
     
-    
     saveAllActionPtr = new QAction(QIcon("images/save.jpg"), tr("&Save All"), this);
     saveAllActionPtr->setShortcut(QKeySequence::New);
     saveAllActionPtr->setStatusTip("Save All");
     connect(saveAllActionPtr, SIGNAL(triggered() ), this, SLOT(handleSaveAllActionSlot() ) );
-    
     
     undoActionPtr = new QAction(QIcon("images/undo.jpg"), tr("&Undo"), this);
     undoActionPtr->setShortcut(QKeySequence::New);
     undoActionPtr->setStatusTip("Undo");
     connect(undoActionPtr, SIGNAL(triggered() ), this, SLOT(handleUndoActionSlot() ) );
     
-    
     redoActionPtr = new QAction(QIcon("images/redo.jpg"), tr("&Redo"), this);
     redoActionPtr->setShortcut(QKeySequence::New);
     redoActionPtr->setStatusTip("Redo");
     connect(redoActionPtr, SIGNAL(triggered() ), this, SLOT(handleRedoActionSlot() ) );
-    
 
     setProjectConfigActionPtr = new QAction(QIcon("images/generate.jpg"), tr("&set Project Configuration"), this);
     setProjectConfigActionPtr->setShortcut(QKeySequence::New);
     setProjectConfigActionPtr->setStatusTip("Configure");
     connect(setProjectConfigActionPtr, SIGNAL(triggered() ), this, SLOT(handleSetProjectConfigActionSlot() ) );
     
-    
     buildActionPtr = new QAction(QIcon("images/build.jpg"), tr("&Build Project"), this);
     buildActionPtr->setShortcut(QKeySequence::New);
     buildActionPtr->setStatusTip("Build");
     connect(buildActionPtr, SIGNAL(triggered() ), this, SLOT(handleBuildActionSlot() ) );
-    
     
     cleanAndBuildActionPtr = new QAction(QIcon("images/cleanAndBuild.jpg"), tr("&Clean and Build Project"), this);
     cleanAndBuildActionPtr->setShortcut(QKeySequence::New);
     cleanAndBuildActionPtr->setStatusTip("Clean and Build");
     connect(cleanAndBuildActionPtr, SIGNAL(triggered() ), this, SLOT(handleCleanAndBuildActionSlot() ) );
     
-    
     configForRunActionPtr = new QAction(QIcon("images/configForRun.jpg"), tr("&Configure for Execution"), this);
     configForRunActionPtr->setShortcut(QKeySequence::New);
     configForRunActionPtr->setStatusTip("Configure for execution");
     connect(configForRunActionPtr, SIGNAL(triggered() ), this, SLOT(handleConfigForRunActionSlot() ) );
-    
     
     runActionPtr = new QAction(QIcon("images/run.jpg"), tr("&Run Project"), this);
     runActionPtr->setShortcut(QKeySequence::New);
     runActionPtr->setStatusTip("Run Project");
     connect(runActionPtr, SIGNAL(triggered() ), this, SLOT(handleRunActionSlot() ) );
     
-    
     debugActionPtr = new QAction(QIcon("images/debug.jpg"), tr("&Debug Project"), this);
     debugActionPtr->setShortcut(QKeySequence::New);
     debugActionPtr->setStatusTip("Debug");
     connect(debugActionPtr, SIGNAL(triggered() ), this, SLOT(handleDebugActionSlot() ) );
-    
     
     profileProjActionPtr = new QAction(QIcon("images/profile.jpg"), tr("&Profile Project"), this);
     profileProjActionPtr->setShortcut(QKeySequence::New);
     profileProjActionPtr->setStatusTip("Profile");
     connect(profileProjActionPtr, SIGNAL(triggered() ), this, SLOT(handleProfileProjActionSlot() ) );
 
-
-
+    // South
+    outputSouthActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    outputSouthActionPtr->setShortcut(QKeySequence::New);
+    outputSouthActionPtr->setStatusTip("Output");
+    connect(outputSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleOutputSouthActionSlot() ) );
+    
+    terminalSouthActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    terminalSouthActionPtr->setShortcut(QKeySequence::New);
+    terminalSouthActionPtr->setStatusTip("Output");
+    connect(terminalSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleTerminalSouthActionSlot() ) );
+    
+    // East
+    debugEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    debugEastActionPtr->setShortcut(QKeySequence::New);
+    debugEastActionPtr->setStatusTip("Output");
+    connect(debugEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleDebugEastActionSlot() ) );
+    
+    startEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    startEastActionPtr->setShortcut(QKeySequence::New);
+    startEastActionPtr->setStatusTip("Output");
+    connect(startEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleStartEastActionSlot() ) );
+    
+    stepIntoEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    stepIntoEastActionPtr->setShortcut(QKeySequence::New);
+    stepIntoEastActionPtr->setStatusTip("Output");
+    connect(stepIntoEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleStepIntoEastActionSlot() ) );
+    
+    stepOverEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    stepOverEastActionPtr->setShortcut(QKeySequence::New);
+    stepOverEastActionPtr->setStatusTip("Output");
+    connect(stepOverEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleStepOverEastActionSlot() ) );
+    
+    // West
+    projectWestActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    projectWestActionPtr->setShortcut(QKeySequence::New);
+    projectWestActionPtr->setStatusTip("Output");
+    connect(projectWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleProjectWestActionSlot() ) );
+    
+    navWestActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
+    navWestActionPtr->setShortcut(QKeySequence::New);
+    navWestActionPtr->setStatusTip("Output");
+    connect(navWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleNavWestActionSlot() ) );
 }
 
 
@@ -177,6 +208,57 @@ void MasterActions::handleDebugActionSlot()
 
 
 void MasterActions::handleProfileProjActionSlot()
+{
+    ;
+}
+
+
+// South
+void MasterActions::handleOutputSouthActionPtrSlot()
+{
+    ;
+}
+
+
+void MasterActions::handleTerminalSouthActionPtrSlot()
+{
+    ;
+}
+
+
+// East
+void MasterActions::handleDebugEastActionPtrSlot()
+{
+    ;
+}
+
+
+void MasterActions::handleStartEastActionPtrSlot()
+{
+    ;
+}
+
+
+void MasterActions::handleStepIntoEastActionPtrSlot()
+{
+    ;
+}
+
+
+void MasterActions::handleStepOverEastActionPtrSlot()
+{
+    ;
+}
+
+
+// West
+void MasterActions::handleProjectWestActionPtrSlot()
+{
+    ;
+}
+
+
+void MasterActions::handleNavWestActionPtrSlot()
 {
     ;
 }
@@ -284,6 +366,57 @@ QAction* MasterActions::getProfileProjActionPtr()
 }
 
 
+// South
+QAction* MasterActions::getOutputSouthActionPtr()
+{
+    return outputSouthActionPtr;
+}
+
+
+QAction* MasterActions::getTerminalSouthActionPtr()
+{
+    return terminalSouthActionPtr;
+}
+
+
+// East
+QAction* MasterActions::getDebugEastActionPtr()
+{
+    return debugEastActionPtr;
+}
+
+
+QAction* MasterActions::getStartEastActionPtr()
+{
+    return startEastActionPtr;
+}
+
+
+QAction* MasterActions::getStepIntoEastActionPtr()
+{
+    return stepIntoEastActionPtr;
+}
+
+
+QAction* MasterActions::getStepOverActionPtr()
+{
+    return stepOverEastActionPtr;
+}
+
+
+// West
+QAction* MasterActions::getProjectWestActionPtr()
+{
+    return projectWestActionPtr;
+}
+
+
+QAction* MasterActions::getNavWestActionPtr()
+{
+    return navWestActionPtr;
+}
+
+
 template<class X>
 void MasterActions::connectToNewFileAction(X* component)
 {
@@ -379,6 +512,65 @@ template<class X>
 void MasterActions::connectToProfileProjAction(X* component)
 {
     connect(component, SIGNAL(released() ), this, SLOT(handleProfileActionSlot() ) );
+}
+
+
+// South
+template<class X>
+void MasterActions::connectToOutputSouthAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleOutputSouthActionSlot() ) );
+}
+
+
+template<class X>
+void MasterActions::connectToTerminalSouthAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleTerminalSouthActionSlot() ) );
+}
+
+
+// East
+template<class X>
+void MasterActions::connectToDebugEastAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleDebugEastActionSlot() ) );
+}
+
+
+template<class X>
+void MasterActions::connectToStartEastAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleStartEastActionSlot() ) );
+}
+
+
+template<class X>
+void MasterActions::connectToStepIntoEastAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleStepIntoEastActionSlot() ) );
+}
+
+
+template<class X>
+void MasterActions::connectToStepOverEastAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleStepOverEastActionSlot() ) );
+}
+
+
+// West
+template<class X>
+void MasterActions::connectToProjectWestAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleProjectWestActionSlot() ) );
+}
+
+
+template<class X>
+void MasterActions::connectToNavWestAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleNavWestActionSlot() ) );
 }
 
 

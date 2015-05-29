@@ -47,21 +47,26 @@ void MasterToolBars::initNorthGroupThreeToolBar(QToolBar* toolbar)
 }
 
 
-void initSouthGroupOneToolBar(QToolBar* toolbarPtr)
+void MasterToolBars::initSouthGroupOneToolBar(QToolBar* toolbarPtr)
 {
-    ;
+    toolbarPtr->addAction(getMasterActionsPtr()->getOutputSouthActionPtr() );
+    toolbarPtr->addAction(getMasterActionsPtr()->getTerminalSouthActionPtr() );
 }
 
 
-void initEastGroupOneToolBar(QToolBar* toolbarPtr)
+void MasterToolBars::initEastGroupOneToolBar(QToolBar* toolbarPtr)
 {
-    ;
+    toolbarPtr->addAction(getMasterActionsPtr()->getDebugEastActionPtr() );
+    toolbarPtr->addAction(getMasterActionsPtr()->getStartEastActionPtr() );
+    toolbarPtr->addAction(getMasterActionsPtr()->getStepIntoEastActionPtr() );
+    toolbarPtr->addAction(getMasterActionsPtr()->getStepOverActionPtr() );
 }
 
 
-void initWestGroupOneToolBar(QToolBar* toolbarPtr)
+void MasterToolBars::initWestGroupOneToolBar(QToolBar* toolbarPtr)
 {
-    ;
+    toolbarPtr->addAction(getMasterActionsPtr()->getProjectWestActionPtr() );
+    toolbarPtr->addAction(getMasterActionsPtr()->getNavWestActionPtr() );
 }
 
 
