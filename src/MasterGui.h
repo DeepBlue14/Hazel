@@ -81,4 +81,3 @@ class MasterGui : public QMainWindow
 };
 
 #endif	/* MASTER_GUI_H */
-
