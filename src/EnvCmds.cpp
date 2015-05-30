@@ -120,3 +120,11 @@ bool EnvCmds::testRosPkg()
 
     return true; // *** CODE STUB--REPLACE ME ***
 }
+
+
+bool EnvCmds::catkin_make()
+{
+    processPtr->setWorkingDirectory(*pkgPathStrPtr);
+    processPtr->execute("source", *(new QStringList("devel/setup.bash")));
+    processPtr->start("catkin_make");
+}

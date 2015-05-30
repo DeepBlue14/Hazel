@@ -43,6 +43,7 @@ namespace EnvCmds
     bool sourceEnv();
     bool initRosPkg();
     bool testRosPkg();
+    bool catkin_make();
 };
 
 #endif	/* ENV_CMDS_H */
