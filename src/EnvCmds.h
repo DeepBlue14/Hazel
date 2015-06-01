@@ -4,7 +4,7 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description:
  * 
- * Note: Change this class to an namespace?
+ * 
  *
  * Created on May 17, 2015, 9:51 PM
  */
