@@ -1,0 +1,101 @@
+.TH "/home/james/NetBeansProjects/ride/src/EnvCmds.h" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/james/NetBeansProjects/ride/src/EnvCmds.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <QWidget>\fP
+.br
+\fC#include <QString>\fP
+.br
+\fC#include <QStringList>\fP
+.br
+\fC#include <QDir>\fP
+.br
+\fC#include <QVector>\fP
+.br
+\fC#include <QProcess>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "\fBEnvCmds\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBEnvCmds::initPtrs\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnvCmds::setPkgPathPtr\fP (QString *dirPathPtr)"
+.br
+.ti -1c
+.RI "QString * \fBEnvCmds::getPkgPathPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnvCmds::setArgsLstPtr\fP (QStringList *argsLstPtr)"
+.br
+.ti -1c
+.RI "QStringList * \fBEnvCmds::getArgsLstPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnvCmds::genRideProjConfigs\fP ()"
+.br
+.ti -1c
+.RI "void \fBEnvCmds::addToPkgPtrVecPtr\fP (QDir *pkg)"
+.br
+.ti -1c
+.RI "QDir * \fBEnvCmds::subFromPkgPtrVecPtr\fP (QDir *pkg)"
+.br
+.ti -1c
+.RI "QVector< QDir * > * \fBEnvCmds::getPkgPtrVecPtr\fP ()"
+.br
+.ti -1c
+.RI "bool \fBEnvCmds::sourceEnv\fP ()"
+.br
+.ti -1c
+.RI "bool \fBEnvCmds::initRosPkg\fP ()"
+.br
+.ti -1c
+.RI "bool \fBEnvCmds::testRosPkg\fP ()"
+.br
+.ti -1c
+.RI "bool \fBEnvCmds::catkin_make\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "QString * \fBEnvCmds::workspacePathStrPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBEnvCmds::pkgPathStrPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBEnvCmds::launchFilePathStrPtr\fP"
+.br
+.ti -1c
+.RI "QStringList * \fBEnvCmds::argsLstPtr\fP"
+.br
+.ti -1c
+.RI "QProcess * \fBEnvCmds::processPtr\fP"
+.br
+.ti -1c
+.RI "QVector< QDir * > * \fBEnvCmds::pkgPtrVecPtr\fP"
+.br
+.ti -1c
+.RI "bool \fBEnvCmds::ptrsWereInited\fP"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

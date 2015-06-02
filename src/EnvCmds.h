@@ -25,7 +25,9 @@ using namespace std;
 
 namespace EnvCmds
 { 
+    QString* workspacePathStrPtr;
     QString* pkgPathStrPtr;
+    QString* launchFilePathStrPtr;
     QStringList* argsLstPtr;
     QProcess* processPtr;
     QVector<QDir*>* pkgPtrVecPtr;

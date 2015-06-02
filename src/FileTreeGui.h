@@ -21,6 +21,7 @@
 #include <QPoint>
 #include <QGridLayout>
 #include <QMenu>
+#include <QDebug>
 
 #include <iostream>
 

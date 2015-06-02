@@ -1,0 +1,149 @@
+.TH "NewFilePage_1" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NewFilePage_1 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NewFilePage_1\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNewFilePage_1\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBsetLangStrPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBgetLangStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFileTypeStrPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBgetFileTypeStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBtriggerMutators\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~NewFilePage_1\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleSwapOptionsSlot\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QStringList * \fBlangsStrLstPtr\fP"
+.br
+.ti -1c
+.RI "QVector< QStringList * > \fBfileTypeStrLstPtrVec\fP"
+.br
+.ti -1c
+.RI "QListWidget * \fBlangsLwPtr\fP"
+.br
+.ti -1c
+.RI "QListWidget * \fBfileTypeLwPtr\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayoutPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBlangStrPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBfileTypeStrPtr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file NewFilePage_1\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "NewFilePage_1::NewFilePage_1 (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file NewFilePage_1\&.cpp\&.
+.SS "NewFilePage_1::~NewFilePage_1 ()"
+
+.PP
+Definition at line 141 of file NewFilePage_1\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QString * NewFilePage_1::getFileTypeStrPtr ()"
+
+.PP
+Definition at line 117 of file NewFilePage_1\&.cpp\&.
+.SS "QString * NewFilePage_1::getLangStrPtr ()"
+
+.PP
+Definition at line 98 of file NewFilePage_1\&.cpp\&.
+.SS "void NewFilePage_1::handleSwapOptionsSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 78 of file NewFilePage_1\&.cpp\&.
+.SS "void NewFilePage_1::setFileTypeStrPtr ()"
+
+.PP
+Definition at line 104 of file NewFilePage_1\&.cpp\&.
+.SS "void NewFilePage_1::setLangStrPtr ()"
+
+.PP
+Definition at line 85 of file NewFilePage_1\&.cpp\&.
+.SS "QString * NewFilePage_1::toString ()"
+
+.PP
+Definition at line 130 of file NewFilePage_1\&.cpp\&.
+.SS "void NewFilePage_1::triggerMutators ()"
+
+.PP
+Definition at line 123 of file NewFilePage_1\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QListWidget* NewFilePage_1::fileTypeLwPtr\fC [private]\fP"
+
+.PP
+Definition at line 34 of file NewFilePage_1\&.h\&.
+.SS "QVector<QStringList*> NewFilePage_1::fileTypeStrLstPtrVec\fC [private]\fP"
+
+.PP
+Definition at line 32 of file NewFilePage_1\&.h\&.
+.SS "QString* NewFilePage_1::fileTypeStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 39 of file NewFilePage_1\&.h\&.
+.SS "QListWidget* NewFilePage_1::langsLwPtr\fC [private]\fP"
+
+.PP
+Definition at line 33 of file NewFilePage_1\&.h\&.
+.SS "QStringList* NewFilePage_1::langsStrLstPtr\fC [private]\fP"
+
+.PP
+Definition at line 31 of file NewFilePage_1\&.h\&.
+.SS "QString* NewFilePage_1::langStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 38 of file NewFilePage_1\&.h\&.
+.SS "QGridLayout* NewFilePage_1::outerLayoutPtr\fC [private]\fP"
+
+.PP
+Definition at line 36 of file NewFilePage_1\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

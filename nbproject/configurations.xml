@@ -15,6 +15,9 @@
           <itemPath>src/PhysicalAttribLog.h</itemPath>
           <itemPath>src/RideFile.h</itemPath>
           <itemPath>src/SaveAll.h</itemPath>
+          <itemPath>src/ScoutData.h</itemPath>
+          <itemPath>src/ScoutFuncDat.h</itemPath>
+          <itemPath>src/ScoutLibDat.h</itemPath>
           <itemPath>src/Terminal.h</itemPath>
           <itemPath>src/XmlMaster.h</itemPath>
         </logicalFolder>
@@ -96,6 +99,9 @@
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
           <itemPath>src/RideFile.cpp</itemPath>
           <itemPath>src/SaveAll.cpp</itemPath>
+          <itemPath>src/ScoutData.cpp</itemPath>
+          <itemPath>src/ScoutFuncDat.cpp</itemPath>
+          <itemPath>src/ScoutLibDat.cpp</itemPath>
           <itemPath>src/Terminal.cpp</itemPath>
           <itemPath>src/XmlMaster.cpp</itemPath>
         </logicalFolder>
@@ -345,9 +351,21 @@
       </item>
       <item path="src/SaveAll.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ScoutData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SplashScreen.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -573,9 +591,21 @@
       </item>
       <item path="src/SaveAll.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ScoutData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SplashScreen.cpp" ex="false" tool="1" flavor2="0">
       </item>

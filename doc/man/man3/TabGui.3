@@ -1,0 +1,93 @@
+.TH "TabGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TabGui \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TabGui\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTabGui\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "template<class TabType > void \fBaddTab\fP (TabType *tabType)"
+.br
+.ti -1c
+.RI "QTabWidget * \fBgetTabWidget\fP ()"
+.br
+.ti -1c
+.RI "\fB~TabGui\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleCloseTabSlot\fP (int index)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QTabWidget * \fBtabWidget\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayout\fP"
+.br
+.ti -1c
+.RI "\fBOpeningGui\fP * \fBopeningGui\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file TabGui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "TabGui::TabGui (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file TabGui\&.cpp\&.
+.SS "TabGui::~TabGui ()"
+
+.PP
+Definition at line 42 of file TabGui\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class TabType > void TabGui::addTab (TabType *tabType)"
+
+.PP
+Definition at line 30 of file TabGui\&.cpp\&.
+.SS "QTabWidget * TabGui::getTabWidget ()"
+
+.PP
+Definition at line 36 of file TabGui\&.cpp\&.
+.SS "void TabGui::handleCloseTabSlot (intindex)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 23 of file TabGui\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBOpeningGui\fP* TabGui::openingGui\fC [private]\fP"
+
+.PP
+Definition at line 35 of file TabGui\&.h\&.
+.SS "QGridLayout* TabGui::outerLayout\fC [private]\fP"
+
+.PP
+Definition at line 33 of file TabGui\&.h\&.
+.SS "QTabWidget* TabGui::tabWidget\fC [private]\fP"
+
+.PP
+Definition at line 31 of file TabGui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

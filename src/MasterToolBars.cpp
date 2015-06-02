@@ -61,6 +61,9 @@ void MasterToolBars::initEastGroupOneToolBar(QToolBar* toolbarPtr)
     toolbarPtr->addAction(getMasterActionsPtr()->getStartEastActionPtr() );
     toolbarPtr->addAction(getMasterActionsPtr()->getStepIntoEastActionPtr() );
     toolbarPtr->addAction(getMasterActionsPtr()->getStepOverActionPtr() );
+    toolbarPtr->hide();
+    
+    cout << "East toolbar is hidden (MasterToolBars::initEastGroupOneToolbar(...)" << endl;
 }
 
 

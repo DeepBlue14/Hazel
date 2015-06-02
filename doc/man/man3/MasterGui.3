@@ -1,0 +1,236 @@
+.TH "MasterGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MasterGui \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MasterGui\&.h>\fP
+.PP
+Inherits QMainWindow\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMasterGui\fP (QMainWindow *parent=0)"
+.br
+.ti -1c
+.RI "void \fBinitToolBars\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitMenus\fP ()"
+.br
+.ti -1c
+.RI "\fB~MasterGui\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QMenu * \fBfileMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBeditMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBviewMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBnavigateMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBsourceMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBrefactorMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBrunMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBdebugMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBprofileMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBteamMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBtoolsMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBwindowMenuPtr\fP"
+.br
+.ti -1c
+.RI "QMenu * \fBhelpMenuPtr\fP"
+.br
+.ti -1c
+.RI "QToolBar * \fBgroupOneToolBarPtr\fP"
+.br
+.ti -1c
+.RI "QToolBar * \fBgroupTwoToolBarPtr\fP"
+.br
+.ti -1c
+.RI "QToolBar * \fBgroupThreeToolBarPtr\fP"
+.br
+.ti -1c
+.RI "QToolBar * \fBsouthToolBarPtr\fP"
+.br
+.ti -1c
+.RI "QToolBar * \fBeastToolBarPtr\fP"
+.br
+.ti -1c
+.RI "QToolBar * \fBwestToolBarPtr\fP"
+.br
+.ti -1c
+.RI "QTabWidget * \fBtabWidget\fP"
+.br
+.ti -1c
+.RI "QTextEdit * \fBeditor\fP"
+.br
+.ti -1c
+.RI "\fBMasterActions\fP * \fBmasterActions\fP"
+.br
+.ti -1c
+.RI "\fBMasterToolBars\fP * \fBmasterToolBars\fP"
+.br
+.ti -1c
+.RI "\fBMasterMenus\fP * \fBmasterMenus\fP"
+.br
+.ti -1c
+.RI "\fBCentralGui\fP * \fBcentralGui\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 35 of file MasterGui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MasterGui::MasterGui (QMainWindow *parent = \fC0\fP)"
+
+.PP
+Definition at line 3 of file MasterGui\&.cpp\&.
+.SS "MasterGui::~MasterGui ()"
+
+.PP
+Definition at line 101 of file MasterGui\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void MasterGui::initMenus ()"
+
+.PP
+Definition at line 29 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::initToolBars ()"
+
+.PP
+Definition at line 73 of file MasterGui\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCentralGui\fP* MasterGui::centralGui\fC [private]\fP"
+
+.PP
+Definition at line 70 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::debugMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 47 of file MasterGui\&.h\&.
+.SS "QToolBar* MasterGui::eastToolBarPtr\fC [private]\fP"
+
+.PP
+Definition at line 58 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::editMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 41 of file MasterGui\&.h\&.
+.SS "QTextEdit* MasterGui::editor\fC [private]\fP"
+
+.PP
+Definition at line 63 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::fileMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 40 of file MasterGui\&.h\&.
+.SS "QToolBar* MasterGui::groupOneToolBarPtr\fC [private]\fP"
+
+.PP
+Definition at line 54 of file MasterGui\&.h\&.
+.SS "QToolBar* MasterGui::groupThreeToolBarPtr\fC [private]\fP"
+
+.PP
+Definition at line 56 of file MasterGui\&.h\&.
+.SS "QToolBar* MasterGui::groupTwoToolBarPtr\fC [private]\fP"
+
+.PP
+Definition at line 55 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::helpMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 52 of file MasterGui\&.h\&.
+.SS "\fBMasterActions\fP* MasterGui::masterActions\fC [private]\fP"
+
+.PP
+Definition at line 66 of file MasterGui\&.h\&.
+.SS "\fBMasterMenus\fP* MasterGui::masterMenus\fC [private]\fP"
+
+.PP
+Definition at line 69 of file MasterGui\&.h\&.
+.SS "\fBMasterToolBars\fP* MasterGui::masterToolBars\fC [private]\fP"
+
+.PP
+Definition at line 67 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::navigateMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 43 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::profileMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 48 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::refactorMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 45 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::runMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 46 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::sourceMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 44 of file MasterGui\&.h\&.
+.SS "QToolBar* MasterGui::southToolBarPtr\fC [private]\fP"
+
+.PP
+Definition at line 57 of file MasterGui\&.h\&.
+.SS "QTabWidget* MasterGui::tabWidget\fC [private]\fP"
+
+.PP
+Definition at line 61 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::teamMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 49 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::toolsMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 50 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::viewMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 42 of file MasterGui\&.h\&.
+.SS "QToolBar* MasterGui::westToolBarPtr\fC [private]\fP"
+
+.PP
+Definition at line 59 of file MasterGui\&.h\&.
+.SS "QMenu* MasterGui::windowMenuPtr\fC [private]\fP"
+
+.PP
+Definition at line 51 of file MasterGui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

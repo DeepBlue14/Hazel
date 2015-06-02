@@ -1,0 +1,418 @@
+\hypertarget{class_run_gui}{\section{Run\-Gui Class Reference}
+\label{class_run_gui}\index{Run\-Gui@{Run\-Gui}}
+}
+
+
+{\ttfamily \#include $<$Run\-Gui.\-h$>$}
+
+
+
+Inheritance diagram for Run\-Gui\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{class_run_gui__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Run\-Gui\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_run_gui__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_run_gui_af41e6138b6401d18ff8a3f8db680cd43}{Run\-Gui} (Q\-Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_run_gui_ad78d722a104e6e893b57642340c3b937}{init\-Btns} ()
+\item 
+void \hyperlink{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65}{reset} ()
+\item 
+void \hyperlink{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176}{swap\-Next\-Page} ()
+\item 
+void \hyperlink{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9}{swap\-Back\-Page} ()
+\item 
+void \hyperlink{class_run_gui_a381d265f46ec8473a7858974a19674c5}{load\-Page\-\_\-1} ()
+\item 
+void \hyperlink{class_run_gui_ab68852933855016b114c795ab494d8bb}{unload\-Page\-\_\-1} ()
+\item 
+void \hyperlink{class_run_gui_a8048ffff4b07771419e8c88ea250d2f2}{load\-Page\-\_\-2} ()
+\item 
+void \hyperlink{class_run_gui_a3192d643a700244e066f3e0ca4389c4b}{unload\-Page\-\_\-2} ()
+\item 
+void \hyperlink{class_run_gui_a5defb3e688b1b3f22d50c5b9389910c0}{load\-Page\-\_\-3} ()
+\item 
+void \hyperlink{class_run_gui_a410e373ff032fb779b52b1dd501c3128}{unload\-Page\-\_\-3} ()
+\item 
+Q\-String $\ast$ \hyperlink{class_run_gui_a4a3470c32bf986ad552bc225d039e5bb}{to\-String} ()
+\item 
+\hyperlink{class_run_gui_a22945ade9579f8d0e44f848c51a0a0b0}{$\sim$\-Run\-Gui} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3}{Page} \{ \hyperlink{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3aad59b834aebc523b21fc270d5d5fa41e}{P\-A\-G\-E\-\_\-\-O\-N\-E}, 
+\hyperlink{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3a141aac6dec6d5f36540fcaf2fe34f343}{P\-A\-G\-E\-\_\-\-T\-W\-O}, 
+\hyperlink{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3a58cde07651bfba4a62997dc50a95fba1}{P\-A\-G\-E\-\_\-\-T\-H\-R\-E\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_run_gui_abe8773e053b15ed96efcdb6e4b63e508}{handle\-Back\-Btn\-Slot} ()
+\item 
+void \hyperlink{class_run_gui_a267f472d21d57258adb28ebdcc83b256}{handle\-Next\-Btn\-Slot} ()
+\item 
+void \hyperlink{class_run_gui_a011495c9158d92b794941ac108b5b148}{handle\-Finish\-Btn\-Slot} ()
+\item 
+void \hyperlink{class_run_gui_ab29bf8394f8b23b2c1ffd33c6d2470eb}{handle\-Help\-Bnt\-Slot} ()
+\item 
+void \hyperlink{class_run_gui_a1127986fbf076ce480defe68d99171e1}{handle\-Cancel\-Btn\-Slot} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3}{Page} \hyperlink{class_run_gui_a1d93e84df8a71767ca927554e5b0fe0d}{current\-Page}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_run_gui_a5a79c5d8f3a61510c2be51738e428473}{back\-Btn}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_run_gui_a02bb63cd6c6d77933f98087111ce1a66}{next\-Btn}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_run_gui_a2989fde08a236488c152c8fa584c3380}{finish\-Btn}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_run_gui_a6c0a17f55049da888442fbc28dff7a78}{help\-Btn}
+\item 
+Q\-Push\-Button $\ast$ \hyperlink{class_run_gui_aa14d8877052e9cc11c93055561501792}{cancel\-Btn}
+\item 
+Q\-Grid\-Layout $\ast$ \hyperlink{class_run_gui_ae4cdc2ec0797c9121a47b9cdf3b93115}{outer\-Layout\-Ptr}
+\item 
+Q\-H\-Box\-Layout $\ast$ \hyperlink{class_run_gui_a812f0836d9eb5b0148cf92b61bc53be2}{button\-Layout}
+\item 
+\hyperlink{class_run_page__1}{Run\-Page\-\_\-1} $\ast$ \hyperlink{class_run_gui_aa52f64156c00bbd4e14c46b8113e3072}{run\-Page\-\_\-1\-Ptr}
+\item 
+\hyperlink{class_run_page__2}{Run\-Page\-\_\-2} $\ast$ \hyperlink{class_run_gui_a86764c1a0c9629fbce62c7cb13c5ee07}{run\-Page\-\_\-2\-Ptr}
+\item 
+\hyperlink{class_run_page__3}{Run\-Page\-\_\-3} $\ast$ \hyperlink{class_run_gui_a7306b4df6c8619a98da052935a021cf8}{run\-Page\-\_\-3\-Ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 26 of file Run\-Gui.\-h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3}{\index{Run\-Gui@{Run\-Gui}!Page@{Page}}
+\index{Page@{Page}!RunGui@{Run\-Gui}}
+\subsubsection[{Page}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Run\-Gui\-::\-Page}\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{P\-A\-G\-E\-\_\-\-O\-N\-E@{P\-A\-G\-E\-\_\-\-O\-N\-E}!Run\-Gui@{Run\-Gui}}\index{Run\-Gui@{Run\-Gui}!P\-A\-G\-E\-\_\-\-O\-N\-E@{P\-A\-G\-E\-\_\-\-O\-N\-E}}\item[{\em 
+\hypertarget{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3aad59b834aebc523b21fc270d5d5fa41e}{P\-A\-G\-E\-\_\-\-O\-N\-E}\label{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3aad59b834aebc523b21fc270d5d5fa41e}
+}]\index{P\-A\-G\-E\-\_\-\-T\-W\-O@{P\-A\-G\-E\-\_\-\-T\-W\-O}!Run\-Gui@{Run\-Gui}}\index{Run\-Gui@{Run\-Gui}!P\-A\-G\-E\-\_\-\-T\-W\-O@{P\-A\-G\-E\-\_\-\-T\-W\-O}}\item[{\em 
+\hypertarget{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3a141aac6dec6d5f36540fcaf2fe34f343}{P\-A\-G\-E\-\_\-\-T\-W\-O}\label{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3a141aac6dec6d5f36540fcaf2fe34f343}
+}]\index{P\-A\-G\-E\-\_\-\-T\-H\-R\-E\-E@{P\-A\-G\-E\-\_\-\-T\-H\-R\-E\-E}!Run\-Gui@{Run\-Gui}}\index{Run\-Gui@{Run\-Gui}!P\-A\-G\-E\-\_\-\-T\-H\-R\-E\-E@{P\-A\-G\-E\-\_\-\-T\-H\-R\-E\-E}}\item[{\em 
+\hypertarget{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3a58cde07651bfba4a62997dc50a95fba1}{P\-A\-G\-E\-\_\-\-T\-H\-R\-E\-E}\label{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3a58cde07651bfba4a62997dc50a95fba1}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 31 of file Run\-Gui.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_run_gui_af41e6138b6401d18ff8a3f8db680cd43}{\index{Run\-Gui@{Run\-Gui}!Run\-Gui@{Run\-Gui}}
+\index{Run\-Gui@{Run\-Gui}!RunGui@{Run\-Gui}}
+\subsubsection[{Run\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}Run\-Gui\-::\-Run\-Gui (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_af41e6138b6401d18ff8a3f8db680cd43}
+
+
+Definition at line 4 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a22945ade9579f8d0e44f848c51a0a0b0}{\index{Run\-Gui@{Run\-Gui}!$\sim$\-Run\-Gui@{$\sim$\-Run\-Gui}}
+\index{$\sim$\-Run\-Gui@{$\sim$\-Run\-Gui}!RunGui@{Run\-Gui}}
+\subsubsection[{$\sim$\-Run\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}Run\-Gui\-::$\sim$\-Run\-Gui (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a22945ade9579f8d0e44f848c51a0a0b0}
+
+
+Definition at line 205 of file Run\-Gui.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_run_gui_abe8773e053b15ed96efcdb6e4b63e508}{\index{Run\-Gui@{Run\-Gui}!handle\-Back\-Btn\-Slot@{handle\-Back\-Btn\-Slot}}
+\index{handle\-Back\-Btn\-Slot@{handle\-Back\-Btn\-Slot}!RunGui@{Run\-Gui}}
+\subsubsection[{handle\-Back\-Btn\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Back\-Btn\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_run_gui_abe8773e053b15ed96efcdb6e4b63e508}
+
+
+Definition at line 22 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a1127986fbf076ce480defe68d99171e1}{\index{Run\-Gui@{Run\-Gui}!handle\-Cancel\-Btn\-Slot@{handle\-Cancel\-Btn\-Slot}}
+\index{handle\-Cancel\-Btn\-Slot@{handle\-Cancel\-Btn\-Slot}!RunGui@{Run\-Gui}}
+\subsubsection[{handle\-Cancel\-Btn\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Cancel\-Btn\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_run_gui_a1127986fbf076ce480defe68d99171e1}
+
+
+Definition at line 46 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a011495c9158d92b794941ac108b5b148}{\index{Run\-Gui@{Run\-Gui}!handle\-Finish\-Btn\-Slot@{handle\-Finish\-Btn\-Slot}}
+\index{handle\-Finish\-Btn\-Slot@{handle\-Finish\-Btn\-Slot}!RunGui@{Run\-Gui}}
+\subsubsection[{handle\-Finish\-Btn\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Finish\-Btn\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_run_gui_a011495c9158d92b794941ac108b5b148}
+
+
+Definition at line 34 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_ab29bf8394f8b23b2c1ffd33c6d2470eb}{\index{Run\-Gui@{Run\-Gui}!handle\-Help\-Bnt\-Slot@{handle\-Help\-Bnt\-Slot}}
+\index{handle\-Help\-Bnt\-Slot@{handle\-Help\-Bnt\-Slot}!RunGui@{Run\-Gui}}
+\subsubsection[{handle\-Help\-Bnt\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Help\-Bnt\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_run_gui_ab29bf8394f8b23b2c1ffd33c6d2470eb}
+
+
+Definition at line 40 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a267f472d21d57258adb28ebdcc83b256}{\index{Run\-Gui@{Run\-Gui}!handle\-Next\-Btn\-Slot@{handle\-Next\-Btn\-Slot}}
+\index{handle\-Next\-Btn\-Slot@{handle\-Next\-Btn\-Slot}!RunGui@{Run\-Gui}}
+\subsubsection[{handle\-Next\-Btn\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Next\-Btn\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_run_gui_a267f472d21d57258adb28ebdcc83b256}
+
+
+Definition at line 28 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_ad78d722a104e6e893b57642340c3b937}{\index{Run\-Gui@{Run\-Gui}!init\-Btns@{init\-Btns}}
+\index{init\-Btns@{init\-Btns}!RunGui@{Run\-Gui}}
+\subsubsection[{init\-Btns}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::init\-Btns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_ad78d722a104e6e893b57642340c3b937}
+
+
+Definition at line 52 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a381d265f46ec8473a7858974a19674c5}{\index{Run\-Gui@{Run\-Gui}!load\-Page\-\_\-1@{load\-Page\-\_\-1}}
+\index{load\-Page\-\_\-1@{load\-Page\-\_\-1}!RunGui@{Run\-Gui}}
+\subsubsection[{load\-Page\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::load\-Page\-\_\-1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a381d265f46ec8473a7858974a19674c5}
+
+
+Definition at line 149 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a8048ffff4b07771419e8c88ea250d2f2}{\index{Run\-Gui@{Run\-Gui}!load\-Page\-\_\-2@{load\-Page\-\_\-2}}
+\index{load\-Page\-\_\-2@{load\-Page\-\_\-2}!RunGui@{Run\-Gui}}
+\subsubsection[{load\-Page\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::load\-Page\-\_\-2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a8048ffff4b07771419e8c88ea250d2f2}
+
+
+Definition at line 165 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a5defb3e688b1b3f22d50c5b9389910c0}{\index{Run\-Gui@{Run\-Gui}!load\-Page\-\_\-3@{load\-Page\-\_\-3}}
+\index{load\-Page\-\_\-3@{load\-Page\-\_\-3}!RunGui@{Run\-Gui}}
+\subsubsection[{load\-Page\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::load\-Page\-\_\-3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a5defb3e688b1b3f22d50c5b9389910c0}
+
+
+Definition at line 181 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65}{\index{Run\-Gui@{Run\-Gui}!reset@{reset}}
+\index{reset@{reset}!RunGui@{Run\-Gui}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65}
+
+
+Definition at line 80 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9}{\index{Run\-Gui@{Run\-Gui}!swap\-Back\-Page@{swap\-Back\-Page}}
+\index{swap\-Back\-Page@{swap\-Back\-Page}!RunGui@{Run\-Gui}}
+\subsubsection[{swap\-Back\-Page}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::swap\-Back\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9}
+
+
+Definition at line 89 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176}{\index{Run\-Gui@{Run\-Gui}!swap\-Next\-Page@{swap\-Next\-Page}}
+\index{swap\-Next\-Page@{swap\-Next\-Page}!RunGui@{Run\-Gui}}
+\subsubsection[{swap\-Next\-Page}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::swap\-Next\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176}
+
+
+Definition at line 113 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a4a3470c32bf986ad552bc225d039e5bb}{\index{Run\-Gui@{Run\-Gui}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!RunGui@{Run\-Gui}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Run\-Gui\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a4a3470c32bf986ad552bc225d039e5bb}
+
+
+Definition at line 197 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_ab68852933855016b114c795ab494d8bb}{\index{Run\-Gui@{Run\-Gui}!unload\-Page\-\_\-1@{unload\-Page\-\_\-1}}
+\index{unload\-Page\-\_\-1@{unload\-Page\-\_\-1}!RunGui@{Run\-Gui}}
+\subsubsection[{unload\-Page\-\_\-1}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::unload\-Page\-\_\-1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_ab68852933855016b114c795ab494d8bb}
+
+
+Definition at line 157 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a3192d643a700244e066f3e0ca4389c4b}{\index{Run\-Gui@{Run\-Gui}!unload\-Page\-\_\-2@{unload\-Page\-\_\-2}}
+\index{unload\-Page\-\_\-2@{unload\-Page\-\_\-2}!RunGui@{Run\-Gui}}
+\subsubsection[{unload\-Page\-\_\-2}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::unload\-Page\-\_\-2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a3192d643a700244e066f3e0ca4389c4b}
+
+
+Definition at line 173 of file Run\-Gui.\-cpp.
+
+\hypertarget{class_run_gui_a410e373ff032fb779b52b1dd501c3128}{\index{Run\-Gui@{Run\-Gui}!unload\-Page\-\_\-3@{unload\-Page\-\_\-3}}
+\index{unload\-Page\-\_\-3@{unload\-Page\-\_\-3}!RunGui@{Run\-Gui}}
+\subsubsection[{unload\-Page\-\_\-3}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::unload\-Page\-\_\-3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a410e373ff032fb779b52b1dd501c3128}
+
+
+Definition at line 189 of file Run\-Gui.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_run_gui_a5a79c5d8f3a61510c2be51738e428473}{\index{Run\-Gui@{Run\-Gui}!back\-Btn@{back\-Btn}}
+\index{back\-Btn@{back\-Btn}!RunGui@{Run\-Gui}}
+\subsubsection[{back\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::back\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a5a79c5d8f3a61510c2be51738e428473}
+
+
+Definition at line 40 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a812f0836d9eb5b0148cf92b61bc53be2}{\index{Run\-Gui@{Run\-Gui}!button\-Layout@{button\-Layout}}
+\index{button\-Layout@{button\-Layout}!RunGui@{Run\-Gui}}
+\subsubsection[{button\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-H\-Box\-Layout$\ast$ Run\-Gui\-::button\-Layout\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a812f0836d9eb5b0148cf92b61bc53be2}
+
+
+Definition at line 47 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_aa14d8877052e9cc11c93055561501792}{\index{Run\-Gui@{Run\-Gui}!cancel\-Btn@{cancel\-Btn}}
+\index{cancel\-Btn@{cancel\-Btn}!RunGui@{Run\-Gui}}
+\subsubsection[{cancel\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::cancel\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_aa14d8877052e9cc11c93055561501792}
+
+
+Definition at line 44 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a1d93e84df8a71767ca927554e5b0fe0d}{\index{Run\-Gui@{Run\-Gui}!current\-Page@{current\-Page}}
+\index{current\-Page@{current\-Page}!RunGui@{Run\-Gui}}
+\subsubsection[{current\-Page}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Page} Run\-Gui\-::current\-Page\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a1d93e84df8a71767ca927554e5b0fe0d}
+
+
+Definition at line 38 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a2989fde08a236488c152c8fa584c3380}{\index{Run\-Gui@{Run\-Gui}!finish\-Btn@{finish\-Btn}}
+\index{finish\-Btn@{finish\-Btn}!RunGui@{Run\-Gui}}
+\subsubsection[{finish\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::finish\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a2989fde08a236488c152c8fa584c3380}
+
+
+Definition at line 42 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a6c0a17f55049da888442fbc28dff7a78}{\index{Run\-Gui@{Run\-Gui}!help\-Btn@{help\-Btn}}
+\index{help\-Btn@{help\-Btn}!RunGui@{Run\-Gui}}
+\subsubsection[{help\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::help\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a6c0a17f55049da888442fbc28dff7a78}
+
+
+Definition at line 43 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a02bb63cd6c6d77933f98087111ce1a66}{\index{Run\-Gui@{Run\-Gui}!next\-Btn@{next\-Btn}}
+\index{next\-Btn@{next\-Btn}!RunGui@{Run\-Gui}}
+\subsubsection[{next\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::next\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a02bb63cd6c6d77933f98087111ce1a66}
+
+
+Definition at line 41 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_ae4cdc2ec0797c9121a47b9cdf3b93115}{\index{Run\-Gui@{Run\-Gui}!outer\-Layout\-Ptr@{outer\-Layout\-Ptr}}
+\index{outer\-Layout\-Ptr@{outer\-Layout\-Ptr}!RunGui@{Run\-Gui}}
+\subsubsection[{outer\-Layout\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Grid\-Layout$\ast$ Run\-Gui\-::outer\-Layout\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_ae4cdc2ec0797c9121a47b9cdf3b93115}
+
+
+Definition at line 46 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_aa52f64156c00bbd4e14c46b8113e3072}{\index{Run\-Gui@{Run\-Gui}!run\-Page\-\_\-1\-Ptr@{run\-Page\-\_\-1\-Ptr}}
+\index{run\-Page\-\_\-1\-Ptr@{run\-Page\-\_\-1\-Ptr}!RunGui@{Run\-Gui}}
+\subsubsection[{run\-Page\-\_\-1\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Page\-\_\-1}$\ast$ Run\-Gui\-::run\-Page\-\_\-1\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_aa52f64156c00bbd4e14c46b8113e3072}
+
+
+Definition at line 49 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a86764c1a0c9629fbce62c7cb13c5ee07}{\index{Run\-Gui@{Run\-Gui}!run\-Page\-\_\-2\-Ptr@{run\-Page\-\_\-2\-Ptr}}
+\index{run\-Page\-\_\-2\-Ptr@{run\-Page\-\_\-2\-Ptr}!RunGui@{Run\-Gui}}
+\subsubsection[{run\-Page\-\_\-2\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Page\-\_\-2}$\ast$ Run\-Gui\-::run\-Page\-\_\-2\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a86764c1a0c9629fbce62c7cb13c5ee07}
+
+
+Definition at line 50 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a7306b4df6c8619a98da052935a021cf8}{\index{Run\-Gui@{Run\-Gui}!run\-Page\-\_\-3\-Ptr@{run\-Page\-\_\-3\-Ptr}}
+\index{run\-Page\-\_\-3\-Ptr@{run\-Page\-\_\-3\-Ptr}!RunGui@{Run\-Gui}}
+\subsubsection[{run\-Page\-\_\-3\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Page\-\_\-3}$\ast$ Run\-Gui\-::run\-Page\-\_\-3\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a7306b4df6c8619a98da052935a021cf8}
+
+
+Definition at line 51 of file Run\-Gui.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_run_gui_8h}{Run\-Gui.\-h}\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_run_gui_8cpp}{Run\-Gui.\-cpp}\end{DoxyCompactItemize}

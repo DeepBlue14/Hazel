@@ -21,4 +21,3 @@ namespace XmlMaster
 }
 
 #endif	/* XML_MASTER_H */
-

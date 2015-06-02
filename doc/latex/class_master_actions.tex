@@ -1,0 +1,1240 @@
+\hypertarget{class_master_actions}{\section{Master\-Actions Class Reference}
+\label{class_master_actions}\index{Master\-Actions@{Master\-Actions}}
+}
+
+
+{\ttfamily \#include $<$Master\-Actions.\-h$>$}
+
+
+
+Inheritance diagram for Master\-Actions\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_master_actions__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Master\-Actions\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_master_actions__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_master_actions_ad8eb348b90e75f5876c30692930a2c22}{Master\-Actions} (Q\-Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_master_actions_a9e2ff3903452d1212d530e20af9d7936}{init\-Actions} ()
+\item 
+void \hyperlink{class_master_actions_aaa47a0a38ad7b5e95081417b129bbc63}{set\-Master\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$\hyperlink{class_master_actions_a774ef398053050c37d62b7a24e61c7ee}{master\-Tab\-Widget\-Ptr})
+\item 
+Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_a10e5735225e146bd19d09f3fc1244a32}{get\-Master\-Tab\-Widget\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a0ef76147044b06c8b951534a0d7ab7f2}{get\-New\-File\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ae9f9f04302be1d7dc9fe902fc2597a1b}{get\-New\-Terminal\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a7065dfa244266181223b152795a996e9}{get\-New\-Project\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_aac19d660169392d11b0ae1c2540cafb5}{get\-Open\-Project\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_afd7ef11ff065232fca47f971af02c5e5}{get\-Save\-All\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_aeb84d87b232944fc289dd0425c79e1a7}{get\-Undo\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ab2015974980e97a75d5d91037be9545b}{get\-Redo\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ad81b766a2f083ba53c529cd3f3582cd0}{get\-Set\-Project\-Config\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a2c89cb4aa70c13526d98e449a1e3a1b9}{get\-Build\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_af23ec377bb3603963735d30876e6147e}{get\-Clean\-And\-Build\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a5266af068fe6ec921cca9e84b9ad7c13}{get\-Config\-For\-Run\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a99017fd6ad87557fb0dbbf60ced23a23}{get\-Run\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a38c19285a782f80fd538243f1a7119bc}{get\-Debug\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ac14ba2c15188efd85f5dd52fcbe138fc}{get\-Profile\-Proj\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_acb9a1d3eb98cab06fd2ae5b9faf30fc3}{get\-Output\-South\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ae9a9fe05579b18051c29f7e54d50a06b}{get\-Terminal\-South\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ab0bf5679a95bb077993d8461de4ae1e5}{get\-Debug\-East\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a7f0344eed03af4f55f63f8ec7bf8e22c}{get\-Start\-East\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a952ffb933b8f8e1c8378eaea85ebe9ad}{get\-Step\-Into\-East\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_aa042cf65b6c9ab5f056c829ca76de95d}{get\-Step\-Over\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a97e9c1a3bd46f70d1afd640ac06cc18d}{get\-Project\-West\-Action\-Ptr} ()
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_af34890304ed29b9a0def25b5c3bbe1f3}{get\-Nav\-West\-Action\-Ptr} ()
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a24f67a69e013feac51a24a34d32f2c40}{connect\-To\-New\-File\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_aeca9ddb448704bcc3a7e9ac3a66d5b57}{connect\-To\-New\-Terminal\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a7eb69b0a616b949086f7422394f6c881}{connect\-To\-New\-Project\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_aa792c3936e0b0b4c016d01ad4a1c5803}{connect\-To\-Open\-Project\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_ab859d0b5419ae5f17504e8fdd83be4be}{connect\-To\-Save\-All\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a6590f8772608e4d99efbf16ef9625b78}{connect\-To\-Undo\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a6077c09ff4426c4a99eaa33ff12f22e4}{connect\-To\-Redo\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a5e25d464651d37d48c7e6a4714130dd7}{connect\-To\-Set\-Project\-Config\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a9625507b1a412bd95bdc13ae54bc68a2}{connect\-To\-Build\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a86232c67d3599a28c6b5238eb6dd4e88}{connect\-To\-Clean\-And\-Build\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a87ff14d6fdf08f3730bb733747335dcb}{connect\-To\-Config\-For\-Run\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a73ec685aa0f239226bdda78857b9e234}{connect\-To\-Run\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a9c1baa889fbb545dc9607044839d5813}{connect\-To\-Debug\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_afa0a093fb60aaeb8c6635e11ec89e121}{connect\-To\-Profile\-Proj\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a0ccac38f3166e1410f09f20e27b0d020}{connect\-To\-Output\-South\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a9f7d8a2bd25c903cbb62be5e9a9ce8fc}{connect\-To\-Terminal\-South\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a3806804210fcdd8f38d48a36c93bec07}{connect\-To\-Debug\-East\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_ae3e0fee1df7d6e510b1e73bb12a3d5c9}{connect\-To\-Start\-East\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a544c64348ba067793868c5ba665e54c3}{connect\-To\-Step\-Into\-East\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_abcc6be171bbe540db3e7ebdf7bfc5fbf}{connect\-To\-Step\-Over\-East\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_ad8311d5ad31b045095be98a9e29db1bf}{connect\-To\-Project\-West\-Action} (X $\ast$component)
+\item 
+{\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_a423adcfa52fc2f0441bef96ee6bd8c61}{connect\-To\-Nav\-West\-Action} (X $\ast$component)
+\item 
+\hyperlink{class_master_actions_a2504de3ca736a30530296fc9b44fb55b}{$\sim$\-Master\-Actions} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_master_actions_a75943822eee1dbbc3e7c6c1dda4780a0}{handle\-New\-File\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_af1fa0d0d7b074abb49ae5dd6bccffbe9}{handle\-New\-Terminal\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a81d07306e15f16a66e992138faccfab5}{handle\-New\-Project\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_abefe5adf2e269a408626ea1caee182ca}{handle\-Open\-Project\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a92d9fcaac21c09534c568b3aca195a87}{handle\-Save\-All\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a87a24d9944e6140a6ae0de92dc8e5647}{handle\-Undo\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a7aa83031542aeafb3f3afe244ce2cd67}{handle\-Redo\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a8b46b8a5873dfff5a85e21a7e636b4bf}{handle\-Set\-Project\-Config\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_aa9af30e92d9f9e4ffb8044f092b06d07}{handle\-Build\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_ac3621bfbde9a2b681d4d35ae72bd6f14}{handle\-Clean\-And\-Build\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a294fc01ac639ffcdf9b76378f0d21306}{handle\-Config\-For\-Run\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a8504741522d18cb1a5fb21b6ad6de14b}{handle\-Run\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_acc96d5f9401e97aa2a4700a47cfa71bd}{handle\-Debug\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a3f26362ca8be862aa42fae90535800f0}{handle\-Profile\-Proj\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_afb11d896980c526784b05a440e6f21ac}{handle\-Output\-South\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a3f3ec7277966d98a9fc5df5ceca1fa97}{handle\-Terminal\-South\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a03d0a4c989d63fd14f76ccda5893807b}{handle\-Debug\-East\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a24da37bce53aacd7de8d3643f273b1bd}{handle\-Start\-East\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a758cec03f958827f90c4393a8791e230}{handle\-Step\-Into\-East\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a1f222e4d7bbc9a445bc55383a79f78c1}{handle\-Step\-Over\-East\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a64bf020d68866c8941c01929879eb839}{handle\-Project\-West\-Action\-Slot} ()
+\item 
+void \hyperlink{class_master_actions_a15842bc0437410582285579f5820939a}{handle\-Nav\-West\-Action\-Slot} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a4da658e527460b8d5b0a263820259e97}{new\-File\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a6c3b1d9319fbf23f5a7cbe8305e16fc1}{new\-Terminal\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a114ab55c27fc183af68ebaaa86748a82}{new\-Project\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a3b4d98cdbfaa8e287d420513a8df53ee}{open\-Project\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a4e9bf6410023b508d56f235903a44b5f}{save\-All\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a23386959a2f60a89cc6ae1bff012c76c}{undo\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a7936a9bf0e7418cd864b2fb1ab786d09}{redo\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_abe52f232f77f5a5bff35c8e3dadb3d80}{set\-Project\-Config\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a627d91b89d122dd27addc931d1c91ca0}{build\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a2c0f332975bec2424d4af212ab566c5a}{clean\-And\-Build\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_acd6548d1110ae426f384bfeb6acc9c1f}{config\-For\-Run\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a3377fe0ddc45ce50119766c8a903c039}{run\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ae37993bbbed4a238ea3b11089ac46a61}{debug\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a5242e5fa69f4d15c15a32b43f227e397}{profile\-Proj\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a5b7a85c6728274eb0fcb48924044b9f6}{output\-South\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ad96c9f17230e162e9a9f39a867101a53}{terminal\-South\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_ab26f3e610cb9e303ac3a987964dfac19}{debug\-East\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a8ea0090704403ea15decad4e0104feb8}{start\-East\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_acc473f35c8ee83c1d2d10d3a73522461}{step\-Into\-East\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_a2c51444dbd1ff60d23dd52cc6fb4a9f7}{step\-Over\-East\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_aa4160469d2e9a840448c49e95bcfa9e5}{project\-West\-Action\-Ptr}
+\item 
+Q\-Action $\ast$ \hyperlink{class_master_actions_af1e3c333e90f4763dfd964aa2321b034}{nav\-West\-Action\-Ptr}
+\item 
+Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_a774ef398053050c37d62b7a24e61c7ee}{master\-Tab\-Widget\-Ptr}
+\item 
+\hyperlink{class_highlighter}{Highlighter} $\ast$ \hyperlink{class_master_actions_a50b1565db8b7780ec4e88e59953aa67b}{highlighter}
+\item 
+\hyperlink{class_new_file_gui}{New\-File\-Gui} $\ast$ \hyperlink{class_master_actions_a8839c174acf071c0d9bfe450160218eb}{new\-File\-Gui\-Ptr}
+\item 
+\hyperlink{class_new_project_gui}{New\-Project\-Gui} $\ast$ \hyperlink{class_master_actions_a78733336a3d5fd3bbb55eaf0215f0d40}{new\-Project\-Gui\-Ptr}
+\item 
+\hyperlink{class_terminal}{Terminal} $\ast$ \hyperlink{class_master_actions_accb886e749ad46cb6373187e59921bcf}{terminal\-Ptr}
+\item 
+\hyperlink{class_run_gui}{Run\-Gui} $\ast$ \hyperlink{class_master_actions_ad7ff295f2e3067697e290afc4f0fd0df}{run\-Gui\-Ptr}
+\item 
+\hyperlink{class_open_project_gui}{Open\-Project\-Gui} $\ast$ \hyperlink{class_master_actions_a6caf7325dd9cb26f72c81a8c877db634}{open\-Project\-Gui\-Ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file Master\-Actions.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_master_actions_ad8eb348b90e75f5876c30692930a2c22}{\index{Master\-Actions@{Master\-Actions}!Master\-Actions@{Master\-Actions}}
+\index{Master\-Actions@{Master\-Actions}!MasterActions@{Master\-Actions}}
+\subsubsection[{Master\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}Master\-Actions\-::\-Master\-Actions (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ad8eb348b90e75f5876c30692930a2c22}
+
+
+Definition at line 4 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a2504de3ca736a30530296fc9b44fb55b}{\index{Master\-Actions@{Master\-Actions}!$\sim$\-Master\-Actions@{$\sim$\-Master\-Actions}}
+\index{$\sim$\-Master\-Actions@{$\sim$\-Master\-Actions}!MasterActions@{Master\-Actions}}
+\subsubsection[{$\sim$\-Master\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}Master\-Actions\-::$\sim$\-Master\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a2504de3ca736a30530296fc9b44fb55b}
+
+
+Definition at line 578 of file Master\-Actions.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_master_actions_a9625507b1a412bd95bdc13ae54bc68a2}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Build\-Action@{connect\-To\-Build\-Action}}
+\index{connect\-To\-Build\-Action@{connect\-To\-Build\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Build\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Build\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a9625507b1a412bd95bdc13ae54bc68a2}
+
+
+Definition at line 478 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a86232c67d3599a28c6b5238eb6dd4e88}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Clean\-And\-Build\-Action@{connect\-To\-Clean\-And\-Build\-Action}}
+\index{connect\-To\-Clean\-And\-Build\-Action@{connect\-To\-Clean\-And\-Build\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Clean\-And\-Build\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Clean\-And\-Build\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a86232c67d3599a28c6b5238eb6dd4e88}
+
+
+Definition at line 485 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a87ff14d6fdf08f3730bb733747335dcb}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Config\-For\-Run\-Action@{connect\-To\-Config\-For\-Run\-Action}}
+\index{connect\-To\-Config\-For\-Run\-Action@{connect\-To\-Config\-For\-Run\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Config\-For\-Run\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Config\-For\-Run\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a87ff14d6fdf08f3730bb733747335dcb}
+
+
+Definition at line 492 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a9c1baa889fbb545dc9607044839d5813}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Debug\-Action@{connect\-To\-Debug\-Action}}
+\index{connect\-To\-Debug\-Action@{connect\-To\-Debug\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Debug\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Debug\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a9c1baa889fbb545dc9607044839d5813}
+
+
+Definition at line 506 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a3806804210fcdd8f38d48a36c93bec07}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Debug\-East\-Action@{connect\-To\-Debug\-East\-Action}}
+\index{connect\-To\-Debug\-East\-Action@{connect\-To\-Debug\-East\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Debug\-East\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Debug\-East\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a3806804210fcdd8f38d48a36c93bec07}
+
+
+Definition at line 536 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a423adcfa52fc2f0441bef96ee6bd8c61}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Nav\-West\-Action@{connect\-To\-Nav\-West\-Action}}
+\index{connect\-To\-Nav\-West\-Action@{connect\-To\-Nav\-West\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Nav\-West\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Nav\-West\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a423adcfa52fc2f0441bef96ee6bd8c61}
+
+
+Definition at line 572 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a24f67a69e013feac51a24a34d32f2c40}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-New\-File\-Action@{connect\-To\-New\-File\-Action}}
+\index{connect\-To\-New\-File\-Action@{connect\-To\-New\-File\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-New\-File\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-New\-File\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a24f67a69e013feac51a24a34d32f2c40}
+
+
+Definition at line 422 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a7eb69b0a616b949086f7422394f6c881}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-New\-Project\-Action@{connect\-To\-New\-Project\-Action}}
+\index{connect\-To\-New\-Project\-Action@{connect\-To\-New\-Project\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-New\-Project\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-New\-Project\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a7eb69b0a616b949086f7422394f6c881}
+
+
+Definition at line 436 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_aeca9ddb448704bcc3a7e9ac3a66d5b57}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-New\-Terminal\-Action@{connect\-To\-New\-Terminal\-Action}}
+\index{connect\-To\-New\-Terminal\-Action@{connect\-To\-New\-Terminal\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-New\-Terminal\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-New\-Terminal\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_aeca9ddb448704bcc3a7e9ac3a66d5b57}
+
+
+Definition at line 429 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_aa792c3936e0b0b4c016d01ad4a1c5803}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Open\-Project\-Action@{connect\-To\-Open\-Project\-Action}}
+\index{connect\-To\-Open\-Project\-Action@{connect\-To\-Open\-Project\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Open\-Project\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Open\-Project\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_aa792c3936e0b0b4c016d01ad4a1c5803}
+
+
+Definition at line 443 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a0ccac38f3166e1410f09f20e27b0d020}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Output\-South\-Action@{connect\-To\-Output\-South\-Action}}
+\index{connect\-To\-Output\-South\-Action@{connect\-To\-Output\-South\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Output\-South\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Output\-South\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a0ccac38f3166e1410f09f20e27b0d020}
+
+
+Definition at line 521 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_afa0a093fb60aaeb8c6635e11ec89e121}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Profile\-Proj\-Action@{connect\-To\-Profile\-Proj\-Action}}
+\index{connect\-To\-Profile\-Proj\-Action@{connect\-To\-Profile\-Proj\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Profile\-Proj\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Profile\-Proj\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_afa0a093fb60aaeb8c6635e11ec89e121}
+
+
+Definition at line 513 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ad8311d5ad31b045095be98a9e29db1bf}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Project\-West\-Action@{connect\-To\-Project\-West\-Action}}
+\index{connect\-To\-Project\-West\-Action@{connect\-To\-Project\-West\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Project\-West\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Project\-West\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ad8311d5ad31b045095be98a9e29db1bf}
+
+
+Definition at line 565 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a6077c09ff4426c4a99eaa33ff12f22e4}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Redo\-Action@{connect\-To\-Redo\-Action}}
+\index{connect\-To\-Redo\-Action@{connect\-To\-Redo\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Redo\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Redo\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a6077c09ff4426c4a99eaa33ff12f22e4}
+
+
+Definition at line 464 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a73ec685aa0f239226bdda78857b9e234}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Run\-Action@{connect\-To\-Run\-Action}}
+\index{connect\-To\-Run\-Action@{connect\-To\-Run\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Run\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Run\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a73ec685aa0f239226bdda78857b9e234}
+
+
+Definition at line 499 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ab859d0b5419ae5f17504e8fdd83be4be}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Save\-All\-Action@{connect\-To\-Save\-All\-Action}}
+\index{connect\-To\-Save\-All\-Action@{connect\-To\-Save\-All\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Save\-All\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Save\-All\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ab859d0b5419ae5f17504e8fdd83be4be}
+
+
+Definition at line 450 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a5e25d464651d37d48c7e6a4714130dd7}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Set\-Project\-Config\-Action@{connect\-To\-Set\-Project\-Config\-Action}}
+\index{connect\-To\-Set\-Project\-Config\-Action@{connect\-To\-Set\-Project\-Config\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Set\-Project\-Config\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Set\-Project\-Config\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a5e25d464651d37d48c7e6a4714130dd7}
+
+
+Definition at line 471 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ae3e0fee1df7d6e510b1e73bb12a3d5c9}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Start\-East\-Action@{connect\-To\-Start\-East\-Action}}
+\index{connect\-To\-Start\-East\-Action@{connect\-To\-Start\-East\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Start\-East\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Start\-East\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ae3e0fee1df7d6e510b1e73bb12a3d5c9}
+
+
+Definition at line 543 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a544c64348ba067793868c5ba665e54c3}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Step\-Into\-East\-Action@{connect\-To\-Step\-Into\-East\-Action}}
+\index{connect\-To\-Step\-Into\-East\-Action@{connect\-To\-Step\-Into\-East\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Step\-Into\-East\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Step\-Into\-East\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a544c64348ba067793868c5ba665e54c3}
+
+
+Definition at line 550 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_abcc6be171bbe540db3e7ebdf7bfc5fbf}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Step\-Over\-East\-Action@{connect\-To\-Step\-Over\-East\-Action}}
+\index{connect\-To\-Step\-Over\-East\-Action@{connect\-To\-Step\-Over\-East\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Step\-Over\-East\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Step\-Over\-East\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_abcc6be171bbe540db3e7ebdf7bfc5fbf}
+
+
+Definition at line 557 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a9f7d8a2bd25c903cbb62be5e9a9ce8fc}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Terminal\-South\-Action@{connect\-To\-Terminal\-South\-Action}}
+\index{connect\-To\-Terminal\-South\-Action@{connect\-To\-Terminal\-South\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Terminal\-South\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Terminal\-South\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a9f7d8a2bd25c903cbb62be5e9a9ce8fc}
+
+
+Definition at line 528 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a6590f8772608e4d99efbf16ef9625b78}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Undo\-Action@{connect\-To\-Undo\-Action}}
+\index{connect\-To\-Undo\-Action@{connect\-To\-Undo\-Action}!MasterActions@{Master\-Actions}}
+\subsubsection[{connect\-To\-Undo\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Undo\-Action (
+\begin{DoxyParamCaption}
+\item[{X $\ast$}]{component}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a6590f8772608e4d99efbf16ef9625b78}
+
+
+Definition at line 457 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a2c89cb4aa70c13526d98e449a1e3a1b9}{\index{Master\-Actions@{Master\-Actions}!get\-Build\-Action\-Ptr@{get\-Build\-Action\-Ptr}}
+\index{get\-Build\-Action\-Ptr@{get\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Build\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a2c89cb4aa70c13526d98e449a1e3a1b9}
+
+
+Definition at line 334 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_af23ec377bb3603963735d30876e6147e}{\index{Master\-Actions@{Master\-Actions}!get\-Clean\-And\-Build\-Action\-Ptr@{get\-Clean\-And\-Build\-Action\-Ptr}}
+\index{get\-Clean\-And\-Build\-Action\-Ptr@{get\-Clean\-And\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Clean\-And\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Clean\-And\-Build\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_af23ec377bb3603963735d30876e6147e}
+
+
+Definition at line 340 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a5266af068fe6ec921cca9e84b9ad7c13}{\index{Master\-Actions@{Master\-Actions}!get\-Config\-For\-Run\-Action\-Ptr@{get\-Config\-For\-Run\-Action\-Ptr}}
+\index{get\-Config\-For\-Run\-Action\-Ptr@{get\-Config\-For\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Config\-For\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Config\-For\-Run\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a5266af068fe6ec921cca9e84b9ad7c13}
+
+
+Definition at line 346 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a38c19285a782f80fd538243f1a7119bc}{\index{Master\-Actions@{Master\-Actions}!get\-Debug\-Action\-Ptr@{get\-Debug\-Action\-Ptr}}
+\index{get\-Debug\-Action\-Ptr@{get\-Debug\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Debug\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Debug\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a38c19285a782f80fd538243f1a7119bc}
+
+
+Definition at line 358 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ab0bf5679a95bb077993d8461de4ae1e5}{\index{Master\-Actions@{Master\-Actions}!get\-Debug\-East\-Action\-Ptr@{get\-Debug\-East\-Action\-Ptr}}
+\index{get\-Debug\-East\-Action\-Ptr@{get\-Debug\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Debug\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Debug\-East\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ab0bf5679a95bb077993d8461de4ae1e5}
+
+
+Definition at line 384 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a10e5735225e146bd19d09f3fc1244a32}{\index{Master\-Actions@{Master\-Actions}!get\-Master\-Tab\-Widget\-Ptr@{get\-Master\-Tab\-Widget\-Ptr}}
+\index{get\-Master\-Tab\-Widget\-Ptr@{get\-Master\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ Master\-Actions\-::get\-Master\-Tab\-Widget\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a10e5735225e146bd19d09f3fc1244a32}
+
+
+Definition at line 280 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_af34890304ed29b9a0def25b5c3bbe1f3}{\index{Master\-Actions@{Master\-Actions}!get\-Nav\-West\-Action\-Ptr@{get\-Nav\-West\-Action\-Ptr}}
+\index{get\-Nav\-West\-Action\-Ptr@{get\-Nav\-West\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Nav\-West\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Nav\-West\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_af34890304ed29b9a0def25b5c3bbe1f3}
+
+
+Definition at line 415 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a0ef76147044b06c8b951534a0d7ab7f2}{\index{Master\-Actions@{Master\-Actions}!get\-New\-File\-Action\-Ptr@{get\-New\-File\-Action\-Ptr}}
+\index{get\-New\-File\-Action\-Ptr@{get\-New\-File\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-New\-File\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-New\-File\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a0ef76147044b06c8b951534a0d7ab7f2}
+
+
+Definition at line 286 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a7065dfa244266181223b152795a996e9}{\index{Master\-Actions@{Master\-Actions}!get\-New\-Project\-Action\-Ptr@{get\-New\-Project\-Action\-Ptr}}
+\index{get\-New\-Project\-Action\-Ptr@{get\-New\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-New\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-New\-Project\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a7065dfa244266181223b152795a996e9}
+
+
+Definition at line 298 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ae9f9f04302be1d7dc9fe902fc2597a1b}{\index{Master\-Actions@{Master\-Actions}!get\-New\-Terminal\-Action\-Ptr@{get\-New\-Terminal\-Action\-Ptr}}
+\index{get\-New\-Terminal\-Action\-Ptr@{get\-New\-Terminal\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-New\-Terminal\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-New\-Terminal\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ae9f9f04302be1d7dc9fe902fc2597a1b}
+
+
+Definition at line 292 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_aac19d660169392d11b0ae1c2540cafb5}{\index{Master\-Actions@{Master\-Actions}!get\-Open\-Project\-Action\-Ptr@{get\-Open\-Project\-Action\-Ptr}}
+\index{get\-Open\-Project\-Action\-Ptr@{get\-Open\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Open\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Open\-Project\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_aac19d660169392d11b0ae1c2540cafb5}
+
+
+Definition at line 304 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_acb9a1d3eb98cab06fd2ae5b9faf30fc3}{\index{Master\-Actions@{Master\-Actions}!get\-Output\-South\-Action\-Ptr@{get\-Output\-South\-Action\-Ptr}}
+\index{get\-Output\-South\-Action\-Ptr@{get\-Output\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Output\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Output\-South\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_acb9a1d3eb98cab06fd2ae5b9faf30fc3}
+
+
+Definition at line 371 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ac14ba2c15188efd85f5dd52fcbe138fc}{\index{Master\-Actions@{Master\-Actions}!get\-Profile\-Proj\-Action\-Ptr@{get\-Profile\-Proj\-Action\-Ptr}}
+\index{get\-Profile\-Proj\-Action\-Ptr@{get\-Profile\-Proj\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Profile\-Proj\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Profile\-Proj\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ac14ba2c15188efd85f5dd52fcbe138fc}
+
+
+Definition at line 364 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a97e9c1a3bd46f70d1afd640ac06cc18d}{\index{Master\-Actions@{Master\-Actions}!get\-Project\-West\-Action\-Ptr@{get\-Project\-West\-Action\-Ptr}}
+\index{get\-Project\-West\-Action\-Ptr@{get\-Project\-West\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Project\-West\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Project\-West\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a97e9c1a3bd46f70d1afd640ac06cc18d}
+
+
+Definition at line 409 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ab2015974980e97a75d5d91037be9545b}{\index{Master\-Actions@{Master\-Actions}!get\-Redo\-Action\-Ptr@{get\-Redo\-Action\-Ptr}}
+\index{get\-Redo\-Action\-Ptr@{get\-Redo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Redo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Redo\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ab2015974980e97a75d5d91037be9545b}
+
+
+Definition at line 322 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a99017fd6ad87557fb0dbbf60ced23a23}{\index{Master\-Actions@{Master\-Actions}!get\-Run\-Action\-Ptr@{get\-Run\-Action\-Ptr}}
+\index{get\-Run\-Action\-Ptr@{get\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Run\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a99017fd6ad87557fb0dbbf60ced23a23}
+
+
+Definition at line 352 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_afd7ef11ff065232fca47f971af02c5e5}{\index{Master\-Actions@{Master\-Actions}!get\-Save\-All\-Action\-Ptr@{get\-Save\-All\-Action\-Ptr}}
+\index{get\-Save\-All\-Action\-Ptr@{get\-Save\-All\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Save\-All\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Save\-All\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_afd7ef11ff065232fca47f971af02c5e5}
+
+
+Definition at line 310 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ad81b766a2f083ba53c529cd3f3582cd0}{\index{Master\-Actions@{Master\-Actions}!get\-Set\-Project\-Config\-Action\-Ptr@{get\-Set\-Project\-Config\-Action\-Ptr}}
+\index{get\-Set\-Project\-Config\-Action\-Ptr@{get\-Set\-Project\-Config\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Set\-Project\-Config\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Set\-Project\-Config\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ad81b766a2f083ba53c529cd3f3582cd0}
+
+
+Definition at line 328 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a7f0344eed03af4f55f63f8ec7bf8e22c}{\index{Master\-Actions@{Master\-Actions}!get\-Start\-East\-Action\-Ptr@{get\-Start\-East\-Action\-Ptr}}
+\index{get\-Start\-East\-Action\-Ptr@{get\-Start\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Start\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Start\-East\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a7f0344eed03af4f55f63f8ec7bf8e22c}
+
+
+Definition at line 390 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a952ffb933b8f8e1c8378eaea85ebe9ad}{\index{Master\-Actions@{Master\-Actions}!get\-Step\-Into\-East\-Action\-Ptr@{get\-Step\-Into\-East\-Action\-Ptr}}
+\index{get\-Step\-Into\-East\-Action\-Ptr@{get\-Step\-Into\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Step\-Into\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Step\-Into\-East\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a952ffb933b8f8e1c8378eaea85ebe9ad}
+
+
+Definition at line 396 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_aa042cf65b6c9ab5f056c829ca76de95d}{\index{Master\-Actions@{Master\-Actions}!get\-Step\-Over\-Action\-Ptr@{get\-Step\-Over\-Action\-Ptr}}
+\index{get\-Step\-Over\-Action\-Ptr@{get\-Step\-Over\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Step\-Over\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Step\-Over\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_aa042cf65b6c9ab5f056c829ca76de95d}
+
+
+Definition at line 402 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ae9a9fe05579b18051c29f7e54d50a06b}{\index{Master\-Actions@{Master\-Actions}!get\-Terminal\-South\-Action\-Ptr@{get\-Terminal\-South\-Action\-Ptr}}
+\index{get\-Terminal\-South\-Action\-Ptr@{get\-Terminal\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Terminal\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Terminal\-South\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ae9a9fe05579b18051c29f7e54d50a06b}
+
+
+Definition at line 377 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_aeb84d87b232944fc289dd0425c79e1a7}{\index{Master\-Actions@{Master\-Actions}!get\-Undo\-Action\-Ptr@{get\-Undo\-Action\-Ptr}}
+\index{get\-Undo\-Action\-Ptr@{get\-Undo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{get\-Undo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Undo\-Action\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_aeb84d87b232944fc289dd0425c79e1a7}
+
+
+Definition at line 316 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_aa9af30e92d9f9e4ffb8044f092b06d07}{\index{Master\-Actions@{Master\-Actions}!handle\-Build\-Action\-Slot@{handle\-Build\-Action\-Slot}}
+\index{handle\-Build\-Action\-Slot@{handle\-Build\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Build\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Build\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_aa9af30e92d9f9e4ffb8044f092b06d07}
+
+
+Definition at line 180 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_ac3621bfbde9a2b681d4d35ae72bd6f14}{\index{Master\-Actions@{Master\-Actions}!handle\-Clean\-And\-Build\-Action\-Slot@{handle\-Clean\-And\-Build\-Action\-Slot}}
+\index{handle\-Clean\-And\-Build\-Action\-Slot@{handle\-Clean\-And\-Build\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Clean\-And\-Build\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Clean\-And\-Build\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_ac3621bfbde9a2b681d4d35ae72bd6f14}
+
+
+Definition at line 186 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a294fc01ac639ffcdf9b76378f0d21306}{\index{Master\-Actions@{Master\-Actions}!handle\-Config\-For\-Run\-Action\-Slot@{handle\-Config\-For\-Run\-Action\-Slot}}
+\index{handle\-Config\-For\-Run\-Action\-Slot@{handle\-Config\-For\-Run\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Config\-For\-Run\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Config\-For\-Run\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a294fc01ac639ffcdf9b76378f0d21306}
+
+
+Definition at line 192 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_acc96d5f9401e97aa2a4700a47cfa71bd}{\index{Master\-Actions@{Master\-Actions}!handle\-Debug\-Action\-Slot@{handle\-Debug\-Action\-Slot}}
+\index{handle\-Debug\-Action\-Slot@{handle\-Debug\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Debug\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Debug\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_acc96d5f9401e97aa2a4700a47cfa71bd}
+
+
+Definition at line 205 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a03d0a4c989d63fd14f76ccda5893807b}{\index{Master\-Actions@{Master\-Actions}!handle\-Debug\-East\-Action\-Slot@{handle\-Debug\-East\-Action\-Slot}}
+\index{handle\-Debug\-East\-Action\-Slot@{handle\-Debug\-East\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Debug\-East\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Debug\-East\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a03d0a4c989d63fd14f76ccda5893807b}
+
+
+Definition at line 231 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a15842bc0437410582285579f5820939a}{\index{Master\-Actions@{Master\-Actions}!handle\-Nav\-West\-Action\-Slot@{handle\-Nav\-West\-Action\-Slot}}
+\index{handle\-Nav\-West\-Action\-Slot@{handle\-Nav\-West\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Nav\-West\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Nav\-West\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a15842bc0437410582285579f5820939a}
+
+
+Definition at line 262 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a75943822eee1dbbc3e7c6c1dda4780a0}{\index{Master\-Actions@{Master\-Actions}!handle\-New\-File\-Action\-Slot@{handle\-New\-File\-Action\-Slot}}
+\index{handle\-New\-File\-Action\-Slot@{handle\-New\-File\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-New\-File\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-New\-File\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a75943822eee1dbbc3e7c6c1dda4780a0}
+
+
+Definition at line 125 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a81d07306e15f16a66e992138faccfab5}{\index{Master\-Actions@{Master\-Actions}!handle\-New\-Project\-Action\-Slot@{handle\-New\-Project\-Action\-Slot}}
+\index{handle\-New\-Project\-Action\-Slot@{handle\-New\-Project\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-New\-Project\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-New\-Project\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a81d07306e15f16a66e992138faccfab5}
+
+
+Definition at line 143 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_af1fa0d0d7b074abb49ae5dd6bccffbe9}{\index{Master\-Actions@{Master\-Actions}!handle\-New\-Terminal\-Action\-Slot@{handle\-New\-Terminal\-Action\-Slot}}
+\index{handle\-New\-Terminal\-Action\-Slot@{handle\-New\-Terminal\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-New\-Terminal\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-New\-Terminal\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_af1fa0d0d7b074abb49ae5dd6bccffbe9}
+
+
+Definition at line 132 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_abefe5adf2e269a408626ea1caee182ca}{\index{Master\-Actions@{Master\-Actions}!handle\-Open\-Project\-Action\-Slot@{handle\-Open\-Project\-Action\-Slot}}
+\index{handle\-Open\-Project\-Action\-Slot@{handle\-Open\-Project\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Open\-Project\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Open\-Project\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_abefe5adf2e269a408626ea1caee182ca}
+
+
+Definition at line 150 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_afb11d896980c526784b05a440e6f21ac}{\index{Master\-Actions@{Master\-Actions}!handle\-Output\-South\-Action\-Slot@{handle\-Output\-South\-Action\-Slot}}
+\index{handle\-Output\-South\-Action\-Slot@{handle\-Output\-South\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Output\-South\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Output\-South\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_afb11d896980c526784b05a440e6f21ac}
+
+
+Definition at line 218 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a3f26362ca8be862aa42fae90535800f0}{\index{Master\-Actions@{Master\-Actions}!handle\-Profile\-Proj\-Action\-Slot@{handle\-Profile\-Proj\-Action\-Slot}}
+\index{handle\-Profile\-Proj\-Action\-Slot@{handle\-Profile\-Proj\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Profile\-Proj\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Profile\-Proj\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a3f26362ca8be862aa42fae90535800f0}
+
+
+Definition at line 211 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a64bf020d68866c8941c01929879eb839}{\index{Master\-Actions@{Master\-Actions}!handle\-Project\-West\-Action\-Slot@{handle\-Project\-West\-Action\-Slot}}
+\index{handle\-Project\-West\-Action\-Slot@{handle\-Project\-West\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Project\-West\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Project\-West\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a64bf020d68866c8941c01929879eb839}
+
+
+Definition at line 256 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a7aa83031542aeafb3f3afe244ce2cd67}{\index{Master\-Actions@{Master\-Actions}!handle\-Redo\-Action\-Slot@{handle\-Redo\-Action\-Slot}}
+\index{handle\-Redo\-Action\-Slot@{handle\-Redo\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Redo\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Redo\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a7aa83031542aeafb3f3afe244ce2cd67}
+
+
+Definition at line 168 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a8504741522d18cb1a5fb21b6ad6de14b}{\index{Master\-Actions@{Master\-Actions}!handle\-Run\-Action\-Slot@{handle\-Run\-Action\-Slot}}
+\index{handle\-Run\-Action\-Slot@{handle\-Run\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Run\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Run\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a8504741522d18cb1a5fb21b6ad6de14b}
+
+
+Definition at line 199 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a92d9fcaac21c09534c568b3aca195a87}{\index{Master\-Actions@{Master\-Actions}!handle\-Save\-All\-Action\-Slot@{handle\-Save\-All\-Action\-Slot}}
+\index{handle\-Save\-All\-Action\-Slot@{handle\-Save\-All\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Save\-All\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Save\-All\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a92d9fcaac21c09534c568b3aca195a87}
+
+
+Definition at line 156 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a8b46b8a5873dfff5a85e21a7e636b4bf}{\index{Master\-Actions@{Master\-Actions}!handle\-Set\-Project\-Config\-Action\-Slot@{handle\-Set\-Project\-Config\-Action\-Slot}}
+\index{handle\-Set\-Project\-Config\-Action\-Slot@{handle\-Set\-Project\-Config\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Set\-Project\-Config\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Set\-Project\-Config\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a8b46b8a5873dfff5a85e21a7e636b4bf}
+
+
+Definition at line 174 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a24da37bce53aacd7de8d3643f273b1bd}{\index{Master\-Actions@{Master\-Actions}!handle\-Start\-East\-Action\-Slot@{handle\-Start\-East\-Action\-Slot}}
+\index{handle\-Start\-East\-Action\-Slot@{handle\-Start\-East\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Start\-East\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Start\-East\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a24da37bce53aacd7de8d3643f273b1bd}
+
+
+Definition at line 237 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a758cec03f958827f90c4393a8791e230}{\index{Master\-Actions@{Master\-Actions}!handle\-Step\-Into\-East\-Action\-Slot@{handle\-Step\-Into\-East\-Action\-Slot}}
+\index{handle\-Step\-Into\-East\-Action\-Slot@{handle\-Step\-Into\-East\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Step\-Into\-East\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Step\-Into\-East\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a758cec03f958827f90c4393a8791e230}
+
+
+Definition at line 243 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a1f222e4d7bbc9a445bc55383a79f78c1}{\index{Master\-Actions@{Master\-Actions}!handle\-Step\-Over\-East\-Action\-Slot@{handle\-Step\-Over\-East\-Action\-Slot}}
+\index{handle\-Step\-Over\-East\-Action\-Slot@{handle\-Step\-Over\-East\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Step\-Over\-East\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Step\-Over\-East\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a1f222e4d7bbc9a445bc55383a79f78c1}
+
+
+Definition at line 249 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a3f3ec7277966d98a9fc5df5ceca1fa97}{\index{Master\-Actions@{Master\-Actions}!handle\-Terminal\-South\-Action\-Slot@{handle\-Terminal\-South\-Action\-Slot}}
+\index{handle\-Terminal\-South\-Action\-Slot@{handle\-Terminal\-South\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Terminal\-South\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Terminal\-South\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a3f3ec7277966d98a9fc5df5ceca1fa97}
+
+
+Definition at line 224 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a87a24d9944e6140a6ae0de92dc8e5647}{\index{Master\-Actions@{Master\-Actions}!handle\-Undo\-Action\-Slot@{handle\-Undo\-Action\-Slot}}
+\index{handle\-Undo\-Action\-Slot@{handle\-Undo\-Action\-Slot}!MasterActions@{Master\-Actions}}
+\subsubsection[{handle\-Undo\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Undo\-Action\-Slot (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a87a24d9944e6140a6ae0de92dc8e5647}
+
+
+Definition at line 162 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_a9e2ff3903452d1212d530e20af9d7936}{\index{Master\-Actions@{Master\-Actions}!init\-Actions@{init\-Actions}}
+\index{init\-Actions@{init\-Actions}!MasterActions@{Master\-Actions}}
+\subsubsection[{init\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::init\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_a9e2ff3903452d1212d530e20af9d7936}
+
+
+Definition at line 268 of file Master\-Actions.\-cpp.
+
+\hypertarget{class_master_actions_aaa47a0a38ad7b5e95081417b129bbc63}{\index{Master\-Actions@{Master\-Actions}!set\-Master\-Tab\-Widget\-Ptr@{set\-Master\-Tab\-Widget\-Ptr}}
+\index{set\-Master\-Tab\-Widget\-Ptr@{set\-Master\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{set\-Master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Master\-Tab\-Widget\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-Tab\-Widget $\ast$}]{master\-Tab\-Widget\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_aaa47a0a38ad7b5e95081417b129bbc63}
+
+
+Definition at line 274 of file Master\-Actions.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_master_actions_a627d91b89d122dd27addc931d1c91ca0}{\index{Master\-Actions@{Master\-Actions}!build\-Action\-Ptr@{build\-Action\-Ptr}}
+\index{build\-Action\-Ptr@{build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::build\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a627d91b89d122dd27addc931d1c91ca0}
+
+
+Definition at line 45 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a2c0f332975bec2424d4af212ab566c5a}{\index{Master\-Actions@{Master\-Actions}!clean\-And\-Build\-Action\-Ptr@{clean\-And\-Build\-Action\-Ptr}}
+\index{clean\-And\-Build\-Action\-Ptr@{clean\-And\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{clean\-And\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::clean\-And\-Build\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a2c0f332975bec2424d4af212ab566c5a}
+
+
+Definition at line 46 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_acd6548d1110ae426f384bfeb6acc9c1f}{\index{Master\-Actions@{Master\-Actions}!config\-For\-Run\-Action\-Ptr@{config\-For\-Run\-Action\-Ptr}}
+\index{config\-For\-Run\-Action\-Ptr@{config\-For\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{config\-For\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::config\-For\-Run\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_acd6548d1110ae426f384bfeb6acc9c1f}
+
+
+Definition at line 47 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_ae37993bbbed4a238ea3b11089ac46a61}{\index{Master\-Actions@{Master\-Actions}!debug\-Action\-Ptr@{debug\-Action\-Ptr}}
+\index{debug\-Action\-Ptr@{debug\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{debug\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::debug\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ae37993bbbed4a238ea3b11089ac46a61}
+
+
+Definition at line 49 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_ab26f3e610cb9e303ac3a987964dfac19}{\index{Master\-Actions@{Master\-Actions}!debug\-East\-Action\-Ptr@{debug\-East\-Action\-Ptr}}
+\index{debug\-East\-Action\-Ptr@{debug\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{debug\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::debug\-East\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ab26f3e610cb9e303ac3a987964dfac19}
+
+
+Definition at line 57 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a50b1565db8b7780ec4e88e59953aa67b}{\index{Master\-Actions@{Master\-Actions}!highlighter@{highlighter}}
+\index{highlighter@{highlighter}!MasterActions@{Master\-Actions}}
+\subsubsection[{highlighter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Highlighter}$\ast$ Master\-Actions\-::highlighter\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a50b1565db8b7780ec4e88e59953aa67b}
+
+
+Definition at line 69 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a774ef398053050c37d62b7a24e61c7ee}{\index{Master\-Actions@{Master\-Actions}!master\-Tab\-Widget\-Ptr@{master\-Tab\-Widget\-Ptr}}
+\index{master\-Tab\-Widget\-Ptr@{master\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ Master\-Actions\-::master\-Tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a774ef398053050c37d62b7a24e61c7ee}
+
+
+Definition at line 68 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_af1e3c333e90f4763dfd964aa2321b034}{\index{Master\-Actions@{Master\-Actions}!nav\-West\-Action\-Ptr@{nav\-West\-Action\-Ptr}}
+\index{nav\-West\-Action\-Ptr@{nav\-West\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{nav\-West\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::nav\-West\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_af1e3c333e90f4763dfd964aa2321b034}
+
+
+Definition at line 65 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a4da658e527460b8d5b0a263820259e97}{\index{Master\-Actions@{Master\-Actions}!new\-File\-Action\-Ptr@{new\-File\-Action\-Ptr}}
+\index{new\-File\-Action\-Ptr@{new\-File\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{new\-File\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::new\-File\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a4da658e527460b8d5b0a263820259e97}
+
+
+Definition at line 37 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a8839c174acf071c0d9bfe450160218eb}{\index{Master\-Actions@{Master\-Actions}!new\-File\-Gui\-Ptr@{new\-File\-Gui\-Ptr}}
+\index{new\-File\-Gui\-Ptr@{new\-File\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{new\-File\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-File\-Gui}$\ast$ Master\-Actions\-::new\-File\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a8839c174acf071c0d9bfe450160218eb}
+
+
+Definition at line 71 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a114ab55c27fc183af68ebaaa86748a82}{\index{Master\-Actions@{Master\-Actions}!new\-Project\-Action\-Ptr@{new\-Project\-Action\-Ptr}}
+\index{new\-Project\-Action\-Ptr@{new\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{new\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::new\-Project\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a114ab55c27fc183af68ebaaa86748a82}
+
+
+Definition at line 39 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a78733336a3d5fd3bbb55eaf0215f0d40}{\index{Master\-Actions@{Master\-Actions}!new\-Project\-Gui\-Ptr@{new\-Project\-Gui\-Ptr}}
+\index{new\-Project\-Gui\-Ptr@{new\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{new\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-Project\-Gui}$\ast$ Master\-Actions\-::new\-Project\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a78733336a3d5fd3bbb55eaf0215f0d40}
+
+
+Definition at line 72 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a6c3b1d9319fbf23f5a7cbe8305e16fc1}{\index{Master\-Actions@{Master\-Actions}!new\-Terminal\-Action\-Ptr@{new\-Terminal\-Action\-Ptr}}
+\index{new\-Terminal\-Action\-Ptr@{new\-Terminal\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{new\-Terminal\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::new\-Terminal\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a6c3b1d9319fbf23f5a7cbe8305e16fc1}
+
+
+Definition at line 38 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a3b4d98cdbfaa8e287d420513a8df53ee}{\index{Master\-Actions@{Master\-Actions}!open\-Project\-Action\-Ptr@{open\-Project\-Action\-Ptr}}
+\index{open\-Project\-Action\-Ptr@{open\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{open\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::open\-Project\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a3b4d98cdbfaa8e287d420513a8df53ee}
+
+
+Definition at line 40 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a6caf7325dd9cb26f72c81a8c877db634}{\index{Master\-Actions@{Master\-Actions}!open\-Project\-Gui\-Ptr@{open\-Project\-Gui\-Ptr}}
+\index{open\-Project\-Gui\-Ptr@{open\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{open\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Open\-Project\-Gui}$\ast$ Master\-Actions\-::open\-Project\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a6caf7325dd9cb26f72c81a8c877db634}
+
+
+Definition at line 75 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a5b7a85c6728274eb0fcb48924044b9f6}{\index{Master\-Actions@{Master\-Actions}!output\-South\-Action\-Ptr@{output\-South\-Action\-Ptr}}
+\index{output\-South\-Action\-Ptr@{output\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{output\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::output\-South\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a5b7a85c6728274eb0fcb48924044b9f6}
+
+
+Definition at line 53 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a5242e5fa69f4d15c15a32b43f227e397}{\index{Master\-Actions@{Master\-Actions}!profile\-Proj\-Action\-Ptr@{profile\-Proj\-Action\-Ptr}}
+\index{profile\-Proj\-Action\-Ptr@{profile\-Proj\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{profile\-Proj\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::profile\-Proj\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a5242e5fa69f4d15c15a32b43f227e397}
+
+
+Definition at line 50 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_aa4160469d2e9a840448c49e95bcfa9e5}{\index{Master\-Actions@{Master\-Actions}!project\-West\-Action\-Ptr@{project\-West\-Action\-Ptr}}
+\index{project\-West\-Action\-Ptr@{project\-West\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{project\-West\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::project\-West\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_aa4160469d2e9a840448c49e95bcfa9e5}
+
+
+Definition at line 64 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a7936a9bf0e7418cd864b2fb1ab786d09}{\index{Master\-Actions@{Master\-Actions}!redo\-Action\-Ptr@{redo\-Action\-Ptr}}
+\index{redo\-Action\-Ptr@{redo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{redo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::redo\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a7936a9bf0e7418cd864b2fb1ab786d09}
+
+
+Definition at line 43 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a3377fe0ddc45ce50119766c8a903c039}{\index{Master\-Actions@{Master\-Actions}!run\-Action\-Ptr@{run\-Action\-Ptr}}
+\index{run\-Action\-Ptr@{run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::run\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a3377fe0ddc45ce50119766c8a903c039}
+
+
+Definition at line 48 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_ad7ff295f2e3067697e290afc4f0fd0df}{\index{Master\-Actions@{Master\-Actions}!run\-Gui\-Ptr@{run\-Gui\-Ptr}}
+\index{run\-Gui\-Ptr@{run\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{run\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Gui}$\ast$ Master\-Actions\-::run\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ad7ff295f2e3067697e290afc4f0fd0df}
+
+
+Definition at line 74 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a4e9bf6410023b508d56f235903a44b5f}{\index{Master\-Actions@{Master\-Actions}!save\-All\-Action\-Ptr@{save\-All\-Action\-Ptr}}
+\index{save\-All\-Action\-Ptr@{save\-All\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{save\-All\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::save\-All\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a4e9bf6410023b508d56f235903a44b5f}
+
+
+Definition at line 41 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_abe52f232f77f5a5bff35c8e3dadb3d80}{\index{Master\-Actions@{Master\-Actions}!set\-Project\-Config\-Action\-Ptr@{set\-Project\-Config\-Action\-Ptr}}
+\index{set\-Project\-Config\-Action\-Ptr@{set\-Project\-Config\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{set\-Project\-Config\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::set\-Project\-Config\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_abe52f232f77f5a5bff35c8e3dadb3d80}
+
+
+Definition at line 44 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a8ea0090704403ea15decad4e0104feb8}{\index{Master\-Actions@{Master\-Actions}!start\-East\-Action\-Ptr@{start\-East\-Action\-Ptr}}
+\index{start\-East\-Action\-Ptr@{start\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{start\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::start\-East\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a8ea0090704403ea15decad4e0104feb8}
+
+
+Definition at line 58 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_acc473f35c8ee83c1d2d10d3a73522461}{\index{Master\-Actions@{Master\-Actions}!step\-Into\-East\-Action\-Ptr@{step\-Into\-East\-Action\-Ptr}}
+\index{step\-Into\-East\-Action\-Ptr@{step\-Into\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{step\-Into\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::step\-Into\-East\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_acc473f35c8ee83c1d2d10d3a73522461}
+
+
+Definition at line 59 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a2c51444dbd1ff60d23dd52cc6fb4a9f7}{\index{Master\-Actions@{Master\-Actions}!step\-Over\-East\-Action\-Ptr@{step\-Over\-East\-Action\-Ptr}}
+\index{step\-Over\-East\-Action\-Ptr@{step\-Over\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{step\-Over\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::step\-Over\-East\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a2c51444dbd1ff60d23dd52cc6fb4a9f7}
+
+
+Definition at line 60 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_accb886e749ad46cb6373187e59921bcf}{\index{Master\-Actions@{Master\-Actions}!terminal\-Ptr@{terminal\-Ptr}}
+\index{terminal\-Ptr@{terminal\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{terminal\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Terminal}$\ast$ Master\-Actions\-::terminal\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_accb886e749ad46cb6373187e59921bcf}
+
+
+Definition at line 73 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_ad96c9f17230e162e9a9f39a867101a53}{\index{Master\-Actions@{Master\-Actions}!terminal\-South\-Action\-Ptr@{terminal\-South\-Action\-Ptr}}
+\index{terminal\-South\-Action\-Ptr@{terminal\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{terminal\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::terminal\-South\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ad96c9f17230e162e9a9f39a867101a53}
+
+
+Definition at line 54 of file Master\-Actions.\-h.
+
+\hypertarget{class_master_actions_a23386959a2f60a89cc6ae1bff012c76c}{\index{Master\-Actions@{Master\-Actions}!undo\-Action\-Ptr@{undo\-Action\-Ptr}}
+\index{undo\-Action\-Ptr@{undo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
+\subsubsection[{undo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::undo\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a23386959a2f60a89cc6ae1bff012c76c}
+
+
+Definition at line 42 of file Master\-Actions.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_master_actions_8h}{Master\-Actions.\-h}\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_master_actions_8cpp}{Master\-Actions.\-cpp}\end{DoxyCompactItemize}

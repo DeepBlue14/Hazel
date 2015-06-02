@@ -6,6 +6,17 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/james/NetBeansProjects/ride/src/ScoutData.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/EnvCmds.cpp</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/ScoutFuncDat.cpp</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/EnvCmds.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/XmlMaster.cpp</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/ScoutFuncDat.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/XmlMaster.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/ScoutLibDat.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/ScoutLibDat.cpp</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/ScoutData.cpp</file>
+        </group>
     </open-files>
 </project-private>

@@ -1,3 +1,5 @@
+#include <qt4/QtGui/qdirmodel.h>
+
 #include "FileTreeGui.h"
 
 QTreeView* FileTreeGui::tree;
@@ -48,11 +50,15 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 {
     cout << "right clicked !!!" << endl;
+    
     QPoint globalPos = tree->mapToGlobal(pos);
     
     QMenu myMenu;
     myMenu.addAction("Open");
     myMenu.addAction("Delete");
+    myMenu.addAction("Rename...");
+    myMenu.addAction("Git");
+    myMenu.addAction("Properties");
     
     QAction* selectedItem = myMenu.exec(globalPos);
     if(selectedItem)
@@ -65,7 +71,9 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
         cout << selectedItem->text().toStdString() << endl;
     }
     
-    
+    //change treeview to treewidget, and then use code from
+    //https://github.com/DeepBlue14/Software_Engineer_91.411_2/blob/master/2_DataAggregator/Code/src/DevicesGui.cpp
+
 }
 
 

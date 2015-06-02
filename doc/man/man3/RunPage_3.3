@@ -1,0 +1,121 @@
+.TH "RunPage_3" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+RunPage_3 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <RunPage_3\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRunPage_3\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "QStringList * \fBgetCmdsEnteredStrList\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~RunPage_3\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleAddToListBtnPtrSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleRmFromListBtnPtrSlot\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QStringList * \fBcmdsEnteredStrList\fP"
+.br
+.ti -1c
+.RI "QLineEdit * \fBcmdsLePtr\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBaddToListBtnPtr\fP"
+.br
+.ti -1c
+.RI "QListWidget * \fBcmdsEnteredTypeLw\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBrmFromListBtnPtr\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayout\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file RunPage_3\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "RunPage_3::RunPage_3 (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file RunPage_3\&.cpp\&.
+.SS "RunPage_3::~RunPage_3 ()"
+
+.PP
+Definition at line 93 of file RunPage_3\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QStringList * RunPage_3::getCmdsEnteredStrList ()"
+
+.PP
+Definition at line 73 of file RunPage_3\&.cpp\&.
+.SS "void RunPage_3::handleAddToListBtnPtrSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 28 of file RunPage_3\&.cpp\&.
+.SS "void RunPage_3::handleRmFromListBtnPtrSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 55 of file RunPage_3\&.cpp\&.
+.SS "QString * RunPage_3::toString ()"
+
+.PP
+Definition at line 79 of file RunPage_3\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QPushButton* RunPage_3::addToListBtnPtr\fC [private]\fP"
+
+.PP
+Definition at line 30 of file RunPage_3\&.h\&.
+.SS "QStringList* RunPage_3::cmdsEnteredStrList\fC [private]\fP"
+
+.PP
+Definition at line 28 of file RunPage_3\&.h\&.
+.SS "QListWidget* RunPage_3::cmdsEnteredTypeLw\fC [private]\fP"
+
+.PP
+Definition at line 31 of file RunPage_3\&.h\&.
+.SS "QLineEdit* RunPage_3::cmdsLePtr\fC [private]\fP"
+
+.PP
+Definition at line 29 of file RunPage_3\&.h\&.
+.SS "QGridLayout* RunPage_3::outerLayout\fC [private]\fP"
+
+.PP
+Definition at line 34 of file RunPage_3\&.h\&.
+.SS "QPushButton* RunPage_3::rmFromListBtnPtr\fC [private]\fP"
+
+.PP
+Definition at line 32 of file RunPage_3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

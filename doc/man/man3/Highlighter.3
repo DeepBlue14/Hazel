@@ -1,0 +1,121 @@
+.TH "Highlighter" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Highlighter \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Highlighter\&.h>\fP
+.PP
+Inherits QSyntaxHighlighter\&.
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBHighlightingRule\fP"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHighlighter\fP (QTextDocument *parent=0)"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBhighlightBlock\fP (const QString &text)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QVector< \fBHighlightingRule\fP > \fBhighlightingRules\fP"
+.br
+.ti -1c
+.RI "QRegExp \fBcommentStartExpression\fP"
+.br
+.ti -1c
+.RI "QRegExp \fBcommentEndExpression\fP"
+.br
+.ti -1c
+.RI "QTextCharFormat \fBkeywordFormat\fP"
+.br
+.ti -1c
+.RI "QTextCharFormat \fBclassFormat\fP"
+.br
+.ti -1c
+.RI "QTextCharFormat \fBsingleLineCommentFormat\fP"
+.br
+.ti -1c
+.RI "QTextCharFormat \fBmultiLineCommentFormat\fP"
+.br
+.ti -1c
+.RI "QTextCharFormat \fBquotationFormat\fP"
+.br
+.ti -1c
+.RI "QTextCharFormat \fBfunctionFormat\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 18 of file Highlighter\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Highlighter::Highlighter (QTextDocument *parent = \fC0\fP)"
+
+.PP
+Definition at line 5 of file Highlighter\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Highlighter::highlightBlock (const QString &text)\fC [protected]\fP"
+
+.PP
+Definition at line 145 of file Highlighter\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QTextCharFormat Highlighter::classFormat\fC [private]\fP"
+
+.PP
+Definition at line 34 of file Highlighter\&.h\&.
+.SS "QRegExp Highlighter::commentEndExpression\fC [private]\fP"
+
+.PP
+Definition at line 31 of file Highlighter\&.h\&.
+.SS "QRegExp Highlighter::commentStartExpression\fC [private]\fP"
+
+.PP
+Definition at line 30 of file Highlighter\&.h\&.
+.SS "QTextCharFormat Highlighter::functionFormat\fC [private]\fP"
+
+.PP
+Definition at line 38 of file Highlighter\&.h\&.
+.SS "QVector<\fBHighlightingRule\fP> Highlighter::highlightingRules\fC [private]\fP"
+
+.PP
+Definition at line 28 of file Highlighter\&.h\&.
+.SS "QTextCharFormat Highlighter::keywordFormat\fC [private]\fP"
+
+.PP
+Definition at line 33 of file Highlighter\&.h\&.
+.SS "QTextCharFormat Highlighter::multiLineCommentFormat\fC [private]\fP"
+
+.PP
+Definition at line 36 of file Highlighter\&.h\&.
+.SS "QTextCharFormat Highlighter::quotationFormat\fC [private]\fP"
+
+.PP
+Definition at line 37 of file Highlighter\&.h\&.
+.SS "QTextCharFormat Highlighter::singleLineCommentFormat\fC [private]\fP"
+
+.PP
+Definition at line 35 of file Highlighter\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

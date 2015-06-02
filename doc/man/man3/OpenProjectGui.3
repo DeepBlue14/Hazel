@@ -1,0 +1,142 @@
+.TH "OpenProjectGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OpenProjectGui \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OpenProjectGui\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOpenProjectGui\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBsetProjectStrPtr\fP (QString *\fBprojectStrPtr\fP)"
+.br
+.ti -1c
+.RI "QString * \fBgetProjectStrPtr\fP ()"
+.br
+.ti -1c
+.RI "\fB~OpenProjectGui\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleFileDialogPbPtrSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleOpenProjectPbPtrSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleCancelPbPtrSlot\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QLineEdit * \fBprojectLePtr\fP"
+.br
+.ti -1c
+.RI "QFileDialog * \fBprojectFileDialogPtr\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBfileDialogPbPtr\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBopenProjectPbPtr\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBcancelPbPtr\fP"
+.br
+.ti -1c
+.RI "QHBoxLayout * \fBbuttonLayoutPtr\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayoutPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBprojectStrPtr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 23 of file OpenProjectGui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OpenProjectGui::OpenProjectGui (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file OpenProjectGui\&.cpp\&.
+.SS "OpenProjectGui::~OpenProjectGui ()"
+
+.PP
+Definition at line 66 of file OpenProjectGui\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QString * OpenProjectGui::getProjectStrPtr ()"
+
+.PP
+Definition at line 60 of file OpenProjectGui\&.cpp\&.
+.SS "void OpenProjectGui::handleCancelPbPtrSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 46 of file OpenProjectGui\&.cpp\&.
+.SS "void OpenProjectGui::handleFileDialogPbPtrSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 30 of file OpenProjectGui\&.cpp\&.
+.SS "void OpenProjectGui::handleOpenProjectPbPtrSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 37 of file OpenProjectGui\&.cpp\&.
+.SS "void OpenProjectGui::setProjectStrPtr (QString *projectStrPtr)"
+
+.PP
+Definition at line 54 of file OpenProjectGui\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QHBoxLayout* OpenProjectGui::buttonLayoutPtr\fC [private]\fP"
+
+.PP
+Definition at line 33 of file OpenProjectGui\&.h\&.
+.SS "QPushButton* OpenProjectGui::cancelPbPtr\fC [private]\fP"
+
+.PP
+Definition at line 32 of file OpenProjectGui\&.h\&.
+.SS "QPushButton* OpenProjectGui::fileDialogPbPtr\fC [private]\fP"
+
+.PP
+Definition at line 30 of file OpenProjectGui\&.h\&.
+.SS "QPushButton* OpenProjectGui::openProjectPbPtr\fC [private]\fP"
+
+.PP
+Definition at line 31 of file OpenProjectGui\&.h\&.
+.SS "QGridLayout* OpenProjectGui::outerLayoutPtr\fC [private]\fP"
+
+.PP
+Definition at line 34 of file OpenProjectGui\&.h\&.
+.SS "QFileDialog* OpenProjectGui::projectFileDialogPtr\fC [private]\fP"
+
+.PP
+Definition at line 29 of file OpenProjectGui\&.h\&.
+.SS "QLineEdit* OpenProjectGui::projectLePtr\fC [private]\fP"
+
+.PP
+Definition at line 28 of file OpenProjectGui\&.h\&.
+.SS "QString* OpenProjectGui::projectStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 36 of file OpenProjectGui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.
