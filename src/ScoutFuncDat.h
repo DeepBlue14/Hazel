@@ -1,6 +1,8 @@
 /* 
  * File:   ScoutFuncDat.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on June 2, 2015, 7:03 PM
  */
@@ -12,7 +14,7 @@
 #include <QString>
 #include <QStringList>
 
-class ScoutFuncDat
+class ScoutFuncDat : public QWidget
 {
     private:
         QString* funcNmStrPtr;
@@ -20,7 +22,7 @@ class ScoutFuncDat
         QStringList* paramsStrLstPtr;
         
     public:
-        ScoutFuncDat();
+        ScoutFuncDat(QWidget* parent = 0);
         void setFuncNmStrPtr(QString* funcNmStrPtr);
         QString* getFuncNmStrPtr();
         void setFuncRetnStrPtr(QString* funcRetnStrPtr);

@@ -13,14 +13,14 @@
 #include <QWidget>
 #include <QString>
 
-class ScoutVarDat
+class ScoutVarDat : public QWidget
 {
     private:
         QString* varNmStrPtr;
         QString* varTypeStrPtr;
         
     public:
-        ScoutVarDat();
+        ScoutVarDat(QWidget* parent = 0);
         void setVarNmStrPtr(QString* varNmStrPtr);
         QString* getVarNmStrPtr();
         void setVarTypeStrPtr(QString* varTypeStrPtr);

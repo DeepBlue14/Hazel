@@ -1,12 +1,14 @@
 /* 
  * File:   ScoutLibDat.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on June 2, 2015, 6:35 PM
  */
 
-#ifndef SCOUT_LIB_DAT_H
-#define	SCOUT_LIB_DAT_H
+#ifndef SCOUT_FILE_DAT_H
+#define	SCOUT_FILE_DAT_H
 
 #include <QWidget>
 #include <QString>
@@ -15,7 +17,7 @@
 #include "ScoutFuncDat.h"
 #include "ScoutVarDat.h"
 
-class ScoutFileDat
+class ScoutFileDat : public QWidget
 {          
     private:
         QString* fileNmStrPtr;
@@ -23,12 +25,11 @@ class ScoutFileDat
         QVector<ScoutVarDat*>* varDatPtrVecPtr;
         
         template<class X>
-        QStringList* alphabetizeByName(X* funcOrVar);
+        QVector<X*> alphabetizeByName(QVector<X*> scoutType);
         
     public:
-        ScoutFileDat();
+        ScoutFileDat(QWidget* parent = 0);
         void setFileNmStrPtr(QString* fileNmStrPtr);
-        QString* getFileNmStrPtr();
         QString* getFileNmStrPtr();
         void pushToFuncDatPtrVecPtr(ScoutFuncDat* funcDatPtrVecPtr);
         ScoutFuncDat* popFromFuncDatPtrVecPtr();
@@ -41,4 +42,4 @@ class ScoutFileDat
         ~ScoutFileDat();
 };
 
-#endif	/* SCOUT_LIB_DAT_H */
+#endif	/* SCOUT_FILE_DAT_H */

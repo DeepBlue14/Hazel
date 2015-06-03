@@ -1,7 +1,7 @@
 #include "ScoutVarDat.h"
 
 
-ScoutVarDat::ScoutVarDat()
+ScoutVarDat::ScoutVarDat(QWidget* parent) : QWidget(parent)
 {
     varNmStrPtr = new QString("null");
     varTypeStrPtr = new QString("null");
@@ -39,4 +39,10 @@ QString* ScoutVarDat::toString()
     tmp->append("\nVariable Type: " + *getVarTypeStrPtr() );
     
     return tmp;
+}
+
+
+ScoutVarDat::~ScoutVarDat()
+{
+    ;
 }

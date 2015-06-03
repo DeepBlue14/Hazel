@@ -1,6 +1,8 @@
 /* 
  * File:   ScoutLibDat.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on June 2, 2015, 11:27 PM
  */
@@ -14,13 +16,13 @@
 
 #include "ScoutFileDat.h"
 
-class ScoutLibDat
+class ScoutLibDat : public QWidget
 {
     private:
         QVector<ScoutFileDat*>* filePtrVecPtr;
         
     public:
-        ScoutLibDat();
+        ScoutLibDat(QWidget* parent = 0);
         void pushToFilePtrVecPtr(ScoutFileDat* scoutFileDat);
         ScoutFileDat* popFromFilePtrVecPtr();
         QVector<ScoutFileDat*>* getFilePtrVecPtr();

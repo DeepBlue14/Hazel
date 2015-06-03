@@ -1,7 +1,7 @@
 #include "ScoutFuncDat.h"
 
 
-ScoutFuncDat::ScoutFuncDat()
+ScoutFuncDat::ScoutFuncDat(QWidget* parent) : QWidget(parent)
 {
     funcNmStrPtr = new QString("null");
     funcRetnStrPtr = new QString("null");
