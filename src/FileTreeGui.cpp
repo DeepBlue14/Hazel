@@ -1,6 +1,7 @@
 #include "FileTreeGui.h"
 
 QTreeView* FileTreeGui::tree;
+QTreeWidget* FileTreeGui::trueTree;
 QListView* FileTreeGui::list;
 QSplitter* FileTreeGui::splitter;
 QFileSystemModel* FileTreeGui::model;
@@ -15,10 +16,43 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     splitter = new QSplitter();
     model = new QFileSystemModel();
     tree = new QTreeView(splitter);
+    trueTree = new QTreeWidget(splitter);
     list = new QListView(splitter);
     
     model->setRootPath(*getProjectRootAbsPathStrPtr()/*QDir::currentPath()*/);
     
+    //--------------------------
+    QTreeWidgetItem* headerItem = new QTreeWidgetItem();
+    headerItem->setText(0, QString("File Name") );
+    headerItem->setText(1, QString("Size (Bytes)"));
+    headerItem->setText(2, QString("Path"));
+    trueTree->setHeaderItem(headerItem);
+    
+    QDir* rootDir = new QDir(*getProjectRootAbsPathStrPtr() );
+    QFileInfoList filesList = rootDir->entryInfoList();
+    
+    foreach(QFileInfo fileInfo, filesList)
+    {
+        QTreeWidgetItem* item = new QTreeWidgetItem();
+        item->setText(0, fileInfo.fileName());
+        
+        if(fileInfo.isFile())
+        {
+            item->setText(11, QString::number(fileInfo.size()));
+            item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
+        }
+        
+        if(fileInfo.isDir())
+        {
+            item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+            addChildren(item, fileInfo.filePath());
+        }
+        
+        item->setText(2, fileInfo.filePath());
+        trueTree->addTopLevelItem(item);
+    }
+    
+    //--------------------------
     
     //tree->setModel(model);
     //tree->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
@@ -33,6 +67,7 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     
     tree->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(tree, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
+    connect(trueTree, SIGNAL(itemClicked(QTreeWidgetItem*, int)), this, SLOT(handleShowDirectorySlot(QTreeWidgetItem*, int)));
     
     //list->setModel(model);
     //list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
@@ -42,6 +77,56 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     outerLayout->addWidget(splitter, 0, 0);
   
     this->setLayout(outerLayout);
+}
+
+
+void FileTreeGui::addChildren(QTreeWidgetItem* item, QString filePath)
+{
+    QDir* rootDir = new QDir(filePath);
+    QFileInfoList filesList = rootDir->entryInfoList();
+    
+    foreach(QFileInfo fileInfo, filesList)
+    {
+        QTreeWidgetItem* child = new QTreeWidgetItem();
+        child->setText(0, fileInfo.fileName());
+        
+        
+        if(fileInfo.isFile())
+        {
+            child->setText(1, QString::number(fileInfo.size()));
+        }
+        
+        if(fileInfo.isDir())
+        {
+            child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+            child->setText(2, fileInfo.filePath());
+        }
+        
+        item->addChild(child);
+    }
+}
+
+
+void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
+{
+    QDir* rootDir = new QDir(item->text(2));
+    QFileInfoList filesList = rootDir->entryInfoList();
+    
+    foreach(QFileInfo fileInfo, filesList)
+    {
+        QTreeWidgetItem* child = new QTreeWidgetItem();
+        child->setText(0, fileInfo.fileName());
+        
+        if(fileInfo.isFile())
+        {
+            child->setText(1, QString::number(fileInfo.size()));
+            child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+        }
+        
+        item->addChild(child);
+        
+        //resizeColumnToContents(0);
+    }
 }
 
 

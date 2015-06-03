@@ -22,7 +22,7 @@ static const uint qt_meta_data_FileTreeGui[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -30,13 +30,16 @@ static const uint qt_meta_data_FileTreeGui[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-      13,   12,   12,   12, 0x08,
+      19,   13,   12,   12, 0x08,
+      65,   12,   12,   12, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_FileTreeGui[] = {
-    "FileTreeGui\0\0handleRightClickSlot(QPoint)\0"
+    "FileTreeGui\0\0item,\0"
+    "handleShowDirectorySlot(QTreeWidgetItem*,int)\0"
+    "handleRightClickSlot(QPoint)\0"
 };
 
 void FileTreeGui::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -45,7 +48,8 @@ void FileTreeGui::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         Q_ASSERT(staticMetaObject.cast(_o));
         FileTreeGui *_t = static_cast<FileTreeGui *>(_o);
         switch (_id) {
-        case 0: _t->handleRightClickSlot((*reinterpret_cast< const QPoint(*)>(_a[1]))); break;
+        case 0: _t->handleShowDirectorySlot((*reinterpret_cast< QTreeWidgetItem*(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 1: _t->handleRightClickSlot((*reinterpret_cast< const QPoint(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -83,9 +87,9 @@ int FileTreeGui::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

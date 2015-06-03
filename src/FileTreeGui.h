@@ -4,6 +4,8 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description:
  *
+ * Reference: http://www.codeprogress.com/cpp/libraries/qt/QTreeWidgetBrowseDirectory.php#.VW9Wj60VhBc
+ * 
  * Created on May 6, 2015, 1:46 AM
  */
 
@@ -35,6 +37,7 @@ class FileTreeGui : public QWidget
             
     private:
         static QTreeView* tree;
+        static QTreeWidget* trueTree;
         static QListView* list;
         static QSplitter* splitter;
         static QFileSystemModel* model;
@@ -45,10 +48,12 @@ class FileTreeGui : public QWidget
         QTabWidget* masterTabWidgetPtr;
         
     private slots:
+        void handleShowDirectorySlot(QTreeWidgetItem* item, int /*column*/);
         void handleRightClickSlot(const QPoint&);
         
     public:
         FileTreeGui(QWidget* parent = 0);
+        void addChildren(QTreeWidgetItem* item, QString filePath);
         static void setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);
         static QString* getProjectRootAbsPathStrPtr();
         static void refresh();
