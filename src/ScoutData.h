@@ -15,13 +15,13 @@
 #include <QStringList>
 #include <QVector>
 
+#include "ScoutFileDat.h"
+
 class ScoutData
-{
-    Q_OBJECT
-            
+{          
     private:
         QStringList* loadedFilesStrLstPtr; // list of files which have already been loaded
-        QVector<ScoutLibDat*>* scoutLibDatPtrVecPtr;
+        QVector<ScoutFileDat*>* scoutLibDatPtrVecPtr;
         
     public:
         ScoutData();

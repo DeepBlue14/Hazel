@@ -14,6 +14,7 @@
 #include <QString>
 #include <QSplitter>
 #include <QTreeView>
+#include <QTreeWidget>
 #include <QHeaderView>
 #include <QFileSystemModel>
 #include <QListView>
@@ -21,6 +22,7 @@
 #include <QPoint>
 #include <QGridLayout>
 #include <QMenu>
+#include <QDirModel>
 #include <QDebug>
 
 #include <iostream>

@@ -2,7 +2,7 @@
  * File:   ScoutLibDat.h
  * Author: james
  *
- * Created on June 2, 2015, 6:35 PM
+ * Created on June 2, 2015, 11:27 PM
  */
 
 #ifndef SCOUT_LIB_DAT_H
@@ -10,24 +10,21 @@
 
 #include <QWidget>
 #include <QString>
-#include <QStringList>
+#include <QVector>
 
-#include "ScoutFuncDat.h"
+#include "ScoutFileDat.h"
 
 class ScoutLibDat
 {
-    Q_OBJECT
-            
     private:
-        QString* libNmStrPtr;
-        QVector<ScoutFuncDat*>* funcDatPtrVecPtr;
-        QStringList* varsStrLstPtr;
-        
-        QStringList* alphabetize(QStringList* funcHeadStrLstPtr, QStringList* funcRetnStrLst);
-        QStringList* alphabetize(QStringList* varsStrLstPtr);
+        QVector<ScoutFileDat*>* filePtrVecPtr;
         
     public:
         ScoutLibDat();
+        void pushToFilePtrVecPtr(ScoutFileDat* scoutFileDat);
+        ScoutFileDat* popFromFilePtrVecPtr();
+        QVector<ScoutFileDat*>* getFilePtrVecPtr();
+        QString* toString();
         ~ScoutLibDat();
 };
 

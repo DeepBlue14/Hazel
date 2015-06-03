@@ -1,5 +1,3 @@
-#include <qt4/QtGui/qdirmodel.h>
-
 #include "FileTreeGui.h"
 
 QTreeView* FileTreeGui::tree;

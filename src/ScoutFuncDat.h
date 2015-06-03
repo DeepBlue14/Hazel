@@ -14,8 +14,6 @@
 
 class ScoutFuncDat
 {
-    Q_OBJECT
-            
     private:
         QString* funcNmStrPtr;
         QString* funcRetnStrPtr;
@@ -23,7 +21,14 @@ class ScoutFuncDat
         
     public:
         ScoutFuncDat();
-        //...passthrough methods
+        void setFuncNmStrPtr(QString* funcNmStrPtr);
+        QString* getFuncNmStrPtr();
+        void setFuncRetnStrPtr(QString* funcRetnStrPtr);
+        QString* getFuncRetnStrPtr();
+        void pushBackToParamsStrLstPtr(QString* paramStrPtr);
+        QString* popBackFromParamsStrLstPtr();
+        QStringList* getParamsStrLstPtr();
+        QString* toString();
         ~ScoutFuncDat();
 };
 
