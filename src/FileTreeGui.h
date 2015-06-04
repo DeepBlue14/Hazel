@@ -15,11 +15,8 @@
 #include <QWidget>
 #include <QString>
 #include <QSplitter>
-#include <QTreeView>
 #include <QTreeWidget>
 #include <QHeaderView>
-#include <QFileSystemModel>
-#include <QListView>
 #include <QStandardItemModel>
 #include <QPoint>
 #include <QGridLayout>
@@ -36,11 +33,8 @@ class FileTreeGui : public QWidget
     Q_OBJECT
             
     private:
-        static QTreeView* tree;
         static QTreeWidget* trueTree;
-        static QListView* list;
         static QSplitter* splitter;
-        static QFileSystemModel* model;
         
         QGridLayout* outerLayout;
         

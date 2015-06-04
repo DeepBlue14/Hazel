@@ -1,10 +1,8 @@
 #include "FileTreeGui.h"
 
-QTreeView* FileTreeGui::tree;
+
 QTreeWidget* FileTreeGui::trueTree;
-QListView* FileTreeGui::list;
 QSplitter* FileTreeGui::splitter;
-QFileSystemModel* FileTreeGui::model;
    
 QString* FileTreeGui::projectRootAbsPathStrPtr;
 
@@ -14,12 +12,8 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     projectRootAbsPathStrPtr = new QString("");
     
     splitter = new QSplitter();
-    model = new QFileSystemModel();
-    tree = new QTreeView(splitter);
     trueTree = new QTreeWidget(splitter);
-    list = new QListView(splitter);
-    
-    model->setRootPath(*getProjectRootAbsPathStrPtr()/*QDir::currentPath()*/);
+    //list = new QListView(splitter);
     
     //--------------------------
     QTreeWidgetItem* headerItem = new QTreeWidgetItem();
@@ -50,26 +44,12 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
             trueTree->addTopLevelItem(item);
         }
     }
+
+    trueTree->setContextMenuPolicy(Qt::CustomContextMenu);
     
-    //--------------------------
-    
-    //tree->setModel(model);
-    //tree->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
-    tree->setColumnHidden(1, true);
-    tree->setColumnHidden(2, true);
-    tree->setColumnHidden(3, true);
-    
-    tree->hideColumn(1);
-    tree->hideColumn(2);
-    tree->hideColumn(3);
-    tree->header()->hide();
-    
-    tree->setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(tree, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
+    connect(trueTree, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
     connect(trueTree, SIGNAL(itemClicked(QTreeWidgetItem*, int)), this, SLOT(handleShowDirectorySlot(QTreeWidgetItem*, int)));
-    
-    //list->setModel(model);
-    //list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
+
     splitter->setOrientation(Qt::Vertical);
   
     outerLayout = new QGridLayout();
@@ -137,7 +117,7 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 {
     cout << "right clicked !!!" << endl;
     
-    QPoint globalPos = tree->mapToGlobal(pos);
+    QPoint globalPos = trueTree->mapToGlobal(pos);
     
     QMenu myMenu;
     myMenu.addAction("Open");
@@ -177,20 +157,21 @@ QString* FileTreeGui::getProjectRootAbsPathStrPtr()
 
 void FileTreeGui::refresh()
 {
-    tree->setModel(model);
-    tree->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
-    tree->setColumnHidden(1, true);
-    tree->setColumnHidden(2, true);
-    tree->setColumnHidden(3, true);
+    ;
+    //tree->setModel(model);
+    //tree->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
+    //tree->setColumnHidden(1, true);
+    //tree->setColumnHidden(2, true);
+    //tree->setColumnHidden(3, true);
     
-    tree->hideColumn(1);
-    tree->hideColumn(2);
-    tree->hideColumn(3);
-    tree->header()->hide();
+    //tree->hideColumn(1);
+    //tree->hideColumn(2);
+    //tree->hideColumn(3);
+    //tree->header()->hide();
     
     
-    list->setModel(model);
-    list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
+    //list->setModel(model);
+    //list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
     splitter->setOrientation(Qt::Vertical);
 }
 
