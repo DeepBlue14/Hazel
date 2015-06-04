@@ -22,6 +22,7 @@
 #include <QGridLayout>
 #include <QMenu>
 #include <QDirModel>
+#include <QRegExp>
 #include <QDebug>
 
 #include <iostream>
