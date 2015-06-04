@@ -1,25 +1,86 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'MasterActions.h'
 **
-** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.6)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include "../MasterActions.h"
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'MasterActions.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 63
-#error "This file was generated using the moc from 4.8.6. It"
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.2.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
+struct qt_meta_stringdata_MasterActions_t {
+    QByteArrayData data[24];
+    char stringdata[593];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    offsetof(qt_meta_stringdata_MasterActions_t, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData) \
+    )
+static const qt_meta_stringdata_MasterActions_t qt_meta_stringdata_MasterActions = {
+    {
+QT_MOC_LITERAL(0, 0, 13),
+QT_MOC_LITERAL(1, 14, 23),
+QT_MOC_LITERAL(2, 38, 0),
+QT_MOC_LITERAL(3, 39, 27),
+QT_MOC_LITERAL(4, 67, 26),
+QT_MOC_LITERAL(5, 94, 27),
+QT_MOC_LITERAL(6, 122, 23),
+QT_MOC_LITERAL(7, 146, 20),
+QT_MOC_LITERAL(8, 167, 20),
+QT_MOC_LITERAL(9, 188, 32),
+QT_MOC_LITERAL(10, 221, 21),
+QT_MOC_LITERAL(11, 243, 29),
+QT_MOC_LITERAL(12, 273, 28),
+QT_MOC_LITERAL(13, 302, 19),
+QT_MOC_LITERAL(14, 322, 21),
+QT_MOC_LITERAL(15, 344, 27),
+QT_MOC_LITERAL(16, 372, 27),
+QT_MOC_LITERAL(17, 400, 29),
+QT_MOC_LITERAL(18, 430, 25),
+QT_MOC_LITERAL(19, 456, 25),
+QT_MOC_LITERAL(20, 482, 28),
+QT_MOC_LITERAL(21, 511, 28),
+QT_MOC_LITERAL(22, 540, 27),
+QT_MOC_LITERAL(23, 568, 23)
+    },
+    "MasterActions\0handleNewFileActionSlot\0"
+    "\0handleNewTerminalActionSlot\0"
+    "handleNewProjectActionSlot\0"
+    "handleOpenProjectActionSlot\0"
+    "handleSaveAllActionSlot\0handleUndoActionSlot\0"
+    "handleRedoActionSlot\0"
+    "handleSetProjectConfigActionSlot\0"
+    "handleBuildActionSlot\0"
+    "handleCleanAndBuildActionSlot\0"
+    "handleConfigForRunActionSlot\0"
+    "handleRunActionSlot\0handleDebugActionSlot\0"
+    "handleProfileProjActionSlot\0"
+    "handleOutputSouthActionSlot\0"
+    "handleTerminalSouthActionSlot\0"
+    "handleDebugEastActionSlot\0"
+    "handleStartEastActionSlot\0"
+    "handleStepIntoEastActionSlot\0"
+    "handleStepOverEastActionSlot\0"
+    "handleProjectWestActionSlot\0"
+    "handleNavWestActionSlot\0"
+};
+#undef QT_MOC_LITERAL
+
 static const uint qt_meta_data_MasterActions[] = {
 
  // content:
-       6,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       22,   14, // methods
@@ -29,60 +90,60 @@ static const uint qt_meta_data_MasterActions[] = {
        0,       // flags
        0,       // signalCount
 
- // slots: signature, parameters, type, tag, flags
-      15,   14,   14,   14, 0x08,
-      41,   14,   14,   14, 0x08,
-      71,   14,   14,   14, 0x08,
-     100,   14,   14,   14, 0x08,
-     130,   14,   14,   14, 0x08,
-     156,   14,   14,   14, 0x08,
-     179,   14,   14,   14, 0x08,
-     202,   14,   14,   14, 0x08,
-     237,   14,   14,   14, 0x08,
-     261,   14,   14,   14, 0x08,
-     293,   14,   14,   14, 0x08,
-     324,   14,   14,   14, 0x08,
-     346,   14,   14,   14, 0x08,
-     370,   14,   14,   14, 0x08,
-     400,   14,   14,   14, 0x08,
-     430,   14,   14,   14, 0x08,
-     462,   14,   14,   14, 0x08,
-     490,   14,   14,   14, 0x08,
-     518,   14,   14,   14, 0x08,
-     549,   14,   14,   14, 0x08,
-     580,   14,   14,   14, 0x08,
-     610,   14,   14,   14, 0x08,
+ // slots: name, argc, parameters, tag, flags
+       1,    0,  124,    2, 0x08,
+       3,    0,  125,    2, 0x08,
+       4,    0,  126,    2, 0x08,
+       5,    0,  127,    2, 0x08,
+       6,    0,  128,    2, 0x08,
+       7,    0,  129,    2, 0x08,
+       8,    0,  130,    2, 0x08,
+       9,    0,  131,    2, 0x08,
+      10,    0,  132,    2, 0x08,
+      11,    0,  133,    2, 0x08,
+      12,    0,  134,    2, 0x08,
+      13,    0,  135,    2, 0x08,
+      14,    0,  136,    2, 0x08,
+      15,    0,  137,    2, 0x08,
+      16,    0,  138,    2, 0x08,
+      17,    0,  139,    2, 0x08,
+      18,    0,  140,    2, 0x08,
+      19,    0,  141,    2, 0x08,
+      20,    0,  142,    2, 0x08,
+      21,    0,  143,    2, 0x08,
+      22,    0,  144,    2, 0x08,
+      23,    0,  145,    2, 0x08,
+
+ // slots: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
-};
-
-static const char qt_meta_stringdata_MasterActions[] = {
-    "MasterActions\0\0handleNewFileActionSlot()\0"
-    "handleNewTerminalActionSlot()\0"
-    "handleNewProjectActionSlot()\0"
-    "handleOpenProjectActionSlot()\0"
-    "handleSaveAllActionSlot()\0"
-    "handleUndoActionSlot()\0handleRedoActionSlot()\0"
-    "handleSetProjectConfigActionSlot()\0"
-    "handleBuildActionSlot()\0"
-    "handleCleanAndBuildActionSlot()\0"
-    "handleConfigForRunActionSlot()\0"
-    "handleRunActionSlot()\0handleDebugActionSlot()\0"
-    "handleProfileProjActionSlot()\0"
-    "handleOutputSouthActionSlot()\0"
-    "handleTerminalSouthActionSlot()\0"
-    "handleDebugEastActionSlot()\0"
-    "handleStartEastActionSlot()\0"
-    "handleStepIntoEastActionSlot()\0"
-    "handleStepOverEastActionSlot()\0"
-    "handleProjectWestActionSlot()\0"
-    "handleNavWestActionSlot()\0"
 };
 
 void MasterActions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        Q_ASSERT(staticMetaObject.cast(_o));
         MasterActions *_t = static_cast<MasterActions *>(_o);
         switch (_id) {
         case 0: _t->handleNewFileActionSlot(); break;
@@ -113,28 +174,21 @@ void MasterActions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_a);
 }
 
-const QMetaObjectExtraData MasterActions::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
-};
-
 const QMetaObject MasterActions::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_MasterActions,
-      qt_meta_data_MasterActions, &staticMetaObjectExtraData }
+    { &QWidget::staticMetaObject, qt_meta_stringdata_MasterActions.data,
+      qt_meta_data_MasterActions,  qt_static_metacall, 0, 0}
 };
 
-#ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &MasterActions::getStaticMetaObject() { return staticMetaObject; }
-#endif //Q_NO_DATA_RELOCATION
 
 const QMetaObject *MasterActions::metaObject() const
 {
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
 void *MasterActions::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_MasterActions))
+    if (!strcmp(_clname, qt_meta_stringdata_MasterActions.stringdata))
         return static_cast<void*>(const_cast< MasterActions*>(this));
     return QWidget::qt_metacast(_clname);
 }
@@ -147,6 +201,10 @@ int MasterActions::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_c == QMetaObject::InvokeMetaMethod) {
         if (_id < 22)
             qt_static_metacall(this, _c, _id, _a);
+        _id -= 22;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 22)
+            *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 22;
     }
     return _id;

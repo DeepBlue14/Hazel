@@ -24,8 +24,6 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     //--------------------------
     QTreeWidgetItem* headerItem = new QTreeWidgetItem();
     headerItem->setText(0, QString("File Name") );
-    headerItem->setText(1, QString("Size (Bytes)"));
-    headerItem->setText(2, QString("Path"));
     trueTree->setHeaderItem(headerItem);
     
     QDir* rootDir = new QDir(*getProjectRootAbsPathStrPtr() );
@@ -33,23 +31,24 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     
     foreach(QFileInfo fileInfo, filesList)
     {
-        QTreeWidgetItem* item = new QTreeWidgetItem();
-        item->setText(0, fileInfo.fileName());
-        
-        if(fileInfo.isFile())
+        if(fileInfo.fileName() != "." && fileInfo.fileName() != "..")
         {
-            item->setText(11, QString::number(fileInfo.size()));
-            item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
-        }
+            QTreeWidgetItem* item = new QTreeWidgetItem();
+            item->setText(0, fileInfo.fileName());
         
-        if(fileInfo.isDir())
-        {
-            item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
-            addChildren(item, fileInfo.filePath());
-        }
+            if(fileInfo.isFile())
+            {
+                item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
+            }
         
-        item->setText(2, fileInfo.filePath());
-        trueTree->addTopLevelItem(item);
+            if(fileInfo.isDir())
+            {
+                item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+                addChildren(item, fileInfo.filePath());
+            }
+        
+            trueTree->addTopLevelItem(item);
+        }
     }
     
     //--------------------------
@@ -87,46 +86,50 @@ void FileTreeGui::addChildren(QTreeWidgetItem* item, QString filePath)
     
     foreach(QFileInfo fileInfo, filesList)
     {
-        QTreeWidgetItem* child = new QTreeWidgetItem();
-        child->setText(0, fileInfo.fileName());
-        
-        
-        if(fileInfo.isFile())
+        if(fileInfo.fileName() != "." && fileInfo.fileName() != "..")
         {
-            child->setText(1, QString::number(fileInfo.size()));
-        }
+            QTreeWidgetItem* child = new QTreeWidgetItem();
+            child->setText(0, fileInfo.fileName());
         
-        if(fileInfo.isDir())
-        {
-            child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
-            child->setText(2, fileInfo.filePath());
-        }
+            if(fileInfo.isFile())
+            {
+                child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
+            }
         
-        item->addChild(child);
+            if(fileInfo.isDir())
+            {
+                child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+            }
+        
+            item->addChild(child);
+        }
     }
 }
 
 
 void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 {
-    QDir* rootDir = new QDir(item->text(2));
+    //cout << "Selected: " << item->text(0).toStdString() << endl;
+    QDir* rootDir = new QDir(item->text(0));
     QFileInfoList filesList = rootDir->entryInfoList();
     
     foreach(QFileInfo fileInfo, filesList)
     {
-        QTreeWidgetItem* child = new QTreeWidgetItem();
-        child->setText(0, fileInfo.fileName());
-        
-        if(fileInfo.isFile())
+        if(fileInfo.fileName() != "." && fileInfo.fileName() != "..")
         {
-            child->setText(1, QString::number(fileInfo.size()));
-            child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+            QTreeWidgetItem* child = new QTreeWidgetItem();
+            child->setText(0, fileInfo.fileName());
+        
+            if(fileInfo.isFile())
+            {
+                child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+            }
+        
+            item->addChild(child);
         }
-        
-        item->addChild(child);
-        
-        //resizeColumnToContents(0);
     }
+    
+    
 }
 
 
