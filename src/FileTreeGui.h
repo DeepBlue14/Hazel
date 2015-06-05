@@ -22,10 +22,13 @@
 #include <QGridLayout>
 #include <QMenu>
 #include <QDirModel>
+#include <QEvent>
 #include <QRegExp>
 #include <QDebug>
 
 #include <iostream>
+
+#include "TreeItemIconInit.h"
 
 using namespace std;
 

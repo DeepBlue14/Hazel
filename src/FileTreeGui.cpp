@@ -1,5 +1,3 @@
-#include <qt4/QtGui/qevent.h>
-
 #include "FileTreeGui.h"
 
 
@@ -34,25 +32,10 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
             QTreeWidgetItem* item = new QTreeWidgetItem();
             item->setText(0, fileInfo.fileName());
 
-            if(fileInfo.isFile())
-            {
-                if(item->text(0).contains(QRegExp("\\.h")) )
-                {
-                    item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/hFile.png")));
-                }
-                else if(item->text(0).contains(QRegExp("\\.cpp")) )
-                {
-                    item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png")));
-                }
-                else
-                {
-                    item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
-                }
-            }
+            TreeItemIconInit::setIcon(item);
 
             if(fileInfo.isDir())
             {
-                item->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
                 addChildren(item, fileInfo.filePath());
             }
 
@@ -88,28 +71,11 @@ void FileTreeGui::addChildren(QTreeWidgetItem* item, QString filePath)
 	    QTreeWidgetItem* child = new QTreeWidgetItem();
 	    child->setText(0,fileInfo.fileName());
 	    
-	    
-	    if(fileInfo.isFile())
-	    {
-                if(child->text(0).contains(QRegExp("\\.h")) )
-                {
-                    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/hFile.png")));
-                }
-                else if(child->text(0).contains(QRegExp("\\.cpp")) )
-                {
-                    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png")));
-                }
-                else
-                {
-                    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
-                }
-	    }
+            TreeItemIconInit::setIcon(child);
 	    
 	    if(fileInfo.isDir())
 	    {
-                child->setIcon(0,*(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
                 child->setText(1,fileInfo.filePath());
-              
 	    }  
 	    
 	    item->addChild(child);
@@ -136,25 +102,11 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 	    QTreeWidgetItem* child = new QTreeWidgetItem();
 	    child->setText(0,fileInfo.fileName());	  
 	    
-	    if(fileInfo.isFile())
-	    {  
-	        if(child->text(0).contains(QRegExp("\\.h")) )
-                {
-                    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/hFile.png")));
-                }
-                else if(child->text(0).contains(QRegExp("\\.cpp")) )
-                {
-                    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png")));
-                }
-                else
-                {
-                    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
-                }
-	    }
-	    
+            TreeItemIconInit::setIcon(child);
+
 	    if(fileInfo.isDir())
 	    {
-                child->setIcon(0,*(new QIcon("/home/james/NetBeansProjects/ride/images/projects.jpg")));
+                TreeItemIconInit::setIcon(child);
                 child->setText(1,fileInfo.filePath());
                 trueTree->hideColumn(1);
 	    } 
