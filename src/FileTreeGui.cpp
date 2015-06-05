@@ -177,6 +177,7 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     QPoint globalPos = trueTree->mapToGlobal(pos);
     QMenu myMenu;
     myMenu.addAction("Open");
+    myMenu.addAction("Hide");
     myMenu.addAction("Delete");
     myMenu.addAction("Rename...");
     myMenu.addAction("Git");

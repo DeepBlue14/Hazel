@@ -56,6 +56,7 @@
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
           <itemPath>src/TabGui.h</itemPath>
+          <itemPath>src/TreeItemIconInit.h</itemPath>
         </logicalFolder>
         <itemPath>src/UnixConsoleText.h</itemPath>
         <itemPath>src/WindowsConsoleText.h</itemPath>
@@ -142,6 +143,7 @@
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
           <itemPath>src/TabGui.cpp</itemPath>
+          <itemPath>src/TreeItemIconInit.cpp</itemPath>
         </logicalFolder>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
         <itemPath>src/WindowsConsoleText.cpp</itemPath>
@@ -391,6 +393,10 @@
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconInit.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
@@ -638,6 +644,10 @@
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconInit.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
