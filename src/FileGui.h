@@ -1,7 +1,9 @@
 /* 
  * File:   File.h
- * Author: james
- * Email: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
+ * 
  * Created on May 2, 2015, 10:47 PM
  */
 

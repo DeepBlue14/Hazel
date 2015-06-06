@@ -1,0 +1,6 @@
+<map id="CentralGui" name="CentralGui">
+<area shape="rect" id="node3" href="$class_tab_gui.html" title="TabGui" alt="" coords="20,184,84,211"/>
+<area shape="rect" id="node4" href="$class_opening_gui.html" title="OpeningGui" alt="" coords="71,83,161,109"/>
+<area shape="rect" id="node5" href="$class_output_gui.html" title="OutputGui" alt="" coords="154,133,235,160"/>
+<area shape="rect" id="node6" href="$class_file_tree_gui.html" title="FileTreeGui" alt="" coords="242,133,331,160"/>
+</map>

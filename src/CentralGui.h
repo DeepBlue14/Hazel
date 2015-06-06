@@ -8,11 +8,12 @@
  * Created on May 6, 2015, 4:33 PM
  */
 
-#ifndef CENTRALGUI_H
-#define	CENTRALGUI_H
+#ifndef CENTRAL_GUI_H
+#define	CENTRAL_GUI_H
 
 #include <QWidget>
 #include <QGridLayout>
+#include <QTabWidget>
 
 #include <iostream>
 
@@ -38,9 +39,14 @@ class CentralGui : public QWidget
         
     public:
         CentralGui(QWidget* parent = 0);
+        void setCentralTabsPtr(TabGui* centralTabsPtr);
         TabGui* getCentralTabsPtr();
+        void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
+        FileTreeGui* getFileTreeGuiPtr();
+        void setOutputGuiPtr(OutputGui* outputGuiPtr);
+        OutputGui* getOutputGuiPtr();
+        void passMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
         ~CentralGui();
 };
 
-#endif	/* CENTRALGUI_H */
-
+#endif	/* CENTRAL_GUI_H */

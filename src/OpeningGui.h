@@ -21,6 +21,7 @@ private:
     //QLabel* organizationNameLabelPtr;
     //QLabel* organizationNameIconLabelPtr;
     QLabel* applicationNameLabelPtr;
+    QLabel* appLabelPtr;
     QLabel* applicationNameIconLabelPtr;
     QLabel* githubLabelPtr;
     QGridLayout* outerLayoutPtr;

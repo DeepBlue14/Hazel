@@ -1,9 +1,11 @@
 /* 
- * File:   Files.h
+ * File:   RideFile.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description:
  *
+ * tmp: https://blog.cedric.ws/opencv-simple-motion-detection
+ * 
  * Created on May 12, 2015, 12:28 AM
  */
 
@@ -16,6 +18,12 @@
 #include <QByteArray>
 #include <QString>
 #include <QVector>
+
+#include <iostream>
+
+#include "FileGui.h"
+
+using namespace std;
 
 class RideFile : public QFile
 {
@@ -52,29 +60,41 @@ class RideFile : public QFile
             EMPTY
         };
         
-        QFile* filePtr;
         FileLang* fileLangPtr;
         FileType* fileTypePtr;
+        QString* fileNameStrPtr;
+        QString* fileExtStrPtr;
+        QString* absFilePathStrPtr;
+        QString* relFilePathStrPtr;
+        
+        FileGui* parallelFileGuiPtr;
         
         QByteArray* toQByteArray(QString* string);
         //QString* fromQByteArray(QByteArray* byteArray);
         
     public:
         RideFile();
-        QFile* createFile(QString* absPath, QString* fileName, QString* fileExtention);
-        void setFilePtr(QFile* filePtr);
-        QFile* getFilePtr();
+        RideFile(QString name);
         void setFileLangPtr(FileLang* fileLangPtr);
         FileLang* getFileLangPtr();
         void setFileTypePtr(FileType* fileTypePtr);
         FileType* getFileTypePtr();
-        bool openRdFile(QFile* file);
-        bool openWrFile(QFile* file);
-        bool openRdWrFile(QFile* file);
-        QString* readFile(QFile* file);
-        bool writeFile(QFile* file, QString* text);
-        bool closeFile(QFile* file);
-        bool deleteFile(QFile* file);
+        void setFileNameStrPtr(QString* fileNameStrPtr);
+        QString* getFileNameStrPtr();
+        void setFileExtStrPtr(QString* fileExtStrPtr);
+        QString* getFileExtStrPtr();
+        void setAbsFilePathStrPtr(QString* absFilePathStrPtr);
+        QString* getAbsFilePathStrPtr();
+        void setRelFilePathStrPtr(QString* relFilePathStrPtr);
+        QString* getRelFilePathStrPtr();
+        void setParallelFileGuiPtr(FileGui* parallelFileGuiPtr);
+        FileGui* getParallelFileGuiPtr();
+        bool openRdFile();
+        bool openWrFile();
+        bool openRdWrFile();
+        QString* readFile();
+        bool writeFile(QString* text);
+        bool closeFile();
         QString* toString();
         ~RideFile();
 };

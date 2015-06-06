@@ -9,11 +9,19 @@
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
           <itemPath>src/EnvCmds.h</itemPath>
+          <itemPath>src/ModifyCMakeLists.h</itemPath>
+          <itemPath>src/ModifyManifest.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
           <itemPath>src/RideFile.h</itemPath>
-          <itemPath>src/Run.h</itemPath>
+          <itemPath>src/SaveAll.h</itemPath>
+          <itemPath>src/ScoutData.h</itemPath>
+          <itemPath>src/ScoutFileDat.h</itemPath>
+          <itemPath>src/ScoutFuncDat.h</itemPath>
+          <itemPath>src/ScoutLibDat.h</itemPath>
+          <itemPath>src/ScoutVarDat.h</itemPath>
           <itemPath>src/Terminal.h</itemPath>
+          <itemPath>src/XmlMaster.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="frontend" projectFiles="true">
           <itemPath>src/CentralGui.h</itemPath>
@@ -48,14 +56,36 @@
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
           <itemPath>src/TabGui.h</itemPath>
+          <itemPath>src/TreeItemIconInit.h</itemPath>
         </logicalFolder>
+        <itemPath>src/UnixConsoleText.h</itemPath>
+        <itemPath>src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <logicalFolder name="file_templates"
+                     displayName="file_templates"
+                     projectFiles="true">
+        <itemPath>file_templates/Class_Header_Template.h</itemPath>
+        <itemPath>file_templates/Class_Source_Template.cpp</itemPath>
+      </logicalFolder>
       <logicalFolder name="qss" displayName="qss" projectFiles="true">
         <itemPath>src/qss/Dark.css</itemPath>
+      </logicalFolder>
+      <logicalFolder name="resources" displayName="resources" projectFiles="true">
+        <logicalFolder name="ride_project"
+                       displayName="ride_project"
+                       projectFiles="true">
+          <itemPath>resources/ride_project/configurations.xml</itemPath>
+        </logicalFolder>
+        <logicalFolder name="scout" displayName="scout" projectFiles="true">
+          <logicalFolder name="project" displayName="project" projectFiles="true">
+            <itemPath>resources/scout/project/test.txt</itemPath>
+          </logicalFolder>
+          <itemPath>resources/scout/scout.qrc</itemPath>
+        </logicalFolder>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
@@ -66,11 +96,19 @@
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
           <itemPath>src/EnvCmds.cpp</itemPath>
+          <itemPath>src/ModifyCMakeLists.cpp</itemPath>
+          <itemPath>src/ModifyManifest.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
           <itemPath>src/RideFile.cpp</itemPath>
-          <itemPath>src/Run.cpp</itemPath>
+          <itemPath>src/SaveAll.cpp</itemPath>
+          <itemPath>src/ScoutData.cpp</itemPath>
+          <itemPath>src/ScoutFileDat.cpp</itemPath>
+          <itemPath>src/ScoutFuncDat.cpp</itemPath>
+          <itemPath>src/ScoutLibDat.cpp</itemPath>
+          <itemPath>src/ScoutVarDat.cpp</itemPath>
           <itemPath>src/Terminal.cpp</itemPath>
+          <itemPath>src/XmlMaster.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="frontend" projectFiles="true">
           <itemPath>src/CentralGui.cpp</itemPath>
@@ -105,7 +143,10 @@
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
           <itemPath>src/TabGui.cpp</itemPath>
+          <itemPath>src/TreeItemIconInit.cpp</itemPath>
         </logicalFolder>
+        <itemPath>src/UnixConsoleText.cpp</itemPath>
+        <itemPath>src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -123,6 +164,8 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>src</Elem>
+    <Elem>file_templates</Elem>
+    <Elem>resources</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -143,6 +186,25 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="file_templates/Class_Header_Template.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="file_templates/Class_Source_Template.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="resources/ride_project/configurations.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Build.h" ex="false" tool="3" flavor2="0">
@@ -194,6 +256,14 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ModifyCMakeLists.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ModifyCMakeLists.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ModifyManifest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ModifyManifest.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NavigatorGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -267,10 +337,6 @@
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Run.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/Run.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunGui.h" ex="false" tool="3" flavor2="0">
@@ -287,9 +353,33 @@
       </item>
       <item path="src/RunPage_3.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/SaveAll.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SaveAll.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutFileDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutFileDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutVarDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutVarDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SplashScreen.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -302,6 +392,22 @@
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/XmlMaster.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/XmlMaster.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -332,6 +438,25 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="file_templates/Class_Header_Template.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="file_templates/Class_Source_Template.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="resources/ride_project/configurations.xml"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Build.h" ex="false" tool="3" flavor2="0">
@@ -383,6 +508,14 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ModifyCMakeLists.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ModifyCMakeLists.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ModifyManifest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ModifyManifest.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NavigatorGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -456,10 +589,6 @@
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Run.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/Run.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunGui.h" ex="false" tool="3" flavor2="0">
@@ -476,9 +605,33 @@
       </item>
       <item path="src/RunPage_3.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/SaveAll.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SaveAll.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutData.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutData.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutFileDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutFileDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutFuncDat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutLibDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ScoutVarDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ScoutVarDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SplashScreen.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -491,6 +644,22 @@
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/XmlMaster.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/XmlMaster.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>

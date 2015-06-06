@@ -81,6 +81,9 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
                              << "not"           << "or"               << "pass"
                              << "raise"         << "return"           << "try"
                              << "while"         << "with"             << "yield";
+    
+    QStringList mirrorKeyCharPatterns;
+    mirrorKeyCharPatterns    << "("             << "{"                << "[";
             
             
     foreach (const QString &pattern, cPlusPlusKeywordPatterns)

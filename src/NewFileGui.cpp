@@ -1,4 +1,5 @@
 #include "NewFileGui.h"
+#include "FileTreeGui.h"
 
 
 NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent), completer(0)
@@ -97,27 +98,33 @@ void NewFileGui::handleFinishBtnSlot()
     setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
 
     //create physical file and tab
-    RideFile* rideFile = new RideFile();
-    QFile* tmp = new QFile();
-
+    RideFile* rideFile = new RideFile(*newFilePage_4Ptr->getLocStrPtr()
+                                    + *newFilePage_4Ptr->getFileNameStrPtr()
+                                    + *newFilePage_4Ptr->getFileExtStrPtr() );
     //-----------------
     cout << "\t\tLoc: " << newFilePage_4Ptr->getLocStrPtr()->toStdString() << endl;
     cout << "\t\tName: " << newFilePage_4Ptr->getFileNameStrPtr()->toStdString() << endl;
     cout << "\t\tExt: " << newFilePage_4Ptr->getFileExtStrPtr()->toStdString() << endl;
     
-    tmp = rideFile->createFile(newFilePage_4Ptr->getLocStrPtr(),
+    /*rideFile->createFile(newFilePage_4Ptr->getLocStrPtr(),
                                 newFilePage_4Ptr->getFileNameStrPtr(),
-                                newFilePage_4Ptr->getFileExtStrPtr() );
+                                newFilePage_4Ptr->getFileExtStrPtr() );*/
+
+    rideFile->openRdWrFile();
+    cout << "HERE" << endl;
+    QByteArray tmpBArr;
+    tmpBArr.append(editor->toPlainText());
+    editor->setPlainText(rideFile->readAll() );
+    masterTabWidgetPtr->addTab(editor, *newFilePage_4Ptr->getFileNameStrPtr()
+                                        + *newFilePage_4Ptr->getFileExtStrPtr());
     
-    //tmp = rideFile->createFile(new QString("/home/james/NetBeansProjects/ride/"),
-    //                                                 new QString("Test_File"),
-    //                                                 new QString(".cpp") );
-    rideFile->openRdWrFile(tmp);
-    rideFile->setFilePtr(tmp);
-    editor->setPlainText(rideFile->getFilePtr()->readAll() );
-    masterTabWidgetPtr->addTab(editor, tr("File1"));
+    rideFile->setParallelFileGuiPtr(editor);
+    SaveAll::pushToRideFilePtrVec(rideFile);
+    
     cout << "Successfully ended file creation sequence" << endl;
     this->close();
+    
+    FileTreeGui::refresh();
 }
 
 
@@ -143,7 +150,7 @@ QAbstractItemModel* NewFileGui::modelFromFile(const QString& fileName)
     }
     else
     {
-        cout << "SUCCESS reading file" << endl;
+        cout << "SUCCESS reading file at NewFileGui::modelFromFile" << endl;
     }
         
     QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));

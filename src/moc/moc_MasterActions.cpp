@@ -22,7 +22,7 @@ static const uint qt_meta_data_MasterActions[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
+      22,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -44,6 +44,14 @@ static const uint qt_meta_data_MasterActions[] = {
      324,   14,   14,   14, 0x08,
      346,   14,   14,   14, 0x08,
      370,   14,   14,   14, 0x08,
+     400,   14,   14,   14, 0x08,
+     430,   14,   14,   14, 0x08,
+     462,   14,   14,   14, 0x08,
+     490,   14,   14,   14, 0x08,
+     518,   14,   14,   14, 0x08,
+     549,   14,   14,   14, 0x08,
+     580,   14,   14,   14, 0x08,
+     610,   14,   14,   14, 0x08,
 
        0        // eod
 };
@@ -61,6 +69,14 @@ static const char qt_meta_stringdata_MasterActions[] = {
     "handleConfigForRunActionSlot()\0"
     "handleRunActionSlot()\0handleDebugActionSlot()\0"
     "handleProfileProjActionSlot()\0"
+    "handleOutputSouthActionSlot()\0"
+    "handleTerminalSouthActionSlot()\0"
+    "handleDebugEastActionSlot()\0"
+    "handleStartEastActionSlot()\0"
+    "handleStepIntoEastActionSlot()\0"
+    "handleStepOverEastActionSlot()\0"
+    "handleProjectWestActionSlot()\0"
+    "handleNavWestActionSlot()\0"
 };
 
 void MasterActions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -83,6 +99,14 @@ void MasterActions::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 11: _t->handleRunActionSlot(); break;
         case 12: _t->handleDebugActionSlot(); break;
         case 13: _t->handleProfileProjActionSlot(); break;
+        case 14: _t->handleOutputSouthActionSlot(); break;
+        case 15: _t->handleTerminalSouthActionSlot(); break;
+        case 16: _t->handleDebugEastActionSlot(); break;
+        case 17: _t->handleStartEastActionSlot(); break;
+        case 18: _t->handleStepIntoEastActionSlot(); break;
+        case 19: _t->handleStepOverEastActionSlot(); break;
+        case 20: _t->handleProjectWestActionSlot(); break;
+        case 21: _t->handleNavWestActionSlot(); break;
         default: ;
         }
     }
@@ -121,9 +145,9 @@ int MasterActions::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 22)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 22;
     }
     return _id;
 }

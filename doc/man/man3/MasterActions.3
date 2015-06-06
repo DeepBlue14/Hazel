@@ -1,0 +1,737 @@
+.TH "MasterActions" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MasterActions \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MasterActions\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMasterActions\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBinitActions\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMasterTabWidgetPtr\fP (QTabWidget *\fBmasterTabWidgetPtr\fP)"
+.br
+.ti -1c
+.RI "QTabWidget * \fBgetMasterTabWidgetPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetNewFileActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetNewTerminalActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetNewProjectActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetOpenProjectActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetSaveAllActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetUndoActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetRedoActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetSetProjectConfigActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetBuildActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetCleanAndBuildActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetConfigForRunActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetRunActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetDebugActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetProfileProjActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetOutputSouthActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetTerminalSouthActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetDebugEastActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetStartEastActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetStepIntoEastActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetStepOverActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetProjectWestActionPtr\fP ()"
+.br
+.ti -1c
+.RI "QAction * \fBgetNavWestActionPtr\fP ()"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToNewFileAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToNewTerminalAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToNewProjectAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToOpenProjectAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToSaveAllAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToUndoAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToRedoAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToSetProjectConfigAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToBuildAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToCleanAndBuildAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToConfigForRunAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToRunAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToDebugAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToProfileProjAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToOutputSouthAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToTerminalSouthAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToDebugEastAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToStartEastAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToStepIntoEastAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToStepOverEastAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToProjectWestAction\fP (X *component)"
+.br
+.ti -1c
+.RI "template<class X > void \fBconnectToNavWestAction\fP (X *component)"
+.br
+.ti -1c
+.RI "\fB~MasterActions\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleNewFileActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleNewTerminalActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleNewProjectActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleOpenProjectActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleSaveAllActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleUndoActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleRedoActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleSetProjectConfigActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleBuildActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleCleanAndBuildActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleConfigForRunActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleRunActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleDebugActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleProfileProjActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleOutputSouthActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleTerminalSouthActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleDebugEastActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleStartEastActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleStepIntoEastActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleStepOverEastActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleProjectWestActionSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleNavWestActionSlot\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QAction * \fBnewFileActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBnewTerminalActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBnewProjectActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBopenProjectActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBsaveAllActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBundoActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBredoActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBsetProjectConfigActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBbuildActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBcleanAndBuildActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBconfigForRunActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBrunActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBdebugActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBprofileProjActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBoutputSouthActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBterminalSouthActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBdebugEastActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBstartEastActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBstepIntoEastActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBstepOverEastActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBprojectWestActionPtr\fP"
+.br
+.ti -1c
+.RI "QAction * \fBnavWestActionPtr\fP"
+.br
+.ti -1c
+.RI "QTabWidget * \fBmasterTabWidgetPtr\fP"
+.br
+.ti -1c
+.RI "\fBHighlighter\fP * \fBhighlighter\fP"
+.br
+.ti -1c
+.RI "\fBNewFileGui\fP * \fBnewFileGuiPtr\fP"
+.br
+.ti -1c
+.RI "\fBNewProjectGui\fP * \fBnewProjectGuiPtr\fP"
+.br
+.ti -1c
+.RI "\fBTerminal\fP * \fBterminalPtr\fP"
+.br
+.ti -1c
+.RI "\fBRunGui\fP * \fBrunGuiPtr\fP"
+.br
+.ti -1c
+.RI "\fBOpenProjectGui\fP * \fBopenProjectGuiPtr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 31 of file MasterActions\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MasterActions::MasterActions (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file MasterActions\&.cpp\&.
+.SS "MasterActions::~MasterActions ()"
+
+.PP
+Definition at line 578 of file MasterActions\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class X > void MasterActions::connectToBuildAction (X *component)"
+
+.PP
+Definition at line 478 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToCleanAndBuildAction (X *component)"
+
+.PP
+Definition at line 485 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToConfigForRunAction (X *component)"
+
+.PP
+Definition at line 492 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToDebugAction (X *component)"
+
+.PP
+Definition at line 506 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToDebugEastAction (X *component)"
+
+.PP
+Definition at line 536 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToNavWestAction (X *component)"
+
+.PP
+Definition at line 572 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToNewFileAction (X *component)"
+
+.PP
+Definition at line 422 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToNewProjectAction (X *component)"
+
+.PP
+Definition at line 436 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToNewTerminalAction (X *component)"
+
+.PP
+Definition at line 429 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToOpenProjectAction (X *component)"
+
+.PP
+Definition at line 443 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToOutputSouthAction (X *component)"
+
+.PP
+Definition at line 521 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToProfileProjAction (X *component)"
+
+.PP
+Definition at line 513 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToProjectWestAction (X *component)"
+
+.PP
+Definition at line 565 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToRedoAction (X *component)"
+
+.PP
+Definition at line 464 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToRunAction (X *component)"
+
+.PP
+Definition at line 499 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToSaveAllAction (X *component)"
+
+.PP
+Definition at line 450 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToSetProjectConfigAction (X *component)"
+
+.PP
+Definition at line 471 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToStartEastAction (X *component)"
+
+.PP
+Definition at line 543 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToStepIntoEastAction (X *component)"
+
+.PP
+Definition at line 550 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToStepOverEastAction (X *component)"
+
+.PP
+Definition at line 557 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToTerminalSouthAction (X *component)"
+
+.PP
+Definition at line 528 of file MasterActions\&.cpp\&.
+.SS "template<class X > void MasterActions::connectToUndoAction (X *component)"
+
+.PP
+Definition at line 457 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getBuildActionPtr ()"
+
+.PP
+Definition at line 334 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getCleanAndBuildActionPtr ()"
+
+.PP
+Definition at line 340 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getConfigForRunActionPtr ()"
+
+.PP
+Definition at line 346 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getDebugActionPtr ()"
+
+.PP
+Definition at line 358 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getDebugEastActionPtr ()"
+
+.PP
+Definition at line 384 of file MasterActions\&.cpp\&.
+.SS "QTabWidget * MasterActions::getMasterTabWidgetPtr ()"
+
+.PP
+Definition at line 280 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getNavWestActionPtr ()"
+
+.PP
+Definition at line 415 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getNewFileActionPtr ()"
+
+.PP
+Definition at line 286 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getNewProjectActionPtr ()"
+
+.PP
+Definition at line 298 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getNewTerminalActionPtr ()"
+
+.PP
+Definition at line 292 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getOpenProjectActionPtr ()"
+
+.PP
+Definition at line 304 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getOutputSouthActionPtr ()"
+
+.PP
+Definition at line 371 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getProfileProjActionPtr ()"
+
+.PP
+Definition at line 364 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getProjectWestActionPtr ()"
+
+.PP
+Definition at line 409 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getRedoActionPtr ()"
+
+.PP
+Definition at line 322 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getRunActionPtr ()"
+
+.PP
+Definition at line 352 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getSaveAllActionPtr ()"
+
+.PP
+Definition at line 310 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getSetProjectConfigActionPtr ()"
+
+.PP
+Definition at line 328 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getStartEastActionPtr ()"
+
+.PP
+Definition at line 390 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getStepIntoEastActionPtr ()"
+
+.PP
+Definition at line 396 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getStepOverActionPtr ()"
+
+.PP
+Definition at line 402 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getTerminalSouthActionPtr ()"
+
+.PP
+Definition at line 377 of file MasterActions\&.cpp\&.
+.SS "QAction * MasterActions::getUndoActionPtr ()"
+
+.PP
+Definition at line 316 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleBuildActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 180 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleCleanAndBuildActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 186 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleConfigForRunActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 192 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleDebugActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 205 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleDebugEastActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 231 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleNavWestActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 262 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleNewFileActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 125 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleNewProjectActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 143 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleNewTerminalActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 132 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleOpenProjectActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 150 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleOutputSouthActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 218 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleProfileProjActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 211 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleProjectWestActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 256 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleRedoActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 168 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleRunActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 199 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleSaveAllActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 156 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleSetProjectConfigActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 174 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleStartEastActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 237 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleStepIntoEastActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 243 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleStepOverEastActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 249 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleTerminalSouthActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 224 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::handleUndoActionSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 162 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::initActions ()"
+
+.PP
+Definition at line 268 of file MasterActions\&.cpp\&.
+.SS "void MasterActions::setMasterTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
+
+.PP
+Definition at line 274 of file MasterActions\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QAction* MasterActions::buildActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 45 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::cleanAndBuildActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 46 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::configForRunActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 47 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::debugActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 49 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::debugEastActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 57 of file MasterActions\&.h\&.
+.SS "\fBHighlighter\fP* MasterActions::highlighter\fC [private]\fP"
+
+.PP
+Definition at line 69 of file MasterActions\&.h\&.
+.SS "QTabWidget* MasterActions::masterTabWidgetPtr\fC [private]\fP"
+
+.PP
+Definition at line 68 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::navWestActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 65 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::newFileActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 37 of file MasterActions\&.h\&.
+.SS "\fBNewFileGui\fP* MasterActions::newFileGuiPtr\fC [private]\fP"
+
+.PP
+Definition at line 71 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::newProjectActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 39 of file MasterActions\&.h\&.
+.SS "\fBNewProjectGui\fP* MasterActions::newProjectGuiPtr\fC [private]\fP"
+
+.PP
+Definition at line 72 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::newTerminalActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 38 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::openProjectActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 40 of file MasterActions\&.h\&.
+.SS "\fBOpenProjectGui\fP* MasterActions::openProjectGuiPtr\fC [private]\fP"
+
+.PP
+Definition at line 75 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::outputSouthActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 53 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::profileProjActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 50 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::projectWestActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 64 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::redoActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 43 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::runActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 48 of file MasterActions\&.h\&.
+.SS "\fBRunGui\fP* MasterActions::runGuiPtr\fC [private]\fP"
+
+.PP
+Definition at line 74 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::saveAllActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 41 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::setProjectConfigActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 44 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::startEastActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 58 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::stepIntoEastActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 59 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::stepOverEastActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 60 of file MasterActions\&.h\&.
+.SS "\fBTerminal\fP* MasterActions::terminalPtr\fC [private]\fP"
+
+.PP
+Definition at line 73 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::terminalSouthActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 54 of file MasterActions\&.h\&.
+.SS "QAction* MasterActions::undoActionPtr\fC [private]\fP"
+
+.PP
+Definition at line 42 of file MasterActions\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

@@ -1,0 +1,184 @@
+.TH "NewProjectPage_3" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NewProjectPage_3 \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NewProjectPage_3\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNewProjectPage_3\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBsetAuthorNameStrPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBgetAuthorNameStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAuthorEmailStrPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBgetAuthorEmailStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetLicenseStrPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBgetLicenseStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBtriggerMutators\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~NewProjectPage_3\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleOtherLicenseSlot\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QLineEdit * \fBauthorNameLePtr\fP"
+.br
+.ti -1c
+.RI "QLineEdit * \fBauthorEmailLePtr\fP"
+.br
+.ti -1c
+.RI "QStringList * \fBlicenseListPtr\fP"
+.br
+.ti -1c
+.RI "QComboBox * \fBlicenseCbPtr\fP"
+.br
+.ti -1c
+.RI "QLineEdit * \fBlicenseLePtr\fP"
+.br
+.ti -1c
+.RI "QFormLayout * \fBformLayout\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayout\fP"
+.br
+.ti -1c
+.RI "QString * \fBauthorNameStrPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBauthorEmailStrPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBlicenseStrPtr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file NewProjectPage_3\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "NewProjectPage_3::NewProjectPage_3 (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file NewProjectPage_3\&.cpp\&.
+.SS "NewProjectPage_3::~NewProjectPage_3 ()"
+
+.PP
+Definition at line 133 of file NewProjectPage_3\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QString * NewProjectPage_3::getAuthorEmailStrPtr ()"
+
+.PP
+Definition at line 87 of file NewProjectPage_3\&.cpp\&.
+.SS "QString * NewProjectPage_3::getAuthorNameStrPtr ()"
+
+.PP
+Definition at line 68 of file NewProjectPage_3\&.cpp\&.
+.SS "QString * NewProjectPage_3::getLicenseStrPtr ()"
+
+.PP
+Definition at line 106 of file NewProjectPage_3\&.cpp\&.
+.SS "void NewProjectPage_3::handleOtherLicenseSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 37 of file NewProjectPage_3\&.cpp\&.
+.SS "void NewProjectPage_3::setAuthorEmailStrPtr ()"
+
+.PP
+Definition at line 74 of file NewProjectPage_3\&.cpp\&.
+.SS "void NewProjectPage_3::setAuthorNameStrPtr ()"
+
+.PP
+Definition at line 55 of file NewProjectPage_3\&.cpp\&.
+.SS "void NewProjectPage_3::setLicenseStrPtr ()"
+
+.PP
+Definition at line 93 of file NewProjectPage_3\&.cpp\&.
+.SS "QString * NewProjectPage_3::toString ()"
+
+.PP
+Definition at line 112 of file NewProjectPage_3\&.cpp\&.
+.SS "void NewProjectPage_3::triggerMutators ()"
+
+.PP
+Definition at line 125 of file NewProjectPage_3\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QLineEdit* NewProjectPage_3::authorEmailLePtr\fC [private]\fP"
+
+.PP
+Definition at line 32 of file NewProjectPage_3\&.h\&.
+.SS "QString* NewProjectPage_3::authorEmailStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 41 of file NewProjectPage_3\&.h\&.
+.SS "QLineEdit* NewProjectPage_3::authorNameLePtr\fC [private]\fP"
+
+.PP
+Definition at line 31 of file NewProjectPage_3\&.h\&.
+.SS "QString* NewProjectPage_3::authorNameStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 40 of file NewProjectPage_3\&.h\&.
+.SS "QFormLayout* NewProjectPage_3::formLayout\fC [private]\fP"
+
+.PP
+Definition at line 37 of file NewProjectPage_3\&.h\&.
+.SS "QComboBox* NewProjectPage_3::licenseCbPtr\fC [private]\fP"
+
+.PP
+Definition at line 34 of file NewProjectPage_3\&.h\&.
+.SS "QLineEdit* NewProjectPage_3::licenseLePtr\fC [private]\fP"
+
+.PP
+Definition at line 35 of file NewProjectPage_3\&.h\&.
+.SS "QStringList* NewProjectPage_3::licenseListPtr\fC [private]\fP"
+
+.PP
+Definition at line 33 of file NewProjectPage_3\&.h\&.
+.SS "QString* NewProjectPage_3::licenseStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 42 of file NewProjectPage_3\&.h\&.
+.SS "QGridLayout* NewProjectPage_3::outerLayout\fC [private]\fP"
+
+.PP
+Definition at line 38 of file NewProjectPage_3\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

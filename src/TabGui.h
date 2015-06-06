@@ -34,7 +34,7 @@ class TabGui : public QWidget
         
         OpeningGui* openingGui;
     private slots:
-        ;
+        void handleCloseTabSlot(int index);
     
     public:
         TabGui(QWidget* parent = 0);

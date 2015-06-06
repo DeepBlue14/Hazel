@@ -1,0 +1,82 @@
+.TH "OutputGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OutputGui \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <OutputGui\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOutputGui\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBaddTab\fP (QWidget *tab, QString *tabName)"
+.br
+.ti -1c
+.RI "\fB~OutputGui\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QTabWidget * \fBtabWidgetPtr\fP"
+.br
+.ti -1c
+.RI "QTextEdit * \fBoutputTePtr\fP"
+.br
+.ti -1c
+.RI "QVector< QWidget * > \fBtabPtrVec\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayout\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 21 of file OutputGui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "OutputGui::OutputGui (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file OutputGui\&.cpp\&.
+.SS "OutputGui::~OutputGui ()"
+
+.PP
+Definition at line 27 of file OutputGui\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void OutputGui::addTab (QWidget *tab, QString *tabName)"
+
+.PP
+Definition at line 20 of file OutputGui\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QGridLayout* OutputGui::outerLayout\fC [private]\fP"
+
+.PP
+Definition at line 29 of file OutputGui\&.h\&.
+.SS "QTextEdit* OutputGui::outputTePtr\fC [private]\fP"
+
+.PP
+Definition at line 27 of file OutputGui\&.h\&.
+.SS "QVector<QWidget*> OutputGui::tabPtrVec\fC [private]\fP"
+
+.PP
+Definition at line 28 of file OutputGui\&.h\&.
+.SS "QTabWidget* OutputGui::tabWidgetPtr\fC [private]\fP"
+
+.PP
+Definition at line 26 of file OutputGui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

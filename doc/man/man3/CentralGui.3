@@ -1,0 +1,89 @@
+.TH "CentralGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CentralGui \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CentralGui\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCentralGui\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "\fBTabGui\fP * \fBgetCentralTabsPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBpassMasterTabWidgetPtr\fP (QTabWidget *masterTabWidgetPtr)"
+.br
+.ti -1c
+.RI "\fB~CentralGui\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBTabGui\fP * \fBcentralTabsPtr\fP"
+.br
+.ti -1c
+.RI "\fBFileTreeGui\fP * \fBfileTreeGuiPtr\fP"
+.br
+.ti -1c
+.RI "\fBOutputGui\fP * \fBoutputGuiPtr\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayout\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file CentralGui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CentralGui::CentralGui (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file CentralGui\&.cpp\&.
+.SS "CentralGui::~CentralGui ()"
+
+.PP
+Definition at line 39 of file CentralGui\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBTabGui\fP * CentralGui::getCentralTabsPtr ()"
+
+.PP
+Definition at line 27 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::passMasterTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
+
+.PP
+Definition at line 33 of file CentralGui\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBTabGui\fP* CentralGui::centralTabsPtr\fC [private]\fP"
+
+.PP
+Definition at line 31 of file CentralGui\&.h\&.
+.SS "\fBFileTreeGui\fP* CentralGui::fileTreeGuiPtr\fC [private]\fP"
+
+.PP
+Definition at line 32 of file CentralGui\&.h\&.
+.SS "QGridLayout* CentralGui::outerLayout\fC [private]\fP"
+
+.PP
+Definition at line 35 of file CentralGui\&.h\&.
+.SS "\fBOutputGui\fP* CentralGui::outputGuiPtr\fC [private]\fP"
+
+.PP
+Definition at line 33 of file CentralGui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

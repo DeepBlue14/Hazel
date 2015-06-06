@@ -1,0 +1,345 @@
+.TH "NewFileGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NewFileGui \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NewFileGui\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNewFileGui\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBsetMasterTabWidgetPtr\fP (QTabWidget *\fBmasterTabWidgetPtr\fP)"
+.br
+.ti -1c
+.RI "QTabWidget * \fBgetMasterTabWidgetPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetHighlighterPtr\fP (\fBHighlighter\fP *\fBhighlighterPtr\fP)"
+.br
+.ti -1c
+.RI "\fBHighlighter\fP * \fBgetHighlighterPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBinitBtns\fP ()"
+.br
+.ti -1c
+.RI "void \fBswapNextPage\fP ()"
+.br
+.ti -1c
+.RI "void \fBswapBackPage\fP ()"
+.br
+.ti -1c
+.RI "void \fBloadPage_1\fP ()"
+.br
+.ti -1c
+.RI "void \fBunloadPage_1\fP ()"
+.br
+.ti -1c
+.RI "void \fBloadPage_2\fP ()"
+.br
+.ti -1c
+.RI "void \fBunloadPage_2\fP ()"
+.br
+.ti -1c
+.RI "void \fBloadPage_3\fP ()"
+.br
+.ti -1c
+.RI "void \fBunloadPage_3\fP ()"
+.br
+.ti -1c
+.RI "void \fBloadPage_4\fP ()"
+.br
+.ti -1c
+.RI "void \fBunloadPage_4\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~NewFileGui\fP ()"
+.br
+.in -1c
+.SS "Private Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBPage\fP { \fBPAGE_ONE\fP, \fBPAGE_TWO\fP, \fBPAGE_THREE\fP, \fBPAGE_FOUR\fP }"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBhandleBackBtnSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleNextBtnSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleFinishBtnSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleHelpBntSlot\fP ()"
+.br
+.ti -1c
+.RI "void \fBhandleCancelBtnSlot\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "QAbstractItemModel * \fBmodelFromFile\fP (const QString &fileName)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBPage\fP \fBcurrentPage\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBbackBtn\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBnextBtn\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBfinishBtn\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBhelpBtn\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBcancelBtn\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayout\fP"
+.br
+.ti -1c
+.RI "QHBoxLayout * \fBbuttonLayout\fP"
+.br
+.ti -1c
+.RI "QTabWidget * \fBmasterTabWidgetPtr\fP"
+.br
+.ti -1c
+.RI "\fBHighlighter\fP * \fBhighlighterPtr\fP"
+.br
+.ti -1c
+.RI "\fBFileGui\fP * \fBeditor\fP"
+.br
+.ti -1c
+.RI "QCompleter * \fBcompleter\fP"
+.br
+.ti -1c
+.RI "\fBNewFilePage_1\fP * \fBnewFilePage_1Ptr\fP"
+.br
+.ti -1c
+.RI "\fBNewFilePage_2\fP * \fBnewFilePage_2Ptr\fP"
+.br
+.ti -1c
+.RI "\fBNewFilePage_3\fP * \fBnewFilePage_3Ptr\fP"
+.br
+.ti -1c
+.RI "\fBNewFilePage_4\fP * \fBnewFilePage_4Ptr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 44 of file NewFileGui\&.h\&.
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBNewFileGui::Page\fP\fC [private]\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIPAGE_ONE \fP\fP
+.TP
+\fB\fIPAGE_TWO \fP\fP
+.TP
+\fB\fIPAGE_THREE \fP\fP
+.TP
+\fB\fIPAGE_FOUR \fP\fP
+.PP
+Definition at line 49 of file NewFileGui\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "NewFileGui::NewFileGui (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 5 of file NewFileGui\&.cpp\&.
+.SS "NewFileGui::~NewFileGui ()"
+
+.PP
+Definition at line 334 of file NewFileGui\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBHighlighter\fP * NewFileGui::getHighlighterPtr ()"
+
+.PP
+Definition at line 45 of file NewFileGui\&.cpp\&.
+.SS "QTabWidget * NewFileGui::getMasterTabWidgetPtr ()"
+
+.PP
+Definition at line 33 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::handleBackBtnSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 51 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::handleCancelBtnSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 137 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::handleFinishBtnSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 63 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::handleHelpBntSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 131 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::handleNextBtnSlot ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+Definition at line 57 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::initBtns ()"
+
+.PP
+Definition at line 170 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::loadPage_1 ()"
+
+.PP
+Definition at line 254 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::loadPage_2 ()"
+
+.PP
+Definition at line 270 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::loadPage_3 ()"
+
+.PP
+Definition at line 286 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::loadPage_4 ()"
+
+.PP
+Definition at line 302 of file NewFileGui\&.cpp\&.
+.SS "QAbstractItemModel * NewFileGui::modelFromFile (const QString &fileName)\fC [private]\fP"
+
+.PP
+Definition at line 143 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::setHighlighterPtr (\fBHighlighter\fP *highlighterPtr)"
+
+.PP
+Definition at line 39 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::setMasterTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
+
+.PP
+Definition at line 27 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::swapBackPage ()"
+
+.PP
+Definition at line 198 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::swapNextPage ()"
+
+.PP
+Definition at line 226 of file NewFileGui\&.cpp\&.
+.SS "QString * NewFileGui::toString ()"
+
+.PP
+Definition at line 318 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::unloadPage_1 ()"
+
+.PP
+Definition at line 262 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::unloadPage_2 ()"
+
+.PP
+Definition at line 278 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::unloadPage_3 ()"
+
+.PP
+Definition at line 294 of file NewFileGui\&.cpp\&.
+.SS "void NewFileGui::unloadPage_4 ()"
+
+.PP
+Definition at line 310 of file NewFileGui\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QPushButton* NewFileGui::backBtn\fC [private]\fP"
+
+.PP
+Definition at line 59 of file NewFileGui\&.h\&.
+.SS "QHBoxLayout* NewFileGui::buttonLayout\fC [private]\fP"
+
+.PP
+Definition at line 66 of file NewFileGui\&.h\&.
+.SS "QPushButton* NewFileGui::cancelBtn\fC [private]\fP"
+
+.PP
+Definition at line 63 of file NewFileGui\&.h\&.
+.SS "QCompleter* NewFileGui::completer\fC [private]\fP"
+
+.PP
+Definition at line 71 of file NewFileGui\&.h\&.
+.SS "\fBPage\fP NewFileGui::currentPage\fC [private]\fP"
+
+.PP
+Definition at line 57 of file NewFileGui\&.h\&.
+.SS "\fBFileGui\fP* NewFileGui::editor\fC [private]\fP"
+
+.PP
+Definition at line 70 of file NewFileGui\&.h\&.
+.SS "QPushButton* NewFileGui::finishBtn\fC [private]\fP"
+
+.PP
+Definition at line 61 of file NewFileGui\&.h\&.
+.SS "QPushButton* NewFileGui::helpBtn\fC [private]\fP"
+
+.PP
+Definition at line 62 of file NewFileGui\&.h\&.
+.SS "\fBHighlighter\fP* NewFileGui::highlighterPtr\fC [private]\fP"
+
+.PP
+Definition at line 69 of file NewFileGui\&.h\&.
+.SS "QTabWidget* NewFileGui::masterTabWidgetPtr\fC [private]\fP"
+
+.PP
+Definition at line 68 of file NewFileGui\&.h\&.
+.SS "\fBNewFilePage_1\fP* NewFileGui::newFilePage_1Ptr\fC [private]\fP"
+
+.PP
+Definition at line 73 of file NewFileGui\&.h\&.
+.SS "\fBNewFilePage_2\fP* NewFileGui::newFilePage_2Ptr\fC [private]\fP"
+
+.PP
+Definition at line 74 of file NewFileGui\&.h\&.
+.SS "\fBNewFilePage_3\fP* NewFileGui::newFilePage_3Ptr\fC [private]\fP"
+
+.PP
+Definition at line 75 of file NewFileGui\&.h\&.
+.SS "\fBNewFilePage_4\fP* NewFileGui::newFilePage_4Ptr\fC [private]\fP"
+
+.PP
+Definition at line 76 of file NewFileGui\&.h\&.
+.SS "QPushButton* NewFileGui::nextBtn\fC [private]\fP"
+
+.PP
+Definition at line 60 of file NewFileGui\&.h\&.
+.SS "QGridLayout* NewFileGui::outerLayout\fC [private]\fP"
+
+.PP
+Definition at line 65 of file NewFileGui\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

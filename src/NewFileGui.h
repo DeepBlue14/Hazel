@@ -21,6 +21,7 @@
 #include <QCompleter>
 #include <QAbstractItemModel>
 #include <QTextEdit>
+#include <QByteArray>
 #include <QPlainTextEdit>
 #include <QProgressBar>
 #include <QApplication>
@@ -35,6 +36,10 @@
 #include "NewFilePage_2.h"
 #include "NewFilePage_3.h"
 #include "NewFilePage_4.h"
+#include "SaveAll.h"
+#include "FileTreeGui.h"
+
+using namespace SaveAll;
 
 class NewFileGui : public QWidget
 {

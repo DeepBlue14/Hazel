@@ -1,6 +1,6 @@
 #**Ride**
 ####(**R**OS **I**ntegrated **D**evelopment **E**nvironment)
-
+![Logo](https://github.com/DeepBlue14/ride/blob/master/images/ride1.jpg)
 ###**Index**
 
 - Project Synopsis
@@ -9,7 +9,7 @@
 
 ###**Project Synopsis**
 
-This project is an IDE specificially for the [ROS][1].  It is only in the initial stages of development, which is why "Build & Run" instructions are not yet provided.  Features will include templates for various publishers and subscribers, refactoring, reconfiguring non-ros/rosbuild projects to catkin projects, syntax highlighting, compilation and execution, etc.  For more information, or to contribute to the project, feel free to contact me at james.perl12@gmail.com.  More details will be at [the Ride website][5].
+This project is an IDE **specifically** for the [ROS][1].  It has only been in development for several weeks, so many features have not yet been implemented.  Features will include templates for various publishers and subscribers, refactoring, reconfiguring non-ros/rosbuild projects to catkin projects, syntax highlighting, compilation, debugging and execution, etc.  For more information, or to contribute to the project, feel free to contact me at james.perl12@gmail.com.  More details will be at [the Ride website][5].
  
 
 ###**Libraries**
