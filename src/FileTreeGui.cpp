@@ -9,18 +9,38 @@ QString* FileTreeGui::projectRootAbsPathStrPtr;
 
 FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 {
-    projectRootAbsPathStrPtr = new QString("");
+    projectRootAbsPathStrPtr = new QString("null");
     
     splitter = new QSplitter();
     trueTree = new QTreeWidget(splitter);
     //list = new QListView(splitter);
     
-    //--------------------------
     QTreeWidgetItem* headerItem = new QTreeWidgetItem();
     headerItem->setText(0, QString("File Name") );
     headerItem->setText(1, QString("Path"));
     trueTree->hideColumn(1);
     trueTree->setHeaderItem(headerItem);
+    
+    initTree();
+
+    trueTree->setContextMenuPolicy(Qt::CustomContextMenu);
+    
+    connect(trueTree, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
+    connect(trueTree, SIGNAL(itemClicked(QTreeWidgetItem*, int)), this, SLOT(handleShowDirectorySlot(QTreeWidgetItem*, int)));
+
+    splitter->setOrientation(Qt::Vertical);
+  
+    outerLayout = new QGridLayout();
+    outerLayout->addWidget(splitter, 0, 0);
+  
+    this->setLayout(outerLayout);
+}
+
+
+void FileTreeGui::initTree()
+{
+   //--------------------------
+
     
     QDir* rootDir = new QDir(*getProjectRootAbsPathStrPtr() );
     QFileInfoList filesList = rootDir->entryInfoList();
@@ -44,18 +64,8 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
             trueTree->addTopLevelItem(item);
         }
     }
-
-    trueTree->setContextMenuPolicy(Qt::CustomContextMenu);
     
-    connect(trueTree, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
-    connect(trueTree, SIGNAL(itemClicked(QTreeWidgetItem*, int)), this, SLOT(handleShowDirectorySlot(QTreeWidgetItem*, int)));
-
-    splitter->setOrientation(Qt::Vertical);
-  
-    outerLayout = new QGridLayout();
-    outerLayout->addWidget(splitter, 0, 0);
-  
-    this->setLayout(outerLayout);
+    
 }
 
 
@@ -167,21 +177,10 @@ QString* FileTreeGui::getProjectRootAbsPathStrPtr()
 
 void FileTreeGui::refresh()
 {
-    ;
-    //tree->setModel(model);
-    //tree->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
-    //tree->setColumnHidden(1, true);
-    //tree->setColumnHidden(2, true);
-    //tree->setColumnHidden(3, true);
+    trueTree->clear();
     
-    //tree->hideColumn(1);
-    //tree->hideColumn(2);
-    //tree->hideColumn(3);
-    //tree->header()->hide();
+    initTree();
     
-    
-    //list->setModel(model);
-    //list->setRootIndex(model->index(*getProjectRootAbsPathStrPtr() ));
     splitter->setOrientation(Qt::Vertical);
 }
 

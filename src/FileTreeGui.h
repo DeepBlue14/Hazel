@@ -51,7 +51,8 @@ class FileTreeGui : public QWidget
         
     public:
         FileTreeGui(QWidget* parent = 0);
-        void addChildren(QTreeWidgetItem* item, QString filePath);
+        static void initTree();
+        static void addChildren(QTreeWidgetItem* item, QString filePath);
         static void setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);
         static QString* getProjectRootAbsPathStrPtr();
         static void refresh();
