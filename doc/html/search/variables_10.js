@@ -1,6 +1,7 @@
 var searchData=
 [
   ['saveallactionptr',['saveAllActionPtr',['../class_master_actions.html#a4e9bf6410023b508d56f235903a44b5f',1,'MasterActions']]],
+  ['scoutlibdatptrvecptr',['scoutLibDatPtrVecPtr',['../class_scout_data.html#a810e161f9630a24b4b11f61cda96980a',1,'ScoutData']]],
   ['selectlaunchfilepbptr',['selectLaunchFilePbPtr',['../class_run_page__2.html#a63aea1b3e5cb510e54893adc80bd4852',1,'RunPage_2']]],
   ['setprojectconfigactionptr',['setProjectConfigActionPtr',['../class_master_actions.html#abe52f232f77f5a5bff35c8e3dadb3d80',1,'MasterActions']]],
   ['singlelinecommentformat',['singleLineCommentFormat',['../class_highlighter.html#ad1ca0f6942b0451781d7e32f1781f22b',1,'Highlighter']]],

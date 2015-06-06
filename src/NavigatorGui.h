@@ -1,25 +1,27 @@
 /* 
  * File:   NavigatorGui.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on May 12, 2015, 10:03 PM
  */
 
-#ifndef NAVIGATORGUI_H
-#define	NAVIGATORGUI_H
+#ifndef NAVIGATOR_GUI_H
+#define	NAVIGATOR_GUI_H
 
-#include <QTreeView>
-#include <QSplitter>
+#include <QWidget>
+#include <QListWidget>
+//#include <QSplitter>
 
 class NavigatorGui
 {
     private:
-        ;
+        QListWidget* listWidgetPtr;
         
     public:
         NavigatorGui();
         ~NavigatorGui();
 };
 
-#endif	/* NAVIGATORGUI_H */
-
+#endif	/* NAVIGATOR_GUI_H */

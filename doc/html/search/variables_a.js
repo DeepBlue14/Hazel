@@ -5,7 +5,6 @@ var searchData=
   ['mastermenus',['masterMenus',['../class_master_gui.html#a27f793278e486a5bfec69ef366199e5d',1,'MasterGui']]],
   ['mastertabwidgetptr',['masterTabWidgetPtr',['../class_file_tree_gui.html#adb1e3ecfaab582317fcd9b968bbf6c40',1,'FileTreeGui::masterTabWidgetPtr()'],['../class_master_actions.html#a774ef398053050c37d62b7a24e61c7ee',1,'MasterActions::masterTabWidgetPtr()'],['../class_new_file_gui.html#a9a3baa00763c6d8d90e7e39ea3f1585c',1,'NewFileGui::masterTabWidgetPtr()']]],
   ['mastertoolbars',['masterToolBars',['../class_master_gui.html#afb90e8f19dae43cb78c8495e5708e68b',1,'MasterGui']]],
-  ['model',['model',['../class_file_tree_gui.html#acc9d4c548eaf49500759a8b677b3e60f',1,'FileTreeGui']]],
   ['msgcatagorylwptr',['msgCatagoryLwPtr',['../class_new_file_page__3.html#ae9367af4aff708fc95ed9c4a17367523',1,'NewFilePage_3']]],
   ['msgcatagorystrlstptr',['msgCatagoryStrLstPtr',['../class_new_file_page__3.html#a77486a3682ab46459e11b679db6fb9b2',1,'NewFilePage_3']]],
   ['msgcatagorystrptr',['msgCatagoryStrPtr',['../class_new_file_page__3.html#a96edaebd6c24a640a001464ae9b339d3',1,'NewFilePage_3']]],

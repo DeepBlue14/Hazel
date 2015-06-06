@@ -1,4 +1,4 @@
-.TH "CentralGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "CentralGui" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -17,7 +17,22 @@ Inherits QWidget\&.
 .RI "\fBCentralGui\fP (QWidget *parent=0)"
 .br
 .ti -1c
+.RI "void \fBsetCentralTabsPtr\fP (\fBTabGui\fP *\fBcentralTabsPtr\fP)"
+.br
+.ti -1c
 .RI "\fBTabGui\fP * \fBgetCentralTabsPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFileTreeGuiPtr\fP (\fBFileTreeGui\fP *\fBfileTreeGuiPtr\fP)"
+.br
+.ti -1c
+.RI "\fBFileTreeGui\fP * \fBgetFileTreeGuiPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetOutputGuiPtr\fP (\fBOutputGui\fP *\fBoutputGuiPtr\fP)"
+.br
+.ti -1c
+.RI "\fBOutputGui\fP * \fBgetOutputGuiPtr\fP ()"
 .br
 .ti -1c
 .RI "void \fBpassMasterTabWidgetPtr\fP (QTabWidget *masterTabWidgetPtr)"
@@ -54,17 +69,37 @@ Definition at line 4 of file CentralGui\&.cpp\&.
 .SS "CentralGui::~CentralGui ()"
 
 .PP
-Definition at line 39 of file CentralGui\&.cpp\&.
+Definition at line 69 of file CentralGui\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "\fBTabGui\fP * CentralGui::getCentralTabsPtr ()"
 
 .PP
-Definition at line 27 of file CentralGui\&.cpp\&.
+Definition at line 33 of file CentralGui\&.cpp\&.
+.SS "\fBFileTreeGui\fP * CentralGui::getFileTreeGuiPtr ()"
+
+.PP
+Definition at line 45 of file CentralGui\&.cpp\&.
+.SS "\fBOutputGui\fP * CentralGui::getOutputGuiPtr ()"
+
+.PP
+Definition at line 57 of file CentralGui\&.cpp\&.
 .SS "void CentralGui::passMasterTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
 
 .PP
-Definition at line 33 of file CentralGui\&.cpp\&.
+Definition at line 63 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::setCentralTabsPtr (\fBTabGui\fP *centralTabsPtr)"
+
+.PP
+Definition at line 27 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::setFileTreeGuiPtr (\fBFileTreeGui\fP *fileTreeGuiPtr)"
+
+.PP
+Definition at line 39 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::setOutputGuiPtr (\fBOutputGui\fP *outputGuiPtr)"
+
+.PP
+Definition at line 51 of file CentralGui\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "\fBTabGui\fP* CentralGui::centralTabsPtr\fC [private]\fP"

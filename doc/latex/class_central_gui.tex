@@ -28,7 +28,17 @@ Collaboration diagram for Central\-Gui\-:\nopagebreak
 \item 
 \hyperlink{class_central_gui_aba31873e4b5d4bf9fd1e563601efc4e7}{Central\-Gui} (Q\-Widget $\ast$parent=0)
 \item 
+void \hyperlink{class_central_gui_afb70afe6db1411c77956236188e67bd0}{set\-Central\-Tabs\-Ptr} (\hyperlink{class_tab_gui}{Tab\-Gui} $\ast$\hyperlink{class_central_gui_a8ec49e2c3a7c601bed4a7e4ccf173682}{central\-Tabs\-Ptr})
+\item 
 \hyperlink{class_tab_gui}{Tab\-Gui} $\ast$ \hyperlink{class_central_gui_a16716c4c66f7ce8e4552fcb20337ab39}{get\-Central\-Tabs\-Ptr} ()
+\item 
+void \hyperlink{class_central_gui_a65abd3c9dc8bb14a60ca89da399c427e}{set\-File\-Tree\-Gui\-Ptr} (\hyperlink{class_file_tree_gui}{File\-Tree\-Gui} $\ast$\hyperlink{class_central_gui_a6abfae93daa17e3af2a814888c9c14cf}{file\-Tree\-Gui\-Ptr})
+\item 
+\hyperlink{class_file_tree_gui}{File\-Tree\-Gui} $\ast$ \hyperlink{class_central_gui_aba7129fa7a935565409beb63498c2eb3}{get\-File\-Tree\-Gui\-Ptr} ()
+\item 
+void \hyperlink{class_central_gui_ae8559c5a3733e33a1ded21db79bd8d3a}{set\-Output\-Gui\-Ptr} (\hyperlink{class_output_gui}{Output\-Gui} $\ast$\hyperlink{class_central_gui_a60c563767906a6db0c209f0b21437a09}{output\-Gui\-Ptr})
+\item 
+\hyperlink{class_output_gui}{Output\-Gui} $\ast$ \hyperlink{class_central_gui_a47d2d46581f064ed8b46e1f611a0bd98}{get\-Output\-Gui\-Ptr} ()
 \item 
 void \hyperlink{class_central_gui_a8f7149e1e5b7cfc5c694421482c68c5e}{pass\-Master\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$master\-Tab\-Widget\-Ptr)
 \item 
@@ -75,7 +85,7 @@ Definition at line 4 of file Central\-Gui.\-cpp.
 )}}\label{class_central_gui_ad54c2077e29d7a2017399b39e62c1043}
 
 
-Definition at line 39 of file Central\-Gui.\-cpp.
+Definition at line 69 of file Central\-Gui.\-cpp.
 
 
 
@@ -89,7 +99,29 @@ Definition at line 39 of file Central\-Gui.\-cpp.
 )}}\label{class_central_gui_a16716c4c66f7ce8e4552fcb20337ab39}
 
 
-Definition at line 27 of file Central\-Gui.\-cpp.
+Definition at line 33 of file Central\-Gui.\-cpp.
+
+\hypertarget{class_central_gui_aba7129fa7a935565409beb63498c2eb3}{\index{Central\-Gui@{Central\-Gui}!get\-File\-Tree\-Gui\-Ptr@{get\-File\-Tree\-Gui\-Ptr}}
+\index{get\-File\-Tree\-Gui\-Ptr@{get\-File\-Tree\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{get\-File\-Tree\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Tree\-Gui} $\ast$ Central\-Gui\-::get\-File\-Tree\-Gui\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_aba7129fa7a935565409beb63498c2eb3}
+
+
+Definition at line 45 of file Central\-Gui.\-cpp.
+
+\hypertarget{class_central_gui_a47d2d46581f064ed8b46e1f611a0bd98}{\index{Central\-Gui@{Central\-Gui}!get\-Output\-Gui\-Ptr@{get\-Output\-Gui\-Ptr}}
+\index{get\-Output\-Gui\-Ptr@{get\-Output\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{get\-Output\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\-Gui} $\ast$ Central\-Gui\-::get\-Output\-Gui\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_a47d2d46581f064ed8b46e1f611a0bd98}
+
+
+Definition at line 57 of file Central\-Gui.\-cpp.
 
 \hypertarget{class_central_gui_a8f7149e1e5b7cfc5c694421482c68c5e}{\index{Central\-Gui@{Central\-Gui}!pass\-Master\-Tab\-Widget\-Ptr@{pass\-Master\-Tab\-Widget\-Ptr}}
 \index{pass\-Master\-Tab\-Widget\-Ptr@{pass\-Master\-Tab\-Widget\-Ptr}!CentralGui@{Central\-Gui}}
@@ -100,7 +132,40 @@ Definition at line 27 of file Central\-Gui.\-cpp.
 )}}\label{class_central_gui_a8f7149e1e5b7cfc5c694421482c68c5e}
 
 
-Definition at line 33 of file Central\-Gui.\-cpp.
+Definition at line 63 of file Central\-Gui.\-cpp.
+
+\hypertarget{class_central_gui_afb70afe6db1411c77956236188e67bd0}{\index{Central\-Gui@{Central\-Gui}!set\-Central\-Tabs\-Ptr@{set\-Central\-Tabs\-Ptr}}
+\index{set\-Central\-Tabs\-Ptr@{set\-Central\-Tabs\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{set\-Central\-Tabs\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-Central\-Tabs\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab\-Gui} $\ast$}]{central\-Tabs\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_afb70afe6db1411c77956236188e67bd0}
+
+
+Definition at line 27 of file Central\-Gui.\-cpp.
+
+\hypertarget{class_central_gui_a65abd3c9dc8bb14a60ca89da399c427e}{\index{Central\-Gui@{Central\-Gui}!set\-File\-Tree\-Gui\-Ptr@{set\-File\-Tree\-Gui\-Ptr}}
+\index{set\-File\-Tree\-Gui\-Ptr@{set\-File\-Tree\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{set\-File\-Tree\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-File\-Tree\-Gui\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf File\-Tree\-Gui} $\ast$}]{file\-Tree\-Gui\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_a65abd3c9dc8bb14a60ca89da399c427e}
+
+
+Definition at line 39 of file Central\-Gui.\-cpp.
+
+\hypertarget{class_central_gui_ae8559c5a3733e33a1ded21db79bd8d3a}{\index{Central\-Gui@{Central\-Gui}!set\-Output\-Gui\-Ptr@{set\-Output\-Gui\-Ptr}}
+\index{set\-Output\-Gui\-Ptr@{set\-Output\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{set\-Output\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-Output\-Gui\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-Gui} $\ast$}]{output\-Gui\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_ae8559c5a3733e33a1ded21db79bd8d3a}
+
+
+Definition at line 51 of file Central\-Gui.\-cpp.
 
 
 

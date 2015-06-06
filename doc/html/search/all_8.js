@@ -26,6 +26,7 @@ var searchData=
   ['initteammenuptr',['initTeamMenuPtr',['../class_master_menus.html#ab30cf69cf56d96abea4a201f6f89afb3',1,'MasterMenus']]],
   ['inittoolbars',['initToolBars',['../class_master_gui.html#aa8cb5efc03f304d4a80d0d743a30e5b3',1,'MasterGui']]],
   ['inittoolsmenuptr',['initToolsMenuPtr',['../class_master_menus.html#a70590f225ba732935b1b270e01e02270',1,'MasterMenus']]],
+  ['inittree',['initTree',['../class_file_tree_gui.html#a5d4df4a19da0183ccc254019f77097b1',1,'FileTreeGui']]],
   ['initviewmenuptr',['initViewMenuPtr',['../class_master_menus.html#a072f53ddc7e95bd21257fa094ee6c143',1,'MasterMenus']]],
   ['initwestgrouponetoolbar',['initWestGroupOneToolBar',['../class_master_tool_bars.html#a12bb3e3171d9ea6a6c9cd9c7b800e0d7',1,'MasterToolBars']]],
   ['initwindowmenuptr',['initWindowMenuPtr',['../class_master_menus.html#a65282d762db712fa3eb44cda48a2a52b',1,'MasterMenus']]],

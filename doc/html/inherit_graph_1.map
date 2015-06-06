@@ -24,7 +24,12 @@
 <area shape="rect" id="node24" href="$class_run_page__1.html" title="RunPage_1" alt="" coords="151,1120,241,1147"/>
 <area shape="rect" id="node25" href="$class_run_page__2.html" title="RunPage_2" alt="" coords="151,1171,241,1197"/>
 <area shape="rect" id="node26" href="$class_run_page__3.html" title="RunPage_3" alt="" coords="151,1221,241,1248"/>
-<area shape="rect" id="node27" href="$class_scout_gui.html" title="ScoutGui" alt="" coords="158,1272,234,1299"/>
-<area shape="rect" id="node28" href="$class_tab_gui.html" title="TabGui" alt="" coords="164,1323,228,1349"/>
-<area shape="rect" id="node29" href="$class_terminal.html" title="Terminal" alt="" coords="160,1373,232,1400"/>
+<area shape="rect" id="node27" href="$class_scout_data.html" title="ScoutData" alt="" coords="154,1272,238,1299"/>
+<area shape="rect" id="node28" href="$class_scout_file_dat.html" title="ScoutFileDat" alt="" coords="147,1323,245,1349"/>
+<area shape="rect" id="node29" href="$class_scout_func_dat.html" title="ScoutFuncDat" alt="" coords="143,1373,249,1400"/>
+<area shape="rect" id="node30" href="$class_scout_gui.html" title="ScoutGui" alt="" coords="158,1424,234,1451"/>
+<area shape="rect" id="node31" href="$class_scout_lib_dat.html" title="ScoutLibDat" alt="" coords="149,1475,243,1501"/>
+<area shape="rect" id="node32" href="$class_scout_var_dat.html" title="ScoutVarDat" alt="" coords="147,1525,245,1552"/>
+<area shape="rect" id="node33" href="$class_tab_gui.html" title="TabGui" alt="" coords="164,1576,228,1603"/>
+<area shape="rect" id="node34" href="$class_terminal.html" title="Terminal" alt="" coords="160,1627,232,1653"/>
 </map>

@@ -1,4 +1,4 @@
-.TH "XmlMaster" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "XmlMaster" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,7 +10,23 @@ XmlMaster \-
 
 .in +1c
 .ti -1c
-.RI "void \fBinsertAfterLastOccurrence\fP (QFile *filePtr, QString *occurrenceOfStrPtr, QString *insertionStrPtr)"
+.RI "void \fBloadFile\fP (QFile *\fBfilePtr\fP)"
+.br
+.ti -1c
+.RI "void \fBprintXmlFile\fP (QFile *\fBfilePtr\fP)"
+.br
+.ti -1c
+.RI "void \fBinsertAfterLastOccurrence\fP (QFile *\fBfilePtr\fP, QString *occurrenceOfStrPtr, QString *insertionStrPtr)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "QFile * \fBfilePtr\fP"
+.br
+.ti -1c
+.RI "QDomDocument * \fBxmlDomDocPtr\fP"
 .br
 .in -1c
 .SH "Function Documentation"
@@ -18,7 +34,25 @@ XmlMaster \-
 .SS "void XmlMaster::insertAfterLastOccurrence (QFile *filePtr, QString *occurrenceOfStrPtr, QString *insertionStrPtr)"
 
 .PP
+Definition at line 27 of file XmlMaster\&.cpp\&.
+.SS "void XmlMaster::loadFile (QFile *filePtr)"
+
+.PP
 Definition at line 4 of file XmlMaster\&.cpp\&.
+.SS "void XmlMaster::printXmlFile (QFile *filePtr)"
+
+.PP
+Definition at line 21 of file XmlMaster\&.cpp\&.
+.SH "Variable Documentation"
+.PP 
+.SS "QFile* XmlMaster::filePtr"
+
+.PP
+Definition at line 23 of file XmlMaster\&.h\&.
+.SS "QDomDocument* XmlMaster::xmlDomDocPtr"
+
+.PP
+Definition at line 24 of file XmlMaster\&.h\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for RIDE from the source code\&.

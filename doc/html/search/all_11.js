@@ -5,7 +5,7 @@ var searchData=
   ['red',['red',['../namespace_unix_console_text.html#a08a2fae9dfa6df54be6aa53490d4cee3',1,'UnixConsoleText::red()'],['../_windows_console_text_8cpp.html#a28e9d5bcb4003fc3cc706aef6528840b',1,'red():&#160;WindowsConsoleText.cpp'],['../namespace_windows_console_text.html#a0b3bd4d8c412a8208762be06cf2c7ddd',1,'WindowsConsoleText::red()']]],
   ['redoactionptr',['redoActionPtr',['../class_master_actions.html#a7936a9bf0e7418cd864b2fb1ab786d09',1,'MasterActions']]],
   ['refactormenuptr',['refactorMenuPtr',['../class_master_gui.html#a44e789008fcc276a7a4294beb98d02c7',1,'MasterGui']]],
-  ['refresh',['refresh',['../class_file_tree_gui.html#ac2c3399b5cb85da5cd1c119b61c674c0',1,'FileTreeGui']]],
+  ['refresh',['refresh',['../class_file_tree_gui.html#ac2c3399b5cb85da5cd1c119b61c674c0',1,'FileTreeGui::refresh()'],['../class_scout_data.html#ac001d4173ac831c5ed3fc6393ac4b7b8',1,'ScoutData::refresh()']]],
   ['relfilepathstrptr',['relFilePathStrPtr',['../class_ride_file.html#a47152ef70bd5486c4cbaa5c12e5346d4',1,'RideFile']]],
   ['removefromridefilevec',['removeFromRideFileVec',['../namespace_save_all.html#ae4b231ad2bd4a0191668ec36374a39b2',1,'SaveAll']]],
   ['reset',['reset',['../class_run_gui.html#ac732d44ad96c7d14f1666d1193c43d65',1,'RunGui']]],

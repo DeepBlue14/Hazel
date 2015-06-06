@@ -1,0 +1,124 @@
+.TH "ScoutFuncDat" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ScoutFuncDat \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ScoutFuncDat\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBScoutFuncDat\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBsetFuncNmStrPtr\fP (QString *\fBfuncNmStrPtr\fP)"
+.br
+.ti -1c
+.RI "QString * \fBgetFuncNmStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFuncRetnStrPtr\fP (QString *\fBfuncRetnStrPtr\fP)"
+.br
+.ti -1c
+.RI "QString * \fBgetFuncRetnStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBpushBackToParamsStrLstPtr\fP (QString *paramStrPtr)"
+.br
+.ti -1c
+.RI "QString * \fBpopBackFromParamsStrLstPtr\fP ()"
+.br
+.ti -1c
+.RI "QStringList * \fBgetParamsStrLstPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~ScoutFuncDat\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QString * \fBfuncNmStrPtr\fP"
+.br
+.ti -1c
+.RI "QString * \fBfuncRetnStrPtr\fP"
+.br
+.ti -1c
+.RI "QStringList * \fBparamsStrLstPtr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 17 of file ScoutFuncDat\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ScoutFuncDat::ScoutFuncDat (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file ScoutFuncDat\&.cpp\&.
+.SS "ScoutFuncDat::~ScoutFuncDat ()"
+
+.PP
+Definition at line 72 of file ScoutFuncDat\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QString * ScoutFuncDat::getFuncNmStrPtr ()"
+
+.PP
+Definition at line 18 of file ScoutFuncDat\&.cpp\&.
+.SS "QString * ScoutFuncDat::getFuncRetnStrPtr ()"
+
+.PP
+Definition at line 30 of file ScoutFuncDat\&.cpp\&.
+.SS "QStringList * ScoutFuncDat::getParamsStrLstPtr ()"
+
+.PP
+Definition at line 50 of file ScoutFuncDat\&.cpp\&.
+.SS "QString * ScoutFuncDat::popBackFromParamsStrLstPtr ()"
+
+.PP
+Definition at line 42 of file ScoutFuncDat\&.cpp\&.
+.SS "void ScoutFuncDat::pushBackToParamsStrLstPtr (QString *paramStrPtr)"
+
+.PP
+Definition at line 36 of file ScoutFuncDat\&.cpp\&.
+.SS "void ScoutFuncDat::setFuncNmStrPtr (QString *funcNmStrPtr)"
+
+.PP
+Definition at line 12 of file ScoutFuncDat\&.cpp\&.
+.SS "void ScoutFuncDat::setFuncRetnStrPtr (QString *funcRetnStrPtr)"
+
+.PP
+Definition at line 24 of file ScoutFuncDat\&.cpp\&.
+.SS "QString * ScoutFuncDat::toString ()"
+
+.PP
+Definition at line 56 of file ScoutFuncDat\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QString* ScoutFuncDat::funcNmStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 20 of file ScoutFuncDat\&.h\&.
+.SS "QString* ScoutFuncDat::funcRetnStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 21 of file ScoutFuncDat\&.h\&.
+.SS "QStringList* ScoutFuncDat::paramsStrLstPtr\fC [private]\fP"
+
+.PP
+Definition at line 22 of file ScoutFuncDat\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

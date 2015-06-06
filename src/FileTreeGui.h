@@ -37,7 +37,7 @@ class FileTreeGui : public QWidget
     Q_OBJECT
             
     private:
-        static QTreeWidget* trueTree;
+        static QTreeWidget* treePtr;
         static QSplitter* splitter;
         
         QGridLayout* outerLayout;

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['parallelfileguiptr',['parallelFileGuiPtr',['../class_ride_file.html#ab2a6a17fda833b6e592968cde2aa18dc',1,'RideFile']]],
+  ['paramsstrlstptr',['paramsStrLstPtr',['../class_scout_func_dat.html#a86bca60ebf50298f4c4e3e5d61ab98a5',1,'ScoutFuncDat']]],
   ['pattern',['pattern',['../struct_highlighter_1_1_highlighting_rule.html#aaecab525cb637802e0c4a10e8832cd84',1,'Highlighter::HighlightingRule']]],
   ['pkg_5foption_5fstr_5fptr',['PKG_OPTION_STR_PTR',['../class_build.html#a32d97560bba88abe53398fdebcb4ddcf',1,'Build']]],
   ['pkgpathstrptr',['pkgPathStrPtr',['../namespace_env_cmds.html#a4127d21ff0a3d32f2c8c4bb0900dec26',1,'EnvCmds']]],

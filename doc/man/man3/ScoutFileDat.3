@@ -1,0 +1,142 @@
+.TH "ScoutFileDat" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ScoutFileDat \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ScoutFileDat\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBScoutFileDat\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBsetFileNmStrPtr\fP (QString *\fBfileNmStrPtr\fP)"
+.br
+.ti -1c
+.RI "QString * \fBgetFileNmStrPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBpushToFuncDatPtrVecPtr\fP (\fBScoutFuncDat\fP *\fBfuncDatPtrVecPtr\fP)"
+.br
+.ti -1c
+.RI "\fBScoutFuncDat\fP * \fBpopFromFuncDatPtrVecPtr\fP ()"
+.br
+.ti -1c
+.RI "QVector< \fBScoutFuncDat\fP * > * \fBgetFuncDatPtrVecPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBpushToVarDatPtrVecPtr\fP (\fBScoutVarDat\fP *\fBvarDatPtrVecPtr\fP)"
+.br
+.ti -1c
+.RI "\fBScoutVarDat\fP * \fBpopFromVarDatPtrVecPtr\fP ()"
+.br
+.ti -1c
+.RI "QVector< \fBScoutVarDat\fP * > * \fBgetVarDatPtrVecPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~ScoutFileDat\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "template<class X > QVector< X * > \fBalphabetizeByName\fP (QVector< X * > scoutType)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QString * \fBfileNmStrPtr\fP"
+.br
+.ti -1c
+.RI "QVector< \fBScoutFuncDat\fP * > * \fBfuncDatPtrVecPtr\fP"
+.br
+.ti -1c
+.RI "QVector< \fBScoutVarDat\fP * > * \fBvarDatPtrVecPtr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 20 of file ScoutFileDat\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ScoutFileDat::ScoutFileDat (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file ScoutFileDat\&.cpp\&.
+.SS "ScoutFileDat::~ScoutFileDat ()"
+
+.PP
+Definition at line 97 of file ScoutFileDat\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class X > QVector< X * > ScoutFileDat::alphabetizeByName (QVector< X * >scoutType)\fC [private]\fP"
+
+.PP
+Definition at line 13 of file ScoutFileDat\&.cpp\&.
+.SS "QString * ScoutFileDat::getFileNmStrPtr ()"
+
+.PP
+Definition at line 27 of file ScoutFileDat\&.cpp\&.
+.SS "QVector< \fBScoutFuncDat\fP * > * ScoutFileDat::getFuncDatPtrVecPtr ()"
+
+.PP
+Definition at line 48 of file ScoutFileDat\&.cpp\&.
+.SS "QVector< \fBScoutVarDat\fP * > * ScoutFileDat::getVarDatPtrVecPtr ()"
+
+.PP
+Definition at line 69 of file ScoutFileDat\&.cpp\&.
+.SS "\fBScoutFuncDat\fP * ScoutFileDat::popFromFuncDatPtrVecPtr ()"
+
+.PP
+Definition at line 39 of file ScoutFileDat\&.cpp\&.
+.SS "\fBScoutVarDat\fP * ScoutFileDat::popFromVarDatPtrVecPtr ()"
+
+.PP
+Definition at line 60 of file ScoutFileDat\&.cpp\&.
+.SS "void ScoutFileDat::pushToFuncDatPtrVecPtr (\fBScoutFuncDat\fP *funcDatPtrVecPtr)"
+
+.PP
+Definition at line 33 of file ScoutFileDat\&.cpp\&.
+.SS "void ScoutFileDat::pushToVarDatPtrVecPtr (\fBScoutVarDat\fP *varDatPtrVecPtr)"
+
+.PP
+Definition at line 54 of file ScoutFileDat\&.cpp\&.
+.SS "void ScoutFileDat::setFileNmStrPtr (QString *fileNmStrPtr)"
+
+.PP
+Definition at line 21 of file ScoutFileDat\&.cpp\&.
+.SS "QString * ScoutFileDat::toString ()"
+
+.PP
+Definition at line 75 of file ScoutFileDat\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QString* ScoutFileDat::fileNmStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 23 of file ScoutFileDat\&.h\&.
+.SS "QVector<\fBScoutFuncDat\fP*>* ScoutFileDat::funcDatPtrVecPtr\fC [private]\fP"
+
+.PP
+Definition at line 24 of file ScoutFileDat\&.h\&.
+.SS "QVector<\fBScoutVarDat\fP*>* ScoutFileDat::varDatPtrVecPtr\fC [private]\fP"
+
+.PP
+Definition at line 25 of file ScoutFileDat\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['openinggui',['OpeningGui',['../class_opening_gui.html',1,'OpeningGui'],['../class_tab_gui.html#a2df2168c961cdd5cd29b96de3358f90b',1,'TabGui::openingGui()'],['../class_opening_gui.html#a8a9621b42e164fbd73cf0ccfd64d12c5',1,'OpeningGui::OpeningGui()']]],
+  ['openinggui',['OpeningGui',['../class_opening_gui.html',1,'OpeningGui'],['../class_opening_gui.html#a8a9621b42e164fbd73cf0ccfd64d12c5',1,'OpeningGui::OpeningGui()'],['../class_tab_gui.html#a2df2168c961cdd5cd29b96de3358f90b',1,'TabGui::openingGui()']]],
   ['openinggui_2ecpp',['OpeningGui.cpp',['../_opening_gui_8cpp.html',1,'']]],
   ['openinggui_2eh',['OpeningGui.h',['../_opening_gui_8h.html',1,'']]],
   ['openprojectactionptr',['openProjectActionPtr',['../class_master_actions.html#a3b4d98cdbfaa8e287d420513a8df53ee',1,'MasterActions']]],

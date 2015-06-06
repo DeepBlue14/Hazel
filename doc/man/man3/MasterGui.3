@@ -1,4 +1,4 @@
-.TH "MasterGui" 3 "Tue Jun 2 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "MasterGui" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -21,6 +21,156 @@ Inherits QMainWindow\&.
 .br
 .ti -1c
 .RI "void \fBinitMenus\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFileMenuPtr\fP (QMenu *\fBfileMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetFileMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetEditMenuPtr\fP (QMenu *\fBeditMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetEditMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetViewMenuPtr\fP (QMenu *\fBviewMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetViewMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNavigateMenuPtr\fP (QMenu *\fBnavigateMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetNavigateMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetSourceMenuPtr\fP (QMenu *\fBsourceMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetSourceMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRefactorMenuPtr\fP (QMenu *\fBrefactorMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetRefactorMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRunMenuPtr\fP (QMenu *\fBrunMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetRunMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetDebugMenuPtr\fP (QMenu *\fBdebugMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetDebugMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetProfileMenuPtr\fP (QMenu *\fBprofileMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetProfileMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTeamMenuPtr\fP (QMenu *\fBteamMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetTeamMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetToolsMenuPtr\fP (QMenu *\fBtoolsMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetToolsMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWindowMenuPtr\fP (QMenu *\fBwindowMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetWindowMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetHelpMenuPtr\fP (QMenu *\fBhelpMenuPtr\fP)"
+.br
+.ti -1c
+.RI "QMenu * \fBgetHelpMenuPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGroupOneToolBarPtr\fP (QToolBar *\fBgroupOneToolBarPtr\fP)"
+.br
+.ti -1c
+.RI "QToolBar * \fBgetGroupOneToolBarPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGroupTwoToolBarPtr\fP (QToolBar *\fBgroupTwoToolBarPtr\fP)"
+.br
+.ti -1c
+.RI "QToolBar * \fBgetGroupTwoToolBarPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGroupThreeToolBarPtr\fP (QToolBar *\fBgroupThreeToolBarPtr\fP)"
+.br
+.ti -1c
+.RI "QToolBar * \fBgetGroupThreeToolBarPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetSouthToolBarPtr\fP (QToolBar *\fBsouthToolBarPtr\fP)"
+.br
+.ti -1c
+.RI "QToolBar * \fBgetSouthToolBarPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetEastToolBarPtr\fP (QToolBar *\fBeastToolBarPtr\fP)"
+.br
+.ti -1c
+.RI "QToolBar * \fBgetEastToolBarPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWestToolBarPtr\fP (QToolBar *\fBwestToolBarPtr\fP)"
+.br
+.ti -1c
+.RI "QToolBar * \fBgetWestToolBarPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTabWidget\fP (QTabWidget *\fBtabWidget\fP)"
+.br
+.ti -1c
+.RI "QTabWidget * \fBgetTabWidget\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetEditor\fP (QTextEdit *\fBeditor\fP)"
+.br
+.ti -1c
+.RI "QTextEdit * \fBgetEditor\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMasterActions\fP (\fBMasterActions\fP *\fBmasterActions\fP)"
+.br
+.ti -1c
+.RI "\fBMasterActions\fP * \fBgetMasterActions\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMasterToolBars\fP (\fBMasterToolBars\fP *\fBmasterToolBars\fP)"
+.br
+.ti -1c
+.RI "\fBMasterToolBars\fP * \fBgetMasterToolBars\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMasterMenus\fP (\fBMasterMenus\fP *\fBmasterMenus\fP)"
+.br
+.ti -1c
+.RI "\fBMasterMenus\fP * \fBgetMasterMenus\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCentralGui\fP (\fBCentralGui\fP *\fBcentralGui\fP)"
+.br
+.ti -1c
+.RI "\fBCentralGui\fP * \fBgetCentralGui\fP ()"
 .br
 .ti -1c
 .RI "\fB~MasterGui\fP ()"
@@ -117,9 +267,109 @@ Definition at line 3 of file MasterGui\&.cpp\&.
 .SS "MasterGui::~MasterGui ()"
 
 .PP
-Definition at line 101 of file MasterGui\&.cpp\&.
+Definition at line 401 of file MasterGui\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
+.SS "\fBCentralGui\fP * MasterGui::getCentralGui ()"
+
+.PP
+Definition at line 395 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getDebugMenuPtr ()"
+
+.PP
+Definition at line 191 of file MasterGui\&.cpp\&.
+.SS "QToolBar * MasterGui::getEastToolBarPtr ()"
+
+.PP
+Definition at line 311 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getEditMenuPtr ()"
+
+.PP
+Definition at line 119 of file MasterGui\&.cpp\&.
+.SS "QTextEdit * MasterGui::getEditor ()"
+
+.PP
+Definition at line 347 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getFileMenuPtr ()"
+
+.PP
+Definition at line 107 of file MasterGui\&.cpp\&.
+.SS "QToolBar * MasterGui::getGroupOneToolBarPtr ()"
+
+.PP
+Definition at line 263 of file MasterGui\&.cpp\&.
+.SS "QToolBar * MasterGui::getGroupThreeToolBarPtr ()"
+
+.PP
+Definition at line 287 of file MasterGui\&.cpp\&.
+.SS "QToolBar * MasterGui::getGroupTwoToolBarPtr ()"
+
+.PP
+Definition at line 275 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getHelpMenuPtr ()"
+
+.PP
+Definition at line 251 of file MasterGui\&.cpp\&.
+.SS "\fBMasterActions\fP * MasterGui::getMasterActions ()"
+
+.PP
+Definition at line 359 of file MasterGui\&.cpp\&.
+.SS "\fBMasterMenus\fP * MasterGui::getMasterMenus ()"
+
+.PP
+Definition at line 383 of file MasterGui\&.cpp\&.
+.SS "\fBMasterToolBars\fP * MasterGui::getMasterToolBars ()"
+
+.PP
+Definition at line 371 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getNavigateMenuPtr ()"
+
+.PP
+Definition at line 143 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getProfileMenuPtr ()"
+
+.PP
+Definition at line 203 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getRefactorMenuPtr ()"
+
+.PP
+Definition at line 167 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getRunMenuPtr ()"
+
+.PP
+Definition at line 179 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getSourceMenuPtr ()"
+
+.PP
+Definition at line 155 of file MasterGui\&.cpp\&.
+.SS "QToolBar * MasterGui::getSouthToolBarPtr ()"
+
+.PP
+Definition at line 299 of file MasterGui\&.cpp\&.
+.SS "QTabWidget * MasterGui::getTabWidget ()"
+
+.PP
+Definition at line 335 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getTeamMenuPtr ()"
+
+.PP
+Definition at line 215 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getToolsMenuPtr ()"
+
+.PP
+Definition at line 227 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getViewMenuPtr ()"
+
+.PP
+Definition at line 131 of file MasterGui\&.cpp\&.
+.SS "QToolBar * MasterGui::getWestToolBarPtr ()"
+
+.PP
+Definition at line 323 of file MasterGui\&.cpp\&.
+.SS "QMenu * MasterGui::getWindowMenuPtr ()"
+
+.PP
+Definition at line 239 of file MasterGui\&.cpp\&.
 .SS "void MasterGui::initMenus ()"
 
 .PP
@@ -128,12 +378,112 @@ Definition at line 29 of file MasterGui\&.cpp\&.
 
 .PP
 Definition at line 73 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setCentralGui (\fBCentralGui\fP *centralGui)"
+
+.PP
+Definition at line 389 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setDebugMenuPtr (QMenu *debugMenuPtr)"
+
+.PP
+Definition at line 185 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setEastToolBarPtr (QToolBar *eastToolBarPtr)"
+
+.PP
+Definition at line 305 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setEditMenuPtr (QMenu *editMenuPtr)"
+
+.PP
+Definition at line 113 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setEditor (QTextEdit *editor)"
+
+.PP
+Definition at line 341 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setFileMenuPtr (QMenu *fileMenuPtr)"
+
+.PP
+Definition at line 101 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setGroupOneToolBarPtr (QToolBar *groupOneToolBarPtr)"
+
+.PP
+Definition at line 257 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setGroupThreeToolBarPtr (QToolBar *groupThreeToolBarPtr)"
+
+.PP
+Definition at line 281 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setGroupTwoToolBarPtr (QToolBar *groupTwoToolBarPtr)"
+
+.PP
+Definition at line 269 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setHelpMenuPtr (QMenu *helpMenuPtr)"
+
+.PP
+Definition at line 245 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setMasterActions (\fBMasterActions\fP *masterActions)"
+
+.PP
+Definition at line 353 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setMasterMenus (\fBMasterMenus\fP *masterMenus)"
+
+.PP
+Definition at line 377 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setMasterToolBars (\fBMasterToolBars\fP *masterToolBars)"
+
+.PP
+Definition at line 365 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setNavigateMenuPtr (QMenu *navigateMenuPtr)"
+
+.PP
+Definition at line 137 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setProfileMenuPtr (QMenu *profileMenuPtr)"
+
+.PP
+Definition at line 197 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setRefactorMenuPtr (QMenu *refactorMenuPtr)"
+
+.PP
+Definition at line 161 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setRunMenuPtr (QMenu *runMenuPtr)"
+
+.PP
+Definition at line 173 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setSourceMenuPtr (QMenu *sourceMenuPtr)"
+
+.PP
+Definition at line 149 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setSouthToolBarPtr (QToolBar *southToolBarPtr)"
+
+.PP
+Definition at line 293 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setTabWidget (QTabWidget *tabWidget)"
+
+.PP
+Definition at line 329 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setTeamMenuPtr (QMenu *teamMenuPtr)"
+
+.PP
+Definition at line 209 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setToolsMenuPtr (QMenu *toolsMenuPtr)"
+
+.PP
+Definition at line 221 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setViewMenuPtr (QMenu *viewMenuPtr)"
+
+.PP
+Definition at line 125 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setWestToolBarPtr (QToolBar *westToolBarPtr)"
+
+.PP
+Definition at line 317 of file MasterGui\&.cpp\&.
+.SS "void MasterGui::setWindowMenuPtr (QMenu *windowMenuPtr)"
+
+.PP
+Definition at line 233 of file MasterGui\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "\fBCentralGui\fP* MasterGui::centralGui\fC [private]\fP"
 
 .PP
-Definition at line 70 of file MasterGui\&.h\&.
+Definition at line 66 of file MasterGui\&.h\&.
 .SS "QMenu* MasterGui::debugMenuPtr\fC [private]\fP"
 
 .PP
@@ -149,7 +499,7 @@ Definition at line 41 of file MasterGui\&.h\&.
 .SS "QTextEdit* MasterGui::editor\fC [private]\fP"
 
 .PP
-Definition at line 63 of file MasterGui\&.h\&.
+Definition at line 62 of file MasterGui\&.h\&.
 .SS "QMenu* MasterGui::fileMenuPtr\fC [private]\fP"
 
 .PP
@@ -173,15 +523,15 @@ Definition at line 52 of file MasterGui\&.h\&.
 .SS "\fBMasterActions\fP* MasterGui::masterActions\fC [private]\fP"
 
 .PP
-Definition at line 66 of file MasterGui\&.h\&.
+Definition at line 63 of file MasterGui\&.h\&.
 .SS "\fBMasterMenus\fP* MasterGui::masterMenus\fC [private]\fP"
 
 .PP
-Definition at line 69 of file MasterGui\&.h\&.
+Definition at line 65 of file MasterGui\&.h\&.
 .SS "\fBMasterToolBars\fP* MasterGui::masterToolBars\fC [private]\fP"
 
 .PP
-Definition at line 67 of file MasterGui\&.h\&.
+Definition at line 64 of file MasterGui\&.h\&.
 .SS "QMenu* MasterGui::navigateMenuPtr\fC [private]\fP"
 
 .PP

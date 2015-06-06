@@ -1,0 +1,82 @@
+.TH "ScoutLibDat" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ScoutLibDat \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ScoutLibDat\&.h>\fP
+.PP
+Inherits QWidget\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBScoutLibDat\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBpushToFilePtrVecPtr\fP (\fBScoutFileDat\fP *scoutFileDat)"
+.br
+.ti -1c
+.RI "\fBScoutFileDat\fP * \fBpopFromFilePtrVecPtr\fP ()"
+.br
+.ti -1c
+.RI "QVector< \fBScoutFileDat\fP * > * \fBgetFilePtrVecPtr\fP ()"
+.br
+.ti -1c
+.RI "QString * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~ScoutLibDat\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QVector< \fBScoutFileDat\fP * > * \fBfilePtrVecPtr\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 19 of file ScoutLibDat\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ScoutLibDat::ScoutLibDat (QWidget *parent = \fC0\fP)"
+
+.PP
+Definition at line 4 of file ScoutLibDat\&.cpp\&.
+.SS "ScoutLibDat::~ScoutLibDat ()"
+
+.PP
+Definition at line 34 of file ScoutLibDat\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QVector< \fBScoutFileDat\fP * > * ScoutLibDat::getFilePtrVecPtr ()"
+
+.PP
+Definition at line 22 of file ScoutLibDat\&.cpp\&.
+.SS "\fBScoutFileDat\fP * ScoutLibDat::popFromFilePtrVecPtr ()"
+
+.PP
+Definition at line 16 of file ScoutLibDat\&.cpp\&.
+.SS "void ScoutLibDat::pushToFilePtrVecPtr (\fBScoutFileDat\fP *scoutFileDat)"
+
+.PP
+Definition at line 10 of file ScoutLibDat\&.cpp\&.
+.SS "QString * ScoutLibDat::toString ()"
+
+.PP
+Definition at line 28 of file ScoutLibDat\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QVector<\fBScoutFileDat\fP*>* ScoutLibDat::filePtrVecPtr\fC [private]\fP"
+
+.PP
+Definition at line 22 of file ScoutLibDat\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

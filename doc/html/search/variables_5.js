@@ -9,8 +9,10 @@ var searchData=
   ['filemenuptr',['fileMenuPtr',['../class_master_gui.html#a1d768ad74ddb657928df8539c356abb6',1,'MasterGui']]],
   ['filenameleptr',['fileNameLePtr',['../class_new_file_page__4.html#a145cc995d3737d3d73ad1ed18c91492c',1,'NewFilePage_4']]],
   ['filenamestrptr',['fileNameStrPtr',['../class_new_file_page__4.html#aa44cfefe988a3e7a5bf85547683636bc',1,'NewFilePage_4::fileNameStrPtr()'],['../class_ride_file.html#a6eeba18da5e7d5e7b3afde7c65bd1f7a',1,'RideFile::fileNameStrPtr()']]],
-  ['fileptr',['filePtr',['../class_parse_font_config_xml.html#a1b42e0d21b2363d136c4f8f3449db672',1,'ParseFontConfigXml']]],
-  ['filetreeguiptr',['fileTreeGuiPtr',['../class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf',1,'CentralGui']]],
+  ['filenmstrptr',['fileNmStrPtr',['../class_scout_file_dat.html#af7353d56bff3ddad52115fd5ecd3dba9',1,'ScoutFileDat']]],
+  ['fileptr',['filePtr',['../class_parse_font_config_xml.html#a1b42e0d21b2363d136c4f8f3449db672',1,'ParseFontConfigXml::filePtr()'],['../namespace_xml_master.html#aa7617b976593ed1594f194b72a6fbbee',1,'XmlMaster::filePtr()']]],
+  ['fileptrvecptr',['filePtrVecPtr',['../class_scout_lib_dat.html#ae53718a0ccc56bcdd8ae310d64acbc75',1,'ScoutLibDat']]],
+  ['filetreeguiptr',['fileTreeGuiPtr',['../class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf',1,'CentralGui::fileTreeGuiPtr()'],['../class_master_actions.html#a53d5e999ea25b0d3d1643fca709f3bcb',1,'MasterActions::fileTreeGuiPtr()']]],
   ['filetypelwptr',['fileTypeLwPtr',['../class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72',1,'NewFilePage_1']]],
   ['filetypeptr',['fileTypePtr',['../class_ride_file.html#acdbc170d7f02d66dffb8b715609735c2',1,'RideFile']]],
   ['filetypestrlstptrvec',['fileTypeStrLstPtrVec',['../class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964',1,'NewFilePage_1']]],
@@ -25,5 +27,8 @@ var searchData=
   ['format',['format',['../struct_highlighter_1_1_highlighting_rule.html#ae0a636ba88b740accc9b98ca777b6fb4',1,'Highlighter::HighlightingRule']]],
   ['formlayout',['formLayout',['../class_new_project_page__2.html#afc89c432c8c3cd4740e4a98bbe5f426b',1,'NewProjectPage_2::formLayout()'],['../class_new_project_page__3.html#aae75a18bd217f0736861efe3e3821a6d',1,'NewProjectPage_3::formLayout()']]],
   ['formlayoutptr',['formLayoutPtr',['../class_new_file_page__4.html#a136ab5da5a948efa9b0aad4460f89825',1,'NewFilePage_4']]],
+  ['funcdatptrvecptr',['funcDatPtrVecPtr',['../class_scout_file_dat.html#a644c1c18aa490f37e4921a942daabfe3',1,'ScoutFileDat']]],
+  ['funcnmstrptr',['funcNmStrPtr',['../class_scout_func_dat.html#a1b4edcb363b7194c496b1af2be0314f7',1,'ScoutFuncDat']]],
+  ['funcretnstrptr',['funcRetnStrPtr',['../class_scout_func_dat.html#a3c2f7ad50c5845171ee2a991fa3fa7ff',1,'ScoutFuncDat']]],
   ['functionformat',['functionFormat',['../class_highlighter.html#a7e02cd8caee678c1256998c88d30e241',1,'Highlighter']]]
 ];

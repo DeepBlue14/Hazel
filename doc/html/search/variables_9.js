@@ -12,7 +12,7 @@ var searchData=
   ['licenselistptr',['licenseListPtr',['../class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216',1,'NewProjectPage_3']]],
   ['licensestrptr',['licenseStrPtr',['../class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e',1,'NewProjectPage_3']]],
   ['linenumberarea',['lineNumberArea',['../class_file_gui.html#a4fa030b7bda34eeb961eac7324f28b88',1,'FileGui']]],
-  ['list',['list',['../class_file_tree_gui.html#af6806c8bd5ed67e2ee8400df58605985',1,'FileTreeGui']]],
+  ['loadedfilesstrlstptr',['loadedFilesStrLstPtr',['../class_scout_data.html#a72963d54f28d1ed0f85f97195999006d',1,'ScoutData']]],
   ['locationlayout',['locationLayout',['../class_new_project_page__2.html#a17fd912b11ae2dad02da7fa3906f948d',1,'NewProjectPage_2']]],
   ['loccbptr',['locCbPtr',['../class_new_file_page__4.html#afd3456441e46868a662023c1f162c7c0',1,'NewFilePage_4']]],
   ['locpbptr',['locPbPtr',['../class_new_project_page__2.html#ab5056e3d84ca52cffb2842c398ee04b2',1,'NewProjectPage_2']]],

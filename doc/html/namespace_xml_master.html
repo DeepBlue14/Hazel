@@ -84,7 +84,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">XmlMaster Namespace Reference</div>  </div>
 </div><!--header-->
@@ -92,8 +93,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad6410c6eca04a1184a0f1fd90c75f0c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_xml_master.html#ad6410c6eca04a1184a0f1fd90c75f0c9">insertAfterLastOccurrence</a> (QFile *filePtr, QString *occurrenceOfStrPtr, QString *insertionStrPtr)</td></tr>
+<tr class="memitem:a46ee2c029bce45a53a41e3589e8de2a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_xml_master.html#a46ee2c029bce45a53a41e3589e8de2a4">loadFile</a> (QFile *<a class="el" href="namespace_xml_master.html#aa7617b976593ed1594f194b72a6fbbee">filePtr</a>)</td></tr>
+<tr class="separator:a46ee2c029bce45a53a41e3589e8de2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403506effa37889ca401527113da1c5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_xml_master.html#a403506effa37889ca401527113da1c5c">printXmlFile</a> (QFile *<a class="el" href="namespace_xml_master.html#aa7617b976593ed1594f194b72a6fbbee">filePtr</a>)</td></tr>
+<tr class="separator:a403506effa37889ca401527113da1c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6410c6eca04a1184a0f1fd90c75f0c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_xml_master.html#ad6410c6eca04a1184a0f1fd90c75f0c9">insertAfterLastOccurrence</a> (QFile *<a class="el" href="namespace_xml_master.html#aa7617b976593ed1594f194b72a6fbbee">filePtr</a>, QString *occurrenceOfStrPtr, QString *insertionStrPtr)</td></tr>
 <tr class="separator:ad6410c6eca04a1184a0f1fd90c75f0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa7617b976593ed1594f194b72a6fbbee"><td class="memItemLeft" align="right" valign="top">QFile *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_xml_master.html#aa7617b976593ed1594f194b72a6fbbee">filePtr</a></td></tr>
+<tr class="separator:aa7617b976593ed1594f194b72a6fbbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f559aff373f8cc4bb2caf7b26f13ad"><td class="memItemLeft" align="right" valign="top">QDomDocument *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_xml_master.html#a79f559aff373f8cc4bb2caf7b26f13ad">xmlDomDocPtr</a></td></tr>
+<tr class="separator:a79f559aff373f8cc4bb2caf7b26f13ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="ad6410c6eca04a1184a0f1fd90c75f0c9"></a>
@@ -126,14 +138,79 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="_xml_master_8cpp_source.html#l00027">27</a> of file <a class="el" href="_xml_master_8cpp_source.html">XmlMaster.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46ee2c029bce45a53a41e3589e8de2a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XmlMaster::loadFile </td>
+          <td>(</td>
+          <td class="paramtype">QFile *&#160;</td>
+          <td class="paramname"><em>filePtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>Definition at line <a class="el" href="_xml_master_8cpp_source.html#l00004">4</a> of file <a class="el" href="_xml_master_8cpp_source.html">XmlMaster.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a403506effa37889ca401527113da1c5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void XmlMaster::printXmlFile </td>
+          <td>(</td>
+          <td class="paramtype">QFile *&#160;</td>
+          <td class="paramname"><em>filePtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_xml_master_8cpp_source.html#l00021">21</a> of file <a class="el" href="_xml_master_8cpp_source.html">XmlMaster.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="aa7617b976593ed1594f194b72a6fbbee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFile* XmlMaster::filePtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_xml_master_8h_source.html#l00023">23</a> of file <a class="el" href="_xml_master_8h_source.html">XmlMaster.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79f559aff373f8cc4bb2caf7b26f13ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QDomDocument* XmlMaster::xmlDomDocPtr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_xml_master_8h_source.html#l00024">24</a> of file <a class="el" href="_xml_master_8h_source.html">XmlMaster.h</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jun 2 2015 13:16:58 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jun 6 2015 15:12:44 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

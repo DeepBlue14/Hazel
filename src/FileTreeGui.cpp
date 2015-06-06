@@ -1,7 +1,7 @@
 #include "FileTreeGui.h"
 
 
-QTreeWidget* FileTreeGui::trueTree;
+QTreeWidget* FileTreeGui::treePtr;
 QSplitter* FileTreeGui::splitter;
    
 QString* FileTreeGui::projectRootAbsPathStrPtr;
@@ -12,21 +12,21 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     projectRootAbsPathStrPtr = new QString("null");
     
     splitter = new QSplitter();
-    trueTree = new QTreeWidget(splitter);
+    treePtr = new QTreeWidget(splitter);
     //list = new QListView(splitter);
     
     QTreeWidgetItem* headerItem = new QTreeWidgetItem();
     headerItem->setText(0, QString("File Name") );
     headerItem->setText(1, QString("Path"));
-    trueTree->hideColumn(1);
-    trueTree->setHeaderItem(headerItem);
+    treePtr->hideColumn(1);
+    treePtr->setHeaderItem(headerItem);
     
     initTree();
 
-    trueTree->setContextMenuPolicy(Qt::CustomContextMenu);
+    treePtr->setContextMenuPolicy(Qt::CustomContextMenu);
     
-    connect(trueTree, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
-    connect(trueTree, SIGNAL(itemClicked(QTreeWidgetItem*, int)), this, SLOT(handleShowDirectorySlot(QTreeWidgetItem*, int)));
+    connect(treePtr, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
+    connect(treePtr, SIGNAL(itemClicked(QTreeWidgetItem*, int)), this, SLOT(handleShowDirectorySlot(QTreeWidgetItem*, int)));
 
     splitter->setOrientation(Qt::Vertical);
   
@@ -60,8 +60,8 @@ void FileTreeGui::initTree()
             }
 
             item->setText(1, fileInfo.filePath());
-            trueTree->hideColumn(1);
-            trueTree->addTopLevelItem(item);
+            treePtr->hideColumn(1);
+            treePtr->addTopLevelItem(item);
         }
     }
     
@@ -118,7 +118,7 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 	    {
                 TreeItemIconInit::setIcon(child);
                 child->setText(1,fileInfo.filePath());
-                trueTree->hideColumn(1);
+                treePtr->hideColumn(1);
 	    } 
 	    
 	    item->addChild(child);
@@ -134,7 +134,7 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 
 void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 {
-    QPoint globalPos = trueTree->mapToGlobal(pos);
+    QPoint globalPos = treePtr->mapToGlobal(pos);
     QMenu myMenu;
     myMenu.addAction("Open");
     myMenu.addAction("Hide");
@@ -145,14 +145,14 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 
     QAction* selectedItem = myMenu.exec(globalPos);
 
-    if(trueTree->selectedItems().at(0)->text(1) == "")
+    if(treePtr->selectedItems().at(0)->text(1) == "")
     {
         //cout << selectedItem->text().toStdString() << endl;
-        cout << "file: " << trueTree->selectedItems().at(0)->text(1).toStdString() << endl;
+        cout << "file: " << treePtr->selectedItems().at(0)->text(1).toStdString() << endl;
     }
     else
     {
-        cout << "diretory: " << trueTree->selectedItems().at(0)->text(1).toStdString() << endl;
+        cout << "diretory: " << treePtr->selectedItems().at(0)->text(1).toStdString() << endl;
         //cout << selectedItem->text().toStdString() << endl;
     }
 
@@ -177,7 +177,7 @@ QString* FileTreeGui::getProjectRootAbsPathStrPtr()
 
 void FileTreeGui::refresh()
 {
-    trueTree->clear();
+    treePtr->clear();
     
     initTree();
     

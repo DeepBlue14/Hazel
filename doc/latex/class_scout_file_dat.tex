@@ -1,0 +1,239 @@
+\hypertarget{class_scout_file_dat}{\section{Scout\-File\-Dat Class Reference}
+\label{class_scout_file_dat}\index{Scout\-File\-Dat@{Scout\-File\-Dat}}
+}
+
+
+{\ttfamily \#include $<$Scout\-File\-Dat.\-h$>$}
+
+
+
+Inheritance diagram for Scout\-File\-Dat\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_scout_file_dat__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Scout\-File\-Dat\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_scout_file_dat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_scout_file_dat_a07e2114b6e2a85a214018a27fb9a170c}{Scout\-File\-Dat} (Q\-Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_scout_file_dat_aa47a4b0ca2ee36216d0738f074664d10}{set\-File\-Nm\-Str\-Ptr} (Q\-String $\ast$\hyperlink{class_scout_file_dat_af7353d56bff3ddad52115fd5ecd3dba9}{file\-Nm\-Str\-Ptr})
+\item 
+Q\-String $\ast$ \hyperlink{class_scout_file_dat_ac293c392624177c2adc1ae5c6bd669f8}{get\-File\-Nm\-Str\-Ptr} ()
+\item 
+void \hyperlink{class_scout_file_dat_ae91be34ff12cdff637f35e54177bf514}{push\-To\-Func\-Dat\-Ptr\-Vec\-Ptr} (\hyperlink{class_scout_func_dat}{Scout\-Func\-Dat} $\ast$\hyperlink{class_scout_file_dat_a644c1c18aa490f37e4921a942daabfe3}{func\-Dat\-Ptr\-Vec\-Ptr})
+\item 
+\hyperlink{class_scout_func_dat}{Scout\-Func\-Dat} $\ast$ \hyperlink{class_scout_file_dat_af5acff6058ba9d10239914e7c5bd1de0}{pop\-From\-Func\-Dat\-Ptr\-Vec\-Ptr} ()
+\item 
+Q\-Vector$<$ \hyperlink{class_scout_func_dat}{Scout\-Func\-Dat} $\ast$ $>$ $\ast$ \hyperlink{class_scout_file_dat_a6c7292c3f13a026a10073adcd7705883}{get\-Func\-Dat\-Ptr\-Vec\-Ptr} ()
+\item 
+void \hyperlink{class_scout_file_dat_a89f9120e9794ff0021d98ba44ca32dc0}{push\-To\-Var\-Dat\-Ptr\-Vec\-Ptr} (\hyperlink{class_scout_var_dat}{Scout\-Var\-Dat} $\ast$\hyperlink{class_scout_file_dat_af97f5079999e27f0fcb8ff34e168b656}{var\-Dat\-Ptr\-Vec\-Ptr})
+\item 
+\hyperlink{class_scout_var_dat}{Scout\-Var\-Dat} $\ast$ \hyperlink{class_scout_file_dat_aeb555fc115ec066769023f8c4a4c1087}{pop\-From\-Var\-Dat\-Ptr\-Vec\-Ptr} ()
+\item 
+Q\-Vector$<$ \hyperlink{class_scout_var_dat}{Scout\-Var\-Dat} $\ast$ $>$ $\ast$ \hyperlink{class_scout_file_dat_a37c127a61c302008cf840d6fa7e02b2a}{get\-Var\-Dat\-Ptr\-Vec\-Ptr} ()
+\item 
+Q\-String $\ast$ \hyperlink{class_scout_file_dat_ad4cebd5ce894cd19448c63db847ca199}{to\-String} ()
+\item 
+\hyperlink{class_scout_file_dat_a88ccce70e4cdbadcb86d75e3c0b8255e}{$\sim$\-Scout\-File\-Dat} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class X $>$ }\\Q\-Vector$<$ X $\ast$ $>$ \hyperlink{class_scout_file_dat_a12ce0aa82d02b540c17ab7efedf1984e}{alphabetize\-By\-Name} (Q\-Vector$<$ X $\ast$ $>$ scout\-Type)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-String $\ast$ \hyperlink{class_scout_file_dat_af7353d56bff3ddad52115fd5ecd3dba9}{file\-Nm\-Str\-Ptr}
+\item 
+Q\-Vector$<$ \hyperlink{class_scout_func_dat}{Scout\-Func\-Dat} $\ast$ $>$ $\ast$ \hyperlink{class_scout_file_dat_a644c1c18aa490f37e4921a942daabfe3}{func\-Dat\-Ptr\-Vec\-Ptr}
+\item 
+Q\-Vector$<$ \hyperlink{class_scout_var_dat}{Scout\-Var\-Dat} $\ast$ $>$ $\ast$ \hyperlink{class_scout_file_dat_af97f5079999e27f0fcb8ff34e168b656}{var\-Dat\-Ptr\-Vec\-Ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Scout\-File\-Dat.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_scout_file_dat_a07e2114b6e2a85a214018a27fb9a170c}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!Scout\-File\-Dat@{Scout\-File\-Dat}}
+\index{Scout\-File\-Dat@{Scout\-File\-Dat}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{Scout\-File\-Dat}]{\setlength{\rightskip}{0pt plus 5cm}Scout\-File\-Dat\-::\-Scout\-File\-Dat (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_a07e2114b6e2a85a214018a27fb9a170c}
+
+
+Definition at line 4 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_a88ccce70e4cdbadcb86d75e3c0b8255e}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!$\sim$\-Scout\-File\-Dat@{$\sim$\-Scout\-File\-Dat}}
+\index{$\sim$\-Scout\-File\-Dat@{$\sim$\-Scout\-File\-Dat}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{$\sim$\-Scout\-File\-Dat}]{\setlength{\rightskip}{0pt plus 5cm}Scout\-File\-Dat\-::$\sim$\-Scout\-File\-Dat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_a88ccce70e4cdbadcb86d75e3c0b8255e}
+
+
+Definition at line 97 of file Scout\-File\-Dat.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_scout_file_dat_a12ce0aa82d02b540c17ab7efedf1984e}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!alphabetize\-By\-Name@{alphabetize\-By\-Name}}
+\index{alphabetize\-By\-Name@{alphabetize\-By\-Name}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{alphabetize\-By\-Name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ Q\-Vector$<$ X $\ast$ $>$ Scout\-File\-Dat\-::alphabetize\-By\-Name (
+\begin{DoxyParamCaption}
+\item[{Q\-Vector$<$ X $\ast$ $>$}]{scout\-Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scout_file_dat_a12ce0aa82d02b540c17ab7efedf1984e}
+
+
+Definition at line 13 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_ac293c392624177c2adc1ae5c6bd669f8}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!get\-File\-Nm\-Str\-Ptr@{get\-File\-Nm\-Str\-Ptr}}
+\index{get\-File\-Nm\-Str\-Ptr@{get\-File\-Nm\-Str\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{get\-File\-Nm\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Scout\-File\-Dat\-::get\-File\-Nm\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_ac293c392624177c2adc1ae5c6bd669f8}
+
+
+Definition at line 27 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_a6c7292c3f13a026a10073adcd7705883}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!get\-Func\-Dat\-Ptr\-Vec\-Ptr@{get\-Func\-Dat\-Ptr\-Vec\-Ptr}}
+\index{get\-Func\-Dat\-Ptr\-Vec\-Ptr@{get\-Func\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{get\-Func\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$ {\bf Scout\-Func\-Dat} $\ast$ $>$ $\ast$ Scout\-File\-Dat\-::get\-Func\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_a6c7292c3f13a026a10073adcd7705883}
+
+
+Definition at line 48 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_a37c127a61c302008cf840d6fa7e02b2a}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!get\-Var\-Dat\-Ptr\-Vec\-Ptr@{get\-Var\-Dat\-Ptr\-Vec\-Ptr}}
+\index{get\-Var\-Dat\-Ptr\-Vec\-Ptr@{get\-Var\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{get\-Var\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$ {\bf Scout\-Var\-Dat} $\ast$ $>$ $\ast$ Scout\-File\-Dat\-::get\-Var\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_a37c127a61c302008cf840d6fa7e02b2a}
+
+
+Definition at line 69 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_af5acff6058ba9d10239914e7c5bd1de0}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!pop\-From\-Func\-Dat\-Ptr\-Vec\-Ptr@{pop\-From\-Func\-Dat\-Ptr\-Vec\-Ptr}}
+\index{pop\-From\-Func\-Dat\-Ptr\-Vec\-Ptr@{pop\-From\-Func\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{pop\-From\-Func\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scout\-Func\-Dat} $\ast$ Scout\-File\-Dat\-::pop\-From\-Func\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_af5acff6058ba9d10239914e7c5bd1de0}
+
+
+Definition at line 39 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_aeb555fc115ec066769023f8c4a4c1087}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!pop\-From\-Var\-Dat\-Ptr\-Vec\-Ptr@{pop\-From\-Var\-Dat\-Ptr\-Vec\-Ptr}}
+\index{pop\-From\-Var\-Dat\-Ptr\-Vec\-Ptr@{pop\-From\-Var\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{pop\-From\-Var\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scout\-Var\-Dat} $\ast$ Scout\-File\-Dat\-::pop\-From\-Var\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_aeb555fc115ec066769023f8c4a4c1087}
+
+
+Definition at line 60 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_ae91be34ff12cdff637f35e54177bf514}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!push\-To\-Func\-Dat\-Ptr\-Vec\-Ptr@{push\-To\-Func\-Dat\-Ptr\-Vec\-Ptr}}
+\index{push\-To\-Func\-Dat\-Ptr\-Vec\-Ptr@{push\-To\-Func\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{push\-To\-Func\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Scout\-File\-Dat\-::push\-To\-Func\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Scout\-Func\-Dat} $\ast$}]{func\-Dat\-Ptr\-Vec\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_ae91be34ff12cdff637f35e54177bf514}
+
+
+Definition at line 33 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_a89f9120e9794ff0021d98ba44ca32dc0}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!push\-To\-Var\-Dat\-Ptr\-Vec\-Ptr@{push\-To\-Var\-Dat\-Ptr\-Vec\-Ptr}}
+\index{push\-To\-Var\-Dat\-Ptr\-Vec\-Ptr@{push\-To\-Var\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{push\-To\-Var\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Scout\-File\-Dat\-::push\-To\-Var\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Scout\-Var\-Dat} $\ast$}]{var\-Dat\-Ptr\-Vec\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_a89f9120e9794ff0021d98ba44ca32dc0}
+
+
+Definition at line 54 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_aa47a4b0ca2ee36216d0738f074664d10}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!set\-File\-Nm\-Str\-Ptr@{set\-File\-Nm\-Str\-Ptr}}
+\index{set\-File\-Nm\-Str\-Ptr@{set\-File\-Nm\-Str\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{set\-File\-Nm\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Scout\-File\-Dat\-::set\-File\-Nm\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{file\-Nm\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_aa47a4b0ca2ee36216d0738f074664d10}
+
+
+Definition at line 21 of file Scout\-File\-Dat.\-cpp.
+
+\hypertarget{class_scout_file_dat_ad4cebd5ce894cd19448c63db847ca199}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Scout\-File\-Dat\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_scout_file_dat_ad4cebd5ce894cd19448c63db847ca199}
+
+
+Definition at line 75 of file Scout\-File\-Dat.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_scout_file_dat_af7353d56bff3ddad52115fd5ecd3dba9}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!file\-Nm\-Str\-Ptr@{file\-Nm\-Str\-Ptr}}
+\index{file\-Nm\-Str\-Ptr@{file\-Nm\-Str\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{file\-Nm\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String$\ast$ Scout\-File\-Dat\-::file\-Nm\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scout_file_dat_af7353d56bff3ddad52115fd5ecd3dba9}
+
+
+Definition at line 23 of file Scout\-File\-Dat.\-h.
+
+\hypertarget{class_scout_file_dat_a644c1c18aa490f37e4921a942daabfe3}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!func\-Dat\-Ptr\-Vec\-Ptr@{func\-Dat\-Ptr\-Vec\-Ptr}}
+\index{func\-Dat\-Ptr\-Vec\-Ptr@{func\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{func\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<${\bf Scout\-Func\-Dat}$\ast$$>$$\ast$ Scout\-File\-Dat\-::func\-Dat\-Ptr\-Vec\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scout_file_dat_a644c1c18aa490f37e4921a942daabfe3}
+
+
+Definition at line 24 of file Scout\-File\-Dat.\-h.
+
+\hypertarget{class_scout_file_dat_af97f5079999e27f0fcb8ff34e168b656}{\index{Scout\-File\-Dat@{Scout\-File\-Dat}!var\-Dat\-Ptr\-Vec\-Ptr@{var\-Dat\-Ptr\-Vec\-Ptr}}
+\index{var\-Dat\-Ptr\-Vec\-Ptr@{var\-Dat\-Ptr\-Vec\-Ptr}!ScoutFileDat@{Scout\-File\-Dat}}
+\subsubsection[{var\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<${\bf Scout\-Var\-Dat}$\ast$$>$$\ast$ Scout\-File\-Dat\-::var\-Dat\-Ptr\-Vec\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_scout_file_dat_af97f5079999e27f0fcb8ff34e168b656}
+
+
+Definition at line 25 of file Scout\-File\-Dat.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_scout_file_dat_8h}{Scout\-File\-Dat.\-h}\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_scout_file_dat_8cpp}{Scout\-File\-Dat.\-cpp}\end{DoxyCompactItemize}

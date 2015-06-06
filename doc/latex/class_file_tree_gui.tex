@@ -37,6 +37,10 @@ Q\-Tab\-Widget $\ast$ \hyperlink{class_file_tree_gui_ab4c244617e4a8fbc13608cf5cf
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+static void \hyperlink{class_file_tree_gui_a5d4df4a19da0183ccc254019f77097b1}{init\-Tree} ()
+\item 
+static void \hyperlink{class_file_tree_gui_ab3c2fd5311245c08624461ac4c7e120c}{add\-Children} (Q\-Tree\-Widget\-Item $\ast$item, Q\-String file\-Path)
+\item 
 static void \hyperlink{class_file_tree_gui_afe882583424429fcda9c4c2bc0ab71d4}{set\-Project\-Root\-Abs\-Path\-Str\-Ptr} (Q\-String $\ast$\hyperlink{class_file_tree_gui_a9ce991f8f95f583aa5fb1bec7a9bcd4c}{project\-Root\-Abs\-Path\-Str\-Ptr})
 \item 
 static Q\-String $\ast$ \hyperlink{class_file_tree_gui_a21607e8cda6732997d5148581017a9b8}{get\-Project\-Root\-Abs\-Path\-Str\-Ptr} ()
@@ -45,6 +49,8 @@ static void \hyperlink{class_file_tree_gui_ac2c3399b5cb85da5cd1c119b61c674c0}{re
 \end{DoxyCompactItemize}
 \subsection*{Private Slots}
 \begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_file_tree_gui_aa8110a99d6bab64818b7f87024382b2a}{handle\-Show\-Directory\-Slot} (Q\-Tree\-Widget\-Item $\ast$item, int)
 \item 
 void \hyperlink{class_file_tree_gui_a9d726b5258284de8f9dc10cddddbdc87}{handle\-Right\-Click\-Slot} (const Q\-Point \&)
 \end{DoxyCompactItemize}
@@ -58,13 +64,9 @@ Q\-Tab\-Widget $\ast$ \hyperlink{class_file_tree_gui_adb1e3ecfaab582317fcd9b968b
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static Q\-Tree\-View $\ast$ \hyperlink{class_file_tree_gui_a157ed39f1e9a52c664d5372c65878f58}{tree}
-\item 
-static Q\-List\-View $\ast$ \hyperlink{class_file_tree_gui_af6806c8bd5ed67e2ee8400df58605985}{list}
+static Q\-Tree\-Widget $\ast$ \hyperlink{class_file_tree_gui_a27648a2d00b8283605c3a260060b1285}{true\-Tree}
 \item 
 static Q\-Splitter $\ast$ \hyperlink{class_file_tree_gui_a43e8677ba8c50059d003f298b631e131}{splitter}
-\item 
-static Q\-File\-System\-Model $\ast$ \hyperlink{class_file_tree_gui_acc9d4c548eaf49500759a8b677b3e60f}{model}
 \item 
 static Q\-String $\ast$ \hyperlink{class_file_tree_gui_a9ce991f8f95f583aa5fb1bec7a9bcd4c}{project\-Root\-Abs\-Path\-Str\-Ptr}
 \end{DoxyCompactItemize}
@@ -73,7 +75,7 @@ static Q\-String $\ast$ \hyperlink{class_file_tree_gui_a9ce991f8f95f583aa5fb1bec
 \subsection{Detailed Description}
 
 
-Definition at line 29 of file File\-Tree\-Gui.\-h.
+Definition at line 35 of file File\-Tree\-Gui.\-h.
 
 
 
@@ -87,7 +89,7 @@ Definition at line 29 of file File\-Tree\-Gui.\-h.
 )}}\label{class_file_tree_gui_acf857f2793adefb176a680d541c24691}
 
 
-Definition at line 11 of file File\-Tree\-Gui.\-cpp.
+Definition at line 10 of file File\-Tree\-Gui.\-cpp.
 
 \hypertarget{class_file_tree_gui_a11cc4baa3a62a625e95155c27a0d7258}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!$\sim$\-File\-Tree\-Gui@{$\sim$\-File\-Tree\-Gui}}
 \index{$\sim$\-File\-Tree\-Gui@{$\sim$\-File\-Tree\-Gui}!FileTreeGui@{File\-Tree\-Gui}}
@@ -98,11 +100,23 @@ Definition at line 11 of file File\-Tree\-Gui.\-cpp.
 )}}\label{class_file_tree_gui_a11cc4baa3a62a625e95155c27a0d7258}
 
 
-Definition at line 116 of file File\-Tree\-Gui.\-cpp.
+Definition at line 200 of file File\-Tree\-Gui.\-cpp.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_file_tree_gui_ab3c2fd5311245c08624461ac4c7e120c}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!add\-Children@{add\-Children}}
+\index{add\-Children@{add\-Children}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{add\-Children}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Tree\-Gui\-::add\-Children (
+\begin{DoxyParamCaption}
+\item[{Q\-Tree\-Widget\-Item $\ast$}]{item, }
+\item[{Q\-String}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_ab3c2fd5311245c08624461ac4c7e120c}
+
+
+Definition at line 72 of file File\-Tree\-Gui.\-cpp.
+
 \hypertarget{class_file_tree_gui_ab4c244617e4a8fbc13608cf5cfcf6944}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!get\-Master\-Tab\-Widget\-Ptr@{get\-Master\-Tab\-Widget\-Ptr}}
 \index{get\-Master\-Tab\-Widget\-Ptr@{get\-Master\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
 \subsubsection[{get\-Master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ File\-Tree\-Gui\-::get\-Master\-Tab\-Widget\-Ptr (
@@ -112,7 +126,7 @@ Definition at line 116 of file File\-Tree\-Gui.\-cpp.
 )}}\label{class_file_tree_gui_ab4c244617e4a8fbc13608cf5cfcf6944}
 
 
-Definition at line 110 of file File\-Tree\-Gui.\-cpp.
+Definition at line 194 of file File\-Tree\-Gui.\-cpp.
 
 \hypertarget{class_file_tree_gui_a21607e8cda6732997d5148581017a9b8}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!get\-Project\-Root\-Abs\-Path\-Str\-Ptr@{get\-Project\-Root\-Abs\-Path\-Str\-Ptr}}
 \index{get\-Project\-Root\-Abs\-Path\-Str\-Ptr@{get\-Project\-Root\-Abs\-Path\-Str\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
@@ -123,7 +137,7 @@ Definition at line 110 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_a21607e8cda6732997d5148581017a9b8}
 
 
-Definition at line 78 of file File\-Tree\-Gui.\-cpp.
+Definition at line 172 of file File\-Tree\-Gui.\-cpp.
 
 \hypertarget{class_file_tree_gui_a9d726b5258284de8f9dc10cddddbdc87}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!handle\-Right\-Click\-Slot@{handle\-Right\-Click\-Slot}}
 \index{handle\-Right\-Click\-Slot@{handle\-Right\-Click\-Slot}!FileTreeGui@{File\-Tree\-Gui}}
@@ -134,7 +148,30 @@ Definition at line 78 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_tree_gui_a9d726b5258284de8f9dc10cddddbdc87}
 
 
-Definition at line 48 of file File\-Tree\-Gui.\-cpp.
+Definition at line 135 of file File\-Tree\-Gui.\-cpp.
+
+\hypertarget{class_file_tree_gui_aa8110a99d6bab64818b7f87024382b2a}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!handle\-Show\-Directory\-Slot@{handle\-Show\-Directory\-Slot}}
+\index{handle\-Show\-Directory\-Slot@{handle\-Show\-Directory\-Slot}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{handle\-Show\-Directory\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Tree\-Gui\-::handle\-Show\-Directory\-Slot (
+\begin{DoxyParamCaption}
+\item[{Q\-Tree\-Widget\-Item $\ast$}]{item, }
+\item[{int}]{column}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_tree_gui_aa8110a99d6bab64818b7f87024382b2a}
+
+
+Definition at line 99 of file File\-Tree\-Gui.\-cpp.
+
+\hypertarget{class_file_tree_gui_a5d4df4a19da0183ccc254019f77097b1}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!init\-Tree@{init\-Tree}}
+\index{init\-Tree@{init\-Tree}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{init\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Tree\-Gui\-::init\-Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_a5d4df4a19da0183ccc254019f77097b1}
+
+
+Definition at line 40 of file File\-Tree\-Gui.\-cpp.
 
 \hypertarget{class_file_tree_gui_ac2c3399b5cb85da5cd1c119b61c674c0}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!refresh@{refresh}}
 \index{refresh@{refresh}!FileTreeGui@{File\-Tree\-Gui}}
@@ -145,7 +182,7 @@ Definition at line 48 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_ac2c3399b5cb85da5cd1c119b61c674c0}
 
 
-Definition at line 84 of file File\-Tree\-Gui.\-cpp.
+Definition at line 178 of file File\-Tree\-Gui.\-cpp.
 
 \hypertarget{class_file_tree_gui_a571ca6424f269c0035ae9ddbce2e9e60}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!set\-Master\-Tab\-Widget\-Ptr@{set\-Master\-Tab\-Widget\-Ptr}}
 \index{set\-Master\-Tab\-Widget\-Ptr@{set\-Master\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
@@ -156,7 +193,7 @@ Definition at line 84 of file File\-Tree\-Gui.\-cpp.
 )}}\label{class_file_tree_gui_a571ca6424f269c0035ae9ddbce2e9e60}
 
 
-Definition at line 104 of file File\-Tree\-Gui.\-cpp.
+Definition at line 188 of file File\-Tree\-Gui.\-cpp.
 
 \hypertarget{class_file_tree_gui_afe882583424429fcda9c4c2bc0ab71d4}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!set\-Project\-Root\-Abs\-Path\-Str\-Ptr@{set\-Project\-Root\-Abs\-Path\-Str\-Ptr}}
 \index{set\-Project\-Root\-Abs\-Path\-Str\-Ptr@{set\-Project\-Root\-Abs\-Path\-Str\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
@@ -167,59 +204,45 @@ Definition at line 104 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_afe882583424429fcda9c4c2bc0ab71d4}
 
 
-Definition at line 72 of file File\-Tree\-Gui.\-cpp.
+Definition at line 166 of file File\-Tree\-Gui.\-cpp.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_file_tree_gui_af6806c8bd5ed67e2ee8400df58605985}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!list@{list}}
-\index{list@{list}!FileTreeGui@{File\-Tree\-Gui}}
-\subsubsection[{list}]{\setlength{\rightskip}{0pt plus 5cm}Q\-List\-View $\ast$ File\-Tree\-Gui\-::list\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_af6806c8bd5ed67e2ee8400df58605985}
-
-
-Definition at line 35 of file File\-Tree\-Gui.\-h.
-
 \hypertarget{class_file_tree_gui_adb1e3ecfaab582317fcd9b968bbf6c40}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!master\-Tab\-Widget\-Ptr@{master\-Tab\-Widget\-Ptr}}
 \index{master\-Tab\-Widget\-Ptr@{master\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
 \subsubsection[{master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ File\-Tree\-Gui\-::master\-Tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_tree_gui_adb1e3ecfaab582317fcd9b968bbf6c40}
 
 
-Definition at line 42 of file File\-Tree\-Gui.\-h.
-
-\hypertarget{class_file_tree_gui_acc9d4c548eaf49500759a8b677b3e60f}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!model@{model}}
-\index{model@{model}!FileTreeGui@{File\-Tree\-Gui}}
-\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}Q\-File\-System\-Model $\ast$ File\-Tree\-Gui\-::model\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_acc9d4c548eaf49500759a8b677b3e60f}
-
-
-Definition at line 37 of file File\-Tree\-Gui.\-h.
+Definition at line 46 of file File\-Tree\-Gui.\-h.
 
 \hypertarget{class_file_tree_gui_aaf8b63a4775b1d46d635cdaef94b979a}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!outer\-Layout@{outer\-Layout}}
 \index{outer\-Layout@{outer\-Layout}!FileTreeGui@{File\-Tree\-Gui}}
 \subsubsection[{outer\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Grid\-Layout$\ast$ File\-Tree\-Gui\-::outer\-Layout\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_tree_gui_aaf8b63a4775b1d46d635cdaef94b979a}
 
 
-Definition at line 39 of file File\-Tree\-Gui.\-h.
+Definition at line 43 of file File\-Tree\-Gui.\-h.
 
 \hypertarget{class_file_tree_gui_a9ce991f8f95f583aa5fb1bec7a9bcd4c}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!project\-Root\-Abs\-Path\-Str\-Ptr@{project\-Root\-Abs\-Path\-Str\-Ptr}}
 \index{project\-Root\-Abs\-Path\-Str\-Ptr@{project\-Root\-Abs\-Path\-Str\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
 \subsubsection[{project\-Root\-Abs\-Path\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ File\-Tree\-Gui\-::project\-Root\-Abs\-Path\-Str\-Ptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_a9ce991f8f95f583aa5fb1bec7a9bcd4c}
 
 
-Definition at line 41 of file File\-Tree\-Gui.\-h.
+Definition at line 45 of file File\-Tree\-Gui.\-h.
 
 \hypertarget{class_file_tree_gui_a43e8677ba8c50059d003f298b631e131}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!splitter@{splitter}}
 \index{splitter@{splitter}!FileTreeGui@{File\-Tree\-Gui}}
 \subsubsection[{splitter}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Splitter $\ast$ File\-Tree\-Gui\-::splitter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_a43e8677ba8c50059d003f298b631e131}
 
 
-Definition at line 36 of file File\-Tree\-Gui.\-h.
+Definition at line 41 of file File\-Tree\-Gui.\-h.
 
-\hypertarget{class_file_tree_gui_a157ed39f1e9a52c664d5372c65878f58}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!tree@{tree}}
-\index{tree@{tree}!FileTreeGui@{File\-Tree\-Gui}}
-\subsubsection[{tree}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tree\-View $\ast$ File\-Tree\-Gui\-::tree\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_a157ed39f1e9a52c664d5372c65878f58}
+\hypertarget{class_file_tree_gui_a27648a2d00b8283605c3a260060b1285}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!true\-Tree@{true\-Tree}}
+\index{true\-Tree@{true\-Tree}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{true\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tree\-Widget $\ast$ File\-Tree\-Gui\-::true\-Tree\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_a27648a2d00b8283605c3a260060b1285}
 
 
-Definition at line 34 of file File\-Tree\-Gui.\-h.
+Definition at line 40 of file File\-Tree\-Gui.\-h.
 
 
 

@@ -32,7 +32,12 @@ var searchData=
   ['_7erunpage_5f1',['~RunPage_1',['../class_run_page__1.html#a2f02b6cad18bd083be7a3caed9341de1',1,'RunPage_1']]],
   ['_7erunpage_5f2',['~RunPage_2',['../class_run_page__2.html#a430898ec1742595342124faf51be2690',1,'RunPage_2']]],
   ['_7erunpage_5f3',['~RunPage_3',['../class_run_page__3.html#a248659036056bb52fa0ed53baa84e319',1,'RunPage_3']]],
+  ['_7escoutdata',['~ScoutData',['../class_scout_data.html#acd123ae5750a411fcb37774af17ea68d',1,'ScoutData']]],
+  ['_7escoutfiledat',['~ScoutFileDat',['../class_scout_file_dat.html#a88ccce70e4cdbadcb86d75e3c0b8255e',1,'ScoutFileDat']]],
+  ['_7escoutfuncdat',['~ScoutFuncDat',['../class_scout_func_dat.html#a58fc30214eee6ee7bbb389989d8c80eb',1,'ScoutFuncDat']]],
   ['_7escoutgui',['~ScoutGui',['../class_scout_gui.html#a8eb9cce8ae1a36eb88b7a7dea618259a',1,'ScoutGui']]],
+  ['_7escoutlibdat',['~ScoutLibDat',['../class_scout_lib_dat.html#a30e8daf8d8f66cd4ff2c3360dc214e4c',1,'ScoutLibDat']]],
+  ['_7escoutvardat',['~ScoutVarDat',['../class_scout_var_dat.html#a5f5b2433365246e471841c4a9ea20d6b',1,'ScoutVarDat']]],
   ['_7esplashscreen',['~SplashScreen',['../class_splash_screen.html#aeb6a4736f6f7b9bb880d606610c2ae1e',1,'SplashScreen']]],
   ['_7etabgui',['~TabGui',['../class_tab_gui.html#a6bfb98f565ad1fd2dd2ea1785293fbdc',1,'TabGui']]],
   ['_7eterminal',['~Terminal',['../class_terminal.html#add5a7d4dd45b68af9a0afb1cc845af2f',1,'Terminal']]]
