@@ -39,7 +39,12 @@ class CentralGui : public QWidget
         
     public:
         CentralGui(QWidget* parent = 0);
+        void setCentralTabsPtr(TabGui* centralTabsPtr);
         TabGui* getCentralTabsPtr();
+        void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
+        FileTreeGui* getFileTreeGuiPtr();
+        void setOutputGuiPtr(OutputGui* outputGuiPtr);
+        OutputGui* getOutputGuiPtr();
         void passMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
         ~CentralGui();
 };

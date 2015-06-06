@@ -24,6 +24,7 @@
 #include "RunGui.h"
 #include "OpenProjectGui.h"
 #include "SaveAll.h"
+#include "FileTreeGui.h"
 
 using namespace SaveAll;
 using namespace std;
@@ -73,6 +74,7 @@ class MasterActions : public QWidget
         Terminal* terminalPtr;
         RunGui* runGuiPtr;
         OpenProjectGui* openProjectGuiPtr;
+        FileTreeGui* fileTreeGuiPtr;
         
         
     private slots:
@@ -112,35 +114,71 @@ class MasterActions : public QWidget
         
         void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
         QTabWidget* getMasterTabWidgetPtr();
+        void setHighlighter(Highlighter* highlighter);
+        Highlighter* getHighlighter();
+        void setNewFileGuiPtr(NewFileGui* newFileGuiPtr);
+        NewFileGui* getNewFileGuiPtr();
+        void setNewProjectGuiPtr(NewProjectGui* newProjectGuiPtr);
+        NewProjectGui* getNewProjectGuiPtr();
+        void setTerminalPtr(Terminal* terminalPtr);
+        Terminal* getTerminalPtr();
+        void setRunGuiPtr(RunGui* runGuiPtr);
+        RunGui* getRunGuiPtr();
+        void setOpenProjectGuiPtr(OpenProjectGui* openProjectGuiPtr);
+        OpenProjectGui* getOpenProjectGuiPtr();
+        void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
+        FileTreeGui* getFileTreeGuiPtr();
         
         // North
+        void setNewFileActionPtr(QAction* newFileActionPtr);
         QAction* getNewFileActionPtr();
+        void setNewTerminalActionPtr(QAction* newTerminalActionPtr);
         QAction* getNewTerminalActionPtr();
+        void setNewProjectActionPtr(QAction* newProjectActionPtr);
         QAction* getNewProjectActionPtr();
+        void setOpenProjectActionPtr(QAction* openProjectActionPtr);
         QAction* getOpenProjectActionPtr();
+        void setSaveAllActionPtr(QAction* saveAllActionPtr);
         QAction* getSaveAllActionPtr();
+        void setUndoActionPtr(QAction* undoActionPtr);
         QAction* getUndoActionPtr();
+        void setRedoActionPtr(QAction* redoActionPtr);
         QAction* getRedoActionPtr();
+        void setSetProjectConfigActionPtr(QAction* setProjectConfigActionPtr);
         QAction* getSetProjectConfigActionPtr();
+        void setBuildActionPtr(QAction* setBuildActionPtr);
         QAction* getBuildActionPtr();
+        void setCleanAndBuildActionPtr(QAction* cleanAndBuildActionPtr);
         QAction* getCleanAndBuildActionPtr();
+        void setConfigForRunActionPtr(QAction* configForRunActionPtr);
         QAction* getConfigForRunActionPtr();
+        void setRunActionPtr(QAction* runActionPtr);
         QAction* getRunActionPtr();
+        void setDebugActionPtr(QAction* debugActionPtr);
         QAction* getDebugActionPtr();
+        void setProfileProjActionPtr(QAction* profileProjActionPtr);
         QAction* getProfileProjActionPtr();
         
         // South
+        void setOutputSouthActionPtr(QAction* outputSouthActionPtr);
         QAction* getOutputSouthActionPtr();
+        void setTerminalSouthActionPtr(QAction* terminalSouthActionPtr);
         QAction* getTerminalSouthActionPtr();
         
         // East
+        void setDebugEastActionPtr(QAction* debugEastActionPtr);
         QAction* getDebugEastActionPtr();
+        void setStartEastActionPtr(QAction* startEastActionPtr);
         QAction* getStartEastActionPtr();
+        void setStepIntoEastActionPtr(QAction* setIntoEastActionPtr);
         QAction* getStepIntoEastActionPtr();
+        void setStepOverActionPtr(QAction* stepOverActionptr);
         QAction* getStepOverActionPtr();
         
         // West
+        void setProjectWestActionPtr(QAction* projectWestActionPtr);
         QAction* getProjectWestActionPtr();
+        void setNavWestActionPtr(QAction* navWestActionptr);
         QAction* getNavWestActionPtr();
         
         // North

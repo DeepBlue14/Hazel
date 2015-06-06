@@ -59,13 +59,9 @@ class MasterGui : public QMainWindow
         QToolBar* westToolBarPtr;
         
         QTabWidget* tabWidget;
-        
         QTextEdit* editor;
-        
-        //NewProjectGui* newProjectGui;
         MasterActions* masterActions;
         MasterToolBars* masterToolBars;
-        //OpeningGui* openingGui;
         MasterMenus* masterMenus;
         CentralGui* centralGui;
         
@@ -76,6 +72,60 @@ class MasterGui : public QMainWindow
         MasterGui(QMainWindow* parent = 0);
         void initToolBars();
         void initMenus();
+        void setFileMenuPtr(QMenu* fileMenuPtr);
+        QMenu* getFileMenuPtr();
+        void setEditMenuPtr(QMenu* editMenuPtr);
+        QMenu* getEditMenuPtr();
+        void setViewMenuPtr(QMenu* viewMenuPtr);
+        QMenu* getViewMenuPtr();
+        void setNavigateMenuPtr(QMenu* navigateMenuPtr);
+        QMenu* getNavigateMenuPtr();
+        void setSourceMenuPtr(QMenu* sourceMenuPtr);
+        QMenu* getSourceMenuPtr();
+        void setRefactorMenuPtr(QMenu* refactorMenuPtr);
+        QMenu* getRefactorMenuPtr();
+        void setRunMenuPtr(QMenu* runMenuPtr);
+        QMenu* getRunMenuPtr();
+        void setDebugMenuPtr(QMenu* debugMenuPtr);
+        QMenu* getDebugMenuPtr();
+        void setProfileMenuPtr(QMenu* profileMenuPtr);
+        QMenu* getProfileMenuPtr();
+        void setTeamMenuPtr(QMenu* teamMenuPtr);
+        QMenu* getTeamMenuPtr();
+        void setToolsMenuPtr(QMenu* toolsMenuPtr);
+        QMenu* getToolsMenuPtr();
+        void setWindowMenuPtr(QMenu* windowMenuPtr);
+        QMenu* getWindowMenuPtr();
+        void setHelpMenuPtr(QMenu* helpMenuPtr);
+        QMenu* getHelpMenuPtr();
+        
+        void setGroupOneToolBarPtr(QToolBar* groupOneToolBarPtr);
+        QToolBar* getGroupOneToolBarPtr();
+        void setGroupTwoToolBarPtr(QToolBar* groupTwoToolBarPtr);
+        QToolBar* getGroupTwoToolBarPtr();
+        void setGroupThreeToolBarPtr(QToolBar* groupThreeToolBarPtr);
+        QToolBar* getGroupThreeToolBarPtr();
+        void setSouthToolBarPtr(QToolBar* southToolBarPtr);
+        QToolBar* getSouthToolBarPtr();
+        void setEastToolBarPtr(QToolBar* eastToolBarPtr);
+        QToolBar* getEastToolBarPtr();
+        void setWestToolBarPtr(QToolBar* westToolBarPtr);
+        QToolBar* getWestToolBarPtr();
+        
+        void setTabWidget(QTabWidget* tabWidget);
+        QTabWidget* getTabWidget();
+        void setEditor(QTextEdit* editor);
+        QTextEdit* getEditor();
+        void setMasterActions(MasterActions* masterActions);
+        MasterActions* getMasterActions();
+        void setMasterToolBars(MasterToolBars* masterToolBars);
+        MasterToolBars* getMasterToolBars();
+        void setMasterMenus(MasterMenus* masterMenus);
+        MasterMenus* getMasterMenus();
+        void setCentralGui(CentralGui* centralGui);
+        CentralGui* getCentralGui();
+        
+        
         ~MasterGui();
             
 };

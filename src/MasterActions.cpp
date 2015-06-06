@@ -255,7 +255,14 @@ void MasterActions::handleStepOverEastActionSlot()
 // West
 void MasterActions::handleProjectWestActionSlot()
 {
-    ;
+    if(getFileTreeGuiPtr()->isVisible() )
+    {
+        getFileTreeGuiPtr()->hide();
+    }
+    else
+    {
+        getFileTreeGuiPtr()->show();
+    }
 }
 
 
@@ -283,9 +290,106 @@ QTabWidget* MasterActions::getMasterTabWidgetPtr()
 }
 
 
+void MasterActions::setHighlighter(Highlighter* highlighter)
+{
+    this->highlighter = highlighter;
+}
+
+
+Highlighter* MasterActions::getHighlighter()
+{
+    return highlighter;
+}
+
+
+void MasterActions::setNewFileGuiPtr(NewFileGui* newFileGuiPtr)
+{
+    this->newFileGuiPtr = newFileGuiPtr;
+}
+
+
+NewFileGui* MasterActions::getNewFileGuiPtr()
+{
+    return newFileGuiPtr;
+}
+
+
+void MasterActions::setNewProjectGuiPtr(NewProjectGui* newProjectGuiPtr)
+{
+    this->newProjectGuiPtr = newProjectGuiPtr;
+}
+
+
+NewProjectGui* MasterActions::getNewProjectGuiPtr()
+{
+    return newProjectGuiPtr;
+}
+
+
+void MasterActions::setTerminalPtr(Terminal* terminalPtr)
+{
+    this->terminalPtr = terminalPtr;
+}
+
+
+Terminal* MasterActions::getTerminalPtr()
+{
+    return terminalPtr;
+}
+
+
+void MasterActions::setRunGuiPtr(RunGui* runGuiPtr)
+{
+    this->runGuiPtr = runGuiPtr;
+}
+
+
+RunGui* MasterActions::getRunGuiPtr()
+{
+    return runGuiPtr;
+}
+
+
+void MasterActions::setOpenProjectGuiPtr(OpenProjectGui* openProjectGuiPtr)
+{
+    this->openProjectGuiPtr = openProjectGuiPtr;
+}
+
+
+OpenProjectGui* MasterActions::getOpenProjectGuiPtr()
+{
+    return openProjectGuiPtr;
+}
+
+
+void MasterActions::setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr)
+{
+    this->fileTreeGuiPtr = fileTreeGuiPtr;
+}
+
+
+FileTreeGui* MasterActions::getFileTreeGuiPtr()
+{
+    return fileTreeGuiPtr;
+}
+
+
+// Accessors and Mutators for actions
+void MasterActions::setNewFileActionPtr(QAction* newFileActionPtr)
+{
+    this->newFileActionPtr = newFileActionPtr;
+}
+
+
 QAction* MasterActions::getNewFileActionPtr()
 {
     return newFileActionPtr;
+}
+
+
+void MasterActions::setNewTerminalActionPtr(QAction* newTerminalActionPtr)
+{
+    this->newTerminalActionPtr = newTerminalActionPtr;
 }
 
 
@@ -295,9 +399,21 @@ QAction* MasterActions::getNewTerminalActionPtr()
 }
 
 
+void MasterActions::setNewProjectActionPtr(QAction* newProjectActionPtr)
+{
+    this->newProjectActionPtr = newProjectActionPtr;
+}
+
+
 QAction* MasterActions::getNewProjectActionPtr()
 {
     return newProjectActionPtr;
+}
+
+
+void MasterActions::setOpenProjectActionPtr(QAction* openProjectActionPtr)
+{
+    this->openProjectActionPtr = openProjectActionPtr;
 }
 
 
@@ -307,9 +423,21 @@ QAction* MasterActions::getOpenProjectActionPtr()
 }
 
 
+void MasterActions::setSaveAllActionPtr(QAction* saveAllActionPtr)
+{
+    this->saveAllActionPtr = saveAllActionPtr;
+}
+
+
 QAction* MasterActions::getSaveAllActionPtr()
 {
     return saveAllActionPtr;
+}
+
+
+void MasterActions::setUndoActionPtr(QAction* undoActionPtr)
+{
+    this->undoActionPtr = undoActionPtr;
 }
 
 
@@ -319,9 +447,21 @@ QAction* MasterActions::getUndoActionPtr()
 }
 
 
+void MasterActions::setRedoActionPtr(QAction* redoActionPtr)
+{
+    this->redoActionPtr = redoActionPtr;
+}
+
+
 QAction* MasterActions::getRedoActionPtr()
 {
     return redoActionPtr;
+}
+
+
+void MasterActions::setSetProjectConfigActionPtr(QAction* setProjectConfigActionPtr)
+{
+    this->setProjectConfigActionPtr = setProjectConfigActionPtr;
 }
 
 
@@ -331,9 +471,21 @@ QAction* MasterActions::getSetProjectConfigActionPtr()
 }
 
 
+void MasterActions::setBuildActionPtr(QAction* buildActionPtr)
+{
+    this->buildActionPtr = buildActionPtr;
+}
+
+
 QAction* MasterActions::getBuildActionPtr()
 {
     return buildActionPtr; 
+}
+
+
+void MasterActions::setCleanAndBuildActionPtr(QAction* cleanAndBuildActionPtr)
+{
+    this->cleanAndBuildActionPtr = cleanAndBuildActionPtr;
 }
 
 
@@ -343,9 +495,21 @@ QAction* MasterActions::getCleanAndBuildActionPtr()
 }
 
 
+void MasterActions::setConfigForRunActionPtr(QAction* configForRunActionPtr)
+{
+    this->configForRunActionPtr = configForRunActionPtr;
+}
+
+
 QAction* MasterActions::getConfigForRunActionPtr()
 {
     return configForRunActionPtr;
+}
+
+
+void MasterActions::setRunActionPtr(QAction* runActionPtr)
+{
+    this->runActionPtr = runActionPtr;
 }
 
 
@@ -355,9 +519,21 @@ QAction* MasterActions::getRunActionPtr()
 }
 
 
+void MasterActions::setDebugActionPtr(QAction* degugActionPtr)
+{
+    this->debugActionPtr = debugActionPtr;
+}
+
+
 QAction* MasterActions::getDebugActionPtr()
 {
     return debugActionPtr;
+}
+
+
+void MasterActions::setProfileProjActionPtr(QAction* profileProjActionPtr)
+{
+    this->profileProjActionPtr = profileProjActionPtr;
 }
 
 
@@ -368,9 +544,21 @@ QAction* MasterActions::getProfileProjActionPtr()
 
 
 // South
+void MasterActions::setOutputSouthActionPtr(QAction* outputSouthActionPtr)
+{
+    this->outputSouthActionPtr = outputSouthActionPtr;
+}
+
+
 QAction* MasterActions::getOutputSouthActionPtr()
 {
     return outputSouthActionPtr;
+}
+
+
+void MasterActions::setTerminalSouthActionPtr(QAction* terminalSouthActionPtr)
+{
+    this->terminalSouthActionPtr = terminalSouthActionPtr;
 }
 
 
@@ -381,9 +569,21 @@ QAction* MasterActions::getTerminalSouthActionPtr()
 
 
 // East
+void MasterActions::setDebugEastActionPtr(QAction* debugEastActionPtr)
+{
+    this->debugEastActionPtr = debugEastActionPtr;
+}
+
+
 QAction* MasterActions::getDebugEastActionPtr()
 {
     return debugEastActionPtr;
+}
+
+
+void MasterActions::setStartEastActionPtr(QAction* startEastActionPtr)
+{
+    this->startEastActionPtr = startEastActionPtr;
 }
 
 
@@ -393,9 +593,21 @@ QAction* MasterActions::getStartEastActionPtr()
 }
 
 
+void MasterActions::setStepIntoEastActionPtr(QAction* stepIntoEastActionPtr)
+{
+    this->stepIntoEastActionPtr = stepIntoEastActionPtr;
+}
+
+
 QAction* MasterActions::getStepIntoEastActionPtr()
 {
     return stepIntoEastActionPtr;
+}
+
+
+void MasterActions::setStepOverActionPtr(QAction* stepOverEastActionPtr)
+{
+    this->stepOverEastActionPtr = stepOverEastActionPtr;
 }
 
 
@@ -406,9 +618,21 @@ QAction* MasterActions::getStepOverActionPtr()
 
 
 // West
+void MasterActions::setProjectWestActionPtr(QAction* projectWestActionPtr)
+{
+    this->projectWestActionPtr = projectWestActionPtr;
+}
+
+
 QAction* MasterActions::getProjectWestActionPtr()
 {
     return projectWestActionPtr;
+}
+
+
+void MasterActions::setNavWestActionPtr(QAction* navWestActionPtr)
+{
+    this->navWestActionPtr = navWestActionPtr;
 }
 
 

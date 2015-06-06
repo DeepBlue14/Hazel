@@ -20,7 +20,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
 
     this->setCentralWidget(centralGui);
     masterActions->setMasterTabWidgetPtr(centralGui->getCentralTabsPtr()->getTabWidget());
-    
+    masterActions->setFileTreeGuiPtr(centralGui->getFileTreeGuiPtr() ); // Pass ("tunnel") method
     
     this->resize(1000, 800);
 }
@@ -95,6 +95,306 @@ void MasterGui::initToolBars()
     westToolBarPtr = addToolBar(tr("West") );
     addToolBar(Qt::LeftToolBarArea, westToolBarPtr);
     masterToolBars->initWestGroupOneToolBar(westToolBarPtr);
+}
+
+
+void MasterGui::setFileMenuPtr(QMenu* fileMenuPtr)
+{
+    this->fileMenuPtr = fileMenuPtr;
+}
+
+
+QMenu* MasterGui::getFileMenuPtr()
+{
+    return fileMenuPtr;
+}
+
+
+void MasterGui::setEditMenuPtr(QMenu* editMenuPtr)
+{
+    this->editMenuPtr = editMenuPtr;
+}
+
+
+QMenu* MasterGui::getEditMenuPtr()
+{
+    return editMenuPtr;
+}
+
+
+void MasterGui::setViewMenuPtr(QMenu* viewMenuPtr)
+{
+    this->viewMenuPtr = viewMenuPtr;
+}
+
+
+QMenu* MasterGui::getViewMenuPtr()
+{
+    return viewMenuPtr;
+}
+
+
+void MasterGui::setNavigateMenuPtr(QMenu* navigateMenuPtr)
+{
+    this->navigateMenuPtr = navigateMenuPtr;
+}
+
+
+QMenu* MasterGui::getNavigateMenuPtr()
+{
+    return navigateMenuPtr;
+}
+
+
+void MasterGui::setSourceMenuPtr(QMenu* sourceMenuPtr)
+{
+    this->sourceMenuPtr;
+}
+
+
+QMenu* MasterGui::getSourceMenuPtr()
+{
+    return sourceMenuPtr;
+}
+
+
+void MasterGui::setRefactorMenuPtr(QMenu* refactorMenuPtr)
+{
+    this->refactorMenuPtr = refactorMenuPtr;
+}
+
+
+QMenu* MasterGui::getRefactorMenuPtr()
+{
+    return refactorMenuPtr;
+}
+
+
+void MasterGui::setRunMenuPtr(QMenu* runMenuPtr)
+{
+    this->runMenuPtr = runMenuPtr;
+}
+
+
+QMenu* MasterGui::getRunMenuPtr()
+{
+    return runMenuPtr;
+}
+
+
+void MasterGui::setDebugMenuPtr(QMenu* debugMenuPtr)
+{
+    this->debugMenuPtr = debugMenuPtr;
+}
+
+
+QMenu* MasterGui::getDebugMenuPtr()
+{
+    return debugMenuPtr;
+}
+
+
+void MasterGui::setProfileMenuPtr(QMenu* profileMenuPtr)
+{
+    this->profileMenuPtr = profileMenuPtr;
+}
+
+
+QMenu* MasterGui::getProfileMenuPtr()
+{
+    return profileMenuPtr;
+}
+
+
+void MasterGui::setTeamMenuPtr(QMenu* teamMenuPtr)
+{
+    this->teamMenuPtr = teamMenuPtr;
+}
+
+
+QMenu* MasterGui::getTeamMenuPtr()
+{
+    return teamMenuPtr;
+}
+
+
+void MasterGui::setToolsMenuPtr(QMenu* toolsMenuPtr)
+{
+    this->toolsMenuPtr;
+}
+
+
+QMenu* MasterGui::getToolsMenuPtr()
+{
+    return toolsMenuPtr;
+}
+
+
+void MasterGui::setWindowMenuPtr(QMenu* windowMenuPtr)
+{
+    this->windowMenuPtr = windowMenuPtr;
+}
+
+
+QMenu* MasterGui::getWindowMenuPtr()
+{
+    return windowMenuPtr;
+}
+
+
+void MasterGui::setHelpMenuPtr(QMenu* helpMenuPtr)
+{
+    this->helpMenuPtr = helpMenuPtr;
+}
+
+
+QMenu* MasterGui::getHelpMenuPtr()
+{
+    return helpMenuPtr;
+}
+
+
+void MasterGui::setGroupOneToolBarPtr(QToolBar* groupOneToolBarPtr)
+{
+    this->groupOneToolBarPtr = groupOneToolBarPtr;
+}
+
+
+QToolBar* MasterGui::getGroupOneToolBarPtr()
+{
+    return groupOneToolBarPtr;
+}
+
+
+void MasterGui::setGroupTwoToolBarPtr(QToolBar* groupTwoToolBarPtr)
+{
+    this->groupTwoToolBarPtr = groupTwoToolBarPtr;
+}
+
+
+QToolBar* MasterGui::getGroupTwoToolBarPtr()
+{
+    return groupTwoToolBarPtr;
+}
+
+
+void MasterGui::setGroupThreeToolBarPtr(QToolBar* groupThreeToolBarPtr)
+{
+    this->groupThreeToolBarPtr;
+}
+
+
+QToolBar* MasterGui::getGroupThreeToolBarPtr()
+{
+    return groupThreeToolBarPtr;
+}
+
+
+void MasterGui::setSouthToolBarPtr(QToolBar* southToolBarPtr)
+{
+    this->southToolBarPtr = southToolBarPtr;
+}
+
+
+QToolBar* MasterGui::getSouthToolBarPtr()
+{
+    return southToolBarPtr;
+}
+
+
+void MasterGui::setEastToolBarPtr(QToolBar* eastToolBarPtr)
+{
+    this->eastToolBarPtr = eastToolBarPtr;
+}
+
+
+QToolBar* MasterGui::getEastToolBarPtr()
+{
+    return eastToolBarPtr;
+}
+
+
+void MasterGui::setWestToolBarPtr(QToolBar* westToolBarPtr)
+{
+    this->westToolBarPtr = westToolBarPtr;
+}
+
+
+QToolBar* MasterGui::getWestToolBarPtr()
+{
+    return westToolBarPtr;
+}
+
+
+void MasterGui::setTabWidget(QTabWidget* tabWidget)
+{
+    this->tabWidget = tabWidget;
+}
+
+
+QTabWidget* MasterGui::getTabWidget()
+{
+    return tabWidget;
+}
+
+
+void MasterGui::setEditor(QTextEdit* editor)
+{
+    this->editor = editor;
+}
+
+
+QTextEdit* MasterGui::getEditor()
+{
+    return editor;
+}
+
+
+void MasterGui::setMasterActions(MasterActions* masterActions)
+{
+    this->masterActions = masterActions;
+}
+
+
+MasterActions* MasterGui::getMasterActions()
+{
+    return masterActions;
+}
+
+
+void MasterGui::setMasterToolBars(MasterToolBars* masterToolBars)
+{
+    this->masterToolBars = masterToolBars;
+}
+
+
+MasterToolBars* MasterGui::getMasterToolBars()
+{
+    return masterToolBars;
+}
+
+
+void MasterGui::setMasterMenus(MasterMenus* masterMenus)
+{
+    this->masterMenus = masterMenus;
+}
+
+
+MasterMenus* MasterGui::getMasterMenus()
+{
+    return masterMenus;
+}
+
+
+void MasterGui::setCentralGui(CentralGui* centralGui)
+{
+    this->centralGui = centralGui;
+}
+
+
+CentralGui* MasterGui::getCentralGui()
+{
+    return centralGui;
 }
 
 

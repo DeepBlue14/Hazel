@@ -24,9 +24,39 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
 }
 
 
+void CentralGui::setCentralTabsPtr(TabGui* centralTabsPtr)
+{
+    this->centralTabsPtr = centralTabsPtr;
+}
+
+
 TabGui* CentralGui::getCentralTabsPtr()
 {
     return centralTabsPtr;
+}
+
+
+void CentralGui::setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr)
+{
+    this->fileTreeGuiPtr = fileTreeGuiPtr;
+}
+
+
+FileTreeGui* CentralGui::getFileTreeGuiPtr()
+{
+    return fileTreeGuiPtr;
+}
+
+
+void CentralGui::setOutputGuiPtr(OutputGui* outputGuiPtr)
+{
+    this->outputGuiPtr = outputGuiPtr;
+}
+
+
+OutputGui* CentralGui::getOutputGuiPtr()
+{
+    return outputGuiPtr;
 }
 
 

@@ -134,8 +134,6 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 
 void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 {
-    cout << "right clicked !!!" << endl;
-    
     QPoint globalPos = trueTree->mapToGlobal(pos);
     QMenu myMenu;
     myMenu.addAction("Open");
@@ -144,8 +142,9 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     myMenu.addAction("Rename...");
     myMenu.addAction("Git");
     myMenu.addAction("Properties");
-    
+
     QAction* selectedItem = myMenu.exec(globalPos);
+
     if(trueTree->selectedItems().at(0)->text(1) == "")
     {
         //cout << selectedItem->text().toStdString() << endl;
@@ -156,10 +155,11 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
         cout << "diretory: " << trueTree->selectedItems().at(0)->text(1).toStdString() << endl;
         //cout << selectedItem->text().toStdString() << endl;
     }
-    
+
     //change treeview to treewidget, and then use code from
     //https://github.com/DeepBlue14/Software_Engineer_91.411_2/blob/master/2_DataAggregator/Code/src/DevicesGui.cpp
-
+    
+    
 }
 
 
