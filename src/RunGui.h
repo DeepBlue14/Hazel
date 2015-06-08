@@ -12,6 +12,7 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QString>
 #include <QHBoxLayout>
 #include <QGridLayout>
 
@@ -37,6 +38,8 @@ class RunGui : public QWidget
         
         Page currentPage;
         
+        QString* launchFilePathStrPtr;
+        
         QPushButton* backBtn;
         QPushButton* nextBtn;
         QPushButton* finishBtn;
@@ -61,6 +64,8 @@ class RunGui : public QWidget
         RunGui(QWidget* parent = 0);
         void initBtns();
         void reset();
+        void setLaunchFilePathStrPtr(QString* launchFilePathStrPtr);
+        QString* getLaunchFilePathStrPtr();
         void swapNextPage();
         void swapBackPage();
         void loadPage_1();

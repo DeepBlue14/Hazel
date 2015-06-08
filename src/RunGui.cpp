@@ -33,7 +33,18 @@ void RunGui::handleNextBtnSlot()
 
 void RunGui::handleFinishBtnSlot()
 {
-    ;
+    if(*runPage_1Ptr->getRunOptionPtr() == "Launch File")
+    {
+        setLaunchFilePathStrPtr(runPage_2Ptr->getLaunchFileStrPtr() );
+    }
+    else if (*runPage_1Ptr->getRunOptionPtr() == "Individual Nodes")
+    {
+        cerr << "setting run node stuff has not been done" << endl;
+    }
+    else
+    {
+        cerr << "Invalid option at RunGui::handleFinishBtnSlot()" << endl;
+    }
 }
 
 
@@ -83,6 +94,18 @@ void RunGui::reset()
     {
         swapBackPage();    
     }
+}
+
+
+void RunGui::setLaunchFilePathStrPtr(QString* launchFilePathStrPtr)
+{
+    this->launchFilePathStrPtr = launchFilePathStrPtr;
+}
+
+
+QString* RunGui::getLaunchFilePathStrPtr()
+{
+    return launchFilePathStrPtr;
 }
 
 

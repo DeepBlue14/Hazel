@@ -12,15 +12,37 @@
 
 #include <QWidget>
 #include <QListWidget>
-//#include <QSplitter>
+#include <QSplitter>
+#include <QTabWidget>
+#include <QPushButton>
+#include <QGridLayout>
 
-class NavigatorGui
+#include "SearchWidget.h"
+
+#include <iostream>
+
+using namespace std;
+
+class NavigatorGui : QWidget
 {
     private:
         QListWidget* listWidgetPtr;
+        SearchWidget* searchWidgetPtr;
+        QPushButton* activateSearchBtn;
+        QSplitter* splitterPtr;
+        QString* fileStrPtr;
+        
+        QTabWidget* masterTabWidgetPtr;
+        QGridLayout* outerLayout;
+        
+    private slots:
+        ;
         
     public:
-        NavigatorGui();
+        NavigatorGui(QWidget* parent = 0);
+        void loadData();
+        void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        QTabWidget* getMasterTabWidgetPtr();
         ~NavigatorGui();
 };
 

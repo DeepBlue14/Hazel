@@ -13,6 +13,8 @@
 #include <QWidget>
 #include <QAction>
 #include <QFile>
+#include <QProcess>
+#include <QDebug>
 
 #include <iostream>
 
@@ -25,6 +27,7 @@
 #include "OpenProjectGui.h"
 #include "SaveAll.h"
 #include "FileTreeGui.h"
+#include "Build.h"
 
 using namespace SaveAll;
 using namespace std;
@@ -75,7 +78,7 @@ class MasterActions : public QWidget
         RunGui* runGuiPtr;
         OpenProjectGui* openProjectGuiPtr;
         FileTreeGui* fileTreeGuiPtr;
-        
+        Build* buildPtr;
         
     private slots:
         // North
@@ -128,6 +131,8 @@ class MasterActions : public QWidget
         OpenProjectGui* getOpenProjectGuiPtr();
         void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
         FileTreeGui* getFileTreeGuiPtr();
+        void setBuildPtr(Build* buildPtr);
+        Build* getBuildPtr();
         
         // North
         void setNewFileActionPtr(QAction* newFileActionPtr);
