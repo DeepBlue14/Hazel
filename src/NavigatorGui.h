@@ -23,13 +23,14 @@
 
 using namespace std;
 
-class NavigatorGui : QWidget
+class NavigatorGui : public QWidget
 {
+    Q_OBJECT
+    
     private:
         QListWidget* listWidgetPtr;
         SearchWidget* searchWidgetPtr;
         QPushButton* activateSearchBtn;
-        QSplitter* splitterPtr;
         QString* fileStrPtr;
         
         QTabWidget* masterTabWidgetPtr;

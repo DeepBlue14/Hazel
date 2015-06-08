@@ -108,6 +108,7 @@ SOURCES       = file_templates/Class_Source_Template.cpp \
 		src/moc/moc_MasterGui.cpp \
 		src/moc/moc_MasterMenus.cpp \
 		src/moc/moc_MasterToolBars.cpp \
+		src/moc/moc_NavigatorGui.cpp \
 		src/moc/moc_NewFileGui.cpp \
 		src/moc/moc_NewFilePage_1.cpp \
 		src/moc/moc_NewFilePage_2.cpp \
@@ -194,6 +195,7 @@ OBJECTS       = build/Debug/GNU-Linux-x86/Class_Source_Template.o \
 		build/Debug/GNU-Linux-x86/moc_MasterGui.o \
 		build/Debug/GNU-Linux-x86/moc_MasterMenus.o \
 		build/Debug/GNU-Linux-x86/moc_MasterToolBars.o \
+		build/Debug/GNU-Linux-x86/moc_NavigatorGui.o \
 		build/Debug/GNU-Linux-x86/moc_NewFileGui.o \
 		build/Debug/GNU-Linux-x86/moc_NewFilePage_1.o \
 		build/Debug/GNU-Linux-x86/moc_NewFilePage_2.o \
@@ -475,9 +477,9 @@ qrc_scout.cpp: resources/scout/scout.qrc \
 		resources/scout/project/test.txt
 	/usr/lib/x86_64-linux-gnu/qt5/bin/rcc -name scout resources/scout/scout.qrc -o qrc_scout.cpp
 
-compiler_moc_header_make_all: src/moc/moc_CentralGui.cpp src/moc/moc_Directory.cpp src/moc/moc_FileGui.cpp src/moc/moc_FileTreeGui.cpp src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewFilePage_1.cpp src/moc/moc_NewFilePage_2.cpp src/moc/moc_NewFilePage_3.cpp src/moc/moc_NewFilePage_4.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_NewProjectPage_1.cpp src/moc/moc_NewProjectPage_2.cpp src/moc/moc_NewProjectPage_3.cpp src/moc/moc_NewProjectPage_4.cpp src/moc/moc_OpenProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_OutputGui.cpp src/moc/moc_PhysicalAttribLog.cpp src/moc/moc_RunGui.cpp src/moc/moc_RunPage_1.cpp src/moc/moc_RunPage_2.cpp src/moc/moc_RunPage_3.cpp src/moc/moc_ScoutGui.cpp src/moc/moc_SearchWidget.cpp src/moc/moc_TabGui.cpp src/moc/moc_Terminal.cpp
+compiler_moc_header_make_all: src/moc/moc_CentralGui.cpp src/moc/moc_Directory.cpp src/moc/moc_FileGui.cpp src/moc/moc_FileTreeGui.cpp src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NavigatorGui.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewFilePage_1.cpp src/moc/moc_NewFilePage_2.cpp src/moc/moc_NewFilePage_3.cpp src/moc/moc_NewFilePage_4.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_NewProjectPage_1.cpp src/moc/moc_NewProjectPage_2.cpp src/moc/moc_NewProjectPage_3.cpp src/moc/moc_NewProjectPage_4.cpp src/moc/moc_OpenProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_OutputGui.cpp src/moc/moc_PhysicalAttribLog.cpp src/moc/moc_RunGui.cpp src/moc/moc_RunPage_1.cpp src/moc/moc_RunPage_2.cpp src/moc/moc_RunPage_3.cpp src/moc/moc_ScoutGui.cpp src/moc/moc_SearchWidget.cpp src/moc/moc_TabGui.cpp src/moc/moc_Terminal.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) src/moc/moc_CentralGui.cpp src/moc/moc_Directory.cpp src/moc/moc_FileGui.cpp src/moc/moc_FileTreeGui.cpp src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewFilePage_1.cpp src/moc/moc_NewFilePage_2.cpp src/moc/moc_NewFilePage_3.cpp src/moc/moc_NewFilePage_4.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_NewProjectPage_1.cpp src/moc/moc_NewProjectPage_2.cpp src/moc/moc_NewProjectPage_3.cpp src/moc/moc_NewProjectPage_4.cpp src/moc/moc_OpenProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_OutputGui.cpp src/moc/moc_PhysicalAttribLog.cpp src/moc/moc_RunGui.cpp src/moc/moc_RunPage_1.cpp src/moc/moc_RunPage_2.cpp src/moc/moc_RunPage_3.cpp src/moc/moc_ScoutGui.cpp src/moc/moc_SearchWidget.cpp src/moc/moc_TabGui.cpp src/moc/moc_Terminal.cpp
+	-$(DEL_FILE) src/moc/moc_CentralGui.cpp src/moc/moc_Directory.cpp src/moc/moc_FileGui.cpp src/moc/moc_FileTreeGui.cpp src/moc/moc_Highlighter.cpp src/moc/moc_MasterActions.cpp src/moc/moc_MasterGui.cpp src/moc/moc_MasterMenus.cpp src/moc/moc_MasterToolBars.cpp src/moc/moc_NavigatorGui.cpp src/moc/moc_NewFileGui.cpp src/moc/moc_NewFilePage_1.cpp src/moc/moc_NewFilePage_2.cpp src/moc/moc_NewFilePage_3.cpp src/moc/moc_NewFilePage_4.cpp src/moc/moc_NewProjectGui.cpp src/moc/moc_NewProjectPage_1.cpp src/moc/moc_NewProjectPage_2.cpp src/moc/moc_NewProjectPage_3.cpp src/moc/moc_NewProjectPage_4.cpp src/moc/moc_OpenProjectGui.cpp src/moc/moc_OpeningGui.cpp src/moc/moc_OutputGui.cpp src/moc/moc_PhysicalAttribLog.cpp src/moc/moc_RunGui.cpp src/moc/moc_RunPage_1.cpp src/moc/moc_RunPage_2.cpp src/moc/moc_RunPage_3.cpp src/moc/moc_ScoutGui.cpp src/moc/moc_SearchWidget.cpp src/moc/moc_TabGui.cpp src/moc/moc_Terminal.cpp
 src/moc/moc_CentralGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qwidget.h \
 		/usr/include/qt5/QtGui/qwindowdefs.h \
@@ -642,14 +644,24 @@ src/moc/moc_CentralGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		src/TreeItemIconInit.h \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
+		src/NavigatorGui.h \
+		/usr/include/qt5/QtWidgets/QListWidget \
+		/usr/include/qt5/QtWidgets/qlistwidget.h \
+		/usr/include/qt5/QtWidgets/qlistview.h \
+		/usr/include/qt5/QtWidgets/QPushButton \
+		/usr/include/qt5/QtWidgets/qpushbutton.h \
+		/usr/include/qt5/QtWidgets/qabstractbutton.h \
+		src/SearchWidget.h \
+		/usr/include/qt5/QtWidgets/QLineEdit \
+		/usr/include/qt5/QtWidgets/qlineedit.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
 		src/OutputGui.h \
 		/usr/include/qt5/QtWidgets/QTextEdit \
 		/usr/include/qt5/QtWidgets/qtextedit.h \
 		/usr/include/qt5/QtGui/qtextdocument.h \
-		/usr/include/qt5/QtGui/qtextoption.h \
-		/usr/include/qt5/QtGui/qtextcursor.h \
-		/usr/include/qt5/QtGui/qtextformat.h \
-		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QVector \
 		src/CentralGui.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/CentralGui.h -o src/moc/moc_CentralGui.cpp
@@ -2056,6 +2068,8 @@ src/moc/moc_MasterGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
 		/usr/include/qt5/QtWidgets/qlabel.h \
+		src/NavigatorGui.h \
+		src/SearchWidget.h \
 		src/OutputGui.h \
 		src/MasterMenus.h \
 		src/MasterGui.h
@@ -2914,6 +2928,156 @@ src/moc/moc_MasterToolBars.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		src/Build.h \
 		src/MasterToolBars.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/MasterToolBars.h -o src/moc/moc_MasterToolBars.cpp
+
+src/moc/moc_NavigatorGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
+		/usr/include/qt5/QtWidgets/qwidget.h \
+		/usr/include/qt5/QtGui/qwindowdefs.h \
+		/usr/include/qt5/QtCore/qglobal.h \
+		/usr/include/qt5/QtCore/qconfig.h \
+		/usr/include/qt5/QtCore/qfeatures.h \
+		/usr/include/qt5/QtCore/qsystemdetection.h \
+		/usr/include/qt5/QtCore/qprocessordetection.h \
+		/usr/include/qt5/QtCore/qcompilerdetection.h \
+		/usr/include/qt5/QtCore/qglobalstatic.h \
+		/usr/include/qt5/QtCore/qatomic.h \
+		/usr/include/qt5/QtCore/qbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_bootstrap.h \
+		/usr/include/qt5/QtCore/qgenericatomic.h \
+		/usr/include/qt5/QtCore/qatomic_msvc.h \
+		/usr/include/qt5/QtCore/qatomic_integrity.h \
+		/usr/include/qt5/QtCore/qoldbasicatomic.h \
+		/usr/include/qt5/QtCore/qatomic_vxworks.h \
+		/usr/include/qt5/QtCore/qatomic_power.h \
+		/usr/include/qt5/QtCore/qatomic_alpha.h \
+		/usr/include/qt5/QtCore/qatomic_armv7.h \
+		/usr/include/qt5/QtCore/qatomic_armv6.h \
+		/usr/include/qt5/QtCore/qatomic_armv5.h \
+		/usr/include/qt5/QtCore/qatomic_bfin.h \
+		/usr/include/qt5/QtCore/qatomic_ia64.h \
+		/usr/include/qt5/QtCore/qatomic_mips.h \
+		/usr/include/qt5/QtCore/qatomic_s390.h \
+		/usr/include/qt5/QtCore/qatomic_sh4a.h \
+		/usr/include/qt5/QtCore/qatomic_sparc.h \
+		/usr/include/qt5/QtCore/qatomic_gcc.h \
+		/usr/include/qt5/QtCore/qatomic_x86.h \
+		/usr/include/qt5/QtCore/qatomic_cxx11.h \
+		/usr/include/qt5/QtCore/qatomic_unix.h \
+		/usr/include/qt5/QtCore/qmutex.h \
+		/usr/include/qt5/QtCore/qlogging.h \
+		/usr/include/qt5/QtCore/qflags.h \
+		/usr/include/qt5/QtCore/qtypeinfo.h \
+		/usr/include/qt5/QtCore/qtypetraits.h \
+		/usr/include/qt5/QtCore/qsysinfo.h \
+		/usr/include/qt5/QtCore/qobjectdefs.h \
+		/usr/include/qt5/QtCore/qnamespace.h \
+		/usr/include/qt5/QtCore/qobjectdefs_impl.h \
+		/usr/include/qt5/QtGui/qwindowdefs_win.h \
+		/usr/include/qt5/QtCore/qobject.h \
+		/usr/include/qt5/QtCore/qstring.h \
+		/usr/include/qt5/QtCore/qchar.h \
+		/usr/include/qt5/QtCore/qbytearray.h \
+		/usr/include/qt5/QtCore/qrefcount.h \
+		/usr/include/qt5/QtCore/qarraydata.h \
+		/usr/include/qt5/QtCore/qstringbuilder.h \
+		/usr/include/qt5/QtCore/qlist.h \
+		/usr/include/qt5/QtCore/qalgorithms.h \
+		/usr/include/qt5/QtCore/qiterator.h \
+		/usr/include/qt5/QtCore/qcoreevent.h \
+		/usr/include/qt5/QtCore/qscopedpointer.h \
+		/usr/include/qt5/QtCore/qmetatype.h \
+		/usr/include/qt5/QtCore/qvarlengtharray.h \
+		/usr/include/qt5/QtCore/qcontainerfwd.h \
+		/usr/include/qt5/QtCore/qisenum.h \
+		/usr/include/qt5/QtCore/qobject_impl.h \
+		/usr/include/qt5/QtCore/qmargins.h \
+		/usr/include/qt5/QtCore/qrect.h \
+		/usr/include/qt5/QtCore/qsize.h \
+		/usr/include/qt5/QtCore/qpoint.h \
+		/usr/include/qt5/QtGui/qpaintdevice.h \
+		/usr/include/qt5/QtGui/qpalette.h \
+		/usr/include/qt5/QtGui/qcolor.h \
+		/usr/include/qt5/QtGui/qrgb.h \
+		/usr/include/qt5/QtCore/qstringlist.h \
+		/usr/include/qt5/QtCore/qdatastream.h \
+		/usr/include/qt5/QtCore/qiodevice.h \
+		/usr/include/qt5/QtCore/qpair.h \
+		/usr/include/qt5/QtCore/qregexp.h \
+		/usr/include/qt5/QtCore/qstringmatcher.h \
+		/usr/include/qt5/QtGui/qbrush.h \
+		/usr/include/qt5/QtCore/qvector.h \
+		/usr/include/qt5/QtGui/qmatrix.h \
+		/usr/include/qt5/QtGui/qpolygon.h \
+		/usr/include/qt5/QtGui/qregion.h \
+		/usr/include/qt5/QtCore/qline.h \
+		/usr/include/qt5/QtGui/qtransform.h \
+		/usr/include/qt5/QtGui/qpainterpath.h \
+		/usr/include/qt5/QtGui/qimage.h \
+		/usr/include/qt5/QtGui/qpixmap.h \
+		/usr/include/qt5/QtCore/qsharedpointer.h \
+		/usr/include/qt5/QtCore/qshareddata.h \
+		/usr/include/qt5/QtCore/qsharedpointer_impl.h \
+		/usr/include/qt5/QtCore/qhash.h \
+		/usr/include/qt5/QtGui/qfont.h \
+		/usr/include/qt5/QtGui/qfontmetrics.h \
+		/usr/include/qt5/QtGui/qfontinfo.h \
+		/usr/include/qt5/QtWidgets/qsizepolicy.h \
+		/usr/include/qt5/QtGui/qcursor.h \
+		/usr/include/qt5/QtGui/qkeysequence.h \
+		/usr/include/qt5/QtGui/qevent.h \
+		/usr/include/qt5/QtCore/qvariant.h \
+		/usr/include/qt5/QtCore/qmap.h \
+		/usr/include/qt5/QtCore/qdebug.h \
+		/usr/include/qt5/QtCore/qtextstream.h \
+		/usr/include/qt5/QtCore/qlocale.h \
+		/usr/include/qt5/QtCore/qset.h \
+		/usr/include/qt5/QtCore/qcontiguouscache.h \
+		/usr/include/qt5/QtCore/qurl.h \
+		/usr/include/qt5/QtCore/qurlquery.h \
+		/usr/include/qt5/QtCore/qfile.h \
+		/usr/include/qt5/QtCore/qfiledevice.h \
+		/usr/include/qt5/QtGui/qvector2d.h \
+		/usr/include/qt5/QtGui/qtouchdevice.h \
+		/usr/include/qt5/QtWidgets/QListWidget \
+		/usr/include/qt5/QtWidgets/qlistwidget.h \
+		/usr/include/qt5/QtWidgets/qlistview.h \
+		/usr/include/qt5/QtWidgets/qabstractitemview.h \
+		/usr/include/qt5/QtWidgets/qabstractscrollarea.h \
+		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtCore/qabstractitemmodel.h \
+		/usr/include/qt5/QtCore/qitemselectionmodel.h \
+		/usr/include/qt5/QtWidgets/qabstractitemdelegate.h \
+		/usr/include/qt5/QtWidgets/qstyleoption.h \
+		/usr/include/qt5/QtWidgets/qabstractspinbox.h \
+		/usr/include/qt5/QtGui/qvalidator.h \
+		/usr/include/qt5/QtCore/qregularexpression.h \
+		/usr/include/qt5/QtGui/qicon.h \
+		/usr/include/qt5/QtWidgets/qslider.h \
+		/usr/include/qt5/QtWidgets/qabstractslider.h \
+		/usr/include/qt5/QtWidgets/qstyle.h \
+		/usr/include/qt5/QtWidgets/qtabbar.h \
+		/usr/include/qt5/QtWidgets/qtabwidget.h \
+		/usr/include/qt5/QtWidgets/qrubberband.h \
+		/usr/include/qt5/QtWidgets/QSplitter \
+		/usr/include/qt5/QtWidgets/qsplitter.h \
+		/usr/include/qt5/QtWidgets/QTabWidget \
+		/usr/include/qt5/QtWidgets/QPushButton \
+		/usr/include/qt5/QtWidgets/qpushbutton.h \
+		/usr/include/qt5/QtWidgets/qabstractbutton.h \
+		/usr/include/qt5/QtWidgets/QGridLayout \
+		/usr/include/qt5/QtWidgets/qgridlayout.h \
+		/usr/include/qt5/QtWidgets/qlayout.h \
+		/usr/include/qt5/QtWidgets/qlayoutitem.h \
+		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		src/SearchWidget.h \
+		/usr/include/qt5/QtWidgets/QLineEdit \
+		/usr/include/qt5/QtWidgets/qlineedit.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
+		/usr/include/qt5/QtCore/QString \
+		src/NavigatorGui.h
+	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/NavigatorGui.h -o src/moc/moc_NavigatorGui.cpp
 
 src/moc/moc_NewFileGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qwidget.h \
@@ -6547,14 +6711,24 @@ build/Debug/GNU-Linux-x86/CentralGui.o: src/CentralGui.cpp src/CentralGui.h \
 		src/TreeItemIconInit.h \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
+		src/NavigatorGui.h \
+		/usr/include/qt5/QtWidgets/QListWidget \
+		/usr/include/qt5/QtWidgets/qlistwidget.h \
+		/usr/include/qt5/QtWidgets/qlistview.h \
+		/usr/include/qt5/QtWidgets/QPushButton \
+		/usr/include/qt5/QtWidgets/qpushbutton.h \
+		/usr/include/qt5/QtWidgets/qabstractbutton.h \
+		src/SearchWidget.h \
+		/usr/include/qt5/QtWidgets/QLineEdit \
+		/usr/include/qt5/QtWidgets/qlineedit.h \
+		/usr/include/qt5/QtGui/qtextcursor.h \
+		/usr/include/qt5/QtGui/qtextformat.h \
+		/usr/include/qt5/QtGui/qpen.h \
+		/usr/include/qt5/QtGui/qtextoption.h \
 		src/OutputGui.h \
 		/usr/include/qt5/QtWidgets/QTextEdit \
 		/usr/include/qt5/QtWidgets/qtextedit.h \
 		/usr/include/qt5/QtGui/qtextdocument.h \
-		/usr/include/qt5/QtGui/qtextoption.h \
-		/usr/include/qt5/QtGui/qtextcursor.h \
-		/usr/include/qt5/QtGui/qtextformat.h \
-		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QVector
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/CentralGui.o src/CentralGui.cpp
 
@@ -8437,6 +8611,8 @@ build/Debug/GNU-Linux-x86/MasterGui.o: src/MasterGui.cpp src/MasterGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
 		/usr/include/qt5/QtWidgets/qlabel.h \
+		src/NavigatorGui.h \
+		src/SearchWidget.h \
 		src/OutputGui.h \
 		src/MasterMenus.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/MasterGui.o src/MasterGui.cpp
@@ -15137,6 +15313,8 @@ build/Debug/GNU-Linux-x86/main.o: src/main.cpp /usr/include/qt5/QtWidgets/QAppli
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
 		/usr/include/qt5/QtWidgets/qlabel.h \
+		src/NavigatorGui.h \
+		src/SearchWidget.h \
 		src/OutputGui.h \
 		src/MasterMenus.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/main.o src/main.cpp
@@ -15170,6 +15348,9 @@ build/Debug/GNU-Linux-x86/moc_MasterMenus.o: src/moc/moc_MasterMenus.cpp
 
 build/Debug/GNU-Linux-x86/moc_MasterToolBars.o: src/moc/moc_MasterToolBars.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/moc_MasterToolBars.o src/moc/moc_MasterToolBars.cpp
+
+build/Debug/GNU-Linux-x86/moc_NavigatorGui.o: src/moc/moc_NavigatorGui.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/moc_NavigatorGui.o src/moc/moc_NavigatorGui.cpp
 
 build/Debug/GNU-Linux-x86/moc_NewFileGui.o: src/moc/moc_NewFileGui.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/moc_NewFileGui.o src/moc/moc_NewFileGui.cpp

@@ -19,6 +19,7 @@
 
 #include "TabGui.h"
 #include "FileTreeGui.h"
+#include "NavigatorGui.h"
 #include "OutputGui.h"
 
 using namespace std;
@@ -30,6 +31,7 @@ class CentralGui : public QWidget
     private:
         TabGui* centralTabsPtr;
         FileTreeGui* fileTreeGuiPtr;
+        NavigatorGui* navigatorGuiPtr;
         OutputGui* outputGuiPtr;
         
         QGridLayout* outerLayout;
@@ -43,6 +45,8 @@ class CentralGui : public QWidget
         TabGui* getCentralTabsPtr();
         void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
         FileTreeGui* getFileTreeGuiPtr();
+        void setNavigatorGuiPtr(NavigatorGui* navigatorGuiPtr);
+        NavigatorGui* getNavigatorGuiPtr();
         void setOutputGuiPtr(OutputGui* outputGuiPtr);
         OutputGui* getOutputGuiPtr();
         void passMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);

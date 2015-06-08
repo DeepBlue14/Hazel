@@ -3,16 +3,16 @@
 
 NavigatorGui::NavigatorGui(QWidget* parent) : QWidget(parent)
 {
-    splitterPtr = new QSplitter();
-    listWidgetPtr = new QListWidget(splitterPtr);
+    listWidgetPtr = new QListWidget();
     searchWidgetPtr = new SearchWidget();
     activateSearchBtn = new QPushButton("Go");
     fileStrPtr = new QString();
     masterTabWidgetPtr = new QTabWidget();
         
-    splitterPtr->setOrientation(Qt::Vertical);
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(splitterPtr, 0, 0);
+    outerLayout->addWidget(searchWidgetPtr, 0, 0);
+    outerLayout->addWidget(activateSearchBtn, 0, 1);
+    outerLayout->addWidget(listWidgetPtr, 1, 0, 1, 0);
     
     this->setLayout(outerLayout);
 }

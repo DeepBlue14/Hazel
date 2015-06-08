@@ -5,12 +5,14 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
 {
     centralTabsPtr = new TabGui();
     fileTreeGuiPtr = new FileTreeGui();
+    navigatorGuiPtr = new NavigatorGui();
     outputGuiPtr = new OutputGui();
     
     QSplitter* splitter0 = new QSplitter();
     splitter0->setOrientation(Qt::Horizontal);
     splitter0->addWidget(fileTreeGuiPtr);
     splitter0->addWidget(centralTabsPtr);
+    splitter0->addWidget(navigatorGuiPtr);
     
     QSplitter* splitter1 = new QSplitter();
     splitter1->setOrientation(Qt::Vertical);
@@ -45,6 +47,18 @@ void CentralGui::setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr)
 FileTreeGui* CentralGui::getFileTreeGuiPtr()
 {
     return fileTreeGuiPtr;
+}
+
+
+void CentralGui::setNavigatorGuiPtr(NavigatorGui* navigatorGuiPtr)
+{
+    this->navigatorGuiPtr = navigatorGuiPtr;
+}
+
+
+NavigatorGui* CentralGui::getNavigatorGuiPtr()
+{
+    return navigatorGuiPtr;
 }
 
 
