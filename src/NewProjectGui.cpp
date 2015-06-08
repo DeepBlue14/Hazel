@@ -1,5 +1,15 @@
 #include "NewProjectGui.h"
 
+/*
+ * #!/bin/bash
+ * echo 'catkin_make ' $1 $2
+ * 
+ * ./test.bash --pkg test_node
+ * > catkin_make --pkg test_node
+ * 
+ * ./test.bash
+ * > catkin_make
+ */
 
 NewProjectGui::NewProjectGui(QWidget* parent) : QWidget(parent)
 {
@@ -88,6 +98,11 @@ void NewProjectGui::handleFinishBtnSlot()
     FileTreeGui::setProjectRootAbsPathStrPtr(new QString(*newProjectPage_2Ptr->getProjectLocStrPtr()
                                                        + "/"
                                                        + *newProjectPage_2Ptr->getProjectNameStrPtr() ));
+    
+    
+    QString tmp5(*newProjectPage_2Ptr->getProjectLocStrPtr() + "/" + *newProjectPage_2Ptr->getProjectNameStrPtr() );
+    genRideProjDepends(new QString(tmp5) );
+    
     FileTreeGui::refresh();
 }
 
@@ -247,6 +262,42 @@ void NewProjectGui::unloadPage_4()
     outerLayout->removeWidget(newProjectPage_4Ptr);
     newProjectPage_4Ptr->setVisible(false);
     newProjectPage_4Ptr->setEnabled(false);
+}
+
+
+void NewProjectGui::genRideProjDepends(QString* projectRootStrPtr)
+{
+    QProcess* process = new QProcess();
+    process->setWorkingDirectory(*projectRootStrPtr);
+    QDir::setCurrent(*projectRootStrPtr);
+    cout << "cCCreateing at: " << projectRootStrPtr->toStdString() << endl;
+    
+    process->execute("mkdir", *(new QStringList(".rideProject")) );
+    process->execute("mkdir", *(new QStringList(".rideProject/resources")) );
+    process->execute("mkdir", *(new QStringList(".rideProject/resources/project")) );
+    process->execute("touch", *(new QStringList(".rideProject/resources/project/configurations.xml")) );
+    process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts")) );
+    //process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts/create")) );
+    process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts/build")) );
+    //process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts/run")) );
+    
+    //create build file
+    RideFile* rideFile = new RideFile(".rideProject/resources/project/scripts/build/build.bash");
+    rideFile->openRdWrFile();
+    rideFile->write("****************************");
+    rideFile->write("* AUTO-GENERATED FILE");
+    rideFile->write("****************************");
+    rideFile->write("\n");
+    rideFile->write("#!/bin/bash");
+    rideFile->write("catkin_make $1");
+    
+    cout << "Successfully ended file creation sequence" << endl;
+    this->close();
+    
+    process->execute("mkdir", *(new QStringList(".rideProject/resources/scout")) );
+    process->execute("touch", *(new QStringList(".rideProject/resources/scout/scout.qrc")) );
+    process->execute("mkdir", *(new QStringList(".rideProject/resources/scout/libraries")) );
+    process->execute("mkdir", *(new QStringList(".rideProject/resources/scout/project")) );
 }
 
 

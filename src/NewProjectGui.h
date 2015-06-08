@@ -25,6 +25,7 @@
 #include "NewProjectPage_2.h"
 #include "NewProjectPage_3.h"
 #include "NewProjectPage_4.h"
+#include "RideFile.h"
 #include "FileTreeGui.h"
 
 class NewProjectGui : public QWidget
@@ -76,6 +77,7 @@ class NewProjectGui : public QWidget
         void unloadPage_3();
         void loadPage_4();
         void unloadPage_4();
+        void genRideProjDepends(QString* projectRootStrPtr);
         QString* toString();
         ~NewProjectGui();
     

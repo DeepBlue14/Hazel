@@ -183,39 +183,12 @@ void MasterActions::handleBuildActionSlot()
     cout << "At MasterActions::handleBuildActionSlot(), assuming that ros workspace"
          << "\nis two directories above project root dir" << endl;
     QProcess* build = new QProcess();
-    QStringList tmp; tmp.push_back("./../../devel/setup.bash");
     
-    //QStringList* tmp2 = new QStringList();
-    //tmp2->push_back("--pkg");
-    //tmp2->push_back("test_node");
+    //QDir dir(*openProjectGuiPtr->getProjectStrPtr() );
     
+    //cout << "exec? " << build->execute("./buildScript.bash") << endl;
     
-    QDir dir(*openProjectGuiPtr->getProjectStrPtr() );
-    //dir.cdUp();
-    //dir.cdUp();
-    //cout << "launching from: " << dir.absolutePath().toStdString() << endl;
-    
-    build->setWorkingDirectory(dir.absolutePath() );
-    QDir::setCurrent(dir.absolutePath() );
-    cout << "exec? " << build->execute("source", tmp) << endl;
-    //cout << "exec? " << build->startDetached("catkin_make"/*, *tmp2*/) << endl;
-    
-    
-    build->waitForFinished();
-    QString output(build->readAllStandardOutput());
-    cout << output.toStdString() << endl;
-    cout << "over" << endl;
 
-    /*
-    QStringList tmp3;
-    tmp3.push_back("test");
-    cout << "About to make from: " << dir.path().toStdString() << endl;
-    build->setWorkingDirectory(dir.absolutePath() );
-    QDir::setCurrent(dir.absolutePath() );
-    build->startDetached("mkdir", tmp3);
-    */
-    //qDebug() << build->errorString() << endl;
-    //buildPtr->runBuildCmd();
 }
 
 

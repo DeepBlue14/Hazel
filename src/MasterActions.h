@@ -14,6 +14,7 @@
 #include <QAction>
 #include <QFile>
 #include <QProcess>
+#include <QProcessEnvironment>
 #include <QDebug>
 
 #include <iostream>
