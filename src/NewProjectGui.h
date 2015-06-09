@@ -14,6 +14,7 @@
 #include <QListWidget>
 #include <QPushButton>
 #include <QStringList>
+#include <QByteArray>
 #include <QFile>
 #include <QIcon>
 #include <QProcess>
@@ -77,7 +78,7 @@ class NewProjectGui : public QWidget
         void unloadPage_3();
         void loadPage_4();
         void unloadPage_4();
-        void genRideProjDepends(QString* projectRootStrPtr);
+        void genRideProjDepends(QProcess* process, QString* projectRootStrPtr);
         QString* toString();
         ~NewProjectGui();
     

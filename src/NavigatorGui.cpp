@@ -10,10 +10,10 @@ NavigatorGui::NavigatorGui(QWidget* parent) : QWidget(parent)
     masterTabWidgetPtr = new QTabWidget();
         
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(searchWidgetPtr, 0, 0);
-    outerLayout->addWidget(activateSearchBtn, 0, 1);
-    outerLayout->addWidget(listWidgetPtr, 1, 0, 1, 0);
-    
+    outerLayout->addWidget(listWidgetPtr, 0, 0, 1, 0);
+    outerLayout->addWidget(searchWidgetPtr, 1, 0);
+    outerLayout->addWidget(activateSearchBtn, 1, 1);
+
     this->setLayout(outerLayout);
 }
 

@@ -101,7 +101,7 @@ void NewProjectGui::handleFinishBtnSlot()
     
     
     QString tmp5(*newProjectPage_2Ptr->getProjectLocStrPtr() + "/" + *newProjectPage_2Ptr->getProjectNameStrPtr() );
-    genRideProjDepends(new QString(tmp5) );
+    genRideProjDepends(process, new QString(tmp5) );
     
     FileTreeGui::refresh();
 }
@@ -265,24 +265,50 @@ void NewProjectGui::unloadPage_4()
 }
 
 
-void NewProjectGui::genRideProjDepends(QString* projectRootStrPtr)
+void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootStrPtr)
 {
-    QProcess* process = new QProcess();
-    process->setWorkingDirectory(*projectRootStrPtr);
+    process->waitForFinished();
+    process->waitForFinished();
+    QProcess* proc = new QProcess();
+
+    proc->setWorkingDirectory(*projectRootStrPtr);
     QDir::setCurrent(*projectRootStrPtr);
     cout << "cCCreateing at: " << projectRootStrPtr->toStdString() << endl;
     
-    process->execute("mkdir", *(new QStringList(".rideProject")) );
-    process->execute("mkdir", *(new QStringList(".rideProject/resources")) );
-    process->execute("mkdir", *(new QStringList(".rideProject/resources/project")) );
-    process->execute("touch", *(new QStringList(".rideProject/resources/project/configurations.xml")) );
-    process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts")) );
-    //process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts/create")) );
-    process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts/build")) );
-    //process->execute("mkdir", *(new QStringList(".rideProject/resources/project/scripts/run")) );
+    //----------------
+    //proc->start("/home/james/NetBeansProjects/ride/resources/setup.bash");
+    QDir tmpdir(*projectRootStrPtr);
+    tmpdir.cdUp();
+    tmpdir.cdUp();
+    QString tmpstr(tmpdir.absolutePath());
+    RideFile* tmp = new RideFile("/tmp/setup.bash");
+    tmp->openRdWrFile();
+    tmp->write("#!/bin/bash\nsource ");
+    QByteArray tmpba;tmpba.append(tmpstr);
+    tmp->write(tmpba);
+    tmp->write("/devel/setup.bash\necho 'finished'");
+    tmp->close();
+    
+    QStringList tmpstrlst; tmpstrlst.push_back("+x"); tmpstrlst.push_back("/tmp/setup.bash");
+    proc->execute("chmod", tmpstrlst);
+    proc->waitForFinished();
+    proc->execute("/tmp/setup.bash");
+    //tmp->remove();
+    //-----------------
+    
+    proc->setWorkingDirectory(*projectRootStrPtr);
+    QDir::setCurrent(*projectRootStrPtr);
+    process->startDetached("mkdir", *(new QStringList("./.rideProject")) );
+    /*process->execute("mkdir", *(new QStringList("./.rideProject/resources")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/project")) );
+    process->execute("touch", *(new QStringList("./.rideProject/resources/project/configurations.xml")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts")) );
+    //process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/create")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/build")) );
+    //process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/run")) );
     
     //create build file
-    RideFile* rideFile = new RideFile(".rideProject/resources/project/scripts/build/build.bash");
+    RideFile* rideFile = new RideFile("./.rideProject/resources/project/scripts/build/build.bash");
     rideFile->openRdWrFile();
     rideFile->write("****************************");
     rideFile->write("* AUTO-GENERATED FILE");
@@ -294,10 +320,11 @@ void NewProjectGui::genRideProjDepends(QString* projectRootStrPtr)
     cout << "Successfully ended file creation sequence" << endl;
     this->close();
     
-    process->execute("mkdir", *(new QStringList(".rideProject/resources/scout")) );
-    process->execute("touch", *(new QStringList(".rideProject/resources/scout/scout.qrc")) );
-    process->execute("mkdir", *(new QStringList(".rideProject/resources/scout/libraries")) );
-    process->execute("mkdir", *(new QStringList(".rideProject/resources/scout/project")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/scout")) );
+    process->execute("touch", *(new QStringList("./.rideProject/resources/scout/scout.qrc")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/scout/libraries")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/scout/project")) );
+*/
 }
 
 
