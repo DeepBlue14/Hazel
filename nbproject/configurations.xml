@@ -8,12 +8,13 @@
         <logicalFolder name="f2" displayName="backend" projectFiles="true">
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
-          <itemPath>src/EnvCmds.h</itemPath>
           <itemPath>src/ModifyCMakeLists.h</itemPath>
           <itemPath>src/ModifyManifest.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
+          <itemPath>src/RProcess.h</itemPath>
           <itemPath>src/RideFile.h</itemPath>
+          <itemPath>src/RideNs.h</itemPath>
           <itemPath>src/SaveAll.h</itemPath>
           <itemPath>src/ScoutData.h</itemPath>
           <itemPath>src/ScoutFileDat.h</itemPath>
@@ -96,12 +97,13 @@
         <logicalFolder name="f1" displayName="backend" projectFiles="true">
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
-          <itemPath>src/EnvCmds.cpp</itemPath>
           <itemPath>src/ModifyCMakeLists.cpp</itemPath>
           <itemPath>src/ModifyManifest.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
+          <itemPath>src/RProcess.cpp</itemPath>
           <itemPath>src/RideFile.cpp</itemPath>
+          <itemPath>src/RideNs.cpp</itemPath>
           <itemPath>src/SaveAll.cpp</itemPath>
           <itemPath>src/ScoutData.cpp</itemPath>
           <itemPath>src/ScoutFileDat.cpp</itemPath>
@@ -219,10 +221,6 @@
       </item>
       <item path="src/Directory.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/EnvCmds.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/EnvCmds.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
@@ -331,6 +329,10 @@
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RProcess.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RProcess.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
@@ -338,6 +340,10 @@
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideNs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideNs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -475,10 +481,6 @@
       </item>
       <item path="src/Directory.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/EnvCmds.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/EnvCmds.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
@@ -587,6 +589,10 @@
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RProcess.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RProcess.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
@@ -594,6 +600,10 @@
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideFont.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideNs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideNs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

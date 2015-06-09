@@ -289,8 +289,8 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     tmp->write("/devel/setup.bash\necho 'finished'");
     tmp->close();
     
-    QStringList tmpstrlst; tmpstrlst.push_back("+x"); tmpstrlst.push_back("/tmp/setup.bash");
-    proc->execute("chmod", tmpstrlst);
+    QStringList tmpStrLst; tmpStrLst.push_back("+x"); tmpStrLst.push_back("/tmp/setup.bash");
+    proc->execute("chmod", tmpStrLst);
     proc->waitForFinished();
     proc->execute("/tmp/setup.bash");
     //tmp->remove();
@@ -299,23 +299,61 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     proc->setWorkingDirectory(*projectRootStrPtr);
     QDir::setCurrent(*projectRootStrPtr);
     process->startDetached("mkdir", *(new QStringList("./.rideProject")) );
-    /*process->execute("mkdir", *(new QStringList("./.rideProject/resources")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources")) );
     process->execute("mkdir", *(new QStringList("./.rideProject/resources/project")) );
     process->execute("touch", *(new QStringList("./.rideProject/resources/project/configurations.xml")) );
     process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts")) );
-    //process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/create")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/create")) );
     process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/build")) );
-    //process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/run")) );
+    process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/execute")) );
     
     //create build file
-    RideFile* rideFile = new RideFile("./.rideProject/resources/project/scripts/build/build.bash");
-    rideFile->openRdWrFile();
-    rideFile->write("****************************");
-    rideFile->write("* AUTO-GENERATED FILE");
-    rideFile->write("****************************");
-    rideFile->write("\n");
-    rideFile->write("#!/bin/bash");
-    rideFile->write("catkin_make $1");
+    RideFile* buildFile = new RideFile("./.rideProject/resources/project/scripts/build/build.bash");
+    buildFile->openRdWrFile();
+    buildFile->write("############################");
+    buildFile->write("\n# AUTO-GENERATED RIDE FILE #");
+    buildFile->write("\n############################");
+    buildFile->write("\n\n#!/bin/bash");
+    buildFile->write("\n\ncatkin_make $1");
+    buildFile->closeFile();
+    
+    setAbsPathToProjBuildFileStrPtr(buildFile->getAbsFilePathStrPtr() );
+    
+    //instead. use tmpstrlst->clear();
+    tmpStrLst.clear(); tmpStrLst.push_back("+x"); tmpStrLst.push_back("./.rideProject/resources/project/scripts/build/build.bash");
+    process->execute("chmod", tmpStrLst);
+    
+    //create rosrun file
+    RideFile* runFile = new RideFile("./.rideProject/resources/project/scripts/execute/run.bash");
+    runFile->openRdWrFile();
+    runFile->write("############################");
+    runFile->write("\n# AUTO-GENERATED RIDE FILE #");
+    runFile->write("\n############################");
+    runFile->write("\n\n#!/bin/bash");
+    runFile->write("\n\nrosrun $1 $2");
+    runFile->closeFile();
+    
+    setAbsPathToProjRunFileStrPtr(runFile->getAbsFilePathStrPtr() );
+    
+    tmpStrLst.clear(); tmpStrLst.push_back("+x"); tmpStrLst.push_back("./.rideProject/resources/project/scripts/execute/run.bash");
+    process->execute("chmod", tmpStrLst);
+    
+    //create roslaunch file
+    RideFile* launchFile = new RideFile();
+    launchFile->openRdWrFile();
+    launchFile->write("############################");
+    launchFile->write("\n# AUTO-GENERATED RIDE FILE #");
+    launchFile->write("\n############################");
+    launchFile->write("\n\n#!/bin/bash");
+    launchFile->write("\n\nroslaunch $1 $2");
+    launchFile->closeFile();
+    
+    setAbsPathToProjLaunchFileStrPtr(launchFile->getAbsFilePathStrPtr() );
+    
+    tmpStrLst.clear(); tmpStrLst.push_back("+x"); tmpStrLst.push_back("./.rideProject/resources/project/scripts/execute/launch.bash");
+    process->execute("chmod", tmpStrLst);
+    
+    
     
     cout << "Successfully ended file creation sequence" << endl;
     this->close();
@@ -324,7 +362,42 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     process->execute("touch", *(new QStringList("./.rideProject/resources/scout/scout.qrc")) );
     process->execute("mkdir", *(new QStringList("./.rideProject/resources/scout/libraries")) );
     process->execute("mkdir", *(new QStringList("./.rideProject/resources/scout/project")) );
-*/
+}
+
+
+void NewProjectGui::setAbsPathToProjBuildFileStrPtr(QString* absPathToProjBuildFileStrPtr)
+{
+    this->absPathToProjBuildFileStrPtr = absPathToProjBuildFileStrPtr;
+}
+
+
+QString* NewProjectGui::getAbsPathToProjBuildFileStrPtr()
+{
+    return absPathToProjBuildFileStrPtr;
+}
+
+
+void NewProjectGui::setAbsPathToProjRunFileStrPtr(QString* absPathToProjRunFileStrPtr)
+{
+    this->absPathToProjRunFileStrPtr = absPathToProjRunFileStrPtr;
+}
+
+
+QString* NewProjectGui::getAbsPathToProjRunFileStrPtr()
+{
+    return absPathToProjRunFileStrPtr;
+}
+
+
+void NewProjectGui::setAbsPathToProjLaunchFileStrPtr(QString* absPathToProjLaunchFileStrPtr)
+{
+    this->absPathToProjLaunchFileStrPtr = absPathToProjLaunchFileStrPtr;
+}
+
+
+QString* NewProjectGui::getAbsPathToProjLaunchFileStrPtr()
+{
+    return absPathToProjLaunchFileStrPtr;
 }
 
 

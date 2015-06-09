@@ -57,6 +57,11 @@ class NewProjectGui : public QWidget
         NewProjectPage_2* newProjectPage_2Ptr;
         NewProjectPage_3* newProjectPage_3Ptr;
         NewProjectPage_4* newProjectPage_4Ptr;
+        
+        QString* absPathToProjBuildFileStrPtr;
+        QString* absPathToProjRunFileStrPtr;
+        QString* absPathToProjLaunchFileStrPtr;
+        QString* absPathToProjCreateFileStrPtr;
     
     private slots:
         void handleBackBtnSlot();
@@ -79,6 +84,12 @@ class NewProjectGui : public QWidget
         void loadPage_4();
         void unloadPage_4();
         void genRideProjDepends(QProcess* process, QString* projectRootStrPtr);
+        void setAbsPathToProjBuildFileStrPtr(QString* absPathToProjBuildFileStrPtr);
+        QString* getAbsPathToProjBuildFileStrPtr();
+        void setAbsPathToProjRunFileStrPtr(QString* absPathToProjRunFileStrPtr);
+        QString* getAbsPathToProjRunFileStrPtr();
+        void setAbsPathToProjLaunchFileStrPtr(QString* absPathToProjLaunchFileStrPtr);
+        QString* getAbsPathToProjLaunchFileStrPtr();
         QString* toString();
         ~NewProjectGui();
     

@@ -180,13 +180,12 @@ void MasterActions::handleSetProjectConfigActionSlot()
 
 void MasterActions::handleBuildActionSlot()
 {
-    cout << "At MasterActions::handleBuildActionSlot(), assuming that ros workspace"
-         << "\nis two directories above project root dir" << endl;
+    cout << "At MasterActions::handleBuildActionSlot(), assuming that only"
+         << "one project has been opened/created" << endl;
     QProcess* build = new QProcess();
-    
-    //QDir dir(*openProjectGuiPtr->getProjectStrPtr() );
-    
-    //cout << "exec? " << build->execute("./buildScript.bash") << endl;
+    build->execute(*getNewProjectGuiPtr()->getAbsPathToProjBuildFileStrPtr() );
+    build->waitForFinished();
+    //build
     
 
 }
