@@ -70,7 +70,8 @@ class MasterActions : public QWidget
         QAction* navWestActionPtr;
         
         
-        QTabWidget* masterTabWidgetPtr;
+        QTabWidget* northTabWidgetPtr;
+        QTabWidget* southTabWidgetPtr;
         Highlighter* highlighter;
         
         NewFileGui* newFileGuiPtr;
@@ -116,8 +117,10 @@ class MasterActions : public QWidget
         MasterActions(QWidget* parent = 0);
         void initActions();
         
-        void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
-        QTabWidget* getMasterTabWidgetPtr();
+        void setNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr);
+        QTabWidget* getNorthTabWidgetPtr();
+        void setSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr);
+        QTabWidget* getSouthTabWidgetPtr();
         void setHighlighter(Highlighter* highlighter);
         Highlighter* getHighlighter();
         void setNewFileGuiPtr(NewFileGui* newFileGuiPtr);

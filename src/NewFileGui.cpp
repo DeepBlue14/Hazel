@@ -2,7 +2,7 @@
 #include "FileTreeGui.h"
 
 
-NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QWidget(parent), completer(0)
+NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* northTabWidgetPtr*/) : QWidget(parent), completer(0)
 {   
     this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
     this->setWindowTitle("Ride");
@@ -24,15 +24,15 @@ NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* masterTabWidgetPtr*/) : QW
 }
 
 
-void NewFileGui::setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+void NewFileGui::setNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr)
 {
-    this->masterTabWidgetPtr = masterTabWidgetPtr;
+    this->northTabWidgetPtr = northTabWidgetPtr;
 }
 
 
 QTabWidget* NewFileGui::getMasterTabWidgetPtr()
 {
-    return masterTabWidgetPtr;
+    return northTabWidgetPtr;
 }
 
 
@@ -115,7 +115,7 @@ void NewFileGui::handleFinishBtnSlot()
     QByteArray tmpBArr;
     tmpBArr.append(editor->toPlainText());
     editor->setPlainText(rideFile->readAll() );
-    masterTabWidgetPtr->addTab(editor, *newFilePage_4Ptr->getFileNameStrPtr()
+    northTabWidgetPtr->addTab(editor, *newFilePage_4Ptr->getFileNameStrPtr()
                                         + *newFilePage_4Ptr->getFileExtStrPtr());
     
     rideFile->setParallelFileGuiPtr(editor);

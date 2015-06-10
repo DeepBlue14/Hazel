@@ -33,7 +33,7 @@ class NavigatorGui : public QWidget
         QPushButton* activateSearchBtn;
         QString* fileStrPtr;
         
-        QTabWidget* masterTabWidgetPtr;
+        QTabWidget* westTabWidgetPtr;
         QGridLayout* outerLayout;
         
     private slots:
@@ -42,8 +42,8 @@ class NavigatorGui : public QWidget
     public:
         NavigatorGui(QWidget* parent = 0);
         void loadData();
-        void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
-        QTabWidget* getMasterTabWidgetPtr();
+        void setWestTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        QTabWidget* getWestTabWidgetPtr();
         ~NavigatorGui();
 };
 

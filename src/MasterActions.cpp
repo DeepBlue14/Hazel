@@ -126,7 +126,7 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
 void MasterActions::handleNewFileActionSlot()
 {
     newFileGuiPtr = new NewFileGui();
-    newFileGuiPtr->setMasterTabWidgetPtr(masterTabWidgetPtr);
+    newFileGuiPtr->setNorthTabWidgetPtr(northTabWidgetPtr);
     newFileGuiPtr->show();
 }
 
@@ -135,8 +135,8 @@ void MasterActions::handleNewTerminalActionSlot()
     cout << "New Terminal activated" << endl;
     
     Terminal* term = new Terminal();
-    masterTabWidgetPtr->addTab(term, tr("RosTerm"));
-    masterTabWidgetPtr->setCurrentIndex( (masterTabWidgetPtr->children().size() - 1) );
+    northTabWidgetPtr->addTab(term, tr("RosTerm"));
+    northTabWidgetPtr->setCurrentIndex( (northTabWidgetPtr->children().size() - 1) );
     term->start();
 }
 
@@ -235,7 +235,12 @@ void MasterActions::handleOutputSouthActionSlot()
 
 void MasterActions::handleTerminalSouthActionSlot()
 {
-    ;
+    cout << "New Terminal activated" << endl;
+    
+    Terminal* term = new Terminal();
+    southTabWidgetPtr->addTab(term, tr("RosTerm"));
+    
+    term->start();
 }
 
 
@@ -290,15 +295,27 @@ void MasterActions::initActions()
 }
 
 
-void MasterActions::setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+void MasterActions::setNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr)
 {
-    this->masterTabWidgetPtr = masterTabWidgetPtr;
+    this->northTabWidgetPtr = northTabWidgetPtr;
 }
 
 
-QTabWidget* MasterActions::getMasterTabWidgetPtr()
+QTabWidget* MasterActions::getNorthTabWidgetPtr()
 {
-    return masterTabWidgetPtr;
+    return northTabWidgetPtr;
+}
+
+
+void MasterActions::setSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr)
+{
+    this->southTabWidgetPtr = southTabWidgetPtr;
+}
+
+
+QTabWidget* MasterActions::getSouthTabWidgetPtr()
+{
+    return southTabWidgetPtr;
 }
 
 

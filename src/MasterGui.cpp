@@ -10,7 +10,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     //openingGui = new OpeningGui();
     masterMenus = new MasterMenus();
     centralGui = new CentralGui();
-    centralGui->passMasterTabWidgetPtr(masterActions->getMasterTabWidgetPtr() );
+    centralGui->passNorthTabWidgetPtr(masterActions->getNorthTabWidgetPtr() );
     
     masterToolBars->setMasterActionsPtr(masterActions);
     masterMenus->setMasterActionsPtr(masterActions);
@@ -19,7 +19,8 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     initToolBars();
 
     this->setCentralWidget(centralGui);
-    masterActions->setMasterTabWidgetPtr(centralGui->getCentralTabsPtr()->getTabWidget());
+    masterActions->setNorthTabWidgetPtr(centralGui->getNorthGuiPtr()->getTabWidget() );
+    masterActions->setSouthTabWidgetPtr(centralGui->getSouthGuiPtr()->getTabWidget() );
     masterActions->setFileTreeGuiPtr(centralGui->getFileTreeGuiPtr() ); // Pass ("tunnel") method
     
     this->resize(1000, 800);

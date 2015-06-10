@@ -65,7 +65,7 @@ private:
     QGridLayout* outerLayout;
     QHBoxLayout* buttonLayout;
     
-    QTabWidget* masterTabWidgetPtr;
+    QTabWidget* northTabWidgetPtr;
     Highlighter* highlighterPtr;
     FileGui* editor;
     QCompleter* completer;
@@ -86,7 +86,7 @@ private slots:
     
 public:
     NewFileGui(QWidget* parent = 0/*, QTabWidget* masterTabWidgetPtr = 0*/);
-    void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+    void setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
     QTabWidget* getMasterTabWidgetPtr();
     void setHighlighterPtr(Highlighter* highlighterPtr);
     Highlighter* getHighlighterPtr();

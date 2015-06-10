@@ -29,10 +29,10 @@ class CentralGui : public QWidget
     Q_OBJECT
             
     private:
-        TabGui* centralTabsPtr;
+        TabGui* northGuiPtr;
         FileTreeGui* fileTreeGuiPtr;
         NavigatorGui* navigatorGuiPtr;
-        OutputGui* outputGuiPtr;
+        OutputGui* southGuiPtr;
         
         QGridLayout* outerLayout;
         
@@ -41,15 +41,16 @@ class CentralGui : public QWidget
         
     public:
         CentralGui(QWidget* parent = 0);
-        void setCentralTabsPtr(TabGui* centralTabsPtr);
-        TabGui* getCentralTabsPtr();
+        void setNorthGuiPtr(TabGui* northGuiPtr);
+        TabGui* getNorthGuiPtr();
         void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
         FileTreeGui* getFileTreeGuiPtr();
         void setNavigatorGuiPtr(NavigatorGui* navigatorGuiPtr);
         NavigatorGui* getNavigatorGuiPtr();
-        void setOutputGuiPtr(OutputGui* outputGuiPtr);
-        OutputGui* getOutputGuiPtr();
-        void passMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        void setSouthGuiPtr(OutputGui* southGuiPtr);
+        OutputGui* getSouthGuiPtr();
+        void passNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr);
+        void passSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr);
         ~CentralGui();
 };
 

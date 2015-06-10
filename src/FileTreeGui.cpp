@@ -191,15 +191,15 @@ void FileTreeGui::refresh()
 }
 
 
-void FileTreeGui::setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+void FileTreeGui::setNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr)
 {
-    this->masterTabWidgetPtr = masterTabWidgetPtr;
+    this->northTabWidgetPtr = northTabWidgetPtr;
 }
 
 
-QTabWidget* FileTreeGui::getMasterTabWidgetPtr()
+QTabWidget* FileTreeGui::getNorthTabWidgetPtr()
 {
-    return masterTabWidgetPtr;
+    return northTabWidgetPtr;
 }
 
 

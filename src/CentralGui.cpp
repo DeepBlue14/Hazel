@@ -3,21 +3,21 @@
 
 CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
 {
-    centralTabsPtr = new TabGui();
+    northGuiPtr = new TabGui();
     fileTreeGuiPtr = new FileTreeGui();
     navigatorGuiPtr = new NavigatorGui();
-    outputGuiPtr = new OutputGui();
+    southGuiPtr = new OutputGui();
     
     QSplitter* splitter0 = new QSplitter();
     splitter0->setOrientation(Qt::Horizontal);
     splitter0->addWidget(fileTreeGuiPtr);
-    splitter0->addWidget(centralTabsPtr);
+    splitter0->addWidget(northGuiPtr);
     splitter0->addWidget(navigatorGuiPtr);
     
     QSplitter* splitter1 = new QSplitter();
     splitter1->setOrientation(Qt::Vertical);
     splitter1->addWidget(splitter0);
-    splitter1->addWidget(outputGuiPtr);
+    splitter1->addWidget(southGuiPtr);
     
     outerLayout = new QGridLayout();
     outerLayout->addWidget(splitter1, 1, 0, 1, 2);
@@ -26,15 +26,15 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
 }
 
 
-void CentralGui::setCentralTabsPtr(TabGui* centralTabsPtr)
+void CentralGui::setNorthGuiPtr(TabGui* centralTabsPtr)
 {
-    this->centralTabsPtr = centralTabsPtr;
+    this->northGuiPtr = centralTabsPtr;
 }
 
 
-TabGui* CentralGui::getCentralTabsPtr()
+TabGui* CentralGui::getNorthGuiPtr()
 {
-    return centralTabsPtr;
+    return northGuiPtr;
 }
 
 
@@ -62,21 +62,27 @@ NavigatorGui* CentralGui::getNavigatorGuiPtr()
 }
 
 
-void CentralGui::setOutputGuiPtr(OutputGui* outputGuiPtr)
+void CentralGui::setSouthGuiPtr(OutputGui* outputGuiPtr)
 {
-    this->outputGuiPtr = outputGuiPtr;
+    this->southGuiPtr = outputGuiPtr;
 }
 
 
-OutputGui* CentralGui::getOutputGuiPtr()
+OutputGui* CentralGui::getSouthGuiPtr()
 {
-    return outputGuiPtr;
+    return southGuiPtr;
 }
 
 
-void CentralGui::passMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+void CentralGui::passNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
 {
-    fileTreeGuiPtr->setMasterTabWidgetPtr(masterTabWidgetPtr);
+    fileTreeGuiPtr->setNorthTabWidgetPtr(masterTabWidgetPtr);
+}
+
+
+void CentralGui::passSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr)
+{
+    cerr << "CentralGui::passSouthTabWidgetPtr(...) has NOT been implemented yet!";
 }
 
 

@@ -34,6 +34,7 @@ class OutputGui : public QWidget
     public:
         OutputGui(QWidget* parent = 0);
         void addTab(QWidget* tab, QString* tabName);
+        QTabWidget* getTabWidget();
         ~OutputGui();
 };
 

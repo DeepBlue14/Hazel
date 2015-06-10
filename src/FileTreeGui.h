@@ -43,7 +43,7 @@ class FileTreeGui : public QWidget
         QGridLayout* outerLayout;
         
         static QString* projectRootAbsPathStrPtr;
-        QTabWidget* masterTabWidgetPtr;
+        QTabWidget* northTabWidgetPtr;
         
     private slots:
         void handleShowDirectorySlot(QTreeWidgetItem* item, int /*column*/);
@@ -56,8 +56,8 @@ class FileTreeGui : public QWidget
         static void setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);
         static QString* getProjectRootAbsPathStrPtr();
         static void refresh();
-        void setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
-        QTabWidget* getMasterTabWidgetPtr();
+        void setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        QTabWidget* getNorthTabWidgetPtr();
         ~FileTreeGui();
 };
 

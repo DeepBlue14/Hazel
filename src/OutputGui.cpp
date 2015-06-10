@@ -24,6 +24,12 @@ void OutputGui::addTab(QWidget* tab, QString* tabName)
 }
 
 
+QTabWidget* OutputGui::getTabWidget()
+{
+    return tabWidgetPtr;
+}
+
+
 OutputGui::~OutputGui()
 {
     ;

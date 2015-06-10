@@ -7,7 +7,7 @@ NavigatorGui::NavigatorGui(QWidget* parent) : QWidget(parent)
     searchWidgetPtr = new SearchWidget();
     activateSearchBtn = new QPushButton("Go");
     fileStrPtr = new QString();
-    masterTabWidgetPtr = new QTabWidget();
+    westTabWidgetPtr = new QTabWidget();
         
     outerLayout = new QGridLayout();
     outerLayout->addWidget(listWidgetPtr, 0, 0, 1, 0);
@@ -24,15 +24,15 @@ void NavigatorGui::loadData()
 }
 
 
-void NavigatorGui::setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr)
+void NavigatorGui::setWestTabWidgetPtr(QTabWidget* westTabWidgetPtr)
 {
-    this->masterTabWidgetPtr = masterTabWidgetPtr;
+    this->westTabWidgetPtr = westTabWidgetPtr;
 }
 
 
-QTabWidget* NavigatorGui::getMasterTabWidgetPtr()
+QTabWidget* NavigatorGui::getWestTabWidgetPtr()
 {
-    return masterTabWidgetPtr;
+    return westTabWidgetPtr;
 }
 
 
