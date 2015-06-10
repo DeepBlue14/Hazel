@@ -8,8 +8,8 @@
  * Created on May 6, 2015, 4:44 PM
  */
 
-#ifndef OUTPUTGUI_H
-#define	OUTPUTGUI_H
+#ifndef OUTPUT_GUI_H
+#define	OUTPUT_GUI_H
 
 #include <QWidget>
 #include <QTextEdit>
@@ -38,5 +38,4 @@ class OutputGui : public QWidget
         ~OutputGui();
 };
 
-#endif	/* OUTPUTGUI_H */
-
+#endif	/* OUTPUT_GUI_H */

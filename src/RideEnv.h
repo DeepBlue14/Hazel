@@ -26,13 +26,32 @@ using namespace std;
 class RideEnv
 { 
     private:
-        QString* catkinWsStrPtr;
-        QStringList* nodeStrLstPtr;
+        /**
+         * Absolute path to the ROS catkin workspace being used.
+         */
+        QString* catkinWsAbsPathStrPtr;
+        
+        /**
+         * Absolute paths to the "root" directory of each node. 
+         */
+        QStringList* nodeAbsPathStrLstPtr;
+        
+        /**
+         * Absolute path to the .ridePorject directory of each node.
+         */
+        QString* rideProjDirAbsPathStrPtr;
     
     public:
-    RideEnv();
-    ;
-    ~RideEnv();
+        RideEnv();
+        void setCatkinWsAbsPathStrPtr(QString* catkinWsAbsPathStrPtr);
+        QString* getCatkinWsAbsPathStrPtr();
+        void pushToNodeAbsPathStrLstPtr(QString* nodeAbsPathStr);
+        QString* popFromNodeAbsPathStrLstPtr();
+        QStringList* getNodeAbsPathStrLstPtr();
+        void setRideProjDirAbsPathStrPtr(QString* rideProjDirAbsPathStrPtr);
+        QString* getRideProjDirAbsPathStrPtr();
+        QString* toString();
+        ~RideEnv();
 };
 
 #endif	/* RIDE_ENV_H */

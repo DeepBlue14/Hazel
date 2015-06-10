@@ -10,6 +10,9 @@
           <itemPath>src/Directory.h</itemPath>
           <itemPath>src/ModifyCMakeLists.h</itemPath>
           <itemPath>src/ModifyManifest.h</itemPath>
+          <itemPath>src/MsgFieldDat.h</itemPath>
+          <itemPath>src/MsgFileDat.h</itemPath>
+          <itemPath>src/MsgParser.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
           <itemPath>src/RProcess.h</itemPath>
@@ -99,6 +102,9 @@
           <itemPath>src/Directory.cpp</itemPath>
           <itemPath>src/ModifyCMakeLists.cpp</itemPath>
           <itemPath>src/ModifyManifest.cpp</itemPath>
+          <itemPath>src/MsgFieldDat.cpp</itemPath>
+          <itemPath>src/MsgFileDat.cpp</itemPath>
+          <itemPath>src/MsgParser.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
           <itemPath>src/RProcess.cpp</itemPath>
@@ -264,6 +270,18 @@
       <item path="src/ModifyManifest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ModifyManifest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MsgFieldDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgFieldDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MsgFileDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgFileDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MsgParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgParser.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NavigatorGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -524,6 +542,18 @@
       <item path="src/ModifyManifest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ModifyManifest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MsgFieldDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgFieldDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MsgFileDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgFileDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MsgParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgParser.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NavigatorGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

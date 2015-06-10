@@ -2,9 +2,9 @@
 # File: Installer_Linux.bash
 # Author: James Kuczynski
 # Email: jkuczyns@cs.uml.edu
-# File Description:
+# File Description: Installer script for RIDE.
 #
-# Last Modified 05/14/2015
+# Last Modified 06/10/2015
 #
 #########################################################
 
@@ -34,6 +34,9 @@ if [ "$CHOICE" == "" ]; then
     xrdb ./ride/config/.Xresources
 fi
 
+#
+#ROS="$(ls /opt)
+#if []; then
 
 #
 echo "Would you like to create a desktop shortcut? (Y/n)"
