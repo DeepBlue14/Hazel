@@ -49,6 +49,7 @@ void NewFilePage_4::handleFolderPbPtrSlot()
             | QFileDialog::DontResolveSymlinks);
     
     createdFileLePtr->setText(dirName + "/" + fileNameLePtr->text() + fileExtCbPtr->currentText() );
+    locStrPtr = new QString(dirName);
 }
 
 
@@ -117,7 +118,8 @@ void NewFilePage_4::setLocStrPtr()
 {
     if(locCbPtr->currentText() != "")
     {
-        this->locStrPtr = new QString(locCbPtr->currentText() );
+        cout << "LOC stub at NewFilPage_4::setLocStrPtr()" << endl;
+        //this->locStrPtr = new QString(locCbPtr->currentText() );
     }
     else
     {

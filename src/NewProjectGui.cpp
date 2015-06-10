@@ -299,6 +299,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     proc->setWorkingDirectory(*projectRootStrPtr);
     QDir::setCurrent(*projectRootStrPtr);
     process->startDetached("mkdir", *(new QStringList("./.rideProject")) );
+    //process->waitForFinished();
     process->execute("mkdir", *(new QStringList("./.rideProject/resources")) );
     process->execute("mkdir", *(new QStringList("./.rideProject/resources/project")) );
     process->execute("touch", *(new QStringList("./.rideProject/resources/project/configurations.xml")) );
