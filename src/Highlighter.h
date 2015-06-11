@@ -13,6 +13,10 @@
 #include <QHash>
 #include <QTextCharFormat>
 
+#include <iostream>
+
+using namespace std;
+
 class QTextDocument;
 
 class Highlighter : public QSyntaxHighlighter

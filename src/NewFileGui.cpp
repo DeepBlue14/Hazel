@@ -99,16 +99,14 @@ void NewFileGui::handleFinishBtnSlot()
 
     //create physical file and tab
     RideFile* rideFile = new RideFile(*newFilePage_4Ptr->getLocStrPtr()
+                                    + "/"
                                     + *newFilePage_4Ptr->getFileNameStrPtr()
                                     + *newFilePage_4Ptr->getFileExtStrPtr() );
     //-----------------
     cout << "\t\tLoc: " << newFilePage_4Ptr->getLocStrPtr()->toStdString() << endl;
     cout << "\t\tName: " << newFilePage_4Ptr->getFileNameStrPtr()->toStdString() << endl;
     cout << "\t\tExt: " << newFilePage_4Ptr->getFileExtStrPtr()->toStdString() << endl;
-    
-    /*rideFile->createFile(newFilePage_4Ptr->getLocStrPtr(),
-                                newFilePage_4Ptr->getFileNameStrPtr(),
-                                newFilePage_4Ptr->getFileExtStrPtr() );*/
+
 
     rideFile->openRdWrFile();
     cout << "HERE" << endl;

@@ -82,8 +82,10 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
                              << "raise"         << "return"           << "try"
                              << "while"         << "with"             << "yield";
     
+    
     QStringList mirrorKeyCharPatterns;
-    mirrorKeyCharPatterns    << "("             << "{"                << "[";
+    mirrorKeyCharPatterns    << "\\("             << "\\{"                << "\\["
+                             << "\\)"             << "\\}"                << "\\]";
             
             
     foreach (const QString &pattern, cPlusPlusKeywordPatterns)
@@ -110,7 +112,17 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
         rule.pattern = QRegExp(pattern);
         rule.format = keywordFormat;
         highlightingRules.append(rule);
-    }    
+    }
+    
+    keywordFormat.setForeground(Qt::red);
+    //keywordFormat.setBackground(Qt::darkYellow);
+    //keywordFormat.setFontWeight(QFont::Bold);
+    foreach (const QString &pattern, mirrorKeyCharPatterns)
+    {
+        rule.pattern = QRegExp(pattern);
+        rule.format = keywordFormat;
+        highlightingRules.append(rule);
+    }
     
 
     //classFormat.setFontWeight(QFont::Bold);

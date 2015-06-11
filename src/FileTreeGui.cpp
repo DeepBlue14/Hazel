@@ -124,9 +124,13 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
                     child->setText(1, fileInfo.filePath() );
                     treePtr->hideColumn(1);
                 } 
-	    
-                item->addChild(child);
-	    
+                
+                //check to see if file is already stored in tree
+                //!!!this may need to be modified!!!
+                if(item->child(item->childCount() - 1)->text(0) != child->text(0)
+                && item->child(item->childCount() - 2)->text(0) != child->text(0) )
+                    item->addChild(child);
+                
                 //resizeColumnToContents(0);
             }
 	}

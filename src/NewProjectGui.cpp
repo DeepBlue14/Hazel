@@ -315,7 +315,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     buildFile->write("\n# AUTO-GENERATED RIDE FILE #");
     buildFile->write("\n############################");
     buildFile->write("\n\n#!/bin/bash");
-    buildFile->write("\n\ncatkin_make $1");
+    buildFile->write("\n\ncatkin_make $1 $2");
     buildFile->closeFile();
     
     setAbsPathToProjBuildFileStrPtr(buildFile->getAbsFilePathStrPtr() );
