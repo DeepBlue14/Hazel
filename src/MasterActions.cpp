@@ -73,10 +73,10 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     debugActionPtr->setStatusTip("Debug");
     connect(debugActionPtr, SIGNAL(triggered() ), this, SLOT(handleDebugActionSlot() ) );
     
-    profileProjActionPtr = new QAction(QIcon("images/profile.jpg"), tr("&Profile Project"), this);
-    profileProjActionPtr->setShortcut(QKeySequence::New);
-    profileProjActionPtr->setStatusTip("Profile");
-    connect(profileProjActionPtr, SIGNAL(triggered() ), this, SLOT(handleProfileProjActionSlot() ) );
+    gitActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Git/GitHub"), this);
+    gitActionPtr->setShortcut(QKeySequence::New);
+    gitActionPtr->setStatusTip("Git");
+    connect(gitActionPtr, SIGNAL(triggered() ), this, SLOT(handleGitActionSlot() ) );
 
     // South
     outputSouthActionPtr = new QAction(QIcon("images/output.jpg"), tr("&Output"), this);
@@ -86,40 +86,22 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     
     terminalSouthActionPtr = new QAction(QIcon("images/terminal.jpg"), tr("&Output"), this);
     terminalSouthActionPtr->setShortcut(QKeySequence::New);
-    terminalSouthActionPtr->setStatusTip("Output");
+    terminalSouthActionPtr->setStatusTip("Terminal");
     connect(terminalSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleTerminalSouthActionSlot() ) );
     
     // East
-    debugEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
-    debugEastActionPtr->setShortcut(QKeySequence::New);
-    debugEastActionPtr->setStatusTip("Output");
-    connect(debugEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleDebugEastActionSlot() ) );
-    
-    startEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
-    startEastActionPtr->setShortcut(QKeySequence::New);
-    startEastActionPtr->setStatusTip("Output");
-    connect(startEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleStartEastActionSlot() ) );
-    
-    stepIntoEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
-    stepIntoEastActionPtr->setShortcut(QKeySequence::New);
-    stepIntoEastActionPtr->setStatusTip("Output");
-    connect(stepIntoEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleStepIntoEastActionSlot() ) );
-    
-    stepOverEastActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Output"), this);
-    stepOverEastActionPtr->setShortcut(QKeySequence::New);
-    stepOverEastActionPtr->setStatusTip("Output");
-    connect(stepOverEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleStepOverEastActionSlot() ) );
+    navEastActionPtr = new QAction(QIcon("images/navigator.jpg"), tr("&Output"), this);
+    navEastActionPtr->setShortcut(QKeySequence::New);
+    navEastActionPtr->setStatusTip("Navigator");
+    connect(navEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleNavEastActionSlot() ) );
     
     // West
     projectWestActionPtr = new QAction(QIcon("images/tree.jpg"), tr("&Output"), this);
     projectWestActionPtr->setShortcut(QKeySequence::New);
-    projectWestActionPtr->setStatusTip("Output");
+    projectWestActionPtr->setStatusTip("Project Tree");
     connect(projectWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleProjectWestActionSlot() ) );
     
-    navWestActionPtr = new QAction(QIcon("images/navigator.jpg"), tr("&Output"), this);
-    navWestActionPtr->setShortcut(QKeySequence::New);
-    navWestActionPtr->setStatusTip("Output");
-    connect(navWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleNavWestActionSlot() ) );
+    
 }
 
 
@@ -220,7 +202,7 @@ void MasterActions::handleDebugActionSlot()
 }
 
 
-void MasterActions::handleProfileProjActionSlot()
+void MasterActions::handleGitActionSlot()
 {
     ;
 }
@@ -229,7 +211,14 @@ void MasterActions::handleProfileProjActionSlot()
 // South
 void MasterActions::handleOutputSouthActionSlot()
 {
-    ;
+    if(getSouthTabWidgetPtr()->isVisible() )
+    {
+        getSouthTabWidgetPtr()->hide();
+    }
+    else
+    {
+        getSouthTabWidgetPtr()->show();
+    }
 }
 
 
@@ -245,47 +234,30 @@ void MasterActions::handleTerminalSouthActionSlot()
 
 
 // East
-void MasterActions::handleDebugEastActionSlot()
+void MasterActions::handleNavEastActionSlot()
 {
-    ;
-}
-
-
-void MasterActions::handleStartEastActionSlot()
-{
-    ;
-}
-
-
-void MasterActions::handleStepIntoEastActionSlot()
-{
-    ;
-}
-
-
-void MasterActions::handleStepOverEastActionSlot()
-{
-    ;
+    if(getEastWidgetPtr()->isVisible() )
+    {
+        getEastWidgetPtr()->hide();
+    }
+    else
+    {
+        getEastWidgetPtr()->show();
+    }
 }
 
 
 // West
 void MasterActions::handleProjectWestActionSlot()
 {
-    if(getFileTreeGuiPtr()->isVisible() )
+    if(getWestWidgetPtr()->isVisible() )
     {
-        getFileTreeGuiPtr()->hide();
+        getWestWidgetPtr()->hide();
     }
     else
     {
-        getFileTreeGuiPtr()->show();
+        getWestWidgetPtr()->show();
     }
-}
-
-
-void MasterActions::handleNavWestActionSlot()
-{
-    ;
 }
 
 
@@ -391,15 +363,27 @@ OpenProjectGui* MasterActions::getOpenProjectGuiPtr()
 }
 
 
-void MasterActions::setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr)
+void MasterActions::setWestWidgetPtr(FileTreeGui* fileTreeGuiPtr)
 {
-    this->fileTreeGuiPtr = fileTreeGuiPtr;
+    this->westWidgetPtr = fileTreeGuiPtr;
 }
 
 
-FileTreeGui* MasterActions::getFileTreeGuiPtr()
+FileTreeGui* MasterActions::getWestWidgetPtr()
 {
-    return fileTreeGuiPtr;
+    return westWidgetPtr;
+}
+
+
+void MasterActions::setEastWidgetPtr(NavigatorGui* eastWidgetPtr)
+{
+    this->eastWidgetPtr = eastWidgetPtr;
+}
+
+
+NavigatorGui* MasterActions::getEastWidgetPtr()
+{
+    return eastWidgetPtr;
 }
 
 
@@ -572,15 +556,15 @@ QAction* MasterActions::getDebugActionPtr()
 }
 
 
-void MasterActions::setProfileProjActionPtr(QAction* profileProjActionPtr)
+void MasterActions::setGitActionPtr(QAction* gitActionPtr)
 {
-    this->profileProjActionPtr = profileProjActionPtr;
+    this->gitActionPtr = gitActionPtr;
 }
 
 
-QAction* MasterActions::getProfileProjActionPtr()
+QAction* MasterActions::getGitActionPtr()
 {
-    return profileProjActionPtr;
+    return gitActionPtr;
 }
 
 
@@ -610,51 +594,15 @@ QAction* MasterActions::getTerminalSouthActionPtr()
 
 
 // East
-void MasterActions::setDebugEastActionPtr(QAction* debugEastActionPtr)
+void MasterActions::setNavEastActionPtr(QAction* navWestActionPtr)
 {
-    this->debugEastActionPtr = debugEastActionPtr;
+    this->navEastActionPtr = navWestActionPtr;
 }
 
 
-QAction* MasterActions::getDebugEastActionPtr()
+QAction* MasterActions::getNavEastActionPtr()
 {
-    return debugEastActionPtr;
-}
-
-
-void MasterActions::setStartEastActionPtr(QAction* startEastActionPtr)
-{
-    this->startEastActionPtr = startEastActionPtr;
-}
-
-
-QAction* MasterActions::getStartEastActionPtr()
-{
-    return startEastActionPtr;
-}
-
-
-void MasterActions::setStepIntoEastActionPtr(QAction* stepIntoEastActionPtr)
-{
-    this->stepIntoEastActionPtr = stepIntoEastActionPtr;
-}
-
-
-QAction* MasterActions::getStepIntoEastActionPtr()
-{
-    return stepIntoEastActionPtr;
-}
-
-
-void MasterActions::setStepOverActionPtr(QAction* stepOverEastActionPtr)
-{
-    this->stepOverEastActionPtr = stepOverEastActionPtr;
-}
-
-
-QAction* MasterActions::getStepOverActionPtr()
-{
-    return stepOverEastActionPtr;
+    return navEastActionPtr;
 }
 
 
@@ -668,18 +616,6 @@ void MasterActions::setProjectWestActionPtr(QAction* projectWestActionPtr)
 QAction* MasterActions::getProjectWestActionPtr()
 {
     return projectWestActionPtr;
-}
-
-
-void MasterActions::setNavWestActionPtr(QAction* navWestActionPtr)
-{
-    this->navWestActionPtr = navWestActionPtr;
-}
-
-
-QAction* MasterActions::getNavWestActionPtr()
-{
-    return navWestActionPtr;
 }
 
 
@@ -775,9 +711,9 @@ void MasterActions::connectToDebugAction(X* component)
 
 
 template<class X>
-void MasterActions::connectToProfileProjAction(X* component)
+void MasterActions::connectToGitAction(X* component)
 {
-    connect(component, SIGNAL(released() ), this, SLOT(handleProfileActionSlot() ) );
+    connect(component, SIGNAL(released() ), this, SLOT(handleGitActionSlot() ) );
 }
 
 
@@ -798,30 +734,9 @@ void MasterActions::connectToTerminalSouthAction(X* component)
 
 // East
 template<class X>
-void MasterActions::connectToDebugEastAction(X* component)
+void MasterActions::connectToNavEastAction(X* component)
 {
-    connect(component, SIGNAL(released() ), this, SLOT(handleDebugEastActionSlot() ) );
-}
-
-
-template<class X>
-void MasterActions::connectToStartEastAction(X* component)
-{
-    connect(component, SIGNAL(released() ), this, SLOT(handleStartEastActionSlot() ) );
-}
-
-
-template<class X>
-void MasterActions::connectToStepIntoEastAction(X* component)
-{
-    connect(component, SIGNAL(released() ), this, SLOT(handleStepIntoEastActionSlot() ) );
-}
-
-
-template<class X>
-void MasterActions::connectToStepOverEastAction(X* component)
-{
-    connect(component, SIGNAL(released() ), this, SLOT(handleStepOverEastActionSlot() ) );
+    connect(component, SIGNAL(released() ), this, SLOT(handleNavEastActionSlot() ) );
 }
 
 
@@ -830,13 +745,6 @@ template<class X>
 void MasterActions::connectToProjectWestAction(X* component)
 {
     connect(component, SIGNAL(released() ), this, SLOT(handleProjectWestActionSlot() ) );
-}
-
-
-template<class X>
-void MasterActions::connectToNavWestAction(X* component)
-{
-    connect(component, SIGNAL(released() ), this, SLOT(handleNavWestActionSlot() ) );
 }
 
 

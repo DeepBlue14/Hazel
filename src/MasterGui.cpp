@@ -21,7 +21,8 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     this->setCentralWidget(centralGui);
     masterActions->setNorthTabWidgetPtr(centralGui->getNorthGuiPtr()->getTabWidget() );
     masterActions->setSouthTabWidgetPtr(centralGui->getSouthGuiPtr()->getTabWidget() );
-    masterActions->setFileTreeGuiPtr(centralGui->getFileTreeGuiPtr() ); // Pass ("tunnel") method
+    masterActions->setWestWidgetPtr(centralGui->getFileTreeGuiPtr() ); // Pass ("tunnel") method
+    masterActions->setEastWidgetPtr(centralGui->getNavigatorGuiPtr() );
     
     this->resize(1000, 800);
 }

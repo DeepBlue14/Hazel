@@ -37,13 +37,13 @@ void MasterToolBars::initNorthGroupTwoToolBar(QToolBar* toolbar)
 
 void MasterToolBars::initNorthGroupThreeToolBar(QToolBar* toolbar)
 {
-    toolbar->addAction(getMasterActionsPtr()->getProfileProjActionPtr() );
+    toolbar->addAction(getMasterActionsPtr()->getGitActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getBuildActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getCleanAndBuildActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getConfigForRunActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getRunActionPtr() );
     toolbar->addAction(getMasterActionsPtr()->getDebugActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getProfileProjActionPtr() );
+    toolbar->addAction(getMasterActionsPtr()->getGitActionPtr() );
 }
 
 
@@ -57,20 +57,13 @@ void MasterToolBars::initSouthGroupOneToolBar(QToolBar* toolbarPtr)
 
 void MasterToolBars::initEastGroupOneToolBar(QToolBar* toolbarPtr)
 {
-    toolbarPtr->addAction(getMasterActionsPtr()->getDebugEastActionPtr() );
-    toolbarPtr->addAction(getMasterActionsPtr()->getStartEastActionPtr() );
-    toolbarPtr->addAction(getMasterActionsPtr()->getStepIntoEastActionPtr() );
-    toolbarPtr->addAction(getMasterActionsPtr()->getStepOverActionPtr() );
-    toolbarPtr->hide();
-    
-    cout << "East toolbar is hidden (MasterToolBars::initEastGroupOneToolbar(...)" << endl;
+    toolbarPtr->addAction(getMasterActionsPtr()->getNavEastActionPtr() );
 }
 
 
 void MasterToolBars::initWestGroupOneToolBar(QToolBar* toolbarPtr)
 {
     toolbarPtr->addAction(getMasterActionsPtr()->getProjectWestActionPtr() );
-    toolbarPtr->addAction(getMasterActionsPtr()->getNavWestActionPtr() );
 }
 
 

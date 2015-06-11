@@ -28,6 +28,7 @@
 #include "OpenProjectGui.h"
 #include "SaveAll.h"
 #include "FileTreeGui.h"
+#include "NavigatorGui.h"
 #include "Build.h"
 
 using namespace SaveAll;
@@ -52,22 +53,18 @@ class MasterActions : public QWidget
         QAction* configForRunActionPtr;
         QAction* runActionPtr;
         QAction* debugActionPtr;
-        QAction* profileProjActionPtr;
+        QAction* gitActionPtr;
         
         // South
         QAction* outputSouthActionPtr; //outputSouthTabActionPtr
         QAction* terminalSouthActionPtr;
         
         // East
-        QAction* debugEastActionPtr;
-        QAction* startEastActionPtr;
-        QAction* stepIntoEastActionPtr;
-        QAction* stepOverEastActionPtr;
+        QAction* navEastActionPtr;
         
         
         // West
         QAction* projectWestActionPtr;
-        QAction* navWestActionPtr;
         
         
         QTabWidget* northTabWidgetPtr;
@@ -79,7 +76,8 @@ class MasterActions : public QWidget
         Terminal* terminalPtr;
         RunGui* runGuiPtr;
         OpenProjectGui* openProjectGuiPtr;
-        FileTreeGui* fileTreeGuiPtr;
+        FileTreeGui* westWidgetPtr; // i.e. west widget
+        NavigatorGui* eastWidgetPtr;
         Build* buildPtr;
         
     private slots:
@@ -97,21 +95,17 @@ class MasterActions : public QWidget
         void handleConfigForRunActionSlot();
         void handleRunActionSlot();
         void handleDebugActionSlot();
-        void handleProfileProjActionSlot();
+        void handleGitActionSlot();
         
         // South
         void handleOutputSouthActionSlot();
         void handleTerminalSouthActionSlot();
         
         // East
-        void handleDebugEastActionSlot();
-        void handleStartEastActionSlot();
-        void handleStepIntoEastActionSlot();
-        void handleStepOverEastActionSlot();
+        void handleNavEastActionSlot();
         
         // West
         void handleProjectWestActionSlot();
-        void handleNavWestActionSlot();
     
     public:
         MasterActions(QWidget* parent = 0);
@@ -133,8 +127,10 @@ class MasterActions : public QWidget
         RunGui* getRunGuiPtr();
         void setOpenProjectGuiPtr(OpenProjectGui* openProjectGuiPtr);
         OpenProjectGui* getOpenProjectGuiPtr();
-        void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
-        FileTreeGui* getFileTreeGuiPtr();
+        void setWestWidgetPtr(FileTreeGui* westWidgetPtr);
+        FileTreeGui* getWestWidgetPtr();
+        void setEastWidgetPtr(NavigatorGui* eastWidgetPtr);
+        NavigatorGui* getEastWidgetPtr();
         void setBuildPtr(Build* buildPtr);
         Build* getBuildPtr();
         
@@ -165,8 +161,8 @@ class MasterActions : public QWidget
         QAction* getRunActionPtr();
         void setDebugActionPtr(QAction* debugActionPtr);
         QAction* getDebugActionPtr();
-        void setProfileProjActionPtr(QAction* profileProjActionPtr);
-        QAction* getProfileProjActionPtr();
+        void setGitActionPtr(QAction* profileProjActionPtr);
+        QAction* getGitActionPtr();
         
         // South
         void setOutputSouthActionPtr(QAction* outputSouthActionPtr);
@@ -175,21 +171,13 @@ class MasterActions : public QWidget
         QAction* getTerminalSouthActionPtr();
         
         // East
-        void setDebugEastActionPtr(QAction* debugEastActionPtr);
-        QAction* getDebugEastActionPtr();
-        void setStartEastActionPtr(QAction* startEastActionPtr);
-        QAction* getStartEastActionPtr();
-        void setStepIntoEastActionPtr(QAction* setIntoEastActionPtr);
-        QAction* getStepIntoEastActionPtr();
-        void setStepOverActionPtr(QAction* stepOverActionptr);
-        QAction* getStepOverActionPtr();
+        void setNavEastActionPtr(QAction* navEastActionptr);
+        QAction* getNavEastActionPtr();
         
         // West
         void setProjectWestActionPtr(QAction* projectWestActionPtr);
         QAction* getProjectWestActionPtr();
-        void setNavWestActionPtr(QAction* navWestActionptr);
-        QAction* getNavWestActionPtr();
-        
+
         // North
         template<class X>
         void connectToNewFileAction(X* component);
@@ -231,7 +219,7 @@ class MasterActions : public QWidget
         void connectToDebugAction(X* component);
         
         template<class X>
-        void connectToProfileProjAction(X* component);
+        void connectToGitAction(X* component);
         
         // South
         template<class X>
@@ -242,23 +230,12 @@ class MasterActions : public QWidget
         
         // East
         template<class X>
-        void connectToDebugEastAction(X* component);
-        
-        template<class X>
-        void connectToStartEastAction(X* component);
-        
-        template<class X>
-        void connectToStepIntoEastAction(X* component);
-        
-        template<class X>
-        void connectToStepOverEastAction(X* component);
+        void connectToNavEastAction(X* component);
         
         // West
         template<class X>
         void connectToProjectWestAction(X* component);
-        
-        template<class X>
-        void connectToNavWestAction(X* component);
+ 
         
         ~MasterActions();
             
