@@ -3,7 +3,7 @@
 - add javadoc or qtdoc
 - add search (open file)
 - add grep (entire project?, or global?)
-
+- https://www.youtube.com/watch?v=3QL2J_nxFP0
 
 **Notes**
 MasterGui->passMasterTabWidgetPtr ---> CentralGui->passMasterTabWidgetPtr ---> FileTreeGui->setMasterTabWidgetPtr()

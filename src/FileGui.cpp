@@ -90,7 +90,7 @@ void FileGui::keyPressEvent(QKeyEvent* e)
     }
     
     bool isShortcut = ((e->modifiers() & Qt::ControlModifier) && e->key() == Qt::Key_E); // CTRL+E
-     if (!c || !isShortcut) // dont process the shortcut when we have a completer
+     if (!c || !isShortcut) // don't process the shortcut when we have a completer
          QPlainTextEdit::keyPressEvent(e);
 
      const bool ctrlOrShift = e->modifiers() & (Qt::ControlModifier | Qt::ShiftModifier);
@@ -114,7 +114,28 @@ void FileGui::keyPressEvent(QKeyEvent* e)
         setTextCursor(tc);
      }
      
+     if(e->text() == "[")
+     {   QTextCursor tc = textCursor();
+        int extra = 0;
+        tc.movePosition(QTextCursor::Left);
+        tc.movePosition(QTextCursor::EndOfWord);
+        tc.insertText(textUnderCursor().right(extra));
+        tc.insertText("]");
+        tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
+        setTextCursor(tc);
+     }
      
+     
+     if(e->text() == "{")
+     {   QTextCursor tc = textCursor();
+        int extra = 0;
+        tc.movePosition(QTextCursor::Left);
+        tc.movePosition(QTextCursor::EndOfWord);
+        tc.insertText(textUnderCursor().right(extra));
+        tc.insertText("\n}");
+        tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
+        setTextCursor(tc);
+     }
      //------------------------------------------
         
      if (!isShortcut && (hasModifier || e->text().isEmpty()|| completionPrefix.length() < 3
@@ -193,6 +214,21 @@ void FileGui::highlightCurrentLine()
         selection.cursor = textCursor();
         selection.cursor.clearSelection();
         extraSelections.append(selection);
+        
+        
+        QString text;
+        QTextCursor tc = textCursor();
+        //tc.select(QTextCursor::LineUnderCursor);
+        //tc.clearSelection();
+        text = tc.block().text();
+        //cout << tc.selectedText().toStdString() << endl;
+        //QString tmp = tc.selectedText();
+        //if(tc.position() > 0)
+        //cout << "The chosen one: " << tmp.at(tc.position()-1).toLatin1() << endl;
+        //QString tmp2 = tc.block().text();
+        //cout << tmp2.toStdString() << endl;
+        cout << "contents of false cursor: " << text.toStdString() << endl;
+        cout << "position of \"true\" cursor: " << tc.position() << endl;
     }
     
     setExtraSelections(extraSelections);
