@@ -17,7 +17,7 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     
     QTreeWidgetItem* headerItem = new QTreeWidgetItem();
     headerItem->setText(0, QString("File Name") );
-    headerItem->setText(1, QString("Path"));
+    //headerItem->setText(1, QString("Path"));
     treePtr->hideColumn(1);
     treePtr->setHeaderItem(headerItem);
     
@@ -62,6 +62,7 @@ void FileTreeGui::initTree()
             item->setText(1, fileInfo.filePath());
             treePtr->hideColumn(1);
             treePtr->addTopLevelItem(item);
+            item->setToolTip(0, fileInfo.filePath() );
         }
     }
     

@@ -1,5 +1,3 @@
-#include <QtGui>
-
 #include "Highlighter.h"
 
 Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)

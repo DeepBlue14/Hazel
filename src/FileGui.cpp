@@ -100,7 +100,23 @@ void FileGui::keyPressEvent(QKeyEvent* e)
      static QString eow("~!@#$%^&*()_+{}|:\"<>?,./;'[]\\-="); // end of word
      bool hasModifier = (e->modifiers() != Qt::NoModifier) && !ctrlOrShift;
      QString completionPrefix = textUnderCursor();
-
+     
+     //------------------------------------------
+     //!!! this inserts the closing parens !!!
+     if(e->text() == "(")
+     {   QTextCursor tc = textCursor();
+        int extra = 0;
+        tc.movePosition(QTextCursor::Left);
+        tc.movePosition(QTextCursor::EndOfWord);
+        tc.insertText(textUnderCursor().right(extra));
+        tc.insertText(")");
+        tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
+        setTextCursor(tc);
+     }
+     
+     
+     //------------------------------------------
+        
      if (!isShortcut && (hasModifier || e->text().isEmpty()|| completionPrefix.length() < 3
                        || eow.contains(e->text().right(1)))) {
          c->popup()->hide();
@@ -169,7 +185,8 @@ void FileGui::highlightCurrentLine()
     {
         QTextEdit::ExtraSelection selection;
         
-        QColor lineColor = QColor(Qt::yellow).lighter(160);
+        //QColor lineColor = QColor(Qt::yellow).lighter(160);
+        QColor lineColor = QColor(224, 232, 241);
         
         selection.format.setBackground(lineColor);
         selection.format.setProperty(QTextFormat::FullWidthSelection, true);

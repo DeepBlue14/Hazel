@@ -8,8 +8,8 @@
 #ifndef HIGHLIGHTER_H
 #define HIGHLIGHTER_H
 
+#include <QtGui>
 #include <QSyntaxHighlighter>
-
 #include <QHash>
 #include <QTextCharFormat>
 
