@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unixconsoletext',['UnixConsoleText',['../namespace_unix_console_text.html',1,'']]]
+  ['windowsconsoletext',['WindowsConsoleText',['../namespace_windows_console_text.html',1,'']]]
 ];

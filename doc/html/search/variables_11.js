@@ -8,5 +8,5 @@ var searchData=
   ['terminalsouthactionptr',['terminalSouthActionPtr',['../class_master_actions.html#ad96c9f17230e162e9a9f39a867101a53',1,'MasterActions']]],
   ['termprocess',['termProcess',['../class_terminal.html#a7b62ba5151a7e984fa76ba2e67758bb0',1,'Terminal']]],
   ['toolsmenuptr',['toolsMenuPtr',['../class_master_gui.html#ab751e75ffdf91f5b90b4c2900975f308',1,'MasterGui']]],
-  ['truetree',['trueTree',['../class_file_tree_gui.html#a27648a2d00b8283605c3a260060b1285',1,'FileTreeGui']]]
+  ['treeptr',['treePtr',['../class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493',1,'FileTreeGui']]]
 ];

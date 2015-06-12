@@ -130,13 +130,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a27648a2d00b8283605c3a260060b1285">   40</a></span>&#160;        <span class="keyword">static</span> QTreeWidget* <a class="code" href="class_file_tree_gui.html#a27648a2d00b8283605c3a260060b1285">trueTree</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">   40</a></span>&#160;        <span class="keyword">static</span> QTreeWidget* <a class="code" href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">treePtr</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">   41</a></span>&#160;        <span class="keyword">static</span> QSplitter* <a class="code" href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">splitter</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">   43</a></span>&#160;        QGridLayout* <a class="code" href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">outerLayout</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">   45</a></span>&#160;        <span class="keyword">static</span> QString* <a class="code" href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">projectRootAbsPathStrPtr</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#adb1e3ecfaab582317fcd9b968bbf6c40">   46</a></span>&#160;        QTabWidget* <a class="code" href="class_file_tree_gui.html#adb1e3ecfaab582317fcd9b968bbf6c40">masterTabWidgetPtr</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">   46</a></span>&#160;        QTabWidget* <a class="code" href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">northTabWidgetPtr</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">private</span> slots:</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> handleShowDirectorySlot(QTreeWidgetItem* item, <span class="keywordtype">int</span> <span class="comment">/*column*/</span>);</div>
@@ -149,8 +149,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">static</span> QString* getProjectRootAbsPathStrPtr();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> refresh();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> setMasterTabWidgetPtr(QTabWidget* masterTabWidgetPtr);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        QTabWidget* getMasterTabWidgetPtr();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        QTabWidget* getNorthTabWidgetPtr();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        ~<a class="code" href="class_file_tree_gui.html">FileTreeGui</a>();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -158,14 +158,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="_tree_item_icon_init_8h_html"><div class="ttname"><a href="_tree_item_icon_init_8h.html">TreeItemIconInit.h</a></div></div>
 <div class="ttc" id="class_file_tree_gui_html_a43e8677ba8c50059d003f298b631e131"><div class="ttname"><a href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">FileTreeGui::splitter</a></div><div class="ttdeci">static QSplitter * splitter</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00041">FileTreeGui.h:41</a></div></div>
 <div class="ttc" id="class_file_tree_gui_html_aaf8b63a4775b1d46d635cdaef94b979a"><div class="ttname"><a href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">FileTreeGui::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00043">FileTreeGui.h:43</a></div></div>
+<div class="ttc" id="class_file_tree_gui_html_ae44c6d73787d55eae9bed8e16ff9f34a"><div class="ttname"><a href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">FileTreeGui::northTabWidgetPtr</a></div><div class="ttdeci">QTabWidget * northTabWidgetPtr</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00046">FileTreeGui.h:46</a></div></div>
 <div class="ttc" id="class_file_tree_gui_html"><div class="ttname"><a href="class_file_tree_gui.html">FileTreeGui</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00035">FileTreeGui.h:35</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_adb1e3ecfaab582317fcd9b968bbf6c40"><div class="ttname"><a href="class_file_tree_gui.html#adb1e3ecfaab582317fcd9b968bbf6c40">FileTreeGui::masterTabWidgetPtr</a></div><div class="ttdeci">QTabWidget * masterTabWidgetPtr</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00046">FileTreeGui.h:46</a></div></div>
 <div class="ttc" id="class_file_tree_gui_html_a9ce991f8f95f583aa5fb1bec7a9bcd4c"><div class="ttname"><a href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">FileTreeGui::projectRootAbsPathStrPtr</a></div><div class="ttdeci">static QString * projectRootAbsPathStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00045">FileTreeGui.h:45</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_a27648a2d00b8283605c3a260060b1285"><div class="ttname"><a href="class_file_tree_gui.html#a27648a2d00b8283605c3a260060b1285">FileTreeGui::trueTree</a></div><div class="ttdeci">static QTreeWidget * trueTree</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00040">FileTreeGui.h:40</a></div></div>
+<div class="ttc" id="class_file_tree_gui_html_a46dee8099b8a67b854a57a761528b493"><div class="ttname"><a href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">FileTreeGui::treePtr</a></div><div class="ttdeci">static QTreeWidget * treePtr</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00040">FileTreeGui.h:40</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2015 15:12:44 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

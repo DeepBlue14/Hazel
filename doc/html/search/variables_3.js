@@ -1,7 +1,6 @@
 var searchData=
 [
   ['debugactionptr',['debugActionPtr',['../class_master_actions.html#ae37993bbbed4a238ea3b11089ac46a61',1,'MasterActions']]],
-  ['debugeastactionptr',['debugEastActionPtr',['../class_master_actions.html#ab26f3e610cb9e303ac3a987964dfac19',1,'MasterActions']]],
   ['debugmenuptr',['debugMenuPtr',['../class_master_gui.html#ac1efdb45cdde47584625a8026166c316',1,'MasterGui']]],
   ['defaultfileextchbptr',['defaultFileExtChbPtr',['../class_new_file_page__4.html#a3d192a050512836a080dab3b1cdf3387',1,'NewFilePage_4']]],
   ['dependsenteredstrlist',['dependsEnteredStrList',['../class_new_project_page__4.html#a1319d6e28b3648b02180579e813ecafb',1,'NewProjectPage_4']]],

@@ -35,7 +35,7 @@ using namespace std;
 class MasterGui : public QMainWindow
 {
     Q_OBJECT
-    
+
     private:
         QMenu* fileMenuPtr;
         QMenu* editMenuPtr;

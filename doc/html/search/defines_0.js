@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modify_5fmanifestpackage_5fh',['MODIFY_MANIFESTPACKAGE_H',['../_modify_manifest_8h.html#adefff6775bd8a52939cceea712c16d07',1,'ModifyManifest.h']]]
+  ['xterm_5fcmd',['XTERM_CMD',['../_terminal_8h.html#a36342802460856ec8dbbfeb095362bac',1,'Terminal.h']]]
 ];

@@ -1,4 +1,4 @@
-.TH "CentralGui" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "CentralGui" 3 "Fri Jun 12 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -17,10 +17,10 @@ Inherits QWidget\&.
 .RI "\fBCentralGui\fP (QWidget *parent=0)"
 .br
 .ti -1c
-.RI "void \fBsetCentralTabsPtr\fP (\fBTabGui\fP *\fBcentralTabsPtr\fP)"
+.RI "void \fBsetNorthGuiPtr\fP (\fBTabGui\fP *\fBnorthGuiPtr\fP)"
 .br
 .ti -1c
-.RI "\fBTabGui\fP * \fBgetCentralTabsPtr\fP ()"
+.RI "\fBTabGui\fP * \fBgetNorthGuiPtr\fP ()"
 .br
 .ti -1c
 .RI "void \fBsetFileTreeGuiPtr\fP (\fBFileTreeGui\fP *\fBfileTreeGuiPtr\fP)"
@@ -29,13 +29,22 @@ Inherits QWidget\&.
 .RI "\fBFileTreeGui\fP * \fBgetFileTreeGuiPtr\fP ()"
 .br
 .ti -1c
-.RI "void \fBsetOutputGuiPtr\fP (\fBOutputGui\fP *\fBoutputGuiPtr\fP)"
+.RI "void \fBsetNavigatorGuiPtr\fP (\fBNavigatorGui\fP *\fBnavigatorGuiPtr\fP)"
 .br
 .ti -1c
-.RI "\fBOutputGui\fP * \fBgetOutputGuiPtr\fP ()"
+.RI "\fBNavigatorGui\fP * \fBgetNavigatorGuiPtr\fP ()"
 .br
 .ti -1c
-.RI "void \fBpassMasterTabWidgetPtr\fP (QTabWidget *masterTabWidgetPtr)"
+.RI "void \fBsetSouthGuiPtr\fP (\fBOutputGui\fP *\fBsouthGuiPtr\fP)"
+.br
+.ti -1c
+.RI "\fBOutputGui\fP * \fBgetSouthGuiPtr\fP ()"
+.br
+.ti -1c
+.RI "void \fBpassNorthTabWidgetPtr\fP (QTabWidget *northTabWidgetPtr)"
+.br
+.ti -1c
+.RI "void \fBpassSouthTabWidgetPtr\fP (QTabWidget *southTabWidgetPtr)"
 .br
 .ti -1c
 .RI "\fB~CentralGui\fP ()"
@@ -45,13 +54,16 @@ Inherits QWidget\&.
 
 .in +1c
 .ti -1c
-.RI "\fBTabGui\fP * \fBcentralTabsPtr\fP"
+.RI "\fBTabGui\fP * \fBnorthGuiPtr\fP"
 .br
 .ti -1c
 .RI "\fBFileTreeGui\fP * \fBfileTreeGuiPtr\fP"
 .br
 .ti -1c
-.RI "\fBOutputGui\fP * \fBoutputGuiPtr\fP"
+.RI "\fBNavigatorGui\fP * \fBnavigatorGuiPtr\fP"
+.br
+.ti -1c
+.RI "\fBOutputGui\fP * \fBsouthGuiPtr\fP"
 .br
 .ti -1c
 .RI "QGridLayout * \fBouterLayout\fP"
@@ -59,7 +71,7 @@ Inherits QWidget\&.
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 26 of file CentralGui\&.h\&.
+Definition at line 27 of file CentralGui\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "CentralGui::CentralGui (QWidget *parent = \fC0\fP)"
@@ -69,55 +81,71 @@ Definition at line 4 of file CentralGui\&.cpp\&.
 .SS "CentralGui::~CentralGui ()"
 
 .PP
-Definition at line 69 of file CentralGui\&.cpp\&.
+Definition at line 89 of file CentralGui\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
-.SS "\fBTabGui\fP * CentralGui::getCentralTabsPtr ()"
-
-.PP
-Definition at line 33 of file CentralGui\&.cpp\&.
 .SS "\fBFileTreeGui\fP * CentralGui::getFileTreeGuiPtr ()"
 
 .PP
-Definition at line 45 of file CentralGui\&.cpp\&.
-.SS "\fBOutputGui\fP * CentralGui::getOutputGuiPtr ()"
+Definition at line 47 of file CentralGui\&.cpp\&.
+.SS "\fBNavigatorGui\fP * CentralGui::getNavigatorGuiPtr ()"
 
 .PP
-Definition at line 57 of file CentralGui\&.cpp\&.
-.SS "void CentralGui::passMasterTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
+Definition at line 59 of file CentralGui\&.cpp\&.
+.SS "\fBTabGui\fP * CentralGui::getNorthGuiPtr ()"
 
 .PP
-Definition at line 63 of file CentralGui\&.cpp\&.
-.SS "void CentralGui::setCentralTabsPtr (\fBTabGui\fP *centralTabsPtr)"
+Definition at line 35 of file CentralGui\&.cpp\&.
+.SS "\fBOutputGui\fP * CentralGui::getSouthGuiPtr ()"
 
 .PP
-Definition at line 27 of file CentralGui\&.cpp\&.
+Definition at line 71 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::passNorthTabWidgetPtr (QTabWidget *northTabWidgetPtr)"
+
+.PP
+Definition at line 77 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::passSouthTabWidgetPtr (QTabWidget *southTabWidgetPtr)"
+
+.PP
+Definition at line 83 of file CentralGui\&.cpp\&.
 .SS "void CentralGui::setFileTreeGuiPtr (\fBFileTreeGui\fP *fileTreeGuiPtr)"
 
 .PP
-Definition at line 39 of file CentralGui\&.cpp\&.
-.SS "void CentralGui::setOutputGuiPtr (\fBOutputGui\fP *outputGuiPtr)"
+Definition at line 41 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::setNavigatorGuiPtr (\fBNavigatorGui\fP *navigatorGuiPtr)"
 
 .PP
-Definition at line 51 of file CentralGui\&.cpp\&.
+Definition at line 53 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::setNorthGuiPtr (\fBTabGui\fP *northGuiPtr)"
+
+.PP
+Definition at line 29 of file CentralGui\&.cpp\&.
+.SS "void CentralGui::setSouthGuiPtr (\fBOutputGui\fP *southGuiPtr)"
+
+.PP
+Definition at line 65 of file CentralGui\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
-.SS "\fBTabGui\fP* CentralGui::centralTabsPtr\fC [private]\fP"
+.SS "\fBFileTreeGui\fP* CentralGui::fileTreeGuiPtr\fC [private]\fP"
 
 .PP
-Definition at line 31 of file CentralGui\&.h\&.
-.SS "\fBFileTreeGui\fP* CentralGui::fileTreeGuiPtr\fC [private]\fP"
+Definition at line 33 of file CentralGui\&.h\&.
+.SS "\fBNavigatorGui\fP* CentralGui::navigatorGuiPtr\fC [private]\fP"
+
+.PP
+Definition at line 34 of file CentralGui\&.h\&.
+.SS "\fBTabGui\fP* CentralGui::northGuiPtr\fC [private]\fP"
 
 .PP
 Definition at line 32 of file CentralGui\&.h\&.
 .SS "QGridLayout* CentralGui::outerLayout\fC [private]\fP"
 
 .PP
-Definition at line 35 of file CentralGui\&.h\&.
-.SS "\fBOutputGui\fP* CentralGui::outputGuiPtr\fC [private]\fP"
+Definition at line 37 of file CentralGui\&.h\&.
+.SS "\fBOutputGui\fP* CentralGui::southGuiPtr\fC [private]\fP"
 
 .PP
-Definition at line 33 of file CentralGui\&.h\&.
+Definition at line 35 of file CentralGui\&.h\&.
 
 .SH "Author"
 .PP 

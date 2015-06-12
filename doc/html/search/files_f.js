@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['windowsconsoletext_2ecpp',['WindowsConsoleText.cpp',['../_windows_console_text_8cpp.html',1,'']]],
-  ['windowsconsoletext_2eh',['WindowsConsoleText.h',['../_windows_console_text_8h.html',1,'']]]
+  ['xmlmaster_2ecpp',['XmlMaster.cpp',['../_xml_master_8cpp.html',1,'']]],
+  ['xmlmaster_2eh',['XmlMaster.h',['../_xml_master_8h.html',1,'']]]
 ];

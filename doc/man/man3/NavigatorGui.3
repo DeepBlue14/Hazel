@@ -1,4 +1,4 @@
-.TH "NavigatorGui" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "NavigatorGui" 3 "Fri Jun 12 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -8,29 +8,102 @@ NavigatorGui \-
 .PP
 .PP
 \fC#include <NavigatorGui\&.h>\fP
+.PP
+Inherits QWidget\&.
 .SS "Public Member Functions"
 
 .in +1c
 .ti -1c
-.RI "\fBNavigatorGui\fP ()"
+.RI "\fBNavigatorGui\fP (QWidget *parent=0)"
+.br
+.ti -1c
+.RI "void \fBloadData\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetWestTabWidgetPtr\fP (QTabWidget *masterTabWidgetPtr)"
+.br
+.ti -1c
+.RI "QTabWidget * \fBgetWestTabWidgetPtr\fP ()"
 .br
 .ti -1c
 .RI "\fB~NavigatorGui\fP ()"
 .br
 .in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "QListWidget * \fBlistWidgetPtr\fP"
+.br
+.ti -1c
+.RI "\fBSearchWidget\fP * \fBsearchWidgetPtr\fP"
+.br
+.ti -1c
+.RI "QPushButton * \fBactivateSearchBtn\fP"
+.br
+.ti -1c
+.RI "QString * \fBfileStrPtr\fP"
+.br
+.ti -1c
+.RI "QTabWidget * \fBwestTabWidgetPtr\fP"
+.br
+.ti -1c
+.RI "QGridLayout * \fBouterLayout\fP"
+.br
+.in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 14 of file NavigatorGui\&.h\&.
+Definition at line 26 of file NavigatorGui\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
-.SS "NavigatorGui::NavigatorGui ()"
+.SS "NavigatorGui::NavigatorGui (QWidget *parent = \fC0\fP)"
 
 .PP
 Definition at line 4 of file NavigatorGui\&.cpp\&.
 .SS "NavigatorGui::~NavigatorGui ()"
 
 .PP
-Definition at line 10 of file NavigatorGui\&.cpp\&.
+Definition at line 39 of file NavigatorGui\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "QTabWidget * NavigatorGui::getWestTabWidgetPtr ()"
+
+.PP
+Definition at line 33 of file NavigatorGui\&.cpp\&.
+.SS "void NavigatorGui::loadData ()"
+
+.PP
+Definition at line 21 of file NavigatorGui\&.cpp\&.
+.SS "void NavigatorGui::setWestTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
+
+.PP
+Definition at line 27 of file NavigatorGui\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "QPushButton* NavigatorGui::activateSearchBtn\fC [private]\fP"
+
+.PP
+Definition at line 33 of file NavigatorGui\&.h\&.
+.SS "QString* NavigatorGui::fileStrPtr\fC [private]\fP"
+
+.PP
+Definition at line 34 of file NavigatorGui\&.h\&.
+.SS "QListWidget* NavigatorGui::listWidgetPtr\fC [private]\fP"
+
+.PP
+Definition at line 31 of file NavigatorGui\&.h\&.
+.SS "QGridLayout* NavigatorGui::outerLayout\fC [private]\fP"
+
+.PP
+Definition at line 37 of file NavigatorGui\&.h\&.
+.SS "\fBSearchWidget\fP* NavigatorGui::searchWidgetPtr\fC [private]\fP"
+
+.PP
+Definition at line 32 of file NavigatorGui\&.h\&.
+.SS "QTabWidget* NavigatorGui::westTabWidgetPtr\fC [private]\fP"
+
+.PP
+Definition at line 36 of file NavigatorGui\&.h\&.
 
 .SH "Author"
 .PP 

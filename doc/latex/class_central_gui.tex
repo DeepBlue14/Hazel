@@ -16,11 +16,12 @@ Inheritance diagram for Central\-Gui\-:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for Central\-Gui\-:\nopagebreak
+Collaboration diagram for Central\-Gui\-:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{class_central_gui__coll__graph}
+\includegraphics[width=350pt]{class_central_gui__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -28,30 +29,38 @@ Collaboration diagram for Central\-Gui\-:\nopagebreak
 \item 
 \hyperlink{class_central_gui_aba31873e4b5d4bf9fd1e563601efc4e7}{Central\-Gui} (Q\-Widget $\ast$parent=0)
 \item 
-void \hyperlink{class_central_gui_afb70afe6db1411c77956236188e67bd0}{set\-Central\-Tabs\-Ptr} (\hyperlink{class_tab_gui}{Tab\-Gui} $\ast$\hyperlink{class_central_gui_a8ec49e2c3a7c601bed4a7e4ccf173682}{central\-Tabs\-Ptr})
+void \hyperlink{class_central_gui_a4c4fb762977d1295b564b36537299ed7}{set\-North\-Gui\-Ptr} (\hyperlink{class_tab_gui}{Tab\-Gui} $\ast$\hyperlink{class_central_gui_a9b03db6d32ac3138fde0213d41bea0af}{north\-Gui\-Ptr})
 \item 
-\hyperlink{class_tab_gui}{Tab\-Gui} $\ast$ \hyperlink{class_central_gui_a16716c4c66f7ce8e4552fcb20337ab39}{get\-Central\-Tabs\-Ptr} ()
+\hyperlink{class_tab_gui}{Tab\-Gui} $\ast$ \hyperlink{class_central_gui_aeb363fd8e3880fa97b52eaf6d905e1d4}{get\-North\-Gui\-Ptr} ()
 \item 
 void \hyperlink{class_central_gui_a65abd3c9dc8bb14a60ca89da399c427e}{set\-File\-Tree\-Gui\-Ptr} (\hyperlink{class_file_tree_gui}{File\-Tree\-Gui} $\ast$\hyperlink{class_central_gui_a6abfae93daa17e3af2a814888c9c14cf}{file\-Tree\-Gui\-Ptr})
 \item 
 \hyperlink{class_file_tree_gui}{File\-Tree\-Gui} $\ast$ \hyperlink{class_central_gui_aba7129fa7a935565409beb63498c2eb3}{get\-File\-Tree\-Gui\-Ptr} ()
 \item 
-void \hyperlink{class_central_gui_ae8559c5a3733e33a1ded21db79bd8d3a}{set\-Output\-Gui\-Ptr} (\hyperlink{class_output_gui}{Output\-Gui} $\ast$\hyperlink{class_central_gui_a60c563767906a6db0c209f0b21437a09}{output\-Gui\-Ptr})
+void \hyperlink{class_central_gui_ab8375fbf4f11a785d1bdf35c6678f7fd}{set\-Navigator\-Gui\-Ptr} (\hyperlink{class_navigator_gui}{Navigator\-Gui} $\ast$\hyperlink{class_central_gui_a902df8268cd1e83d1991ea88eafb9220}{navigator\-Gui\-Ptr})
 \item 
-\hyperlink{class_output_gui}{Output\-Gui} $\ast$ \hyperlink{class_central_gui_a47d2d46581f064ed8b46e1f611a0bd98}{get\-Output\-Gui\-Ptr} ()
+\hyperlink{class_navigator_gui}{Navigator\-Gui} $\ast$ \hyperlink{class_central_gui_a700dcc17aa9827601879655206117fef}{get\-Navigator\-Gui\-Ptr} ()
 \item 
-void \hyperlink{class_central_gui_a8f7149e1e5b7cfc5c694421482c68c5e}{pass\-Master\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$master\-Tab\-Widget\-Ptr)
+void \hyperlink{class_central_gui_af407a4ca044dccbdb7363ed9d200ab1c}{set\-South\-Gui\-Ptr} (\hyperlink{class_output_gui}{Output\-Gui} $\ast$\hyperlink{class_central_gui_ae7012a7f0abe1fea596ce6af795c1741}{south\-Gui\-Ptr})
+\item 
+\hyperlink{class_output_gui}{Output\-Gui} $\ast$ \hyperlink{class_central_gui_a210462a5153619fbf617f999c4e54e4c}{get\-South\-Gui\-Ptr} ()
+\item 
+void \hyperlink{class_central_gui_a072a884564050875f6d8be502976e2a6}{pass\-North\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$north\-Tab\-Widget\-Ptr)
+\item 
+void \hyperlink{class_central_gui_a9f2e7b269810e32cb32ad0fb83b046a6}{pass\-South\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$south\-Tab\-Widget\-Ptr)
 \item 
 \hyperlink{class_central_gui_ad54c2077e29d7a2017399b39e62c1043}{$\sim$\-Central\-Gui} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{class_tab_gui}{Tab\-Gui} $\ast$ \hyperlink{class_central_gui_a8ec49e2c3a7c601bed4a7e4ccf173682}{central\-Tabs\-Ptr}
+\hyperlink{class_tab_gui}{Tab\-Gui} $\ast$ \hyperlink{class_central_gui_a9b03db6d32ac3138fde0213d41bea0af}{north\-Gui\-Ptr}
 \item 
 \hyperlink{class_file_tree_gui}{File\-Tree\-Gui} $\ast$ \hyperlink{class_central_gui_a6abfae93daa17e3af2a814888c9c14cf}{file\-Tree\-Gui\-Ptr}
 \item 
-\hyperlink{class_output_gui}{Output\-Gui} $\ast$ \hyperlink{class_central_gui_a60c563767906a6db0c209f0b21437a09}{output\-Gui\-Ptr}
+\hyperlink{class_navigator_gui}{Navigator\-Gui} $\ast$ \hyperlink{class_central_gui_a902df8268cd1e83d1991ea88eafb9220}{navigator\-Gui\-Ptr}
+\item 
+\hyperlink{class_output_gui}{Output\-Gui} $\ast$ \hyperlink{class_central_gui_ae7012a7f0abe1fea596ce6af795c1741}{south\-Gui\-Ptr}
 \item 
 Q\-Grid\-Layout $\ast$ \hyperlink{class_central_gui_ab10e8028968ca8d5bf7b2cfe4b257d52}{outer\-Layout}
 \end{DoxyCompactItemize}
@@ -60,7 +69,7 @@ Q\-Grid\-Layout $\ast$ \hyperlink{class_central_gui_ab10e8028968ca8d5bf7b2cfe4b2
 \subsection{Detailed Description}
 
 
-Definition at line 26 of file Central\-Gui.\-h.
+Definition at line 27 of file Central\-Gui.\-h.
 
 
 
@@ -85,22 +94,11 @@ Definition at line 4 of file Central\-Gui.\-cpp.
 )}}\label{class_central_gui_ad54c2077e29d7a2017399b39e62c1043}
 
 
-Definition at line 69 of file Central\-Gui.\-cpp.
+Definition at line 89 of file Central\-Gui.\-cpp.
 
 
 
 \subsection{Member Function Documentation}
-\hypertarget{class_central_gui_a16716c4c66f7ce8e4552fcb20337ab39}{\index{Central\-Gui@{Central\-Gui}!get\-Central\-Tabs\-Ptr@{get\-Central\-Tabs\-Ptr}}
-\index{get\-Central\-Tabs\-Ptr@{get\-Central\-Tabs\-Ptr}!CentralGui@{Central\-Gui}}
-\subsubsection[{get\-Central\-Tabs\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tab\-Gui} $\ast$ Central\-Gui\-::get\-Central\-Tabs\-Ptr (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{class_central_gui_a16716c4c66f7ce8e4552fcb20337ab39}
-
-
-Definition at line 33 of file Central\-Gui.\-cpp.
-
 \hypertarget{class_central_gui_aba7129fa7a935565409beb63498c2eb3}{\index{Central\-Gui@{Central\-Gui}!get\-File\-Tree\-Gui\-Ptr@{get\-File\-Tree\-Gui\-Ptr}}
 \index{get\-File\-Tree\-Gui\-Ptr@{get\-File\-Tree\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
 \subsubsection[{get\-File\-Tree\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Tree\-Gui} $\ast$ Central\-Gui\-::get\-File\-Tree\-Gui\-Ptr (
@@ -110,40 +108,134 @@ Definition at line 33 of file Central\-Gui.\-cpp.
 )}}\label{class_central_gui_aba7129fa7a935565409beb63498c2eb3}
 
 
-Definition at line 45 of file Central\-Gui.\-cpp.
+Definition at line 47 of file Central\-Gui.\-cpp.
 
-\hypertarget{class_central_gui_a47d2d46581f064ed8b46e1f611a0bd98}{\index{Central\-Gui@{Central\-Gui}!get\-Output\-Gui\-Ptr@{get\-Output\-Gui\-Ptr}}
-\index{get\-Output\-Gui\-Ptr@{get\-Output\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
-\subsubsection[{get\-Output\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\-Gui} $\ast$ Central\-Gui\-::get\-Output\-Gui\-Ptr (
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_central_gui_aba7129fa7a935565409beb63498c2eb3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_central_gui_a700dcc17aa9827601879655206117fef}{\index{Central\-Gui@{Central\-Gui}!get\-Navigator\-Gui\-Ptr@{get\-Navigator\-Gui\-Ptr}}
+\index{get\-Navigator\-Gui\-Ptr@{get\-Navigator\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{get\-Navigator\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigator\-Gui} $\ast$ Central\-Gui\-::get\-Navigator\-Gui\-Ptr (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_central_gui_a47d2d46581f064ed8b46e1f611a0bd98}
+)}}\label{class_central_gui_a700dcc17aa9827601879655206117fef}
 
 
-Definition at line 57 of file Central\-Gui.\-cpp.
+Definition at line 59 of file Central\-Gui.\-cpp.
 
-\hypertarget{class_central_gui_a8f7149e1e5b7cfc5c694421482c68c5e}{\index{Central\-Gui@{Central\-Gui}!pass\-Master\-Tab\-Widget\-Ptr@{pass\-Master\-Tab\-Widget\-Ptr}}
-\index{pass\-Master\-Tab\-Widget\-Ptr@{pass\-Master\-Tab\-Widget\-Ptr}!CentralGui@{Central\-Gui}}
-\subsubsection[{pass\-Master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::pass\-Master\-Tab\-Widget\-Ptr (
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_central_gui_a700dcc17aa9827601879655206117fef_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_central_gui_aeb363fd8e3880fa97b52eaf6d905e1d4}{\index{Central\-Gui@{Central\-Gui}!get\-North\-Gui\-Ptr@{get\-North\-Gui\-Ptr}}
+\index{get\-North\-Gui\-Ptr@{get\-North\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{get\-North\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tab\-Gui} $\ast$ Central\-Gui\-::get\-North\-Gui\-Ptr (
 \begin{DoxyParamCaption}
-\item[{Q\-Tab\-Widget $\ast$}]{master\-Tab\-Widget\-Ptr}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_central_gui_a8f7149e1e5b7cfc5c694421482c68c5e}
+)}}\label{class_central_gui_aeb363fd8e3880fa97b52eaf6d905e1d4}
 
 
-Definition at line 63 of file Central\-Gui.\-cpp.
+Definition at line 35 of file Central\-Gui.\-cpp.
 
-\hypertarget{class_central_gui_afb70afe6db1411c77956236188e67bd0}{\index{Central\-Gui@{Central\-Gui}!set\-Central\-Tabs\-Ptr@{set\-Central\-Tabs\-Ptr}}
-\index{set\-Central\-Tabs\-Ptr@{set\-Central\-Tabs\-Ptr}!CentralGui@{Central\-Gui}}
-\subsubsection[{set\-Central\-Tabs\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-Central\-Tabs\-Ptr (
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_central_gui_aeb363fd8e3880fa97b52eaf6d905e1d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_central_gui_a210462a5153619fbf617f999c4e54e4c}{\index{Central\-Gui@{Central\-Gui}!get\-South\-Gui\-Ptr@{get\-South\-Gui\-Ptr}}
+\index{get\-South\-Gui\-Ptr@{get\-South\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{get\-South\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\-Gui} $\ast$ Central\-Gui\-::get\-South\-Gui\-Ptr (
 \begin{DoxyParamCaption}
-\item[{{\bf Tab\-Gui} $\ast$}]{central\-Tabs\-Ptr}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_central_gui_afb70afe6db1411c77956236188e67bd0}
+)}}\label{class_central_gui_a210462a5153619fbf617f999c4e54e4c}
 
 
-Definition at line 27 of file Central\-Gui.\-cpp.
+Definition at line 71 of file Central\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_central_gui_a210462a5153619fbf617f999c4e54e4c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_central_gui_a072a884564050875f6d8be502976e2a6}{\index{Central\-Gui@{Central\-Gui}!pass\-North\-Tab\-Widget\-Ptr@{pass\-North\-Tab\-Widget\-Ptr}}
+\index{pass\-North\-Tab\-Widget\-Ptr@{pass\-North\-Tab\-Widget\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{pass\-North\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::pass\-North\-Tab\-Widget\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-Tab\-Widget $\ast$}]{north\-Tab\-Widget\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_a072a884564050875f6d8be502976e2a6}
+
+
+Definition at line 77 of file Central\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_central_gui_a072a884564050875f6d8be502976e2a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_central_gui_a072a884564050875f6d8be502976e2a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_central_gui_a9f2e7b269810e32cb32ad0fb83b046a6}{\index{Central\-Gui@{Central\-Gui}!pass\-South\-Tab\-Widget\-Ptr@{pass\-South\-Tab\-Widget\-Ptr}}
+\index{pass\-South\-Tab\-Widget\-Ptr@{pass\-South\-Tab\-Widget\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{pass\-South\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::pass\-South\-Tab\-Widget\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-Tab\-Widget $\ast$}]{south\-Tab\-Widget\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_a9f2e7b269810e32cb32ad0fb83b046a6}
+
+
+Definition at line 83 of file Central\-Gui.\-cpp.
 
 \hypertarget{class_central_gui_a65abd3c9dc8bb14a60ca89da399c427e}{\index{Central\-Gui@{Central\-Gui}!set\-File\-Tree\-Gui\-Ptr@{set\-File\-Tree\-Gui\-Ptr}}
 \index{set\-File\-Tree\-Gui\-Ptr@{set\-File\-Tree\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
@@ -154,32 +246,61 @@ Definition at line 27 of file Central\-Gui.\-cpp.
 )}}\label{class_central_gui_a65abd3c9dc8bb14a60ca89da399c427e}
 
 
-Definition at line 39 of file Central\-Gui.\-cpp.
+Definition at line 41 of file Central\-Gui.\-cpp.
 
-\hypertarget{class_central_gui_ae8559c5a3733e33a1ded21db79bd8d3a}{\index{Central\-Gui@{Central\-Gui}!set\-Output\-Gui\-Ptr@{set\-Output\-Gui\-Ptr}}
-\index{set\-Output\-Gui\-Ptr@{set\-Output\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
-\subsubsection[{set\-Output\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-Output\-Gui\-Ptr (
+\hypertarget{class_central_gui_ab8375fbf4f11a785d1bdf35c6678f7fd}{\index{Central\-Gui@{Central\-Gui}!set\-Navigator\-Gui\-Ptr@{set\-Navigator\-Gui\-Ptr}}
+\index{set\-Navigator\-Gui\-Ptr@{set\-Navigator\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{set\-Navigator\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-Navigator\-Gui\-Ptr (
 \begin{DoxyParamCaption}
-\item[{{\bf Output\-Gui} $\ast$}]{output\-Gui\-Ptr}
+\item[{{\bf Navigator\-Gui} $\ast$}]{navigator\-Gui\-Ptr}
 \end{DoxyParamCaption}
-)}}\label{class_central_gui_ae8559c5a3733e33a1ded21db79bd8d3a}
+)}}\label{class_central_gui_ab8375fbf4f11a785d1bdf35c6678f7fd}
 
 
-Definition at line 51 of file Central\-Gui.\-cpp.
+Definition at line 53 of file Central\-Gui.\-cpp.
+
+\hypertarget{class_central_gui_a4c4fb762977d1295b564b36537299ed7}{\index{Central\-Gui@{Central\-Gui}!set\-North\-Gui\-Ptr@{set\-North\-Gui\-Ptr}}
+\index{set\-North\-Gui\-Ptr@{set\-North\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{set\-North\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-North\-Gui\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Tab\-Gui} $\ast$}]{north\-Gui\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_a4c4fb762977d1295b564b36537299ed7}
+
+
+Definition at line 29 of file Central\-Gui.\-cpp.
+
+\hypertarget{class_central_gui_af407a4ca044dccbdb7363ed9d200ab1c}{\index{Central\-Gui@{Central\-Gui}!set\-South\-Gui\-Ptr@{set\-South\-Gui\-Ptr}}
+\index{set\-South\-Gui\-Ptr@{set\-South\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{set\-South\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Central\-Gui\-::set\-South\-Gui\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Output\-Gui} $\ast$}]{south\-Gui\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_central_gui_af407a4ca044dccbdb7363ed9d200ab1c}
+
+
+Definition at line 65 of file Central\-Gui.\-cpp.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_central_gui_a8ec49e2c3a7c601bed4a7e4ccf173682}{\index{Central\-Gui@{Central\-Gui}!central\-Tabs\-Ptr@{central\-Tabs\-Ptr}}
-\index{central\-Tabs\-Ptr@{central\-Tabs\-Ptr}!CentralGui@{Central\-Gui}}
-\subsubsection[{central\-Tabs\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tab\-Gui}$\ast$ Central\-Gui\-::central\-Tabs\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_central_gui_a8ec49e2c3a7c601bed4a7e4ccf173682}
-
-
-Definition at line 31 of file Central\-Gui.\-h.
-
 \hypertarget{class_central_gui_a6abfae93daa17e3af2a814888c9c14cf}{\index{Central\-Gui@{Central\-Gui}!file\-Tree\-Gui\-Ptr@{file\-Tree\-Gui\-Ptr}}
 \index{file\-Tree\-Gui\-Ptr@{file\-Tree\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
 \subsubsection[{file\-Tree\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Tree\-Gui}$\ast$ Central\-Gui\-::file\-Tree\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_central_gui_a6abfae93daa17e3af2a814888c9c14cf}
+
+
+Definition at line 33 of file Central\-Gui.\-h.
+
+\hypertarget{class_central_gui_a902df8268cd1e83d1991ea88eafb9220}{\index{Central\-Gui@{Central\-Gui}!navigator\-Gui\-Ptr@{navigator\-Gui\-Ptr}}
+\index{navigator\-Gui\-Ptr@{navigator\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{navigator\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigator\-Gui}$\ast$ Central\-Gui\-::navigator\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_central_gui_a902df8268cd1e83d1991ea88eafb9220}
+
+
+Definition at line 34 of file Central\-Gui.\-h.
+
+\hypertarget{class_central_gui_a9b03db6d32ac3138fde0213d41bea0af}{\index{Central\-Gui@{Central\-Gui}!north\-Gui\-Ptr@{north\-Gui\-Ptr}}
+\index{north\-Gui\-Ptr@{north\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{north\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tab\-Gui}$\ast$ Central\-Gui\-::north\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_central_gui_a9b03db6d32ac3138fde0213d41bea0af}
 
 
 Definition at line 32 of file Central\-Gui.\-h.
@@ -189,14 +310,14 @@ Definition at line 32 of file Central\-Gui.\-h.
 \subsubsection[{outer\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Grid\-Layout$\ast$ Central\-Gui\-::outer\-Layout\hspace{0.3cm}{\ttfamily [private]}}}\label{class_central_gui_ab10e8028968ca8d5bf7b2cfe4b257d52}
 
 
+Definition at line 37 of file Central\-Gui.\-h.
+
+\hypertarget{class_central_gui_ae7012a7f0abe1fea596ce6af795c1741}{\index{Central\-Gui@{Central\-Gui}!south\-Gui\-Ptr@{south\-Gui\-Ptr}}
+\index{south\-Gui\-Ptr@{south\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
+\subsubsection[{south\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\-Gui}$\ast$ Central\-Gui\-::south\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_central_gui_ae7012a7f0abe1fea596ce6af795c1741}
+
+
 Definition at line 35 of file Central\-Gui.\-h.
-
-\hypertarget{class_central_gui_a60c563767906a6db0c209f0b21437a09}{\index{Central\-Gui@{Central\-Gui}!output\-Gui\-Ptr@{output\-Gui\-Ptr}}
-\index{output\-Gui\-Ptr@{output\-Gui\-Ptr}!CentralGui@{Central\-Gui}}
-\subsubsection[{output\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\-Gui}$\ast$ Central\-Gui\-::output\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_central_gui_a60c563767906a6db0c209f0b21437a09}
-
-
-Definition at line 33 of file Central\-Gui.\-h.
 
 
 

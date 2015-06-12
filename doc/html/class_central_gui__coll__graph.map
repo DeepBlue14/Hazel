@@ -1,6 +1,8 @@
 <map id="CentralGui" name="CentralGui">
-<area shape="rect" id="node3" href="$class_tab_gui.html" title="TabGui" alt="" coords="20,184,84,211"/>
-<area shape="rect" id="node4" href="$class_opening_gui.html" title="OpeningGui" alt="" coords="71,83,161,109"/>
-<area shape="rect" id="node5" href="$class_output_gui.html" title="OutputGui" alt="" coords="154,133,235,160"/>
-<area shape="rect" id="node6" href="$class_file_tree_gui.html" title="FileTreeGui" alt="" coords="242,133,331,160"/>
+<area shape="rect" id="node3" href="$class_navigator_gui.html" title="NavigatorGui" alt="" coords="96,184,195,211"/>
+<area shape="rect" id="node6" href="$class_tab_gui.html" title="TabGui" alt="" coords="239,184,303,211"/>
+<area shape="rect" id="node7" href="$class_opening_gui.html" title="OpeningGui" alt="" coords="267,83,357,109"/>
+<area shape="rect" id="node8" href="$class_output_gui.html" title="OutputGui" alt="" coords="350,133,431,160"/>
+<area shape="rect" id="node9" href="$class_file_tree_gui.html" title="FileTreeGui" alt="" coords="438,133,527,160"/>
+<area shape="rect" id="node4" href="$class_search_widget.html" title="SearchWidget" alt="" coords="5,83,109,109"/>
 </map>

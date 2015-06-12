@@ -1,7 +1,9 @@
 <map id="/home/james/NetBeansProjects/ride/src/CentralGui.h" name="/home/james/NetBeansProjects/ride/src/CentralGui.h">
-<area shape="rect" id="node6" href="$_tab_gui_8h.html" title="TabGui.h" alt="" coords="271,96,344,123"/>
-<area shape="rect" id="node11" href="$_file_tree_gui_8h.html" title="FileTreeGui.h" alt="" coords="871,96,971,123"/>
-<area shape="rect" id="node25" href="$_output_gui_8h.html" title="OutputGui.h" alt="" coords="1791,96,1883,123"/>
-<area shape="rect" id="node8" href="$_opening_gui_8h.html" title="OpeningGui.h" alt="" coords="119,171,220,197"/>
-<area shape="rect" id="node22" href="$_tree_item_icon_init_8h.html" title="TreeItemIconInit.h" alt="" coords="1900,171,2028,197"/>
+<area shape="rect" id="node6" href="$_tab_gui_8h.html" title="TabGui.h" alt="" coords="564,96,638,123"/>
+<area shape="rect" id="node11" href="$_file_tree_gui_8h.html" title="FileTreeGui.h" alt="" coords="1865,96,1964,123"/>
+<area shape="rect" id="node25" href="$_navigator_gui_8h.html" title="NavigatorGui.h" alt="" coords="835,96,944,123"/>
+<area shape="rect" id="node30" href="$_output_gui_8h.html" title="OutputGui.h" alt="" coords="236,96,327,123"/>
+<area shape="rect" id="node8" href="$_opening_gui_8h.html" title="OpeningGui.h" alt="" coords="242,171,343,197"/>
+<area shape="rect" id="node22" href="$_tree_item_icon_init_8h.html" title="TreeItemIconInit.h" alt="" coords="2371,171,2499,197"/>
+<area shape="rect" id="node28" href="$_search_widget_8h.html" title="SearchWidget.h" alt="" coords="1476,171,1591,197"/>
 </map>

@@ -4,6 +4,7 @@ var searchData=
   ['refactormenuptr',['refactorMenuPtr',['../class_master_gui.html#a44e789008fcc276a7a4294beb98d02c7',1,'MasterGui']]],
   ['relfilepathstrptr',['relFilePathStrPtr',['../class_ride_file.html#a47152ef70bd5486c4cbaa5c12e5346d4',1,'RideFile']]],
   ['ridefileptrvec',['rideFilePtrVec',['../namespace_save_all.html#a683cd764fde42d76fc00478beb609f06',1,'SaveAll']]],
+  ['rideprojdirabspathstrptr',['rideProjDirAbsPathStrPtr',['../class_ride_env.html#aa809a64cf5c8f8c91cefc2a2c19fd225',1,'RideEnv']]],
   ['rmfromlistbtnptr',['rmFromListBtnPtr',['../class_new_project_page__4.html#adc7e800ceb08846ee3154e309f19542a',1,'NewProjectPage_4::rmFromListBtnPtr()'],['../class_run_page__3.html#ae38727316495817c8bead962171f0bc7',1,'RunPage_3::rmFromListBtnPtr()']]],
   ['rosversionslwptr',['rosVersionsLwPtr',['../class_new_project_page__1.html#a45bba5023ff9ebd180cc0be64367b37a',1,'NewProjectPage_1']]],
   ['rosversionsstrlstptr',['rosVersionsStrLstPtr',['../class_new_project_page__1.html#a63e7e74af698edd3d4b72ed84864ad87',1,'NewProjectPage_1']]],

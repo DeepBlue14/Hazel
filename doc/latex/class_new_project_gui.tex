@@ -50,6 +50,20 @@ void \hyperlink{class_new_project_gui_a92027285ea0ec685ebef5b62afb4e4eb}{load\-P
 \item 
 void \hyperlink{class_new_project_gui_a251eaaea1f985069babb7a203de852db}{unload\-Page\-\_\-4} ()
 \item 
+void \hyperlink{class_new_project_gui_a5dac69b4d7cd4a6d0beb033f5406825b}{gen\-Ride\-Proj\-Depends} (Q\-Process $\ast$process, Q\-String $\ast$project\-Root\-Str\-Ptr)
+\item 
+void \hyperlink{class_new_project_gui_ad50f7b147c3b3dc97ca92cc6c7b805f0}{set\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr} (Q\-String $\ast$\hyperlink{class_new_project_gui_aa985b9da4028bea4f10e76d116955c4e}{abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr})
+\item 
+Q\-String $\ast$ \hyperlink{class_new_project_gui_a7a9884b9659412ddf26ec7b59fe2edb5}{get\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr} ()
+\item 
+void \hyperlink{class_new_project_gui_ab70a65b041c40d501a431bb7ba3f5ad1}{set\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr} (Q\-String $\ast$\hyperlink{class_new_project_gui_ad8f25243a46ce10b6f1bc0c9ddb3e7eb}{abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr})
+\item 
+Q\-String $\ast$ \hyperlink{class_new_project_gui_ae32efb6021b235257d0b0092180e121b}{get\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr} ()
+\item 
+void \hyperlink{class_new_project_gui_af90561864043fb757f8db808aadfa4b6}{set\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr} (Q\-String $\ast$\hyperlink{class_new_project_gui_a9056b4e1033cde862dd86bac6c0c6070}{abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr})
+\item 
+Q\-String $\ast$ \hyperlink{class_new_project_gui_a6271114ad664216313d2427eb51820ab}{get\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr} ()
+\item 
 Q\-String $\ast$ \hyperlink{class_new_project_gui_a06d242dd2c162f66284bf468e17c5c73}{to\-String} ()
 \item 
 \hyperlink{class_new_project_gui_a2057fcc82bc632a4c7c506274dd45fe1}{$\sim$\-New\-Project\-Gui} ()
@@ -102,13 +116,21 @@ Q\-H\-Box\-Layout $\ast$ \hyperlink{class_new_project_gui_a7281efc1048f02fae1610
 \hyperlink{class_new_project_page__3}{New\-Project\-Page\-\_\-3} $\ast$ \hyperlink{class_new_project_gui_a16ff0aedd402588686ae3f02b4226fc0}{new\-Project\-Page\-\_\-3\-Ptr}
 \item 
 \hyperlink{class_new_project_page__4}{New\-Project\-Page\-\_\-4} $\ast$ \hyperlink{class_new_project_gui_a4c4e20d7598c3c61a45eb51a0332a326}{new\-Project\-Page\-\_\-4\-Ptr}
+\item 
+Q\-String $\ast$ \hyperlink{class_new_project_gui_aa985b9da4028bea4f10e76d116955c4e}{abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}
+\item 
+Q\-String $\ast$ \hyperlink{class_new_project_gui_ad8f25243a46ce10b6f1bc0c9ddb3e7eb}{abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}
+\item 
+Q\-String $\ast$ \hyperlink{class_new_project_gui_a9056b4e1033cde862dd86bac6c0c6070}{abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}
+\item 
+Q\-String $\ast$ \hyperlink{class_new_project_gui_ab0c9525363d1b0b8ed2aef874307852e}{abs\-Path\-To\-Proj\-Create\-File\-Str\-Ptr}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 30 of file New\-Project\-Gui.\-h.
+Definition at line 32 of file New\-Project\-Gui.\-h.
 
 
 
@@ -131,7 +153,7 @@ Definition at line 30 of file New\-Project\-Gui.\-h.
 \end{Desc}
 
 
-Definition at line 35 of file New\-Project\-Gui.\-h.
+Definition at line 37 of file New\-Project\-Gui.\-h.
 
 
 
@@ -145,7 +167,19 @@ Definition at line 35 of file New\-Project\-Gui.\-h.
 )}}\label{class_new_project_gui_a477f5d0a5d466be598b3bdf55d22b7f1}
 
 
-Definition at line 4 of file New\-Project\-Gui.\-cpp.
+Definition at line 14 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a477f5d0a5d466be598b3bdf55d22b7f1_cgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a2057fcc82bc632a4c7c506274dd45fe1}{\index{New\-Project\-Gui@{New\-Project\-Gui}!$\sim$\-New\-Project\-Gui@{$\sim$\-New\-Project\-Gui}}
 \index{$\sim$\-New\-Project\-Gui@{$\sim$\-New\-Project\-Gui}!NewProjectGui@{New\-Project\-Gui}}
@@ -156,11 +190,80 @@ Definition at line 4 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a2057fcc82bc632a4c7c506274dd45fe1}
 
 
-Definition at line 274 of file New\-Project\-Gui.\-cpp.
+Definition at line 426 of file New\-Project\-Gui.\-cpp.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_new_project_gui_a5dac69b4d7cd4a6d0beb033f5406825b}{\index{New\-Project\-Gui@{New\-Project\-Gui}!gen\-Ride\-Proj\-Depends@{gen\-Ride\-Proj\-Depends}}
+\index{gen\-Ride\-Proj\-Depends@{gen\-Ride\-Proj\-Depends}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{gen\-Ride\-Proj\-Depends}]{\setlength{\rightskip}{0pt plus 5cm}void New\-Project\-Gui\-::gen\-Ride\-Proj\-Depends (
+\begin{DoxyParamCaption}
+\item[{Q\-Process $\ast$}]{process, }
+\item[{Q\-String $\ast$}]{project\-Root\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_new_project_gui_a5dac69b4d7cd4a6d0beb033f5406825b}
+
+
+Definition at line 268 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a5dac69b4d7cd4a6d0beb033f5406825b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a5dac69b4d7cd4a6d0beb033f5406825b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_new_project_gui_a7a9884b9659412ddf26ec7b59fe2edb5}{\index{New\-Project\-Gui@{New\-Project\-Gui}!get\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr@{get\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}}
+\index{get\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr@{get\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{get\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ New\-Project\-Gui\-::get\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_new_project_gui_a7a9884b9659412ddf26ec7b59fe2edb5}
+
+
+Definition at line 375 of file New\-Project\-Gui.\-cpp.
+
+\hypertarget{class_new_project_gui_a6271114ad664216313d2427eb51820ab}{\index{New\-Project\-Gui@{New\-Project\-Gui}!get\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr@{get\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}}
+\index{get\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr@{get\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{get\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ New\-Project\-Gui\-::get\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_new_project_gui_a6271114ad664216313d2427eb51820ab}
+
+
+Definition at line 399 of file New\-Project\-Gui.\-cpp.
+
+\hypertarget{class_new_project_gui_ae32efb6021b235257d0b0092180e121b}{\index{New\-Project\-Gui@{New\-Project\-Gui}!get\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr@{get\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}}
+\index{get\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr@{get\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{get\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ New\-Project\-Gui\-::get\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_new_project_gui_ae32efb6021b235257d0b0092180e121b}
+
+
+Definition at line 387 of file New\-Project\-Gui.\-cpp.
+
 \hypertarget{class_new_project_gui_ae8c086687f029bada59f3934aa16ad9b}{\index{New\-Project\-Gui@{New\-Project\-Gui}!handle\-Back\-Btn\-Slot@{handle\-Back\-Btn\-Slot}}
 \index{handle\-Back\-Btn\-Slot@{handle\-Back\-Btn\-Slot}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{handle\-Back\-Btn\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void New\-Project\-Gui\-::handle\-Back\-Btn\-Slot (
@@ -170,7 +273,31 @@ Definition at line 274 of file New\-Project\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_new_project_gui_ae8c086687f029bada59f3934aa16ad9b}
 
 
-Definition at line 31 of file New\-Project\-Gui.\-cpp.
+Definition at line 41 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ae8c086687f029bada59f3934aa16ad9b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ae8c086687f029bada59f3934aa16ad9b_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_ad25d0850e202e697203583fb4665004e}{\index{New\-Project\-Gui@{New\-Project\-Gui}!handle\-Cancel\-Btn\-Slot@{handle\-Cancel\-Btn\-Slot}}
 \index{handle\-Cancel\-Btn\-Slot@{handle\-Cancel\-Btn\-Slot}!NewProjectGui@{New\-Project\-Gui}}
@@ -181,7 +308,19 @@ Definition at line 31 of file New\-Project\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_new_project_gui_ad25d0850e202e697203583fb4665004e}
 
 
-Definition at line 101 of file New\-Project\-Gui.\-cpp.
+Definition at line 116 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ad25d0850e202e697203583fb4665004e_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_ad47832cd6388ea36101b1e0002837546}{\index{New\-Project\-Gui@{New\-Project\-Gui}!handle\-Finish\-Btn\-Slot@{handle\-Finish\-Btn\-Slot}}
 \index{handle\-Finish\-Btn\-Slot@{handle\-Finish\-Btn\-Slot}!NewProjectGui@{New\-Project\-Gui}}
@@ -192,7 +331,31 @@ Definition at line 101 of file New\-Project\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_new_project_gui_ad47832cd6388ea36101b1e0002837546}
 
 
-Definition at line 44 of file New\-Project\-Gui.\-cpp.
+Definition at line 54 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ad47832cd6388ea36101b1e0002837546_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ad47832cd6388ea36101b1e0002837546_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a241a3a40b5f749cff7813e29c169b742}{\index{New\-Project\-Gui@{New\-Project\-Gui}!handle\-Help\-Bnt\-Slot@{handle\-Help\-Bnt\-Slot}}
 \index{handle\-Help\-Bnt\-Slot@{handle\-Help\-Bnt\-Slot}!NewProjectGui@{New\-Project\-Gui}}
@@ -203,7 +366,19 @@ Definition at line 44 of file New\-Project\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_new_project_gui_a241a3a40b5f749cff7813e29c169b742}
 
 
-Definition at line 95 of file New\-Project\-Gui.\-cpp.
+Definition at line 110 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a241a3a40b5f749cff7813e29c169b742_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a247f62254e88454615d89be32464ce28}{\index{New\-Project\-Gui@{New\-Project\-Gui}!handle\-Next\-Btn\-Slot@{handle\-Next\-Btn\-Slot}}
 \index{handle\-Next\-Btn\-Slot@{handle\-Next\-Btn\-Slot}!NewProjectGui@{New\-Project\-Gui}}
@@ -214,7 +389,31 @@ Definition at line 95 of file New\-Project\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_new_project_gui_a247f62254e88454615d89be32464ce28}
 
 
-Definition at line 37 of file New\-Project\-Gui.\-cpp.
+Definition at line 47 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a247f62254e88454615d89be32464ce28_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a247f62254e88454615d89be32464ce28_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a5822d7472aff8da63b822e09afa481e1}{\index{New\-Project\-Gui@{New\-Project\-Gui}!init\-Btns@{init\-Btns}}
 \index{init\-Btns@{init\-Btns}!NewProjectGui@{New\-Project\-Gui}}
@@ -225,7 +424,31 @@ Definition at line 37 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a5822d7472aff8da63b822e09afa481e1}
 
 
-Definition at line 107 of file New\-Project\-Gui.\-cpp.
+Definition at line 122 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a5822d7472aff8da63b822e09afa481e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a5822d7472aff8da63b822e09afa481e1_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a71cc5704a7e11e7344cf2cbb04f44097}{\index{New\-Project\-Gui@{New\-Project\-Gui}!load\-Page\-\_\-1@{load\-Page\-\_\-1}}
 \index{load\-Page\-\_\-1@{load\-Page\-\_\-1}!NewProjectGui@{New\-Project\-Gui}}
@@ -236,7 +459,19 @@ Definition at line 107 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a71cc5704a7e11e7344cf2cbb04f44097}
 
 
-Definition at line 189 of file New\-Project\-Gui.\-cpp.
+Definition at line 204 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a71cc5704a7e11e7344cf2cbb04f44097_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_ac81882c81a3315a48634fa0f2a84f6a5}{\index{New\-Project\-Gui@{New\-Project\-Gui}!load\-Page\-\_\-2@{load\-Page\-\_\-2}}
 \index{load\-Page\-\_\-2@{load\-Page\-\_\-2}!NewProjectGui@{New\-Project\-Gui}}
@@ -247,7 +482,19 @@ Definition at line 189 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_ac81882c81a3315a48634fa0f2a84f6a5}
 
 
-Definition at line 205 of file New\-Project\-Gui.\-cpp.
+Definition at line 220 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ac81882c81a3315a48634fa0f2a84f6a5_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_afe4d4300c0272c14069daf81a6d2f47f}{\index{New\-Project\-Gui@{New\-Project\-Gui}!load\-Page\-\_\-3@{load\-Page\-\_\-3}}
 \index{load\-Page\-\_\-3@{load\-Page\-\_\-3}!NewProjectGui@{New\-Project\-Gui}}
@@ -258,7 +505,19 @@ Definition at line 205 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_afe4d4300c0272c14069daf81a6d2f47f}
 
 
-Definition at line 221 of file New\-Project\-Gui.\-cpp.
+Definition at line 236 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_afe4d4300c0272c14069daf81a6d2f47f_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a92027285ea0ec685ebef5b62afb4e4eb}{\index{New\-Project\-Gui@{New\-Project\-Gui}!load\-Page\-\_\-4@{load\-Page\-\_\-4}}
 \index{load\-Page\-\_\-4@{load\-Page\-\_\-4}!NewProjectGui@{New\-Project\-Gui}}
@@ -269,7 +528,88 @@ Definition at line 221 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a92027285ea0ec685ebef5b62afb4e4eb}
 
 
-Definition at line 237 of file New\-Project\-Gui.\-cpp.
+Definition at line 252 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a92027285ea0ec685ebef5b62afb4e4eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_new_project_gui_ad50f7b147c3b3dc97ca92cc6c7b805f0}{\index{New\-Project\-Gui@{New\-Project\-Gui}!set\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr@{set\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}}
+\index{set\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr@{set\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{set\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void New\-Project\-Gui\-::set\-Abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_new_project_gui_ad50f7b147c3b3dc97ca92cc6c7b805f0}
+
+
+Definition at line 369 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ad50f7b147c3b3dc97ca92cc6c7b805f0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_new_project_gui_af90561864043fb757f8db808aadfa4b6}{\index{New\-Project\-Gui@{New\-Project\-Gui}!set\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr@{set\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}}
+\index{set\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr@{set\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{set\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void New\-Project\-Gui\-::set\-Abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_new_project_gui_af90561864043fb757f8db808aadfa4b6}
+
+
+Definition at line 393 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_af90561864043fb757f8db808aadfa4b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_new_project_gui_ab70a65b041c40d501a431bb7ba3f5ad1}{\index{New\-Project\-Gui@{New\-Project\-Gui}!set\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr@{set\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}}
+\index{set\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr@{set\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{set\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void New\-Project\-Gui\-::set\-Abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_new_project_gui_ab70a65b041c40d501a431bb7ba3f5ad1}
+
+
+Definition at line 381 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ab70a65b041c40d501a431bb7ba3f5ad1_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_ac04edf99653bbc5881e3cba6b385e967}{\index{New\-Project\-Gui@{New\-Project\-Gui}!swap\-Back\-Page@{swap\-Back\-Page}}
 \index{swap\-Back\-Page@{swap\-Back\-Page}!NewProjectGui@{New\-Project\-Gui}}
@@ -280,7 +620,31 @@ Definition at line 237 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_ac04edf99653bbc5881e3cba6b385e967}
 
 
-Definition at line 135 of file New\-Project\-Gui.\-cpp.
+Definition at line 150 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ac04edf99653bbc5881e3cba6b385e967_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ac04edf99653bbc5881e3cba6b385e967_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_ae56f35367fded2e1d303312cbc0549e1}{\index{New\-Project\-Gui@{New\-Project\-Gui}!swap\-Next\-Page@{swap\-Next\-Page}}
 \index{swap\-Next\-Page@{swap\-Next\-Page}!NewProjectGui@{New\-Project\-Gui}}
@@ -291,7 +655,31 @@ Definition at line 135 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_ae56f35367fded2e1d303312cbc0549e1}
 
 
-Definition at line 162 of file New\-Project\-Gui.\-cpp.
+Definition at line 177 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ae56f35367fded2e1d303312cbc0549e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_ae56f35367fded2e1d303312cbc0549e1_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a06d242dd2c162f66284bf468e17c5c73}{\index{New\-Project\-Gui@{New\-Project\-Gui}!to\-String@{to\-String}}
 \index{to\-String@{to\-String}!NewProjectGui@{New\-Project\-Gui}}
@@ -302,7 +690,31 @@ Definition at line 162 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a06d242dd2c162f66284bf468e17c5c73}
 
 
-Definition at line 253 of file New\-Project\-Gui.\-cpp.
+Definition at line 405 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a06d242dd2c162f66284bf468e17c5c73_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a06d242dd2c162f66284bf468e17c5c73_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a09eaf9bcd77d5625a47b34113c87ac91}{\index{New\-Project\-Gui@{New\-Project\-Gui}!unload\-Page\-\_\-1@{unload\-Page\-\_\-1}}
 \index{unload\-Page\-\_\-1@{unload\-Page\-\_\-1}!NewProjectGui@{New\-Project\-Gui}}
@@ -313,7 +725,19 @@ Definition at line 253 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a09eaf9bcd77d5625a47b34113c87ac91}
 
 
-Definition at line 197 of file New\-Project\-Gui.\-cpp.
+Definition at line 212 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a09eaf9bcd77d5625a47b34113c87ac91_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a34be4c9396d11e877fab6da78edba5a8}{\index{New\-Project\-Gui@{New\-Project\-Gui}!unload\-Page\-\_\-2@{unload\-Page\-\_\-2}}
 \index{unload\-Page\-\_\-2@{unload\-Page\-\_\-2}!NewProjectGui@{New\-Project\-Gui}}
@@ -324,7 +748,19 @@ Definition at line 197 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a34be4c9396d11e877fab6da78edba5a8}
 
 
-Definition at line 213 of file New\-Project\-Gui.\-cpp.
+Definition at line 228 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a34be4c9396d11e877fab6da78edba5a8_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a1ec5cfd09dfc43a0d4aac473cf215a04}{\index{New\-Project\-Gui@{New\-Project\-Gui}!unload\-Page\-\_\-3@{unload\-Page\-\_\-3}}
 \index{unload\-Page\-\_\-3@{unload\-Page\-\_\-3}!NewProjectGui@{New\-Project\-Gui}}
@@ -335,7 +771,19 @@ Definition at line 213 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a1ec5cfd09dfc43a0d4aac473cf215a04}
 
 
-Definition at line 229 of file New\-Project\-Gui.\-cpp.
+Definition at line 244 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a1ec5cfd09dfc43a0d4aac473cf215a04_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_new_project_gui_a251eaaea1f985069babb7a203de852db}{\index{New\-Project\-Gui@{New\-Project\-Gui}!unload\-Page\-\_\-4@{unload\-Page\-\_\-4}}
 \index{unload\-Page\-\_\-4@{unload\-Page\-\_\-4}!NewProjectGui@{New\-Project\-Gui}}
@@ -346,94 +794,134 @@ Definition at line 229 of file New\-Project\-Gui.\-cpp.
 )}}\label{class_new_project_gui_a251eaaea1f985069babb7a203de852db}
 
 
-Definition at line 245 of file New\-Project\-Gui.\-cpp.
+Definition at line 260 of file New\-Project\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_new_project_gui_a251eaaea1f985069babb7a203de852db_icgraph}
+\end{center}
+\end{figure}
+
 
 
 
 \subsection{Member Data Documentation}
+\hypertarget{class_new_project_gui_aa985b9da4028bea4f10e76d116955c4e}{\index{New\-Project\-Gui@{New\-Project\-Gui}!abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}}
+\index{abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String$\ast$ New\-Project\-Gui\-::abs\-Path\-To\-Proj\-Build\-File\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_aa985b9da4028bea4f10e76d116955c4e}
+
+
+Definition at line 61 of file New\-Project\-Gui.\-h.
+
+\hypertarget{class_new_project_gui_ab0c9525363d1b0b8ed2aef874307852e}{\index{New\-Project\-Gui@{New\-Project\-Gui}!abs\-Path\-To\-Proj\-Create\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Create\-File\-Str\-Ptr}}
+\index{abs\-Path\-To\-Proj\-Create\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Create\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{abs\-Path\-To\-Proj\-Create\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String$\ast$ New\-Project\-Gui\-::abs\-Path\-To\-Proj\-Create\-File\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_ab0c9525363d1b0b8ed2aef874307852e}
+
+
+Definition at line 64 of file New\-Project\-Gui.\-h.
+
+\hypertarget{class_new_project_gui_a9056b4e1033cde862dd86bac6c0c6070}{\index{New\-Project\-Gui@{New\-Project\-Gui}!abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}}
+\index{abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String$\ast$ New\-Project\-Gui\-::abs\-Path\-To\-Proj\-Launch\-File\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a9056b4e1033cde862dd86bac6c0c6070}
+
+
+Definition at line 63 of file New\-Project\-Gui.\-h.
+
+\hypertarget{class_new_project_gui_ad8f25243a46ce10b6f1bc0c9ddb3e7eb}{\index{New\-Project\-Gui@{New\-Project\-Gui}!abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}}
+\index{abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr@{abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
+\subsubsection[{abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String$\ast$ New\-Project\-Gui\-::abs\-Path\-To\-Proj\-Run\-File\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_ad8f25243a46ce10b6f1bc0c9ddb3e7eb}
+
+
+Definition at line 62 of file New\-Project\-Gui.\-h.
+
 \hypertarget{class_new_project_gui_a9dd8fc63be73f0aa6f7c61349dff95a2}{\index{New\-Project\-Gui@{New\-Project\-Gui}!back\-Btn@{back\-Btn}}
 \index{back\-Btn@{back\-Btn}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{back\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ New\-Project\-Gui\-::back\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a9dd8fc63be73f0aa6f7c61349dff95a2}
 
 
-Definition at line 45 of file New\-Project\-Gui.\-h.
+Definition at line 47 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_a7281efc1048f02fae1610c1fa0925473}{\index{New\-Project\-Gui@{New\-Project\-Gui}!button\-Layout@{button\-Layout}}
 \index{button\-Layout@{button\-Layout}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{button\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-H\-Box\-Layout$\ast$ New\-Project\-Gui\-::button\-Layout\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a7281efc1048f02fae1610c1fa0925473}
 
 
-Definition at line 52 of file New\-Project\-Gui.\-h.
+Definition at line 54 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_a91a081ae496b19cd64dd33b292b1761e}{\index{New\-Project\-Gui@{New\-Project\-Gui}!cancel\-Btn@{cancel\-Btn}}
 \index{cancel\-Btn@{cancel\-Btn}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{cancel\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ New\-Project\-Gui\-::cancel\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a91a081ae496b19cd64dd33b292b1761e}
 
 
-Definition at line 49 of file New\-Project\-Gui.\-h.
+Definition at line 51 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_ac1b0414d92030b3d545020fc889b1313}{\index{New\-Project\-Gui@{New\-Project\-Gui}!current\-Page@{current\-Page}}
 \index{current\-Page@{current\-Page}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{current\-Page}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Page} New\-Project\-Gui\-::current\-Page\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_ac1b0414d92030b3d545020fc889b1313}
 
 
-Definition at line 43 of file New\-Project\-Gui.\-h.
+Definition at line 45 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_ab5d0c64c04e2c9c1ff6e57191e35f79f}{\index{New\-Project\-Gui@{New\-Project\-Gui}!finish\-Btn@{finish\-Btn}}
 \index{finish\-Btn@{finish\-Btn}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{finish\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ New\-Project\-Gui\-::finish\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_ab5d0c64c04e2c9c1ff6e57191e35f79f}
 
 
-Definition at line 47 of file New\-Project\-Gui.\-h.
+Definition at line 49 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_a33ab8b2813bd5f5ae52c7d91c996f61f}{\index{New\-Project\-Gui@{New\-Project\-Gui}!help\-Btn@{help\-Btn}}
 \index{help\-Btn@{help\-Btn}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{help\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ New\-Project\-Gui\-::help\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a33ab8b2813bd5f5ae52c7d91c996f61f}
 
 
-Definition at line 48 of file New\-Project\-Gui.\-h.
+Definition at line 50 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_a21cb8b6c6a0b743e7bdc2e4e4ff7e839}{\index{New\-Project\-Gui@{New\-Project\-Gui}!new\-Project\-Page\-\_\-1\-Ptr@{new\-Project\-Page\-\_\-1\-Ptr}}
 \index{new\-Project\-Page\-\_\-1\-Ptr@{new\-Project\-Page\-\_\-1\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{new\-Project\-Page\-\_\-1\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-Project\-Page\-\_\-1}$\ast$ New\-Project\-Gui\-::new\-Project\-Page\-\_\-1\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a21cb8b6c6a0b743e7bdc2e4e4ff7e839}
 
 
-Definition at line 54 of file New\-Project\-Gui.\-h.
+Definition at line 56 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_a4437d1c791747dcf286ef389f952116a}{\index{New\-Project\-Gui@{New\-Project\-Gui}!new\-Project\-Page\-\_\-2\-Ptr@{new\-Project\-Page\-\_\-2\-Ptr}}
 \index{new\-Project\-Page\-\_\-2\-Ptr@{new\-Project\-Page\-\_\-2\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{new\-Project\-Page\-\_\-2\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-Project\-Page\-\_\-2}$\ast$ New\-Project\-Gui\-::new\-Project\-Page\-\_\-2\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a4437d1c791747dcf286ef389f952116a}
 
 
-Definition at line 55 of file New\-Project\-Gui.\-h.
+Definition at line 57 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_a16ff0aedd402588686ae3f02b4226fc0}{\index{New\-Project\-Gui@{New\-Project\-Gui}!new\-Project\-Page\-\_\-3\-Ptr@{new\-Project\-Page\-\_\-3\-Ptr}}
 \index{new\-Project\-Page\-\_\-3\-Ptr@{new\-Project\-Page\-\_\-3\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{new\-Project\-Page\-\_\-3\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-Project\-Page\-\_\-3}$\ast$ New\-Project\-Gui\-::new\-Project\-Page\-\_\-3\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a16ff0aedd402588686ae3f02b4226fc0}
 
 
-Definition at line 56 of file New\-Project\-Gui.\-h.
+Definition at line 58 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_a4c4e20d7598c3c61a45eb51a0332a326}{\index{New\-Project\-Gui@{New\-Project\-Gui}!new\-Project\-Page\-\_\-4\-Ptr@{new\-Project\-Page\-\_\-4\-Ptr}}
 \index{new\-Project\-Page\-\_\-4\-Ptr@{new\-Project\-Page\-\_\-4\-Ptr}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{new\-Project\-Page\-\_\-4\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-Project\-Page\-\_\-4}$\ast$ New\-Project\-Gui\-::new\-Project\-Page\-\_\-4\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_a4c4e20d7598c3c61a45eb51a0332a326}
 
 
-Definition at line 57 of file New\-Project\-Gui.\-h.
+Definition at line 59 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_af79d8f88c0d0aa8e783240c2e6ba6e8b}{\index{New\-Project\-Gui@{New\-Project\-Gui}!next\-Btn@{next\-Btn}}
 \index{next\-Btn@{next\-Btn}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{next\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ New\-Project\-Gui\-::next\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_af79d8f88c0d0aa8e783240c2e6ba6e8b}
 
 
-Definition at line 46 of file New\-Project\-Gui.\-h.
+Definition at line 48 of file New\-Project\-Gui.\-h.
 
 \hypertarget{class_new_project_gui_ab8c8c2da1803bbbc90d8aa5e90ac9aec}{\index{New\-Project\-Gui@{New\-Project\-Gui}!outer\-Layout@{outer\-Layout}}
 \index{outer\-Layout@{outer\-Layout}!NewProjectGui@{New\-Project\-Gui}}
 \subsubsection[{outer\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Grid\-Layout$\ast$ New\-Project\-Gui\-::outer\-Layout\hspace{0.3cm}{\ttfamily [private]}}}\label{class_new_project_gui_ab8c8c2da1803bbbc90d8aa5e90ac9aec}
 
 
-Definition at line 51 of file New\-Project\-Gui.\-h.
+Definition at line 53 of file New\-Project\-Gui.\-h.
 
 
 

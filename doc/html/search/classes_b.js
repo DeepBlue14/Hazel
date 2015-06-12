@@ -6,5 +6,6 @@ var searchData=
   ['scoutgui',['ScoutGui',['../class_scout_gui.html',1,'']]],
   ['scoutlibdat',['ScoutLibDat',['../class_scout_lib_dat.html',1,'']]],
   ['scoutvardat',['ScoutVarDat',['../class_scout_var_dat.html',1,'']]],
+  ['searchwidget',['SearchWidget',['../class_search_widget.html',1,'']]],
   ['splashscreen',['SplashScreen',['../class_splash_screen.html',1,'']]]
 ];

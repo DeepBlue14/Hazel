@@ -281,7 +281,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     tmpdir.cdUp();
     tmpdir.cdUp();
     QString tmpstr(tmpdir.absolutePath());
-    RideFile* tmp = new RideFile("/tmp/setup.bash");
+    RideFile* tmp = new RideFile("/tmp/setup.bash"); // !!!??? will this be automagically deleted ???!!!
     tmp->openRdWrFile();
     tmp->write("#!/bin/bash\nsource ");
     QByteArray tmpba;tmpba.append(tmpstr);

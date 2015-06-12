@@ -32,6 +32,10 @@ void \hyperlink{class_run_gui_ad78d722a104e6e893b57642340c3b937}{init\-Btns} ()
 \item 
 void \hyperlink{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65}{reset} ()
 \item 
+void \hyperlink{class_run_gui_a8b202a47e593e0aa6d18d33c6c857308}{set\-Launch\-File\-Path\-Str\-Ptr} (Q\-String $\ast$\hyperlink{class_run_gui_a3766ac7d4bfae38eb0d9f535f0d9bcf5}{launch\-File\-Path\-Str\-Ptr})
+\item 
+Q\-String $\ast$ \hyperlink{class_run_gui_a2dd3619058d2cb92433d4f000bf97851}{get\-Launch\-File\-Path\-Str\-Ptr} ()
+\item 
 void \hyperlink{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176}{swap\-Next\-Page} ()
 \item 
 void \hyperlink{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9}{swap\-Back\-Page} ()
@@ -78,6 +82,8 @@ void \hyperlink{class_run_gui_a1127986fbf076ce480defe68d99171e1}{handle\-Cancel\
 \item 
 \hyperlink{class_run_gui_acb4a3da6e31619ee4b0ac8c8f9cb64a3}{Page} \hyperlink{class_run_gui_a1d93e84df8a71767ca927554e5b0fe0d}{current\-Page}
 \item 
+Q\-String $\ast$ \hyperlink{class_run_gui_a3766ac7d4bfae38eb0d9f535f0d9bcf5}{launch\-File\-Path\-Str\-Ptr}
+\item 
 Q\-Push\-Button $\ast$ \hyperlink{class_run_gui_a5a79c5d8f3a61510c2be51738e428473}{back\-Btn}
 \item 
 Q\-Push\-Button $\ast$ \hyperlink{class_run_gui_a02bb63cd6c6d77933f98087111ce1a66}{next\-Btn}
@@ -103,7 +109,7 @@ Q\-H\-Box\-Layout $\ast$ \hyperlink{class_run_gui_a812f0836d9eb5b0148cf92b61bc53
 \subsection{Detailed Description}
 
 
-Definition at line 26 of file Run\-Gui.\-h.
+Definition at line 27 of file Run\-Gui.\-h.
 
 
 
@@ -124,7 +130,7 @@ Definition at line 26 of file Run\-Gui.\-h.
 \end{Desc}
 
 
-Definition at line 31 of file Run\-Gui.\-h.
+Definition at line 32 of file Run\-Gui.\-h.
 
 
 
@@ -140,6 +146,18 @@ Definition at line 31 of file Run\-Gui.\-h.
 
 Definition at line 4 of file Run\-Gui.\-cpp.
 
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_af41e6138b6401d18ff8a3f8db680cd43_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_run_gui_a22945ade9579f8d0e44f848c51a0a0b0}{\index{Run\-Gui@{Run\-Gui}!$\sim$\-Run\-Gui@{$\sim$\-Run\-Gui}}
 \index{$\sim$\-Run\-Gui@{$\sim$\-Run\-Gui}!RunGui@{Run\-Gui}}
 \subsubsection[{$\sim$\-Run\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}Run\-Gui\-::$\sim$\-Run\-Gui (
@@ -149,11 +167,22 @@ Definition at line 4 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a22945ade9579f8d0e44f848c51a0a0b0}
 
 
-Definition at line 205 of file Run\-Gui.\-cpp.
+Definition at line 228 of file Run\-Gui.\-cpp.
 
 
 
 \subsection{Member Function Documentation}
+\hypertarget{class_run_gui_a2dd3619058d2cb92433d4f000bf97851}{\index{Run\-Gui@{Run\-Gui}!get\-Launch\-File\-Path\-Str\-Ptr@{get\-Launch\-File\-Path\-Str\-Ptr}}
+\index{get\-Launch\-File\-Path\-Str\-Ptr@{get\-Launch\-File\-Path\-Str\-Ptr}!RunGui@{Run\-Gui}}
+\subsubsection[{get\-Launch\-File\-Path\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Run\-Gui\-::get\-Launch\-File\-Path\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a2dd3619058d2cb92433d4f000bf97851}
+
+
+Definition at line 106 of file Run\-Gui.\-cpp.
+
 \hypertarget{class_run_gui_abe8773e053b15ed96efcdb6e4b63e508}{\index{Run\-Gui@{Run\-Gui}!handle\-Back\-Btn\-Slot@{handle\-Back\-Btn\-Slot}}
 \index{handle\-Back\-Btn\-Slot@{handle\-Back\-Btn\-Slot}!RunGui@{Run\-Gui}}
 \subsubsection[{handle\-Back\-Btn\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Back\-Btn\-Slot (
@@ -165,6 +194,30 @@ Definition at line 205 of file Run\-Gui.\-cpp.
 
 Definition at line 22 of file Run\-Gui.\-cpp.
 
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_abe8773e053b15ed96efcdb6e4b63e508_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_abe8773e053b15ed96efcdb6e4b63e508_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_run_gui_a1127986fbf076ce480defe68d99171e1}{\index{Run\-Gui@{Run\-Gui}!handle\-Cancel\-Btn\-Slot@{handle\-Cancel\-Btn\-Slot}}
 \index{handle\-Cancel\-Btn\-Slot@{handle\-Cancel\-Btn\-Slot}!RunGui@{Run\-Gui}}
 \subsubsection[{handle\-Cancel\-Btn\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Cancel\-Btn\-Slot (
@@ -174,7 +227,19 @@ Definition at line 22 of file Run\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_run_gui_a1127986fbf076ce480defe68d99171e1}
 
 
-Definition at line 46 of file Run\-Gui.\-cpp.
+Definition at line 57 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a1127986fbf076ce480defe68d99171e1_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a011495c9158d92b794941ac108b5b148}{\index{Run\-Gui@{Run\-Gui}!handle\-Finish\-Btn\-Slot@{handle\-Finish\-Btn\-Slot}}
 \index{handle\-Finish\-Btn\-Slot@{handle\-Finish\-Btn\-Slot}!RunGui@{Run\-Gui}}
@@ -187,6 +252,30 @@ Definition at line 46 of file Run\-Gui.\-cpp.
 
 Definition at line 34 of file Run\-Gui.\-cpp.
 
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a011495c9158d92b794941ac108b5b148_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a011495c9158d92b794941ac108b5b148_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_run_gui_ab29bf8394f8b23b2c1ffd33c6d2470eb}{\index{Run\-Gui@{Run\-Gui}!handle\-Help\-Bnt\-Slot@{handle\-Help\-Bnt\-Slot}}
 \index{handle\-Help\-Bnt\-Slot@{handle\-Help\-Bnt\-Slot}!RunGui@{Run\-Gui}}
 \subsubsection[{handle\-Help\-Bnt\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::handle\-Help\-Bnt\-Slot (
@@ -196,7 +285,19 @@ Definition at line 34 of file Run\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_run_gui_ab29bf8394f8b23b2c1ffd33c6d2470eb}
 
 
-Definition at line 40 of file Run\-Gui.\-cpp.
+Definition at line 51 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_ab29bf8394f8b23b2c1ffd33c6d2470eb_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a267f472d21d57258adb28ebdcc83b256}{\index{Run\-Gui@{Run\-Gui}!handle\-Next\-Btn\-Slot@{handle\-Next\-Btn\-Slot}}
 \index{handle\-Next\-Btn\-Slot@{handle\-Next\-Btn\-Slot}!RunGui@{Run\-Gui}}
@@ -209,6 +310,30 @@ Definition at line 40 of file Run\-Gui.\-cpp.
 
 Definition at line 28 of file Run\-Gui.\-cpp.
 
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a267f472d21d57258adb28ebdcc83b256_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a267f472d21d57258adb28ebdcc83b256_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_run_gui_ad78d722a104e6e893b57642340c3b937}{\index{Run\-Gui@{Run\-Gui}!init\-Btns@{init\-Btns}}
 \index{init\-Btns@{init\-Btns}!RunGui@{Run\-Gui}}
 \subsubsection[{init\-Btns}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::init\-Btns (
@@ -218,7 +343,31 @@ Definition at line 28 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_ad78d722a104e6e893b57642340c3b937}
 
 
-Definition at line 52 of file Run\-Gui.\-cpp.
+Definition at line 63 of file Run\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_ad78d722a104e6e893b57642340c3b937_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_run_gui_ad78d722a104e6e893b57642340c3b937_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a381d265f46ec8473a7858974a19674c5}{\index{Run\-Gui@{Run\-Gui}!load\-Page\-\_\-1@{load\-Page\-\_\-1}}
 \index{load\-Page\-\_\-1@{load\-Page\-\_\-1}!RunGui@{Run\-Gui}}
@@ -229,7 +378,19 @@ Definition at line 52 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a381d265f46ec8473a7858974a19674c5}
 
 
-Definition at line 149 of file Run\-Gui.\-cpp.
+Definition at line 172 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a381d265f46ec8473a7858974a19674c5_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a8048ffff4b07771419e8c88ea250d2f2}{\index{Run\-Gui@{Run\-Gui}!load\-Page\-\_\-2@{load\-Page\-\_\-2}}
 \index{load\-Page\-\_\-2@{load\-Page\-\_\-2}!RunGui@{Run\-Gui}}
@@ -240,7 +401,19 @@ Definition at line 149 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a8048ffff4b07771419e8c88ea250d2f2}
 
 
-Definition at line 165 of file Run\-Gui.\-cpp.
+Definition at line 188 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a8048ffff4b07771419e8c88ea250d2f2_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a5defb3e688b1b3f22d50c5b9389910c0}{\index{Run\-Gui@{Run\-Gui}!load\-Page\-\_\-3@{load\-Page\-\_\-3}}
 \index{load\-Page\-\_\-3@{load\-Page\-\_\-3}!RunGui@{Run\-Gui}}
@@ -251,7 +424,19 @@ Definition at line 165 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a5defb3e688b1b3f22d50c5b9389910c0}
 
 
-Definition at line 181 of file Run\-Gui.\-cpp.
+Definition at line 204 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a5defb3e688b1b3f22d50c5b9389910c0_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65}{\index{Run\-Gui@{Run\-Gui}!reset@{reset}}
 \index{reset@{reset}!RunGui@{Run\-Gui}}
@@ -262,7 +447,54 @@ Definition at line 181 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65}
 
 
-Definition at line 80 of file Run\-Gui.\-cpp.
+Definition at line 91 of file Run\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_ac732d44ad96c7d14f1666d1193c43d65_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_run_gui_a8b202a47e593e0aa6d18d33c6c857308}{\index{Run\-Gui@{Run\-Gui}!set\-Launch\-File\-Path\-Str\-Ptr@{set\-Launch\-File\-Path\-Str\-Ptr}}
+\index{set\-Launch\-File\-Path\-Str\-Ptr@{set\-Launch\-File\-Path\-Str\-Ptr}!RunGui@{Run\-Gui}}
+\subsubsection[{set\-Launch\-File\-Path\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Run\-Gui\-::set\-Launch\-File\-Path\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{launch\-File\-Path\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_run_gui_a8b202a47e593e0aa6d18d33c6c857308}
+
+
+Definition at line 100 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a8b202a47e593e0aa6d18d33c6c857308_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9}{\index{Run\-Gui@{Run\-Gui}!swap\-Back\-Page@{swap\-Back\-Page}}
 \index{swap\-Back\-Page@{swap\-Back\-Page}!RunGui@{Run\-Gui}}
@@ -273,7 +505,31 @@ Definition at line 80 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9}
 
 
-Definition at line 89 of file Run\-Gui.\-cpp.
+Definition at line 112 of file Run\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a469be74273ddc6441a9f87e65d3ab2c9_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176}{\index{Run\-Gui@{Run\-Gui}!swap\-Next\-Page@{swap\-Next\-Page}}
 \index{swap\-Next\-Page@{swap\-Next\-Page}!RunGui@{Run\-Gui}}
@@ -284,7 +540,31 @@ Definition at line 89 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176}
 
 
-Definition at line 113 of file Run\-Gui.\-cpp.
+Definition at line 136 of file Run\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_ac4c0fed5ead22a1dc40d5bebe2d6f176_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a4a3470c32bf986ad552bc225d039e5bb}{\index{Run\-Gui@{Run\-Gui}!to\-String@{to\-String}}
 \index{to\-String@{to\-String}!RunGui@{Run\-Gui}}
@@ -295,7 +575,7 @@ Definition at line 113 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a4a3470c32bf986ad552bc225d039e5bb}
 
 
-Definition at line 197 of file Run\-Gui.\-cpp.
+Definition at line 220 of file Run\-Gui.\-cpp.
 
 \hypertarget{class_run_gui_ab68852933855016b114c795ab494d8bb}{\index{Run\-Gui@{Run\-Gui}!unload\-Page\-\_\-1@{unload\-Page\-\_\-1}}
 \index{unload\-Page\-\_\-1@{unload\-Page\-\_\-1}!RunGui@{Run\-Gui}}
@@ -306,7 +586,19 @@ Definition at line 197 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_ab68852933855016b114c795ab494d8bb}
 
 
-Definition at line 157 of file Run\-Gui.\-cpp.
+Definition at line 180 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_ab68852933855016b114c795ab494d8bb_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a3192d643a700244e066f3e0ca4389c4b}{\index{Run\-Gui@{Run\-Gui}!unload\-Page\-\_\-2@{unload\-Page\-\_\-2}}
 \index{unload\-Page\-\_\-2@{unload\-Page\-\_\-2}!RunGui@{Run\-Gui}}
@@ -317,7 +609,19 @@ Definition at line 157 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a3192d643a700244e066f3e0ca4389c4b}
 
 
-Definition at line 173 of file Run\-Gui.\-cpp.
+Definition at line 196 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a3192d643a700244e066f3e0ca4389c4b_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_run_gui_a410e373ff032fb779b52b1dd501c3128}{\index{Run\-Gui@{Run\-Gui}!unload\-Page\-\_\-3@{unload\-Page\-\_\-3}}
 \index{unload\-Page\-\_\-3@{unload\-Page\-\_\-3}!RunGui@{Run\-Gui}}
@@ -328,7 +632,19 @@ Definition at line 173 of file Run\-Gui.\-cpp.
 )}}\label{class_run_gui_a410e373ff032fb779b52b1dd501c3128}
 
 
-Definition at line 189 of file Run\-Gui.\-cpp.
+Definition at line 212 of file Run\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_run_gui_a410e373ff032fb779b52b1dd501c3128_icgraph}
+\end{center}
+\end{figure}
+
 
 
 
@@ -338,77 +654,84 @@ Definition at line 189 of file Run\-Gui.\-cpp.
 \subsubsection[{back\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::back\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a5a79c5d8f3a61510c2be51738e428473}
 
 
-Definition at line 40 of file Run\-Gui.\-h.
+Definition at line 43 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_a812f0836d9eb5b0148cf92b61bc53be2}{\index{Run\-Gui@{Run\-Gui}!button\-Layout@{button\-Layout}}
 \index{button\-Layout@{button\-Layout}!RunGui@{Run\-Gui}}
 \subsubsection[{button\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-H\-Box\-Layout$\ast$ Run\-Gui\-::button\-Layout\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a812f0836d9eb5b0148cf92b61bc53be2}
 
 
-Definition at line 47 of file Run\-Gui.\-h.
+Definition at line 50 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_aa14d8877052e9cc11c93055561501792}{\index{Run\-Gui@{Run\-Gui}!cancel\-Btn@{cancel\-Btn}}
 \index{cancel\-Btn@{cancel\-Btn}!RunGui@{Run\-Gui}}
 \subsubsection[{cancel\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::cancel\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_aa14d8877052e9cc11c93055561501792}
 
 
-Definition at line 44 of file Run\-Gui.\-h.
+Definition at line 47 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_a1d93e84df8a71767ca927554e5b0fe0d}{\index{Run\-Gui@{Run\-Gui}!current\-Page@{current\-Page}}
 \index{current\-Page@{current\-Page}!RunGui@{Run\-Gui}}
 \subsubsection[{current\-Page}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Page} Run\-Gui\-::current\-Page\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a1d93e84df8a71767ca927554e5b0fe0d}
 
 
-Definition at line 38 of file Run\-Gui.\-h.
+Definition at line 39 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_a2989fde08a236488c152c8fa584c3380}{\index{Run\-Gui@{Run\-Gui}!finish\-Btn@{finish\-Btn}}
 \index{finish\-Btn@{finish\-Btn}!RunGui@{Run\-Gui}}
 \subsubsection[{finish\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::finish\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a2989fde08a236488c152c8fa584c3380}
 
 
-Definition at line 42 of file Run\-Gui.\-h.
+Definition at line 45 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_a6c0a17f55049da888442fbc28dff7a78}{\index{Run\-Gui@{Run\-Gui}!help\-Btn@{help\-Btn}}
 \index{help\-Btn@{help\-Btn}!RunGui@{Run\-Gui}}
 \subsubsection[{help\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::help\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a6c0a17f55049da888442fbc28dff7a78}
 
 
-Definition at line 43 of file Run\-Gui.\-h.
+Definition at line 46 of file Run\-Gui.\-h.
+
+\hypertarget{class_run_gui_a3766ac7d4bfae38eb0d9f535f0d9bcf5}{\index{Run\-Gui@{Run\-Gui}!launch\-File\-Path\-Str\-Ptr@{launch\-File\-Path\-Str\-Ptr}}
+\index{launch\-File\-Path\-Str\-Ptr@{launch\-File\-Path\-Str\-Ptr}!RunGui@{Run\-Gui}}
+\subsubsection[{launch\-File\-Path\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String$\ast$ Run\-Gui\-::launch\-File\-Path\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a3766ac7d4bfae38eb0d9f535f0d9bcf5}
+
+
+Definition at line 41 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_a02bb63cd6c6d77933f98087111ce1a66}{\index{Run\-Gui@{Run\-Gui}!next\-Btn@{next\-Btn}}
 \index{next\-Btn@{next\-Btn}!RunGui@{Run\-Gui}}
 \subsubsection[{next\-Btn}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Push\-Button$\ast$ Run\-Gui\-::next\-Btn\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a02bb63cd6c6d77933f98087111ce1a66}
 
 
-Definition at line 41 of file Run\-Gui.\-h.
+Definition at line 44 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_ae4cdc2ec0797c9121a47b9cdf3b93115}{\index{Run\-Gui@{Run\-Gui}!outer\-Layout\-Ptr@{outer\-Layout\-Ptr}}
 \index{outer\-Layout\-Ptr@{outer\-Layout\-Ptr}!RunGui@{Run\-Gui}}
 \subsubsection[{outer\-Layout\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Grid\-Layout$\ast$ Run\-Gui\-::outer\-Layout\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_ae4cdc2ec0797c9121a47b9cdf3b93115}
 
 
-Definition at line 46 of file Run\-Gui.\-h.
+Definition at line 49 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_aa52f64156c00bbd4e14c46b8113e3072}{\index{Run\-Gui@{Run\-Gui}!run\-Page\-\_\-1\-Ptr@{run\-Page\-\_\-1\-Ptr}}
 \index{run\-Page\-\_\-1\-Ptr@{run\-Page\-\_\-1\-Ptr}!RunGui@{Run\-Gui}}
 \subsubsection[{run\-Page\-\_\-1\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Page\-\_\-1}$\ast$ Run\-Gui\-::run\-Page\-\_\-1\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_aa52f64156c00bbd4e14c46b8113e3072}
 
 
-Definition at line 49 of file Run\-Gui.\-h.
+Definition at line 52 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_a86764c1a0c9629fbce62c7cb13c5ee07}{\index{Run\-Gui@{Run\-Gui}!run\-Page\-\_\-2\-Ptr@{run\-Page\-\_\-2\-Ptr}}
 \index{run\-Page\-\_\-2\-Ptr@{run\-Page\-\_\-2\-Ptr}!RunGui@{Run\-Gui}}
 \subsubsection[{run\-Page\-\_\-2\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Page\-\_\-2}$\ast$ Run\-Gui\-::run\-Page\-\_\-2\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a86764c1a0c9629fbce62c7cb13c5ee07}
 
 
-Definition at line 50 of file Run\-Gui.\-h.
+Definition at line 53 of file Run\-Gui.\-h.
 
 \hypertarget{class_run_gui_a7306b4df6c8619a98da052935a021cf8}{\index{Run\-Gui@{Run\-Gui}!run\-Page\-\_\-3\-Ptr@{run\-Page\-\_\-3\-Ptr}}
 \index{run\-Page\-\_\-3\-Ptr@{run\-Page\-\_\-3\-Ptr}!RunGui@{Run\-Gui}}
 \subsubsection[{run\-Page\-\_\-3\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Page\-\_\-3}$\ast$ Run\-Gui\-::run\-Page\-\_\-3\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_run_gui_a7306b4df6c8619a98da052935a021cf8}
 
 
-Definition at line 51 of file Run\-Gui.\-h.
+Definition at line 54 of file Run\-Gui.\-h.
 
 
 

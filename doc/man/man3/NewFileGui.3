@@ -1,4 +1,4 @@
-.TH "NewFileGui" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "NewFileGui" 3 "Fri Jun 12 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -17,7 +17,7 @@ Inherits QWidget\&.
 .RI "\fBNewFileGui\fP (QWidget *parent=0)"
 .br
 .ti -1c
-.RI "void \fBsetMasterTabWidgetPtr\fP (QTabWidget *\fBmasterTabWidgetPtr\fP)"
+.RI "void \fBsetNorthTabWidgetPtr\fP (QTabWidget *masterTabWidgetPtr)"
 .br
 .ti -1c
 .RI "QTabWidget * \fBgetMasterTabWidgetPtr\fP ()"
@@ -129,7 +129,7 @@ Inherits QWidget\&.
 .RI "QHBoxLayout * \fBbuttonLayout\fP"
 .br
 .ti -1c
-.RI "QTabWidget * \fBmasterTabWidgetPtr\fP"
+.RI "QTabWidget * \fBnorthTabWidgetPtr\fP"
 .br
 .ti -1c
 .RI "\fBHighlighter\fP * \fBhighlighterPtr\fP"
@@ -182,7 +182,7 @@ Definition at line 5 of file NewFileGui\&.cpp\&.
 .SS "NewFileGui::~NewFileGui ()"
 
 .PP
-Definition at line 334 of file NewFileGui\&.cpp\&.
+Definition at line 332 of file NewFileGui\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "\fBHighlighter\fP * NewFileGui::getHighlighterPtr ()"
@@ -200,7 +200,7 @@ Definition at line 51 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::handleCancelBtnSlot ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
-Definition at line 137 of file NewFileGui\&.cpp\&.
+Definition at line 135 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::handleFinishBtnSlot ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
@@ -208,7 +208,7 @@ Definition at line 63 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::handleHelpBntSlot ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
-Definition at line 131 of file NewFileGui\&.cpp\&.
+Definition at line 129 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::handleNextBtnSlot ()\fC [private]\fP, \fC [slot]\fP"
 
 .PP
@@ -216,63 +216,63 @@ Definition at line 57 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::initBtns ()"
 
 .PP
-Definition at line 170 of file NewFileGui\&.cpp\&.
+Definition at line 168 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::loadPage_1 ()"
 
 .PP
-Definition at line 254 of file NewFileGui\&.cpp\&.
+Definition at line 252 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::loadPage_2 ()"
 
 .PP
-Definition at line 270 of file NewFileGui\&.cpp\&.
+Definition at line 268 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::loadPage_3 ()"
 
 .PP
-Definition at line 286 of file NewFileGui\&.cpp\&.
+Definition at line 284 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::loadPage_4 ()"
 
 .PP
-Definition at line 302 of file NewFileGui\&.cpp\&.
+Definition at line 300 of file NewFileGui\&.cpp\&.
 .SS "QAbstractItemModel * NewFileGui::modelFromFile (const QString &fileName)\fC [private]\fP"
 
 .PP
-Definition at line 143 of file NewFileGui\&.cpp\&.
+Definition at line 141 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::setHighlighterPtr (\fBHighlighter\fP *highlighterPtr)"
 
 .PP
 Definition at line 39 of file NewFileGui\&.cpp\&.
-.SS "void NewFileGui::setMasterTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
+.SS "void NewFileGui::setNorthTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
 
 .PP
 Definition at line 27 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::swapBackPage ()"
 
 .PP
-Definition at line 198 of file NewFileGui\&.cpp\&.
+Definition at line 196 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::swapNextPage ()"
 
 .PP
-Definition at line 226 of file NewFileGui\&.cpp\&.
+Definition at line 224 of file NewFileGui\&.cpp\&.
 .SS "QString * NewFileGui::toString ()"
 
 .PP
-Definition at line 318 of file NewFileGui\&.cpp\&.
+Definition at line 316 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::unloadPage_1 ()"
 
 .PP
-Definition at line 262 of file NewFileGui\&.cpp\&.
+Definition at line 260 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::unloadPage_2 ()"
 
 .PP
-Definition at line 278 of file NewFileGui\&.cpp\&.
+Definition at line 276 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::unloadPage_3 ()"
 
 .PP
-Definition at line 294 of file NewFileGui\&.cpp\&.
+Definition at line 292 of file NewFileGui\&.cpp\&.
 .SS "void NewFileGui::unloadPage_4 ()"
 
 .PP
-Definition at line 310 of file NewFileGui\&.cpp\&.
+Definition at line 308 of file NewFileGui\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "QPushButton* NewFileGui::backBtn\fC [private]\fP"
@@ -311,10 +311,6 @@ Definition at line 62 of file NewFileGui\&.h\&.
 
 .PP
 Definition at line 69 of file NewFileGui\&.h\&.
-.SS "QTabWidget* NewFileGui::masterTabWidgetPtr\fC [private]\fP"
-
-.PP
-Definition at line 68 of file NewFileGui\&.h\&.
 .SS "\fBNewFilePage_1\fP* NewFileGui::newFilePage_1Ptr\fC [private]\fP"
 
 .PP
@@ -335,6 +331,10 @@ Definition at line 76 of file NewFileGui\&.h\&.
 
 .PP
 Definition at line 60 of file NewFileGui\&.h\&.
+.SS "QTabWidget* NewFileGui::northTabWidgetPtr\fC [private]\fP"
+
+.PP
+Definition at line 68 of file NewFileGui\&.h\&.
 .SS "QGridLayout* NewFileGui::outerLayout\fC [private]\fP"
 
 .PP

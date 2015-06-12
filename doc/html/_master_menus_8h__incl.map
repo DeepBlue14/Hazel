@@ -1,17 +1,19 @@
 <map id="/home/james/NetBeansProjects/ride/src/MasterMenus.h" name="/home/james/NetBeansProjects/ride/src/MasterMenus.h">
-<area shape="rect" id="node5" href="$_master_actions_8h.html" title="MasterActions.h" alt="" coords="1497,96,1613,123"/>
-<area shape="rect" id="node8" href="$_new_file_gui_8h.html" title="NewFileGui.h" alt="" coords="1779,171,1880,197"/>
-<area shape="rect" id="node26" href="$_file_gui_8h.html" title="FileGui.h" alt="" coords="2835,395,2908,421"/>
-<area shape="rect" id="node36" href="$_highlighter_8h.html" title="Highlighter.h" alt="" coords="3101,245,3195,272"/>
-<area shape="rect" id="node45" href="$_save_all_8h.html" title="SaveAll.h" alt="" coords="2679,245,2757,272"/>
-<area shape="rect" id="node46" href="$_file_tree_gui_8h.html" title="FileTreeGui.h" alt="" coords="449,320,548,347"/>
-<area shape="rect" id="node47" href="$_new_project_gui_8h.html" title="NewProjectGui.h" alt="" coords="759,245,880,272"/>
-<area shape="rect" id="node48" href="$_terminal_8h.html" title="Terminal.h" alt="" coords="2391,171,2472,197"/>
-<area shape="rect" id="node49" href="$_run_gui_8h.html" title="RunGui.h" alt="" coords="220,245,296,272"/>
-<area shape="rect" id="node50" href="$_open_project_gui_8h.html" title="OpenProjectGui.h" alt="" coords="433,245,559,272"/>
-<area shape="rect" id="node35" href="$_ride_file_8h.html" title="RideFile.h" alt="" coords="2467,320,2548,347"/>
-<area shape="rect" id="node40" href="$_new_file_page__1_8h.html" title="NewFilePage_1.h" alt="" coords="2187,320,2312,347"/>
-<area shape="rect" id="node42" href="$_new_file_page__2_8h.html" title="NewFilePage_2.h" alt="" coords="2037,320,2163,347"/>
-<area shape="rect" id="node43" href="$_new_file_page__3_8h.html" title="NewFilePage_3.h" alt="" coords="1888,320,2013,347"/>
-<area shape="rect" id="node44" href="$_new_file_page__4_8h.html" title="NewFilePage_4.h" alt="" coords="1256,245,1381,272"/>
+<area shape="rect" id="node5" href="$_master_actions_8h.html" title="MasterActions.h" alt="" coords="1752,96,1868,123"/>
+<area shape="rect" id="node11" href="$_new_file_gui_8h.html" title="NewFileGui.h" alt="" coords="2331,171,2432,197"/>
+<area shape="rect" id="node29" href="$_file_gui_8h.html" title="FileGui.h" alt="" coords="3561,395,3635,421"/>
+<area shape="rect" id="node34" href="$_highlighter_8h.html" title="Highlighter.h" alt="" coords="3731,245,3825,272"/>
+<area shape="rect" id="node43" href="$_save_all_8h.html" title="SaveAll.h" alt="" coords="886,245,964,272"/>
+<area shape="rect" id="node44" href="$_file_tree_gui_8h.html" title="FileTreeGui.h" alt="" coords="2431,320,2531,347"/>
+<area shape="rect" id="node45" href="$_new_project_gui_8h.html" title="NewProjectGui.h" alt="" coords="319,245,440,272"/>
+<area shape="rect" id="node46" href="$_terminal_8h.html" title="Terminal.h" alt="" coords="660,245,741,272"/>
+<area shape="rect" id="node47" href="$_run_gui_8h.html" title="RunGui.h" alt="" coords="1056,245,1132,272"/>
+<area shape="rect" id="node48" href="$_open_project_gui_8h.html" title="OpenProjectGui.h" alt="" coords="1748,245,1873,272"/>
+<area shape="rect" id="node49" href="$_navigator_gui_8h.html" title="NavigatorGui.h" alt="" coords="1191,245,1300,272"/>
+<area shape="rect" id="node50" href="$_build_8h.html" title="Build.h" alt="" coords="1594,245,1656,272"/>
+<area shape="rect" id="node33" href="$_ride_file_8h.html" title="RideFile.h" alt="" coords="755,320,836,347"/>
+<area shape="rect" id="node39" href="$_new_file_page__1_8h.html" title="NewFilePage_1.h" alt="" coords="2015,320,2140,347"/>
+<area shape="rect" id="node40" href="$_new_file_page__2_8h.html" title="NewFilePage_2.h" alt="" coords="1815,320,1940,347"/>
+<area shape="rect" id="node41" href="$_new_file_page__3_8h.html" title="NewFilePage_3.h" alt="" coords="3137,245,3263,272"/>
+<area shape="rect" id="node42" href="$_new_file_page__4_8h.html" title="NewFilePage_4.h" alt="" coords="2748,245,2873,272"/>
 </map>

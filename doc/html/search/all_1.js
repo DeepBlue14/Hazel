@@ -11,11 +11,12 @@ var searchData=
   ['boldred',['boldRed',['../namespace_unix_console_text.html#af66c25dcb55b26bfdb2e75f36204ad6d',1,'UnixConsoleText::boldRed()'],['../_windows_console_text_8cpp.html#a62a4ef7f05845d5a5b5335485bf11e8c',1,'boldRed():&#160;WindowsConsoleText.cpp'],['../namespace_windows_console_text.html#a4e7b50f0fec313c7e650eb0a70012c3e',1,'WindowsConsoleText::boldRed()']]],
   ['boldyellow',['boldYellow',['../namespace_unix_console_text.html#aee618445feccbe7ee1192f1b1b8948e7',1,'UnixConsoleText::boldYellow()'],['../_windows_console_text_8cpp.html#ab2e09ceac197ac3f6ef306d93ec53ecc',1,'boldYellow():&#160;WindowsConsoleText.cpp'],['../namespace_windows_console_text.html#ab12845c763ce135aaa1e45efb61f49d9',1,'WindowsConsoleText::boldYellow()']]],
   ['bourne_5fshell',['BOURNE_SHELL',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5ac1fad375d18fbdf12a80a14217da882b',1,'RideFile']]],
-  ['build',['Build',['../class_build.html',1,'Build'],['../class_directory.html#a1c40bdd8c03ef51a29fa097c325fe345a5eadd6da197b9497d88d759f877d1a6e',1,'Directory::BUILD()'],['../class_build.html#a96ad56fb129cfbc2131fd094c41ae1ec',1,'Build::Build()']]],
+  ['build',['Build',['../class_build.html',1,'Build'],['../class_build.html#a96ad56fb129cfbc2131fd094c41ae1ec',1,'Build::Build()'],['../class_directory.html#a1c40bdd8c03ef51a29fa097c325fe345a5eadd6da197b9497d88d759f877d1a6e',1,'Directory::BUILD()']]],
   ['build_2ecpp',['Build.cpp',['../_build_8cpp.html',1,'']]],
   ['build_2eh',['Build.h',['../_build_8h.html',1,'']]],
   ['buildactionptr',['buildActionPtr',['../class_master_actions.html#a627d91b89d122dd27addc931d1c91ca0',1,'MasterActions']]],
   ['buildprocessptr',['buildProcessPtr',['../class_build.html#aa71d3581eeb4b8c05a99cd01d16e7994',1,'Build']]],
+  ['buildptr',['buildPtr',['../class_master_actions.html#a204854f9bf284e221292497cdb7182ab',1,'MasterActions']]],
   ['buttongroupptr',['buttonGroupPtr',['../class_new_file_page__2.html#a1eaed1480c571a3bb321bc13707056c8',1,'NewFilePage_2::buttonGroupPtr()'],['../class_run_page__1.html#a951be96108a118e057257ae1ea6a7b88',1,'RunPage_1::buttonGroupPtr()']]],
   ['buttonlayout',['buttonLayout',['../class_new_file_gui.html#aec890bfe56498ad4c1e3865387f147b5',1,'NewFileGui::buttonLayout()'],['../class_new_project_gui.html#a7281efc1048f02fae1610c1fa0925473',1,'NewProjectGui::buttonLayout()'],['../class_run_gui.html#a812f0836d9eb5b0148cf92b61bc53be2',1,'RunGui::buttonLayout()']]],
   ['buttonlayoutptr',['buttonLayoutPtr',['../class_open_project_gui.html#abefeff15278c7240eaa8778d15ec21d7',1,'OpenProjectGui']]]

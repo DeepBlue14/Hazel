@@ -96,95 +96,120 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
 <div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_central_gui.html#aba31873e4b5d4bf9fd1e563601efc4e7">    4</a></span>&#160;<a class="code" href="class_central_gui.html#aba31873e4b5d4bf9fd1e563601efc4e7">CentralGui::CentralGui</a>(QWidget* parent) : QWidget(parent)</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_central_gui.html#a8ec49e2c3a7c601bed4a7e4ccf173682">centralTabsPtr</a> = <span class="keyword">new</span> <a class="code" href="class_tab_gui.html">TabGui</a>();</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="class_central_gui.html#a9b03db6d32ac3138fde0213d41bea0af">northGuiPtr</a> = <span class="keyword">new</span> <a class="code" href="class_tab_gui.html">TabGui</a>();</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a> = <span class="keyword">new</span> <a class="code" href="class_file_tree_gui.html">FileTreeGui</a>();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_central_gui.html#a60c563767906a6db0c209f0b21437a09">outputGuiPtr</a> = <span class="keyword">new</span> <a class="code" href="class_output_gui.html">OutputGui</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    QSplitter* splitter0 = <span class="keyword">new</span> QSplitter();</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    splitter0-&gt;setOrientation(Qt::Horizontal);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    splitter0-&gt;addWidget(<a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    splitter0-&gt;addWidget(<a class="code" href="class_central_gui.html#a8ec49e2c3a7c601bed4a7e4ccf173682">centralTabsPtr</a>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    QSplitter* splitter1 = <span class="keyword">new</span> QSplitter();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    splitter1-&gt;setOrientation(Qt::Vertical);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    splitter1-&gt;addWidget(splitter0);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    splitter1-&gt;addWidget(<a class="code" href="class_central_gui.html#a60c563767906a6db0c209f0b21437a09">outputGuiPtr</a>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">outerLayout</a> = <span class="keyword">new</span> QGridLayout();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">outerLayout</a>-&gt;addWidget(splitter1, 1, 0, 1, 2);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;setLayout(<a class="code" href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">outerLayout</a>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_central_gui.html#afb70afe6db1411c77956236188e67bd0">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#afb70afe6db1411c77956236188e67bd0">CentralGui::setCentralTabsPtr</a>(<a class="code" href="class_tab_gui.html">TabGui</a>* centralTabsPtr)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    this-&gt;centralTabsPtr = <a class="code" href="class_central_gui.html#a8ec49e2c3a7c601bed4a7e4ccf173682">centralTabsPtr</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_central_gui.html#a16716c4c66f7ce8e4552fcb20337ab39">   33</a></span>&#160;<a class="code" href="class_tab_gui.html">TabGui</a>* <a class="code" href="class_central_gui.html#a16716c4c66f7ce8e4552fcb20337ab39">CentralGui::getCentralTabsPtr</a>()</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_central_gui.html#a8ec49e2c3a7c601bed4a7e4ccf173682">centralTabsPtr</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_central_gui.html#a65abd3c9dc8bb14a60ca89da399c427e">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#a65abd3c9dc8bb14a60ca89da399c427e">CentralGui::setFileTreeGuiPtr</a>(<a class="code" href="class_file_tree_gui.html">FileTreeGui</a>* fileTreeGuiPtr)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;fileTreeGuiPtr = <a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_central_gui.html#aba7129fa7a935565409beb63498c2eb3">   45</a></span>&#160;<a class="code" href="class_file_tree_gui.html">FileTreeGui</a>* <a class="code" href="class_central_gui.html#aba7129fa7a935565409beb63498c2eb3">CentralGui::getFileTreeGuiPtr</a>()</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_central_gui.html#ae8559c5a3733e33a1ded21db79bd8d3a">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#ae8559c5a3733e33a1ded21db79bd8d3a">CentralGui::setOutputGuiPtr</a>(<a class="code" href="class_output_gui.html">OutputGui</a>* outputGuiPtr)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    this-&gt;outputGuiPtr = <a class="code" href="class_central_gui.html#a60c563767906a6db0c209f0b21437a09">outputGuiPtr</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_central_gui.html#a47d2d46581f064ed8b46e1f611a0bd98">   57</a></span>&#160;<a class="code" href="class_output_gui.html">OutputGui</a>* <a class="code" href="class_central_gui.html#a47d2d46581f064ed8b46e1f611a0bd98">CentralGui::getOutputGuiPtr</a>()</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_central_gui.html#a60c563767906a6db0c209f0b21437a09">outputGuiPtr</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_central_gui.html#a8f7149e1e5b7cfc5c694421482c68c5e">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#a8f7149e1e5b7cfc5c694421482c68c5e">CentralGui::passMasterTabWidgetPtr</a>(QTabWidget* masterTabWidgetPtr)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>-&gt;<a class="code" href="class_file_tree_gui.html#a571ca6424f269c0035ae9ddbce2e9e60">setMasterTabWidgetPtr</a>(masterTabWidgetPtr);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_central_gui.html#ad54c2077e29d7a2017399b39e62c1043">   69</a></span>&#160;<a class="code" href="class_central_gui.html#ad54c2077e29d7a2017399b39e62c1043">CentralGui::~CentralGui</a>()</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    ;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="class_central_gui.html#a902df8268cd1e83d1991ea88eafb9220">navigatorGuiPtr</a> = <span class="keyword">new</span> <a class="code" href="class_navigator_gui.html">NavigatorGui</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_central_gui.html#ae7012a7f0abe1fea596ce6af795c1741">southGuiPtr</a> = <span class="keyword">new</span> <a class="code" href="class_output_gui.html">OutputGui</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    QSplitter* splitter0 = <span class="keyword">new</span> QSplitter();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    splitter0-&gt;setOrientation(Qt::Horizontal);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    splitter0-&gt;addWidget(<a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    splitter0-&gt;addWidget(<a class="code" href="class_central_gui.html#a9b03db6d32ac3138fde0213d41bea0af">northGuiPtr</a>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    splitter0-&gt;addWidget(<a class="code" href="class_central_gui.html#a902df8268cd1e83d1991ea88eafb9220">navigatorGuiPtr</a>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    QSplitter* splitter1 = <span class="keyword">new</span> QSplitter();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    splitter1-&gt;setOrientation(Qt::Vertical);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    splitter1-&gt;addWidget(splitter0);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    splitter1-&gt;addWidget(<a class="code" href="class_central_gui.html#ae7012a7f0abe1fea596ce6af795c1741">southGuiPtr</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">outerLayout</a> = <span class="keyword">new</span> QGridLayout();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">outerLayout</a>-&gt;addWidget(splitter1, 1, 0, 1, 2);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    this-&gt;setLayout(<a class="code" href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">outerLayout</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_central_gui.html#a4c4fb762977d1295b564b36537299ed7">   29</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#a4c4fb762977d1295b564b36537299ed7">CentralGui::setNorthGuiPtr</a>(<a class="code" href="class_tab_gui.html">TabGui</a>* centralTabsPtr)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    this-&gt;<a class="code" href="class_central_gui.html#a9b03db6d32ac3138fde0213d41bea0af">northGuiPtr</a> = centralTabsPtr;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_central_gui.html#aeb363fd8e3880fa97b52eaf6d905e1d4">   35</a></span>&#160;<a class="code" href="class_tab_gui.html">TabGui</a>* <a class="code" href="class_central_gui.html#aeb363fd8e3880fa97b52eaf6d905e1d4">CentralGui::getNorthGuiPtr</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_central_gui.html#a9b03db6d32ac3138fde0213d41bea0af">northGuiPtr</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_central_gui.html#a65abd3c9dc8bb14a60ca89da399c427e">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#a65abd3c9dc8bb14a60ca89da399c427e">CentralGui::setFileTreeGuiPtr</a>(<a class="code" href="class_file_tree_gui.html">FileTreeGui</a>* fileTreeGuiPtr)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    this-&gt;fileTreeGuiPtr = <a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_central_gui.html#aba7129fa7a935565409beb63498c2eb3">   47</a></span>&#160;<a class="code" href="class_file_tree_gui.html">FileTreeGui</a>* <a class="code" href="class_central_gui.html#aba7129fa7a935565409beb63498c2eb3">CentralGui::getFileTreeGuiPtr</a>()</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_central_gui.html#ab8375fbf4f11a785d1bdf35c6678f7fd">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#ab8375fbf4f11a785d1bdf35c6678f7fd">CentralGui::setNavigatorGuiPtr</a>(<a class="code" href="class_navigator_gui.html">NavigatorGui</a>* navigatorGuiPtr)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    this-&gt;navigatorGuiPtr = <a class="code" href="class_central_gui.html#a902df8268cd1e83d1991ea88eafb9220">navigatorGuiPtr</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_central_gui.html#a700dcc17aa9827601879655206117fef">   59</a></span>&#160;<a class="code" href="class_navigator_gui.html">NavigatorGui</a>* <a class="code" href="class_central_gui.html#a700dcc17aa9827601879655206117fef">CentralGui::getNavigatorGuiPtr</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_central_gui.html#a902df8268cd1e83d1991ea88eafb9220">navigatorGuiPtr</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_central_gui.html#af407a4ca044dccbdb7363ed9d200ab1c">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#af407a4ca044dccbdb7363ed9d200ab1c">CentralGui::setSouthGuiPtr</a>(<a class="code" href="class_output_gui.html">OutputGui</a>* outputGuiPtr)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    this-&gt;<a class="code" href="class_central_gui.html#ae7012a7f0abe1fea596ce6af795c1741">southGuiPtr</a> = outputGuiPtr;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_central_gui.html#a210462a5153619fbf617f999c4e54e4c">   71</a></span>&#160;<a class="code" href="class_output_gui.html">OutputGui</a>* <a class="code" href="class_central_gui.html#a210462a5153619fbf617f999c4e54e4c">CentralGui::getSouthGuiPtr</a>()</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_central_gui.html#ae7012a7f0abe1fea596ce6af795c1741">southGuiPtr</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_central_gui.html#a072a884564050875f6d8be502976e2a6">   77</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#a072a884564050875f6d8be502976e2a6">CentralGui::passNorthTabWidgetPtr</a>(QTabWidget* masterTabWidgetPtr)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">fileTreeGuiPtr</a>-&gt;<a class="code" href="class_file_tree_gui.html#a18f7e0f7c76bb92cf164be6005786871">setNorthTabWidgetPtr</a>(masterTabWidgetPtr);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_central_gui.html#a9f2e7b269810e32cb32ad0fb83b046a6">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_central_gui.html#a9f2e7b269810e32cb32ad0fb83b046a6">CentralGui::passSouthTabWidgetPtr</a>(QTabWidget* southTabWidgetPtr)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    cerr &lt;&lt; <span class="stringliteral">&quot;CentralGui::passSouthTabWidgetPtr(...) has NOT been implemented yet!&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_central_gui.html#ad54c2077e29d7a2017399b39e62c1043">   89</a></span>&#160;<a class="code" href="class_central_gui.html#ad54c2077e29d7a2017399b39e62c1043">CentralGui::~CentralGui</a>()</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    ;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="ttc" id="class_central_gui_html_a4c4fb762977d1295b564b36537299ed7"><div class="ttname"><a href="class_central_gui.html#a4c4fb762977d1295b564b36537299ed7">CentralGui::setNorthGuiPtr</a></div><div class="ttdeci">void setNorthGuiPtr(TabGui *northGuiPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00029">CentralGui.cpp:29</a></div></div>
 <div class="ttc" id="class_output_gui_html"><div class="ttname"><a href="class_output_gui.html">OutputGui</a></div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8h_source.html#l00021">OutputGui.h:21</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_a571ca6424f269c0035ae9ddbce2e9e60"><div class="ttname"><a href="class_file_tree_gui.html#a571ca6424f269c0035ae9ddbce2e9e60">FileTreeGui::setMasterTabWidgetPtr</a></div><div class="ttdeci">void setMasterTabWidgetPtr(QTabWidget *masterTabWidgetPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8cpp_source.html#l00188">FileTreeGui.cpp:188</a></div></div>
-<div class="ttc" id="class_central_gui_html_ad54c2077e29d7a2017399b39e62c1043"><div class="ttname"><a href="class_central_gui.html#ad54c2077e29d7a2017399b39e62c1043">CentralGui::~CentralGui</a></div><div class="ttdeci">~CentralGui()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00069">CentralGui.cpp:69</a></div></div>
-<div class="ttc" id="class_central_gui_html_a8ec49e2c3a7c601bed4a7e4ccf173682"><div class="ttname"><a href="class_central_gui.html#a8ec49e2c3a7c601bed4a7e4ccf173682">CentralGui::centralTabsPtr</a></div><div class="ttdeci">TabGui * centralTabsPtr</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00031">CentralGui.h:31</a></div></div>
-<div class="ttc" id="class_central_gui_html_a6abfae93daa17e3af2a814888c9c14cf"><div class="ttname"><a href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">CentralGui::fileTreeGuiPtr</a></div><div class="ttdeci">FileTreeGui * fileTreeGuiPtr</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00032">CentralGui.h:32</a></div></div>
-<div class="ttc" id="class_central_gui_html_a16716c4c66f7ce8e4552fcb20337ab39"><div class="ttname"><a href="class_central_gui.html#a16716c4c66f7ce8e4552fcb20337ab39">CentralGui::getCentralTabsPtr</a></div><div class="ttdeci">TabGui * getCentralTabsPtr()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00033">CentralGui.cpp:33</a></div></div>
-<div class="ttc" id="class_central_gui_html_aba7129fa7a935565409beb63498c2eb3"><div class="ttname"><a href="class_central_gui.html#aba7129fa7a935565409beb63498c2eb3">CentralGui::getFileTreeGuiPtr</a></div><div class="ttdeci">FileTreeGui * getFileTreeGuiPtr()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00045">CentralGui.cpp:45</a></div></div>
+<div class="ttc" id="class_central_gui_html_ad54c2077e29d7a2017399b39e62c1043"><div class="ttname"><a href="class_central_gui.html#ad54c2077e29d7a2017399b39e62c1043">CentralGui::~CentralGui</a></div><div class="ttdeci">~CentralGui()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00089">CentralGui.cpp:89</a></div></div>
+<div class="ttc" id="class_central_gui_html_ae7012a7f0abe1fea596ce6af795c1741"><div class="ttname"><a href="class_central_gui.html#ae7012a7f0abe1fea596ce6af795c1741">CentralGui::southGuiPtr</a></div><div class="ttdeci">OutputGui * southGuiPtr</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00035">CentralGui.h:35</a></div></div>
+<div class="ttc" id="class_central_gui_html_a700dcc17aa9827601879655206117fef"><div class="ttname"><a href="class_central_gui.html#a700dcc17aa9827601879655206117fef">CentralGui::getNavigatorGuiPtr</a></div><div class="ttdeci">NavigatorGui * getNavigatorGuiPtr()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00059">CentralGui.cpp:59</a></div></div>
+<div class="ttc" id="class_central_gui_html_aeb363fd8e3880fa97b52eaf6d905e1d4"><div class="ttname"><a href="class_central_gui.html#aeb363fd8e3880fa97b52eaf6d905e1d4">CentralGui::getNorthGuiPtr</a></div><div class="ttdeci">TabGui * getNorthGuiPtr()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00035">CentralGui.cpp:35</a></div></div>
+<div class="ttc" id="class_central_gui_html_a6abfae93daa17e3af2a814888c9c14cf"><div class="ttname"><a href="class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf">CentralGui::fileTreeGuiPtr</a></div><div class="ttdeci">FileTreeGui * fileTreeGuiPtr</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00033">CentralGui.h:33</a></div></div>
+<div class="ttc" id="class_central_gui_html_ab8375fbf4f11a785d1bdf35c6678f7fd"><div class="ttname"><a href="class_central_gui.html#ab8375fbf4f11a785d1bdf35c6678f7fd">CentralGui::setNavigatorGuiPtr</a></div><div class="ttdeci">void setNavigatorGuiPtr(NavigatorGui *navigatorGuiPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00053">CentralGui.cpp:53</a></div></div>
+<div class="ttc" id="class_central_gui_html_a902df8268cd1e83d1991ea88eafb9220"><div class="ttname"><a href="class_central_gui.html#a902df8268cd1e83d1991ea88eafb9220">CentralGui::navigatorGuiPtr</a></div><div class="ttdeci">NavigatorGui * navigatorGuiPtr</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00034">CentralGui.h:34</a></div></div>
+<div class="ttc" id="class_file_tree_gui_html_a18f7e0f7c76bb92cf164be6005786871"><div class="ttname"><a href="class_file_tree_gui.html#a18f7e0f7c76bb92cf164be6005786871">FileTreeGui::setNorthTabWidgetPtr</a></div><div class="ttdeci">void setNorthTabWidgetPtr(QTabWidget *masterTabWidgetPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8cpp_source.html#l00208">FileTreeGui.cpp:208</a></div></div>
+<div class="ttc" id="class_central_gui_html_aba7129fa7a935565409beb63498c2eb3"><div class="ttname"><a href="class_central_gui.html#aba7129fa7a935565409beb63498c2eb3">CentralGui::getFileTreeGuiPtr</a></div><div class="ttdeci">FileTreeGui * getFileTreeGuiPtr()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00047">CentralGui.cpp:47</a></div></div>
+<div class="ttc" id="class_central_gui_html_a210462a5153619fbf617f999c4e54e4c"><div class="ttname"><a href="class_central_gui.html#a210462a5153619fbf617f999c4e54e4c">CentralGui::getSouthGuiPtr</a></div><div class="ttdeci">OutputGui * getSouthGuiPtr()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00071">CentralGui.cpp:71</a></div></div>
 <div class="ttc" id="class_file_tree_gui_html"><div class="ttname"><a href="class_file_tree_gui.html">FileTreeGui</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00035">FileTreeGui.h:35</a></div></div>
-<div class="ttc" id="class_central_gui_html_ab10e8028968ca8d5bf7b2cfe4b257d52"><div class="ttname"><a href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">CentralGui::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00035">CentralGui.h:35</a></div></div>
-<div class="ttc" id="class_central_gui_html_a60c563767906a6db0c209f0b21437a09"><div class="ttname"><a href="class_central_gui.html#a60c563767906a6db0c209f0b21437a09">CentralGui::outputGuiPtr</a></div><div class="ttdeci">OutputGui * outputGuiPtr</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00033">CentralGui.h:33</a></div></div>
+<div class="ttc" id="class_central_gui_html_af407a4ca044dccbdb7363ed9d200ab1c"><div class="ttname"><a href="class_central_gui.html#af407a4ca044dccbdb7363ed9d200ab1c">CentralGui::setSouthGuiPtr</a></div><div class="ttdeci">void setSouthGuiPtr(OutputGui *southGuiPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00065">CentralGui.cpp:65</a></div></div>
+<div class="ttc" id="class_central_gui_html_ab10e8028968ca8d5bf7b2cfe4b257d52"><div class="ttname"><a href="class_central_gui.html#ab10e8028968ca8d5bf7b2cfe4b257d52">CentralGui::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00037">CentralGui.h:37</a></div></div>
+<div class="ttc" id="class_central_gui_html_a9f2e7b269810e32cb32ad0fb83b046a6"><div class="ttname"><a href="class_central_gui.html#a9f2e7b269810e32cb32ad0fb83b046a6">CentralGui::passSouthTabWidgetPtr</a></div><div class="ttdeci">void passSouthTabWidgetPtr(QTabWidget *southTabWidgetPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00083">CentralGui.cpp:83</a></div></div>
 <div class="ttc" id="class_central_gui_html_aba31873e4b5d4bf9fd1e563601efc4e7"><div class="ttname"><a href="class_central_gui.html#aba31873e4b5d4bf9fd1e563601efc4e7">CentralGui::CentralGui</a></div><div class="ttdeci">CentralGui(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00004">CentralGui.cpp:4</a></div></div>
-<div class="ttc" id="class_central_gui_html_a8f7149e1e5b7cfc5c694421482c68c5e"><div class="ttname"><a href="class_central_gui.html#a8f7149e1e5b7cfc5c694421482c68c5e">CentralGui::passMasterTabWidgetPtr</a></div><div class="ttdeci">void passMasterTabWidgetPtr(QTabWidget *masterTabWidgetPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00063">CentralGui.cpp:63</a></div></div>
 <div class="ttc" id="class_tab_gui_html"><div class="ttname"><a href="class_tab_gui.html">TabGui</a></div><div class="ttdef"><b>Definition:</b> <a href="_tab_gui_8h_source.html#l00026">TabGui.h:26</a></div></div>
-<div class="ttc" id="class_central_gui_html_ae8559c5a3733e33a1ded21db79bd8d3a"><div class="ttname"><a href="class_central_gui.html#ae8559c5a3733e33a1ded21db79bd8d3a">CentralGui::setOutputGuiPtr</a></div><div class="ttdeci">void setOutputGuiPtr(OutputGui *outputGuiPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00051">CentralGui.cpp:51</a></div></div>
-<div class="ttc" id="class_central_gui_html_afb70afe6db1411c77956236188e67bd0"><div class="ttname"><a href="class_central_gui.html#afb70afe6db1411c77956236188e67bd0">CentralGui::setCentralTabsPtr</a></div><div class="ttdeci">void setCentralTabsPtr(TabGui *centralTabsPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00027">CentralGui.cpp:27</a></div></div>
 <div class="ttc" id="_central_gui_8h_html"><div class="ttname"><a href="_central_gui_8h.html">CentralGui.h</a></div></div>
-<div class="ttc" id="class_central_gui_html_a47d2d46581f064ed8b46e1f611a0bd98"><div class="ttname"><a href="class_central_gui.html#a47d2d46581f064ed8b46e1f611a0bd98">CentralGui::getOutputGuiPtr</a></div><div class="ttdeci">OutputGui * getOutputGuiPtr()</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00057">CentralGui.cpp:57</a></div></div>
-<div class="ttc" id="class_central_gui_html_a65abd3c9dc8bb14a60ca89da399c427e"><div class="ttname"><a href="class_central_gui.html#a65abd3c9dc8bb14a60ca89da399c427e">CentralGui::setFileTreeGuiPtr</a></div><div class="ttdeci">void setFileTreeGuiPtr(FileTreeGui *fileTreeGuiPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00039">CentralGui.cpp:39</a></div></div>
+<div class="ttc" id="class_central_gui_html_a072a884564050875f6d8be502976e2a6"><div class="ttname"><a href="class_central_gui.html#a072a884564050875f6d8be502976e2a6">CentralGui::passNorthTabWidgetPtr</a></div><div class="ttdeci">void passNorthTabWidgetPtr(QTabWidget *northTabWidgetPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00077">CentralGui.cpp:77</a></div></div>
+<div class="ttc" id="class_central_gui_html_a65abd3c9dc8bb14a60ca89da399c427e"><div class="ttname"><a href="class_central_gui.html#a65abd3c9dc8bb14a60ca89da399c427e">CentralGui::setFileTreeGuiPtr</a></div><div class="ttdeci">void setFileTreeGuiPtr(FileTreeGui *fileTreeGuiPtr)</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8cpp_source.html#l00041">CentralGui.cpp:41</a></div></div>
+<div class="ttc" id="class_navigator_gui_html"><div class="ttname"><a href="class_navigator_gui.html">NavigatorGui</a></div><div class="ttdef"><b>Definition:</b> <a href="_navigator_gui_8h_source.html#l00026">NavigatorGui.h:26</a></div></div>
+<div class="ttc" id="class_central_gui_html_a9b03db6d32ac3138fde0213d41bea0af"><div class="ttname"><a href="class_central_gui.html#a9b03db6d32ac3138fde0213d41bea0af">CentralGui::northGuiPtr</a></div><div class="ttdeci">TabGui * northGuiPtr</div><div class="ttdef"><b>Definition:</b> <a href="_central_gui_8h_source.html#l00032">CentralGui.h:32</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2015 15:12:44 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

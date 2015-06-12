@@ -9,8 +9,8 @@
  * Created on December 11, 2014, 1:14 PM
  */
 
-#ifndef UNIX_CONSOLE_textStrPtr_H
-#define	UNIX_CONSOLE_textStrPtr_H
+#ifndef UNIX_CONSOLE_TEXT_H
+#define	UNIX_CONSOLE_TEXT_H
 
 #include <string>
 
@@ -253,4 +253,4 @@ namespace UnixConsoleText
     
 };
 
-#endif	/* UNIX_CONSOLE_textStrPtr_H */
+#endif	/* UNIX_CONSOLE_TEXT_H */

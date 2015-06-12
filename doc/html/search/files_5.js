@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['highlighter_2ecpp',['Highlighter.cpp',['../_highlighter_8cpp.html',1,'']]],
-  ['highlighter_2eh',['Highlighter.h',['../_highlighter_8h.html',1,'']]]
+  ['linenumberarea_2ecpp',['LineNumberArea.cpp',['../_line_number_area_8cpp.html',1,'']]],
+  ['linenumberarea_2eh',['LineNumberArea.h',['../_line_number_area_8h.html',1,'']]]
 ];

@@ -1,88 +1,43 @@
 #include "WindowsConsoleText.h"
 
 
-string* red(string* textStrPtr)
+string* WindowsConsoleText::red(string* textStrPtr)
 {
     
 }
     
 
-string* green(string* textStrPtr)
+string* WindowsConsoleText::green(string* textStrPtr)
 {
     
 }
     
 
-string* yellow(string* textStrPtr)
+string* WindowsConsoleText::yellow(string* textStrPtr)
 {
     
 }
     
 
-string* blue(string* textStrPtr)
+string* WindowsConsoleText::blue(string* textStrPtr)
 {
     
 }
     
 
-string* purple(string* textStrPtr)
+string* WindowsConsoleText::purple(string* textStrPtr)
 {
     
 }
     
 
-string* cyan(string* textStrPtr)
+string* WindowsConsoleText::cyan(string* textStrPtr)
 {
     
 }
     
 
-string* gray(string* textStrPtr)
-{
-    
-}
-    
-    
-    
-    
-
-string* boldRed(string* textStrPtr)
-{
-    
-}
-    
-
-string* boldGreen(string* textStrPtr)
-{
-    
-}
-    
-
-string* boldYellow(string* textStrPtr)
-{
-    
-}
-    
-
-string* boldBlue(string* textStrPtr)
-{
-    
-}
-    
-
-string* boldPurple(string* textStrPtr)
-{
-    
-}
-    
-
-string* boldCyan(string* textStrPtr)
-{
-    
-}
-    
-
-string* boldGray(string* textStrPtr)
+string* WindowsConsoleText::gray(string* textStrPtr)
 {
     
 }
@@ -91,43 +46,43 @@ string* boldGray(string* textStrPtr)
     
     
 
-string* italicRed(string* textStrPtr)
+string* WindowsConsoleText::boldRed(string* textStrPtr)
 {
     
 }
     
 
-string* italicGreen(string* textStrPtr)
+string* WindowsConsoleText::boldGreen(string* textStrPtr)
 {
     
 }
     
 
-string* italicYellow(string* textStrPtr)
+string* WindowsConsoleText::boldYellow(string* textStrPtr)
 {
     
 }
     
 
-string* italicBlue(string* textStrPtr)
+string* WindowsConsoleText::boldBlue(string* textStrPtr)
 {
     
 }
     
 
-string* italicPurple(string* textStrPtr)
+string* WindowsConsoleText::boldPurple(string* textStrPtr)
 {
     
 }
     
 
-string* italicCyan(string* textStrPtr)
+string* WindowsConsoleText::boldCyan(string* textStrPtr)
 {
     
 }
     
 
-string* italicGray(string* textStrPtr)
+string* WindowsConsoleText::boldGray(string* textStrPtr)
 {
     
 }
@@ -136,43 +91,88 @@ string* italicGray(string* textStrPtr)
     
     
 
-string* underlinedRed(string* textStrPtr)
+string* WindowsConsoleText::italicRed(string* textStrPtr)
 {
     
 }
     
 
-string* underlinedGreen(string* textStrPtr)
+string* WindowsConsoleText::italicGreen(string* textStrPtr)
 {
     
 }
     
 
-string* underlinedYellow(string* textStrPtr)
+string* WindowsConsoleText::italicYellow(string* textStrPtr)
 {
     
 }
     
 
-string* underlinedBlue(string* textStrPtr)
+string* WindowsConsoleText::italicBlue(string* textStrPtr)
 {
     
 }
     
 
-string* underlinedPurple(string* textStrPtr)
+string* WindowsConsoleText::italicPurple(string* textStrPtr)
 {
     
 }
     
 
-string* underlinedCyan(string* textStrPtr)
+string* WindowsConsoleText::italicCyan(string* textStrPtr)
 {
     
 }
     
 
-string* underlinedGray(string* textStrPtr)
+string* WindowsConsoleText::italicGray(string* textStrPtr)
+{
+    
+}
+    
+    
+    
+    
+
+string* WindowsConsoleText::underlinedRed(string* textStrPtr)
+{
+    
+}
+    
+
+string* WindowsConsoleText::underlinedGreen(string* textStrPtr)
+{
+    
+}
+    
+
+string* WindowsConsoleText::underlinedYellow(string* textStrPtr)
+{
+    
+}
+    
+
+string* WindowsConsoleText::underlinedBlue(string* textStrPtr)
+{
+    
+}
+    
+
+string* WindowsConsoleText::underlinedPurple(string* textStrPtr)
+{
+    
+}
+    
+
+string* WindowsConsoleText::underlinedCyan(string* textStrPtr)
+{
+    
+}
+    
+
+string* WindowsConsoleText::underlinedGray(string* textStrPtr)
 {
     
 }

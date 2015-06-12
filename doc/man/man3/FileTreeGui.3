@@ -1,4 +1,4 @@
-.TH "FileTreeGui" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "FileTreeGui" 3 "Fri Jun 12 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -17,10 +17,10 @@ Inherits QWidget\&.
 .RI "\fBFileTreeGui\fP (QWidget *parent=0)"
 .br
 .ti -1c
-.RI "void \fBsetMasterTabWidgetPtr\fP (QTabWidget *\fBmasterTabWidgetPtr\fP)"
+.RI "void \fBsetNorthTabWidgetPtr\fP (QTabWidget *masterTabWidgetPtr)"
 .br
 .ti -1c
-.RI "QTabWidget * \fBgetMasterTabWidgetPtr\fP ()"
+.RI "QTabWidget * \fBgetNorthTabWidgetPtr\fP ()"
 .br
 .ti -1c
 .RI "\fB~FileTreeGui\fP ()"
@@ -62,14 +62,14 @@ Inherits QWidget\&.
 .RI "QGridLayout * \fBouterLayout\fP"
 .br
 .ti -1c
-.RI "QTabWidget * \fBmasterTabWidgetPtr\fP"
+.RI "QTabWidget * \fBnorthTabWidgetPtr\fP"
 .br
 .in -1c
 .SS "Static Private Attributes"
 
 .in +1c
 .ti -1c
-.RI "static QTreeWidget * \fBtrueTree\fP"
+.RI "static QTreeWidget * \fBtreePtr\fP"
 .br
 .ti -1c
 .RI "static QSplitter * \fBsplitter\fP"
@@ -90,29 +90,29 @@ Definition at line 10 of file FileTreeGui\&.cpp\&.
 .SS "FileTreeGui::~FileTreeGui ()"
 
 .PP
-Definition at line 200 of file FileTreeGui\&.cpp\&.
+Definition at line 220 of file FileTreeGui\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void FileTreeGui::addChildren (QTreeWidgetItem *item, QStringfilePath)\fC [static]\fP"
 
 .PP
-Definition at line 72 of file FileTreeGui\&.cpp\&.
-.SS "QTabWidget * FileTreeGui::getMasterTabWidgetPtr ()"
+Definition at line 73 of file FileTreeGui\&.cpp\&.
+.SS "QTabWidget * FileTreeGui::getNorthTabWidgetPtr ()"
 
 .PP
-Definition at line 194 of file FileTreeGui\&.cpp\&.
+Definition at line 214 of file FileTreeGui\&.cpp\&.
 .SS "QString * FileTreeGui::getProjectRootAbsPathStrPtr ()\fC [static]\fP"
 
 .PP
-Definition at line 172 of file FileTreeGui\&.cpp\&.
+Definition at line 192 of file FileTreeGui\&.cpp\&.
 .SS "void FileTreeGui::handleRightClickSlot (const QPoint &pos)\fC [private]\fP, \fC [slot]\fP"
 
 .PP
-Definition at line 135 of file FileTreeGui\&.cpp\&.
+Definition at line 155 of file FileTreeGui\&.cpp\&.
 .SS "void FileTreeGui::handleShowDirectorySlot (QTreeWidgetItem *item, intcolumn)\fC [private]\fP, \fC [slot]\fP"
 
 .PP
-Definition at line 99 of file FileTreeGui\&.cpp\&.
+Definition at line 103 of file FileTreeGui\&.cpp\&.
 .SS "void FileTreeGui::initTree ()\fC [static]\fP"
 
 .PP
@@ -120,18 +120,18 @@ Definition at line 40 of file FileTreeGui\&.cpp\&.
 .SS "void FileTreeGui::refresh ()\fC [static]\fP"
 
 .PP
-Definition at line 178 of file FileTreeGui\&.cpp\&.
-.SS "void FileTreeGui::setMasterTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
+Definition at line 198 of file FileTreeGui\&.cpp\&.
+.SS "void FileTreeGui::setNorthTabWidgetPtr (QTabWidget *masterTabWidgetPtr)"
 
 .PP
-Definition at line 188 of file FileTreeGui\&.cpp\&.
+Definition at line 208 of file FileTreeGui\&.cpp\&.
 .SS "void FileTreeGui::setProjectRootAbsPathStrPtr (QString *projectRootAbsPathStrPtr)\fC [static]\fP"
 
 .PP
-Definition at line 166 of file FileTreeGui\&.cpp\&.
+Definition at line 186 of file FileTreeGui\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
-.SS "QTabWidget* FileTreeGui::masterTabWidgetPtr\fC [private]\fP"
+.SS "QTabWidget* FileTreeGui::northTabWidgetPtr\fC [private]\fP"
 
 .PP
 Definition at line 46 of file FileTreeGui\&.h\&.
@@ -147,7 +147,7 @@ Definition at line 45 of file FileTreeGui\&.h\&.
 
 .PP
 Definition at line 41 of file FileTreeGui\&.h\&.
-.SS "QTreeWidget * FileTreeGui::trueTree\fC [static]\fP, \fC [private]\fP"
+.SS "QTreeWidget * FileTreeGui::treePtr\fC [static]\fP, \fC [private]\fP"
 
 .PP
 Definition at line 40 of file FileTreeGui\&.h\&.

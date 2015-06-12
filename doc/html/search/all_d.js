@@ -1,10 +1,11 @@
 var searchData=
 [
+  ['naveastactionptr',['navEastActionPtr',['../class_master_actions.html#aa084a718ec328fbb6645bdb23c995df1',1,'MasterActions']]],
   ['navigatemenuptr',['navigateMenuPtr',['../class_master_gui.html#aec75bd894b1c0eecea35c67ecdfcf1b0',1,'MasterGui']]],
-  ['navigatorgui',['NavigatorGui',['../class_navigator_gui.html',1,'NavigatorGui'],['../class_navigator_gui.html#ac9048d2b5aca858b6f339051ca519b97',1,'NavigatorGui::NavigatorGui()']]],
+  ['navigatorgui',['NavigatorGui',['../class_navigator_gui.html',1,'NavigatorGui'],['../class_navigator_gui.html#ac7a57ace6bc543313233afffe9a9073b',1,'NavigatorGui::NavigatorGui()']]],
   ['navigatorgui_2ecpp',['NavigatorGui.cpp',['../_navigator_gui_8cpp.html',1,'']]],
   ['navigatorgui_2eh',['NavigatorGui.h',['../_navigator_gui_8h.html',1,'']]],
-  ['navwestactionptr',['navWestActionPtr',['../class_master_actions.html#af1e3c333e90f4763dfd964aa2321b034',1,'MasterActions']]],
+  ['navigatorguiptr',['navigatorGuiPtr',['../class_central_gui.html#a902df8268cd1e83d1991ea88eafb9220',1,'CentralGui']]],
   ['newfileactionptr',['newFileActionPtr',['../class_master_actions.html#a4da658e527460b8d5b0a263820259e97',1,'MasterActions']]],
   ['newfilegui',['NewFileGui',['../class_new_file_gui.html',1,'NewFileGui'],['../class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d',1,'NewFileGui::NewFileGui()']]],
   ['newfilegui_2ecpp',['NewFileGui.cpp',['../_new_file_gui_8cpp.html',1,'']]],
@@ -49,5 +50,8 @@ var searchData=
   ['newprojectpage_5f4ptr',['newProjectPage_4Ptr',['../class_new_project_gui.html#a4c4e20d7598c3c61a45eb51a0332a326',1,'NewProjectGui']]],
   ['newterminalactionptr',['newTerminalActionPtr',['../class_master_actions.html#a6c3b1d9319fbf23f5a7cbe8305e16fc1',1,'MasterActions']]],
   ['nextbtn',['nextBtn',['../class_new_file_gui.html#ad1fa3cb3fa909bf6e71672497350f980',1,'NewFileGui::nextBtn()'],['../class_new_project_gui.html#af79d8f88c0d0aa8e783240c2e6ba6e8b',1,'NewProjectGui::nextBtn()'],['../class_run_gui.html#a02bb63cd6c6d77933f98087111ce1a66',1,'RunGui::nextBtn()']]],
-  ['node',['NODE',['../class_directory.html#a1c40bdd8c03ef51a29fa097c325fe345a032f30deac97c5bda25698f881b31b16',1,'Directory']]]
+  ['node',['NODE',['../class_directory.html#a1c40bdd8c03ef51a29fa097c325fe345a032f30deac97c5bda25698f881b31b16',1,'Directory']]],
+  ['nodeabspathstrlstptr',['nodeAbsPathStrLstPtr',['../class_ride_env.html#a5f1bb71c6e9524f2ce403e6b1dd32244',1,'RideEnv']]],
+  ['northguiptr',['northGuiPtr',['../class_central_gui.html#a9b03db6d32ac3138fde0213d41bea0af',1,'CentralGui']]],
+  ['northtabwidgetptr',['northTabWidgetPtr',['../class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a',1,'FileTreeGui::northTabWidgetPtr()'],['../class_master_actions.html#a4fbb50c5700fd6b66ace4cff6d3bde3e',1,'MasterActions::northTabWidgetPtr()'],['../class_new_file_gui.html#a101bfb66cbd62d340e55d632d07d7982',1,'NewFileGui::northTabWidgetPtr()']]]
 ];

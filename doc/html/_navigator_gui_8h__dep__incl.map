@@ -1,3 +1,14 @@
 <map id="/home/james/NetBeansProjects/ride/src/NavigatorGui.h" name="/home/james/NetBeansProjects/ride/src/NavigatorGui.h">
-<area shape="rect" id="node2" href="$_navigator_gui_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/NavigatorGui.cpp" alt="" coords="5,97,211,138"/>
+<area shape="rect" id="node2" href="$_central_gui_8h.html" title="/home/james/NetBeansProjects\l/ride/src/CentralGui.h" alt="" coords="146,97,352,138"/>
+<area shape="rect" id="node7" href="$_master_actions_8h.html" title="/home/james/NetBeansProjects\l/ride/src/MasterActions.h" alt="" coords="518,97,724,138"/>
+<area shape="rect" id="node13" href="$_navigator_gui_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/NavigatorGui.cpp" alt="" coords="749,97,955,138"/>
+<area shape="rect" id="node3" href="$_central_gui_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/CentralGui.cpp" alt="" coords="5,187,211,229"/>
+<area shape="rect" id="node4" href="$_master_gui_8h.html" title="/home/james/NetBeansProjects\l/ride/src/MasterGui.h" alt="" coords="545,278,751,319"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/main.cpp" alt="" coords="430,369,636,410"/>
+<area shape="rect" id="node6" href="$_master_gui_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/MasterGui.cpp" alt="" coords="661,369,867,410"/>
+<area shape="rect" id="node8" href="$_master_tool_bars_8h.html" title="/home/james/NetBeansProjects\l/ride/src/MasterToolBars.h" alt="" coords="801,187,1007,229"/>
+<area shape="rect" id="node10" href="$_master_menus_8h.html" title="/home/james/NetBeansProjects\l/ride/src/MasterMenus.h" alt="" coords="287,187,493,229"/>
+<area shape="rect" id="node12" href="$_master_actions_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/MasterActions.cpp" alt="" coords="518,187,724,229"/>
+<area shape="rect" id="node9" href="$_master_tool_bars_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/MasterToolBars.cpp" alt="" coords="801,278,1007,319"/>
+<area shape="rect" id="node11" href="$_master_menus_8cpp.html" title="/home/james/NetBeansProjects\l/ride/src/MasterMenus.cpp" alt="" coords="287,278,493,319"/>
 </map>

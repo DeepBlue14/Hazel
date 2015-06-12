@@ -89,8 +89,9 @@ void FileTreeGui::addChildren(QTreeWidgetItem* item, QString filePath)
 	    if(fileInfo.isDir())
 	    {
                 child->setText(1,fileInfo.filePath());
-	    }  
-	    
+	    }
+            
+            child->setToolTip(0, fileInfo.filePath());
 	    item->addChild(child);
         }
     }
@@ -129,13 +130,12 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
                 //check to see if file is already stored in tree
                 bool foundMatch = false;
                 for(size_t i = 1; i <= item->childCount(); i++)
-                {cout << "HERE (1)" << endl;
+                {
                     if(item->child(item->childCount() - i)->text(0) == child->text(0) )
                     {
                         foundMatch = true;
                         break;
                     }
-                cout << "HERE (2)" << endl;
                 }
                 
                 if(foundMatch == false)
@@ -169,19 +169,17 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 
     if(treePtr->selectedItems().at(0)->text(1) == "")
     {
-        //cout << selectedItem->text().toStdString() << endl;
-        cout << "file: " << treePtr->selectedItems().at(0)->text(1).toStdString() << endl;
+        //cout << "file: " << treePtr->selectedItems().at(0)->text(0).toStdString() << endl;
+        cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
     else
     {
-        cout << "diretory: " << treePtr->selectedItems().at(0)->text(1).toStdString() << endl;
-        //cout << selectedItem->text().toStdString() << endl;
+        //cout << "diretory: " << treePtr->selectedItems().at(0)->text(0).toStdString() << endl;
+        cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
 
-    //change treeview to treewidget, and then use code from
-    //https://github.com/DeepBlue14/Software_Engineer_91.411_2/blob/master/2_DataAggregator/Code/src/DevicesGui.cpp
-    
-    
+    //getNorthTabWidgetPtr()->addTab( , treePtr->selectedItems().at(0)->text(0));
+    //see NewFileGui.cpp
 }
 
 

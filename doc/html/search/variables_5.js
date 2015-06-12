@@ -1,5 +1,8 @@
 var searchData=
 [
+  ['fieldcommentsstrptr',['fieldCommentsStrPtr',['../class_msg_field_dat.html#a419eff9499b3441425fc0a8e04a12c81',1,'MsgFieldDat']]],
+  ['fieldnamestrptr',['fieldNameStrPtr',['../class_msg_field_dat.html#a55d98818f189cf1a3e00089b0fcf2128',1,'MsgFieldDat']]],
+  ['fieldtypestrptr',['fieldTypeStrPtr',['../class_msg_field_dat.html#a14fd69763d364248df1f4f33ea5a3de6',1,'MsgFieldDat']]],
   ['file',['file',['../class_line_number_area.html#a08ebbed0dba5e4740c0af7d006614922',1,'LineNumberArea']]],
   ['filedialogpbptr',['fileDialogPbPtr',['../class_open_project_gui.html#affa5359b9b61f58f2b6681e5f0d0b243',1,'OpenProjectGui']]],
   ['fileextcbptr',['fileExtCbPtr',['../class_new_file_page__4.html#afd3b7539e238b941bb03f981f087ed46',1,'NewFilePage_4']]],
@@ -12,7 +15,8 @@ var searchData=
   ['filenmstrptr',['fileNmStrPtr',['../class_scout_file_dat.html#af7353d56bff3ddad52115fd5ecd3dba9',1,'ScoutFileDat']]],
   ['fileptr',['filePtr',['../class_parse_font_config_xml.html#a1b42e0d21b2363d136c4f8f3449db672',1,'ParseFontConfigXml::filePtr()'],['../namespace_xml_master.html#aa7617b976593ed1594f194b72a6fbbee',1,'XmlMaster::filePtr()']]],
   ['fileptrvecptr',['filePtrVecPtr',['../class_scout_lib_dat.html#ae53718a0ccc56bcdd8ae310d64acbc75',1,'ScoutLibDat']]],
-  ['filetreeguiptr',['fileTreeGuiPtr',['../class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf',1,'CentralGui::fileTreeGuiPtr()'],['../class_master_actions.html#a53d5e999ea25b0d3d1643fca709f3bcb',1,'MasterActions::fileTreeGuiPtr()']]],
+  ['filestrptr',['fileStrPtr',['../class_navigator_gui.html#aa233c8e6f7634b4de98b2dcaaa86ed69',1,'NavigatorGui']]],
+  ['filetreeguiptr',['fileTreeGuiPtr',['../class_central_gui.html#a6abfae93daa17e3af2a814888c9c14cf',1,'CentralGui']]],
   ['filetypelwptr',['fileTypeLwPtr',['../class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72',1,'NewFilePage_1']]],
   ['filetypeptr',['fileTypePtr',['../class_ride_file.html#acdbc170d7f02d66dffb8b715609735c2',1,'RideFile']]],
   ['filetypestrlstptrvec',['fileTypeStrLstPtrVec',['../class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964',1,'NewFilePage_1']]],

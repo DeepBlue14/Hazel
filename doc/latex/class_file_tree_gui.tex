@@ -28,9 +28,9 @@ Collaboration diagram for File\-Tree\-Gui\-:\nopagebreak
 \item 
 \hyperlink{class_file_tree_gui_acf857f2793adefb176a680d541c24691}{File\-Tree\-Gui} (Q\-Widget $\ast$parent=0)
 \item 
-void \hyperlink{class_file_tree_gui_a571ca6424f269c0035ae9ddbce2e9e60}{set\-Master\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$\hyperlink{class_file_tree_gui_adb1e3ecfaab582317fcd9b968bbf6c40}{master\-Tab\-Widget\-Ptr})
+void \hyperlink{class_file_tree_gui_a18f7e0f7c76bb92cf164be6005786871}{set\-North\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$master\-Tab\-Widget\-Ptr)
 \item 
-Q\-Tab\-Widget $\ast$ \hyperlink{class_file_tree_gui_ab4c244617e4a8fbc13608cf5cfcf6944}{get\-Master\-Tab\-Widget\-Ptr} ()
+Q\-Tab\-Widget $\ast$ \hyperlink{class_file_tree_gui_a73a0e330ec676df9e822a612b6e2f08e}{get\-North\-Tab\-Widget\-Ptr} ()
 \item 
 \hyperlink{class_file_tree_gui_a11cc4baa3a62a625e95155c27a0d7258}{$\sim$\-File\-Tree\-Gui} ()
 \end{DoxyCompactItemize}
@@ -59,12 +59,12 @@ void \hyperlink{class_file_tree_gui_a9d726b5258284de8f9dc10cddddbdc87}{handle\-R
 \item 
 Q\-Grid\-Layout $\ast$ \hyperlink{class_file_tree_gui_aaf8b63a4775b1d46d635cdaef94b979a}{outer\-Layout}
 \item 
-Q\-Tab\-Widget $\ast$ \hyperlink{class_file_tree_gui_adb1e3ecfaab582317fcd9b968bbf6c40}{master\-Tab\-Widget\-Ptr}
+Q\-Tab\-Widget $\ast$ \hyperlink{class_file_tree_gui_ae44c6d73787d55eae9bed8e16ff9f34a}{north\-Tab\-Widget\-Ptr}
 \end{DoxyCompactItemize}
 \subsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static Q\-Tree\-Widget $\ast$ \hyperlink{class_file_tree_gui_a27648a2d00b8283605c3a260060b1285}{true\-Tree}
+static Q\-Tree\-Widget $\ast$ \hyperlink{class_file_tree_gui_a46dee8099b8a67b854a57a761528b493}{tree\-Ptr}
 \item 
 static Q\-Splitter $\ast$ \hyperlink{class_file_tree_gui_a43e8677ba8c50059d003f298b631e131}{splitter}
 \item 
@@ -91,6 +91,18 @@ Definition at line 35 of file File\-Tree\-Gui.\-h.
 
 Definition at line 10 of file File\-Tree\-Gui.\-cpp.
 
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_acf857f2793adefb176a680d541c24691_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_file_tree_gui_a11cc4baa3a62a625e95155c27a0d7258}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!$\sim$\-File\-Tree\-Gui@{$\sim$\-File\-Tree\-Gui}}
 \index{$\sim$\-File\-Tree\-Gui@{$\sim$\-File\-Tree\-Gui}!FileTreeGui@{File\-Tree\-Gui}}
 \subsubsection[{$\sim$\-File\-Tree\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}File\-Tree\-Gui\-::$\sim$\-File\-Tree\-Gui (
@@ -100,7 +112,7 @@ Definition at line 10 of file File\-Tree\-Gui.\-cpp.
 )}}\label{class_file_tree_gui_a11cc4baa3a62a625e95155c27a0d7258}
 
 
-Definition at line 200 of file File\-Tree\-Gui.\-cpp.
+Definition at line 220 of file File\-Tree\-Gui.\-cpp.
 
 
 
@@ -115,18 +127,42 @@ Definition at line 200 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_ab3c2fd5311245c08624461ac4c7e120c}
 
 
-Definition at line 72 of file File\-Tree\-Gui.\-cpp.
+Definition at line 73 of file File\-Tree\-Gui.\-cpp.
 
-\hypertarget{class_file_tree_gui_ab4c244617e4a8fbc13608cf5cfcf6944}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!get\-Master\-Tab\-Widget\-Ptr@{get\-Master\-Tab\-Widget\-Ptr}}
-\index{get\-Master\-Tab\-Widget\-Ptr@{get\-Master\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
-\subsubsection[{get\-Master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ File\-Tree\-Gui\-::get\-Master\-Tab\-Widget\-Ptr (
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_ab3c2fd5311245c08624461ac4c7e120c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_ab3c2fd5311245c08624461ac4c7e120c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_file_tree_gui_a73a0e330ec676df9e822a612b6e2f08e}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!get\-North\-Tab\-Widget\-Ptr@{get\-North\-Tab\-Widget\-Ptr}}
+\index{get\-North\-Tab\-Widget\-Ptr@{get\-North\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{get\-North\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ File\-Tree\-Gui\-::get\-North\-Tab\-Widget\-Ptr (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_file_tree_gui_ab4c244617e4a8fbc13608cf5cfcf6944}
+)}}\label{class_file_tree_gui_a73a0e330ec676df9e822a612b6e2f08e}
 
 
-Definition at line 194 of file File\-Tree\-Gui.\-cpp.
+Definition at line 214 of file File\-Tree\-Gui.\-cpp.
 
 \hypertarget{class_file_tree_gui_a21607e8cda6732997d5148581017a9b8}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!get\-Project\-Root\-Abs\-Path\-Str\-Ptr@{get\-Project\-Root\-Abs\-Path\-Str\-Ptr}}
 \index{get\-Project\-Root\-Abs\-Path\-Str\-Ptr@{get\-Project\-Root\-Abs\-Path\-Str\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
@@ -137,7 +173,19 @@ Definition at line 194 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_a21607e8cda6732997d5148581017a9b8}
 
 
-Definition at line 172 of file File\-Tree\-Gui.\-cpp.
+Definition at line 192 of file File\-Tree\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_a21607e8cda6732997d5148581017a9b8_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_file_tree_gui_a9d726b5258284de8f9dc10cddddbdc87}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!handle\-Right\-Click\-Slot@{handle\-Right\-Click\-Slot}}
 \index{handle\-Right\-Click\-Slot@{handle\-Right\-Click\-Slot}!FileTreeGui@{File\-Tree\-Gui}}
@@ -148,7 +196,19 @@ Definition at line 172 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_tree_gui_a9d726b5258284de8f9dc10cddddbdc87}
 
 
-Definition at line 135 of file File\-Tree\-Gui.\-cpp.
+Definition at line 155 of file File\-Tree\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_a9d726b5258284de8f9dc10cddddbdc87_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_file_tree_gui_aa8110a99d6bab64818b7f87024382b2a}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!handle\-Show\-Directory\-Slot@{handle\-Show\-Directory\-Slot}}
 \index{handle\-Show\-Directory\-Slot@{handle\-Show\-Directory\-Slot}!FileTreeGui@{File\-Tree\-Gui}}
@@ -160,7 +220,31 @@ Definition at line 135 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_tree_gui_aa8110a99d6bab64818b7f87024382b2a}
 
 
-Definition at line 99 of file File\-Tree\-Gui.\-cpp.
+Definition at line 103 of file File\-Tree\-Gui.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_aa8110a99d6bab64818b7f87024382b2a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_aa8110a99d6bab64818b7f87024382b2a_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_file_tree_gui_a5d4df4a19da0183ccc254019f77097b1}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!init\-Tree@{init\-Tree}}
 \index{init\-Tree@{init\-Tree}!FileTreeGui@{File\-Tree\-Gui}}
@@ -173,6 +257,30 @@ Definition at line 99 of file File\-Tree\-Gui.\-cpp.
 
 Definition at line 40 of file File\-Tree\-Gui.\-cpp.
 
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_a5d4df4a19da0183ccc254019f77097b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_a5d4df4a19da0183ccc254019f77097b1_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_file_tree_gui_ac2c3399b5cb85da5cd1c119b61c674c0}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!refresh@{refresh}}
 \index{refresh@{refresh}!FileTreeGui@{File\-Tree\-Gui}}
 \subsubsection[{refresh}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Tree\-Gui\-::refresh (
@@ -182,18 +290,54 @@ Definition at line 40 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_ac2c3399b5cb85da5cd1c119b61c674c0}
 
 
-Definition at line 178 of file File\-Tree\-Gui.\-cpp.
+Definition at line 198 of file File\-Tree\-Gui.\-cpp.
 
-\hypertarget{class_file_tree_gui_a571ca6424f269c0035ae9ddbce2e9e60}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!set\-Master\-Tab\-Widget\-Ptr@{set\-Master\-Tab\-Widget\-Ptr}}
-\index{set\-Master\-Tab\-Widget\-Ptr@{set\-Master\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
-\subsubsection[{set\-Master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Tree\-Gui\-::set\-Master\-Tab\-Widget\-Ptr (
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_ac2c3399b5cb85da5cd1c119b61c674c0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_ac2c3399b5cb85da5cd1c119b61c674c0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_file_tree_gui_a18f7e0f7c76bb92cf164be6005786871}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!set\-North\-Tab\-Widget\-Ptr@{set\-North\-Tab\-Widget\-Ptr}}
+\index{set\-North\-Tab\-Widget\-Ptr@{set\-North\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{set\-North\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Tree\-Gui\-::set\-North\-Tab\-Widget\-Ptr (
 \begin{DoxyParamCaption}
 \item[{Q\-Tab\-Widget $\ast$}]{master\-Tab\-Widget\-Ptr}
 \end{DoxyParamCaption}
-)}}\label{class_file_tree_gui_a571ca6424f269c0035ae9ddbce2e9e60}
+)}}\label{class_file_tree_gui_a18f7e0f7c76bb92cf164be6005786871}
 
 
-Definition at line 188 of file File\-Tree\-Gui.\-cpp.
+Definition at line 208 of file File\-Tree\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_a18f7e0f7c76bb92cf164be6005786871_icgraph}
+\end{center}
+\end{figure}
+
 
 \hypertarget{class_file_tree_gui_afe882583424429fcda9c4c2bc0ab71d4}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!set\-Project\-Root\-Abs\-Path\-Str\-Ptr@{set\-Project\-Root\-Abs\-Path\-Str\-Ptr}}
 \index{set\-Project\-Root\-Abs\-Path\-Str\-Ptr@{set\-Project\-Root\-Abs\-Path\-Str\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
@@ -204,14 +348,26 @@ Definition at line 188 of file File\-Tree\-Gui.\-cpp.
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{class_file_tree_gui_afe882583424429fcda9c4c2bc0ab71d4}
 
 
-Definition at line 166 of file File\-Tree\-Gui.\-cpp.
+Definition at line 186 of file File\-Tree\-Gui.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_file_tree_gui_afe882583424429fcda9c4c2bc0ab71d4_icgraph}
+\end{center}
+\end{figure}
+
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{class_file_tree_gui_adb1e3ecfaab582317fcd9b968bbf6c40}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!master\-Tab\-Widget\-Ptr@{master\-Tab\-Widget\-Ptr}}
-\index{master\-Tab\-Widget\-Ptr@{master\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
-\subsubsection[{master\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ File\-Tree\-Gui\-::master\-Tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_tree_gui_adb1e3ecfaab582317fcd9b968bbf6c40}
+\hypertarget{class_file_tree_gui_ae44c6d73787d55eae9bed8e16ff9f34a}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!north\-Tab\-Widget\-Ptr@{north\-Tab\-Widget\-Ptr}}
+\index{north\-Tab\-Widget\-Ptr@{north\-Tab\-Widget\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{north\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ File\-Tree\-Gui\-::north\-Tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_tree_gui_ae44c6d73787d55eae9bed8e16ff9f34a}
 
 
 Definition at line 46 of file File\-Tree\-Gui.\-h.
@@ -237,9 +393,9 @@ Definition at line 45 of file File\-Tree\-Gui.\-h.
 
 Definition at line 41 of file File\-Tree\-Gui.\-h.
 
-\hypertarget{class_file_tree_gui_a27648a2d00b8283605c3a260060b1285}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!true\-Tree@{true\-Tree}}
-\index{true\-Tree@{true\-Tree}!FileTreeGui@{File\-Tree\-Gui}}
-\subsubsection[{true\-Tree}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tree\-Widget $\ast$ File\-Tree\-Gui\-::true\-Tree\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_a27648a2d00b8283605c3a260060b1285}
+\hypertarget{class_file_tree_gui_a46dee8099b8a67b854a57a761528b493}{\index{File\-Tree\-Gui@{File\-Tree\-Gui}!tree\-Ptr@{tree\-Ptr}}
+\index{tree\-Ptr@{tree\-Ptr}!FileTreeGui@{File\-Tree\-Gui}}
+\subsubsection[{tree\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tree\-Widget $\ast$ File\-Tree\-Gui\-::tree\-Ptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{class_file_tree_gui_a46dee8099b8a67b854a57a761528b493}
 
 
 Definition at line 40 of file File\-Tree\-Gui.\-h.

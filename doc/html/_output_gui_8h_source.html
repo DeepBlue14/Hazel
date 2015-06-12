@@ -101,8 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Created on May 6, 2015, 4:44 PM</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef OUTPUTGUI_H</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OUTPUTGUI_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef OUTPUT_GUI_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define OUTPUT_GUI_H</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QWidget&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QTextEdit&gt;</span></div>
@@ -127,23 +127,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_output_gui.html#a6442997196cceca74c0a79ddb9763d2c">OutputGui</a>(QWidget* parent = 0);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_output_gui.html#ad28c34939968c81bdba5e7edcd94fde2">addTab</a>(QWidget* tab, QString* tabName);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="class_output_gui.html#a5b18318b0cf8ebb4118ce9197f80ea49">~OutputGui</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* OUTPUTGUI_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        QTabWidget* <a class="code" href="class_output_gui.html#acd5d7658edaa37f392fbb2524cb5cd05">getTabWidget</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_output_gui.html#a5b18318b0cf8ebb4118ce9197f80ea49">~OutputGui</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* OUTPUT_GUI_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_output_gui_html_aa25ed1be530acc4508eaf042144b4458"><div class="ttname"><a href="class_output_gui.html#aa25ed1be530acc4508eaf042144b4458">OutputGui::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8h_source.html#l00029">OutputGui.h:29</a></div></div>
 <div class="ttc" id="class_output_gui_html"><div class="ttname"><a href="class_output_gui.html">OutputGui</a></div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8h_source.html#l00021">OutputGui.h:21</a></div></div>
 <div class="ttc" id="class_output_gui_html_a669643ee3eabbe9b198bcb43f56ae053"><div class="ttname"><a href="class_output_gui.html#a669643ee3eabbe9b198bcb43f56ae053">OutputGui::tabPtrVec</a></div><div class="ttdeci">QVector&lt; QWidget * &gt; tabPtrVec</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8h_source.html#l00028">OutputGui.h:28</a></div></div>
 <div class="ttc" id="class_output_gui_html_a2f8f77a6c77ee8bb00088be2de61c93b"><div class="ttname"><a href="class_output_gui.html#a2f8f77a6c77ee8bb00088be2de61c93b">OutputGui::tabWidgetPtr</a></div><div class="ttdeci">QTabWidget * tabWidgetPtr</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8h_source.html#l00026">OutputGui.h:26</a></div></div>
+<div class="ttc" id="class_output_gui_html_acd5d7658edaa37f392fbb2524cb5cd05"><div class="ttname"><a href="class_output_gui.html#acd5d7658edaa37f392fbb2524cb5cd05">OutputGui::getTabWidget</a></div><div class="ttdeci">QTabWidget * getTabWidget()</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8cpp_source.html#l00027">OutputGui.cpp:27</a></div></div>
 <div class="ttc" id="class_output_gui_html_affbe7d587f4f755b67cae654f5e468d8"><div class="ttname"><a href="class_output_gui.html#affbe7d587f4f755b67cae654f5e468d8">OutputGui::outputTePtr</a></div><div class="ttdeci">QTextEdit * outputTePtr</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8h_source.html#l00027">OutputGui.h:27</a></div></div>
-<div class="ttc" id="class_output_gui_html_a5b18318b0cf8ebb4118ce9197f80ea49"><div class="ttname"><a href="class_output_gui.html#a5b18318b0cf8ebb4118ce9197f80ea49">OutputGui::~OutputGui</a></div><div class="ttdeci">~OutputGui()</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8cpp_source.html#l00027">OutputGui.cpp:27</a></div></div>
+<div class="ttc" id="class_output_gui_html_a5b18318b0cf8ebb4118ce9197f80ea49"><div class="ttname"><a href="class_output_gui.html#a5b18318b0cf8ebb4118ce9197f80ea49">OutputGui::~OutputGui</a></div><div class="ttdeci">~OutputGui()</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8cpp_source.html#l00033">OutputGui.cpp:33</a></div></div>
 <div class="ttc" id="class_output_gui_html_ad28c34939968c81bdba5e7edcd94fde2"><div class="ttname"><a href="class_output_gui.html#ad28c34939968c81bdba5e7edcd94fde2">OutputGui::addTab</a></div><div class="ttdeci">void addTab(QWidget *tab, QString *tabName)</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8cpp_source.html#l00020">OutputGui.cpp:20</a></div></div>
 <div class="ttc" id="class_output_gui_html_a6442997196cceca74c0a79ddb9763d2c"><div class="ttname"><a href="class_output_gui.html#a6442997196cceca74c0a79ddb9763d2c">OutputGui::OutputGui</a></div><div class="ttdeci">OutputGui(QWidget *parent=0)</div><div class="ttdef"><b>Definition:</b> <a href="_output_gui_8cpp_source.html#l00004">OutputGui.cpp:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jun 6 2015 15:12:44 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

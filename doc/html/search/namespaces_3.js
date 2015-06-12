@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['treeitemiconinit',['TreeItemIconInit',['../namespace_tree_item_icon_init.html',1,'']]]
+  ['unixconsoletext',['UnixConsoleText',['../namespace_unix_console_text.html',1,'']]]
 ];

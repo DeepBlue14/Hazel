@@ -1,7 +1,9 @@
 /* 
  * File:   WindowsConsoleText.h
- * Author: james
- *
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
+ * 
  * 
  * Reference: http://www.cplusplus.com/articles/Eyhv0pDG/
  * 

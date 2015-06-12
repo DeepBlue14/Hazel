@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['navigatorgui',['NavigatorGui',['../class_navigator_gui.html#ac9048d2b5aca858b6f339051ca519b97',1,'NavigatorGui']]],
+  ['navigatorgui',['NavigatorGui',['../class_navigator_gui.html#ac7a57ace6bc543313233afffe9a9073b',1,'NavigatorGui']]],
   ['newfilegui',['NewFileGui',['../class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d',1,'NewFileGui']]],
   ['newfilepage_5f1',['NewFilePage_1',['../class_new_file_page__1.html#ad79384836bb84e907b49d4bf6ccbebaf',1,'NewFilePage_1']]],
   ['newfilepage_5f2',['NewFilePage_2',['../class_new_file_page__2.html#ae6158d1bf5b626cd19fd6060a22f8671',1,'NewFilePage_2']]],

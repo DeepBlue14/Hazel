@@ -1,4 +1,4 @@
-.TH "OutputGui" 3 "Sat Jun 6 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.TH "OutputGui" 3 "Fri Jun 12 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -18,6 +18,9 @@ Inherits QWidget\&.
 .br
 .ti -1c
 .RI "void \fBaddTab\fP (QWidget *tab, QString *tabName)"
+.br
+.ti -1c
+.RI "QTabWidget * \fBgetTabWidget\fP ()"
 .br
 .ti -1c
 .RI "\fB~OutputGui\fP ()"
@@ -51,13 +54,17 @@ Definition at line 4 of file OutputGui\&.cpp\&.
 .SS "OutputGui::~OutputGui ()"
 
 .PP
-Definition at line 27 of file OutputGui\&.cpp\&.
+Definition at line 33 of file OutputGui\&.cpp\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void OutputGui::addTab (QWidget *tab, QString *tabName)"
 
 .PP
 Definition at line 20 of file OutputGui\&.cpp\&.
+.SS "QTabWidget * OutputGui::getTabWidget ()"
+
+.PP
+Definition at line 27 of file OutputGui\&.cpp\&.
 .SH "Member Data Documentation"
 .PP 
 .SS "QGridLayout* OutputGui::outerLayout\fC [private]\fP"

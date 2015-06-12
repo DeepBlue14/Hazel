@@ -1,13 +1,17 @@
 var searchData=
 [
   ['paintevent',['paintEvent',['../class_line_number_area.html#a56400934bfe272427deb3ffd975b3a7f',1,'LineNumberArea']]],
+  ['parse',['parse',['../class_msg_parser.html#ae72b3fe9392b895129fd467861df2207',1,'MsgParser']]],
   ['parsedoc',['parseDoc',['../class_parse_font_config_xml.html#ad3e9ffe38d0d4eef36d6bb4f7a3a20db',1,'ParseFontConfigXml']]],
   ['parsefontconfigxml',['ParseFontConfigXml',['../class_parse_font_config_xml.html#a1c9f5e4c1a1637a3082ec914faf151d9',1,'ParseFontConfigXml']]],
-  ['passmastertabwidgetptr',['passMasterTabWidgetPtr',['../class_central_gui.html#a8f7149e1e5b7cfc5c694421482c68c5e',1,'CentralGui']]],
+  ['passnorthtabwidgetptr',['passNorthTabWidgetPtr',['../class_central_gui.html#a072a884564050875f6d8be502976e2a6',1,'CentralGui']]],
+  ['passsouthtabwidgetptr',['passSouthTabWidgetPtr',['../class_central_gui.html#a9f2e7b269810e32cb32ad0fb83b046a6',1,'CentralGui']]],
   ['physicalattriblog',['PhysicalAttribLog',['../class_physical_attrib_log.html#acc5e8a8e22a5beadbe74b1a02fa85263',1,'PhysicalAttribLog']]],
   ['popbackfromparamsstrlstptr',['popBackFromParamsStrLstPtr',['../class_scout_func_dat.html#ac79446b5cacfed10b73b4c4f5b185efc',1,'ScoutFuncDat']]],
   ['popfromfileptrvecptr',['popFromFilePtrVecPtr',['../class_scout_lib_dat.html#a11f3537bd6f2d32b4d8f88f0a47ccb1c',1,'ScoutLibDat']]],
   ['popfromfuncdatptrvecptr',['popFromFuncDatPtrVecPtr',['../class_scout_file_dat.html#af5acff6058ba9d10239914e7c5bd1de0',1,'ScoutFileDat']]],
+  ['popfrommsgfielddatptrvecptr',['popFromMsgFieldDatPtrVecPtr',['../class_msg_file_dat.html#a11a9cddfd2dec07399e39caa65309a04',1,'MsgFileDat']]],
+  ['popfromnodeabspathstrlstptr',['popFromNodeAbsPathStrLstPtr',['../class_ride_env.html#a76e027be4d88b381619e7dd215fbe6e8',1,'RideEnv']]],
   ['popfromvardatptrvecptr',['popFromVarDatPtrVecPtr',['../class_scout_file_dat.html#aeb555fc115ec066769023f8c4a4c1087',1,'ScoutFileDat']]],
   ['printxmlfile',['printXmlFile',['../namespace_xml_master.html#a403506effa37889ca401527113da1c5c',1,'XmlMaster']]],
   ['purple',['purple',['../namespace_unix_console_text.html#a1c7c0b40a1156e1b513bf9cea29bb72e',1,'UnixConsoleText::purple()'],['../_windows_console_text_8cpp.html#a507de5017c552f98c75f837f84456b57',1,'purple():&#160;WindowsConsoleText.cpp'],['../namespace_windows_console_text.html#aff0abcf384e233f425332c77a07a45ac',1,'WindowsConsoleText::purple()']]],
@@ -16,6 +20,8 @@ var searchData=
   ['pushbacktoparamsstrlstptr',['pushBackToParamsStrLstPtr',['../class_scout_func_dat.html#a4268378e6ccb492700deeb311d267fa4',1,'ScoutFuncDat']]],
   ['pushtofileptrvecptr',['pushToFilePtrVecPtr',['../class_scout_lib_dat.html#ae5c3f32dd10e948ec9edb7b0fa11b0eb',1,'ScoutLibDat']]],
   ['pushtofuncdatptrvecptr',['pushToFuncDatPtrVecPtr',['../class_scout_file_dat.html#ae91be34ff12cdff637f35e54177bf514',1,'ScoutFileDat']]],
+  ['pushtomsgfielddatptrvecptr',['pushToMsgFieldDatPtrVecPtr',['../class_msg_file_dat.html#a63d1abb4bd09980772e617aed0cdf1d0',1,'MsgFileDat']]],
+  ['pushtonodeabspathstrlstptr',['pushToNodeAbsPathStrLstPtr',['../class_ride_env.html#aba2d2d0061340150e6246a6c64f319c6',1,'RideEnv']]],
   ['pushtoridefileptrvec',['pushToRideFilePtrVec',['../namespace_save_all.html#a2e2571928abdd1b9248fccdba5407df1',1,'SaveAll']]],
   ['pushtovardatptrvecptr',['pushToVarDatPtrVecPtr',['../class_scout_file_dat.html#a89f9120e9794ff0021d98ba44ca32dc0',1,'ScoutFileDat']]]
 ];
