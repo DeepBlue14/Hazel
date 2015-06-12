@@ -218,17 +218,10 @@ void FileGui::highlightCurrentLine()
         
         QString text;
         QTextCursor tc = textCursor();
-        //tc.select(QTextCursor::LineUnderCursor);
-        //tc.clearSelection();
         text = tc.block().text();
-        //cout << tc.selectedText().toStdString() << endl;
-        //QString tmp = tc.selectedText();
-        //if(tc.position() > 0)
-        //cout << "The chosen one: " << tmp.at(tc.position()-1).toLatin1() << endl;
-        //QString tmp2 = tc.block().text();
-        //cout << tmp2.toStdString() << endl;
-        cout << "contents of false cursor: " << text.toStdString() << endl;
-        cout << "position of \"true\" cursor: " << tc.position() << endl;
+        if((tc.positionInBlock() > 0) && (text.size() > 0) )
+            cout << "contents of false cursor: " << text.at(tc.positionInBlock() - 1).toLatin1() << endl;
+        cout << "position of \"true\" cursor: " << tc.positionInBlock() << endl;
     }
     
     setExtraSelections(extraSelections);
