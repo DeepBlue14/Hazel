@@ -1,6 +1,9 @@
 /* 
  * File:   FileTreeIconInit.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This file sets icons for the different types of files
+ *                   which will be stored in the tree.
  *
  * Created on June 4, 2015, 8:31 PM
  */
@@ -11,6 +14,21 @@
 #include <QWidget>
 #include <QTreeWidgetItem>
 #include <QIcon>
+
+#include <iostream>
+
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
+
+using namespace std;
 
 namespace TreeItemIconInit
 {

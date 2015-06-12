@@ -20,11 +20,22 @@
 #include <QProcess>
 #include <QByteArray>
 #include <QStringList>
+#include <QList>
 #include <QString>
 
 #include <iostream>
 
 #include "RFile.h"
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
 
 using namespace std;
 
@@ -32,6 +43,7 @@ class RProcess : public QProcess
 {
     private:
         static QStringList* curInUseFileNmStrLstPtr;
+        static QList<int>* numsInUseLstPtr;
         
         QString* genTmpFileNameStrPtr();
         

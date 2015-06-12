@@ -30,6 +30,16 @@
 #include "FileTreeGui.h"
 #include "NavigatorGui.h"
 #include "Build.h"
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
 
 using namespace SaveAll;
 using namespace std;

@@ -18,6 +18,17 @@
 
 #include <iostream>
 
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
+
 using namespace std;
 
 class NewProjectPage_1 : public QWidget

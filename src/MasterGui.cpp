@@ -1,7 +1,7 @@
 #include "MasterGui.h"
 
 MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
-{
+{   cout << *(cct::red(new string("asdf"))) << endl;
     this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/ride1.jpg") );
     this->setWindowTitle("Ride");
     

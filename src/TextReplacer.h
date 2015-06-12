@@ -20,6 +20,16 @@
 #include <iostream>
 
 #include "RFile.h"
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
 
 using namespace std;
 
@@ -31,6 +41,7 @@ class TextReplacer
     public:
         TextReplacer();
         void replaceEveryOccurenceOf(RFile* file, QString* oldToken, QString* newToken);
+        void refactor(QString* oldToken, QString* newToken);
         QString* toString();
         ~TextReplacer();
 };

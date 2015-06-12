@@ -21,6 +21,16 @@
 #include "RunPage_1.h"
 #include "RunPage_2.h"
 #include "RunPage_3.h"
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
 
 using namespace std;
 

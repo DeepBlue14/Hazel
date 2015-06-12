@@ -2,7 +2,7 @@
  * File:   Directory.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: This class stores data of a given directory.
  *
  * Created on May 8, 2015, 10:37 PM
  */
@@ -19,6 +19,17 @@
 #include <QProcess>
 
 #include <iostream>
+
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
 
 using namespace std;
 

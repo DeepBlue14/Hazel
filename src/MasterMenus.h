@@ -11,10 +11,19 @@
 #include <QWidget>
 #include <QMenu>
 
-
 #include <iostream>
 
 #include "MasterActions.h"
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
 
 using namespace std;
 

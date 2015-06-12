@@ -10,16 +10,16 @@ TextReplacer::TextReplacer()
 void TextReplacer::replaceEveryOccurenceOf(RFile* file, QString* oldToken, QString* newToken)
 {
     QString* tmpStr = new QString();
-    int beginningOfOldToken;
     
     tmpStr = file->readFile();
     
-    while( (beginningOfOldToken = tmpStr->indexOf(oldToken) ) != -1)
-    {
-        tmpStr->replace(beginningOfOldToken, oldToken->size(), *newToken);
-    }
-    
-    
+    tmpStr->replace(*oldToken, *newToken, Qt::CaseSensitive);
+}
+
+
+void TextReplacer::refactor(QString* oldToken, QString* newToken)
+{
+    ;
 }
 
 

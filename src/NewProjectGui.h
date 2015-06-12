@@ -22,12 +22,27 @@
 #include <QGridLayout>
 #include <QHBoxLayout>
 
+#include <iostream>
+
 #include "NewProjectPage_1.h"
 #include "NewProjectPage_2.h"
 #include "NewProjectPage_3.h"
 #include "NewProjectPage_4.h"
 #include "RFile.h"
 #include "FileTreeGui.h"
+
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
+
+using namespace std;
 
 class NewProjectGui : public QWidget
 {

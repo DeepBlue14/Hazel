@@ -1,6 +1,10 @@
 #include "RProcess.h"
 
 
+QStringList* RProcess::curInUseFileNmStrLstPtr = new QStringList();
+QList<int>* RProcess::numsInUseLstPtr = new QList<int>();
+
+
 RProcess::RProcess()
 {
     ;

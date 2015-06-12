@@ -29,6 +29,8 @@
 #include <QFormLayout>
 #include <QGridLayout>
 
+#include <iostream>
+
 #include "FileGui.h"
 #include "RFile.h"
 #include "Highlighter.h"
@@ -38,8 +40,19 @@
 #include "NewFilePage_4.h"
 #include "SaveAll.h"
 #include "FileTreeGui.h"
+#include "WindowsConsoleText.h"
+#include "UnixConsoleText.h"
+
+#ifdef _WIN32
+namespace cct = WindowsConsoleText;
+#elif __APPLE
+namespace cct = UnixConsoleText;
+#elif __linux
+namespace cct = UnixConsoleText;
+#endif
 
 using namespace SaveAll;
+using namespace std;
 
 class NewFileGui : public QWidget
 {
