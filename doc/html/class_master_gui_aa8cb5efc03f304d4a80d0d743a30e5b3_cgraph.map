@@ -1,0 +1,9 @@
+<map id="MasterGui::initToolBars" name="MasterGui::initToolBars">
+<area shape="rect" id="node2" href="$class_master_tool_bars.html#aec0df27e89d0bbcf5c7b5fc7d2fa8195" title="MasterToolBars::initNorth\lGroupOneToolBar" alt="" coords="215,5,385,46"/>
+<area shape="rect" id="node4" href="$class_master_tool_bars.html#a6b77ec9af9c57217657689b6564f1a54" title="MasterToolBars::initNorth\lGroupTwoToolBar" alt="" coords="215,70,385,111"/>
+<area shape="rect" id="node5" href="$class_master_tool_bars.html#a058d8e043fc2d5303e21f993c48bc581" title="MasterToolBars::initNorth\lGroupThreeToolBar" alt="" coords="215,135,385,177"/>
+<area shape="rect" id="node6" href="$class_master_tool_bars.html#a3f8d953232c3c8ad2205913514a7233e" title="MasterToolBars::initSouth\lGroupOneToolBar" alt="" coords="213,201,387,242"/>
+<area shape="rect" id="node7" href="$class_master_tool_bars.html#ad17aa8fcdbbbc16c67075b5b06db146e" title="MasterToolBars::initEast\lGroupOneToolBar" alt="" coords="217,266,383,307"/>
+<area shape="rect" id="node8" href="$class_master_tool_bars.html#a12bb3e3171d9ea6a6c9cd9c7b800e0d7" title="MasterToolBars::initWest\lGroupOneToolBar" alt="" coords="215,331,385,373"/>
+<area shape="rect" id="node3" href="$class_master_tool_bars.html#ae73d5e7f4b317e7402ed0b7f6e405fb9" title="MasterToolBars::getMaster\lActionsPtr" alt="" coords="435,169,615,210"/>
+</map>

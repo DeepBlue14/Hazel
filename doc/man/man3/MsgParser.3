@@ -1,0 +1,94 @@
+.TH "MsgParser" 3 "Fri Jun 12 2015" "Version 0.0.1" "RIDE" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MsgParser \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <MsgParser\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMsgParser\fP ()"
+.br
+.ti -1c
+.RI "\fBMsgFileDat\fP * \fBparse\fP (string *msgFileAbsPathStrPtr)"
+.br
+.ti -1c
+.RI "string * \fBtrim\fP (string *myString)"
+.br
+.ti -1c
+.RI "string * \fBextractType\fP (string *line)"
+.br
+.ti -1c
+.RI "string * \fBextractName\fP (string *line)"
+.br
+.ti -1c
+.RI "string * \fBextractComment\fP (string *line)"
+.br
+.ti -1c
+.RI "string * \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "\fB~MsgParser\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBMsgFileDat\fP * \fBcurrentMsgFileDat\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 25 of file MsgParser\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MsgParser::MsgParser ()"
+
+.PP
+Definition at line 4 of file MsgParser\&.cpp\&.
+.SS "MsgParser::~MsgParser ()"
+
+.PP
+Definition at line 164 of file MsgParser\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "string * MsgParser::extractComment (string *line)"
+
+.PP
+Definition at line 123 of file MsgParser\&.cpp\&.
+.SS "string * MsgParser::extractName (string *line)"
+
+.PP
+Definition at line 96 of file MsgParser\&.cpp\&.
+.SS "string * MsgParser::extractType (string *line)"
+
+.PP
+Definition at line 79 of file MsgParser\&.cpp\&.
+.SS "\fBMsgFileDat\fP * MsgParser::parse (string *msgFileAbsPathStrPtr)"
+!!the filestr should include the extension!!! 
+.PP
+Definition at line 10 of file MsgParser\&.cpp\&.
+.SS "string * MsgParser::toString ()"
+
+.PP
+Definition at line 158 of file MsgParser\&.cpp\&.
+.SS "string * MsgParser::trim (string *myString)"
+
+.PP
+Definition at line 60 of file MsgParser\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBMsgFileDat\fP* MsgParser::currentMsgFileDat\fC [private]\fP"
+
+.PP
+Definition at line 28 of file MsgParser\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RIDE from the source code\&.

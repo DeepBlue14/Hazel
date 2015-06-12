@@ -1,0 +1,5 @@
+<map id="MasterActions::getRedoActionPtr" name="MasterActions::getRedoActionPtr">
+<area shape="rect" id="node2" href="$class_master_menus.html#a3e332b9f2c0b1f6f8be1804edc3c3a4a" title="MasterMenus::initEditMenuPtr" alt="" coords="273,5,471,32"/>
+<area shape="rect" id="node3" href="$class_master_gui.html#a65f7212a54b92bdd21498478b9689631" title="MasterGui::initMenus" alt="" coords="520,5,667,32"/>
+<area shape="rect" id="node4" href="$class_master_gui.html#a9d3221a5d6791ffab353e038452e8b79" title="MasterGui::MasterGui" alt="" coords="715,5,866,32"/>
+</map>

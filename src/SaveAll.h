@@ -19,17 +19,17 @@
 
 #include <iostream>
 
-#include "RideFile.h"
+#include "RFile.h"
 
 using namespace std;
 
 namespace SaveAll
 {
-    extern QVector<RideFile*> rideFilePtrVec;
+    extern QVector<RFile*> rideFilePtrVec;
     
-    void pushToRideFilePtrVec(RideFile* rideFilePtr);
-    void removeFromRideFileVec(RideFile* rideFilePtr);
-    QVector<RideFile*> getRideFilePtrVec();
+    void pushToRideFilePtrVec(RFile* rideFilePtr);
+    void removeFromRideFileVec(RFile* rideFilePtr);
+    QVector<RFile*> getRideFilePtrVec();
     void save();
 };
 

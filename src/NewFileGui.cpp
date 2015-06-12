@@ -98,7 +98,7 @@ void NewFileGui::handleFinishBtnSlot()
     setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
 
     //create physical file and tab
-    RideFile* rideFile = new RideFile(*newFilePage_4Ptr->getLocStrPtr()
+    RFile* rideFile = new RFile(*newFilePage_4Ptr->getLocStrPtr()
                                     + "/"
                                     + *newFilePage_4Ptr->getFileNameStrPtr()
                                     + *newFilePage_4Ptr->getFileExtStrPtr() );

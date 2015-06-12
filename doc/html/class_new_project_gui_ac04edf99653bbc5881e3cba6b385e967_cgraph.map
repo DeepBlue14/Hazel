@@ -1,0 +1,8 @@
+<map id="NewProjectGui::swapBackPage" name="NewProjectGui::swapBackPage">
+<area shape="rect" id="node2" href="$class_new_project_gui.html#a34be4c9396d11e877fab6da78edba5a8" title="NewProjectGui::unloadPage_2" alt="" coords="264,5,464,32"/>
+<area shape="rect" id="node3" href="$class_new_project_gui.html#a71cc5704a7e11e7344cf2cbb04f44097" title="NewProjectGui::loadPage_1" alt="" coords="271,56,457,83"/>
+<area shape="rect" id="node4" href="$class_new_project_gui.html#a1ec5cfd09dfc43a0d4aac473cf215a04" title="NewProjectGui::unloadPage_3" alt="" coords="264,107,464,133"/>
+<area shape="rect" id="node5" href="$class_new_project_gui.html#ac81882c81a3315a48634fa0f2a84f6a5" title="NewProjectGui::loadPage_2" alt="" coords="271,157,457,184"/>
+<area shape="rect" id="node6" href="$class_new_project_gui.html#a251eaaea1f985069babb7a203de852db" title="NewProjectGui::unloadPage_4" alt="" coords="264,208,464,235"/>
+<area shape="rect" id="node7" href="$class_new_project_gui.html#afe4d4300c0272c14069daf81a6d2f47f" title="NewProjectGui::loadPage_3" alt="" coords="271,259,457,285"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="TreeItemIconInit::setIcon" name="TreeItemIconInit::setIcon">
+<area shape="rect" id="node2" href="$class_file_tree_gui.html#a5d4df4a19da0183ccc254019f77097b1" title="FileTreeGui::initTree" alt="" coords="490,77,630,104"/>
+<area shape="rect" id="node13" href="$class_file_tree_gui.html#ab3c2fd5311245c08624461ac4c7e120c" title="FileTreeGui::addChildren" alt="" coords="222,77,389,104"/>
+<area shape="rect" id="node14" href="$class_file_tree_gui.html#aa8110a99d6bab64818b7f87024382b2a" title="FileTreeGui::handleShowDirectorySlot" alt="" coords="438,128,682,155"/>
+<area shape="rect" id="node3" href="$class_file_tree_gui.html#acf857f2793adefb176a680d541c24691" title="FileTreeGui::FileTreeGui" alt="" coords="731,128,895,155"/>
+<area shape="rect" id="node4" href="$class_file_tree_gui.html#ac2c3399b5cb85da5cd1c119b61c674c0" title="FileTreeGui::refresh" alt="" coords="745,77,882,104"/>
+<area shape="rect" id="node5" href="$class_new_file_gui.html#a50cf414bdb9ea40f3cd4ca4fa4566b77" title="NewFileGui::handleFinish\lBtnSlot" alt="" coords="955,5,1125,46"/>
+<area shape="rect" id="node8" href="$class_new_project_gui.html#ad47832cd6388ea36101b1e0002837546" title="NewProjectGui::handleFinish\lBtnSlot" alt="" coords="945,70,1135,111"/>
+<area shape="rect" id="node11" href="$class_open_project_gui.html#abc7d2b7582449e5552a0ee0cbf54a3a9" title="OpenProjectGui::handleOpen\lProjectPbPtrSlot" alt="" coords="945,135,1135,177"/>
+<area shape="rect" id="node6" href="$class_new_file_gui.html#ad77edffa59956f16ef2b6d83dd357932" title="NewFileGui::initBtns" alt="" coords="1221,12,1363,39"/>
+<area shape="rect" id="node7" href="$class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d" title="NewFileGui::NewFileGui" alt="" coords="1469,12,1635,39"/>
+<area shape="rect" id="node9" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="1211,77,1373,104"/>
+<area shape="rect" id="node10" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="1449,77,1655,104"/>
+<area shape="rect" id="node12" href="$class_open_project_gui.html#aaff1da3ebc21a640e891e09cd6c66a7a" title="OpenProjectGui::OpenProjectGui" alt="" coords="1185,143,1399,169"/>
+</map>

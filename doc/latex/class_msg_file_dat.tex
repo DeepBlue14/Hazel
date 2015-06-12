@@ -1,0 +1,264 @@
+\hypertarget{class_msg_file_dat}{\section{Msg\-File\-Dat Class Reference}
+\label{class_msg_file_dat}\index{Msg\-File\-Dat@{Msg\-File\-Dat}}
+}
+
+
+{\ttfamily \#include $<$Msg\-File\-Dat.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_msg_file_dat_a38addd578d69fa74d889997ba622787b}{Msg\-File\-Dat} ()
+\item 
+void \hyperlink{class_msg_file_dat_aa02e6cb780962a1b4378a5d89fd50b7c}{set\-Msg\-File\-Name\-Str\-Ptr} (string $\ast$\hyperlink{class_msg_file_dat_a219fbb888679f6785c3351d949902a05}{msg\-File\-Name\-Str\-Ptr})
+\item 
+string $\ast$ \hyperlink{class_msg_file_dat_a5fa4e34c1c02b27fb5555490e4259427}{get\-Msg\-File\-Name\-Str\-Ptr} ()
+\item 
+void \hyperlink{class_msg_file_dat_ac5ca8f3040cfb65bbed28a3299e9e71e}{set\-Msg\-File\-Header\-Str\-Ptr} (string $\ast$\hyperlink{class_msg_file_dat_a255d1a1881daf9f5d710c1c868c41a5b}{msg\-File\-Header\-Str\-Ptr})
+\item 
+string $\ast$ \hyperlink{class_msg_file_dat_a689fa5763f581596ce28738b78f8c6ff}{get\-Msg\-File\-Header\-Str\-Ptr} ()
+\item 
+void \hyperlink{class_msg_file_dat_a63d1abb4bd09980772e617aed0cdf1d0}{push\-To\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr} (\hyperlink{class_msg_field_dat}{Msg\-Field\-Dat} $\ast$msg\-Field\-Dat\-Ptr)
+\item 
+\hyperlink{class_msg_field_dat}{Msg\-Field\-Dat} $\ast$ \hyperlink{class_msg_file_dat_a11a9cddfd2dec07399e39caa65309a04}{pop\-From\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr} ()
+\item 
+vector$<$ \hyperlink{class_msg_field_dat}{Msg\-Field\-Dat} $\ast$ $>$ $\ast$ \hyperlink{class_msg_file_dat_a9e2f7cb40d2e88bc9272f94bebe4b372}{get\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr} ()
+\item 
+string $\ast$ \hyperlink{class_msg_file_dat_a077a61b03ad790bcd9b44f814f547502}{to\-String} ()
+\item 
+\hyperlink{class_msg_file_dat_a63ad4701855d00d4715ac695e0fce850}{$\sim$\-Msg\-File\-Dat} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string $\ast$ \hyperlink{class_msg_file_dat_a219fbb888679f6785c3351d949902a05}{msg\-File\-Name\-Str\-Ptr}
+\item 
+string $\ast$ \hyperlink{class_msg_file_dat_a255d1a1881daf9f5d710c1c868c41a5b}{msg\-File\-Header\-Str\-Ptr}
+\item 
+vector$<$ \hyperlink{class_msg_field_dat}{Msg\-Field\-Dat} $\ast$ $>$ $\ast$ \hyperlink{class_msg_file_dat_ab2dbc7dcb9a7c27db1384a3f2a816acd}{msg\-Field\-Dat\-Ptr\-Vec\-Ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Msg\-File\-Dat.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_msg_file_dat_a38addd578d69fa74d889997ba622787b}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!Msg\-File\-Dat@{Msg\-File\-Dat}}
+\index{Msg\-File\-Dat@{Msg\-File\-Dat}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{Msg\-File\-Dat}]{\setlength{\rightskip}{0pt plus 5cm}Msg\-File\-Dat\-::\-Msg\-File\-Dat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a38addd578d69fa74d889997ba622787b}
+
+
+Definition at line 4 of file Msg\-File\-Dat.\-cpp.
+
+\hypertarget{class_msg_file_dat_a63ad4701855d00d4715ac695e0fce850}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!$\sim$\-Msg\-File\-Dat@{$\sim$\-Msg\-File\-Dat}}
+\index{$\sim$\-Msg\-File\-Dat@{$\sim$\-Msg\-File\-Dat}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{$\sim$\-Msg\-File\-Dat}]{\setlength{\rightskip}{0pt plus 5cm}Msg\-File\-Dat\-::$\sim$\-Msg\-File\-Dat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a63ad4701855d00d4715ac695e0fce850}
+
+
+Definition at line 77 of file Msg\-File\-Dat.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_msg_file_dat_a9e2f7cb40d2e88bc9272f94bebe4b372}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!get\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{get\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}}
+\index{get\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{get\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{get\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Msg\-Field\-Dat} $\ast$ $>$ $\ast$ Msg\-File\-Dat\-::get\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a9e2f7cb40d2e88bc9272f94bebe4b372}
+
+
+Definition at line 53 of file Msg\-File\-Dat.\-cpp.
+
+\hypertarget{class_msg_file_dat_a689fa5763f581596ce28738b78f8c6ff}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!get\-Msg\-File\-Header\-Str\-Ptr@{get\-Msg\-File\-Header\-Str\-Ptr}}
+\index{get\-Msg\-File\-Header\-Str\-Ptr@{get\-Msg\-File\-Header\-Str\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{get\-Msg\-File\-Header\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-File\-Dat\-::get\-Msg\-File\-Header\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a689fa5763f581596ce28738b78f8c6ff}
+
+
+Definition at line 31 of file Msg\-File\-Dat.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_msg_file_dat_a689fa5763f581596ce28738b78f8c6ff_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_msg_file_dat_a5fa4e34c1c02b27fb5555490e4259427}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!get\-Msg\-File\-Name\-Str\-Ptr@{get\-Msg\-File\-Name\-Str\-Ptr}}
+\index{get\-Msg\-File\-Name\-Str\-Ptr@{get\-Msg\-File\-Name\-Str\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{get\-Msg\-File\-Name\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-File\-Dat\-::get\-Msg\-File\-Name\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a5fa4e34c1c02b27fb5555490e4259427}
+
+
+Definition at line 19 of file Msg\-File\-Dat.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_msg_file_dat_a5fa4e34c1c02b27fb5555490e4259427_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_msg_file_dat_a11a9cddfd2dec07399e39caa65309a04}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!pop\-From\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{pop\-From\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}}
+\index{pop\-From\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{pop\-From\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{pop\-From\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Msg\-Field\-Dat} $\ast$ Msg\-File\-Dat\-::pop\-From\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a11a9cddfd2dec07399e39caa65309a04}
+
+
+Definition at line 43 of file Msg\-File\-Dat.\-cpp.
+
+\hypertarget{class_msg_file_dat_a63d1abb4bd09980772e617aed0cdf1d0}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!push\-To\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{push\-To\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}}
+\index{push\-To\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{push\-To\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{push\-To\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Msg\-File\-Dat\-::push\-To\-Msg\-Field\-Dat\-Ptr\-Vec\-Ptr (
+\begin{DoxyParamCaption}
+\item[{{\bf Msg\-Field\-Dat} $\ast$}]{msg\-Field\-Dat\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a63d1abb4bd09980772e617aed0cdf1d0}
+
+
+Definition at line 37 of file Msg\-File\-Dat.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_msg_file_dat_a63d1abb4bd09980772e617aed0cdf1d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_msg_file_dat_ac5ca8f3040cfb65bbed28a3299e9e71e}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!set\-Msg\-File\-Header\-Str\-Ptr@{set\-Msg\-File\-Header\-Str\-Ptr}}
+\index{set\-Msg\-File\-Header\-Str\-Ptr@{set\-Msg\-File\-Header\-Str\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{set\-Msg\-File\-Header\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Msg\-File\-Dat\-::set\-Msg\-File\-Header\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{string $\ast$}]{msg\-File\-Header\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_ac5ca8f3040cfb65bbed28a3299e9e71e}
+
+
+Definition at line 25 of file Msg\-File\-Dat.\-cpp.
+
+\hypertarget{class_msg_file_dat_aa02e6cb780962a1b4378a5d89fd50b7c}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!set\-Msg\-File\-Name\-Str\-Ptr@{set\-Msg\-File\-Name\-Str\-Ptr}}
+\index{set\-Msg\-File\-Name\-Str\-Ptr@{set\-Msg\-File\-Name\-Str\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{set\-Msg\-File\-Name\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Msg\-File\-Dat\-::set\-Msg\-File\-Name\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{string $\ast$}]{msg\-File\-Name\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_aa02e6cb780962a1b4378a5d89fd50b7c}
+
+
+Definition at line 13 of file Msg\-File\-Dat.\-cpp.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_msg_file_dat_aa02e6cb780962a1b4378a5d89fd50b7c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_msg_file_dat_a077a61b03ad790bcd9b44f814f547502}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-File\-Dat\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_file_dat_a077a61b03ad790bcd9b44f814f547502}
+
+
+Definition at line 59 of file Msg\-File\-Dat.\-cpp.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_msg_file_dat_a077a61b03ad790bcd9b44f814f547502_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_msg_file_dat_a077a61b03ad790bcd9b44f814f547502_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_msg_file_dat_ab2dbc7dcb9a7c27db1384a3f2a816acd}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{msg\-Field\-Dat\-Ptr\-Vec\-Ptr}}
+\index{msg\-Field\-Dat\-Ptr\-Vec\-Ptr@{msg\-Field\-Dat\-Ptr\-Vec\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{msg\-Field\-Dat\-Ptr\-Vec\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Msg\-Field\-Dat}$\ast$$>$$\ast$ Msg\-File\-Dat\-::msg\-Field\-Dat\-Ptr\-Vec\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_msg_file_dat_ab2dbc7dcb9a7c27db1384a3f2a816acd}
+
+
+Definition at line 26 of file Msg\-File\-Dat.\-h.
+
+\hypertarget{class_msg_file_dat_a255d1a1881daf9f5d710c1c868c41a5b}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!msg\-File\-Header\-Str\-Ptr@{msg\-File\-Header\-Str\-Ptr}}
+\index{msg\-File\-Header\-Str\-Ptr@{msg\-File\-Header\-Str\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{msg\-File\-Header\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}string$\ast$ Msg\-File\-Dat\-::msg\-File\-Header\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_msg_file_dat_a255d1a1881daf9f5d710c1c868c41a5b}
+
+
+Definition at line 25 of file Msg\-File\-Dat.\-h.
+
+\hypertarget{class_msg_file_dat_a219fbb888679f6785c3351d949902a05}{\index{Msg\-File\-Dat@{Msg\-File\-Dat}!msg\-File\-Name\-Str\-Ptr@{msg\-File\-Name\-Str\-Ptr}}
+\index{msg\-File\-Name\-Str\-Ptr@{msg\-File\-Name\-Str\-Ptr}!MsgFileDat@{Msg\-File\-Dat}}
+\subsubsection[{msg\-File\-Name\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}string$\ast$ Msg\-File\-Dat\-::msg\-File\-Name\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_msg_file_dat_a219fbb888679f6785c3351d949902a05}
+
+
+Definition at line 24 of file Msg\-File\-Dat.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_msg_file_dat_8h}{Msg\-File\-Dat.\-h}\item 
+/home/james/\-Net\-Beans\-Projects/ride/src/\hyperlink{_msg_file_dat_8cpp}{Msg\-File\-Dat.\-cpp}\end{DoxyCompactItemize}

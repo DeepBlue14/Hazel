@@ -1,0 +1,13 @@
+#include "<FILENAME>.h"
+
+
+<FILENAME>::<FILENAME>()
+{
+    ;
+}
+
+
+<FILENAME>::~<FILENAME>()
+{
+    ;
+}

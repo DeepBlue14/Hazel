@@ -16,7 +16,7 @@ QString* RProcess::genTmpFileNameStrPtr()
 void RProcess::start(const QString& program, const QStringList& arguments, OpenMode mode)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
-    RideFile* tmpRideFilePtr = new RideFile(*tmpFileNameStrPtr);
+    RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
     tmpRideFilePtr->write("#######################");
@@ -42,7 +42,7 @@ void RProcess::start(const QString& program, const QStringList& arguments, OpenM
 void RProcess::start(const QString& program, OpenMode mode)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
-    RideFile* tmpRideFilePtr = new RideFile(*tmpFileNameStrPtr);
+    RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
     tmpRideFilePtr->write("#######################");
@@ -59,7 +59,7 @@ void RProcess::start(const QString& program, OpenMode mode)
 int RProcess::execute(const QString& program, const QStringList& arguments)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
-    RideFile* tmpRideFilePtr = new RideFile(*tmpFileNameStrPtr);
+    RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
     tmpRideFilePtr->write("#######################");
@@ -85,7 +85,7 @@ int RProcess::execute(const QString& program, const QStringList& arguments)
 int RProcess::execute(const QString& program)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
-    RideFile* tmpRideFilePtr = new RideFile(*tmpFileNameStrPtr);
+    RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
     tmpRideFilePtr->write("#######################");
@@ -102,7 +102,7 @@ int RProcess::execute(const QString& program)
 bool RProcess::startDetached(const QString& program, const QStringList& arguments)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
-    RideFile* tmpRideFilePtr = new RideFile(*tmpFileNameStrPtr);
+    RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
     tmpRideFilePtr->write("#######################");
@@ -128,7 +128,7 @@ bool RProcess::startDetached(const QString& program, const QStringList& argument
 bool RProcess::startDetached(const QString& program, const QStringList& arguments, const QString& workingDirectory, qint64* pid)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
-    RideFile* tmpRideFilePtr = new RideFile(*tmpFileNameStrPtr);
+    RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
     tmpRideFilePtr->write("#######################");
@@ -154,7 +154,7 @@ bool RProcess::startDetached(const QString& program, const QStringList& argument
 bool RProcess::startDetached(const QString& program)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
-    RideFile* tmpRideFilePtr = new RideFile(*tmpFileNameStrPtr);
+    RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
     tmpRideFilePtr->write("#######################");

@@ -15,9 +15,9 @@
           <itemPath>src/MsgParser.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
+          <itemPath>src/RFile.h</itemPath>
           <itemPath>src/RProcess.h</itemPath>
           <itemPath>src/RideEnv.h</itemPath>
-          <itemPath>src/RideFile.h</itemPath>
           <itemPath>src/SaveAll.h</itemPath>
           <itemPath>src/ScoutData.h</itemPath>
           <itemPath>src/ScoutFileDat.h</itemPath>
@@ -25,6 +25,7 @@
           <itemPath>src/ScoutLibDat.h</itemPath>
           <itemPath>src/ScoutVarDat.h</itemPath>
           <itemPath>src/Terminal.h</itemPath>
+          <itemPath>src/TextReplacer.h</itemPath>
           <itemPath>src/XmlMaster.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="frontend" projectFiles="true">
@@ -107,9 +108,9 @@
           <itemPath>src/MsgParser.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
+          <itemPath>src/RFile.cpp</itemPath>
           <itemPath>src/RProcess.cpp</itemPath>
           <itemPath>src/RideEnv.cpp</itemPath>
-          <itemPath>src/RideFile.cpp</itemPath>
           <itemPath>src/SaveAll.cpp</itemPath>
           <itemPath>src/ScoutData.cpp</itemPath>
           <itemPath>src/ScoutFileDat.cpp</itemPath>
@@ -117,6 +118,7 @@
           <itemPath>src/ScoutLibDat.cpp</itemPath>
           <itemPath>src/ScoutVarDat.cpp</itemPath>
           <itemPath>src/Terminal.cpp</itemPath>
+          <itemPath>src/TextReplacer.cpp</itemPath>
           <itemPath>src/XmlMaster.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="frontend" projectFiles="true">
@@ -347,6 +349,10 @@
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RFile.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RProcess.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RProcess.h" ex="false" tool="3" flavor2="0">
@@ -354,10 +360,6 @@
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideEnv.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -422,6 +424,10 @@
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TextReplacer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TextReplacer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -619,6 +625,10 @@
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RFile.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RFile.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RProcess.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RProcess.h" ex="false" tool="3" flavor2="0">
@@ -626,10 +636,6 @@
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RideEnv.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/RideFile.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RideFile.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideFont.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -694,6 +700,10 @@
       <item path="src/Terminal.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Terminal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TextReplacer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TextReplacer.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
       </item>

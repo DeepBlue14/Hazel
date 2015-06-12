@@ -1,0 +1,13 @@
+<map id="OpenProjectGui::OpenProjectGui" name="OpenProjectGui::OpenProjectGui">
+<area shape="rect" id="node2" href="$class_open_project_gui.html#aaacc3341ba7d0bbb9bdebc3b632ef3bc" title="OpenProjectGui::handleFile\lDialogPbPtrSlot" alt="" coords="280,5,461,46"/>
+<area shape="rect" id="node3" href="$class_open_project_gui.html#abc7d2b7582449e5552a0ee0cbf54a3a9" title="OpenProjectGui::handleOpen\lProjectPbPtrSlot" alt="" coords="275,135,466,177"/>
+<area shape="rect" id="node12" href="$class_open_project_gui.html#ad5b20cfbb8e0f9d0c0c04dd9c4666b8f" title="OpenProjectGui::handleCancel\lPbPtrSlot" alt="" coords="270,70,471,111"/>
+<area shape="rect" id="node4" href="$class_open_project_gui.html#a7d0b78feb03da8d20d572107006dbb88" title="OpenProjectGui::setProject\lStrPtr" alt="" coords="521,70,703,111"/>
+<area shape="rect" id="node5" href="$class_file_tree_gui.html#afe882583424429fcda9c4c2bc0ab71d4" title="FileTreeGui::setProjectRoot\lAbsPathStrPtr" alt="" coords="520,135,704,177"/>
+<area shape="rect" id="node6" href="$class_open_project_gui.html#aa26ced8181a1e103229b08cfa94c19be" title="OpenProjectGui::getProject\lStrPtr" alt="" coords="521,201,703,242"/>
+<area shape="rect" id="node7" href="$class_file_tree_gui.html#ac2c3399b5cb85da5cd1c119b61c674c0" title="FileTreeGui::refresh" alt="" coords="543,267,681,293"/>
+<area shape="rect" id="node8" href="$class_file_tree_gui.html#a5d4df4a19da0183ccc254019f77097b1" title="FileTreeGui::initTree" alt="" coords="753,267,893,293"/>
+<area shape="rect" id="node9" href="$class_file_tree_gui.html#a21607e8cda6732997d5148581017a9b8" title="FileTreeGui::getProjectRoot\lAbsPathStrPtr" alt="" coords="941,201,1125,242"/>
+<area shape="rect" id="node10" href="$namespace_tree_item_icon_init.html#aec158e49ff580b1e64d09b3ec2f12240" title="TreeItemIconInit::setIcon" alt="" coords="1173,292,1341,319"/>
+<area shape="rect" id="node11" href="$class_file_tree_gui.html#ab3c2fd5311245c08624461ac4c7e120c" title="FileTreeGui::addChildren" alt="" coords="950,317,1117,344"/>
+</map>

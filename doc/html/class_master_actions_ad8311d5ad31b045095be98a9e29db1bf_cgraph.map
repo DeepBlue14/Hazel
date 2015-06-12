@@ -1,0 +1,4 @@
+<map id="MasterActions::connectToProjectWestAction" name="MasterActions::connectToProjectWestAction">
+<area shape="rect" id="node2" href="$class_master_actions.html#a64bf020d68866c8941c01929879eb839" title="MasterActions::handleProject\lWestActionSlot" alt="" coords="230,5,423,46"/>
+<area shape="rect" id="node3" href="$class_master_actions.html#aae29be0bf5f9f2b8f1c7aac0c7efb288" title="MasterActions::getWestWidgetPtr" alt="" coords="472,12,693,39"/>
+</map>

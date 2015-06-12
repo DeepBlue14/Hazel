@@ -30,7 +30,7 @@
 #include <QGridLayout>
 
 #include "FileGui.h"
-#include "RideFile.h"
+#include "RFile.h"
 #include "Highlighter.h"
 #include "NewFilePage_1.h"
 #include "NewFilePage_2.h"

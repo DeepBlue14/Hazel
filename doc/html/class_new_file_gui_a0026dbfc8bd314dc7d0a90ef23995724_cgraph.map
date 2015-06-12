@@ -1,0 +1,9 @@
+<map id="NewFileGui::handleBackBtnSlot" name="NewFileGui::handleBackBtnSlot">
+<area shape="rect" id="node2" href="$class_new_file_gui.html#a19b6c2a372c842aa72b244b11fe458e7" title="NewFileGui::swapBackPage" alt="" coords="264,132,453,159"/>
+<area shape="rect" id="node3" href="$class_new_file_gui.html#a38230b8cf285f610595f9e762be4a3ba" title="NewFileGui::unloadPage_2" alt="" coords="502,5,682,32"/>
+<area shape="rect" id="node4" href="$class_new_file_gui.html#ae279a6aa9f6e065254f02595491870bf" title="NewFileGui::loadPage_1" alt="" coords="509,56,675,83"/>
+<area shape="rect" id="node5" href="$class_new_file_gui.html#a7ef65bd194d94091ff27648f765023b6" title="NewFileGui::unloadPage_3" alt="" coords="502,107,682,133"/>
+<area shape="rect" id="node6" href="$class_new_file_gui.html#a734dbe5493abf2d090b331c9b5d3ea39" title="NewFileGui::loadPage_2" alt="" coords="509,157,675,184"/>
+<area shape="rect" id="node7" href="$class_new_file_gui.html#a7f604bc4692d3ebd66d00544fb1eb2de" title="NewFileGui::unloadPage_4" alt="" coords="502,208,682,235"/>
+<area shape="rect" id="node8" href="$class_new_file_gui.html#a7f61834fa8074aeefebfcb8600bba8cd" title="NewFileGui::loadPage_3" alt="" coords="509,259,675,285"/>
+</map>

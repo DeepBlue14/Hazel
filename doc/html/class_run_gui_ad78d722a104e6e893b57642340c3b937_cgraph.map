@@ -1,0 +1,18 @@
+<map id="RunGui::initBtns" name="RunGui::initBtns">
+<area shape="rect" id="node2" href="$class_run_gui.html#abe8773e053b15ed96efcdb6e4b63e508" title="RunGui::handleBackBtnSlot" alt="" coords="179,132,365,159"/>
+<area shape="rect" id="node7" href="$class_run_gui.html#a267f472d21d57258adb28ebdcc83b256" title="RunGui::handleNextBtnSlot" alt="" coords="181,233,363,260"/>
+<area shape="rect" id="node13" href="$class_run_gui.html#a011495c9158d92b794941ac108b5b148" title="RunGui::handleFinishBtnSlot" alt="" coords="177,284,367,311"/>
+<area shape="rect" id="node16" href="$class_run_gui.html#ab29bf8394f8b23b2c1ffd33c6d2470eb" title="RunGui::handleHelpBntSlot" alt="" coords="181,335,363,361"/>
+<area shape="rect" id="node17" href="$class_run_gui.html#a1127986fbf076ce480defe68d99171e1" title="RunGui::handleCancelBtnSlot" alt="" coords="174,385,370,412"/>
+<area shape="rect" id="node3" href="$class_run_gui.html#a469be74273ddc6441a9f87e65d3ab2c9" title="RunGui::swapBackPage" alt="" coords="428,81,593,108"/>
+<area shape="rect" id="node4" href="$class_run_gui.html#a3192d643a700244e066f3e0ca4389c4b" title="RunGui::unloadPage_2" alt="" coords="670,5,826,32"/>
+<area shape="rect" id="node5" href="$class_run_gui.html#a381d265f46ec8473a7858974a19674c5" title="RunGui::loadPage_1" alt="" coords="677,56,819,83"/>
+<area shape="rect" id="node6" href="$class_run_gui.html#a410e373ff032fb779b52b1dd501c3128" title="RunGui::unloadPage_3" alt="" coords="670,107,826,133"/>
+<area shape="rect" id="node8" href="$class_run_gui.html#ac4c0fed5ead22a1dc40d5bebe2d6f176" title="RunGui::swapNextPage" alt="" coords="429,233,592,260"/>
+<area shape="rect" id="node9" href="$class_run_gui.html#ab68852933855016b114c795ab494d8bb" title="RunGui::unloadPage_1" alt="" coords="670,157,826,184"/>
+<area shape="rect" id="node10" href="$class_run_page__1.html#a4c13dfea0a52e4256539769a11981e03" title="RunPage_1::getRunOptionPtr" alt="" coords="651,309,845,336"/>
+<area shape="rect" id="node11" href="$class_run_gui.html#a8048ffff4b07771419e8c88ea250d2f2" title="RunGui::loadPage_2" alt="" coords="677,208,819,235"/>
+<area shape="rect" id="node12" href="$class_run_gui.html#a5defb3e688b1b3f22d50c5b9389910c0" title="RunGui::loadPage_3" alt="" coords="677,259,819,285"/>
+<area shape="rect" id="node14" href="$class_run_gui.html#a8b202a47e593e0aa6d18d33c6c857308" title="RunGui::setLaunchFilePath\lStrPtr" alt="" coords="419,335,602,377"/>
+<area shape="rect" id="node15" href="$class_run_page__2.html#af4529d1908e4311aa55cb6dada692d5b" title="RunPage_2::getLaunchFile\lStrPtr" alt="" coords="421,401,600,442"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="FileGui::FileGui" name="FileGui::FileGui">
+<area shape="rect" id="node2" href="$_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639" title="toString" alt="" coords="236,5,303,32"/>
+<area shape="rect" id="node3" href="$class_file_gui.html#a498aa60814cc9265695e656e9b7a2e87" title="FileGui::updateLineNumber\lAreaWidth" alt="" coords="422,74,602,115"/>
+<area shape="rect" id="node5" href="$class_file_gui.html#ae1ce22662fb60a146101e8768acca3f1" title="FileGui::updateLineNumberArea" alt="" coords="166,107,373,133"/>
+<area shape="rect" id="node6" href="$class_file_gui.html#a04e7291acb7167a70377f53dd7bd47f4" title="FileGui::highlightCurrentLine" alt="" coords="176,157,363,184"/>
+<area shape="rect" id="node4" href="$class_file_gui.html#af5ea5edc018ed2ba6685ae6e5244483f" title="FileGui::lineNumberAreaWidth" alt="" coords="651,81,850,108"/>
+</map>

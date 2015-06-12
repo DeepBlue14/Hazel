@@ -1,0 +1,8 @@
+<map id="FileTreeGui::FileTreeGui" name="FileTreeGui::FileTreeGui">
+<area shape="rect" id="node2" href="$class_file_tree_gui.html#a5d4df4a19da0183ccc254019f77097b1" title="FileTreeGui::initTree" alt="" coords="233,67,373,93"/>
+<area shape="rect" id="node6" href="$class_file_tree_gui.html#a9d726b5258284de8f9dc10cddddbdc87" title="FileTreeGui::handleRight\lClickSlot" alt="" coords="219,118,386,159"/>
+<area shape="rect" id="node7" href="$class_file_tree_gui.html#aa8110a99d6bab64818b7f87024382b2a" title="FileTreeGui::handleShowDirectorySlot" alt="" coords="435,176,679,203"/>
+<area shape="rect" id="node3" href="$class_file_tree_gui.html#a21607e8cda6732997d5148581017a9b8" title="FileTreeGui::getProjectRoot\lAbsPathStrPtr" alt="" coords="465,5,649,46"/>
+<area shape="rect" id="node4" href="$namespace_tree_item_icon_init.html#aec158e49ff580b1e64d09b3ec2f12240" title="TreeItemIconInit::setIcon" alt="" coords="728,121,896,148"/>
+<area shape="rect" id="node5" href="$class_file_tree_gui.html#ab3c2fd5311245c08624461ac4c7e120c" title="FileTreeGui::addChildren" alt="" coords="474,121,641,148"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="NewProjectPage_2::setProjectTypeStrPtr" name="NewProjectPage_2::setProjectTypeStrPtr">
+<area shape="rect" id="node2" href="$class_new_project_page__2.html#aedf2995005e1d3e376d34f83a2b064a4" title="NewProjectPage_2::trigger\lMutators" alt="" coords="256,5,435,46"/>
+<area shape="rect" id="node3" href="$class_new_project_gui.html#ad47832cd6388ea36101b1e0002837546" title="NewProjectGui::handleFinish\lBtnSlot" alt="" coords="483,5,674,46"/>
+<area shape="rect" id="node4" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="723,12,885,39"/>
+<area shape="rect" id="node5" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="934,12,1141,39"/>
+</map>

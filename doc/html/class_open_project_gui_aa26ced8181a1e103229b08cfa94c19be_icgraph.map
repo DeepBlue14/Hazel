@@ -1,0 +1,7 @@
+<map id="OpenProjectGui::getProjectStrPtr" name="OpenProjectGui::getProjectStrPtr">
+<area shape="rect" id="node2" href="$class_master_actions.html#ac3621bfbde9a2b681d4d35ae72bd6f14" title="MasterActions::handleClean\lAndBuildActionSlot" alt="" coords="237,53,424,94"/>
+<area shape="rect" id="node5" href="$class_open_project_gui.html#abc7d2b7582449e5552a0ee0cbf54a3a9" title="OpenProjectGui::handleOpen\lProjectPbPtrSlot" alt="" coords="235,118,426,159"/>
+<area shape="rect" id="node3" href="$class_master_actions.html#ad8eb348b90e75f5876c30692930a2c22" title="MasterActions::MasterActions" alt="" coords="483,5,682,32"/>
+<area shape="rect" id="node4" href="$class_master_actions.html#a86232c67d3599a28c6b5238eb6dd4e88" title="MasterActions::connectTo\lCleanAndBuildAction" alt="" coords="495,57,670,98"/>
+<area shape="rect" id="node6" href="$class_open_project_gui.html#aaff1da3ebc21a640e891e09cd6c66a7a" title="OpenProjectGui::OpenProjectGui" alt="" coords="475,125,690,152"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="NewProjectGui::setAbsPathToProjBuildFileStrPtr" name="NewProjectGui::setAbsPathToProjBuildFileStrPtr">
+<area shape="rect" id="node2" href="$class_new_project_gui.html#a5dac69b4d7cd4a6d0beb033f5406825b" title="NewProjectGui::genRideProj\lDepends" alt="" coords="240,5,429,46"/>
+<area shape="rect" id="node3" href="$class_new_project_gui.html#ad47832cd6388ea36101b1e0002837546" title="NewProjectGui::handleFinish\lBtnSlot" alt="" coords="478,5,669,46"/>
+<area shape="rect" id="node4" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="717,12,880,39"/>
+<area shape="rect" id="node5" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="929,12,1135,39"/>
+</map>

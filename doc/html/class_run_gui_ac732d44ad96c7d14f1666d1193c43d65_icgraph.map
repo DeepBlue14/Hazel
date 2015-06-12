@@ -1,0 +1,5 @@
+<map id="RunGui::reset" name="RunGui::reset">
+<area shape="rect" id="node2" href="$class_master_actions.html#a294fc01ac639ffcdf9b76378f0d21306" title="MasterActions::handleConfig\lForRunActionSlot" alt="" coords="158,27,349,69"/>
+<area shape="rect" id="node3" href="$class_master_actions.html#ad8eb348b90e75f5876c30692930a2c22" title="MasterActions::MasterActions" alt="" coords="398,5,597,32"/>
+<area shape="rect" id="node4" href="$class_master_actions.html#a87ff14d6fdf08f3730bb733747335dcb" title="MasterActions::connectTo\lConfigForRunAction" alt="" coords="410,57,585,98"/>
+</map>

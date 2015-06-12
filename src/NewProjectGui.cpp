@@ -281,7 +281,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     tmpdir.cdUp();
     tmpdir.cdUp();
     QString tmpstr(tmpdir.absolutePath());
-    RideFile* tmp = new RideFile("/tmp/setup.bash"); // !!!??? will this be automagically deleted ???!!!
+    RFile* tmp = new RFile("/tmp/setup.bash"); // !!!??? will this be automagically deleted ???!!!
     tmp->openRdWrFile();
     tmp->write("#!/bin/bash\nsource ");
     QByteArray tmpba;tmpba.append(tmpstr);
@@ -309,7 +309,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     process->execute("mkdir", *(new QStringList("./.rideProject/resources/project/scripts/execute")) );
     
     //create build file
-    RideFile* buildFile = new RideFile("./.rideProject/resources/project/scripts/build/build.bash");
+    RFile* buildFile = new RFile("./.rideProject/resources/project/scripts/build/build.bash");
     buildFile->openRdWrFile();
     buildFile->write("############################");
     buildFile->write("\n# AUTO-GENERATED RIDE FILE #");
@@ -325,7 +325,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     process->execute("chmod", tmpStrLst);
     
     //create rosrun file
-    RideFile* runFile = new RideFile("./.rideProject/resources/project/scripts/execute/run.bash");
+    RFile* runFile = new RFile("./.rideProject/resources/project/scripts/execute/run.bash");
     runFile->openRdWrFile();
     runFile->write("############################");
     runFile->write("\n# AUTO-GENERATED RIDE FILE #");
@@ -340,7 +340,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     process->execute("chmod", tmpStrLst);
     
     //create roslaunch file
-    RideFile* launchFile = new RideFile();
+    RFile* launchFile = new RFile();
     launchFile->openRdWrFile();
     launchFile->write("############################");
     launchFile->write("\n# AUTO-GENERATED RIDE FILE #");

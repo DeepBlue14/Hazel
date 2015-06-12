@@ -1,0 +1,7 @@
+<map id="FileGui::lineNumberAreaWidth" name="FileGui::lineNumberAreaWidth">
+<area shape="rect" id="node2" href="$class_file_gui.html#a498aa60814cc9265695e656e9b7a2e87" title="FileGui::updateLineNumber\lAreaWidth" alt="" coords="254,5,434,46"/>
+<area shape="rect" id="node5" href="$class_file_gui.html#a704d37c450e30eeb506a89f7e5b7a79e" title="FileGui::resizeEvent" alt="" coords="274,71,414,97"/>
+<area shape="rect" id="node6" href="$class_line_number_area.html#a5d31f7fb107bc1eefd7ae4974c095308" title="LineNumberArea::sizeHint" alt="" coords="257,121,431,148"/>
+<area shape="rect" id="node3" href="$class_file_gui.html#ac7c9b0cdbb2e89190a13318ec84c70a3" title="FileGui::FileGui" alt="" coords="739,12,851,39"/>
+<area shape="rect" id="node4" href="$class_file_gui.html#ae1ce22662fb60a146101e8768acca3f1" title="FileGui::updateLineNumberArea" alt="" coords="483,37,690,64"/>
+</map>

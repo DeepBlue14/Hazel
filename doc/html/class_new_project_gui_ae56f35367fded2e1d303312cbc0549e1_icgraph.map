@@ -1,0 +1,5 @@
+<map id="NewProjectGui::swapNextPage" name="NewProjectGui::swapNextPage">
+<area shape="rect" id="node2" href="$class_new_project_gui.html#a247f62254e88454615d89be32464ce28" title="NewProjectGui::handleNext\lBtnSlot" alt="" coords="261,5,445,46"/>
+<area shape="rect" id="node3" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="493,12,656,39"/>
+<area shape="rect" id="node4" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="705,12,911,39"/>
+</map>

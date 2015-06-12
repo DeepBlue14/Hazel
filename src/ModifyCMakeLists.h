@@ -20,11 +20,11 @@
 
 #include <iostream>
 
-#include "RideFile.h"
+#include "RFile.h"
 
 using namespace std;
 
-class ModifyCMakeLists : public RideFile
+class ModifyCMakeLists : public RFile
 {
     private:
         ;

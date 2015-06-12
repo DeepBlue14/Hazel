@@ -1,0 +1,4 @@
+<map id="MasterMenus::initEditMenuPtr" name="MasterMenus::initEditMenuPtr">
+<area shape="rect" id="node2" href="$class_master_actions.html#aeb84d87b232944fc289dd0425c79e1a7" title="MasterActions::getUndoActionPtr" alt="" coords="254,5,471,32"/>
+<area shape="rect" id="node3" href="$class_master_actions.html#ab2015974980e97a75d5d91037be9545b" title="MasterActions::getRedoActionPtr" alt="" coords="254,56,471,83"/>
+</map>

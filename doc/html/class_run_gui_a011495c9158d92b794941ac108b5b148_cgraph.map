@@ -1,0 +1,5 @@
+<map id="RunGui::handleFinishBtnSlot" name="RunGui::handleFinishBtnSlot">
+<area shape="rect" id="node2" href="$class_run_page__1.html#a4c13dfea0a52e4256539769a11981e03" title="RunPage_1::getRunOptionPtr" alt="" coords="245,5,440,32"/>
+<area shape="rect" id="node3" href="$class_run_gui.html#a8b202a47e593e0aa6d18d33c6c857308" title="RunGui::setLaunchFilePath\lStrPtr" alt="" coords="251,57,434,98"/>
+<area shape="rect" id="node4" href="$class_run_page__2.html#af4529d1908e4311aa55cb6dada692d5b" title="RunPage_2::getLaunchFile\lStrPtr" alt="" coords="253,122,432,163"/>
+</map>

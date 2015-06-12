@@ -1,16 +1,16 @@
 #include "SaveAll.h"
 
 
-QVector<RideFile*> SaveAll::rideFilePtrVec;
+QVector<RFile*> SaveAll::rideFilePtrVec;
 
 
-void SaveAll::pushToRideFilePtrVec(RideFile* rideFilePtr)
+void SaveAll::pushToRideFilePtrVec(RFile* rideFilePtr)
 {
     rideFilePtrVec.push_back(rideFilePtr);
 }
 
 
-void SaveAll::removeFromRideFileVec(RideFile* rideFilePtr)
+void SaveAll::removeFromRideFileVec(RFile* rideFilePtr)
 {
     for(size_t i = 0; i < rideFilePtr->size(); i++)
     {
@@ -25,7 +25,7 @@ void SaveAll::removeFromRideFileVec(RideFile* rideFilePtr)
 }
 
 
-QVector<RideFile*> SaveAll::getRideFilePtrVec()
+QVector<RFile*> SaveAll::getRideFilePtrVec()
 {
     return rideFilePtrVec;
 }

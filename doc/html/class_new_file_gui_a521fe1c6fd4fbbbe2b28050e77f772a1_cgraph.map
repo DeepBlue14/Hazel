@@ -1,0 +1,15 @@
+<map id="NewFileGui::toString" name="NewFileGui::toString">
+<area shape="rect" id="node2" href="$class_new_file_page__1.html#a568799ae8fd3fcbf4217c2d2af250fdd" title="NewFilePage_1::toString" alt="" coords="198,64,365,91"/>
+<area shape="rect" id="node5" href="$class_new_file_page__2.html#a4a92aa5885c065bde1197568a82492e5" title="NewFilePage_2::toString" alt="" coords="198,136,365,163"/>
+<area shape="rect" id="node7" href="$class_new_file_page__3.html#a99c2ef9f88b626e06d616bfba4337497" title="NewFilePage_3::toString" alt="" coords="198,191,365,217"/>
+<area shape="rect" id="node9" href="$class_new_file_page__4.html#ae68d2afd12efd7449acdeb94af79cda1" title="NewFilePage_4::toString" alt="" coords="198,355,365,381"/>
+<area shape="rect" id="node3" href="$class_new_file_page__1.html#aaf195fbe5a34973ed0e65f4cafc276f4" title="NewFilePage_1::getLangStrPtr" alt="" coords="421,5,624,32"/>
+<area shape="rect" id="node4" href="$class_new_file_page__1.html#a3113674205e78514901da898e4d6f748" title="NewFilePage_1::getFileType\lStrPtr" alt="" coords="427,57,618,98"/>
+<area shape="rect" id="node6" href="$class_new_file_page__2.html#a7245ddb93d1dd167e331d11721a80b52" title="NewFilePage_2::getOption\lStrPtr" alt="" coords="433,122,612,163"/>
+<area shape="rect" id="node8" href="$class_new_file_page__3.html#aa175534ea8aca4e3c2bc609f8a8892e7" title="NewFilePage_3::getMsgCatagory\lStrPtr" alt="" coords="413,187,632,229"/>
+<area shape="rect" id="node10" href="$class_new_file_page__4.html#a363fb54f9805b1ca929716110eb3d6b5" title="NewFilePage_4::getFileName\lStrPtr" alt="" coords="425,253,621,294"/>
+<area shape="rect" id="node11" href="$class_new_file_page__4.html#a401de061c0e91f35fcb6c071242a6f05" title="NewFilePage_4::getProject\lStrPtr" alt="" coords="432,318,613,359"/>
+<area shape="rect" id="node12" href="$class_new_file_page__4.html#a93d61b47197748a489d45c751ae50800" title="NewFilePage_4::getLocStrPtr" alt="" coords="425,384,620,411"/>
+<area shape="rect" id="node13" href="$class_new_file_page__4.html#a0a4e7f833f62804c8b6e5dd1d686fa54" title="NewFilePage_4::getFolder\lStrPtr" alt="" coords="435,435,611,477"/>
+<area shape="rect" id="node14" href="$class_new_file_page__4.html#a32889631620e361e55dede29fe9ddafe" title="NewFilePage_4::getCreated\lFileStrPtr" alt="" coords="429,501,616,542"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="MasterMenus::initFileMenuPtr" name="MasterMenus::initFileMenuPtr">
+<area shape="rect" id="node2" href="$class_master_actions.html#a7065dfa244266181223b152795a996e9" title="MasterActions::getNewProject\lActionPtr" alt="" coords="253,5,453,46"/>
+<area shape="rect" id="node3" href="$class_master_actions.html#a0ef76147044b06c8b951534a0d7ab7f2" title="MasterActions::getNewFile\lActionPtr" alt="" coords="263,70,443,111"/>
+<area shape="rect" id="node4" href="$class_master_actions.html#aac19d660169392d11b0ae1c2540cafb5" title="MasterActions::getOpenProject\lActionPtr" alt="" coords="251,135,455,177"/>
+</map>

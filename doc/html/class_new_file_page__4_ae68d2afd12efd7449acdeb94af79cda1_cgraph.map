@@ -1,0 +1,7 @@
+<map id="NewFilePage_4::toString" name="NewFilePage_4::toString">
+<area shape="rect" id="node2" href="$class_new_file_page__4.html#a363fb54f9805b1ca929716110eb3d6b5" title="NewFilePage_4::getFileName\lStrPtr" alt="" coords="222,5,418,46"/>
+<area shape="rect" id="node3" href="$class_new_file_page__4.html#a401de061c0e91f35fcb6c071242a6f05" title="NewFilePage_4::getProject\lStrPtr" alt="" coords="229,70,411,111"/>
+<area shape="rect" id="node4" href="$class_new_file_page__4.html#a93d61b47197748a489d45c751ae50800" title="NewFilePage_4::getLocStrPtr" alt="" coords="223,136,417,163"/>
+<area shape="rect" id="node5" href="$class_new_file_page__4.html#a0a4e7f833f62804c8b6e5dd1d686fa54" title="NewFilePage_4::getFolder\lStrPtr" alt="" coords="232,187,408,229"/>
+<area shape="rect" id="node6" href="$class_new_file_page__4.html#a32889631620e361e55dede29fe9ddafe" title="NewFilePage_4::getCreated\lFileStrPtr" alt="" coords="227,253,413,294"/>
+</map>

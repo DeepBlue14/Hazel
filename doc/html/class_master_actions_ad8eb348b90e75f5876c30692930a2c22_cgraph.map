@@ -1,0 +1,33 @@
+<map id="MasterActions::MasterActions" name="MasterActions::MasterActions">
+<area shape="rect" id="node2" href="$class_master_actions.html#a75943822eee1dbbc3e7c6c1dda4780a0" title="MasterActions::handleNew\lFileActionSlot" alt="" coords="265,5,444,46"/>
+<area shape="rect" id="node4" href="$class_master_actions.html#af1fa0d0d7b074abb49ae5dd6bccffbe9" title="MasterActions::handleNew\lTerminalActionSlot" alt="" coords="265,527,444,569"/>
+<area shape="rect" id="node6" href="$class_master_actions.html#a81d07306e15f16a66e992138faccfab5" title="MasterActions::handleNew\lProjectActionSlot" alt="" coords="265,135,444,177"/>
+<area shape="rect" id="node7" href="$class_master_actions.html#abefe5adf2e269a408626ea1caee182ca" title="MasterActions::handleOpen\lProjectActionSlot" alt="" coords="263,201,446,242"/>
+<area shape="rect" id="node8" href="$class_master_actions.html#a92d9fcaac21c09534c568b3aca195a87" title="MasterActions::handleSave\lAllActionSlot" alt="" coords="263,70,446,111"/>
+<area shape="rect" id="node10" href="$class_master_actions.html#a87a24d9944e6140a6ae0de92dc8e5647" title="MasterActions::handleUndo\lActionSlot" alt="" coords="263,331,446,373"/>
+<area shape="rect" id="node11" href="$class_master_actions.html#a7aa83031542aeafb3f3afe244ce2cd67" title="MasterActions::handleRedo\lActionSlot" alt="" coords="263,397,446,438"/>
+<area shape="rect" id="node12" href="$class_master_actions.html#a8b46b8a5873dfff5a85e21a7e636b4bf" title="MasterActions::handleSet\lProjectConfigActionSlot" alt="" coords="269,462,441,503"/>
+<area shape="rect" id="node13" href="$class_master_actions.html#aa9af30e92d9f9e4ffb8044f092b06d07" title="MasterActions::handleBuild\lActionSlot" alt="" coords="264,593,445,634"/>
+<area shape="rect" id="node15" href="$class_master_actions.html#ac3621bfbde9a2b681d4d35ae72bd6f14" title="MasterActions::handleClean\lAndBuildActionSlot" alt="" coords="261,658,448,699"/>
+<area shape="rect" id="node17" href="$class_master_actions.html#a294fc01ac639ffcdf9b76378f0d21306" title="MasterActions::handleConfig\lForRunActionSlot" alt="" coords="259,919,450,961"/>
+<area shape="rect" id="node23" href="$class_master_actions.html#a8504741522d18cb1a5fb21b6ad6de14b" title="MasterActions::handleRun\lActionSlot" alt="" coords="267,723,443,765"/>
+<area shape="rect" id="node24" href="$class_master_actions.html#acc96d5f9401e97aa2a4700a47cfa71bd" title="MasterActions::handleDebug\lActionSlot" alt="" coords="259,789,450,830"/>
+<area shape="rect" id="node25" href="$class_master_actions.html#ac8b0e41e5f68cdc5c845ec9184b2cd6d" title="MasterActions::handleGit\lActionSlot" alt="" coords="270,854,439,895"/>
+<area shape="rect" id="node26" href="$class_master_actions.html#afb11d896980c526784b05a440e6f21ac" title="MasterActions::handleOutput\lSouthActionSlot" alt="" coords="259,985,450,1026"/>
+<area shape="rect" id="node28" href="$class_master_actions.html#a3f3ec7277966d98a9fc5df5ceca1fa97" title="MasterActions::handleTerminal\lSouthActionSlot" alt="" coords="253,266,456,307"/>
+<area shape="rect" id="node29" href="$class_master_actions.html#a86d0a64d13866d196c05906dfae37b73" title="MasterActions::handleNav\lEastActionSlot" alt="" coords="267,1050,443,1091"/>
+<area shape="rect" id="node31" href="$class_master_actions.html#a64bf020d68866c8941c01929879eb839" title="MasterActions::handleProject\lWestActionSlot" alt="" coords="258,1115,451,1157"/>
+<area shape="rect" id="node3" href="$class_new_file_gui.html#ad64da4ff0c0aa64f2045e77fbd0f50f1" title="NewFileGui::setNorthTabWidgetPtr" alt="" coords="505,12,733,39"/>
+<area shape="rect" id="node5" href="$class_terminal.html#aab08ef06e15138f44838f2f643cdb70e" title="Terminal::start" alt="" coords="565,404,672,431"/>
+<area shape="rect" id="node9" href="$namespace_save_all.html#ab76b15aa70cf0227fe2ff3c83980d9fc" title="SaveAll::save" alt="" coords="567,77,670,104"/>
+<area shape="rect" id="node14" href="$class_master_actions.html#a30b51649f46b8f105f8be5d9b4a6fb5f" title="MasterActions::getNewProject\lGuiPtr" alt="" coords="519,593,719,634"/>
+<area shape="rect" id="node16" href="$class_open_project_gui.html#aa26ced8181a1e103229b08cfa94c19be" title="OpenProjectGui::getProject\lStrPtr" alt="" coords="528,658,709,699"/>
+<area shape="rect" id="node18" href="$class_run_gui.html#ac732d44ad96c7d14f1666d1193c43d65" title="RunGui::reset" alt="" coords="567,927,670,953"/>
+<area shape="rect" id="node19" href="$class_run_gui.html#a469be74273ddc6441a9f87e65d3ab2c9" title="RunGui::swapBackPage" alt="" coords="781,927,947,953"/>
+<area shape="rect" id="node20" href="$class_run_gui.html#a3192d643a700244e066f3e0ca4389c4b" title="RunGui::unloadPage_2" alt="" coords="995,876,1151,903"/>
+<area shape="rect" id="node21" href="$class_run_gui.html#a381d265f46ec8473a7858974a19674c5" title="RunGui::loadPage_1" alt="" coords="1002,927,1145,953"/>
+<area shape="rect" id="node22" href="$class_run_gui.html#a410e373ff032fb779b52b1dd501c3128" title="RunGui::unloadPage_3" alt="" coords="995,977,1151,1004"/>
+<area shape="rect" id="node27" href="$class_master_actions.html#ace3070f2fdce3f9bca417e0c05f790fa" title="MasterActions::getSouthTab\lWidgetPtr" alt="" coords="525,985,713,1026"/>
+<area shape="rect" id="node30" href="$class_master_actions.html#a863ab54858bacd76b50af788a6846e8e" title="MasterActions::getEastWidgetPtr" alt="" coords="510,1057,727,1084"/>
+<area shape="rect" id="node32" href="$class_master_actions.html#aae29be0bf5f9f2b8f1c7aac0c7efb288" title="MasterActions::getWestWidgetPtr" alt="" coords="508,1123,729,1149"/>
+</map>

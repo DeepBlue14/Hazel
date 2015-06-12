@@ -1,0 +1,5 @@
+<map id="NewProjectPage_2::triggerMutators" name="NewProjectPage_2::triggerMutators">
+<area shape="rect" id="node2" href="$class_new_project_page__2.html#a542d8acd5d97a5541c772a5ca7010c8c" title="NewProjectPage_2::setProject\lNameStrPtr" alt="" coords="233,5,434,46"/>
+<area shape="rect" id="node3" href="$class_new_project_page__2.html#aa1ce052f5e700173eee0f73352e0d926" title="NewProjectPage_2::setProject\lLocStrPtr" alt="" coords="233,70,434,111"/>
+<area shape="rect" id="node4" href="$class_new_project_page__2.html#a5c03c4b42d0749763cfb0666550a5fba" title="NewProjectPage_2::setProject\lTypeStrPtr" alt="" coords="233,135,434,177"/>
+</map>

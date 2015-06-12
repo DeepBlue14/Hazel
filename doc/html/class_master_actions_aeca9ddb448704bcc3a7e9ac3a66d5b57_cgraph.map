@@ -1,0 +1,4 @@
+<map id="MasterActions::connectToNewTerminalAction" name="MasterActions::connectToNewTerminalAction">
+<area shape="rect" id="node2" href="$class_master_actions.html#af1fa0d0d7b074abb49ae5dd6bccffbe9" title="MasterActions::handleNew\lTerminalActionSlot" alt="" coords="229,5,408,46"/>
+<area shape="rect" id="node3" href="$class_terminal.html#aab08ef06e15138f44838f2f643cdb70e" title="Terminal::start" alt="" coords="456,12,563,39"/>
+</map>

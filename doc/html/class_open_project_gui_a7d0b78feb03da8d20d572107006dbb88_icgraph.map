@@ -1,0 +1,5 @@
+<map id="OpenProjectGui::setProjectStrPtr" name="OpenProjectGui::setProjectStrPtr">
+<area shape="rect" id="node2" href="$class_open_project_gui.html#abc7d2b7582449e5552a0ee0cbf54a3a9" title="OpenProjectGui::handleOpen\lProjectPbPtrSlot" alt="" coords="241,5,431,46"/>
+<area shape="rect" id="node4" href="$class_open_project_gui.html#ad5b20cfbb8e0f9d0c0c04dd9c4666b8f" title="OpenProjectGui::handleCancel\lPbPtrSlot" alt="" coords="235,70,437,111"/>
+<area shape="rect" id="node3" href="$class_open_project_gui.html#aaff1da3ebc21a640e891e09cd6c66a7a" title="OpenProjectGui::OpenProjectGui" alt="" coords="486,45,701,72"/>
+</map>

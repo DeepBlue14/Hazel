@@ -1,0 +1,5 @@
+<map id="NewProjectPage_3::toString" name="NewProjectPage_3::toString">
+<area shape="rect" id="node2" href="$class_new_project_page__3.html#af7f2bc3bd9fba4428e1353ee9ea0e482" title="NewProjectPage_3::getAuthor\lNameStrPtr" alt="" coords="243,5,442,46"/>
+<area shape="rect" id="node3" href="$class_new_project_page__3.html#a48085a3d584c78e95f9259a8f0861981" title="NewProjectPage_3::getAuthor\lEmailStrPtr" alt="" coords="243,70,442,111"/>
+<area shape="rect" id="node4" href="$class_new_project_page__3.html#a80b1c3388841590a7b8e9201623fe573" title="NewProjectPage_3::getLicense\lStrPtr" alt="" coords="240,135,445,177"/>
+</map>

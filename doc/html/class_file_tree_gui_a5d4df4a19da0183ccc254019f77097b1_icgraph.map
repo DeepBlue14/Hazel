@@ -1,0 +1,12 @@
+<map id="FileTreeGui::initTree" name="FileTreeGui::initTree">
+<area shape="rect" id="node2" href="$class_file_tree_gui.html#acf857f2793adefb176a680d541c24691" title="FileTreeGui::FileTreeGui" alt="" coords="195,27,359,53"/>
+<area shape="rect" id="node3" href="$class_file_tree_gui.html#ac2c3399b5cb85da5cd1c119b61c674c0" title="FileTreeGui::refresh" alt="" coords="209,77,346,104"/>
+<area shape="rect" id="node4" href="$class_new_file_gui.html#a50cf414bdb9ea40f3cd4ca4fa4566b77" title="NewFileGui::handleFinish\lBtnSlot" alt="" coords="419,5,589,46"/>
+<area shape="rect" id="node7" href="$class_new_project_gui.html#ad47832cd6388ea36101b1e0002837546" title="NewProjectGui::handleFinish\lBtnSlot" alt="" coords="409,70,599,111"/>
+<area shape="rect" id="node10" href="$class_open_project_gui.html#abc7d2b7582449e5552a0ee0cbf54a3a9" title="OpenProjectGui::handleOpen\lProjectPbPtrSlot" alt="" coords="409,135,599,177"/>
+<area shape="rect" id="node5" href="$class_new_file_gui.html#ad77edffa59956f16ef2b6d83dd357932" title="NewFileGui::initBtns" alt="" coords="685,12,827,39"/>
+<area shape="rect" id="node6" href="$class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d" title="NewFileGui::NewFileGui" alt="" coords="933,12,1099,39"/>
+<area shape="rect" id="node8" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="675,77,837,104"/>
+<area shape="rect" id="node9" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="913,77,1119,104"/>
+<area shape="rect" id="node11" href="$class_open_project_gui.html#aaff1da3ebc21a640e891e09cd6c66a7a" title="OpenProjectGui::OpenProjectGui" alt="" coords="649,143,863,169"/>
+</map>
