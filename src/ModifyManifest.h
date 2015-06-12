@@ -6,8 +6,8 @@
  */
 
 #ifndef MODIFY_MANIFEST_H
-#define	MODIFY_MANIFESTPACKAGE_H
+#define	MODIFY_MANIFEST_H
 
 #include <QWidget>
 
-#endif	/* MODIFY_MANIFESTPACKAGE_H */
+#endif	/* MODIFY_MANIFEST_H */

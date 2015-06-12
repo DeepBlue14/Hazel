@@ -81,7 +81,7 @@ void MasterGui::initToolBars()
     groupTwoToolBarPtr = addToolBar(tr("Undo") );
     addToolBar(Qt::TopToolBarArea, groupTwoToolBarPtr);
     masterToolBars->initNorthGroupTwoToolBar(groupTwoToolBarPtr);
-    
+
     groupThreeToolBarPtr = addToolBar(tr("Debug") );
     addToolBar(Qt::TopToolBarArea, groupThreeToolBarPtr);
     masterToolBars->initNorthGroupThreeToolBar(groupThreeToolBarPtr);
@@ -93,7 +93,7 @@ void MasterGui::initToolBars()
     eastToolBarPtr = addToolBar(tr("East") );
     addToolBar(Qt::RightToolBarArea, eastToolBarPtr);
     masterToolBars->initEastGroupOneToolBar(eastToolBarPtr);
-    
+
     westToolBarPtr = addToolBar(tr("West") );
     addToolBar(Qt::LeftToolBarArea, westToolBarPtr);
     masterToolBars->initWestGroupOneToolBar(westToolBarPtr);
@@ -150,7 +150,7 @@ QMenu* MasterGui::getNavigateMenuPtr()
 
 void MasterGui::setSourceMenuPtr(QMenu* sourceMenuPtr)
 {
-    this->sourceMenuPtr;
+    this->sourceMenuPtr = sourceMenuPtr;
 }
 
 
