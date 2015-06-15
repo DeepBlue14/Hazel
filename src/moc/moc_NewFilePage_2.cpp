@@ -1,44 +1,25 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'NewFilePage_2.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.2.1)
+** Created by: The Qt Meta Object Compiler version 63 (Qt 4.8.6)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
 #include "../NewFilePage_2.h"
-#include <QtCore/qbytearray.h>
-#include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'NewFilePage_2.h' doesn't include <QObject>."
-#elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.2.1. It"
+#elif Q_MOC_OUTPUT_REVISION != 63
+#error "This file was generated using the moc from 4.8.6. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-struct qt_meta_stringdata_NewFilePage_2_t {
-    QByteArrayData data[1];
-    char stringdata[15];
-};
-#define QT_MOC_LITERAL(idx, ofs, len) \
-    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    offsetof(qt_meta_stringdata_NewFilePage_2_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData) \
-    )
-static const qt_meta_stringdata_NewFilePage_2_t qt_meta_stringdata_NewFilePage_2 = {
-    {
-QT_MOC_LITERAL(0, 0, 13)
-    },
-    "NewFilePage_2\0"
-};
-#undef QT_MOC_LITERAL
-
 static const uint qt_meta_data_NewFilePage_2[] = {
 
  // content:
-       7,       // revision
+       6,       // revision
        0,       // classname
        0,    0, // classinfo
        0,    0, // methods
@@ -51,6 +32,10 @@ static const uint qt_meta_data_NewFilePage_2[] = {
        0        // eod
 };
 
+static const char qt_meta_stringdata_NewFilePage_2[] = {
+    "NewFilePage_2\0"
+};
+
 void NewFilePage_2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     Q_UNUSED(_o);
@@ -59,21 +44,28 @@ void NewFilePage_2::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
     Q_UNUSED(_a);
 }
 
-const QMetaObject NewFilePage_2::staticMetaObject = {
-    { &QWidget::staticMetaObject, qt_meta_stringdata_NewFilePage_2.data,
-      qt_meta_data_NewFilePage_2,  qt_static_metacall, 0, 0}
+const QMetaObjectExtraData NewFilePage_2::staticMetaObjectExtraData = {
+    0,  qt_static_metacall 
 };
 
+const QMetaObject NewFilePage_2::staticMetaObject = {
+    { &QWidget::staticMetaObject, qt_meta_stringdata_NewFilePage_2,
+      qt_meta_data_NewFilePage_2, &staticMetaObjectExtraData }
+};
+
+#ifdef Q_NO_DATA_RELOCATION
+const QMetaObject &NewFilePage_2::getStaticMetaObject() { return staticMetaObject; }
+#endif //Q_NO_DATA_RELOCATION
 
 const QMetaObject *NewFilePage_2::metaObject() const
 {
-    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
 void *NewFilePage_2::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_NewFilePage_2.stringdata))
+    if (!strcmp(_clname, qt_meta_stringdata_NewFilePage_2))
         return static_cast<void*>(const_cast< NewFilePage_2*>(this));
     return QWidget::qt_metacast(_clname);
 }

@@ -366,6 +366,8 @@ OpenProjectGui* MasterActions::getOpenProjectGuiPtr()
 void MasterActions::setWestWidgetPtr(FileTreeGui* fileTreeGuiPtr)
 {
     this->westWidgetPtr = fileTreeGuiPtr;
+    fileTreeGuiPtr->setNorthTabWidgetPtr(getNorthTabWidgetPtr() );
+    cout << cct::yellow("move line at: MasterActions::setWestWidgetPtr(...)") << endl;
 }
 
 

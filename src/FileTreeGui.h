@@ -29,7 +29,7 @@
 #include <iostream>
 
 #include "TreeItemIconInit.h"
-//#include "LinkFileWithGui.h"
+#include "LinkFileWithGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

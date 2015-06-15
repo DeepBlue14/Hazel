@@ -1,7 +1,25 @@
 #include "LinkFileWithGui.h"
 
 
-void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString* absPathToNewFileStrPtr, FileGui* editor)
+LinkFileWithGui::LinkFileWithGui()
+{
+    ;
+}
+
+
+void LinkFileWithGui::setcompassTabWidgetPtr(QTabWidget* compassTabWidgetPtr)
+{
+    this->compassTabWidgetPtr = compassTabWidgetPtr;
+}
+
+
+QTabWidget* LinkFileWithGui::getCompassTabWidgetPtr()
+{
+    ;
+}
+
+
+void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNewFileStrPtr, QString fileName, FileGui* editor)
 {
     //create file
     //- - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -27,25 +45,30 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString* absPathToN
     setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
 
     //create physical file and tab
-    RFile* rideFile = new RFile(*absPathToNewFileStrPtr);
+    RFile* rideFile = new RFile(absPathToNewFileStrPtr);
+    if(!rideFile->open(QIODevice::ReadWrite | QIODevice::Text))
+        cerr << "Error opening file!" << endl;
+    
+    QString lineStr;
+    while(!rideFile->atEnd())
+    {
+        QByteArray line = rideFile->readLine();
+        lineStr.append(line);
+        //cout << "Line: " << lineStr.toStdString() << endl;
+    }
     //-----------------
 
-
-    rideFile->openRdWrFile();
-    cout << "HERE" << endl;
-    QByteArray tmpBArr;
-    tmpBArr.append(editor->toPlainText());
-    editor->setPlainText(rideFile->readAll() );
-    northTabWidgetPtr->addTab(editor, "Replace");
-    
+    editor->setPlainText(lineStr);
+    cout << "Does the editor exist?: " << editor->document()->toPlainText().toStdString() << endl;
     rideFile->setParallelFileGuiPtr(editor);
+    northTabWidgetPtr->addTab(editor, fileName);
     SaveAll::pushToRideFilePtrVec(rideFile);
     
     cout << "Successfully ended file creation sequence" << endl;
 }
 
 
-void LinkFileWithGui::linkExisting(QTabWidget* northTabWidget, QString* absPathToExistingFileStrPtr, FileGui* editor)
+void LinkFileWithGui::linkExisting(QTabWidget* northTabWidget, QString* absPathToExistingFileStrPtr, QString fileName, FileGui* editor)
 {
     ;
 }
@@ -87,4 +110,10 @@ QAbstractItemModel* LinkFileWithGui::modelFromFile(const QString& fileName)
 
     QApplication::restoreOverrideCursor();
     return new QStringListModel(words, completer);
+}
+
+
+LinkFileWithGui::~LinkFileWithGui()
+{
+    ;
 }

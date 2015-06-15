@@ -169,7 +169,11 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 
     if(treePtr->selectedItems().at(0)->text(1) == "")
     {
-        //cout << "file: " << treePtr->selectedItems().at(0)->text(0).toStdString() << endl;
+        LinkFileWithGui lfwg;
+        FileGui* fg;
+        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+                treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+        lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
         cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
     else
@@ -178,8 +182,7 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
         cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
 
-    //getNorthTabWidgetPtr()->addTab( , treePtr->selectedItems().at(0)->text(0));
-    //see NewFileGui.cpp
+
 }
 
 

@@ -37,19 +37,24 @@ namespace cct = UnixConsoleText;
 
 using namespace std;
 
-namespace LinkFileWithGui
+class LinkFileWithGui
 {
-    QCompleter* completer;
-    Highlighter* highlighterPtr;
-    //QTabWidget* northTabWidget;
+    private:
+        QCompleter* completer;
+        Highlighter* highlighterPtr;
+        QTabWidget* compassTabWidgetPtr;
     
-    //void setNorthTabWidget(QTabWidget* northTabWidget);
-    //QTabWidget* getNorthTabWidget();
-    void linkNew(QTabWidget* northTabWidget, QString* absPathToNewFileStrPtr, FileGui* editor);
-    void linkExisting(QTabWidget* northTabWidget, QString* absPathToExistingFileStrPtr, FileGui* editor);
-    void setHighlighterPtr(Highlighter* highlighter);
-    Highlighter* getHighlighterPtr();
-    QAbstractItemModel* modelFromFile(const QString& fileName);
-}
+    
+    public:
+        LinkFileWithGui();
+        void setcompassTabWidgetPtr(QTabWidget* compassTabWidget);
+        QTabWidget* getCompassTabWidgetPtr();
+        void linkNew(QTabWidget* compassTabWidget, QString absPathToNewFileStrPtr, QString fileName, FileGui* editor);
+        void linkExisting(QTabWidget* compassTabWidget, QString* absPathToExistingFileStrPtr, QString fileName, FileGui* editor);
+        void setHighlighterPtr(Highlighter* highlighter);
+        Highlighter* getHighlighterPtr();
+        QAbstractItemModel* modelFromFile(const QString& fileName);
+        ~LinkFileWithGui();
+};
 
 #endif	/* LINK_FILE_WITH_GUI_H */
