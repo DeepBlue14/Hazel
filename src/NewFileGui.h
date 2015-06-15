@@ -40,6 +40,7 @@
 #include "NewFilePage_4.h"
 #include "SaveAll.h"
 #include "FileTreeGui.h"
+//#include "LinkFileWithGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
