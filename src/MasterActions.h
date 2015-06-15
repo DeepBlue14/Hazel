@@ -30,6 +30,7 @@
 #include "FileTreeGui.h"
 #include "NavigatorGui.h"
 #include "Build.h"
+#include "RProcess.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

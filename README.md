@@ -9,7 +9,7 @@
 
 ###**Project Synopsis**
 
-This project is an IDE **specifically** for the [ROS][1].  It has only been in development for several weeks, so many features have not yet been implemented, or have only been partially been implemented.  Features will (or in some cases already do) include templates for various publishers and subscribers, refactoring, reconfiguring non-ros/rosbuild projects to catkin projects, syntax highlighting, compilation, debugging and execution, etc.  For more information, or to contribute to the project, feel free to contact me at james.perl12@gmail.com.
+This project is an IDE **specifically** for [ROS][1].  It has only been in development for several weeks, so many features have not yet been implemented, or have only been partially been implemented.  Features will (or in some cases already do) include templates for various publishers and subscribers, refactoring, reconfiguring non-ros/rosbuild projects to catkin projects, syntax highlighting, compilation, debugging and execution, etc.  For more information, feel free to contact me at james.perl12@gmail.com.
  
 
 ###**Libraries**

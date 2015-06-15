@@ -4,7 +4,8 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description: Console color for UNIX-type systems.
  *
- * Reference: //Reference: http://www.linuxhowtos.org/Tips%20and%20Tricks/ansi_escape_sequences.htm
+ * Reference: http://www.linuxhowtos.org/Tips%20and%20Tricks/ansi_escape_sequences.htm
+ *            http://www.cplusplus.com/forum/unices/36461/
  * 
  * Created on December 11, 2014, 1:14 PM
  */
@@ -78,6 +79,13 @@ namespace UnixConsoleText
     
     
     /**
+     * Method to return bold black textStrPtr
+     * @param textStrPtr
+     * @return Bold black text.
+     */
+    string bold(string textStrPtr);
+    
+    /**
      * Method to return bold red textStrPtr.
      * 
      * @param textStrPtr textStrPtr to be printed bold red.
@@ -135,6 +143,13 @@ namespace UnixConsoleText
     
     
     
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string italic(string textStrPtr);
     
     /**
      * Method to return italic red textStrPtr.
@@ -196,6 +211,12 @@ namespace UnixConsoleText
     
     
     /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string underlined(string textStrPtr);
+    /**
      * Method to return underlined red textStrPtr.
      * 
      * @param textStrPtr textStrPtr to be printed underlined red.
@@ -250,6 +271,67 @@ namespace UnixConsoleText
      * @return Underlined gray textStrPtr.
      */
     string underlinedGray(string textStrPtr);
+    
+    
+    
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethrough(string textStrPtr);
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethroughRed(string textStrPtr);
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethroughGreen(string textStrPtr);
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethroughYellow(string textStrPtr);
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethroughBlue(string textStrPtr);
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethroughPurple(string textStrPtr);
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethroughCyan(string textStrPtr);
+    
+    /**
+     * 
+     * @param textStrPtr
+     * @return 
+     */
+    string strikethroughGray(string textStrPtr);
+    
+    //string blueBackground(string textStrPtr);
     
 };
 

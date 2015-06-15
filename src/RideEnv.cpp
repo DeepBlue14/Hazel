@@ -5,7 +5,7 @@ RideEnv::RideEnv()
 {
     catkinWsAbsPathStrPtr = new QString("null");
     nodeAbsPathStrLstPtr = new QStringList();
-    rideProjDirAbsPathStrPtr = new QString("null");
+    rideProjDirAbsPathStrLstPtr = new QStringList();
 }
 
 
@@ -42,15 +42,24 @@ QStringList* RideEnv::getNodeAbsPathStrLstPtr()
 }
 
 
-void RideEnv::setRideProjDirAbsPathStrPtr(QString* rideProjDirAbsPathStrPtr)
+void RideEnv::pushToRideProjDirAbsPathStrPtr(QString* rideProjDirAbsPathStr)
 {
-    this->rideProjDirAbsPathStrPtr = rideProjDirAbsPathStrPtr;
+    rideProjDirAbsPathStrLstPtr->push_back(*rideProjDirAbsPathStr);
 }
 
 
-QString* RideEnv::getRideProjDirAbsPathStrPtr()
+QString* RideEnv::popFromRideProjDirAbsPathStrPtr()
 {
-    return rideProjDirAbsPathStrPtr;
+    QString* tmp = new QString(rideProjDirAbsPathStrLstPtr->back() );
+    rideProjDirAbsPathStrLstPtr->pop_back();
+    
+    return tmp;
+}
+
+
+QStringList* RideEnv::getRideProjDirAbsPathStrPtr()
+{
+    return rideProjDirAbsPathStrLstPtr;
 }
 
 

@@ -44,8 +44,9 @@ class RProcess : public QProcess
     private:
         static QStringList* curInUseFileNmStrLstPtr;
         static QList<int>* numsInUseLstPtr;
-        
+
         QString* genTmpFileNameStrPtr();
+        void addHeader(RFile* tmpRideFilePtr, QString* absPathToRosWs);
         
     public:
         RProcess();

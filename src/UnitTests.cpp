@@ -4,7 +4,7 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file provides a series of unit tests to validate
  *                   different components.  If running with NetBeans IDE,
- *                   you will have to comment out the main method in main.cpp,
+ *                   you will have to comment out the main function in main.cpp,
  *                   otherwise you will get a "multiple main" error.
  *
  * Created on June 15, 2015, 4:00 PM
@@ -15,6 +15,7 @@
 
 #include <string>
 #include <iostream>
+#include <cstdlib>
 
 #include "MasterGui.h"
 #include "ParseFontConfigXml.h"
@@ -45,13 +46,14 @@ int main(int argc, char *argv[])
          << "\n\t1) Regular run"
          << "\n\t2) xxxx"
          << "\n\t3) xxxx"
-         << "\n\t4) xxxx"
+         << "\n\t4) Font XML file parsing"
          << "\n\t5) Scout msg parsing"
-         << "ENTER: " << endl;
+         << cct::bold("\nENTER: ");
     cin >> choiceInt;
-
+    
     
     MasterGui masterGui;
+    ParseFontConfigXml parseFontConfigXml;
     MsgParser msgParser;
     string tmp("/opt/ros/indigo/share/sensor_msgs/msg/Image.msg");
     
@@ -68,16 +70,18 @@ int main(int argc, char *argv[])
             cout << "case 3" << endl;
             break;
         case 4:
-            cout << "case 4" << endl;
+            parseFontConfigXml.loadFile();
+            parseFontConfigXml.readDoc();
             break;
         case 5:
             msgParser.parse(&tmp);
             cout << msgParser.toString() << endl;
-            return 0;
+            return EXIT_SUCCESS;
             break;
         default:
             cerr << "Invalid option" << endl;
             break;
     } // End of switch
     
+    return EXIT_SUCCESS;
 } // End of main()

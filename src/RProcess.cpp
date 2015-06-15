@@ -17,6 +17,17 @@ QString* RProcess::genTmpFileNameStrPtr()
 }
 
 
+void RProcess::addHeader(RFile* tmpRideFilePtr, QString* absPathToRosWs)
+{
+    tmpRideFilePtr->write("#######################");
+    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
+    tmpRideFilePtr->write("\n#######################");
+    tmpRideFilePtr->write("\n\n#!/bin/bash");
+    QByteArray tmpBa = absPathToRosWs->toLatin1();
+    tmpRideFilePtr->write("\n\nsource "  + *tmpBa.data() );
+}
+
+
 void RProcess::start(const QString& program, const QStringList& arguments, OpenMode mode)
 {
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");

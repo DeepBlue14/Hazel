@@ -48,6 +48,12 @@ string UnixConsoleText::gray(string textStrPtr)
 
 
 
+string UnixConsoleText::bold(string textStrPtr)
+{
+    return string("\033[1;30m" + textStrPtr + "\033[0m");
+}
+
+
 string UnixConsoleText::boldRed(string textStrPtr)
 {
     return string("\033[1;31m" + textStrPtr + "\033[0m");    
@@ -87,6 +93,15 @@ string UnixConsoleText::boldCyan(string textStrPtr)
 string UnixConsoleText::boldGray(string textStrPtr)
 {
     return string("\033[1;37m" + textStrPtr + "\033[0m"); 
+}
+
+
+
+
+
+string UnixConsoleText::italic(string textStrPtr)
+{
+    return string("\033[3;30m" + textStrPtr + "\033[0m");
 }
 
 
@@ -135,6 +150,12 @@ string UnixConsoleText::italicGray(string textStrPtr)
 
 
 
+string UnixConsoleText::underlined(string textStrPtr)
+{
+    return string("\033[4;30m" + textStrPtr + "\033[0m");
+}
+
+
 string UnixConsoleText::underlinedRed(string textStrPtr)
 {
     return string("\033[4;31m" + textStrPtr + "\033[0m");
@@ -174,4 +195,55 @@ string UnixConsoleText::underlinedCyan(string textStrPtr)
 string UnixConsoleText::underlinedGray(string textStrPtr)
 {
     return string("\033[4;37m" + textStrPtr + "\033[0m"); 
+}
+
+
+
+
+
+string UnixConsoleText::strikethrough(string textStrPtr)
+{
+    return string("\033[9;30m" + textStrPtr + "\033[0m");
+}
+
+
+string UnixConsoleText::strikethroughRed(string textStrPtr)
+{
+    return string("\033[9;31m" + textStrPtr + "\033[0m");
+}
+
+
+string UnixConsoleText::strikethroughGreen(string textStrPtr)
+{
+    return string("\033[9;32m" + textStrPtr + "\033[0m");
+}
+
+
+string UnixConsoleText::strikethroughYellow(string textStrPtr)
+{
+    return string("\033[9;33m" + textStrPtr + "\033[0m");
+}
+
+
+string UnixConsoleText::strikethroughBlue(string textStrPtr)
+{
+    return string("\033[9;34m" + textStrPtr + "\033[0m");
+}
+
+
+string UnixConsoleText::strikethroughPurple(string textStrPtr)
+{
+    return string("\033[9;35m" + textStrPtr + "\033[0m");
+}
+
+
+string UnixConsoleText::strikethroughCyan(string textStrPtr)
+{
+    return string("\033[9;36m" + textStrPtr + "\033[0m");
+}
+
+
+string UnixConsoleText::strikethroughGray(string textStrPtr)
+{
+    return string("\033[9;37m" + textStrPtr + "\033[0m");
 }

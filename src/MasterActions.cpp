@@ -164,10 +164,11 @@ void MasterActions::handleBuildActionSlot()
 {
     cout << "At MasterActions::handleBuildActionSlot(), assuming that only"
          << " one project has been opened/created" << endl;
-    QProcess* build = new QProcess();
+   /*QProcess* build = new QProcess();
     build->execute(*getNewProjectGuiPtr()->getAbsPathToProjBuildFileStrPtr() );
-    build->waitForFinished();
-    //build
+    build->waitForFinished();*/
+    RProcess* rprocess = new RProcess();
+    rprocess->execute("catkin_make");
     
 
 }

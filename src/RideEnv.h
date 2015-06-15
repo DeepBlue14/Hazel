@@ -50,9 +50,9 @@ class RideEnv
         QStringList* nodeAbsPathStrLstPtr;
         
         /**
-         * Absolute path to the .ridePorject directory of each node.
+         * Absolute path to the .rideProject directory of each node.
          */
-        QString* rideProjDirAbsPathStrPtr;
+        QStringList* rideProjDirAbsPathStrLstPtr;
     
     public:
         RideEnv();
@@ -61,8 +61,9 @@ class RideEnv
         void pushToNodeAbsPathStrLstPtr(QString* nodeAbsPathStr);
         QString* popFromNodeAbsPathStrLstPtr();
         QStringList* getNodeAbsPathStrLstPtr();
-        void setRideProjDirAbsPathStrPtr(QString* rideProjDirAbsPathStrPtr);
-        QString* getRideProjDirAbsPathStrPtr();
+        void pushToRideProjDirAbsPathStrPtr(QString* rideProjDirAbsPathStr);
+        QString* popFromRideProjDirAbsPathStrPtr();
+        QStringList* getRideProjDirAbsPathStrPtr();
         QString* toString();
         ~RideEnv();
 };
