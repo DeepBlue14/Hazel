@@ -5,10 +5,8 @@
  * File Description: Project main function.
  *
  * Created on April 18, 2015, 8:13 PM
- * 
- * 
  */
-
+/*
 #include <QApplication>
 #include "MasterGui.h"
 
@@ -16,8 +14,8 @@
 //#include "NewFileGui.h"
 //#include "File.h"
 //#include <QString>
-//#include "MsgParser.h"
-//#include <string>
+#include "MsgParser.h"
+#include <string>
 
 int main(int argc, char *argv[]) {
     // initialize resources, if needed
@@ -26,8 +24,8 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     // create and show your widgets here
-    MasterGui masterGui;
-    masterGui.show();
+    //MasterGui masterGui;
+    //masterGui.show();
     
     //ParseFontConfigXml parseFontConfigXml;
     //parseFontConfigXml.loadFile();
@@ -41,11 +39,11 @@ int main(int argc, char *argv[]) {
     //                                                 new QString(".cpp") );
     //files.openRdWrFile(tmp);
     
-    //MsgParser msgParser;
-    //string tmp("/opt/ros/indigo/share/sensor_msgs/msg/Image.msg");
-    //msgParser.parse(&tmp);
-    //cout << msgParser.toString() << endl;
+    MsgParser msgParser;
+    string tmp("/opt/ros/indigo/share/sensor_msgs/msg/Image.msg");
+    msgParser.parse(&tmp);
+    cout << msgParser.toString() << endl;
     
-    return app.exec();
-    //return 0;
-}
+    //return app.exec();
+    return 0;
+}*/

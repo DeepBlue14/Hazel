@@ -155,6 +155,24 @@ string* MsgParser::extractComment(string* line)
 }
 
 
+void MsgParser::toTxtFile()
+{
+    cerr << "at MsgParser::toTxtFile(): this method has not yet been implemented" << endl;
+}
+
+
+void MsgParser::toXmlFile()
+{
+    cerr << "at MsgParser::toXmlFile(): this method has not yet been implemented" << endl;
+}
+
+
+void MsgParser::toJsonFile()
+{
+    cerr << "at MsgParser::toJsonFile(): this method has not yet been implemented" << endl;
+}
+
+
 string* MsgParser::toString()
 {
     return currentMsgFileDat->toString();

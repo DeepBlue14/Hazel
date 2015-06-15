@@ -44,6 +44,9 @@ class MsgParser
         string* extractType(string* line);
         string* extractName(string* line);
         string* extractComment(string* line);
+        void toTxtFile();
+        void toXmlFile();
+        void toJsonFile();
         string* toString();
         ~MsgParser();
 };

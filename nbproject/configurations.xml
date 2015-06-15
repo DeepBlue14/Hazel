@@ -10,6 +10,7 @@
           <itemPath>src/Directory.h</itemPath>
           <itemPath>src/ModifyCMakeLists.h</itemPath>
           <itemPath>src/ModifyManifest.h</itemPath>
+          <itemPath>src/MsgDirDat.h</itemPath>
           <itemPath>src/MsgFieldDat.h</itemPath>
           <itemPath>src/MsgFileDat.h</itemPath>
           <itemPath>src/MsgParser.h</itemPath>
@@ -104,6 +105,7 @@
           <itemPath>src/Directory.cpp</itemPath>
           <itemPath>src/ModifyCMakeLists.cpp</itemPath>
           <itemPath>src/ModifyManifest.cpp</itemPath>
+          <itemPath>src/MsgDirDat.cpp</itemPath>
           <itemPath>src/MsgFieldDat.cpp</itemPath>
           <itemPath>src/MsgFileDat.cpp</itemPath>
           <itemPath>src/MsgParser.cpp</itemPath>
@@ -159,6 +161,7 @@
           <itemPath>src/TabGui.cpp</itemPath>
           <itemPath>src/TreeItemIconInit.cpp</itemPath>
         </logicalFolder>
+        <itemPath>src/UnitTests.cpp</itemPath>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
         <itemPath>src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
@@ -278,6 +281,10 @@
       <item path="src/ModifyManifest.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ModifyManifest.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MsgDirDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgDirDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MsgFieldDat.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -438,6 +445,8 @@
       <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/TreeItemIconInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnitTests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -559,6 +568,10 @@
       </item>
       <item path="src/ModifyManifest.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MsgDirDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MsgDirDat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/MsgFieldDat.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MsgFieldDat.h" ex="false" tool="3" flavor2="0">
@@ -718,6 +731,8 @@
       <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/TreeItemIconInit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnitTests.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>

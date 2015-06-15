@@ -1,8 +1,6 @@
 **TODO**
-- add console color to ALL files
 - add javadoc or qtdoc
-- add search (open file)
-- add grep (entire project?, or global?)
+- fix build and clean&build at class MasterActions
 - https://www.youtube.com/watch?v=3QL2J_nxFP0
 
 **Notes**
