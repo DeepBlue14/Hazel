@@ -41,6 +41,7 @@ class OutputGui : public QWidget
         QTabWidget* tabWidgetPtr;
         QTextEdit* outputTePtr;
         QVector<QWidget*> tabPtrVec;
+        QString* outputStrPtr;
         QGridLayout* outerLayout;
         
     private slots:
@@ -50,6 +51,9 @@ class OutputGui : public QWidget
         OutputGui(QWidget* parent = 0);
         void addTab(QWidget* tab, QString* tabName);
         QTabWidget* getTabWidget();
+        void setOutputStrPtr(QString* outputStrPtr);
+        QString* getOutputStrPtr();
+        void dumpToGui(QString* outputStrPtr);
         QString* toString();
         ~OutputGui();
 };

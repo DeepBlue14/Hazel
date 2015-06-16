@@ -19,7 +19,15 @@ void TreeItemIconInit::setIcon(QTreeWidgetItem* child)
     {
         ;
     }
+    else if(child->text(0).contains(QRegExp("\\.cfg$")))
+    {
+        ;
+    }
     else if(child->text(0).contains(QRegExp("\\.lisp$")))
+    {
+        ;
+    }
+    else if(child->text(0).contains(QRegExp("\\.java$")))
     {
         ;
     }

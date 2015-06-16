@@ -39,15 +39,14 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 
 void FileTreeGui::initTree()
 {
-   //--------------------------
-    cout << "FileTreeGui::InitTree()" << endl;
+    //cout << "FileTreeGui::InitTree()" << endl;
     
     QDir* rootDir = new QDir(*getProjectRootAbsPathStrPtr() );
     QFileInfoList filesList = rootDir->entryInfoList();
 
     foreach(QFileInfo fileInfo, filesList)
     {
-        if(fileInfo.fileName() != "." && fileInfo.fileName() != "..")
+        if(fileInfo.fileName() != "." && fileInfo.fileName() != ".." && !fileInfo.fileName().endsWith("~") )
         {
             QTreeWidgetItem* item = new QTreeWidgetItem();
             item->setText(0, fileInfo.fileName());
@@ -72,14 +71,14 @@ void FileTreeGui::initTree()
 
 void FileTreeGui::addChildren(QTreeWidgetItem* item, QString filePath)
 {
-    cout << "FileTreeGui::addChildren(...)" << endl;
+    //cout << "FileTreeGui::addChildren(...)" << endl;
     
     QDir* rootDir = new QDir(filePath);
     QFileInfoList filesList = rootDir->entryInfoList();	  
 
     foreach(QFileInfo fileInfo, filesList)
     {
-        if(fileInfo.fileName() != "." && fileInfo.fileName() != "..")
+        if(fileInfo.fileName() != "." && fileInfo.fileName() != ".." && !fileInfo.fileName().endsWith("~") )
         {
 	    QTreeWidgetItem* child = new QTreeWidgetItem();
 	    child->setText(0,fileInfo.fileName());
@@ -102,7 +101,7 @@ void FileTreeGui::addChildren(QTreeWidgetItem* item, QString filePath)
 
 void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 {
-    cout << "FileTreeGui::handleShowDirectorySlot(...)" << endl;
+    //cout << "FileTreeGui::handleShowDirectorySlot(...)" << endl;
     
     if(item->text(1) != "")
     {
@@ -113,7 +112,7 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 	
 	foreach(QFileInfo fileInfo, filesList)
 	{
-            if(fileInfo.fileName() != "." && fileInfo.fileName() != "..")
+            if(fileInfo.fileName() != "." && fileInfo.fileName() != ".." && !fileInfo.fileName().endsWith("~") )
             {
                 QTreeWidgetItem* child = new QTreeWidgetItem();
                 child->setText(0, fileInfo.fileName() );
@@ -154,7 +153,7 @@ void FileTreeGui::handleShowDirectorySlot(QTreeWidgetItem* item, int column)
 
 void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 {
-    cout << "FileTreeGui::handleRightClickSlot(...)" << endl;
+    //cout << "FileTreeGui::handleRightClickSlot(...)" << endl;
     
     QPoint globalPos = treePtr->mapToGlobal(pos);
     QMenu myMenu;
@@ -174,12 +173,12 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
         QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
                 treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
         lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
-        cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
+        //cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
     else
     {
         //cout << "diretory: " << treePtr->selectedItems().at(0)->text(0).toStdString() << endl;
-        cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
+        //cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
 
 

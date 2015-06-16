@@ -28,7 +28,8 @@ QString* RunPage_1::getRunOptionPtr()
         }
     }
     
-    return new QString("No button was selected");
+    buttonGroupPtr->buttons().at(0)->setChecked(true); // set launch option as default
+    return new QString(buttonGroupPtr->checkedButton()->text() );
 }
 
 

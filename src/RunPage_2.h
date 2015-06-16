@@ -12,6 +12,7 @@
 #include <QLineEdit>
 #include <QFileDialog>
 #include <QPushButton>
+#include <QFormLayout>
 #include <QGridLayout>
 #include <QString>
 
@@ -35,10 +36,13 @@ class RunPage_2 : public QWidget
     Q_OBJECT
             
     private:
-        QLineEdit* launchFileLePtr;
+        QLineEdit* launchFileAbsPathLePtr;
+        QLineEdit* pkgLePtr;
+        QLineEdit* fileLePtr;
         QFileDialog* launchFileDialogPtr;
         QPushButton* selectLaunchFilePbPtr;
         
+        QFormLayout* formLayoutPtr;
         QGridLayout* outerLayoutPtr;
         
         QString* launchFileStrPtr;

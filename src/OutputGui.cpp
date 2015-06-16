@@ -3,10 +3,12 @@
 
 OutputGui::OutputGui(QWidget* parent) : QWidget(parent)
 {
-    outputTePtr = new QTextEdit("output text");
+    outputTePtr = new QTextEdit("");
     outputTePtr->setEnabled(false);
+    outputTePtr->setTextBackgroundColor(Qt::black);
+    outputTePtr->setText("testing");
     tabWidgetPtr = new QTabWidget();
-    tabWidgetPtr->addTab(outputTePtr, "Output");
+    tabWidgetPtr->addTab(outputTePtr, "output text");
     tabWidgetPtr->setTabsClosable(true);
     
     outerLayout = new QGridLayout();
@@ -36,6 +38,22 @@ QString* OutputGui::toString()
     tmp->append("***method stub***");
     
     return tmp;
+}
+
+
+void OutputGui::setOutputStrPtr(QString* outputStrPtr)
+{
+    this->outputStrPtr = outputStrPtr;
+}
+QString* OutputGui::getOutputStrPtr()
+{
+    return outputStrPtr;
+}
+
+
+void OutputGui::dumpToGui(QString* outputStrPtr)
+{
+    outputTePtr->setText(*outputStrPtr);
 }
 
 

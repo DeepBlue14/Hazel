@@ -36,14 +36,15 @@ void RProcess::addHeader(RFile* tmpRideFilePtr)
 
 void RProcess::start(const QString& program, const QStringList& arguments, OpenMode mode)
 {
+    QByteArray programBa = program.toLatin1();
+    const char* programCharPtr = programBa.data();
+    
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
-    tmpRideFilePtr->write("#######################");
-    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
-    tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash\nsource ");
+    addHeader(tmpRideFilePtr);
+    tmpRideFilePtr->write(programCharPtr);
     
     QByteArray tmpByteArray;
     for(size_t i = 0; i < arguments.size(); i++)
@@ -53,40 +54,54 @@ void RProcess::start(const QString& program, const QStringList& arguments, OpenM
         tmpByteArray.clear();
     }
     
-
+    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
     
-    this->start(*tmpFileNameStrPtr, mode);
+    QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
+    QProcess qprocess;
+    qprocess.execute("chmod", stringlst);
+    
+    return qprocess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
 }
 
 
 void RProcess::start(const QString& program, OpenMode mode)
 {
+    QByteArray programBa = program.toLatin1();
+    const char* programCharPtr = programBa.data();
+    
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
-    
-    tmpRideFilePtr->write("#######################");
-    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
-    tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash\nsource ");
-    
+
+    addHeader(tmpRideFilePtr);
+    tmpRideFilePtr->write(programCharPtr);
+    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
+
+    QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
+    QProcess qprocess;
+    qprocess.execute("chmod", stringlst);
     
-    this->start(*tmpFileNameStrPtr, mode);
+    qprocess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
+    QByteArray output = qprocess.readAllStandardOutput();
+    cout << cct::bold("\nOutput: ") << output.data() << endl;
 }
 
 
 int RProcess::execute(const QString& program, const QStringList& arguments)
 {
+    QByteArray programBa = program.toLatin1();
+    const char* programCharPtr = programBa.data();
+    
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
-    tmpRideFilePtr->write("#######################");
-    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
-    tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash\nsource ");
+    addHeader(tmpRideFilePtr);
+    tmpRideFilePtr->write(programCharPtr);
     
     QByteArray tmpByteArray;
     for(size_t i = 0; i < arguments.size(); i++)
@@ -96,57 +111,56 @@ int RProcess::execute(const QString& program, const QStringList& arguments)
         tmpByteArray.clear();
     }
     
-
+    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
     
-    return execute(*tmpFileNameStrPtr);
+    QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
+    QProcess qprocess;
+    qprocess.execute("chmod", stringlst);
+    
+    return qprocess.execute(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
 }
 
 
 int RProcess::execute(const QString& program)
 {
-    cout << cct::yellow("Warning! RProcess::execute(...) is hardcoded!") << endl;
+    QByteArray programBa = program.toLatin1();
+    const char* programCharPtr = programBa.data();
     
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
-    
-    tmpRideFilePtr->write("#######################");
-    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
-    tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash");
-    tmpRideFilePtr->write("\ncd /home/james/catkin_ws");
-    tmpRideFilePtr->write("\npwd");
-    tmpRideFilePtr->write("\nsource ~/.bashrc");
-    tmpRideFilePtr->write("\nsource devel/setup.bash");
-    tmpRideFilePtr->write("\ncatkin_make");
-    //tmpRideFilePtr->write("rm tmpRideFile.bash");
-    tmpRideFilePtr->write("\necho \"finished execution.\"");
 
+    addHeader(tmpRideFilePtr);
+    tmpRideFilePtr->write(programCharPtr);
+    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
-    //------------
+
     QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
     QProcess qprocess;
     qprocess.execute("chmod", stringlst);
-    cout << "HERE (1)" << endl;
-    //------------
-    int rtn = qprocess.execute(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
     
-    cout << "about to return" << endl;
+    int rtn = qprocess.execute(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
+    QByteArray output = qprocess.readAllStandardOutput();
+    cout << cct::bold("\nOutput: ") << output.data() << endl;
+    
     return rtn;
 }
 
 
 bool RProcess::startDetached(const QString& program, const QStringList& arguments)
 {
+    QByteArray programBa = program.toLatin1();
+    const char* programCharPtr = programBa.data();
+    
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
-    tmpRideFilePtr->write("#######################");
-    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
-    tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash\nsource ");
+    addHeader(tmpRideFilePtr);
+    tmpRideFilePtr->write(programCharPtr);
     
     QByteArray tmpByteArray;
     for(size_t i = 0; i < arguments.size(); i++)
@@ -156,10 +170,15 @@ bool RProcess::startDetached(const QString& program, const QStringList& argument
         tmpByteArray.clear();
     }
     
-
+    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
     
-    return startDetached(*tmpFileNameStrPtr);
+    QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
+    QProcess qprocess;
+    qprocess.execute("chmod", stringlst);
+    
+    return qprocess.startDetached(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
 }
 
 
@@ -191,7 +210,8 @@ bool RProcess::startDetached(const QString& program, const QStringList& argument
     QProcess qprocess;
     qprocess.execute("chmod", stringlst);
     
-    return qprocess.startDetached(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
+    // Don't run this->startDetached; this would result in infinite recursion!!!
+    return qprocess.startDetached(*tmpFileNameStrPtr, QStringList(), workingDirectory, pid);
 }
 
 

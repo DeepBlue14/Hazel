@@ -163,7 +163,8 @@ void MasterActions::handleSetProjectConfigActionSlot()
 void MasterActions::handleBuildActionSlot()
 {
     RProcess* rprocess = new RProcess();
-    rprocess->startDetached("catkin_make");
+    rprocess->startDetached("catkin_make"); // pass output tab to rprocess?
+    cout << "# of child tabs: " << southTabWidgetPtr->children().size() << endl;
 }
 
 
@@ -186,7 +187,10 @@ void MasterActions::handleConfigForRunActionSlot()
 
 void MasterActions::handleRunActionSlot()
 {
-    ;
+    RProcess* rprocess = new RProcess();
+    
+    //runGuiPtr->getLaunchFilePathStrPtr();
+    //rprocess->startDetached("roslaunch")
 }
 
 

@@ -3,15 +3,23 @@
 
 RunPage_2::RunPage_2(QWidget* parent) : QWidget(parent)
 {
-    launchFileLePtr = new QLineEdit();
+    launchFileAbsPathLePtr = new QLineEdit();
+    pkgLePtr = new QLineEdit();
+    pkgLePtr->setEnabled(false);
+    fileLePtr = new QLineEdit();
+    fileLePtr->setEnabled(false);
     launchFileDialogPtr = new QFileDialog();
     selectLaunchFilePbPtr = new QPushButton("Select...");
         
     connect(selectLaunchFilePbPtr, SIGNAL(released()), this, SLOT(handleSelectLaunchFilePbPtrSlot()));
     
+    formLayoutPtr = new QFormLayout();
+    formLayoutPtr->addRow(tr("&Pkg"), pkgLePtr);
+    formLayoutPtr->addRow(tr("&File"), fileLePtr);
     outerLayoutPtr = new QGridLayout();
-    outerLayoutPtr->addWidget(launchFileLePtr, 0, 0);
+    outerLayoutPtr->addWidget(launchFileAbsPathLePtr, 0, 0);
     outerLayoutPtr->addWidget(selectLaunchFilePbPtr, 0, 1);
+    outerLayoutPtr->addLayout(formLayoutPtr, 1, 0/*, Qt::AlignLeft*/);
     
     this->setLayout(outerLayoutPtr);
 }
@@ -19,14 +27,22 @@ RunPage_2::RunPage_2(QWidget* parent) : QWidget(parent)
 
 void RunPage_2::handleSelectLaunchFilePbPtrSlot()
 {
-    QString fileName = launchFileDialogPtr->getOpenFileName(this, tr("&Open Directory"), "/home");
-    launchFileLePtr->setText(fileName);
+    QString fileAbsPathStr = launchFileDialogPtr->getOpenFileName(this, tr("&Open Directory"), "/home");
+    launchFileAbsPathLePtr->setText(fileAbsPathStr);
+    
+   QString fileName(fileAbsPathStr.right(fileAbsPathStr.size() - (fileAbsPathStr.lastIndexOf("/") + 1)) );
+   QString pkgName = fileAbsPathStr.left(fileAbsPathStr.size() - (fileAbsPathStr.size() - (fileAbsPathStr.lastIndexOf("/"))));
+   pkgName = pkgName.left(pkgName.size() - (pkgName.size() - (pkgName.lastIndexOf("/"))));
+   pkgName = pkgName.right(pkgName.size() - (pkgName.lastIndexOf("/") + 1));
+
+    pkgLePtr->setText(pkgName);
+    fileLePtr->setText(fileName);
 }
 
 
 void RunPage_2::setLaunchFileStrPtr()
 {
-    launchFileStrPtr = new QString(launchFileLePtr->text() );
+    launchFileStrPtr = new QString(launchFileAbsPathLePtr->text() );
 }
 
 
