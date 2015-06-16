@@ -18,6 +18,8 @@
 #include <QPushButton>
 #include <QTabWidget>
 #include <QFileDialog>
+#include <QFont>
+#include <QFontMetrics>
 #include <QCompleter>
 #include <QAbstractItemModel>
 #include <QTextEdit>

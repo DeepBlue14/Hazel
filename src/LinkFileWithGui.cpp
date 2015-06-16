@@ -32,6 +32,10 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNe
     editor = new FileGui();
     editor->setFont(font);
     
+    int tabSize = 4;
+    QFontMetrics metrics(font);
+    editor->setTabStopWidth(tabSize * metrics.width(' '));
+    
     //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     completer = new QCompleter();

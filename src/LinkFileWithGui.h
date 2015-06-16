@@ -15,6 +15,7 @@
 #include <QApplication>
 #include <QTabWidget>
 #include <QFont>
+#include <QFontMetrics>
 #include <QCompleter>
 #include <QAbstractItemModel>
 

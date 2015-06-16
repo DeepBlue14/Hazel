@@ -669,6 +669,7 @@ src/moc/moc_CentralGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qguiapplication.h \
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -1340,6 +1341,7 @@ src/moc/moc_FileTreeGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -2011,6 +2013,8 @@ src/moc/moc_MasterActions.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -2273,7 +2277,6 @@ src/moc/moc_MasterActions.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/NewProjectPage_1.h \
@@ -2459,6 +2462,8 @@ src/moc/moc_MasterGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -2713,7 +2718,6 @@ src/moc/moc_MasterGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/NewProjectPage_1.h \
@@ -2896,6 +2900,8 @@ src/moc/moc_MasterMenus.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -3156,7 +3162,6 @@ src/moc/moc_MasterMenus.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/NewProjectPage_1.h \
@@ -3406,6 +3411,7 @@ src/moc/moc_MasterToolBars.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
 		src/Highlighter.h \
 		/usr/include/qt5/QtGui/QtGui \
@@ -3906,6 +3912,8 @@ src/moc/moc_NewFileGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -4173,7 +4181,6 @@ src/moc/moc_NewFileGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewFileGui.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) $(INCPATH) -I/usr/include/c++/4.8 -I/usr/include/x86_64-linux-gnu/c++/4.8 -I/usr/include/c++/4.8/backward -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include src/NewFileGui.h -o src/moc/moc_NewFileGui.cpp
 
@@ -4980,6 +4987,7 @@ src/moc/moc_NewProjectGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
 		src/Highlighter.h \
 		/usr/include/qt5/QtGui/QtGui \
@@ -5937,6 +5945,7 @@ src/moc/moc_OpenProjectGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -8045,6 +8054,7 @@ build/Debug/GNU-Linux-x86/CentralGui.o: src/CentralGui.cpp src/CentralGui.h \
 		/usr/include/qt5/QtGui/qguiapplication.h \
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -8717,6 +8727,7 @@ build/Debug/GNU-Linux-x86/FileTreeGui.o: src/FileTreeGui.cpp src/FileTreeGui.h \
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -9514,6 +9525,7 @@ build/Debug/GNU-Linux-x86/LinkFileWithGui.o: src/LinkFileWithGui.cpp src/LinkFil
 		/usr/include/qt5/QtWidgets/qtabwidget.h \
 		/usr/include/qt5/QtGui/qicon.h \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/qabstractitemmodel.h \
@@ -9899,6 +9911,8 @@ build/Debug/GNU-Linux-x86/MasterActions.o: src/MasterActions.cpp src/MasterActio
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -10161,7 +10175,6 @@ build/Debug/GNU-Linux-x86/MasterActions.o: src/MasterActions.cpp src/MasterActio
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/NewProjectPage_1.h \
@@ -10347,6 +10360,8 @@ build/Debug/GNU-Linux-x86/MasterGui.o: src/MasterGui.cpp src/MasterGui.h \
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -10601,7 +10616,6 @@ build/Debug/GNU-Linux-x86/MasterGui.o: src/MasterGui.cpp src/MasterGui.h \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/NewProjectPage_1.h \
@@ -10784,6 +10798,8 @@ build/Debug/GNU-Linux-x86/MasterMenus.o: src/MasterMenus.cpp src/MasterMenus.h \
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -11044,7 +11060,6 @@ build/Debug/GNU-Linux-x86/MasterMenus.o: src/MasterMenus.cpp src/MasterMenus.h \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/NewProjectPage_1.h \
@@ -11411,6 +11426,7 @@ build/Debug/GNU-Linux-x86/MasterToolBars.o: src/MasterToolBars.cpp src/MasterToo
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
 		src/Highlighter.h \
 		/usr/include/qt5/QtGui/QtGui \
@@ -12216,6 +12232,8 @@ build/Debug/GNU-Linux-x86/NewFileGui.o: src/NewFileGui.cpp src/NewFileGui.h \
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -12482,8 +12500,7 @@ build/Debug/GNU-Linux-x86/NewFileGui.o: src/NewFileGui.cpp src/NewFileGui.h \
 		src/TreeItemIconInit.h \
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
-		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont
+		src/LinkFileWithGui.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/NewFileGui.o src/NewFileGui.cpp
 
 build/Debug/GNU-Linux-x86/NewFilePage_1.o: src/NewFilePage_1.cpp src/NewFilePage_1.h \
@@ -13290,6 +13307,7 @@ build/Debug/GNU-Linux-x86/NewProjectGui.o: src/NewProjectGui.cpp src/NewProjectG
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
 		src/Highlighter.h \
 		/usr/include/qt5/QtGui/QtGui \
@@ -14247,6 +14265,7 @@ build/Debug/GNU-Linux-x86/OpenProjectGui.o: src/OpenProjectGui.cpp src/OpenProje
 		/usr/include/qt5/QtGui/qinputmethod.h \
 		/usr/include/qt5/QtWidgets/QTabWidget \
 		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -18397,6 +18416,8 @@ build/Debug/GNU-Linux-x86/main.o: src/main.cpp /usr/include/qt5/QtWidgets/QAppli
 		/usr/include/qt5/QtCore/qdir.h \
 		/usr/include/qt5/QtCore/qfileinfo.h \
 		/usr/include/qt5/QtWidgets/qdialog.h \
+		/usr/include/qt5/QtGui/QFont \
+		/usr/include/qt5/QtGui/QFontMetrics \
 		/usr/include/qt5/QtWidgets/QCompleter \
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
@@ -18644,7 +18665,6 @@ build/Debug/GNU-Linux-x86/main.o: src/main.cpp /usr/include/qt5/QtWidgets/QAppli
 		/usr/include/qt5/QtWidgets/QTreeWidgetItem \
 		/usr/include/qt5/QtGui/QIcon \
 		src/LinkFileWithGui.h \
-		/usr/include/qt5/QtGui/QFont \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QHBoxLayout \
 		src/NewProjectPage_1.h \
