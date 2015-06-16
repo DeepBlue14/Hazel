@@ -17,14 +17,20 @@ QString* RProcess::genTmpFileNameStrPtr()
 }
 
 
-void RProcess::addHeader(RFile* tmpRideFilePtr, QString* absPathToRosWs)
+void RProcess::addHeader(RFile* tmpRideFilePtr)
 {
+    cout << cct::yellow("Hardcoded path to catkin_ws at: RProcess::addHeader(...)");
+    RosEnv::absPathToRosWs = "/home/james/catkin_ws";
+    QByteArray tmpBa = RosEnv::absPathToRosWs.toLatin1();
+
     tmpRideFilePtr->write("#!/bin/bash");
     tmpRideFilePtr->write("\n\n#######################");
     tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
     tmpRideFilePtr->write("\n#######################");
-    QByteArray tmpBa = absPathToRosWs->toLatin1();
-    tmpRideFilePtr->write("\n\nsource "  + *tmpBa.data() );
+    tmpRideFilePtr->write("\n\ncd ");
+    tmpRideFilePtr->write(tmpBa.data());
+    tmpRideFilePtr->write("\nsource ~/.bashrc");
+    tmpRideFilePtr->write("\nsource devel/setup.bash\n");
 }
 
 
@@ -159,14 +165,15 @@ bool RProcess::startDetached(const QString& program, const QStringList& argument
 
 bool RProcess::startDetached(const QString& program, const QStringList& arguments, const QString& workingDirectory, qint64* pid)
 {
+    QByteArray programBa = program.toLatin1();
+    const char* programCharPtr = programBa.data();
+    
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
     
-    tmpRideFilePtr->write("#######################");
-    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
-    tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash\nsource ");
+    addHeader(tmpRideFilePtr);
+    tmpRideFilePtr->write(programCharPtr);
     
     QByteArray tmpByteArray;
     for(size_t i = 0; i < arguments.size(); i++)
@@ -176,10 +183,15 @@ bool RProcess::startDetached(const QString& program, const QStringList& argument
         tmpByteArray.clear();
     }
     
-
+    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
     
-    return true; // *** METHOD STUB ***
+    QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
+    QProcess qprocess;
+    qprocess.execute("chmod", stringlst);
+    
+    return qprocess.startDetached(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
 }
 
 
@@ -191,29 +203,20 @@ bool RProcess::startDetached(const QString& program)
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
-    
-    tmpRideFilePtr->write("#!/bin/bash");
-    tmpRideFilePtr->write("\n\n#######################");
-    tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
-    tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\ncd /home/james/catkin_ws");
-    tmpRideFilePtr->write("\npwd");
-    tmpRideFilePtr->write("\nsource ~/.bashrc");
-    tmpRideFilePtr->write("\nsource devel/setup.bash\n");
+
+    addHeader(tmpRideFilePtr);
     tmpRideFilePtr->write(programCharPtr);
     tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
     tmpRideFilePtr->write("\necho \"Finished execution.\"");
-
     tmpRideFilePtr->close();
-    //------------
+
     QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
     QProcess qprocess;
     qprocess.execute("chmod", stringlst);
-    cout << "HERE (1)" << endl;
-    //------------
-    int rtn = qprocess.execute(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
     
-    cout << "about to return" << endl;
+    int rtn = qprocess.startDetached(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
+    QByteArray output = qprocess.readAllStandardOutput();
+    cout << cct::bold("\nOutput: ") << output.data() << endl;
     
     return rtn;
 }

@@ -27,6 +27,7 @@
 #include <iostream>
 
 #include "RFile.h"
+#include "RosEnv.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -46,8 +47,8 @@ class RProcess : public QProcess
         static QStringList* curInUseFileNmStrLstPtr;
         static QList<int>* numsInUseLstPtr;
 
-        QString* genTmpFileNameStrPtr();
-        void addHeader(RFile* tmpRideFilePtr, QString* absPathToRosWs);
+        static QString* genTmpFileNameStrPtr();
+        static void addHeader(RFile* tmpRideFilePtr);
         
     public:
         RProcess();

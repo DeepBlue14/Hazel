@@ -9,7 +9,7 @@
  *
  * Created on June 15, 2015, 4:00 PM
  */
-///*
+/*
 #include <QApplication>
 #include <QString>
 #include <QProcess>
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     cout << "Select an option:"
          << "\n\t1) Regular run"
          << "\n\t2) Test RProcess"
-         << "\n\t3) xxxx"
+         << "\n\t3) Test QProcess"
          << "\n\t4) Font XML file parsing"
          << "\n\t5) Scout msg parsing"
          << cct::bold("\nENTER: ");
@@ -56,6 +56,7 @@ int main(int argc, char *argv[])
     
     MasterGui masterGui;
     RProcess* rprocess = new RProcess();
+    QProcess* qprocess = new QProcess();
     ParseFontConfigXml parseFontConfigXml;
     MsgParser msgParser;
     string tmp("/opt/ros/indigo/share/sensor_msgs/msg/Image.msg");
@@ -72,7 +73,11 @@ int main(int argc, char *argv[])
             cout << "Finished RProcess test." << endl;
             break;
         case 3:
-            cout << "case 3" << endl;
+            qprocess->execute("#!/bin/bash");
+            qprocess->execute("source ~/.bashrc");
+            qprocess->execute("source ~/catkin_ws/devel/setup.bash");
+            qprocess->execute("cd ~/catkin_ws");
+            qprocess->execute("catkin_make");
             break;
         case 4:
             parseFontConfigXml.loadFile();
@@ -90,4 +95,4 @@ int main(int argc, char *argv[])
     
     return EXIT_SUCCESS;
 } // End of main()
-//*/
+*/
