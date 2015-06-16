@@ -99,6 +99,7 @@ int RProcess::execute(const QString& program, const QStringList& arguments)
 
 int RProcess::execute(const QString& program)
 {
+    cout << cct::yellow("Warning! RProcess::execute(...) is hardcoded!") << endl;
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
@@ -106,11 +107,18 @@ int RProcess::execute(const QString& program)
     tmpRideFilePtr->write("#######################");
     tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
     tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash\nsource ");
+    tmpRideFilePtr->write("\n\n#!/bin/bash");
+    tmpRideFilePtr->write("\ncd /home/james/catkin_ws");
+    tmpRideFilePtr->write("\nsource devel/setup.bash");
+    tmpRideFilePtr->write("\ncatkin_make");
+    //tmpRideFilePtr->write("rm tmpRideFile.bash");
+    tmpRideFilePtr->write("\necho \"finished execution.\"");
 
     tmpRideFilePtr->close();
     
-    return execute(*tmpFileNameStrPtr);
+    int rtn = execute(*tmpFileNameStrPtr);
+    cout << "about to return" << endl;
+    return rtn;
 }
 
 
@@ -175,7 +183,9 @@ bool RProcess::startDetached(const QString& program)
     tmpRideFilePtr->write("#######################");
     tmpRideFilePtr->write("\n# TEMPORARY RIDE FILE #");
     tmpRideFilePtr->write("\n#######################");
-    tmpRideFilePtr->write("\n\n#!/bin/bash\nsource ");
+    tmpRideFilePtr->write("\n\n#!/bin/bash");
+    tmpRideFilePtr->write("\n\ncd /home/james/catkin_ws");
+    tmpRideFilePtr->write("\ncatkin_make");
 
     tmpRideFilePtr->close();
     

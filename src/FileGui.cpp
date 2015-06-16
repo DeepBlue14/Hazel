@@ -135,6 +135,10 @@ void FileGui::keyPressEvent(QKeyEvent* e)
         tc.insertText("\n}");
         tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
         setTextCursor(tc);
+        
+        tc.insertText("    \n");
+        tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
+        setTextCursor(tc);
      }
      //------------------------------------------
         

@@ -168,9 +168,10 @@ void MasterActions::handleBuildActionSlot()
     build->execute(*getNewProjectGuiPtr()->getAbsPathToProjBuildFileStrPtr() );
     build->waitForFinished();*/
     RProcess* rprocess = new RProcess();
-    rprocess->execute("catkin_make");
+    //rprocess->execute("catkin_make");
+    rprocess->startDetached("catkin_make");
     
-
+    cout << "finished" << endl;
 }
 
 

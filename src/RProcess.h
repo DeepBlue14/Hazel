@@ -22,6 +22,7 @@
 #include <QStringList>
 #include <QList>
 #include <QString>
+#include <QDebug>
 
 #include <iostream>
 

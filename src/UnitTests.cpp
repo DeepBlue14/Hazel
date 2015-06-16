@@ -9,7 +9,7 @@
  *
  * Created on June 15, 2015, 4:00 PM
  */
-
+/*
 #include <QApplication>
 #include <QString>
 
@@ -85,3 +85,4 @@ int main(int argc, char *argv[])
     
     return EXIT_SUCCESS;
 } // End of main()
+*/
