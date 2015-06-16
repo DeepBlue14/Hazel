@@ -6,7 +6,7 @@
  *
  * Created on April 18, 2015, 8:13 PM
  */
-
+/*
 #include <QApplication>
 #include "MasterGui.h"
 
@@ -23,3 +23,4 @@ int main(int argc, char *argv[])
     
     return app.exec();
 }
+*/

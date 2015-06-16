@@ -9,9 +9,10 @@
  *
  * Created on June 15, 2015, 4:00 PM
  */
-/*
+///*
 #include <QApplication>
 #include <QString>
+#include <QProcess>
 
 #include <string>
 #include <iostream>
@@ -21,6 +22,7 @@
 #include "ParseFontConfigXml.h"
 #include "NewFileGui.h"
 #include "RFile.h"
+#include "RProcess.h"
 #include "MsgParser.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
@@ -44,7 +46,7 @@ int main(int argc, char *argv[])
     int choiceInt;
     cout << "Select an option:"
          << "\n\t1) Regular run"
-         << "\n\t2) xxxx"
+         << "\n\t2) Test RProcess"
          << "\n\t3) xxxx"
          << "\n\t4) Font XML file parsing"
          << "\n\t5) Scout msg parsing"
@@ -53,6 +55,7 @@ int main(int argc, char *argv[])
     
     
     MasterGui masterGui;
+    RProcess* rprocess = new RProcess();
     ParseFontConfigXml parseFontConfigXml;
     MsgParser msgParser;
     string tmp("/opt/ros/indigo/share/sensor_msgs/msg/Image.msg");
@@ -64,7 +67,9 @@ int main(int argc, char *argv[])
             return app.exec();
             break;
         case 2:
-            cout << "case 2" << endl;
+            cout << "Beginning RProcess test." << endl;
+            rprocess->startDetached("catkin_make");
+            cout << "Finished RProcess test." << endl;
             break;
         case 3:
             cout << "case 3" << endl;
@@ -85,4 +90,4 @@ int main(int argc, char *argv[])
     
     return EXIT_SUCCESS;
 } // End of main()
-*/
+//*/
