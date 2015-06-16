@@ -400,6 +400,15 @@ CentralGui* MasterGui::getCentralGui()
 }
 
 
+QString* MasterGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 MasterGui::~MasterGui()
 {
     ;

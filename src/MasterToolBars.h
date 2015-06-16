@@ -12,6 +12,7 @@
 
 #include <QWidget>
 #include <QToolBar>
+#include <QString>
 
 #include <iostream>
 
@@ -50,6 +51,7 @@ class MasterToolBars : public QWidget
         void initSouthGroupOneToolBar(QToolBar* toolbarPtr);
         void initEastGroupOneToolBar(QToolBar* toolbarPtr);
         void initWestGroupOneToolBar(QToolBar* toolbarPtr);
+        QString* toString();
         ~MasterToolBars();
             
 };

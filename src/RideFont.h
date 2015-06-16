@@ -11,6 +11,7 @@
 #define	RIDE_FONT_H
 
 #include <QFont>
+#include <QString>
 
 #include <iostream>
 

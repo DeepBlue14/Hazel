@@ -19,6 +19,15 @@ QString* SearchWidget::getSearchInputStrPtr()
 }
 
 
+QString* SearchWidget::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 SearchWidget::~SearchWidget()
 {
     ;

@@ -12,6 +12,7 @@
 #include <QSyntaxHighlighter>
 #include <QHash>
 #include <QTextCharFormat>
+#include <QString>
 
 #include <iostream>
 
@@ -57,6 +58,8 @@ protected:
      
 public:
     Highlighter(QTextDocument* parent = 0);
+    QString* toString();
+    ~Highlighter();
 };
 
 #endif /* HIGHLIGHTER_H */

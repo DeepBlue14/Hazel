@@ -68,6 +68,7 @@ class FileGui : public QPlainTextEdit
         void lineNumberAreaPaintEvent(QPaintEvent* event);
         int lineNumberAreaWidth();
         void resizeEvent(QResizeEvent* event);
+        QString* toString();
         ~FileGui();
         
 };

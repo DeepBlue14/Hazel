@@ -10,6 +10,7 @@
 
 #include <QWidget>
 #include <QMenu>
+#include <QString>
 
 #include <iostream>
 
@@ -54,6 +55,7 @@ class MasterMenus : public QWidget
         void initToolsMenuPtr(QMenu* menu);
         void initWindowMenuPtr(QMenu* menu);
         void initHelpMenuPtr(QMenu* menu);
+        QString* toString();
         ~MasterMenus();
             
 };

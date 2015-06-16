@@ -263,6 +263,15 @@ void FileGui::lineNumberAreaPaintEvent(QPaintEvent* event)
 }
 
 
+QString* FileGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 FileGui::~FileGui()
 {
     ;

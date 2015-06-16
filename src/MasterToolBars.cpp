@@ -67,6 +67,15 @@ void MasterToolBars::initWestGroupOneToolBar(QToolBar* toolbarPtr)
 }
 
 
+QString* MasterToolBars::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 MasterToolBars::~MasterToolBars()
 {
     ;

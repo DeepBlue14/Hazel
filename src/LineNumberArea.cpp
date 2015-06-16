@@ -62,6 +62,15 @@ void LineNumberArea::paintEvent(QPaintEvent* event)
 }
 
 
+QString* LineNumberArea::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 LineNumberArea::~LineNumberArea()
 {
     ;

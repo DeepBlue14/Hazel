@@ -16,6 +16,7 @@
 #include <QTabWidget>
 #include <QPushButton>
 #include <QGridLayout>
+#include <QString>
 
 #include <iostream>
 
@@ -54,6 +55,7 @@ class NavigatorGui : public QWidget
         void loadData();
         void setWestTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
         QTabWidget* getWestTabWidgetPtr();
+        QString* toString();
         ~NavigatorGui();
 };
 

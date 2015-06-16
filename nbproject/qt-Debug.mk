@@ -615,6 +615,7 @@ src/moc/moc_CentralGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qmenu.h \
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtCore/QString \
 		src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
@@ -623,7 +624,6 @@ src/moc/moc_CentralGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/FileTreeGui.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QSplitter \
 		/usr/include/qt5/QtWidgets/qsplitter.h \
 		/usr/include/qt5/QtWidgets/QTreeWidget \
@@ -1857,6 +1857,7 @@ src/moc/moc_Highlighter.cpp: /usr/include/qt5/QtGui/QtGui \
 		/usr/include/qt5/QtGui/QSyntaxHighlighter \
 		/usr/include/qt5/QtCore/QHash \
 		/usr/include/qt5/QtGui/QTextCharFormat \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/Highlighter.h
@@ -1979,8 +1980,8 @@ src/moc/moc_MasterActions.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/qprocess.h \
 		/usr/include/qt5/QtCore/QProcessEnvironment \
 		/usr/include/qt5/QtCore/QDebug \
-		src/NewFileGui.h \
 		/usr/include/qt5/QtCore/QString \
+		src/NewFileGui.h \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
 		/usr/include/qt5/QtWidgets/qframe.h \
@@ -2429,13 +2430,13 @@ src/moc/moc_MasterGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QFile \
+		/usr/include/qt5/QtCore/QString \
 		src/MasterActions.h \
 		/usr/include/qt5/QtCore/QProcess \
 		/usr/include/qt5/QtCore/qprocess.h \
 		/usr/include/qt5/QtCore/QProcessEnvironment \
 		/usr/include/qt5/QtCore/QDebug \
 		src/NewFileGui.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
 		/usr/include/qt5/QtWidgets/QComboBox \
@@ -2859,6 +2860,7 @@ src/moc/moc_MasterMenus.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qicon.h \
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtCore/QString \
 		src/MasterActions.h \
 		/usr/include/qt5/QtWidgets/QAction \
 		/usr/include/qt5/QtCore/QFile \
@@ -2867,7 +2869,6 @@ src/moc/moc_MasterMenus.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/QProcessEnvironment \
 		/usr/include/qt5/QtCore/QDebug \
 		src/NewFileGui.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
 		/usr/include/qt5/QtWidgets/qframe.h \
@@ -3291,6 +3292,7 @@ src/moc/moc_MasterToolBars.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
 		/usr/include/qt5/QtWidgets/QToolBar \
 		/usr/include/qt5/QtWidgets/qtoolbar.h \
+		/usr/include/qt5/QtCore/QString \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
@@ -3321,7 +3323,6 @@ src/moc/moc_MasterToolBars.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/QIcon \
 		/usr/include/qt5/QtCore/QProcess \
 		/usr/include/qt5/QtCore/qprocess.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QGridLayout \
 		/usr/include/qt5/QtWidgets/qgridlayout.h \
 		/usr/include/qt5/QtWidgets/qlayout.h \
@@ -3757,6 +3758,7 @@ src/moc/moc_NavigatorGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/SearchWidget.h \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
@@ -3764,7 +3766,6 @@ src/moc/moc_NavigatorGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtGui/qtextoption.h \
-		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/NavigatorGui.h
@@ -6271,6 +6272,7 @@ src/moc/moc_OpeningGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/OpeningGui.h
@@ -6402,6 +6404,7 @@ src/moc/moc_OutputGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qtabwidget.h \
 		/usr/include/qt5/QtGui/qicon.h \
 		/usr/include/qt5/QtCore/QVector \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/OutputGui.h
@@ -6954,6 +6957,7 @@ src/moc/moc_RunPage_2.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/RunPage_2.h
@@ -7216,6 +7220,7 @@ src/moc/moc_ScoutGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtCore/qfiledevice.h \
 		/usr/include/qt5/QtGui/qvector2d.h \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/ScoutGui.h
@@ -7462,6 +7467,7 @@ src/moc/moc_TabGui.cpp: /usr/include/qt5/QtWidgets/QWidget \
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
@@ -8000,6 +8006,7 @@ build/Debug/GNU-Linux-x86/CentralGui.o: src/CentralGui.cpp src/CentralGui.h \
 		/usr/include/qt5/QtWidgets/qmenu.h \
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtCore/QString \
 		src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
@@ -8008,7 +8015,6 @@ build/Debug/GNU-Linux-x86/CentralGui.o: src/CentralGui.cpp src/CentralGui.h \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
 		src/FileTreeGui.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QSplitter \
 		/usr/include/qt5/QtWidgets/qsplitter.h \
 		/usr/include/qt5/QtWidgets/QTreeWidget \
@@ -8554,7 +8560,8 @@ build/Debug/GNU-Linux-x86/FileGui.o: src/FileGui.cpp src/FileGui.h \
 		/usr/include/qt5/QtCore/QSize \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h \
-		src/LineNumberArea.h
+		src/LineNumberArea.h \
+		/usr/include/qt5/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/FileGui.o src/FileGui.cpp
 
 build/Debug/GNU-Linux-x86/FileTreeGui.o: src/FileTreeGui.cpp src/FileTreeGui.h \
@@ -9243,6 +9250,7 @@ build/Debug/GNU-Linux-x86/Highlighter.o: src/Highlighter.cpp src/Highlighter.h \
 		/usr/include/qt5/QtGui/QSyntaxHighlighter \
 		/usr/include/qt5/QtCore/QHash \
 		/usr/include/qt5/QtGui/QTextCharFormat \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/Highlighter.o src/Highlighter.cpp
@@ -9358,6 +9366,7 @@ build/Debug/GNU-Linux-x86/LineNumberArea.o: src/LineNumberArea.cpp src/LineNumbe
 		/usr/include/qt5/QtGui/qtouchdevice.h \
 		/usr/include/qt5/QtGui/QPaintEvent \
 		/usr/include/qt5/QtCore/QSize \
+		/usr/include/qt5/QtCore/QString \
 		src/FileGui.h \
 		/usr/include/qt5/QtWidgets/QTextEdit \
 		/usr/include/qt5/QtWidgets/qtextedit.h \
@@ -9530,6 +9539,7 @@ build/Debug/GNU-Linux-x86/LinkFileWithGui.o: src/LinkFileWithGui.cpp src/LinkFil
 		/usr/include/qt5/QtWidgets/qcompleter.h \
 		/usr/include/qt5/QtCore/qabstractitemmodel.h \
 		/usr/include/qt5/QtCore/QAbstractItemModel \
+		/usr/include/qt5/QtCore/QString \
 		src/FileGui.h \
 		/usr/include/qt5/QtWidgets/QTextEdit \
 		/usr/include/qt5/QtWidgets/qtextedit.h \
@@ -9753,7 +9763,6 @@ build/Debug/GNU-Linux-x86/LinkFileWithGui.o: src/LinkFileWithGui.cpp src/LinkFil
 		/usr/include/qt5/QtCore/QFile \
 		/usr/include/qt5/QtCore/QDir \
 		/usr/include/qt5/QtCore/QByteArray \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtCore/QVector \
 		src/SaveAll.h \
 		/usr/include/qt5/QtCore/QTextStream
@@ -9877,8 +9886,8 @@ build/Debug/GNU-Linux-x86/MasterActions.o: src/MasterActions.cpp src/MasterActio
 		/usr/include/qt5/QtCore/qprocess.h \
 		/usr/include/qt5/QtCore/QProcessEnvironment \
 		/usr/include/qt5/QtCore/QDebug \
-		src/NewFileGui.h \
 		/usr/include/qt5/QtCore/QString \
+		src/NewFileGui.h \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
 		/usr/include/qt5/QtWidgets/qframe.h \
@@ -10327,13 +10336,13 @@ build/Debug/GNU-Linux-x86/MasterGui.o: src/MasterGui.cpp src/MasterGui.h \
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QFile \
+		/usr/include/qt5/QtCore/QString \
 		src/MasterActions.h \
 		/usr/include/qt5/QtCore/QProcess \
 		/usr/include/qt5/QtCore/qprocess.h \
 		/usr/include/qt5/QtCore/QProcessEnvironment \
 		/usr/include/qt5/QtCore/QDebug \
 		src/NewFileGui.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
 		/usr/include/qt5/QtWidgets/QComboBox \
@@ -10757,6 +10766,7 @@ build/Debug/GNU-Linux-x86/MasterMenus.o: src/MasterMenus.cpp src/MasterMenus.h \
 		/usr/include/qt5/QtGui/qicon.h \
 		/usr/include/qt5/QtWidgets/qaction.h \
 		/usr/include/qt5/QtWidgets/qactiongroup.h \
+		/usr/include/qt5/QtCore/QString \
 		src/MasterActions.h \
 		/usr/include/qt5/QtWidgets/QAction \
 		/usr/include/qt5/QtCore/QFile \
@@ -10765,7 +10775,6 @@ build/Debug/GNU-Linux-x86/MasterMenus.o: src/MasterMenus.cpp src/MasterMenus.h \
 		/usr/include/qt5/QtCore/QProcessEnvironment \
 		/usr/include/qt5/QtCore/QDebug \
 		src/NewFileGui.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
 		/usr/include/qt5/QtWidgets/qframe.h \
@@ -11191,6 +11200,7 @@ build/Debug/GNU-Linux-x86/MasterStatusBar.o: src/MasterStatusBar.cpp src/MasterS
 		/usr/include/qt5/QtWidgets/QProgressBar \
 		/usr/include/qt5/QtWidgets/qprogressbar.h \
 		/usr/include/qt5/QtWidgets/qframe.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/MasterStatusBar.o src/MasterStatusBar.cpp
@@ -11306,6 +11316,7 @@ build/Debug/GNU-Linux-x86/MasterToolBars.o: src/MasterToolBars.cpp src/MasterToo
 		/usr/include/qt5/QtGui/qtouchdevice.h \
 		/usr/include/qt5/QtWidgets/QToolBar \
 		/usr/include/qt5/QtWidgets/qtoolbar.h \
+		/usr/include/qt5/QtCore/QString \
 		src/NewProjectGui.h \
 		/usr/include/qt5/QtWidgets/QListWidget \
 		/usr/include/qt5/QtWidgets/qlistwidget.h \
@@ -11336,7 +11347,6 @@ build/Debug/GNU-Linux-x86/MasterToolBars.o: src/MasterToolBars.cpp src/MasterToo
 		/usr/include/qt5/QtGui/QIcon \
 		/usr/include/qt5/QtCore/QProcess \
 		/usr/include/qt5/QtCore/qprocess.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QGridLayout \
 		/usr/include/qt5/QtWidgets/qgridlayout.h \
 		/usr/include/qt5/QtWidgets/qlayout.h \
@@ -12077,6 +12087,7 @@ build/Debug/GNU-Linux-x86/NavigatorGui.o: src/NavigatorGui.cpp src/NavigatorGui.
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/SearchWidget.h \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
@@ -12084,7 +12095,6 @@ build/Debug/GNU-Linux-x86/NavigatorGui.o: src/NavigatorGui.cpp src/NavigatorGui.
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtGui/qtextoption.h \
-		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/NavigatorGui.o src/NavigatorGui.cpp
@@ -14591,6 +14601,7 @@ build/Debug/GNU-Linux-x86/OpeningGui.o: src/OpeningGui.cpp src/OpeningGui.h \
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/OpeningGui.o src/OpeningGui.cpp
@@ -14722,6 +14733,7 @@ build/Debug/GNU-Linux-x86/OutputGui.o: src/OutputGui.cpp src/OutputGui.h \
 		/usr/include/qt5/QtWidgets/qtabwidget.h \
 		/usr/include/qt5/QtGui/qicon.h \
 		/usr/include/qt5/QtCore/QVector \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/OutputGui.o src/OutputGui.cpp
@@ -15572,6 +15584,7 @@ build/Debug/GNU-Linux-x86/RideFont.o: src/RideFont.cpp src/RideFont.h \
 		/usr/include/qt5/QtCore/qobject_impl.h \
 		/usr/include/qt5/QtCore/qhash.h \
 		/usr/include/qt5/QtCore/qpair.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/RideFont.o src/RideFont.cpp
@@ -16006,6 +16019,7 @@ build/Debug/GNU-Linux-x86/RunPage_2.o: src/RunPage_2.cpp src/RunPage_2.h \
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/RunPage_2.o src/RunPage_2.cpp
@@ -16790,6 +16804,7 @@ build/Debug/GNU-Linux-x86/ScoutGui.o: src/ScoutGui.cpp src/ScoutGui.h \
 		/usr/include/qt5/QtCore/qfiledevice.h \
 		/usr/include/qt5/QtGui/qvector2d.h \
 		/usr/include/qt5/QtGui/qtouchdevice.h \
+		/usr/include/qt5/QtCore/QString \
 		src/WindowsConsoleText.h \
 		src/UnixConsoleText.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux-x86/ScoutGui.o src/ScoutGui.cpp
@@ -17383,6 +17398,7 @@ build/Debug/GNU-Linux-x86/TabGui.o: src/TabGui.cpp src/TabGui.h \
 		/usr/include/qt5/QtWidgets/qlayout.h \
 		/usr/include/qt5/QtWidgets/qlayoutitem.h \
 		/usr/include/qt5/QtWidgets/qboxlayout.h \
+		/usr/include/qt5/QtCore/QString \
 		src/OpeningGui.h \
 		/usr/include/qt5/QtGui/QPixmap \
 		/usr/include/qt5/QtWidgets/QLabel \
@@ -18383,13 +18399,13 @@ build/Debug/GNU-Linux-x86/main.o: src/main.cpp /usr/include/qt5/QtWidgets/QAppli
 		/usr/include/qt5/QtGui/qtextformat.h \
 		/usr/include/qt5/QtGui/qpen.h \
 		/usr/include/qt5/QtCore/QFile \
+		/usr/include/qt5/QtCore/QString \
 		src/MasterActions.h \
 		/usr/include/qt5/QtCore/QProcess \
 		/usr/include/qt5/QtCore/qprocess.h \
 		/usr/include/qt5/QtCore/QProcessEnvironment \
 		/usr/include/qt5/QtCore/QDebug \
 		src/NewFileGui.h \
-		/usr/include/qt5/QtCore/QString \
 		/usr/include/qt5/QtWidgets/QLineEdit \
 		/usr/include/qt5/QtWidgets/qlineedit.h \
 		/usr/include/qt5/QtWidgets/QComboBox \

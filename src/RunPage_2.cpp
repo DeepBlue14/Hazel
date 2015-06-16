@@ -36,6 +36,15 @@ QString* RunPage_2::getLaunchFileStrPtr()
 }
 
 
+QString* RunPage_2::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 RunPage_2::~RunPage_2()
 {
     ;

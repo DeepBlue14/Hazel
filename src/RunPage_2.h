@@ -13,6 +13,7 @@
 #include <QFileDialog>
 #include <QPushButton>
 #include <QGridLayout>
+#include <QString>
 
 #include <iostream>
 
@@ -49,6 +50,7 @@ class RunPage_2 : public QWidget
         RunPage_2(QWidget* parent = 0);
         void setLaunchFileStrPtr();
         QString* getLaunchFileStrPtr();
+        QString* toString();
         ~RunPage_2();
 };
 

@@ -100,6 +100,15 @@ void MasterMenus::initHelpMenuPtr(QMenu* menu)
 }
 
 
+QString* MasterMenus::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 MasterMenus::~MasterMenus()
 {
     ;

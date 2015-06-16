@@ -192,3 +192,18 @@ void Highlighter::highlightBlock(const QString &text)
         startIndex = commentStartExpression.indexIn(text, startIndex + commentLength);
     }
 }
+
+
+QString* Highlighter::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
+Highlighter::~Highlighter()
+{
+    ;
+}

@@ -15,6 +15,15 @@ void MasterStatusBar::initProgressBarPtr()
 }
 
 
+QString* MasterStatusBar::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 MasterStatusBar::~MasterStatusBar()
 {
     ;

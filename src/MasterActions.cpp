@@ -752,6 +752,15 @@ void MasterActions::connectToProjectWestAction(X* component)
 }
 
 
+QString* MasterActions::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 MasterActions::~MasterActions()
 {
     ;

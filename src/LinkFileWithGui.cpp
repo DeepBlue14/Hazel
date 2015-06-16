@@ -117,6 +117,15 @@ QAbstractItemModel* LinkFileWithGui::modelFromFile(const QString& fileName)
 }
 
 
+QString* LinkFileWithGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 LinkFileWithGui::~LinkFileWithGui()
 {
     ;

@@ -16,6 +16,7 @@
 #include <QTabWidget>
 #include <QMenu>
 #include <QGridLayout>
+#include <QString>
 
 
 #include <iostream>
@@ -52,6 +53,7 @@ class TabGui : public QWidget
         template<class TabType>
         void addTab(TabType* tabType);
         QTabWidget* getTabWidget();
+        QString* toString();
         ~TabGui();
             
 };

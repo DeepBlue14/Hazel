@@ -11,6 +11,7 @@
 #include <QWidget>
 #include <QPaintEvent>
 #include <QSize>
+#include <QString>
 
 #include <iostream>
 
@@ -37,6 +38,7 @@ class LineNumberArea : public QWidget
         LineNumberArea(FileGui* parent = 0);
         QSize sizeHint() const;
         void paintEvent(QPaintEvent* event);
+        QString* toString();
         ~LineNumberArea();
 };
 

@@ -69,6 +69,7 @@ class FileTreeGui : public QWidget
         static void refresh();
         void setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
         QTabWidget* getNorthTabWidgetPtr();
+        QString* toString();
         ~FileTreeGui();
 };
 

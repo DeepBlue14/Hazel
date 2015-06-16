@@ -17,9 +17,9 @@
 #include <QMenuBar>
 #include <QMenu>
 #include <QAction>
-//#include <QTabWidget> //temp?
 #include <QTextEdit>
 #include <QFile>
+#include <QString>
 
 #include <iostream>
 
@@ -136,6 +136,7 @@ class MasterGui : public QMainWindow
         CentralGui* getCentralGui();
         
         
+        QString* toString();
         ~MasterGui();
             
 };

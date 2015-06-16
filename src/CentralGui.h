@@ -63,6 +63,7 @@ class CentralGui : public QWidget
         OutputGui* getSouthGuiPtr();
         void passNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr);
         void passSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr);
+        QString* toString();
         ~CentralGui();
 };
 

@@ -220,6 +220,15 @@ QTabWidget* FileTreeGui::getNorthTabWidgetPtr()
 }
 
 
+QString* FileTreeGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 FileTreeGui::~FileTreeGui()
 {
     ;

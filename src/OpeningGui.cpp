@@ -35,6 +35,15 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
 }
 
 
+QString* OpeningGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 OpeningGui::~OpeningGui()
 {
     ;

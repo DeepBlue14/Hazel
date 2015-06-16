@@ -16,6 +16,7 @@
 #include <QProcess>
 #include <QProcessEnvironment>
 #include <QDebug>
+#include <QString>
 
 #include <iostream>
 
@@ -248,6 +249,7 @@ class MasterActions : public QWidget
         void connectToProjectWestAction(X* component);
  
         
+        QString* toString();
         ~MasterActions();
             
 };

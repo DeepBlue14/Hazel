@@ -86,6 +86,15 @@ void CentralGui::passSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr)
 }
 
 
+QString* CentralGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***METHOD STUB***");
+    
+    return tmp;
+}
+
+
 CentralGui::~CentralGui()
 {
     ;

@@ -16,6 +16,7 @@
 #include <QGridLayout>
 #include <QTabWidget>
 #include <QVector>
+#include <QString>
 
 #include <iostream>
 
@@ -49,6 +50,7 @@ class OutputGui : public QWidget
         OutputGui(QWidget* parent = 0);
         void addTab(QWidget* tab, QString* tabName);
         QTabWidget* getTabWidget();
+        QString* toString();
         ~OutputGui();
 };
 

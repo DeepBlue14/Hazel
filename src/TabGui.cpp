@@ -39,6 +39,15 @@ QTabWidget* TabGui::getTabWidget()
 }
 
 
+QString* TabGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 TabGui::~TabGui()
 {
     ;

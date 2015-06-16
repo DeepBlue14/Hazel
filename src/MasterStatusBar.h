@@ -14,6 +14,7 @@
 
 #include <QStatusBar>
 #include <QProgressBar>
+#include <QString>
 
 #include <iostream>
 
@@ -38,6 +39,7 @@ class MasterStatusBar : public QStatusBar
     public:
         MasterStatusBar();
         void initProgressBarPtr();
+        QString* toString();
         ~MasterStatusBar();
 };
 

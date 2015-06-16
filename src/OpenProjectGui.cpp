@@ -63,6 +63,15 @@ QString* OpenProjectGui::getProjectStrPtr()
 }
 
 
+QString* OpenProjectGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 OpenProjectGui::~OpenProjectGui()
 {
     ;

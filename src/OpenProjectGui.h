@@ -58,6 +58,7 @@ class OpenProjectGui : public QWidget
         OpenProjectGui(QWidget* parent = 0);
         void setProjectStrPtr(QString* projectStrPtr);
         QString* getProjectStrPtr();
+        QString* toString();
         ~OpenProjectGui();
 };
 

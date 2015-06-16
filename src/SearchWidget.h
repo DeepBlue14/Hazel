@@ -40,6 +40,7 @@ class SearchWidget : public QLineEdit
         SearchWidget(QWidget* parent = 0);
         void setSearchInputStrPtr();
         QString* getSearchInputStrPtr();
+        QString* toString();
         ~SearchWidget();
 };
 

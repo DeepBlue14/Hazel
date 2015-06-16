@@ -18,6 +18,7 @@
 #include <QFontMetrics>
 #include <QCompleter>
 #include <QAbstractItemModel>
+#include <QString>
 
 #include <iostream>
 
@@ -55,6 +56,7 @@ class LinkFileWithGui
         void setHighlighterPtr(Highlighter* highlighter);
         Highlighter* getHighlighterPtr();
         QAbstractItemModel* modelFromFile(const QString& fileName);
+        QString* toString();
         ~LinkFileWithGui();
 };
 

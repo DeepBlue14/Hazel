@@ -30,6 +30,15 @@ QTabWidget* OutputGui::getTabWidget()
 }
 
 
+QString* OutputGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 OutputGui::~OutputGui()
 {
     ;

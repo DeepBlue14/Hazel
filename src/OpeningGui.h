@@ -12,6 +12,7 @@
 #include <QPixmap>
 #include <QLabel>
 #include <QGridLayout>
+#include <QString>
 
 #include <iostream>
 
@@ -46,6 +47,7 @@ private slots:
     
 public:
     OpeningGui(QWidget* parent = 0);
+    QString* toString();
     ~OpeningGui();
         
 };

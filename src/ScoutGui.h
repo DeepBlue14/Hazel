@@ -16,6 +16,7 @@
 #define	SCOUT_GUI_H
 
 #include <QWidget>
+#include <QString>
 
 #include <iostream>
 
@@ -44,6 +45,7 @@ class ScoutGui : public QWidget
         
     public:
         ScoutGui(QWidget* parent = 0);
+        QString* toString();
         ~ScoutGui();
 };
 

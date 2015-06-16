@@ -36,6 +36,15 @@ QTabWidget* NavigatorGui::getWestTabWidgetPtr()
 }
 
 
+QString* NavigatorGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
+}
+
+
 NavigatorGui::~NavigatorGui()
 {
     ;
