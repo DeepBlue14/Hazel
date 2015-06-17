@@ -24,6 +24,7 @@
 #include "Highlighter.h"
 #include "FileGui.h"
 #include "NewProjectGui.h"
+#include "OutputGui.h"
 #include "Terminal.h"
 #include "RunGui.h"
 #include "OpenProjectGui.h"
@@ -80,7 +81,7 @@ class MasterActions : public QWidget
         
         
         QTabWidget* northTabWidgetPtr;
-        QTabWidget* southTabWidgetPtr;
+        OutputGui* /*QTabWidget**/ southTabWidgetPtr;
         Highlighter* highlighter;
         
         NewFileGui* newFileGuiPtr;
@@ -125,8 +126,8 @@ class MasterActions : public QWidget
         
         void setNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr);
         QTabWidget* getNorthTabWidgetPtr();
-        void setSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr);
-        QTabWidget* getSouthTabWidgetPtr();
+        void setSouthTabWidgetPtr(OutputGui*/*QTabWidget**/ southTabWidgetPtr);
+        OutputGui* /*QTabWidget**/ getSouthTabWidgetPtr();
         void setHighlighter(Highlighter* highlighter);
         Highlighter* getHighlighter();
         void setNewFileGuiPtr(NewFileGui* newFileGuiPtr);

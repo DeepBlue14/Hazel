@@ -51,6 +51,18 @@ QString* OutputGui::getOutputStrPtr()
 }
 
 
+void OutputGui::setOutputTePtr(QTextEdit* outputTePtr)
+{
+    this->outputTePtr = outputTePtr;
+}
+
+
+QTextEdit* OutputGui::getOutputTePtr()
+{
+    return outputTePtr;
+}
+
+
 void OutputGui::dumpToGui(QString* outputStrPtr)
 {
     outputTePtr->setText(*outputStrPtr);

@@ -9,7 +9,7 @@
  *
  * Created on June 15, 2015, 4:00 PM
  */
-/*
+///*
 #include <QApplication>
 #include <QString>
 #include <QProcess>
@@ -59,7 +59,8 @@ int main(int argc, char *argv[])
     QProcess* qprocess = new QProcess();
     ParseFontConfigXml parseFontConfigXml;
     MsgParser msgParser;
-    string tmp("/opt/ros/indigo/share/sensor_msgs/msg/Image.msg");
+    string tmpFile("/opt/ros/indigo/share/sensor_msgs/msg/CameraInfo.msg");
+    string tmpDir("/opt/ros/indigo/share/sensor_msgs");
     
     switch(choiceInt)
     {
@@ -84,8 +85,9 @@ int main(int argc, char *argv[])
             parseFontConfigXml.readDoc();
             break;
         case 5:
-            msgParser.parse(&tmp);
-            cout << msgParser.toString() << endl;
+            msgParser.parseFile(&tmpFile);
+            //msgParser.parseDir(&tmpDir);
+            //cout << msgParser.toString() << endl;
             return EXIT_SUCCESS;
             break;
         default:
@@ -95,4 +97,4 @@ int main(int argc, char *argv[])
     
     return EXIT_SUCCESS;
 } // End of main()
-*/
+//*/

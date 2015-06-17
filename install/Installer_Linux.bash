@@ -91,6 +91,20 @@ echo "Would you like to create a desktop shortcut? (Y/n)"
 read CHOICE
 
 if [ "$CHOICE" == "Y" ] || [ "$CHOICE" == "y" ] || [ "$CHOICE" == "" ]; then
+    if [ perl < /dev/null > /dev/null 2>&1 ]; then
+        echo "Perl instalation found"
+    else
+        echo "Perl must be installed for this action to take place."
+        echo "Would you like it to be installed? (Y/n)"
+        read CHOICE
+        if [ "$CHOICE" == "Y" ] || [$"CHOCIE" == "y" ] || [ "$CHOICE" == "" ]; then
+            sudo apt-get install perl
+        else
+            break; # will this actually break?
+        fi
+    fi
+    
+    perl -pi -e 's\path\$CHOICE/g' ~/ride/install.Ride.desktop
     mv ./ride/install/Ride.desktop ~/Desktop/Ride.desktop
 fi    
 

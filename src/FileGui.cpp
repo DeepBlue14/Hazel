@@ -149,8 +149,6 @@ void FileGui::keyPressEvent(QKeyEvent* e)
     
     // Adding ";" to other side of ")", if (...)
     QTextCursor tcg = textCursor();
-    //cout << "Entire text block: " << tcg.block().text().toStdString() << endl;
-    //cout << "[CTRL] or [SHIFT]?: " << ctrlOrShift << endl;
 
     if(tcg.block().text().size() > 0)
     {

@@ -1,4 +1,5 @@
 #include "MasterActions.h"
+#include "OutputGui.h"
 
 
 MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
@@ -163,8 +164,11 @@ void MasterActions::handleSetProjectConfigActionSlot()
 void MasterActions::handleBuildActionSlot()
 {
     RProcess* rprocess = new RProcess();
+    rprocess->setOutputLocTePtr(southTabWidgetPtr->getOutputTePtr() );
     rprocess->startDetached("catkin_make"); // pass output tab to rprocess?
     cout << "# of child tabs: " << southTabWidgetPtr->children().size() << endl;
+    southTabWidgetPtr->getTabWidget()->setTabText(0, "Overriding!");
+    //southTabWidgetPtr->dumpToGui(new QString("compiling..."));
 }
 
 
@@ -213,13 +217,13 @@ void MasterActions::handleGitActionSlot()
 // South
 void MasterActions::handleOutputSouthActionSlot()
 {
-    if(getSouthTabWidgetPtr()->isVisible() )
+    if(getSouthTabWidgetPtr()->getTabWidget()->isVisible() )
     {
-        getSouthTabWidgetPtr()->hide();
+        getSouthTabWidgetPtr()->getTabWidget()->hide();
     }
     else
     {
-        getSouthTabWidgetPtr()->show();
+        getSouthTabWidgetPtr()->getTabWidget()->show();
     }
 }
 
@@ -229,7 +233,7 @@ void MasterActions::handleTerminalSouthActionSlot()
     cout << "New Terminal activated" << endl;
     
     Terminal* term = new Terminal();
-    southTabWidgetPtr->addTab(term, tr("RosTerm"));
+    southTabWidgetPtr->getTabWidget()->addTab(term, tr("RosTerm"));
     
     term->start();
 }
@@ -281,13 +285,13 @@ QTabWidget* MasterActions::getNorthTabWidgetPtr()
 }
 
 
-void MasterActions::setSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr)
+void MasterActions::setSouthTabWidgetPtr(OutputGui* /*QTabWidget**/ southTabWidgetPtr)
 {
     this->southTabWidgetPtr = southTabWidgetPtr;
 }
 
 
-QTabWidget* MasterActions::getSouthTabWidgetPtr()
+OutputGui* /*QTabWidget**/ MasterActions::getSouthTabWidgetPtr()
 {
     return southTabWidgetPtr;
 }

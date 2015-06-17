@@ -7,7 +7,29 @@ MsgParser::MsgParser()
 }
 
 
-MsgFileDat* MsgParser::parse(string* msgFileAbsPathStrPtr)
+MsgDirDat* MsgParser::parseDir(string* msgDirAbsPathStrPtr)
+{
+    cout << "at MsgParser::parseDir(...): passed: " << *msgDirAbsPathStrPtr << endl;
+    QString tmp;
+    tmp = tmp.fromStdString(*msgDirAbsPathStrPtr);
+    cout << "tmp: " << tmp.toStdString() << endl;
+    tmp.append("/msg");
+    QDir* dir = new QDir(tmp);
+    
+    cout << "cd'ed to: " << dir->absolutePath().toStdString() << endl;
+    QFileInfoList files = dir->entryInfoList();
+    foreach(QFileInfo file, files)
+    {
+        string stdStr = file.filePath().toStdString();
+        cout << "about to parse: " << stdStr << endl;
+        parseFile(&stdStr);
+    }
+    
+    return new MsgDirDat(); // ***METHOD STUB***
+}
+
+
+MsgFileDat* MsgParser::parseFile(string* msgFileAbsPathStrPtr)
 {
     char* fileName = (char*) msgFileAbsPathStrPtr->c_str();
     ifstream infile(fileName); //!!!the filestr should include the extension!!!
@@ -94,46 +116,57 @@ string* MsgParser::extractType(string* line)
 
 
 string* MsgParser::extractName(string* line)
-{
+{cout << "HERE (1)" << endl;
     string* tmp = new string();
     //bool beforeName = true;
     int count = 0;
     string tmpStr;
-    
+    cout << "HERE (2)" << endl;
     while(line->at(0) != ' ' && count < line->size() )
     {
         line->erase(line->begin());
         count++;
     }    
     line->erase(line->begin() );
-    
+    cout << "HERE (3)" << endl;
+    cout << "dealing with: \"" << *line << "\"" << endl;
+    cout << "size: " << line->size() << endl;
     count = 0;
-    while(line->at(count) != ' ' && count < line->size() )
+    /*while(line->at(count) != ' ' && count < line->size() )
     {
         tmpStr = line->at(count);
         tmp->append(tmpStr);
         count++;
-    }  
-
+    }*/
+    for(count = 0; count < line->size(); count++)
+    {
+        if(line->at(count) != ' ')
+        {
+            tmpStr = line->at(count);
+            tmp->append(tmpStr);
+        }
+    }
+    
+cout << "HERE (4)" << endl;
     cout << "successfully extracted name: " << *tmp << endl;
     return tmp;
 }
 
 
 string* MsgParser::extractComment(string* line)
-{
+{cout << "HERE (5)" << endl;
     string* tmp = new string();
     //bool beforeName = true;
     int count = 0;
     string tmpStr;
-    
+    cout << "HERE (6)" << endl;
     while(line->at(0) != ' ' && count < line->size() )
     {
         line->erase(line->begin());
         count++;
     }    
     line->erase(line->begin() );
-    
+    cout << "HERE (7)" << endl;
     count = 0;
     while(line->at(0) != ' ' && count < line->size() )
     {
@@ -141,7 +174,7 @@ string* MsgParser::extractComment(string* line)
         count++;
     }    
     line->erase(line->begin() );
-    
+    cout << "HERE (8)" << endl;
     count = 0;
     while(line->at(count) != ' ' && count < line->size() )
     {

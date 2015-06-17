@@ -13,10 +13,14 @@
 #ifndef MSG_PARSER_H
 #define	MSG_PARSER_H
 
+#include <QDir>
+#include <QFileInfoList>
+
 #include <iostream>
 #include <fstream>
 #include <string>
 
+#include "MsgDirDat.h"
 #include "MsgFileDat.h"
 #include "MsgFieldDat.h"
 #include "WindowsConsoleText.h"
@@ -39,7 +43,8 @@ class MsgParser
         
     public:
         MsgParser();
-        MsgFileDat* parse(string* msgFileAbsPathStrPtr);
+        MsgDirDat* parseDir(string* msgDirAbsPathStrPtr);
+        MsgFileDat* parseFile(string* msgFileAbsPathStrPtr);
         string* trim(string* myString);
         string* extractType(string* line);
         string* extractName(string* line);

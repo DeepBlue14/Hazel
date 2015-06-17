@@ -53,6 +53,8 @@ class OutputGui : public QWidget
         QTabWidget* getTabWidget();
         void setOutputStrPtr(QString* outputStrPtr);
         QString* getOutputStrPtr();
+        void setOutputTePtr(QTextEdit* outputTePtr);
+        QTextEdit* getOutputTePtr();
         void dumpToGui(QString* outputStrPtr);
         QString* toString();
         ~OutputGui();

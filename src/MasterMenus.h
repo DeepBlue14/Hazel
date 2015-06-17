@@ -2,6 +2,8 @@
  * File:   MasterMenus.h
  * Author: james
  *
+ * Reference: http://zetcode.com/gui/qt4/menusandtoolbars/
+ * 
  * Created on April 29, 2015, 2:40 AM
  */
 

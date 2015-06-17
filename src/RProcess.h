@@ -9,6 +9,7 @@
  *                   and thus enables custom ROS commands (such as sourceing
  *                   the ROS environment) to be run. 
  *                   
+ * Reference: http://www.codeprogress.com/cpp/libraries/qt/showQtExample.php?index=474&key=QProcessRedirectOutput
  *
  * Created on June 9, 2015, 6:53 PM
  */
@@ -43,12 +44,21 @@ using namespace std;
 
 class RProcess : public QProcess
 {
+    Q_OBJECT
+    
     private:
         static QStringList* curInUseFileNmStrLstPtr;
         static QList<int>* numsInUseLstPtr;
+        QTextEdit* outputLocTePtr;
 
         static QString* genTmpFileNameStrPtr();
         static void addHeader(RFile* tmpRideFilePtr);
+        
+        
+        
+    private slots:
+        void redirectStdOutput();
+        void redirectError();
         
     public:
         RProcess();
@@ -59,6 +69,8 @@ class RProcess : public QProcess
         static bool startDetached(const QString& program, const QStringList& arguments);
         static bool startDetached(const QString& program, const QStringList& arguments, const QString& workingDirectory, qint64* pid = 0);
         static bool startDetached(const QString& program);
+        void setOutputLocTePtr(QTextEdit* outputLocTePtr);
+        QTextEdit* getOutputLocTePtr();
 
         ~RProcess();
 };

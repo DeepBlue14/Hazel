@@ -11,6 +11,20 @@ RProcess::RProcess()
 }
 
 
+void RProcess::redirectStdOutput()
+{
+    cout << "\n>>" << endl;
+    outputLocTePtr->append(readAllStandardOutput());
+}
+
+
+void RProcess::redirectError()
+{
+    cout << "\n>>" << endl;
+    outputLocTePtr->append((readAllStandardOutput()));
+}
+
+
 QString* RProcess::genTmpFileNameStrPtr()
 {
     ;
@@ -236,13 +250,26 @@ bool RProcess::startDetached(const QString& program)
 
     QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
     QProcess qprocess;
+    qprocess.setProcessChannelMode(QProcess::MergedChannels);
+    //QByteArray output = qprocess.readAll();
     qprocess.execute("chmod", stringlst);
     
     int rtn = qprocess.startDetached(*tmpFileNameStrPtr); //don't run this->execute; this would result in infinate recursion!!!
-    QByteArray output = qprocess.readAllStandardOutput();
-    cout << cct::bold("\nOutput: ") << output.data() << endl;
+    //cout << cct::bold("\nOutput: ") << output.data() << cct::bold("\nEnd of output") << endl;
     
     return rtn;
+}
+
+
+void RProcess::setOutputLocTePtr(QTextEdit* outputLocTePtr)
+{
+    this->outputLocTePtr = outputLocTePtr;
+}
+
+
+QTextEdit* RProcess::getOutputLocTePtr()
+{
+    return outputLocTePtr;
 }
 
 
