@@ -49,7 +49,7 @@ class FileGui : public QPlainTextEdit
         
         QCompleter* c;
         
-        QString textUnderCursor() const;
+        QString wordUnderCursor() const;
         
     private slots:
         void insertCompletion(const QString& completion);

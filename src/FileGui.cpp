@@ -14,8 +14,8 @@
 FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), c(0)
 {
     this->setPlainText(tr("This TextEdit provides autocompletions for words that have more than"
-                     " 3 characters. You can trigger autocompletion using ") +
-                     QKeySequence("Ctrl+E").toString(QKeySequence::NativeText));
+                          " 3 characters. You can trigger autocompletion using ") +
+                          QKeySequence("Ctrl+E").toString(QKeySequence::NativeText));
     
     lineNumberArea = new LineNumberArea(this);
     
@@ -64,7 +64,7 @@ void FileGui::insertCompletion(const QString& completion)
 }
 
 
-QString FileGui::textUnderCursor() const
+QString FileGui::wordUnderCursor() const
 {
     QTextCursor tc = textCursor();
     tc.select(QTextCursor::WordUnderCursor);
@@ -74,64 +74,70 @@ QString FileGui::textUnderCursor() const
 
 void FileGui::keyPressEvent(QKeyEvent* e)
 {
-    if(c && c->popup()->isVisible()) {
+    if(c && c->popup()->isVisible() )
+    {
         // The following keys are forwarded by the completer to the widget
-           switch (e->key()) {
-        case Qt::Key_Enter:
-        case Qt::Key_Return:
-        case Qt::Key_Escape:
-        case Qt::Key_Tab:
-        case Qt::Key_Backtab:
-            e->ignore();
-            return; // let the completer do default behavior
-        default:
-            break;
+        switch (e->key() )
+        {
+            case Qt::Key_Enter:
+            case Qt::Key_Return:
+            case Qt::Key_Escape:
+            case Qt::Key_Tab:
+            case Qt::Key_Backtab:
+                e->ignore();
+                return; // let the completer do default behavior
+            default:
+                break;
         }
     }
     
     bool isShortcut = ((e->modifiers() & Qt::ControlModifier) && e->key() == Qt::Key_E); // CTRL+E
-     if (!c || !isShortcut) // don't process the shortcut when we have a completer
-         QPlainTextEdit::keyPressEvent(e);
+    if (!c || !isShortcut) // don't process the shortcut when we have a completer
+    {
+        QPlainTextEdit::keyPressEvent(e);
+    }
 
-     const bool ctrlOrShift = e->modifiers() & (Qt::ControlModifier | Qt::ShiftModifier);
-     if (!c || (ctrlOrShift && e->text().isEmpty()))
-         return;
+    const bool ctrlOrShift = e->modifiers() & (Qt::ControlModifier | Qt::ShiftModifier);
+    if(!c || (ctrlOrShift && e->text().isEmpty()) )
+    {
+        return;
+    }
 
-     static QString eow("~!@#$%^&*()_+{}|:\"<>?,./;'[]\\-="); // end of word
-     bool hasModifier = (e->modifiers() != Qt::NoModifier) && !ctrlOrShift;
-     QString completionPrefix = textUnderCursor();
+    static QString eow("~!@#$%^&*()_+{}|:\"<>?,./;'[]\\-="); // end of word
+    bool hasModifier = (e->modifiers() != Qt::NoModifier) && !ctrlOrShift;
+    QString completionPrefix = wordUnderCursor();
      
-     //------------------------------------------
-     //!!! this inserts the closing parens !!!
-     if(e->text() == "(")
-     {   QTextCursor tc = textCursor();
+    //------------------------------------------
+    //!!! this inserts the closing parens !!!
+    if(e->text() == "(")
+    {   QTextCursor tc = textCursor();
         int extra = 0;
         tc.movePosition(QTextCursor::Left);
         tc.movePosition(QTextCursor::EndOfWord);
-        tc.insertText(textUnderCursor().right(extra));
+        tc.insertText(wordUnderCursor().right(extra));
         tc.insertText(")");
         tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
         setTextCursor(tc);
-     }
-     
-     if(e->text() == "[")
-     {   QTextCursor tc = textCursor();
+    }
+    
+    if(e->text() == "[")
+    {   QTextCursor tc = textCursor();
         int extra = 0;
         tc.movePosition(QTextCursor::Left);
         tc.movePosition(QTextCursor::EndOfWord);
-        tc.insertText(textUnderCursor().right(extra));
+        tc.insertText(wordUnderCursor().right(extra));
         tc.insertText("]");
         tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
         setTextCursor(tc);
-     }
+    }
      
      
-     if(e->text() == "{")
-     {   QTextCursor tc = textCursor();
+    if(e->text() == "{")
+    {   QTextCursor tc = textCursor();
         int extra = 0;
         tc.movePosition(QTextCursor::Left);
         tc.movePosition(QTextCursor::EndOfWord);
-        tc.insertText(textUnderCursor().right(extra));
+        tc.insertText(wordUnderCursor().right(extra));
         tc.insertText("\n}");
         tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
         setTextCursor(tc);
@@ -139,30 +145,66 @@ void FileGui::keyPressEvent(QKeyEvent* e)
         tc.insertText("    \n");
         tc.movePosition(QTextCursor::Left, QTextCursor::MoveAnchor, 1);
         setTextCursor(tc);
-     }
-     //------------------------------------------
-        
-     if (!isShortcut && (hasModifier || e->text().isEmpty()|| completionPrefix.length() < 3
-                       || eow.contains(e->text().right(1)))) {
-         c->popup()->hide();
-         return;
-     }
+    }
+    
+    // Adding ";" to other side of ")", if (...)
+    QTextCursor tcg = textCursor();
+    //cout << "Entire text block: " << tcg.block().text().toStdString() << endl;
+    //cout << "[CTRL] or [SHIFT]?: " << ctrlOrShift << endl;
 
-     if (completionPrefix != c->completionPrefix()) {
-         c->setCompletionPrefix(completionPrefix);
-         c->popup()->setCurrentIndex(c->completionModel()->index(0, 0));
-     }
-     QRect cr = cursorRect();
-     cr.setWidth(c->popup()->sizeHintForColumn(0)
-                 + c->popup()->verticalScrollBar()->sizeHint().width());
-     c->complete(cr); // popup it up!
+    if(tcg.block().text().size() > 0)
+    {
+        cout << "\nchar on the right end: " << tcg.block().text().at(tcg.block().text().size() - 1).toAscii() << endl;
+    }
+        
+    cout << "key just entered: " << e->text().toStdString() << endl;
+    cout << "number of chars to the " << cct::bold("left") << " of cursor: " << tcg.positionInBlock() << endl;
+    cout << "number of chars to the " << cct::bold("right") << " of cursor: " << tcg.block().text().size() - tcg.positionInBlock() << "\n" << endl;
+
+    bool isClosingParens = true;
+    for(size_t i = 0; i < (tcg.block().text().size() - tcg.positionInBlock()); i++)
+    {
+        char ch = tcg.block().text().at(tcg.block().text().size() - (1 + i)).toAscii();
+        if(QString(ch) != ")")
+        {
+            isClosingParens = false;
+        }
+    }
+    if(isClosingParens == true  && e->text() == ";")
+    {
+        cout << "Hop semicolon" << endl;
+        tcg.deletePreviousChar();
+        tcg.movePosition(QTextCursor::Right, QTextCursor::MoveAnchor, (tcg.block().text().size() - tcg.positionInBlock()) );
+        tcg.insertText(";");
+        setTextCursor(tcg);
+    }
+
+     
+    //------------------------------------------
+        
+    if(!isShortcut && (hasModifier || e->text().isEmpty()|| completionPrefix.length() < 3
+                       || eow.contains(e->text().right(1))) )
+    {
+        c->popup()->hide();
+        return;
+    }
+
+    if (completionPrefix != c->completionPrefix() )
+    {
+        c->setCompletionPrefix(completionPrefix);
+        c->popup()->setCurrentIndex(c->completionModel()->index(0, 0) );
+    }
+    QRect cr = cursorRect();
+    cr.setWidth(c->popup()->sizeHintForColumn(0)
+              + c->popup()->verticalScrollBar()->sizeHint().width() );
+    c->complete(cr); // popup it up!
 }
 
 
 int FileGui::lineNumberAreaWidth()
 {
     int digits = 1;
-    int max = qMax(1, blockCount());
+    int max = qMax(1, blockCount() );
     while(max >= 10)
     {
         max /= 10;
@@ -184,12 +226,20 @@ void FileGui::updateLineNumberAreaWidth(int )
 void FileGui::updateLineNumberArea(const QRect& rect, int dy)
 {
     if(dy)
+    {
         lineNumberArea->scroll(0, dy);
+    }
     else
-        lineNumberArea->update(0, rect.y(), lineNumberArea->width(), rect.height());
+    {
+        lineNumberArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
+    }
     
-    if(rect.contains(viewport()->rect()))
+    if(rect.contains(viewport()->rect()) )
+    {
         updateLineNumberAreaWidth(0);
+    }
+    
+    
 }
 
 
@@ -198,7 +248,7 @@ void FileGui::resizeEvent(QResizeEvent* e)
     QPlainTextEdit::resizeEvent(e);
     
     QRect cr = contentsRect();
-    lineNumberArea->setGeometry(QRect(cr.left(), cr.top(), lineNumberAreaWidth(), cr.height()));
+    lineNumberArea->setGeometry(QRect(cr.left(), cr.top(), lineNumberAreaWidth(), cr.height()) );
 }
 
 
@@ -244,9 +294,9 @@ void FileGui::lineNumberAreaPaintEvent(QPaintEvent* event)
     int top = (int) blockBoundingGeometry(block).translated(contentOffset()).top();
     int bottom = top + (int) blockBoundingRect(block).height();
 
-    while(block.isValid() && top <= event->rect().bottom())
+    while(block.isValid() && top <= event->rect().bottom() )
     {
-        if (block.isVisible() && bottom >= event->rect().top())
+        if (block.isVisible() && bottom >= event->rect().top() )
         {
             QString number = QString::number(blockNumber + 1);
             painter.setPen(Qt::black);
