@@ -38,7 +38,9 @@ class RunPage_2 : public QWidget
     private:
         QLineEdit* launchFileAbsPathLePtr;
         QLineEdit* pkgLePtr;
+        static QString pkgStrPtr;
         QLineEdit* fileLePtr;
+        static QString fileStrPtr;
         QFileDialog* launchFileDialogPtr;
         QPushButton* selectLaunchFilePbPtr;
         
@@ -54,6 +56,10 @@ class RunPage_2 : public QWidget
         RunPage_2(QWidget* parent = 0);
         void setLaunchFileStrPtr();
         QString* getLaunchFileStrPtr();
+        void setPkgStrPtr(QString pkgStrPtr);
+        QString getPkgStrPtr();
+        void setFileStrPtr(QString fileStrPtr);
+        QString getFileStrPtr();
         QString* toString();
         ~RunPage_2();
 };

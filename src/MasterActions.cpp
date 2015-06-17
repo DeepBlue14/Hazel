@@ -189,8 +189,12 @@ void MasterActions::handleRunActionSlot()
 {
     RProcess* rprocess = new RProcess();
     
-    //runGuiPtr->getLaunchFilePathStrPtr();
-    //rprocess->startDetached("roslaunch")
+    QStringList* tmpStrLstPtr = new QStringList();
+    cout << "!!!: " << runGuiPtr->getRunPage_2Ptr()->getPkgStrPtr().toStdString();
+    cout << "!!!: " << runGuiPtr->getRunPage_2Ptr()->getFileStrPtr().toStdString() << endl;
+    tmpStrLstPtr->push_back(runGuiPtr->getRunPage_2Ptr()->getPkgStrPtr() );
+    tmpStrLstPtr->push_back(runGuiPtr->getRunPage_2Ptr()->getFileStrPtr() );
+    rprocess->startDetached("roslaunch", *tmpStrLstPtr);
 }
 
 

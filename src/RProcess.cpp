@@ -151,29 +151,33 @@ int RProcess::execute(const QString& program)
 
 
 bool RProcess::startDetached(const QString& program, const QStringList& arguments)
-{
+{   
+    //cout << "Program: " << program.toStdString() << endl;
+    //cout << "args: " << arguments.at(0).toStdString() << " " << arguments.at(1).toStdString() << endl;
+
     QByteArray programBa = program.toLatin1();
     const char* programCharPtr = programBa.data();
     
     QString* tmpFileNameStrPtr = new QString("/tmp/tmpRideFile.bash");
     RFile* tmpRideFilePtr = new RFile(*tmpFileNameStrPtr);
     tmpRideFilePtr->openWrFile();
-    
+
     addHeader(tmpRideFilePtr);
     tmpRideFilePtr->write(programCharPtr);
-    
+    tmpRideFilePtr->write(" ");
+
     QByteArray tmpByteArray;
     for(size_t i = 0; i < arguments.size(); i++)
     {
-        tmpByteArray.append(arguments.at(i) + "\n");
+        tmpByteArray.append(arguments.at(i) + " ");
         tmpRideFilePtr->write(tmpByteArray);
         tmpByteArray.clear();
     }
-    
+
     tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
     tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
-    
+
     QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
     QProcess qprocess;
     qprocess.execute("chmod", stringlst);

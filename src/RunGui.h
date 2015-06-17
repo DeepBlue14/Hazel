@@ -84,7 +84,9 @@ class RunGui : public QWidget
         void unloadPage_2();
         void loadPage_3();
         void unloadPage_3();
-        
+        RunPage_1* getRunPage_1Ptr();
+        RunPage_2* getRunPage_2Ptr();
+        RunPage_3* getRunPage_3Ptr();
         QString* toString();    
         ~RunGui();
 };

@@ -1,6 +1,10 @@
 #include "RunPage_2.h"
 
 
+QString RunPage_2::fileStrPtr;
+QString RunPage_2::pkgStrPtr;
+
+
 RunPage_2::RunPage_2(QWidget* parent) : QWidget(parent)
 {
     launchFileAbsPathLePtr = new QLineEdit();
@@ -36,7 +40,9 @@ void RunPage_2::handleSelectLaunchFilePbPtrSlot()
    pkgName = pkgName.right(pkgName.size() - (pkgName.lastIndexOf("/") + 1));
 
     pkgLePtr->setText(pkgName);
+    setPkgStrPtr(pkgName);
     fileLePtr->setText(fileName);
+    setFileStrPtr(fileName);
 }
 
 
@@ -49,6 +55,30 @@ void RunPage_2::setLaunchFileStrPtr()
 QString* RunPage_2::getLaunchFileStrPtr()
 {
     return launchFileStrPtr;
+}
+
+
+void RunPage_2::setPkgStrPtr(QString pkgStrPtr)
+{
+    RunPage_2::pkgStrPtr = pkgStrPtr;
+}
+
+
+QString RunPage_2::getPkgStrPtr()
+{
+    return pkgStrPtr;
+}
+
+
+void RunPage_2::setFileStrPtr(QString fileStrPtr)
+{
+    RunPage_2::fileStrPtr = fileStrPtr;
+}
+
+
+QString RunPage_2::getFileStrPtr()
+{
+    return fileStrPtr;
 }
 
 

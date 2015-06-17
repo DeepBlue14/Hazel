@@ -217,6 +217,24 @@ void RunGui::unloadPage_3()
 }
 
 
+RunPage_1* RunGui::getRunPage_1Ptr()
+{
+    return runPage_1Ptr;
+}
+
+
+RunPage_2* RunGui::getRunPage_2Ptr()
+{
+    return runPage_2Ptr;
+}
+
+
+RunPage_3* RunGui::getRunPage_3Ptr()
+{
+    return runPage_3Ptr;
+}
+
+
 QString* RunGui::toString()
 {
     QString* tmp = new QString("RunGui");
