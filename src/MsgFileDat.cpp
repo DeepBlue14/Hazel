@@ -3,32 +3,32 @@
 
 MsgFileDat::MsgFileDat()
 {
-    msgFileNameStrPtr = new string();
-    msgFileHeaderStrPtr = new string();
-    msgFieldDatPtrVecPtr = new vector<MsgFieldDat*>();
+    msgFileNameStrPtr = new QString();
+    msgFileHeaderStrPtr = new QString();
+    msgFieldDatPtrVecPtr = new QVector<MsgFieldDat*>();
     
 }
 
 
-void MsgFileDat::setMsgFileNameStrPtr(string* msgFileNameStrPtr)
+void MsgFileDat::setMsgFileNameStrPtr(QString* msgFileNameStrPtr)
 {
     this->msgFileNameStrPtr = msgFileNameStrPtr;
 }
 
 
-string* MsgFileDat::getMsgFileNameStrPtr()
+QString* MsgFileDat::getMsgFileNameStrPtr()
 {
     return msgFileNameStrPtr;
 }
 
 
-void MsgFileDat::setMsgFileHeaderStrPtr(string* msgFileHeaderStrPtr)
+void MsgFileDat::setMsgFileHeaderStrPtr(QString* msgFileHeaderStrPtr)
 {
     this->msgFileHeaderStrPtr = msgFileHeaderStrPtr;
 }
 
 
-string* MsgFileDat::getMsgFileHeaderStrPtr()
+QString* MsgFileDat::getMsgFileHeaderStrPtr()
 {
     return msgFileHeaderStrPtr;
 }
@@ -50,15 +50,15 @@ MsgFieldDat* MsgFileDat::popFromMsgFieldDatPtrVecPtr()
 }
 
 
-vector<MsgFieldDat*>* MsgFileDat::getMsgFieldDatPtrVecPtr()
+QVector<MsgFieldDat*>* MsgFileDat::getMsgFieldDatPtrVecPtr()
 {
     return msgFieldDatPtrVecPtr;
 }
 
 
-string* MsgFileDat::toString()
+QString* MsgFileDat::toQString()
 {
-    string* tmp = new string();
+    QString* tmp = new QString();
     tmp->append("msgFileName: " + *getMsgFileNameStrPtr() );
     tmp->append("\nmsgFileHeader: " + *getMsgFileHeaderStrPtr() );
     tmp->append("\nmsgFieldDatPtrs:");

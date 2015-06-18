@@ -7,45 +7,45 @@ MsgFieldDat::MsgFieldDat()
 }
 
 
-void MsgFieldDat::setFieldTypeStrPtr(string* fieldTypeStrPtr)
+void MsgFieldDat::setFieldTypeStrPtr(QString* fieldTypeStrPtr)
 {
     this->fieldTypeStrPtr = fieldTypeStrPtr;
 }
 
 
-string* MsgFieldDat::getFieldTypeStrPtr()
+QString* MsgFieldDat::getFieldTypeStrPtr()
 {
     return fieldTypeStrPtr;
 }
 
 
-void MsgFieldDat::setFieldNameStrPtr(string* fieldNameStrPtr)
+void MsgFieldDat::setFieldNameStrPtr(QString* fieldNameStrPtr)
 {
     this->fieldNameStrPtr = fieldNameStrPtr;
 }
 
 
-string* MsgFieldDat::getFieldNameStrPtr()
+QString* MsgFieldDat::getFieldNameStrPtr()
 {
     return fieldNameStrPtr;
 }
 
 
-void MsgFieldDat::setFieldCommentsStrPtr(string* fieldCommentsStrPtr)
+void MsgFieldDat::setFieldCommentsStrPtr(QString* fieldCommentsStrPtr)
 {
     this->fieldCommentsStrPtr = fieldCommentsStrPtr;
 }
 
 
-string* MsgFieldDat::getFieldCommentsStrPtr()
+QString* MsgFieldDat::getFieldCommentsStrPtr()
 {
     return fieldCommentsStrPtr;
 }
 
 
-string* MsgFieldDat::toString()
+QString* MsgFieldDat::toQString()
 {
-    string* tmp = new string();
+    QString* tmp = new QString();
     
     tmp->append("\tField Type: " + *getFieldTypeStrPtr()
               + "\tField Name: " + *getFieldNameStrPtr()

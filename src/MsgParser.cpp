@@ -7,11 +7,11 @@ MsgParser::MsgParser()
 }
 
 
-MsgDirDat* MsgParser::parseDir(string* msgDirAbsPathStrPtr)
+MsgDirDat* MsgParser::parseDir(QString* msgDirAbsPathStrPtr)
 {
-    cout << "at MsgParser::parseDir(...): passed: " << *msgDirAbsPathStrPtr << endl;
+    cout << "at MsgParser::parseDir(...): passed: " << msgDirAbsPathStrPtr->toStdString() << endl;
     QString tmp;
-    tmp = tmp.fromStdString(*msgDirAbsPathStrPtr);
+    tmp = *msgDirAbsPathStrPtr;
     cout << "tmp: " << tmp.toStdString() << endl;
     tmp.append("/msg");
     QDir* dir = new QDir(tmp);
@@ -20,8 +20,8 @@ MsgDirDat* MsgParser::parseDir(string* msgDirAbsPathStrPtr)
     QFileInfoList files = dir->entryInfoList();
     foreach(QFileInfo file, files)
     {
-        string stdStr = file.filePath().toStdString();
-        cout << "about to parse: " << stdStr << endl;
+        QString stdStr = file.filePath();
+        cout << "about to parse: " << stdStr.toStdString() << endl;
         parseFile(&stdStr);
     }
     
@@ -29,162 +29,136 @@ MsgDirDat* MsgParser::parseDir(string* msgDirAbsPathStrPtr)
 }
 
 
-MsgFileDat* MsgParser::parseFile(string* msgFileAbsPathStrPtr)
+MsgFileDat* MsgParser::parseFile(QString* msgFileAbsPathStrPtr)
 {
-    char* fileName = (char*) msgFileAbsPathStrPtr->c_str();
-    ifstream infile(fileName); //!!!the filestr should include the extension!!!
-    
-    bool isHeader = true;
-    string line;
-    //string currentLine;
-    //string prevLine;
     currentMsgFileDat = new MsgFileDat();
-    MsgFieldDat* msgFieldDat;
     currentMsgFileDat->setMsgFileNameStrPtr(msgFileAbsPathStrPtr);
+    bool isHeader = true;
     
-    while(std::getline(infile, line))
+    QFile file(*msgFileAbsPathStrPtr);
+    if(!file.open(QIODevice::ReadOnly | QIODevice::Text) )
+        cerr << "failed to open file" << endl;
+    
+    while(!file.atEnd() )
     {
-        cout << line << endl;
-        msgFieldDat = new MsgFieldDat();
+        QByteArray lineBa = file.readLine();
+        QString lineStr = lineBa.data();
+        MsgFieldDat msgFieldDat;
         
-        if(line.empty() )
+        if(lineStr.size() < 2 )//empy line will be percieved as a \n, i.e. 1 char
         {
-            //cout << "empty line" << endl;
+            cout << "empty line" << endl;
         }
-        else if((line.at(0) == '#' || line.at(0) == ' ') && isHeader == true)
-        {   //cout << "setting header" << endl;
-            //currentMsgFileDat->setMsgFileHeaderStrPtr(new string(*currentMsgFileDat->getMsgFileHeaderStrPtr() + line) );
-        }
-        else if(line.at(0) == '#' || line.at(0) == ' ')
+        else if((lineStr.at(0) == '#' || lineStr.at(0) == ' ') && isHeader == true)
         {
-            //cout << "setting comment" << endl;
-            //msgFieldDat->setFieldCommentsStrPtr(new string(*msgFieldDat->getFieldCommentsStrPtr() + line) );
+            cout << "setting header: " << lineStr.toStdString() << endl;
+            cout << "header size: " << lineStr.size() << endl;
+            //currentMsgFileDat->setMsgFileHeaderStrPtr(new QString(*currentMsgFileDat->getMsgFileHeaderStrPtr() + lineStr) );
+        }
+        else if(lineStr.at(0) == '#' || lineStr.at(0) == ' ')
+        {
+            cout << "setting comment" << endl;
+            cout << "size: " << lineStr.size() << endl;
+            //msgFieldDat.setFieldCommentsStrPtr(new QString(*msgFieldDat.getFieldCommentsStrPtr() + lineStr) );
         }
         else
         {
             isHeader = false;
-            
-            //currentLine = line;
-            msgFieldDat->setFieldTypeStrPtr(extractType(&line) );
-            msgFieldDat->setFieldNameStrPtr(extractName(&line) );
-            msgFieldDat->setFieldCommentsStrPtr(extractComment(&line) );
-            currentMsgFileDat->pushToMsgFieldDatPtrVecPtr(msgFieldDat);
+            cout << "Sending: " << lineStr.toStdString() << endl;
+            cout << "sending size: " << lineStr.size() << endl;
+            extractAttributes(lineStr, msgFieldDat);
+            currentMsgFileDat->pushToMsgFieldDatPtrVecPtr(&msgFieldDat);
+            //cout << "Type: " << *msgFieldDat->getFieldTypeStrPtr()
+            //     << ", Name: " << *msgFieldDat->getFieldNameStrPtr() << endl << endl;
+                 //<< ", Commment: " << msgFieldDat->getFieldCommentsStrPtr() << endl << endl;
         }
-    
-        //prevLine = line;
-        
     }
+    
     
     return currentMsgFileDat;
 }
 
 
-string* MsgParser::trim(string* myString)
+QString MsgParser::trim(QString myQString)
 {
-    while(!myString->empty() && myString->at(0) == ' ' && myString->at(myString->size() - 1) ==  ' ')
-    {
-        if(myString->at(0) == ' ')
+    while(!myQString.isEmpty() && (myQString.at(0) == ' ' || myQString.at(0) == '\n' || myQString.at(0) == '\t') )
+    {cout << "looping" << endl;
+        if(myQString.at(0) == ' ')
         {
-            myString->erase(0);
-        }
-        
-        if(!myString->empty() && myString->at(myString->size() - 1) == ' ')
-        {
-            myString->erase(myString->size() - 1);
+            myQString.remove(0, 1);
         }
     }
-    
-    return myString;
-}
 
-
-string* MsgParser::extractType(string* line)
-{
-    string* tmp = new string();
-    int count = 0;
-    string tmpStr;
-    
-    while(line->at(count) != ' ' && count < line->size() )
-    {
-        tmpStr = line->at(count);
-        tmp->append(tmpStr);
-        count++;
-    }       
-    cout << "successfully extracted type: " << *tmp << endl;
-    return tmp;
-}
-
-
-string* MsgParser::extractName(string* line)
-{cout << "HERE (1)" << endl;
-    string* tmp = new string();
-    //bool beforeName = true;
-    int count = 0;
-    string tmpStr;
-    cout << "HERE (2)" << endl;
-    while(line->at(0) != ' ' && count < line->size() )
-    {
-        line->erase(line->begin());
-        count++;
-    }    
-    line->erase(line->begin() );
-    cout << "HERE (3)" << endl;
-    cout << "dealing with: \"" << *line << "\"" << endl;
-    cout << "size: " << line->size() << endl;
-    count = 0;
-    /*while(line->at(count) != ' ' && count < line->size() )
-    {
-        tmpStr = line->at(count);
-        tmp->append(tmpStr);
-        count++;
-    }*/
-    for(count = 0; count < line->size(); count++)
-    {
-        if(line->at(count) != ' ')
-        {
-            tmpStr = line->at(count);
-            tmp->append(tmpStr);
+    while(!myQString.isEmpty() && (myQString.at(myQString.size() - 1) ==  ' '
+                                || myQString.at(myQString.size() - 1) == '\n'
+                                || myQString.at(myQString.size() - 1) == '\t') )
+    {cout << "looping 2" << endl;
+        if(myQString.at(myQString.size() - 1) == ' ')
+        {cout << "\nin if" << endl;
+            myQString.remove((myQString.size() - 1), 1);
         }
+    break;
     }
     
-cout << "HERE (4)" << endl;
-    cout << "successfully extracted name: " << *tmp << endl;
-    return tmp;
+    return myQString;
 }
 
 
-string* MsgParser::extractComment(string* line)
-{cout << "HERE (5)" << endl;
-    string* tmp = new string();
-    //bool beforeName = true;
-    int count = 0;
-    string tmpStr;
-    cout << "HERE (6)" << endl;
-    while(line->at(0) != ' ' && count < line->size() )
+void MsgParser::extractAttributes(QString line, MsgFieldDat msgFieldDat)
+{   cout << "pre-trim: " << line.toStdString() << endl;
+    line = trim(line);
+    cout << "trimmed: \"" << line.toStdString() << "\"" << endl;
+    //cout << "line size: " << line->size() << endl;
+    QString type("");
+    for(size_t i = 0; i < line.size(); i++)
     {
-        line->erase(line->begin());
-        count++;
-    }    
-    line->erase(line->begin() );
-    cout << "HERE (7)" << endl;
-    count = 0;
-    while(line->at(0) != ' ' && count < line->size() )
-    {
-        line->erase(line->begin());
-        count++;
-    }    
-    line->erase(line->begin() );
-    cout << "HERE (8)" << endl;
-    count = 0;
-    while(line->at(count) != ' ' && count < line->size() )
-    {
-        tmpStr = line->at(count);
-        tmp->append(tmpStr);
-        count++;
-    }  
+        cout << "(pre) line: " << line.toStdString() << endl;
+        if(line.at(0) != ' ')
+        {//cout << "\tappending" << endl;
+            //cout << "\tappending: \"" << line.at(0).toLatin1() << "\"" << endl;
+            type.append(line.at(0) );
+            line.remove(0, 1);
+        }
+        else
+        {//cout << "\tnot" << endl;
+            line.remove(0, 1);
+            break;
+        }
+        cout << "(post) line: " << line.toStdString() << endl;
+    }
+    msgFieldDat.setFieldTypeStrPtr(&type);
+    cout << "type: " << type.toStdString() << endl;
+    //cout << "Type: " << *msgFieldDat->getFieldTypeStrPtr() << endl;
     
-    cout << "successfully extracted comment: " << *tmp << endl;
-    return tmp;
+    
+    QString name("");
+    for(size_t i = 0; i < line.size(); i++)
+    {
+        if(line.at(0) != ' ')
+        {
+            name.append(line.at(0) );
+            line.remove(0, 1);
+        }
+        else
+        {
+            line.remove(0, 1);
+            break;
+        }
+    }
+    msgFieldDat.setFieldNameStrPtr(&name);
+    cout << "name: " << name.toStdString() << endl;
+    
+    
+    QString comment("");
+    for(size_t i = 0; i < line.size(); i++)
+    {
+        comment.append(line.at(0) );
+        line.remove(0, 1);
+    }
+    msgFieldDat.setFieldCommentsStrPtr(&comment);
+    cout << "comment: " << comment.toStdString() << endl;
+    
+    
 }
 
 
@@ -206,9 +180,9 @@ void MsgParser::toJsonFile()
 }
 
 
-string* MsgParser::toString()
+QString* MsgParser::toQString()
 {
-    return currentMsgFileDat->toString();
+    return currentMsgFileDat->toQString();
 }
 
 

@@ -11,7 +11,7 @@
 #define	MSG_DAT_H
 
 #include <iostream>
-#include <string>
+#include <QString>
 
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
@@ -29,19 +29,19 @@ using namespace std;
 class MsgFieldDat
 {
     private:
-        string* fieldTypeStrPtr;
-        string* fieldNameStrPtr;
-        string* fieldCommentsStrPtr;
+        QString* fieldTypeStrPtr;
+        QString* fieldNameStrPtr;
+        QString* fieldCommentsStrPtr;
         
     public:
         MsgFieldDat();
-        void setFieldTypeStrPtr(string* fieldTypeStrPtr);
-        string* getFieldTypeStrPtr();
-        void setFieldNameStrPtr(string* fieldNameStrPtr);
-        string* getFieldNameStrPtr();
-        void setFieldCommentsStrPtr(string* fieldCommentsStrPtr);
-        string* getFieldCommentsStrPtr();
-        string* toString();
+        void setFieldTypeStrPtr(QString* fieldTypeStrPtr);
+        QString* getFieldTypeStrPtr();
+        void setFieldNameStrPtr(QString* fieldNameStrPtr);
+        QString* getFieldNameStrPtr();
+        void setFieldCommentsStrPtr(QString* fieldCommentsStrPtr);
+        QString* getFieldCommentsStrPtr();
+        QString* toQString();
         ~MsgFieldDat();
 };
 

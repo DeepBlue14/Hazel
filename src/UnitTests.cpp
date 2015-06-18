@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
     QProcess* qprocess = new QProcess();
     ParseFontConfigXml parseFontConfigXml;
     MsgParser msgParser;
-    string tmpFile("/opt/ros/indigo/share/sensor_msgs/msg/CameraInfo.msg");
-    string tmpDir("/opt/ros/indigo/share/sensor_msgs");
+    QString tmpFile("/opt/ros/indigo/share/sensor_msgs/msg/CameraInfo.msg");
+    QString tmpDir("/opt/ros/indigo/share/sensor_msgs");
     
     switch(choiceInt)
     {

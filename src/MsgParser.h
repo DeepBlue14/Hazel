@@ -15,10 +15,9 @@
 
 #include <QDir>
 #include <QFileInfoList>
+#include <QString>
 
 #include <iostream>
-#include <fstream>
-#include <string>
 
 #include "MsgDirDat.h"
 #include "MsgFileDat.h"
@@ -43,16 +42,14 @@ class MsgParser
         
     public:
         MsgParser();
-        MsgDirDat* parseDir(string* msgDirAbsPathStrPtr);
-        MsgFileDat* parseFile(string* msgFileAbsPathStrPtr);
-        string* trim(string* myString);
-        string* extractType(string* line);
-        string* extractName(string* line);
-        string* extractComment(string* line);
+        MsgDirDat* parseDir(QString* msgDirAbsPathStrPtr);
+        MsgFileDat* parseFile(QString* msgFileAbsPathStrPtr);
+        QString trim(QString myQString);
+        void extractAttributes(QString line, MsgFieldDat msgFieldDat);
         void toTxtFile();
         void toXmlFile();
         void toJsonFile();
-        string* toString();
+        QString* toQString();
         ~MsgParser();
 };
 

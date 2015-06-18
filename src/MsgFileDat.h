@@ -10,8 +10,8 @@
 #ifndef MSG_TYPE_DAT_H
 #define	MSG_TYPE_DAT_H
 
-#include <string>
-#include <vector>
+#include <QString>
+#include <QVector>
 #include <iostream>
 
 #include "MsgFieldDat.h"
@@ -31,20 +31,20 @@ using namespace std;
 class MsgFileDat
 {
     private:
-        string* msgFileNameStrPtr;
-        string* msgFileHeaderStrPtr;
-        vector<MsgFieldDat*>* msgFieldDatPtrVecPtr;
+        QString* msgFileNameStrPtr;
+        QString* msgFileHeaderStrPtr;
+        QVector<MsgFieldDat*>* msgFieldDatPtrVecPtr;
         
     public:
         MsgFileDat();
-        void setMsgFileNameStrPtr(string* msgFileNameStrPtr);
-        string* getMsgFileNameStrPtr();
-        void setMsgFileHeaderStrPtr(string* msgFileHeaderStrPtr);
-        string* getMsgFileHeaderStrPtr();
+        void setMsgFileNameStrPtr(QString* msgFileNameStrPtr);
+        QString* getMsgFileNameStrPtr();
+        void setMsgFileHeaderStrPtr(QString* msgFileHeaderStrPtr);
+        QString* getMsgFileHeaderStrPtr();
         void pushToMsgFieldDatPtrVecPtr(MsgFieldDat* msgFieldDatPtr);
         MsgFieldDat* popFromMsgFieldDatPtrVecPtr();
-        vector<MsgFieldDat*>* getMsgFieldDatPtrVecPtr();
-        string* toString();
+        QVector<MsgFieldDat*>* getMsgFieldDatPtrVecPtr();
+        QString* toQString();
         ~MsgFileDat();
 };
 

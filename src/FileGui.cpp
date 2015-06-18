@@ -152,7 +152,7 @@ void FileGui::keyPressEvent(QKeyEvent* e)
 
     if(tcg.block().text().size() > 0)
     {
-        cout << "\nchar on the right end: " << tcg.block().text().at(tcg.block().text().size() - 1).toAscii() << endl;
+        cout << "\nchar on the right end: " << tcg.block().text().at(tcg.block().text().size() - 1).toLatin1() << endl;
     }
         
     cout << "key just entered: " << e->text().toStdString() << endl;
@@ -162,7 +162,7 @@ void FileGui::keyPressEvent(QKeyEvent* e)
     bool isClosingParens = true;
     for(size_t i = 0; i < (tcg.block().text().size() - tcg.positionInBlock()); i++)
     {
-        char ch = tcg.block().text().at(tcg.block().text().size() - (1 + i)).toAscii();
+        char ch = tcg.block().text().at(tcg.block().text().size() - (1 + i)).toLatin1();
         if(QString(ch) != ")")
         {
             isClosingParens = false;

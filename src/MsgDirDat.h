@@ -10,8 +10,8 @@
 #ifndef MSG_DIR_DAT_H
 #define	MSG_DIR_DAT_H
 
-#include <string>
-#include <vector>
+#include <QString>
+#include <QVector>
 #include <iostream>
 
 #include "MsgFileDat.h"
@@ -31,17 +31,17 @@ using namespace std;
 class MsgDirDat
 {
     private:
-        string* msgDirStrPtr;
-        vector<MsgFileDat*>* msgFileDatPtrVecPtr;
+        QString* msgDirStrPtr;
+        QVector<MsgFileDat*>* msgFileDatPtrVecPtr;
         
     public:
         MsgDirDat();
-        void setMsgDirStrPtr(string* msgDirStrPtr);
-        string* getMsgDirStrPtr();
+        void setMsgDirStrPtr(QString* msgDirStrPtr);
+        QString* getMsgDirStrPtr();
         void pushToMsgFileDatPtrVecPtr(MsgFileDat* msgFileDatPtr);
         MsgFileDat* popFromMsgFileDatPtrVecPtr();
-        vector<MsgFileDat*>* getMsgFileDatPtrVecPtr();
-        string* toString();
+        QVector<MsgFileDat*>* getMsgFileDatPtrVecPtr();
+        QString* toQString();
         ~MsgDirDat();
 };
 
