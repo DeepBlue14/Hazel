@@ -32,7 +32,7 @@ class MsgDirDat
 {
     private:
         QString* msgDirStrPtr;
-        QVector<MsgFileDat*>* msgFileDatPtrVecPtr;
+        QVector<MsgFileDat*> msgFileDatPtrVecPtr;
         
     public:
         MsgDirDat();
@@ -40,8 +40,8 @@ class MsgDirDat
         QString* getMsgDirStrPtr();
         void pushToMsgFileDatPtrVecPtr(MsgFileDat* msgFileDatPtr);
         MsgFileDat* popFromMsgFileDatPtrVecPtr();
-        QVector<MsgFileDat*>* getMsgFileDatPtrVecPtr();
-        QString* toQString();
+        QVector<MsgFileDat*> getMsgFileDatPtrVecPtr();
+        QString* toString();
         ~MsgDirDat();
 };
 

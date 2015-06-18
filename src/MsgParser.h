@@ -38,18 +38,18 @@ using namespace std;
 class MsgParser
 {
     private:
+        MsgDirDat msgDirDat;
         MsgFileDat* currentMsgFileDat;
         
     public:
         MsgParser();
         MsgDirDat* parseDir(QString* msgDirAbsPathStrPtr);
-        MsgFileDat* parseFile(QString* msgFileAbsPathStrPtr);
-        QString trim(QString myQString);
-        void extractAttributes(QString line, MsgFieldDat msgFieldDat);
+        MsgFileDat parseFile(QString msgFileAbsPathStrPtr);
+        MsgFieldDat extractAttributes(QString line, MsgFieldDat msgFieldDat);
         void toTxtFile();
         void toXmlFile();
         void toJsonFile();
-        QString* toQString();
+        QString* toString();
         ~MsgParser();
 };
 

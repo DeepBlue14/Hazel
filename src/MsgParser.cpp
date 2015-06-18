@@ -3,71 +3,72 @@
 
 MsgParser::MsgParser()
 {
-    currentMsgFileDat = new MsgFileDat();
+    ;
 }
 
 
 MsgDirDat* MsgParser::parseDir(QString* msgDirAbsPathStrPtr)
 {
-    cout << "at MsgParser::parseDir(...): passed: " << msgDirAbsPathStrPtr->toStdString() << endl;
     QString tmp;
     tmp = *msgDirAbsPathStrPtr;
-    cout << "tmp: " << tmp.toStdString() << endl;
     tmp.append("/msg");
     QDir* dir = new QDir(tmp);
-    
-    cout << "cd'ed to: " << dir->absolutePath().toStdString() << endl;
-    QFileInfoList files = dir->entryInfoList();
+    msgDirDat.setMsgDirStrPtr(msgDirAbsPathStrPtr);
+    QFileInfoList files = dir->entryInfoList(QDir::Files);
     foreach(QFileInfo file, files)
     {
         QString stdStr = file.filePath();
-        cout << "about to parse: " << stdStr.toStdString() << endl;
-        parseFile(&stdStr);
+        MsgFileDat tmpFileDat = parseFile(stdStr);
+        msgDirDat.pushToMsgFileDatPtrVecPtr(new MsgFileDat(tmpFileDat) );
+
     }
     
-    return new MsgDirDat(); // ***METHOD STUB***
+    return new MsgDirDat(msgDirDat); // ***METHOD STUB***
 }
 
 
-MsgFileDat* MsgParser::parseFile(QString* msgFileAbsPathStrPtr)
+MsgFileDat MsgParser::parseFile(QString msgFileAbsPathStrPtr)
 {
-    currentMsgFileDat = new MsgFileDat();
-    currentMsgFileDat->setMsgFileNameStrPtr(msgFileAbsPathStrPtr);
+    MsgFileDat currentMsgFileDat;
+    currentMsgFileDat.setMsgFileNameStrPtr(msgFileAbsPathStrPtr);
     bool isHeader = true;
     
-    QFile file(*msgFileAbsPathStrPtr);
+    QFile file(msgFileAbsPathStrPtr);
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text) )
         cerr << "failed to open file" << endl;
     
+    //cout << "!!!File: " << file.fileName().toStdString() << endl;
     while(!file.atEnd() )
     {
         QByteArray lineBa = file.readLine();
         QString lineStr = lineBa.data();
+        lineStr = lineStr.trimmed();
         MsgFieldDat msgFieldDat;
         
         if(lineStr.size() < 2 )//empy line will be percieved as a \n, i.e. 1 char
         {
-            cout << "empty line" << endl;
+            //cout << "empty line" << endl;
         }
-        else if((lineStr.at(0) == '#' || lineStr.at(0) == ' ') && isHeader == true)
+        else if(lineStr.at(0) == '#' && isHeader == true)
         {
-            cout << "setting header: " << lineStr.toStdString() << endl;
-            cout << "header size: " << lineStr.size() << endl;
+            //cout << "setting header: " << lineStr.toStdString() << endl;
+            //cout << "header size: " << lineStr.size() << endl;
             //currentMsgFileDat->setMsgFileHeaderStrPtr(new QString(*currentMsgFileDat->getMsgFileHeaderStrPtr() + lineStr) );
         }
-        else if(lineStr.at(0) == '#' || lineStr.at(0) == ' ')
+        else if(lineStr.at(0) == '#')
         {
-            cout << "setting comment" << endl;
-            cout << "size: " << lineStr.size() << endl;
+            //cout << "setting comment" << endl;
+            //cout << "size: " << lineStr.size() << endl;
             //msgFieldDat.setFieldCommentsStrPtr(new QString(*msgFieldDat.getFieldCommentsStrPtr() + lineStr) );
         }
         else
         {
             isHeader = false;
-            cout << "Sending: " << lineStr.toStdString() << endl;
-            cout << "sending size: " << lineStr.size() << endl;
-            extractAttributes(lineStr, msgFieldDat);
-            currentMsgFileDat->pushToMsgFieldDatPtrVecPtr(&msgFieldDat);
+            //cout << "Sending: " << lineStr.toStdString() << endl;
+            //cout << "sending size: " << lineStr.size() << endl;
+            msgFieldDat = extractAttributes(lineStr, msgFieldDat);
+            //cout << "!!!: " << msgFieldDat.getFieldTypeStrPtr()->toStdString() << endl;
+            currentMsgFileDat.pushToMsgFieldDatPtrVecPtr(new MsgFieldDat(msgFieldDat));
             //cout << "Type: " << *msgFieldDat->getFieldTypeStrPtr()
             //     << ", Name: " << *msgFieldDat->getFieldNameStrPtr() << endl << endl;
                  //<< ", Commment: " << msgFieldDat->getFieldCommentsStrPtr() << endl << endl;
@@ -79,60 +80,32 @@ MsgFileDat* MsgParser::parseFile(QString* msgFileAbsPathStrPtr)
 }
 
 
-QString MsgParser::trim(QString myQString)
+MsgFieldDat MsgParser::extractAttributes(QString line, MsgFieldDat msgFieldDat)
 {
-    while(!myQString.isEmpty() && (myQString.at(0) == ' ' || myQString.at(0) == '\n' || myQString.at(0) == '\t') )
-    {cout << "looping" << endl;
-        if(myQString.at(0) == ' ')
-        {
-            myQString.remove(0, 1);
-        }
-    }
-
-    while(!myQString.isEmpty() && (myQString.at(myQString.size() - 1) ==  ' '
-                                || myQString.at(myQString.size() - 1) == '\n'
-                                || myQString.at(myQString.size() - 1) == '\t') )
-    {cout << "looping 2" << endl;
-        if(myQString.at(myQString.size() - 1) == ' ')
-        {cout << "\nin if" << endl;
-            myQString.remove((myQString.size() - 1), 1);
-        }
-    break;
-    }
-    
-    return myQString;
-}
-
-
-void MsgParser::extractAttributes(QString line, MsgFieldDat msgFieldDat)
-{   cout << "pre-trim: " << line.toStdString() << endl;
-    line = trim(line);
-    cout << "trimmed: \"" << line.toStdString() << "\"" << endl;
-    //cout << "line size: " << line->size() << endl;
+    line = line.trimmed();
     QString type("");
-    for(size_t i = 0; i < line.size(); i++)
+    int origLineSize = line.size();
+    for(size_t i = 0; i < origLineSize; i++)
     {
-        cout << "(pre) line: " << line.toStdString() << endl;
         if(line.at(0) != ' ')
-        {//cout << "\tappending" << endl;
-            //cout << "\tappending: \"" << line.at(0).toLatin1() << "\"" << endl;
+        {
             type.append(line.at(0) );
             line.remove(0, 1);
         }
         else
-        {//cout << "\tnot" << endl;
+        {
             line.remove(0, 1);
             break;
         }
-        cout << "(post) line: " << line.toStdString() << endl;
     }
-    msgFieldDat.setFieldTypeStrPtr(&type);
-    cout << "type: " << type.toStdString() << endl;
-    //cout << "Type: " << *msgFieldDat->getFieldTypeStrPtr() << endl;
+    msgFieldDat.setFieldTypeStrPtr(new QString(type) );
+    //cout << "type: " << type.toStdString() << endl;
     
-    
+
+    line = line.trimmed();
     QString name("");
-    for(size_t i = 0; i < line.size(); i++)
+    origLineSize = line.size();
+    for(size_t i = 0; i < origLineSize; i++)
     {
         if(line.at(0) != ' ')
         {
@@ -145,20 +118,22 @@ void MsgParser::extractAttributes(QString line, MsgFieldDat msgFieldDat)
             break;
         }
     }
-    msgFieldDat.setFieldNameStrPtr(&name);
-    cout << "name: " << name.toStdString() << endl;
+    msgFieldDat.setFieldNameStrPtr(new QString(name) );
+    //cout << "name: " << name.toStdString() << endl << endl;;
     
     
+    line = line.trimmed();
     QString comment("");
-    for(size_t i = 0; i < line.size(); i++)
+    origLineSize = line.size();
+    for(size_t i = 0; i < origLineSize; i++)
     {
         comment.append(line.at(0) );
         line.remove(0, 1);
     }
-    msgFieldDat.setFieldCommentsStrPtr(&comment);
-    cout << "comment: " << comment.toStdString() << endl;
+    msgFieldDat.setFieldCommentsStrPtr(new QString(comment) );
+    //cout << "comment: " << comment.toStdString() << endl;
     
-    
+    return msgFieldDat;
 }
 
 
@@ -180,9 +155,30 @@ void MsgParser::toJsonFile()
 }
 
 
-QString* MsgParser::toQString()
+QString* MsgParser::toString()
 {
-    return currentMsgFileDat->toQString();
+    QString* tmp = new QString();
+    tmp->append("Directory Name: ");
+    tmp->append(msgDirDat.getMsgDirStrPtr() );
+    tmp->append("\nFiles: ");
+
+    for(size_t i = 0; i < msgDirDat.getMsgFileDatPtrVecPtr().size(); i++)
+    {
+        tmp->append("\n    ");
+        tmp->append(msgDirDat.getMsgFileDatPtrVecPtr().at(i)->getMsgFileNameStrPtr() );
+        tmp->append("\n        ");
+        for(size_t k = 0; k < msgDirDat.getMsgFileDatPtrVecPtr().at(i)->getMsgFieldDatPtrVecPtr().size(); k++)
+        {
+            tmp->append("Type: ");
+            tmp->append(msgDirDat.getMsgFileDatPtrVecPtr().at(i)->getMsgFieldDatPtrVecPtr().at(k)->getFieldTypeStrPtr() );
+            tmp->append(", Name: ");
+            tmp->append(msgDirDat.getMsgFileDatPtrVecPtr().at(i)->getMsgFieldDatPtrVecPtr().at(k)->getFieldNameStrPtr() );
+            tmp->append("\n        ");
+        }
+
+    }
+
+    return tmp;
 }
 
 

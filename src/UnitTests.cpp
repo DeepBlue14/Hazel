@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
     QProcess* qprocess = new QProcess();
     ParseFontConfigXml parseFontConfigXml;
     MsgParser msgParser;
-    QString tmpFile("/opt/ros/indigo/share/sensor_msgs/msg/CameraInfo.msg");
+    QString tmpFile("/opt/ros/indigo/share/sensor_msgs/msg/MagneticField.msg");
     QString tmpDir("/opt/ros/indigo/share/sensor_msgs");
     
     switch(choiceInt)
@@ -85,9 +85,9 @@ int main(int argc, char *argv[])
             parseFontConfigXml.readDoc();
             break;
         case 5:
-            msgParser.parseFile(&tmpFile);
-            //msgParser.parseDir(&tmpDir);
-            //cout << msgParser.toString() << endl;
+            //msgParser.parseFile(tmpFile);
+            msgParser.parseDir(&tmpDir);
+            cout << msgParser.toString()->toStdString() << endl;
             return EXIT_SUCCESS;
             break;
         default:

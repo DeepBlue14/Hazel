@@ -3,7 +3,9 @@
 
 MsgFieldDat::MsgFieldDat()
 {
-    ;
+    fieldTypeStrPtr = new QString("");
+    fieldNameStrPtr = new QString("");
+    fieldCommentsStrPtr = new QString("");
 }
 
 
@@ -43,7 +45,7 @@ QString* MsgFieldDat::getFieldCommentsStrPtr()
 }
 
 
-QString* MsgFieldDat::toQString()
+QString* MsgFieldDat::toString()
 {
     QString* tmp = new QString();
     

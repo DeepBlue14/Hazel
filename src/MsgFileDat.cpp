@@ -3,20 +3,20 @@
 
 MsgFileDat::MsgFileDat()
 {
-    msgFileNameStrPtr = new QString();
+    //msgFileNameStrPtr = new QString();
     msgFileHeaderStrPtr = new QString();
-    msgFieldDatPtrVecPtr = new QVector<MsgFieldDat*>();
+    //msgFieldDatPtrVecPtr = new QVector<MsgFieldDat*>();
     
 }
 
 
-void MsgFileDat::setMsgFileNameStrPtr(QString* msgFileNameStrPtr)
+void MsgFileDat::setMsgFileNameStrPtr(QString msgFileNameStrPtr)
 {
     this->msgFileNameStrPtr = msgFileNameStrPtr;
 }
 
 
-QString* MsgFileDat::getMsgFileNameStrPtr()
+QString MsgFileDat::getMsgFileNameStrPtr()
 {
     return msgFileNameStrPtr;
 }
@@ -36,38 +36,38 @@ QString* MsgFileDat::getMsgFileHeaderStrPtr()
 
 void MsgFileDat::pushToMsgFieldDatPtrVecPtr(MsgFieldDat* msgFieldDatPtr)
 {
-    msgFieldDatPtrVecPtr->push_back(msgFieldDatPtr);
+    msgFieldDatPtrVecPtr.push_back(msgFieldDatPtr);
 }
 
 
 MsgFieldDat* MsgFileDat::popFromMsgFieldDatPtrVecPtr()
 {
     MsgFieldDat* tmp = new MsgFieldDat();
-    *tmp = *msgFieldDatPtrVecPtr->back();
-    msgFieldDatPtrVecPtr->pop_back();
+    *tmp = *msgFieldDatPtrVecPtr.back();
+    msgFieldDatPtrVecPtr.pop_back();
     
     return tmp;
 }
 
 
-QVector<MsgFieldDat*>* MsgFileDat::getMsgFieldDatPtrVecPtr()
+QVector<MsgFieldDat*> MsgFileDat::getMsgFieldDatPtrVecPtr()
 {
     return msgFieldDatPtrVecPtr;
 }
 
 
-QString* MsgFileDat::toQString()
+QString* MsgFileDat::toString()
 {
     QString* tmp = new QString();
-    tmp->append("msgFileName: " + *getMsgFileNameStrPtr() );
+    tmp->append("msgFileName: " + getMsgFileNameStrPtr() );
     tmp->append("\nmsgFileHeader: " + *getMsgFileHeaderStrPtr() );
     tmp->append("\nmsgFieldDatPtrs:");
     
-    for(size_t i = 0; i < msgFieldDatPtrVecPtr->size(); i++)
+    for(size_t i = 0; i < msgFieldDatPtrVecPtr.size(); i++)
     {
-        tmp->append("\n\tField Type: " + *msgFieldDatPtrVecPtr->at(i)->getFieldTypeStrPtr()
-                    + "\tField Name: " + *msgFieldDatPtrVecPtr->at(i)->getFieldNameStrPtr()
-                    + "\tField Comment: " + *msgFieldDatPtrVecPtr->at(i)->getFieldCommentsStrPtr() );
+        tmp->append("\n\tField Type: " + *msgFieldDatPtrVecPtr.at(i)->getFieldTypeStrPtr()
+                    + "\tField Name: " + *msgFieldDatPtrVecPtr.at(i)->getFieldNameStrPtr()
+                    + "\tField Comment: " + *msgFieldDatPtrVecPtr.at(i)->getFieldCommentsStrPtr() );
     }
     
     return tmp;

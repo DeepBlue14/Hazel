@@ -31,20 +31,20 @@ using namespace std;
 class MsgFileDat
 {
     private:
-        QString* msgFileNameStrPtr;
+        QString msgFileNameStrPtr;
         QString* msgFileHeaderStrPtr;
-        QVector<MsgFieldDat*>* msgFieldDatPtrVecPtr;
+        QVector<MsgFieldDat*> msgFieldDatPtrVecPtr;
         
     public:
         MsgFileDat();
-        void setMsgFileNameStrPtr(QString* msgFileNameStrPtr);
-        QString* getMsgFileNameStrPtr();
+        void setMsgFileNameStrPtr(QString msgFileNameStrPtr);
+        QString getMsgFileNameStrPtr();
         void setMsgFileHeaderStrPtr(QString* msgFileHeaderStrPtr);
         QString* getMsgFileHeaderStrPtr();
         void pushToMsgFieldDatPtrVecPtr(MsgFieldDat* msgFieldDatPtr);
         MsgFieldDat* popFromMsgFieldDatPtrVecPtr();
-        QVector<MsgFieldDat*>* getMsgFieldDatPtrVecPtr();
-        QString* toQString();
+        QVector<MsgFieldDat*> getMsgFieldDatPtrVecPtr();
+        QString* toString();
         ~MsgFileDat();
 };
 

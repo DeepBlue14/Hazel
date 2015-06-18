@@ -3,7 +3,7 @@
 
 MsgDirDat::MsgDirDat()
 {
-    msgFileDatPtrVecPtr = new QVector<MsgFileDat*>();
+    ;//msgFileDatPtrVecPtr = new QVector<MsgFileDat*>();
 }
 
 
@@ -21,27 +21,27 @@ QString* MsgDirDat::getMsgDirStrPtr()
 
 void MsgDirDat::pushToMsgFileDatPtrVecPtr(MsgFileDat* msgFileDatPtr)
 {
-    msgFileDatPtrVecPtr->push_back(msgFileDatPtr);
+    msgFileDatPtrVecPtr.push_back(msgFileDatPtr);
 }
 
 
 MsgFileDat* MsgDirDat::popFromMsgFileDatPtrVecPtr()
 {
     MsgFileDat* tmp = new MsgFileDat();
-    tmp = msgFileDatPtrVecPtr->back();
-    msgFileDatPtrVecPtr->pop_back();
+    tmp = msgFileDatPtrVecPtr.back();
+    msgFileDatPtrVecPtr.pop_back();
     
     return tmp;
 }
 
 
-QVector<MsgFileDat*>* MsgDirDat::getMsgFileDatPtrVecPtr()
+QVector<MsgFileDat*> MsgDirDat::getMsgFileDatPtrVecPtr()
 {
     return msgFileDatPtrVecPtr;
 }
 
 
-QString* MsgDirDat::toQString()
+QString* MsgDirDat::toString()
 {
     QString* tmp = new QString("***method stub***");
     

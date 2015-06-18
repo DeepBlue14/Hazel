@@ -41,7 +41,7 @@ class MsgFieldDat
         QString* getFieldNameStrPtr();
         void setFieldCommentsStrPtr(QString* fieldCommentsStrPtr);
         QString* getFieldCommentsStrPtr();
-        QString* toQString();
+        QString* toString();
         ~MsgFieldDat();
 };
 
