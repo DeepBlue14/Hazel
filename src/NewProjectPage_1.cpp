@@ -14,7 +14,9 @@ NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
     
     rosVersionsLwPtr = new QListWidget();
     rosVersionsLwPtr->addItems(*rosVersionsStrLstPtr);
-        
+    rosVersionsLwPtr->setSelectionMode(QAbstractItemView::SingleSelection);
+    rosVersionsLwPtr->item(3)->setSelected(true);
+    
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addWidget(rosVersionsLwPtr);
     

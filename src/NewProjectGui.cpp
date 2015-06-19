@@ -124,6 +124,7 @@ void NewProjectGui::initBtns()
     backBtn = new QPushButton("< Back", this);
     backBtn->setEnabled(false);
     nextBtn = new QPushButton("Next >", this);
+    nextBtn->autoDefault();
     finishBtn = new QPushButton("Finish", this);
     finishBtn->setEnabled(false);
     helpBtn = new QPushButton("Help", this);

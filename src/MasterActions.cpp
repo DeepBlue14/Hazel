@@ -165,7 +165,7 @@ void MasterActions::handleBuildActionSlot()
 {
     RProcess* rprocess = new RProcess();
     rprocess->setOutputLocTePtr(southTabWidgetPtr->getOutputTePtr() );
-    rprocess->startDetached("catkin_make"); // pass output tab to rprocess?
+    rprocess->start/*Detached*/("catkin_make"); // pass output tab to rprocess?
     cout << "# of child tabs: " << southTabWidgetPtr->children().size() << endl;
     southTabWidgetPtr->getTabWidget()->setTabText(0, "Overriding!");
     //southTabWidgetPtr->dumpToGui(new QString("compiling..."));
@@ -192,13 +192,13 @@ void MasterActions::handleConfigForRunActionSlot()
 void MasterActions::handleRunActionSlot()
 {
     RProcess* rprocess = new RProcess();
-    
+    rprocess->setOutputLocTePtr(southTabWidgetPtr->getOutputTePtr() );
     QStringList* tmpStrLstPtr = new QStringList();
     cout << "!!!: " << runGuiPtr->getRunPage_2Ptr()->getPkgStrPtr().toStdString();
     cout << "!!!: " << runGuiPtr->getRunPage_2Ptr()->getFileStrPtr().toStdString() << endl;
     tmpStrLstPtr->push_back(runGuiPtr->getRunPage_2Ptr()->getPkgStrPtr() );
     tmpStrLstPtr->push_back(runGuiPtr->getRunPage_2Ptr()->getFileStrPtr() );
-    rprocess->startDetached("roslaunch", *tmpStrLstPtr);
+    rprocess->start/*Detached*/("roslaunch", *tmpStrLstPtr);
 }
 
 

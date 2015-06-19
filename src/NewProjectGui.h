@@ -111,4 +111,3 @@ class NewProjectGui : public QWidget
 };
 
 #endif	/* NEW_PROJECT_H */
-

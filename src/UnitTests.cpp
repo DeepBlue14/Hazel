@@ -19,6 +19,7 @@
 #include <cstdlib>
 
 #include "MasterGui.h"
+#include "HelpGui.h"
 #include "ParseFontConfigXml.h"
 #include "NewFileGui.h"
 #include "RFile.h"
@@ -45,16 +46,19 @@ int main(int argc, char *argv[])
     
     int choiceInt;
     cout << "Select an option:"
+         << "\n\t0) Quit"
          << "\n\t1) Regular run"
          << "\n\t2) Test RProcess"
          << "\n\t3) Test QProcess"
          << "\n\t4) Font XML file parsing"
          << "\n\t5) Scout msg parsing"
+         << "\n\t6) Help GUI"
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
     
     MasterGui masterGui;
+    HelpGui helpGui;
     RProcess* rprocess = new RProcess();
     QProcess* qprocess = new QProcess();
     ParseFontConfigXml parseFontConfigXml;
@@ -64,6 +68,9 @@ int main(int argc, char *argv[])
     
     switch(choiceInt)
     {
+        case 0:
+            return EXIT_SUCCESS;
+            break;
         case 1:
             masterGui.show();
             return app.exec();
@@ -90,6 +97,9 @@ int main(int argc, char *argv[])
             cout << msgParser.toString()->toStdString() << endl;
             return EXIT_SUCCESS;
             break;
+        case 6:
+            helpGui.show();
+            return app.exec();
         default:
             cerr << "Invalid option" << endl;
             break;

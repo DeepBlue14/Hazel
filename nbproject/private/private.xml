@@ -7,9 +7,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/james/NetBeansProjects/ride/src/MsgParser.cpp</file>
-            <file>file:/home/james/NetBeansProjects/ride/src/UnitTests.cpp</file>
-            <file>file:/home/james/NetBeansProjects/ride/src/MsgParser.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/HelpGui.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/HelpPage_1.h</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/HelpPage_1.cpp</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/HelpGui.cpp</file>
+            <file>file:/home/james/NetBeansProjects/ride/src/HelpPage_2.h</file>
         </group>
     </open-files>
 </project-private>

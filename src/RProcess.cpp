@@ -59,24 +59,30 @@ void RProcess::start(const QString& program, const QStringList& arguments, OpenM
     
     addHeader(tmpRideFilePtr);
     tmpRideFilePtr->write(programCharPtr);
+    tmpRideFilePtr->write(" ");
     
     QByteArray tmpByteArray;
     for(size_t i = 0; i < arguments.size(); i++)
     {
-        tmpByteArray.append(arguments.at(i) + "\n");
+        tmpByteArray.append(arguments.at(i) + " ");
         tmpRideFilePtr->write(tmpByteArray);
         tmpByteArray.clear();
     }
     
-    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    //tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
     tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
     
     QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
-    QProcess qprocess;
-    qprocess.execute("chmod", stringlst);
+
+    testProcess.execute("chmod", stringlst);
     
-    return qprocess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
+    testProcess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
+    testProcess.waitForFinished(-1);
+    QByteArray output = testProcess.readAllStandardOutput();
+    cout << cct::bold("\nOutput: ") << output.data() << ":End" << endl;
+    outputLocTePtr->append(output.data());
+    cout << "exiting RProcess::start(...)" << endl;
 }
 
 
@@ -96,12 +102,15 @@ void RProcess::start(const QString& program, OpenMode mode)
     tmpRideFilePtr->close();
 
     QStringList stringlst; stringlst.push_back("+x"); stringlst.push_back("/tmp/tmpRideFile.bash");
-    QProcess qprocess;
-    qprocess.execute("chmod", stringlst);
+    //QProcess qprocess;
+    testProcess.execute("chmod", stringlst);
     
-    qprocess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
-    QByteArray output = qprocess.readAllStandardOutput();
-    cout << cct::bold("\nOutput: ") << output.data() << endl;
+    testProcess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
+    testProcess.waitForFinished(-1);
+    QByteArray output = testProcess.readAllStandardOutput();
+    cout << cct::bold("\nOutput: ") << output.data() << ":End" << endl;
+    outputLocTePtr->append(output.data());
+    cout << "exiting RProcess::start(...)" << endl;
 }
 
 

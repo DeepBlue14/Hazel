@@ -50,6 +50,7 @@ class RProcess : public QProcess
         static QStringList* curInUseFileNmStrLstPtr;
         static QList<int>* numsInUseLstPtr;
         QTextEdit* outputLocTePtr;
+        QProcess testProcess;
 
         static QString* genTmpFileNameStrPtr();
         static void addHeader(RFile* tmpRideFilePtr);
