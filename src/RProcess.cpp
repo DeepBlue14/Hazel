@@ -69,7 +69,7 @@ void RProcess::start(const QString& program, const QStringList& arguments, OpenM
         tmpByteArray.clear();
     }
     
-    //tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
+    tmpRideFilePtr->write("\nrm /tmp/tmpRideFile.bash");
     tmpRideFilePtr->write("\necho \"Finished execution.\"");
     tmpRideFilePtr->close();
     

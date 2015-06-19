@@ -9,6 +9,7 @@ HelpPage_1::HelpPage_1(QWidget* parent) : QWidget(parent)
     fillList();
     listWidgetPtr = new QListWidget();
     listWidgetPtr->addItems(*strLstPtr);
+    listWidgetPtr
 
     outerLayout = new QGridLayout();
     outerLayout->addWidget(searchWidget, 0, 0, Qt::AlignRight);
@@ -25,7 +26,11 @@ void HelpPage_1::fillList()
     strLstPtr->push_back("New File");
     strLstPtr->push_back("New Project");
     strLstPtr->push_back("Importing Projects");
-    strLstPtr->push_back("Execution");
+    strLstPtr->push_back("Building Projects");
+    strLstPtr->push_back("Running Projects");
+    strLstPtr->push_back("Custom Settings");
+    strLstPtr->push_back("Arcitecture");
+    strLstPtr->push_back("Simulations");
     strLstPtr->push_back("Send a bug report");
 }
 
