@@ -9,7 +9,7 @@ HelpPage_1::HelpPage_1(QWidget* parent) : QWidget(parent)
     fillList();
     listWidgetPtr = new QListWidget();
     listWidgetPtr->addItems(*strLstPtr);
-    listWidgetPtr
+    //listWidgetPtr
 
     outerLayout = new QGridLayout();
     outerLayout->addWidget(searchWidget, 0, 0, Qt::AlignRight);
