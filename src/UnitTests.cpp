@@ -51,8 +51,9 @@ int main(int argc, char *argv[])
          << "\n\t2) Test RProcess"
          << "\n\t3) Test QProcess"
          << "\n\t4) Font XML file parsing"
-         << "\n\t5) Scout msg parsing"
-         << "\n\t6) Help GUI"
+         << "\n\t5) MsgParser"
+         << "\n\t6) HParser"
+         << "\n\t7) Help GUI"
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
@@ -98,6 +99,9 @@ int main(int argc, char *argv[])
             return EXIT_SUCCESS;
             break;
         case 6:
+            ;
+            break;
+        case 7:
             helpGui.show();
             return app.exec();
         default:

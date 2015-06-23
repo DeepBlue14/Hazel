@@ -15,15 +15,43 @@ and open the template in the editor.
 QWidget
 {
     background-color: darkgrey;
-    border-color: black;
+    color: lightgray;
+}
+
+
+QDockWidget
+{
+    background-color: darkgray;
+    color: lightgray;
 }
 
 
 QMainWindow
 {
     background-color: darkgray;
-    border-color: black;
-    color: slategray;
+    color: lightgray;
+}
+
+
+
+QFrame
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QLabel
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QToolTip
+{
+    background-color: darkgray;
+    color: lightgray;
 }
 
 
@@ -51,18 +79,158 @@ QCheckBox
 QComboBox
 {
     background-color: darkgray;
-    color: lightslategrey;
+    color: lightgrey;
 }
 
 
 QPushButton
 {
     background-color: darkgray;
-    color: darkslategrey;
+    color: lightgrey;
+}
+
+
+QRadioButton
+{
+    background-color: darkgray;
+    color: lightgray;
 }
 
 
 QTreeView
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QListView
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QTableView
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QHeaderView
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QTreeWidget
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QSpinBox
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QGroupBox
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QMenu
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QMenuBar
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QProgressBar
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QScrollBar
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QSizeGrip
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QSlider
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QSplitter
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QStatusBar
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QTabWidget
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QTabBar
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QToolButton
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QToolBar
+{
+    background-color: darkgray;
+    color: lightgray;
+}
+
+
+QToolBox
 {
     background-color: darkgray;
     color: lightgray;

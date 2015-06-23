@@ -8,6 +8,11 @@
         <logicalFolder name="f2" displayName="backend" projectFiles="true">
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
+          <itemPath>src/HDirDat.h</itemPath>
+          <itemPath>src/HFileDat.h</itemPath>
+          <itemPath>src/HFuncDat.h</itemPath>
+          <itemPath>src/HParser.h</itemPath>
+          <itemPath>src/HVarDat.h</itemPath>
           <itemPath>src/ModifyCMakeLists.h</itemPath>
           <itemPath>src/ModifyManifest.h</itemPath>
           <itemPath>src/MsgDirDat.h</itemPath>
@@ -22,11 +27,6 @@
           <itemPath>src/RideEnv.h</itemPath>
           <itemPath>src/RosEnv.h</itemPath>
           <itemPath>src/SaveAll.h</itemPath>
-          <itemPath>src/ScoutData.h</itemPath>
-          <itemPath>src/ScoutFileDat.h</itemPath>
-          <itemPath>src/ScoutFuncDat.h</itemPath>
-          <itemPath>src/ScoutLibDat.h</itemPath>
-          <itemPath>src/ScoutVarDat.h</itemPath>
           <itemPath>src/Terminal.h</itemPath>
           <itemPath>src/TextReplacer.h</itemPath>
           <itemPath>src/XmlMaster.h</itemPath>
@@ -94,6 +94,7 @@
       </logicalFolder>
       <logicalFolder name="qss" displayName="qss" projectFiles="true">
         <itemPath>src/qss/Dark.css</itemPath>
+        <itemPath>src/qss/Template.css</itemPath>
       </logicalFolder>
       <logicalFolder name="resources" displayName="resources" projectFiles="true">
         <logicalFolder name="ride_project"
@@ -116,6 +117,7 @@
         <logicalFolder name="f1" displayName="backend" projectFiles="true">
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
+          <itemPath>src/HParser.cpp</itemPath>
           <itemPath>src/ModifyCMakeLists.cpp</itemPath>
           <itemPath>src/ModifyManifest.cpp</itemPath>
           <itemPath>src/MsgDirDat.cpp</itemPath>
@@ -130,11 +132,6 @@
           <itemPath>src/RideEnv.cpp</itemPath>
           <itemPath>src/RosEnv.cpp</itemPath>
           <itemPath>src/SaveAll.cpp</itemPath>
-          <itemPath>src/ScoutData.cpp</itemPath>
-          <itemPath>src/ScoutFileDat.cpp</itemPath>
-          <itemPath>src/ScoutFuncDat.cpp</itemPath>
-          <itemPath>src/ScoutLibDat.cpp</itemPath>
-          <itemPath>src/ScoutVarDat.cpp</itemPath>
           <itemPath>src/Terminal.cpp</itemPath>
           <itemPath>src/TextReplacer.cpp</itemPath>
           <itemPath>src/XmlMaster.cpp</itemPath>
@@ -268,6 +265,18 @@
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/HDirDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HFileDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HFuncDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/HParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HVarDat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/HelpGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/HelpGui.h" ex="false" tool="3" flavor2="0">
@@ -452,29 +461,9 @@
       </item>
       <item path="src/SaveAll.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/ScoutData.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutData.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutFileDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutFileDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutFuncDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutFuncDat.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutLibDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutLibDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutVarDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutVarDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SearchWidget.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -517,6 +506,8 @@
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/qss/Dark.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/qss/Template.css" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="4">
@@ -582,6 +573,18 @@
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/HDirDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HFileDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HFuncDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HParser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/HParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HVarDat.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/HelpGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/HelpGui.h" ex="false" tool="3" flavor2="0">
@@ -766,29 +769,9 @@
       </item>
       <item path="src/SaveAll.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/ScoutData.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutData.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutFileDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutFileDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutFuncDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutFuncDat.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutLibDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutLibDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ScoutVarDat.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ScoutVarDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SearchWidget.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -831,6 +814,8 @@
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/qss/Dark.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/qss/Template.css" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
