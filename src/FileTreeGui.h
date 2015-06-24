@@ -29,6 +29,7 @@
 #include <iostream>
 
 #include "TreeItemIconInit.h"
+#include "FTFileMenu.h"
 #include "LinkFileWithGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
@@ -59,6 +60,7 @@ class FileTreeGui : public QWidget
     private slots:
         void handleShowDirectorySlot(QTreeWidgetItem* item, int /*column*/);
         void handleRightClickSlot(const QPoint&);
+        void handleDoubleClickSlot(const QModelIndex& mIndex);
         
     public:
         FileTreeGui(QWidget* parent = 0);

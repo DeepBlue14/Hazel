@@ -27,6 +27,7 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     
     connect(treePtr, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(handleRightClickSlot(const QPoint&)));
     connect(treePtr, SIGNAL(itemClicked(QTreeWidgetItem*, int)), this, SLOT(handleShowDirectorySlot(QTreeWidgetItem*, int)));
+    connect(treePtr, SIGNAL(doubleClicked(const QModelIndex& )), this, SLOT(handleDoubleClickSlot(const QModelIndex&)));
 
     splitter->setOrientation(Qt::Vertical);
   
@@ -156,14 +157,16 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     //cout << "FileTreeGui::handleRightClickSlot(...)" << endl;
     
     QPoint globalPos = treePtr->mapToGlobal(pos);
-    QMenu myMenu;
-    myMenu.addAction("Open");
-    myMenu.addAction("Hide");
-    myMenu.addAction("Delete");
-    myMenu.addAction("Rename...");
-    myMenu.addAction("Git");
-    myMenu.addAction("Properties");
-
+    //QMenu myMenu;
+    //myMenu.addAction("Open");
+    //myMenu.addAction("Hide");
+    //myMenu.addAction("Delete");
+    //myMenu.addAction("Rename...");
+    //myMenu.addAction("Refactor");
+    //myMenu.addAction("Git");
+    //myMenu.addAction("Properties");
+    FTFileMenu myMenu;
+    
     QAction* selectedItem = myMenu.exec(globalPos);
 
     if(treePtr->selectedItems().at(0)->text(1) == "")
@@ -182,6 +185,16 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     }
 
 
+}
+
+
+void FileTreeGui::handleDoubleClickSlot(const QModelIndex& mIndex)
+{
+    LinkFileWithGui lfwg;
+    FileGui* fg;
+    QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+            treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+    lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
 }
 
 

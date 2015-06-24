@@ -32,6 +32,12 @@
           <itemPath>src/XmlMaster.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="frontend" projectFiles="true">
+          <logicalFolder name="f4" displayName="FileTree" projectFiles="true">
+            <itemPath>src/FTDirMenu.h</itemPath>
+            <itemPath>src/FTFileMenu.h</itemPath>
+            <itemPath>src/FTProjectMenu.h</itemPath>
+            <itemPath>src/FileTreeGui.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="Help" projectFiles="true">
             <itemPath>src/HelpGui.h</itemPath>
             <itemPath>src/HelpPage_1.h</itemPath>
@@ -55,7 +61,6 @@
           </logicalFolder>
           <itemPath>src/CentralGui.h</itemPath>
           <itemPath>src/FileGui.h</itemPath>
-          <itemPath>src/FileTreeGui.h</itemPath>
           <itemPath>src/Highlighter.h</itemPath>
           <itemPath>src/LineNumberArea.h</itemPath>
           <itemPath>src/LinkFileWithGui.h</itemPath>
@@ -137,6 +142,12 @@
           <itemPath>src/XmlMaster.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="frontend" projectFiles="true">
+          <logicalFolder name="f4" displayName="FileTree" projectFiles="true">
+            <itemPath>src/FTDirMenu.cpp</itemPath>
+            <itemPath>src/FTFileMenu.cpp</itemPath>
+            <itemPath>src/FTProjectMenu.cpp</itemPath>
+            <itemPath>src/FileTreeGui.cpp</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="Help" projectFiles="true">
             <itemPath>src/HelpGui.cpp</itemPath>
             <itemPath>src/HelpPage_1.cpp</itemPath>
@@ -160,7 +171,6 @@
           </logicalFolder>
           <itemPath>src/CentralGui.cpp</itemPath>
           <itemPath>src/FileGui.cpp</itemPath>
-          <itemPath>src/FileTreeGui.cpp</itemPath>
           <itemPath>src/Highlighter.cpp</itemPath>
           <itemPath>src/LineNumberArea.cpp</itemPath>
           <itemPath>src/LinkFileWithGui.cpp</itemPath>
@@ -256,6 +266,18 @@
       <item path="src/Directory.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Directory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -564,6 +586,18 @@
       <item path="src/Directory.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Directory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
