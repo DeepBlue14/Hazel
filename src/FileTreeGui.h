@@ -29,6 +29,8 @@
 #include <iostream>
 
 #include "TreeItemIconInit.h"
+#include "FTProjectMenu.h"
+#include "FTDirMenu.h"
 #include "FTFileMenu.h"
 #include "LinkFileWithGui.h"
 #include "WindowsConsoleText.h"

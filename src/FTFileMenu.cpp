@@ -9,26 +9,26 @@ FTFileMenu::FTFileMenu()
 
 void FTFileMenu::initMenu()
 {
-    QMenu* openMenu = this->addMenu("Open");
+    this->addAction("Open");
     
-    QMenu* hideMenu = this->addMenu("Hide");
+    this->addAction("Hide");
+
+    this->addAction("Delete");
     
-    QMenu* deleteMenu = this->addMenu("Delete");
+    this->addAction("Rename...");
     
-    QMenu* renameMenu = this->addMenu("Rename...");
-    
-    QMenu* refactorMenu = this->addMenu("Refactor");
+    this->addAction("Refactor");
     
     QMenu* gitMenu = this->addMenu("Git");
-    QMenu* gitAddMenu = gitMenu->addMenu("Add");
-    QMenu* gitCommitMenu = gitMenu->addMenu("Commit");
-    QMenu* resetCommitMenu = gitMenu->addMenu("Reset");
+    gitMenu->addAction("Add");
+    gitMenu->addAction("Commit");
+    gitMenu->addAction("Reset");
     
-    QMenu* propertiesMenu = this->addMenu("Properties");
+    this->addAction("Properties");
     
     
     
-    connect(openMenu, SIGNAL(triggered(QAction* )), this, SLOT(handleOpenMenuSlot()));
+    connect(gitMenu, SIGNAL(triggered(QAction* )), this, SLOT(handleOpenMenuSlot()));
 }
 
 

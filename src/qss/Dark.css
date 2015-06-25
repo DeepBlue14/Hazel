@@ -235,3 +235,23 @@ QToolBox
     background-color: darkgray;
     color: lightgray;
 }
+
+
+QTextEdit
+{
+    background-color: black;
+    color: black;
+}
+
+
+QListWidget
+{
+    background-color: black;
+    color: black;
+}
+
+QSplitter
+{
+    background-color: black;
+    color: black;
+}
