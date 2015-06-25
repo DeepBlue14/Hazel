@@ -37,10 +37,9 @@ void OpenProjectGui::handleFileDialogPbPtrSlot()
 void OpenProjectGui::handleOpenProjectPbPtrSlot()
 {
     setProjectStrPtr(new QString(projectLePtr->text() ) );
-    cout << "loading project: " << projectLePtr->text().toStdString() << endl;
     this->close();
     FileTreeGui::setProjectRootAbsPathStrPtr(getProjectStrPtr() );
-    //FileTreeGui::setProjectNameStrPtr(getProjectStrPtr() );
+    FileTreeGui::setProjectNameStrPtr(new QString(*getProjectStrPtr()) );
     FileTreeGui::refresh();
 }
 

@@ -25,6 +25,7 @@
 #include "RFile.h"
 #include "RProcess.h"
 #include "MsgParser.h"
+#include "RTerm.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -54,6 +55,7 @@ int main(int argc, char *argv[])
          << "\n\t5) MsgParser"
          << "\n\t6) HParser"
          << "\n\t7) Help GUI"
+         << "\n\t8) RTerm (standalone)"
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
@@ -66,6 +68,7 @@ int main(int argc, char *argv[])
     MsgParser msgParser;
     QString tmpFile("/opt/ros/indigo/share/sensor_msgs/msg/MagneticField.msg");
     QString tmpDir("/opt/ros/indigo/share/sensor_msgs");
+    RTerm rterm;
     
     switch(choiceInt)
     {
@@ -104,6 +107,11 @@ int main(int argc, char *argv[])
         case 7:
             helpGui.show();
             return app.exec();
+            break;
+        case 8:
+            rterm.show();
+            return app.exec();
+            break;
         default:
             cerr << "Invalid option" << endl;
             break;

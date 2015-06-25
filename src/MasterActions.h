@@ -25,7 +25,7 @@
 #include "FileGui.h"
 #include "NewProjectGui.h"
 #include "OutputGui.h"
-#include "Terminal.h"
+#include "QXTerm.h"
 #include "RunGui.h"
 #include "OpenProjectGui.h"
 #include "SaveAll.h"
@@ -86,7 +86,7 @@ class MasterActions : public QWidget
         
         NewFileGui* newFileGuiPtr;
         NewProjectGui* newProjectGuiPtr;
-        Terminal* terminalPtr;
+        QXTerm* terminalPtr;
         RunGui* runGuiPtr;
         OpenProjectGui* openProjectGuiPtr;
         FileTreeGui* westWidgetPtr; // i.e. west widget
@@ -134,8 +134,8 @@ class MasterActions : public QWidget
         NewFileGui* getNewFileGuiPtr();
         void setNewProjectGuiPtr(NewProjectGui* newProjectGuiPtr);
         NewProjectGui* getNewProjectGuiPtr();
-        void setTerminalPtr(Terminal* terminalPtr);
-        Terminal* getTerminalPtr();
+        void setTerminalPtr(QXTerm* terminalPtr);
+        QXTerm* getTerminalPtr();
         void setRunGuiPtr(RunGui* runGuiPtr);
         RunGui* getRunGuiPtr();
         void setOpenProjectGuiPtr(OpenProjectGui* openProjectGuiPtr);

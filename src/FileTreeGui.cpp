@@ -5,11 +5,13 @@ QTreeWidget* FileTreeGui::treePtr;
 QSplitter* FileTreeGui::splitter;
    
 QString* FileTreeGui::projectRootAbsPathStrPtr;
+QString* FileTreeGui::projectNameStrPtr;
 
 
 FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 {
     projectRootAbsPathStrPtr = new QString("null");
+    projectNameStrPtr = new QString("null");
     
     splitter = new QSplitter();
     treePtr = new QTreeWidget(splitter);
@@ -40,11 +42,13 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 
 void FileTreeGui::initTree()
 {
-    //cout << "FileTreeGui::InitTree()" << endl;
     QTreeWidgetItem* rootItem = new QTreeWidgetItem();
-    rootItem->setText(0, "Root");
-    treePtr->addTopLevelItem(rootItem);
-    
+    if(*getProjectRootAbsPathStrPtr() != "null")
+    {
+        rootItem->setText(0, *getProjectNameStrPtr() );
+        TreeItemIconInit::setProjIcon(rootItem);
+        treePtr->addTopLevelItem(rootItem);
+    }
     
     
     QDir* rootDir = new QDir(*getProjectRootAbsPathStrPtr() );
@@ -209,14 +213,6 @@ void FileTreeGui::handleDoubleClickSlot(const QModelIndex& mIndex)
 
 void FileTreeGui::setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr)
 {
-    //while(!projectRootAbsPathStrPtr->isEmpty()
-    //        && projectRootAbsPathStrPtr->at(projectRootAbsPathStrPtr->length() - 1) != '/')
-    //{
-    //    projectRootAbsPathStrPtr->remove((projectRootAbsPathStrPtr->length() -1), 1 );
-   //}
-    //projectRootAbsPathStrPtr->remove((projectRootAbsPathStrPtr->length() -1), 1 );
-    
-    cout << "(final) loading project: " << projectRootAbsPathStrPtr->toStdString() << endl;
     FileTreeGui::projectRootAbsPathStrPtr = projectRootAbsPathStrPtr;
 }
 
@@ -224,6 +220,23 @@ void FileTreeGui::setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr)
 QString* FileTreeGui::getProjectRootAbsPathStrPtr()
 {
     return projectRootAbsPathStrPtr;
+}
+
+
+void FileTreeGui::setProjectNameStrPtr(QString* projectNameStrPtr)
+{
+    while(!projectNameStrPtr->isEmpty() && projectNameStrPtr->contains('/') )
+    {
+        projectNameStrPtr->remove(0, 1);
+    }
+
+    FileTreeGui::projectNameStrPtr = projectNameStrPtr;
+}
+
+
+QString* FileTreeGui::getProjectNameStrPtr()
+{
+    return FileTreeGui::projectNameStrPtr;
 }
 
 

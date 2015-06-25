@@ -6,7 +6,7 @@ OutputGui::OutputGui(QWidget* parent) : QWidget(parent)
     outputTePtr = new QTextEdit("");
     //outputTePtr->setEnabled(false);
     outputTePtr->setReadOnly(true);
-    outputTePtr->setTextBackgroundColor(Qt::black);
+    //outputTePtr->setTextBackgroundColor(Qt::black);
     outputTePtr->setText("testing");
     tabWidgetPtr = new QTabWidget();
     tabWidgetPtr->addTab(outputTePtr, "output text");

@@ -82,6 +82,7 @@ class MasterGui : public QMainWindow
         MasterGui(QMainWindow* parent = 0);
         void initToolBars();
         void initMenus();
+        void loadStyle(QString* style = new QString(/*"./src/qss/Classic.css"*/"./src/qss/Vanilla.css"));
         void setFileMenuPtr(QMenu* fileMenuPtr);
         QMenu* getFileMenuPtr();
         void setEditMenuPtr(QMenu* editMenuPtr);

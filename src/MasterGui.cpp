@@ -3,12 +3,13 @@
 MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
 {
     /*
-    QFile file("/home/james/NetBeansProjects/ride/src/qss/Dark.css");
+    QFile file("./src/qss/Dark.css");
     file.open(QFile::ReadOnly);
     QString styleSheetStr = QLatin1String(file.readAll() );
     this->setStyleSheet(styleSheetStr);
      this->ensurePolished(); // ???
     */
+    loadStyle();
     this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/ride1.jpg") );
     this->setWindowTitle("Ride");
     
@@ -104,6 +105,16 @@ void MasterGui::initToolBars()
     westToolBarPtr = addToolBar(tr("West") );
     addToolBar(Qt::LeftToolBarArea, westToolBarPtr);
     masterToolBars->initWestGroupOneToolBar(westToolBarPtr);
+}
+
+
+void MasterGui::loadStyle(QString* style)
+{
+    QFile file(*style);
+    file.open(QFile::ReadOnly);
+    QString styleSheetStr = QLatin1String(file.readAll() );
+    this->setStyleSheet(styleSheetStr);
+    this->ensurePolished();
 }
 
 

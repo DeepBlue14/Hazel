@@ -1,0 +1,206 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 25, 2015, 1:10:56 AM
+    Author     : james
+*/
+
+
+QWidget
+{
+    background-color: darkslategray;
+    color: slategray;
+}
+
+
+QDockWidget
+{
+    ;
+}
+
+
+QMainWindow
+{
+    background-color: darkslategray;
+    color: slategray;
+}
+
+
+
+QFrame
+{
+    ;
+}
+
+
+QLabel
+{
+    background-color: darkslategray;
+    color: slategray;
+}
+
+
+QToolTip
+{
+    ;
+}
+
+
+QLineEdit
+{
+    ;
+}
+
+
+QButtonGroup
+{
+    ;
+}
+
+
+QCheckBox
+{
+    ;
+}
+
+
+QComboBox
+{
+    ;
+}
+
+
+QPushButton
+{
+    background-color: slategray;
+    color: black;
+}
+
+
+QRadioButton
+{
+    ;
+}
+
+
+QTreeView
+{
+    ;
+}
+
+
+QListView
+{
+    ;
+}
+
+
+QTableView
+{
+    ;
+}
+
+
+QHeaderView
+{
+    ;
+}
+
+
+QTreeWidget
+{
+    ;
+}
+
+
+QSpinBox
+{
+    ;
+}
+
+
+QGroupBox
+{
+    ;
+}
+
+
+QMenu
+{
+    ;
+}
+
+
+QMenuBar
+{
+    ;
+}
+
+
+QProgressBar
+{
+    ;
+}
+
+
+QScrollBar
+{
+    ;
+}
+
+
+QSizeGrip
+{
+    ;
+}
+
+
+QSlider
+{
+    ;
+}
+
+
+QSplitter
+{
+    ;
+}
+
+
+QStatusBar
+{
+    ;
+}
+
+
+QTabWidget
+{
+    ;
+}
+
+
+QTabBar
+{
+    ;
+}
+
+
+QToolButton
+{
+    ;
+}
+
+
+QToolBar
+{
+    ;
+}
+
+
+QToolBox
+{
+    ;
+}

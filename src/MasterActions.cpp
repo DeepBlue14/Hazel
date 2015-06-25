@@ -9,72 +9,72 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     buildPtr = new Build();
     
     // North
-    newFileActionPtr = new QAction(QIcon("images/newFile.jpg"), tr("&New File"), this);
+    newFileActionPtr = new QAction(QIcon("images/newFile01.png"), tr("&New File"), this);
     newFileActionPtr->setShortcut(QKeySequence::New);
     newFileActionPtr->setStatusTip("New File");
     connect(newFileActionPtr, SIGNAL(triggered() ), this, SLOT(handleNewFileActionSlot() ) );
     
-    newTerminalActionPtr = new QAction(QIcon("images/terminal.jpg"), tr("&New Terminal"), this);
+    newTerminalActionPtr = new QAction(QIcon("images/terminal01.png"), tr("&New Terminal"), this);
     newTerminalActionPtr->setShortcut(QKeySequence::New);
     newTerminalActionPtr->setStatusTip("New Terminal");
     connect(newTerminalActionPtr, SIGNAL(triggered() ), this, SLOT(handleNewTerminalActionSlot() ) );
     
-    newProjectActionPtr = new QAction(QIcon("images/newProject.jpg"), tr("&New Project"), this);
+    newProjectActionPtr = new QAction(QIcon("images/newProject01.png"), tr("&New Project"), this);
     newProjectActionPtr->setShortcut(QKeySequence::New);
     newProjectActionPtr->setStatusTip("New Project");
     connect(newProjectActionPtr, SIGNAL(triggered() ), this, SLOT(handleNewProjectActionSlot() ) );
     
-    openProjectActionPtr = new QAction(QIcon("images/openProject.jpg"), tr("&Open Project"), this);
+    openProjectActionPtr = new QAction(QIcon("images/openProject01.png"), tr("&Open Project"), this);
     openProjectActionPtr->setShortcut(QKeySequence::New);
     openProjectActionPtr->setStatusTip("Open Existing Project");
     connect(openProjectActionPtr, SIGNAL(triggered() ), this, SLOT(handleOpenProjectActionSlot() ) );
     
-    saveAllActionPtr = new QAction(QIcon("images/save.jpg"), tr("&Save All"), this);
+    saveAllActionPtr = new QAction(QIcon("images/save01.png"), tr("&Save All"), this);
     saveAllActionPtr->setShortcut(QKeySequence::New);
     saveAllActionPtr->setStatusTip("Save All");
     connect(saveAllActionPtr, SIGNAL(triggered() ), this, SLOT(handleSaveAllActionSlot() ) );
     
-    undoActionPtr = new QAction(QIcon("images/undo.jpg"), tr("&Undo"), this);
+    undoActionPtr = new QAction(QIcon("images/undo01.png"), tr("&Undo"), this);
     undoActionPtr->setShortcut(QKeySequence::New);
     undoActionPtr->setStatusTip("Undo");
     connect(undoActionPtr, SIGNAL(triggered() ), this, SLOT(handleUndoActionSlot() ) );
     
-    redoActionPtr = new QAction(QIcon("images/redo.jpg"), tr("&Redo"), this);
+    redoActionPtr = new QAction(QIcon("images/redo01.png"), tr("&Redo"), this);
     redoActionPtr->setShortcut(QKeySequence::New);
     redoActionPtr->setStatusTip("Redo");
     connect(redoActionPtr, SIGNAL(triggered() ), this, SLOT(handleRedoActionSlot() ) );
 
-    setProjectConfigActionPtr = new QAction(QIcon("images/generate.jpg"), tr("&set Project Configuration"), this);
+    setProjectConfigActionPtr = new QAction(QIcon("images/generate01.png"), tr("&set Project Configuration"), this);
     setProjectConfigActionPtr->setShortcut(QKeySequence::New);
     setProjectConfigActionPtr->setStatusTip("Configure");
     connect(setProjectConfigActionPtr, SIGNAL(triggered() ), this, SLOT(handleSetProjectConfigActionSlot() ) );
     
-    buildActionPtr = new QAction(QIcon("images/build.jpg"), tr("&Build Project"), this);
+    buildActionPtr = new QAction(QIcon("images/build01.png"), tr("&Build Project"), this);
     buildActionPtr->setShortcut(QKeySequence::New);
     buildActionPtr->setStatusTip("Build");
     connect(buildActionPtr, SIGNAL(triggered() ), this, SLOT(handleBuildActionSlot() ) );
     
-    cleanAndBuildActionPtr = new QAction(QIcon("images/cleanAndBuild.jpg"), tr("&Clean and Build Project"), this);
+    cleanAndBuildActionPtr = new QAction(QIcon("images/cleanAndBuild01.png"), tr("&Clean and Build Project"), this);
     cleanAndBuildActionPtr->setShortcut(QKeySequence::New);
     cleanAndBuildActionPtr->setStatusTip("Clean and Build");
     connect(cleanAndBuildActionPtr, SIGNAL(triggered() ), this, SLOT(handleCleanAndBuildActionSlot() ) );
     
-    configForRunActionPtr = new QAction(QIcon("images/configForRun.jpg"), tr("&Configure for Execution"), this);
+    configForRunActionPtr = new QAction(QIcon("images/configForRun01.png"), tr("&Configure for Execution"), this);
     configForRunActionPtr->setShortcut(QKeySequence::New);
     configForRunActionPtr->setStatusTip("Configure for execution");
     connect(configForRunActionPtr, SIGNAL(triggered() ), this, SLOT(handleConfigForRunActionSlot() ) );
     
-    runActionPtr = new QAction(QIcon("images/run.jpg"), tr("&Run Project"), this);
+    runActionPtr = new QAction(QIcon("images/run01.png"), tr("&Run Project"), this);
     runActionPtr->setShortcut(QKeySequence::New);
     runActionPtr->setStatusTip("Run Project");
     connect(runActionPtr, SIGNAL(triggered() ), this, SLOT(handleRunActionSlot() ) );
     
-    debugActionPtr = new QAction(QIcon("images/debug.jpg"), tr("&Debug Project"), this);
+    debugActionPtr = new QAction(QIcon("images/debug01.png"), tr("&Debug Project"), this);
     debugActionPtr->setShortcut(QKeySequence::New);
     debugActionPtr->setStatusTip("Debug");
     connect(debugActionPtr, SIGNAL(triggered() ), this, SLOT(handleDebugActionSlot() ) );
     
-    gitActionPtr = new QAction(QIcon("images/github.jpeg"), tr("&Git/GitHub"), this);
+    gitActionPtr = new QAction(QIcon("images/github01.png"), tr("&Git/GitHub"), this);
     gitActionPtr->setShortcut(QKeySequence::New);
     gitActionPtr->setStatusTip("Git");
     connect(gitActionPtr, SIGNAL(triggered() ), this, SLOT(handleGitActionSlot() ) );
@@ -85,19 +85,19 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     outputSouthActionPtr->setStatusTip("Output");
     connect(outputSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleOutputSouthActionSlot() ) );
     
-    terminalSouthActionPtr = new QAction(QIcon("images/terminal.jpg"), tr("&Output"), this);
+    terminalSouthActionPtr = new QAction(QIcon("images/terminal01.png"), tr("&Output"), this);
     terminalSouthActionPtr->setShortcut(QKeySequence::New);
     terminalSouthActionPtr->setStatusTip("Terminal");
     connect(terminalSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleTerminalSouthActionSlot() ) );
     
     // East
-    navEastActionPtr = new QAction(QIcon("images/navigator.jpg"), tr("&Output"), this);
+    navEastActionPtr = new QAction(QIcon("images/navigator01.png"), tr("&Output"), this);
     navEastActionPtr->setShortcut(QKeySequence::New);
     navEastActionPtr->setStatusTip("Navigator");
     connect(navEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleNavEastActionSlot() ) );
     
     // West
-    projectWestActionPtr = new QAction(QIcon("images/tree.jpg"), tr("&Output"), this);
+    projectWestActionPtr = new QAction(QIcon("images/tree01.png"), tr("&Output"), this);
     projectWestActionPtr->setShortcut(QKeySequence::New);
     projectWestActionPtr->setStatusTip("Project Tree");
     connect(projectWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleProjectWestActionSlot() ) );
@@ -117,7 +117,7 @@ void MasterActions::handleNewTerminalActionSlot()
 {
     cout << "New Terminal activated" << endl;
     
-    Terminal* term = new Terminal();
+    QXTerm* term = new QXTerm();
     northTabWidgetPtr->addTab(term, tr("RosTerm"));
     northTabWidgetPtr->setCurrentIndex( (northTabWidgetPtr->children().size() - 1) );
     term->start();
@@ -232,7 +232,7 @@ void MasterActions::handleTerminalSouthActionSlot()
 {
     cout << "New Terminal activated" << endl;
     
-    Terminal* term = new Terminal();
+    QXTerm* term = new QXTerm();
     southTabWidgetPtr->getTabWidget()->addTab(term, tr("RosTerm"));
     
     term->start();
@@ -333,13 +333,13 @@ NewProjectGui* MasterActions::getNewProjectGuiPtr()
 }
 
 
-void MasterActions::setTerminalPtr(Terminal* terminalPtr)
+void MasterActions::setTerminalPtr(QXTerm* terminalPtr)
 {
     this->terminalPtr = terminalPtr;
 }
 
 
-Terminal* MasterActions::getTerminalPtr()
+QXTerm* MasterActions::getTerminalPtr()
 {
     return terminalPtr;
 }

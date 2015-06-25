@@ -57,6 +57,7 @@ class FileTreeGui : public QWidget
         QGridLayout* outerLayout;
         
         static QString* projectRootAbsPathStrPtr;
+        static QString* projectNameStrPtr;
         QTabWidget* northTabWidgetPtr;
         
     private slots:
@@ -70,6 +71,8 @@ class FileTreeGui : public QWidget
         static void addChildren(QTreeWidgetItem* item, QString filePath);
         static void setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);
         static QString* getProjectRootAbsPathStrPtr();
+        static void setProjectNameStrPtr(QString* projectNameStrPtr);
+        static QString* getProjectNameStrPtr();
         static void refresh();
         void setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
         QTabWidget* getNorthTabWidgetPtr();
