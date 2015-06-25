@@ -32,6 +32,7 @@ using namespace std;
 
 namespace TreeItemIconInit
 {
+    void setProjIcon(QTreeWidgetItem* child);
     void setIcon(QTreeWidgetItem* child);
 }
 

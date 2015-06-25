@@ -41,6 +41,11 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 void FileTreeGui::initTree()
 {
     //cout << "FileTreeGui::InitTree()" << endl;
+    QTreeWidgetItem* rootItem = new QTreeWidgetItem();
+    rootItem->setText(0, "Root");
+    treePtr->addTopLevelItem(rootItem);
+    
+    
     
     QDir* rootDir = new QDir(*getProjectRootAbsPathStrPtr() );
     QFileInfoList filesList = rootDir->entryInfoList();
@@ -61,7 +66,8 @@ void FileTreeGui::initTree()
 
             item->setText(1, fileInfo.filePath());
             treePtr->hideColumn(1);
-            treePtr->addTopLevelItem(item);
+            //treePtr->addTopLevelItem(item);
+            rootItem->addChild(item);
             item->setToolTip(0, fileInfo.filePath() );
         }
     }
@@ -165,12 +171,12 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     //myMenu.addAction("Refactor");
     //myMenu.addAction("Git");
     //myMenu.addAction("Properties");
-    FTFileMenu myMenu;
     
-    QAction* selectedItem = myMenu.exec(globalPos);
 
     if(treePtr->selectedItems().at(0)->text(1) == "")
     {
+        FTFileMenu myMenu;
+        QAction* selectedItem = myMenu.exec(globalPos);
         LinkFileWithGui lfwg;
         FileGui* fg;
         QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
@@ -190,16 +196,27 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 
 void FileTreeGui::handleDoubleClickSlot(const QModelIndex& mIndex)
 {
-    LinkFileWithGui lfwg;
-    FileGui* fg;
-    QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
-            treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
-    lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
+    if(treePtr->selectedItems().at(0)->text(1) == "")
+    {
+        LinkFileWithGui lfwg;
+        FileGui* fg;
+        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+                treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+        lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
+    }
 }
 
 
 void FileTreeGui::setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr)
 {
+    //while(!projectRootAbsPathStrPtr->isEmpty()
+    //        && projectRootAbsPathStrPtr->at(projectRootAbsPathStrPtr->length() - 1) != '/')
+    //{
+    //    projectRootAbsPathStrPtr->remove((projectRootAbsPathStrPtr->length() -1), 1 );
+   //}
+    //projectRootAbsPathStrPtr->remove((projectRootAbsPathStrPtr->length() -1), 1 );
+    
+    cout << "(final) loading project: " << projectRootAbsPathStrPtr->toStdString() << endl;
     FileTreeGui::projectRootAbsPathStrPtr = projectRootAbsPathStrPtr;
 }
 

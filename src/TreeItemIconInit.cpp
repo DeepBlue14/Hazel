@@ -1,6 +1,12 @@
 #include "TreeItemIconInit.h"
 
 
+void TreeItemIconInit::setProjIcon(QTreeWidgetItem* child)
+{
+    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/hFile.png")));
+}
+
+
 void TreeItemIconInit::setIcon(QTreeWidgetItem* child)
 {
     if(child->text(0).contains(QRegExp("^[^.]*$")) )
