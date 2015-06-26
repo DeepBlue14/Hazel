@@ -60,7 +60,8 @@
             <itemPath>src/NewProjectPage_4.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f6" displayName="Options" projectFiles="true">
-            <itemPath>src/OptionsGui.h</itemPath>
+            <itemPath>src/OptionGui.h</itemPath>
+            <itemPath>src/OptionPage_1.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.h</itemPath>
@@ -178,7 +179,8 @@
             <itemPath>src/NewProjectPage_4.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f6" displayName="Options" projectFiles="true">
-            <itemPath>src/OptionsGui.cpp</itemPath>
+            <itemPath>src/OptionGui.cpp</itemPath>
+            <itemPath>src/OptionPage_1.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.cpp</itemPath>
@@ -435,9 +437,13 @@
       </item>
       <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/OptionsGui.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/OptionGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/OptionsGui.h" ex="false" tool="3" flavor2="0">
+      <item path="src/OptionGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OptionPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionPage_1.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/OutputGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -761,9 +767,13 @@
       </item>
       <item path="src/OpeningGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/OptionsGui.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/OptionGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/OptionsGui.h" ex="false" tool="3" flavor2="0">
+      <item path="src/OptionGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OptionPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionPage_1.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/OutputGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
