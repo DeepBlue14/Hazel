@@ -13,7 +13,10 @@
 #define	OPTIONS_GUI_H
 
 #include <QWidget>
+#include <QPushButton>
+#include <QHBoxLayout>
 #include <QGridLayout>
+//ok, apply, cancel, help
 
 #include <iostream>
 
@@ -37,10 +40,24 @@ class OptionGui : public QWidget
             
     private:
         OptionPage_1* optionPage_1Ptr;
+        
+        QPushButton* okBtn;
+        QPushButton* applyBtn;
+        QPushButton* cancelBtn;
+        QPushButton* helpBtn;
+        
+        QHBoxLayout* buttonLayout;
         QGridLayout* outerLayout;
+        
+    private slots:
+        void handleOkBtnSlot();
+        void handleApplyBtnSlot();
+        void handleCancelBtnSlot();
+        void handleHelpBtnSlot();
         
     public:
         OptionGui(QWidget* parent = 0);
+        void initBtns();
         ~OptionGui();
 };
 
