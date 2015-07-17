@@ -16,6 +16,8 @@
 #include <QString>
 #include <QListWidget>
 #include <QLineEdit>
+#include <QPushButton>
+#include <QHBoxLayout>
 #include <QGridLayout>
 
 #include <iostream>
@@ -42,7 +44,11 @@ class NewFilePage_3 : public QWidget
         QVector<QStringList*> specificMsgStrLstVec;
         QListWidget* msgCatagoryLwPtr;
         QListWidget* specificMsgLwPtr;
-        
+        QListWidget* addedLwPtr;
+        QPushButton* addBtnPtr;
+        QPushButton* removeBtnPtr;
+
+        QHBoxLayout* btnLayout;
         QGridLayout* outerLayoutPtr;
         
         QString* msgCatagoryStrPtr;
@@ -50,6 +56,8 @@ class NewFilePage_3 : public QWidget
         
     private slots:
         void handleSwapOptionsSlot();
+        void handleAddBtnPtrSlot();
+        void handleRemoveBtnPtrSlot();
         
     public:
         NewFilePage_3(QWidget* parent = 0);

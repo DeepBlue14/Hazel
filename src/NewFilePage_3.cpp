@@ -36,9 +36,19 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     specificMsgLwPtr = new QListWidget();
     specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(0)) ); // default: first option
     
+    addedLwPtr = new QListWidget();
+    addBtnPtr = new QPushButton("Add");
+    removeBtnPtr = new QPushButton("Remove");
+    
+    btnLayout = new QHBoxLayout();
+    btnLayout->addWidget(addBtnPtr);
+    btnLayout->addWidget(removeBtnPtr);
+    
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addWidget(msgCatagoryLwPtr, 0, 0);
     outerLayoutPtr->addWidget(specificMsgLwPtr, 0, 1);
+    outerLayoutPtr->addWidget(addedLwPtr, 0, 2);
+    outerLayoutPtr->addLayout(btnLayout, 1, 2);
     
     this->setLayout(outerLayoutPtr);
 }
@@ -51,6 +61,18 @@ void NewFilePage_3::handleSwapOptionsSlot()
     cout << "\tcleared selection" << endl;
     specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(msgCatagoryLwPtr->currentRow()) ) ); // currentIndex() returns qt specific type
     cout << "\tadding list at index:" << msgCatagoryLwPtr->currentRow() << endl;
+}
+
+
+void NewFilePage_3::handleAddBtnPtrSlot()
+{
+    
+}
+
+
+void NewFilePage_3::handleRemoveBtnPtrSlot()
+{
+    
 }
 
 

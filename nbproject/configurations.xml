@@ -66,6 +66,12 @@
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f7" displayName="Run" projectFiles="true">
+            <itemPath>src/RunGui.h</itemPath>
+            <itemPath>src/RunPage_1.h</itemPath>
+            <itemPath>src/RunPage_2.h</itemPath>
+            <itemPath>src/RunPage_3.h</itemPath>
+          </logicalFolder>
           <itemPath>src/CentralGui.h</itemPath>
           <itemPath>src/DebugGui.h</itemPath>
           <itemPath>src/FileGui.h</itemPath>
@@ -82,10 +88,6 @@
           <itemPath>src/OpeningGui.h</itemPath>
           <itemPath>src/OutputGui.h</itemPath>
           <itemPath>src/RideFont.h</itemPath>
-          <itemPath>src/RunGui.h</itemPath>
-          <itemPath>src/RunPage_1.h</itemPath>
-          <itemPath>src/RunPage_2.h</itemPath>
-          <itemPath>src/RunPage_3.h</itemPath>
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SearchWidget.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
@@ -186,6 +188,12 @@
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.cpp</itemPath>
           </logicalFolder>
+          <logicalFolder name="f7" displayName="Run" projectFiles="true">
+            <itemPath>src/RunGui.cpp</itemPath>
+            <itemPath>src/RunPage_1.cpp</itemPath>
+            <itemPath>src/RunPage_2.cpp</itemPath>
+            <itemPath>src/RunPage_3.cpp</itemPath>
+          </logicalFolder>
           <itemPath>src/CentralGui.cpp</itemPath>
           <itemPath>src/DebugGui.cpp</itemPath>
           <itemPath>src/FileGui.cpp</itemPath>
@@ -202,10 +210,6 @@
           <itemPath>src/OpeningGui.cpp</itemPath>
           <itemPath>src/OutputGui.cpp</itemPath>
           <itemPath>src/RideFont.cpp</itemPath>
-          <itemPath>src/RunGui.cpp</itemPath>
-          <itemPath>src/RunPage_1.cpp</itemPath>
-          <itemPath>src/RunPage_2.cpp</itemPath>
-          <itemPath>src/RunPage_3.cpp</itemPath>
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SearchWidget.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
