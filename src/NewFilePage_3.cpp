@@ -1,3 +1,5 @@
+#include <qt4/QtCore/qstring.h>
+
 #include "NewFilePage_3.h"
 
 
@@ -11,6 +13,7 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     msgCatagoryStrLstPtr->push_back("sensor_msgs");
     msgCatagoryStrLstPtr->push_back("geometry_msgs");
 
+    typesEnteredStrLstPtr = new QStringList();
     
     QStringList* std_msgsStrLstPtr = new QStringList();
     std_msgsStrLstPtr->push_back("char");
@@ -50,6 +53,9 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     outerLayoutPtr->addWidget(addedLwPtr, 0, 2);
     outerLayoutPtr->addLayout(btnLayout, 1, 2);
     
+    connect(addBtnPtr, SIGNAL(released() ), this, SLOT(handleAddBtnPtrSlot() ) );
+    connect(removeBtnPtr, SIGNAL(released() ), this, SLOT(handleRemoveBtnPtrSlot() ) );
+    
     this->setLayout(outerLayoutPtr);
 }
 
@@ -66,13 +72,44 @@ void NewFilePage_3::handleSwapOptionsSlot()
 
 void NewFilePage_3::handleAddBtnPtrSlot()
 {
-    
+    if(msgCatagoryLwPtr->selectedItems().size() == 1 && specificMsgLwPtr->selectedItems().size() == 1)
+    {
+        QString* tmp = new QString();
+        *tmp = msgCatagoryLwPtr->selectedItems().front()->text() + "/" + specificMsgLwPtr->selectedItems().front()->text();
+        
+        for(size_t i = 0; i < typesEnteredStrLstPtr->size(); i++)
+        {
+            if(tmp == typesEnteredStrLstPtr->at(i) )
+            {
+                return; //if match is found, don't re-add it
+            }
+        }
+        
+        typesEnteredStrLstPtr->push_back(*tmp);
+        addedLwPtr->addItem(*tmp);
+        cout << "added to list: " << tmp->toStdString() << endl;
+    }
+    else
+    {
+        cerr << "no msg type selected" << endl;
+    }
 }
 
 
 void NewFilePage_3::handleRemoveBtnPtrSlot()
 {
+    QListWidgetItem* tmp = addedLwPtr->selectedItems().front();
+    addedLwPtr->removeItemWidget(tmp);
     
+    for(size_t i = 0; i < typesEnteredStrLstPtr->size(); i++)
+    {
+        if(typesEnteredStrLstPtr->at(i) == tmp->text() )
+        {
+            typesEnteredStrLstPtr->removeAt(i);
+        }
+    }
+    
+    delete tmp;
 }
 
 

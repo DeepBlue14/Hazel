@@ -42,6 +42,7 @@ class NewFilePage_3 : public QWidget
     private:
         QStringList* msgCatagoryStrLstPtr;
         QVector<QStringList*> specificMsgStrLstVec;
+        QStringList* typesEnteredStrLstPtr;
         QListWidget* msgCatagoryLwPtr;
         QListWidget* specificMsgLwPtr;
         QListWidget* addedLwPtr;
