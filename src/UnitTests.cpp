@@ -27,6 +27,7 @@
 #include "MsgParser.h"
 #include "RTerm.h"
 #include "OptionGui.h"
+#include "ReconfigGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -48,16 +49,17 @@ int main(int argc, char *argv[])
     
     int choiceInt;
     cout << "Select an option:"
-         << "\n\t0) Quit"
-         << "\n\t1) Regular run"
-         << "\n\t2) Test RProcess"
-         << "\n\t3) Test QProcess"
-         << "\n\t4) Font XML file parsing"
-         << "\n\t5) MsgParser"
-         << "\n\t6) HParser"
-         << "\n\t7) Help GUI"
-         << "\n\t8) RTerm (standalone)"
-         << "\n\t9) Options"
+         << "\n\t 0) Quit"
+         << "\n\t 1) Regular run"
+         << "\n\t 2) Test RProcess"
+         << "\n\t 3) Test QProcess"
+         << "\n\t 4) Font XML file parsing"
+         << "\n\t 5) MsgParser"
+         << "\n\t 6) HParser"
+         << "\n\t 7) Help GUI"
+         << "\n\t 8) RTerm (standalone)"
+         << "\n\t 9) Options"
+         << "\n\t10) Ros Reconfigure"
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
@@ -72,6 +74,7 @@ int main(int argc, char *argv[])
     QString tmpDir("/opt/ros/indigo/share/sensor_msgs");
     RTerm rterm;
     OptionGui optionGui;
+    ReconfigGui reconfigGui;
     
     switch(choiceInt)
     {
@@ -81,7 +84,6 @@ int main(int argc, char *argv[])
         case 1:
             masterGui.show();
             return app.exec();
-            break;
         case 2:
             cout << "Beginning RProcess test." << endl;
             rprocess->startDetached("catkin_make");
@@ -110,17 +112,18 @@ int main(int argc, char *argv[])
         case 7:
             helpGui.show();
             return app.exec();
-            break;
         case 8:
             rterm.show();
             return app.exec();
-            break;
         case 9:
             optionGui.show();
-            app.exec();
-            break;
+            return app.exec();
+        case 10:
+            reconfigGui.show();
+            return app.exec();
         default:
-            cerr << "Invalid option" << endl;
+            masterGui.show();
+            return app.exec();
             break;
     } // End of switch
     

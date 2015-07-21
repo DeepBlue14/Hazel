@@ -23,6 +23,11 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     masterToolBars->setMasterActionsPtr(masterActions);
     masterMenus->setMasterActionsPtr(masterActions);
     
+    masterStatusBar = new MasterStatusBar();
+    QStatusBar* statusBar = new QStatusBar();
+    statusBar->addWidget(masterStatusBar);
+    this->setStatusBar(statusBar);
+    
     initMenus();
     initToolBars();
 

@@ -17,7 +17,7 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
     QSplitter* splitter1 = new QSplitter();
     splitter1->setOrientation(Qt::Vertical);
     splitter1->addWidget(splitter0);
-    splitter1->addWidget(southGuiPtr);
+    splitter1->addWidget(southGuiPtr);   
     
     outerLayout = new QGridLayout();
     outerLayout->addWidget(splitter1, 1, 0, 1, 2);

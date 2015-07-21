@@ -61,6 +61,7 @@ class CentralGui : public QWidget
         NavigatorGui* getNavigatorGuiPtr();
         void setSouthGuiPtr(OutputGui* southGuiPtr);
         OutputGui* getSouthGuiPtr();
+        static QProgressBar getProgressBarPtr();
         void passNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr);
         void passSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr);
         QString* toString();

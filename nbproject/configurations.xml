@@ -63,6 +63,13 @@
             <itemPath>src/OptionGui.h</itemPath>
             <itemPath>src/OptionPage_1.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
+            <itemPath>src/ReconfigGui.h</itemPath>
+            <itemPath>src/ReconfigPage_1.h</itemPath>
+            <itemPath>src/ReconfigPage_2.h</itemPath>
+            <itemPath>src/ReconfigPage_3.h</itemPath>
+            <itemPath>src/ReconfigPage_4.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.h</itemPath>
           </logicalFolder>
@@ -184,6 +191,13 @@
           <logicalFolder name="f6" displayName="Options" projectFiles="true">
             <itemPath>src/OptionGui.cpp</itemPath>
             <itemPath>src/OptionPage_1.cpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
+            <itemPath>src/ReconfigGui.cpp</itemPath>
+            <itemPath>src/ReconfigPage_1.cpp</itemPath>
+            <itemPath>src/ReconfigPage_2.cpp</itemPath>
+            <itemPath>src/ReconfigPage_3.cpp</itemPath>
+            <itemPath>src/ReconfigPage_4.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.cpp</itemPath>
@@ -486,6 +500,26 @@
       <item path="src/RTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RTerm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -820,6 +854,26 @@
       <item path="src/RTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RTerm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -18,6 +18,9 @@ int main(int argc, char **argv)
 {
     init(argc, argv, "<FILENAME>");
 
+    
+    
+    spin();
 
     return EXIT_SUCCESS;
 }

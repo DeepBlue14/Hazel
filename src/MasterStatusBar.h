@@ -1,46 +1,32 @@
 /* 
  * File:   MasterStatusBar.h
- * Author: James Kuczynski
- * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * Author: james
  *
- * Reference: https://kokkachiprogramming.wordpress.com/2012/11/07/how-to-use-qt-qprogressbar-to-show-busyindefinite-status/
- * 
- * Created on May 19, 2015, 2:27 PM
+ * Created on July 20, 2015, 7:41 PM
  */
 
-#ifndef MASTER_STATUS_BAR_H
-#define	MASTER_STATUS_BAR_H
+#ifndef MASTERSTATUSBAR_H
+#define	MASTERSTATUSBAR_H
 
-#include <QStatusBar>
+#include <QWidget>
 #include <QProgressBar>
-#include <QString>
+#include <QHBoxLayout>
+#include <QGridLayout>
 
-#include <iostream>
-
-#include "WindowsConsoleText.h"
-#include "UnixConsoleText.h"
-
-#ifdef _WIN32
-namespace cct = WindowsConsoleText;
-#elif __APPLE
-namespace cct = UnixConsoleText;
-#elif __linux
-namespace cct = UnixConsoleText;
-#endif
-
-using namespace std;
-
-class MasterStatusBar : public QStatusBar
+class MasterStatusBar : public QWidget
 {
+    Q_OBJECT
+   
     private:
-        QProgressBar* progressBarPtr;
+        QProgressBar* progressBar;
+        QHBoxLayout* widLayoutPtr;
+        QGridLayout* outerLayout;
+        
         
     public:
-        MasterStatusBar();
-        void initProgressBarPtr();
-        QString* toString();
+        MasterStatusBar(QWidget* parent = 0);
         ~MasterStatusBar();
 };
 
-#endif	/* MASTER_STATUS_BAR_H */
+#endif	/* MASTERSTATUSBAR_H */
+

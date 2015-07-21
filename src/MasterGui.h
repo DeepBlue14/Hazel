@@ -29,6 +29,7 @@
 //#include "OpeningGui.h"
 #include "CentralGui.h"
 #include "MasterMenus.h"
+#include "MasterStatusBar.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -73,6 +74,7 @@ class MasterGui : public QMainWindow
         MasterActions* masterActions;
         MasterToolBars* masterToolBars;
         MasterMenus* masterMenus;
+        MasterStatusBar* masterStatusBar;
         CentralGui* centralGui;
         
     private slots:
