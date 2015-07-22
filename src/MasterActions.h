@@ -20,6 +20,7 @@
 
 #include <iostream>
 
+#include "MasterStatusBar.h"
 #include "NewFileGui.h"
 #include "Highlighter.h"
 #include "FileGui.h"

@@ -163,12 +163,14 @@ void MasterActions::handleSetProjectConfigActionSlot()
 
 void MasterActions::handleBuildActionSlot()
 {
+    MasterStatusBar::getProgressBar()->setVisible(true);
     RProcess* rprocess = new RProcess();
     rprocess->setOutputLocTePtr(southTabWidgetPtr->getOutputTePtr() );
     rprocess->start/*Detached*/("catkin_make"); // pass output tab to rprocess?
     cout << "# of child tabs: " << southTabWidgetPtr->children().size() << endl;
     southTabWidgetPtr->getTabWidget()->setTabText(0, "Overriding!");
     //southTabWidgetPtr->dumpToGui(new QString("compiling..."));
+    MasterStatusBar::getProgressBar()->setVisible(false);
 }
 
 

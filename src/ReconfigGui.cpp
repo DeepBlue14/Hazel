@@ -1,0 +1,208 @@
+#include "ReconfigGui.h"
+
+
+ReconfigGui::ReconfigGui(QWidget* parent) : QWidget(parent)
+{
+    outerLayout = new QGridLayout();
+    reconfigPage_1Ptr = new ReconfigPage_1();
+    reconfigPage_2Ptr = new ReconfigPage_2();
+    reconfigPage_3Ptr = new ReconfigPage_3();
+    reconfigPage_4Ptr = new ReconfigPage_4();
+    
+    currentPage = PAGE_ONE;
+    
+    initBtns();
+    
+    this->setLayout(outerLayout);
+}
+
+
+void ReconfigGui::handleBackBtnSlot()
+{
+    swapBackPage();
+}
+
+
+void ReconfigGui::handleNextBtnSlot()
+{
+    swapNextPage();
+}
+
+
+void ReconfigGui::handleFinishBtnSlot()
+{
+    //trigger mutators
+}
+
+
+void ReconfigGui::handleHelpBntSlot()
+{
+    ;
+}
+
+
+void ReconfigGui::handleCancelBtnSlot()
+{
+    this->close();
+}
+
+void ReconfigGui::initBtns()
+{
+    backBtn = new QPushButton("< Back", this);
+    backBtn->setEnabled(false);
+    nextBtn = new QPushButton("Next >", this);
+    nextBtn->autoDefault();
+    finishBtn = new QPushButton("Finish", this);
+    finishBtn->setEnabled(false);
+    helpBtn = new QPushButton("Help", this);
+    cancelBtn = new QPushButton("Cancel", this);
+    
+    buttonLayout = new QHBoxLayout();
+    buttonLayout->addWidget(backBtn);
+    buttonLayout->addWidget(nextBtn);
+    buttonLayout->addWidget(finishBtn);
+    buttonLayout->addWidget(helpBtn);
+    buttonLayout->addWidget(cancelBtn);
+    
+    connect(backBtn, SIGNAL(released() ), this, SLOT(handleBackBtnSlot() ) );
+    connect(nextBtn, SIGNAL(released() ), this, SLOT(handleNextBtnSlot() ) );
+    connect(finishBtn, SIGNAL(released() ), this, SLOT(handleFinishBtnSlot() ) );
+    connect(helpBtn, SIGNAL(released() ), this, SLOT(handleHelpBntSlot() ) );
+    connect(cancelBtn, SIGNAL(released() ), this, SLOT(handleCancelBtnSlot() ) );
+    
+    outerLayout->addWidget(reconfigPage_1Ptr, 0, 0);
+    outerLayout->addLayout(buttonLayout, 1, 0, Qt::AlignBottom);
+}
+
+
+void ReconfigGui::swapBackPage()
+{
+    switch(currentPage)
+    {
+        case PAGE_TWO:
+            unloadPage_2();
+            loadPage_1();
+            currentPage = PAGE_ONE;
+            backBtn->setEnabled(false);
+            break;
+        case PAGE_THREE:
+            unloadPage_3();
+            loadPage_2();
+            currentPage = PAGE_TWO;
+            break;
+        case PAGE_FOUR:
+            unloadPage_4();
+            loadPage_3();
+            currentPage = PAGE_THREE;
+            nextBtn->setEnabled(true);
+            finishBtn->setEnabled(false);
+        default:
+            cerr << "ERROR in switch at: NewProjectGui::swapBackPage()" << endl;
+    }
+}
+
+
+void ReconfigGui::swapNextPage()
+{
+    switch(currentPage)
+    {
+        case PAGE_ONE:
+            unloadPage_1();
+            loadPage_2();
+            currentPage = PAGE_TWO;
+            backBtn->setEnabled(true);
+            break;
+        case PAGE_TWO:
+            unloadPage_2();
+            loadPage_3();
+            currentPage = PAGE_THREE;
+            break;
+        case PAGE_THREE:
+            unloadPage_3();
+            loadPage_4();
+            currentPage = PAGE_FOUR;
+            nextBtn->setEnabled(false);
+            finishBtn->setEnabled(true);
+        default:
+            cerr << "ERROR in switch at: NewProjectGui::swapNextPage()" << endl;
+    }
+}
+
+
+void ReconfigGui::loadPage_1()
+{
+    outerLayout->addWidget(reconfigPage_1Ptr, 0, 0);
+    reconfigPage_1Ptr->setVisible(true);
+    reconfigPage_1Ptr->setEnabled(true);
+}
+
+
+void ReconfigGui::unloadPage_1()
+{
+    outerLayout->removeWidget(reconfigPage_1Ptr);
+    reconfigPage_1Ptr->setVisible(false);
+    reconfigPage_1Ptr->setEnabled(false);
+}
+
+
+void ReconfigGui::loadPage_2()
+{
+    outerLayout->addWidget(reconfigPage_2Ptr, 0, 0);
+    reconfigPage_2Ptr->setVisible(true);
+    reconfigPage_2Ptr->setEnabled(true);
+}
+
+
+void ReconfigGui::unloadPage_2()
+{
+    outerLayout->removeWidget(reconfigPage_2Ptr);
+    reconfigPage_2Ptr->setVisible(false);
+    reconfigPage_2Ptr->setEnabled(false);
+}
+
+
+void ReconfigGui::loadPage_3()
+{
+    outerLayout->addWidget(reconfigPage_3Ptr, 0, 0);
+    reconfigPage_3Ptr->setVisible(true);
+    reconfigPage_3Ptr->setEnabled(true);
+}
+
+
+void ReconfigGui::unloadPage_3()
+{
+    outerLayout->removeWidget(reconfigPage_3Ptr);
+    reconfigPage_3Ptr->setVisible(false);
+    reconfigPage_3Ptr->setEnabled(false);
+}
+
+
+void ReconfigGui::loadPage_4()
+{
+    outerLayout->addWidget(reconfigPage_4Ptr, 0, 0);
+    reconfigPage_4Ptr->setVisible(true);
+    reconfigPage_4Ptr->setEnabled(true);
+}
+
+
+void ReconfigGui::unloadPage_4()
+{
+    outerLayout->removeWidget(reconfigPage_4Ptr);
+    reconfigPage_4Ptr->setVisible(false);
+    reconfigPage_4Ptr->setEnabled(false);
+}
+
+
+QString* ReconfigGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***Method stub***");
+    
+    return tmp;
+}
+
+
+ReconfigGui::~ReconfigGui()
+{
+    ;
+}

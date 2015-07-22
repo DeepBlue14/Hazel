@@ -25,7 +25,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     
     masterStatusBar = new MasterStatusBar();
     QStatusBar* statusBar = new QStatusBar();
-    statusBar->addWidget(masterStatusBar);
+    statusBar->addWidget(masterStatusBar, Qt::AlignRight);
     this->setStatusBar(statusBar);
     
     initMenus();

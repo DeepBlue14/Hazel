@@ -44,7 +44,7 @@ class NewProjectPage_2 : public QWidget
         QLineEdit* projectLocLePtr;
         QFileDialog* dirDialogPtr;
         QPushButton* locPbPtr;
-        QStringList* projectTypeStrList;
+        QVector<QListWidgetItem*>* projectTypeLstWidItemPtrVecPtr;
         QListWidget* projectTypeLwPtr; //maxVisibleItems : int
         
         QGridLayout* locationLayout;

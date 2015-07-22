@@ -45,6 +45,13 @@
             <itemPath>src/HelpPage_3.h</itemPath>
             <itemPath>src/HelpPage_4.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f9" displayName="MasterFEnd" projectFiles="true">
+            <itemPath>src/MasterActions.h</itemPath>
+            <itemPath>src/MasterGui.h</itemPath>
+            <itemPath>src/MasterMenus.h</itemPath>
+            <itemPath>src/MasterStatusBar.h</itemPath>
+            <itemPath>src/MasterToolBars.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
             <itemPath>src/NewFileGui.h</itemPath>
             <itemPath>src/NewFilePage_1.h</itemPath>
@@ -85,11 +92,6 @@
           <itemPath>src/Highlighter.h</itemPath>
           <itemPath>src/LineNumberArea.h</itemPath>
           <itemPath>src/LinkFileWithGui.h</itemPath>
-          <itemPath>src/MasterActions.h</itemPath>
-          <itemPath>src/MasterGui.h</itemPath>
-          <itemPath>src/MasterMenus.h</itemPath>
-          <itemPath>src/MasterStatusBar.h</itemPath>
-          <itemPath>src/MasterToolBars.h</itemPath>
           <itemPath>src/NavigatorGui.h</itemPath>
           <itemPath>src/OpenProjectGui.h</itemPath>
           <itemPath>src/OpeningGui.h</itemPath>
@@ -174,6 +176,13 @@
             <itemPath>src/HelpPage_3.cpp</itemPath>
             <itemPath>src/HelpPage_4.cpp</itemPath>
           </logicalFolder>
+          <logicalFolder name="f9" displayName="MasterFEnd" projectFiles="true">
+            <itemPath>src/MasterActions.cpp</itemPath>
+            <itemPath>src/MasterGui.cpp</itemPath>
+            <itemPath>src/MasterMenus.cpp</itemPath>
+            <itemPath>src/MasterStatusBar.cpp</itemPath>
+            <itemPath>src/MasterToolBars.cpp</itemPath>
+          </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
             <itemPath>src/NewFileGui.cpp</itemPath>
             <itemPath>src/NewFilePage_1.cpp</itemPath>
@@ -214,11 +223,6 @@
           <itemPath>src/Highlighter.cpp</itemPath>
           <itemPath>src/LineNumberArea.cpp</itemPath>
           <itemPath>src/LinkFileWithGui.cpp</itemPath>
-          <itemPath>src/MasterActions.cpp</itemPath>
-          <itemPath>src/MasterGui.cpp</itemPath>
-          <itemPath>src/MasterMenus.cpp</itemPath>
-          <itemPath>src/MasterStatusBar.cpp</itemPath>
-          <itemPath>src/MasterToolBars.cpp</itemPath>
           <itemPath>src/NavigatorGui.cpp</itemPath>
           <itemPath>src/OpenProjectGui.cpp</itemPath>
           <itemPath>src/OpeningGui.cpp</itemPath>

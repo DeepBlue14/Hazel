@@ -22,14 +22,17 @@ NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
     formLayout->addRow(tr("&Package Name"), projectNameLePtr);
     formLayout->addRow(tr("Package Location"), locationLayout);
     
-    projectTypeStrList = new QStringList();
-    projectTypeStrList->push_back("C/C++");
-    projectTypeStrList->push_back("Python");
-    projectTypeStrList->push_back("Java");
-    projectTypeStrList->push_back("Lisp");
+    projectTypeLstWidItemPtrVecPtr = new QVector<QListWidgetItem*>();
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "C/C++"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "Python"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "Java"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "Lisp"));
     
     projectTypeLwPtr = new QListWidget(this);
-    projectTypeLwPtr->addItems(*projectTypeStrList);
+    for(size_t i = 0; i < projectTypeLstWidItemPtrVecPtr->size(); i++)
+    {
+        projectTypeLwPtr->addItem(projectTypeLstWidItemPtrVecPtr->at(i) );
+    }
     formLayout->addRow(tr("&Type"), projectTypeLwPtr);
     
     this->setLayout(formLayout);

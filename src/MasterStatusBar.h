@@ -18,13 +18,16 @@ class MasterStatusBar : public QWidget
     Q_OBJECT
    
     private:
-        QProgressBar* progressBar;
+        static QProgressBar* progressBar;
         QHBoxLayout* widLayoutPtr;
         QGridLayout* outerLayout;
         
         
     public:
         MasterStatusBar(QWidget* parent = 0);
+        static void setProgressBar(QProgressBar* progressBar);
+        static QProgressBar* getProgressBar();
+        QString* toString();
         ~MasterStatusBar();
 };
 
