@@ -3,7 +3,7 @@
 
 void TreeItemIconInit::setProjIcon(QTreeWidgetItem* child)
 {
-    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/robot.jpg")));
+    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/robot01.png")));
 }
 
 

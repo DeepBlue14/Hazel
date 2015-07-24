@@ -6,7 +6,11 @@
 ReconfigPage_1::ReconfigPage_1(QWidget* parent) : QWidget(parent)
 {
     vanillaPkgLocLePtr = new QLineEdit();
+    vanillaPkgLocLePtr->setPlaceholderText("/path/to/original/package");
+    vanillaPkgLocLePtr->setReadOnly(true);
     rosPkgLocLePtr = new QLineEdit();
+    rosPkgLocLePtr->setPlaceholderText("/path/to/rosiffied/version/");
+    rosPkgLocLePtr->setReadOnly(true);
     vanillaPkgLocFdPtr = new QFileDialog();
     rosPkgLocFdPtr = new QFileDialog();
     vanillaPkgLocPbPtr = new QPushButton("Select...");

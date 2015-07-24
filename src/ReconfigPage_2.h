@@ -16,6 +16,9 @@
 #include <QFile>
 #include <QGridLayout>
 
+#include "CustomPkgsGui.h"
+#include "AdvOptionsGui.h"
+
 class ReconfigPage_2 : public QWidget
 {
     Q_OBJECT
@@ -23,10 +26,15 @@ class ReconfigPage_2 : public QWidget
     private:
         QStringList* rosPkgStrLstPtr;
         QListWidget* rosPkgLwPtr;
+        QPushButton* customPkgsPbStr;
         QPushButton* advancedOptionsPbStr;
         QGridLayout* outerLayout;
         
+        CustomPkgsGui* customPkgsGuiPtr;
+        AdvOptionsGui* advOptionsGuiPtr;
+        
     private slots:
+        void handleCustomPkgsPbStr();
         void handleAdvancedOptionsPbStr();
         
     public:

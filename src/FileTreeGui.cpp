@@ -175,7 +175,10 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     //myMenu.addAction("Refactor");
     //myMenu.addAction("Git");
     //myMenu.addAction("Properties");
-    
+    if(treePtr->selectedItems().size() == 0)
+    {
+        return;
+    }
 
     if(treePtr->selectedItems().at(0)->text(1) == "")
     {
