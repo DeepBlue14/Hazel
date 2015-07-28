@@ -77,6 +77,11 @@
             <itemPath>src/OptionPage_1.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
+            <itemPath>src/AdvOptPage_1.h</itemPath>
+            <itemPath>src/AdvOptPage_2.h</itemPath>
+            <itemPath>src/AdvOptPage_3.h</itemPath>
+            <itemPath>src/AdvOptPage_4.h</itemPath>
+            <itemPath>src/AdvOptPage_5.h</itemPath>
             <itemPath>src/AdvOptionsGui.h</itemPath>
             <itemPath>src/CustomPkgsGui.h</itemPath>
             <itemPath>src/ReconfigGui.h</itemPath>
@@ -216,6 +221,11 @@
             <itemPath>src/OptionPage_1.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
+            <itemPath>src/AdvOptPage_1.cpp</itemPath>
+            <itemPath>src/AdvOptPage_2.cpp</itemPath>
+            <itemPath>src/AdvOptPage_3.cpp</itemPath>
+            <itemPath>src/AdvOptPage_4.cpp</itemPath>
+            <itemPath>src/AdvOptPage_5.cpp</itemPath>
             <itemPath>src/AdvOptionsGui.cpp</itemPath>
             <itemPath>src/CustomPkgsGui.cpp</itemPath>
             <itemPath>src/ReconfigGui.cpp</itemPath>
@@ -304,6 +314,26 @@
       <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_5.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/AdvOptionsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -682,6 +712,26 @@
       <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AdvOptPage_5.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/AdvOptionsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

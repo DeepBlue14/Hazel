@@ -20,6 +20,7 @@
 #include <QString>
 #include <QLineEdit>
 #include <QPushButton>
+#include <QHBoxLayout>
 #include <QGridLayout>
 
 #include <iostream>
@@ -44,13 +45,23 @@ class AdvOptionsGui : public QWidget
     private:
         QStringList* optionsStrLstPtr;
         QListWidget* optionsLwPtr;
+        QPushButton* okBtn;
+        QPushButton* cancelBtn;
+        QPushButton* applyBtn;
+        QPushButton* helpBtn;
+        QHBoxLayout* buttonLayout;
         QGridLayout* outerLayout;
         
     private slots:
-        ;
+        void handleOkBtnSlot();
+        void handleCancelBtnSlot();
+        void handleApplyBtnSlot();
+        void handleHelpBtnSlot();
         
     public:
         AdvOptionsGui(QWidget* parent = 0);
+        void initBtns();
+        //loaders and unloaders for each page
         QString* toString();
         ~AdvOptionsGui();
 };
