@@ -19,6 +19,7 @@
 #include "ReconfigPage_2.h"
 #include "ReconfigPage_3.h"
 #include "ReconfigPage_4.h"
+#include "ReconfigPage_5.h"
 
 using namespace std;
 
@@ -32,7 +33,8 @@ class ReconfigGui : public QWidget
             PAGE_ONE,
             PAGE_TWO,
             PAGE_THREE,
-            PAGE_FOUR
+            PAGE_FOUR,
+            PAGE_FIVE
         };
         
         Page currentPage;
@@ -47,6 +49,7 @@ class ReconfigGui : public QWidget
         ReconfigPage_2* reconfigPage_2Ptr;
         ReconfigPage_3* reconfigPage_3Ptr;
         ReconfigPage_4* reconfigPage_4Ptr;
+        ReconfigPage_5* reconfigPage_5Ptr;
         
         QHBoxLayout* buttonLayout;
         QGridLayout* outerLayout;
@@ -71,6 +74,8 @@ class ReconfigGui : public QWidget
         void unloadPage_3();
         void loadPage_4();
         void unloadPage_4();
+        void loadPage_5();
+        void unloadPage_5();
         QString* toString();
         ~ReconfigGui();
 };

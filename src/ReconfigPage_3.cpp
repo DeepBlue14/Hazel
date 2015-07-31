@@ -3,11 +3,7 @@
 
 ReconfigPage_3::ReconfigPage_3(QWidget* parent) : QWidget(parent)
 {
-    outputTe = new QTextEdit();
-    outputTe->setEnabled(false);
-    
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(outputTe);
     
     this->setLayout(outerLayout);
 }

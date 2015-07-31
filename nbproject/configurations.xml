@@ -6,23 +6,21 @@
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
         <logicalFolder name="f2" displayName="backend" projectFiles="true">
+          <logicalFolder name="f2" displayName="MsgManip" projectFiles="true">
+            <itemPath>src/MsgDirDat.h</itemPath>
+            <itemPath>src/MsgFieldDat.h</itemPath>
+            <itemPath>src/MsgFileDat.h</itemPath>
+            <itemPath>src/MsgParser.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="Reconfig" projectFiles="true">
             <itemPath>src/ToCMake.h</itemPath>
             <itemPath>src/ToRosMake.h</itemPath>
           </logicalFolder>
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
-          <itemPath>src/HDirDat.h</itemPath>
-          <itemPath>src/HFileDat.h</itemPath>
-          <itemPath>src/HFuncDat.h</itemPath>
-          <itemPath>src/HParser.h</itemPath>
           <itemPath>src/HVarDat.h</itemPath>
           <itemPath>src/ModifyCMakeLists.h</itemPath>
           <itemPath>src/ModifyManifest.h</itemPath>
-          <itemPath>src/MsgDirDat.h</itemPath>
-          <itemPath>src/MsgFieldDat.h</itemPath>
-          <itemPath>src/MsgFileDat.h</itemPath>
-          <itemPath>src/MsgParser.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
           <itemPath>src/QXTerm.h</itemPath>
@@ -89,6 +87,7 @@
             <itemPath>src/ReconfigPage_2.h</itemPath>
             <itemPath>src/ReconfigPage_3.h</itemPath>
             <itemPath>src/ReconfigPage_4.h</itemPath>
+            <itemPath>src/ReconfigPage_5.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.h</itemPath>
@@ -154,19 +153,20 @@
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
         <logicalFolder name="f1" displayName="backend" projectFiles="true">
+          <logicalFolder name="f2" displayName="MsgManip" projectFiles="true">
+            <itemPath>src/MsgDirDat.cpp</itemPath>
+            <itemPath>src/MsgFieldDat.cpp</itemPath>
+            <itemPath>src/MsgFileDat.cpp</itemPath>
+            <itemPath>src/MsgParser.cpp</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="Reconfig" projectFiles="true">
             <itemPath>src/ToCMake.cpp</itemPath>
             <itemPath>src/ToRosMake.cpp</itemPath>
           </logicalFolder>
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
-          <itemPath>src/HParser.cpp</itemPath>
           <itemPath>src/ModifyCMakeLists.cpp</itemPath>
           <itemPath>src/ModifyManifest.cpp</itemPath>
-          <itemPath>src/MsgDirDat.cpp</itemPath>
-          <itemPath>src/MsgFieldDat.cpp</itemPath>
-          <itemPath>src/MsgFileDat.cpp</itemPath>
-          <itemPath>src/MsgParser.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
           <itemPath>src/QXTerm.cpp</itemPath>
@@ -233,6 +233,7 @@
             <itemPath>src/ReconfigPage_2.cpp</itemPath>
             <itemPath>src/ReconfigPage_3.cpp</itemPath>
             <itemPath>src/ReconfigPage_4.cpp</itemPath>
+            <itemPath>src/ReconfigPage_5.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.cpp</itemPath>
@@ -382,16 +383,6 @@
       <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/HDirDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/HFileDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/HFuncDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/HParser.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/HParser.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/HVarDat.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -586,6 +577,10 @@
       <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -781,16 +776,6 @@
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/HDirDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/HFileDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/HFuncDat.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/HParser.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/HParser.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/HVarDat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/HelpGui.cpp" ex="false" tool="1" flavor2="0">
@@ -984,6 +969,10 @@
       <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -1,12 +1,17 @@
 /* 
  * File:   ReconfigPage_1.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class contains a "page" which allows the user to
+ *                   select the location of the package, as well as the
+ *                   final resting place/destination of the rosified resulting
+ *                   package.
  *
  * Created on July 20, 2015, 5:11 PM
  */
 
-#ifndef RECONFIGPAGE_1_H
-#define	RECONFIGPAGE_1_H
+#ifndef RECONFIG_PAGE_1_H
+#define	RECONFIG_PAGE_1_H
 
 #include <QWidget>
 #include <QLineEdit>
@@ -36,15 +41,22 @@ class ReconfigPage_1 : public QWidget
         QString* rosPkgLocStrPtr;
         QGridLayout* outerLayout;
         
+        QString* vanillaPkgAbsPathStr;
+        QString* rosPkgAbsPathStr;
+        
     private slots:
         void handleVanillaPkgLocPbPtrSlot();
         void handleRosPkgLocPbPtrPb();
         
     public:
         ReconfigPage_1(QWidget* parent = 0);
+        void setVanillaPkgAbsPathStr(QString* rosPkgAbsPathStr);
+        QString* getVanillaPkgAbsPathStr();
+        void setRosPkgAbsPathStr(QString* rosPkgAbsPathStr);
+        QString* getRosPkgAbsPathStr();
         bool isValidRosWs(QString* absPathToWs);
         QString* toString();
         ~ReconfigPage_1();
 };
 
-#endif	/* RECONFIGPAGE_1_H */
+#endif	/* RECONFIG_PAGE_1_H */

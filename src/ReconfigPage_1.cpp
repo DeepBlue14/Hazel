@@ -49,6 +49,30 @@ void ReconfigPage_1::handleRosPkgLocPbPtrPb()
 }
 
 
+void ReconfigPage_1::setVanillaPkgAbsPathStr(QString* rosPkgAbsPathStr)
+{
+    this->rosPkgAbsPathStr = rosPkgAbsPathStr;
+}
+
+
+QString* ReconfigPage_1::getVanillaPkgAbsPathStr()
+{
+    return rosPkgAbsPathStr;
+}
+
+
+void ReconfigPage_1::setRosPkgAbsPathStr(QString* rosPkgAbsPathStr)
+{
+    this->rosPkgAbsPathStr = rosPkgAbsPathStr;
+}
+
+
+QString* ReconfigPage_1::getRosPkgAbsPathStr()
+{
+    return rosPkgAbsPathStr;
+}
+
+
 bool ReconfigPage_1::isValidRosWs(QString* absPathToWs)
 {
     QDir ws(*absPathToWs);

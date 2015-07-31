@@ -1,12 +1,15 @@
 /* 
  * File:   ReconfigPage_2.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class contains a "page" which allows the user to
+ *                   select the various msgs which will be linked against...
  *
  * Created on July 20, 2015, 5:11 PM
  */
 
-#ifndef RECONFIGPAGE_2_H
-#define	RECONFIGPAGE_2_H
+#ifndef RECONFIG_PAGE_2_H
+#define	RECONFIG_PAGE_2_H
 
 #include <QWidget>
 #include <QStringList>
@@ -33,6 +36,8 @@ class ReconfigPage_2 : public QWidget
         CustomPkgsGui* customPkgsGuiPtr;
         AdvOptionsGui* advOptionsGuiPtr;
         
+        //
+        
     private slots:
         void handleCustomPkgsPbStr();
         void handleAdvancedOptionsPbStr();
@@ -44,4 +49,4 @@ class ReconfigPage_2 : public QWidget
         ~ReconfigPage_2();
 };
 
-#endif	/* RECONFIGPAGE_2_H */
+#endif	/* RECONFIG_PAGE_2_H */

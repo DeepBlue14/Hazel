@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
          << "\n\t 3) Test QProcess"
          << "\n\t 4) Font XML file parsing"
          << "\n\t 5) MsgParser"
-         << "\n\t 6) HParser"
+         << "\n\t 6) "
          << "\n\t 7) Help GUI"
          << "\n\t 8) RTerm (standalone)"
          << "\n\t 9) Options"

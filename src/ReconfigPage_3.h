@@ -1,15 +1,19 @@
 /* 
  * File:   ReconfigPage_3.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class features a "page" widget to allow the user
+ *                   to specify any sub &&/|| pub modules to be generated.
+ *                   The user may specify exact locations, or can have them
+ *                   generated in all source directories in the package.
  *
  * Created on July 20, 2015, 5:11 PM
  */
 
-#ifndef RECONFIGPAGE_3_H
-#define	RECONFIGPAGE_3_H
+#ifndef RECONFIG_PAGE_3_H
+#define	RECONFIG_PAGE_3_H
 
 #include <QWidget>
-#include <QTextEdit>
 #include <QGridLayout>
 
 class ReconfigPage_3 : public QWidget
@@ -17,7 +21,6 @@ class ReconfigPage_3 : public QWidget
     Q_OBJECT
             
     private:
-        QTextEdit* outputTe;
         QGridLayout* outerLayout;
         
     private slots:
@@ -29,4 +32,4 @@ class ReconfigPage_3 : public QWidget
         ~ReconfigPage_3();
 };
 
-#endif	/* RECONFIGPAGE_3_H */
+#endif	/* RECONFIG_PAGE_3_H */

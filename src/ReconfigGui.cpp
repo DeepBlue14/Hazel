@@ -8,6 +8,7 @@ ReconfigGui::ReconfigGui(QWidget* parent) : QWidget(parent)
     reconfigPage_2Ptr = new ReconfigPage_2();
     reconfigPage_3Ptr = new ReconfigPage_3();
     reconfigPage_4Ptr = new ReconfigPage_4();
+    reconfigPage_5Ptr = new ReconfigPage_5();
     
     currentPage = PAGE_ONE;
     
@@ -94,6 +95,11 @@ void ReconfigGui::swapBackPage()
             unloadPage_4();
             loadPage_3();
             currentPage = PAGE_THREE;
+            break;
+        case PAGE_FIVE:
+            unloadPage_5();
+            loadPage_4();
+            currentPage = PAGE_FOUR;
             nextBtn->setEnabled(true);
             finishBtn->setEnabled(false);
         default:
@@ -121,6 +127,11 @@ void ReconfigGui::swapNextPage()
             unloadPage_3();
             loadPage_4();
             currentPage = PAGE_FOUR;
+            break;
+        case PAGE_FOUR:
+            unloadPage_4();
+            loadPage_5();
+            currentPage = PAGE_FIVE;
             nextBtn->setEnabled(false);
             finishBtn->setEnabled(true);
         default:
@@ -190,6 +201,22 @@ void ReconfigGui::unloadPage_4()
     outerLayout->removeWidget(reconfigPage_4Ptr);
     reconfigPage_4Ptr->setVisible(false);
     reconfigPage_4Ptr->setEnabled(false);
+}
+
+
+void ReconfigGui::loadPage_5()
+{
+    outerLayout->addWidget(reconfigPage_5Ptr, 0, 0);
+    reconfigPage_5Ptr->setVisible(true);
+    reconfigPage_5Ptr->setEnabled(true);
+}
+
+
+void ReconfigGui::unloadPage_5()
+{
+    outerLayout->removeWidget(reconfigPage_5Ptr);
+    reconfigPage_5Ptr->setVisible(false);
+    reconfigPage_5Ptr->setEnabled(false);
 }
 
 
