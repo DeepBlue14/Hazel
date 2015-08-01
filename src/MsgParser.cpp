@@ -137,19 +137,19 @@ MsgFieldDat MsgParser::extractAttributes(QString line, MsgFieldDat msgFieldDat)
 }
 
 
-void MsgParser::toTxtFile()
+void MsgParser::toTxtFile(QString* data)
 {
     cerr << "at MsgParser::toTxtFile(): this method has not yet been implemented" << endl;
 }
 
 
-void MsgParser::toXmlFile()
+void MsgParser::toXmlFile(QString* data)
 {
     cerr << "at MsgParser::toXmlFile(): this method has not yet been implemented" << endl;
 }
 
 
-void MsgParser::toJsonFile()
+void MsgParser::toJsonFile(QString* data)
 {
     cerr << "at MsgParser::toJsonFile(): this method has not yet been implemented" << endl;
 }

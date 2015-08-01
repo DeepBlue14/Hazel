@@ -5,47 +5,34 @@
 
 {\ttfamily \#include $<$Msg\-Parser.\-h$>$}
 
-
-
-Collaboration diagram for Msg\-Parser\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=197pt]{class_msg_parser__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_msg_parser_ab1e677e497e0e3872062dbb26d5d0d44}{Msg\-Parser} ()
 \item 
-\hyperlink{class_msg_file_dat}{Msg\-File\-Dat} $\ast$ \hyperlink{class_msg_parser_ae72b3fe9392b895129fd467861df2207}{parse} (string $\ast$msg\-File\-Abs\-Path\-Str\-Ptr)
+\hyperlink{class_msg_dir_dat}{Msg\-Dir\-Dat} $\ast$ \hyperlink{class_msg_parser_af5b769209a5d0fb656acd845c8a19258}{parse\-Dir} (Q\-String $\ast$msg\-Dir\-Abs\-Path\-Str\-Ptr)
 \item 
-string $\ast$ \hyperlink{class_msg_parser_a5d5b961a44665d5509753ba8b3905149}{trim} (string $\ast$my\-String)
+\hyperlink{class_msg_file_dat}{Msg\-File\-Dat} \hyperlink{class_msg_parser_a3361c858ee2df19f1c2d11e62434ee26}{parse\-File} (Q\-String msg\-File\-Abs\-Path\-Str\-Ptr)
 \item 
-string $\ast$ \hyperlink{class_msg_parser_a315c9b8c16fe487199abfae3c953155a}{extract\-Type} (string $\ast$line)
+\hyperlink{class_msg_field_dat}{Msg\-Field\-Dat} \hyperlink{class_msg_parser_ae61a0ab6192ce566652b89df9253181c}{extract\-Attributes} (Q\-String line, \hyperlink{class_msg_field_dat}{Msg\-Field\-Dat} msg\-Field\-Dat)
 \item 
-string $\ast$ \hyperlink{class_msg_parser_add6a7751c58dc76e77b4b8dfd4afebf8}{extract\-Name} (string $\ast$line)
+void \hyperlink{class_msg_parser_a397a8db3ba7355593edeb6735823042a}{to\-Txt\-File} ()
 \item 
-string $\ast$ \hyperlink{class_msg_parser_af4f977684abaa8c2660f8ff0649d0557}{extract\-Comment} (string $\ast$line)
+void \hyperlink{class_msg_parser_a5c5d3f6fd83e1ae8a6e350f920f0041b}{to\-Xml\-File} ()
 \item 
-string $\ast$ \hyperlink{class_msg_parser_a3046f1fbf603a27dd255a0aa56c0c236}{to\-String} ()
+void \hyperlink{class_msg_parser_ae016f213f91480196957842a2c6e4a73}{to\-Json\-File} ()
+\item 
+Q\-String $\ast$ \hyperlink{class_msg_parser_aa129654a7d90d48ce2cda367c2e21ac8}{to\-String} ()
 \item 
 \hyperlink{class_msg_parser_a936b164bb49dbfb69e4963d168569876}{$\sim$\-Msg\-Parser} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{class_msg_dir_dat}{Msg\-Dir\-Dat} \hyperlink{class_msg_parser_a5f738a06fca187d8e0c6ff2530fcd978}{msg\-Dir\-Dat}
+\item 
 \hyperlink{class_msg_file_dat}{Msg\-File\-Dat} $\ast$ \hyperlink{class_msg_parser_ac6b6991b7abc90ee14dedf95bafa2db3}{current\-Msg\-File\-Dat}
 \end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 25 of file Msg\-Parser.\-h.
-
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -56,10 +43,6 @@ Definition at line 25 of file Msg\-Parser.\-h.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_msg_parser_ab1e677e497e0e3872062dbb26d5d0d44}
-
-
-Definition at line 4 of file Msg\-Parser.\-cpp.
-
 \hypertarget{class_msg_parser_a936b164bb49dbfb69e4963d168569876}{\index{Msg\-Parser@{Msg\-Parser}!$\sim$\-Msg\-Parser@{$\sim$\-Msg\-Parser}}
 \index{$\sim$\-Msg\-Parser@{$\sim$\-Msg\-Parser}!MsgParser@{Msg\-Parser}}
 \subsubsection[{$\sim$\-Msg\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}Msg\-Parser\-::$\sim$\-Msg\-Parser (
@@ -69,147 +52,66 @@ Definition at line 4 of file Msg\-Parser.\-cpp.
 )}}\label{class_msg_parser_a936b164bb49dbfb69e4963d168569876}
 
 
-Definition at line 164 of file Msg\-Parser.\-cpp.
-
-
-
 \subsection{Member Function Documentation}
-\hypertarget{class_msg_parser_af4f977684abaa8c2660f8ff0649d0557}{\index{Msg\-Parser@{Msg\-Parser}!extract\-Comment@{extract\-Comment}}
-\index{extract\-Comment@{extract\-Comment}!MsgParser@{Msg\-Parser}}
-\subsubsection[{extract\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-Parser\-::extract\-Comment (
+\hypertarget{class_msg_parser_ae61a0ab6192ce566652b89df9253181c}{\index{Msg\-Parser@{Msg\-Parser}!extract\-Attributes@{extract\-Attributes}}
+\index{extract\-Attributes@{extract\-Attributes}!MsgParser@{Msg\-Parser}}
+\subsubsection[{extract\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Msg\-Field\-Dat} Msg\-Parser\-::extract\-Attributes (
 \begin{DoxyParamCaption}
-\item[{string $\ast$}]{line}
+\item[{Q\-String}]{line, }
+\item[{{\bf Msg\-Field\-Dat}}]{msg\-Field\-Dat}
 \end{DoxyParamCaption}
-)}}\label{class_msg_parser_af4f977684abaa8c2660f8ff0649d0557}
-
-
-Definition at line 123 of file Msg\-Parser.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_msg_parser_af4f977684abaa8c2660f8ff0649d0557_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_msg_parser_add6a7751c58dc76e77b4b8dfd4afebf8}{\index{Msg\-Parser@{Msg\-Parser}!extract\-Name@{extract\-Name}}
-\index{extract\-Name@{extract\-Name}!MsgParser@{Msg\-Parser}}
-\subsubsection[{extract\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-Parser\-::extract\-Name (
+)}}\label{class_msg_parser_ae61a0ab6192ce566652b89df9253181c}
+\hypertarget{class_msg_parser_af5b769209a5d0fb656acd845c8a19258}{\index{Msg\-Parser@{Msg\-Parser}!parse\-Dir@{parse\-Dir}}
+\index{parse\-Dir@{parse\-Dir}!MsgParser@{Msg\-Parser}}
+\subsubsection[{parse\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Msg\-Dir\-Dat} $\ast$ Msg\-Parser\-::parse\-Dir (
 \begin{DoxyParamCaption}
-\item[{string $\ast$}]{line}
+\item[{Q\-String $\ast$}]{msg\-Dir\-Abs\-Path\-Str\-Ptr}
 \end{DoxyParamCaption}
-)}}\label{class_msg_parser_add6a7751c58dc76e77b4b8dfd4afebf8}
-
-
-Definition at line 96 of file Msg\-Parser.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=336pt]{class_msg_parser_add6a7751c58dc76e77b4b8dfd4afebf8_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_msg_parser_a315c9b8c16fe487199abfae3c953155a}{\index{Msg\-Parser@{Msg\-Parser}!extract\-Type@{extract\-Type}}
-\index{extract\-Type@{extract\-Type}!MsgParser@{Msg\-Parser}}
-\subsubsection[{extract\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-Parser\-::extract\-Type (
+)}}\label{class_msg_parser_af5b769209a5d0fb656acd845c8a19258}
+\hypertarget{class_msg_parser_a3361c858ee2df19f1c2d11e62434ee26}{\index{Msg\-Parser@{Msg\-Parser}!parse\-File@{parse\-File}}
+\index{parse\-File@{parse\-File}!MsgParser@{Msg\-Parser}}
+\subsubsection[{parse\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Msg\-File\-Dat} Msg\-Parser\-::parse\-File (
 \begin{DoxyParamCaption}
-\item[{string $\ast$}]{line}
+\item[{Q\-String}]{msg\-File\-Abs\-Path\-Str\-Ptr}
 \end{DoxyParamCaption}
-)}}\label{class_msg_parser_a315c9b8c16fe487199abfae3c953155a}
-
-
-Definition at line 79 of file Msg\-Parser.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=332pt]{class_msg_parser_a315c9b8c16fe487199abfae3c953155a_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_msg_parser_ae72b3fe9392b895129fd467861df2207}{\index{Msg\-Parser@{Msg\-Parser}!parse@{parse}}
-\index{parse@{parse}!MsgParser@{Msg\-Parser}}
-\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Msg\-File\-Dat} $\ast$ Msg\-Parser\-::parse (
-\begin{DoxyParamCaption}
-\item[{string $\ast$}]{msg\-File\-Abs\-Path\-Str\-Ptr}
-\end{DoxyParamCaption}
-)}}\label{class_msg_parser_ae72b3fe9392b895129fd467861df2207}
-!!the filestr should include the extension!!! 
-
-Definition at line 10 of file Msg\-Parser.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_msg_parser_ae72b3fe9392b895129fd467861df2207_cgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_msg_parser_a3046f1fbf603a27dd255a0aa56c0c236}{\index{Msg\-Parser@{Msg\-Parser}!to\-String@{to\-String}}
-\index{to\-String@{to\-String}!MsgParser@{Msg\-Parser}}
-\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-Parser\-::to\-String (
+)}}\label{class_msg_parser_a3361c858ee2df19f1c2d11e62434ee26}
+\hypertarget{class_msg_parser_ae016f213f91480196957842a2c6e4a73}{\index{Msg\-Parser@{Msg\-Parser}!to\-Json\-File@{to\-Json\-File}}
+\index{to\-Json\-File@{to\-Json\-File}!MsgParser@{Msg\-Parser}}
+\subsubsection[{to\-Json\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Msg\-Parser\-::to\-Json\-File (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_msg_parser_a3046f1fbf603a27dd255a0aa56c0c236}
-
-
-Definition at line 158 of file Msg\-Parser.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_msg_parser_a3046f1fbf603a27dd255a0aa56c0c236_cgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_msg_parser_a5d5b961a44665d5509753ba8b3905149}{\index{Msg\-Parser@{Msg\-Parser}!trim@{trim}}
-\index{trim@{trim}!MsgParser@{Msg\-Parser}}
-\subsubsection[{trim}]{\setlength{\rightskip}{0pt plus 5cm}string $\ast$ Msg\-Parser\-::trim (
+)}}\label{class_msg_parser_ae016f213f91480196957842a2c6e4a73}
+\hypertarget{class_msg_parser_aa129654a7d90d48ce2cda367c2e21ac8}{\index{Msg\-Parser@{Msg\-Parser}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!MsgParser@{Msg\-Parser}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Msg\-Parser\-::to\-String (
 \begin{DoxyParamCaption}
-\item[{string $\ast$}]{my\-String}
+{}
 \end{DoxyParamCaption}
-)}}\label{class_msg_parser_a5d5b961a44665d5509753ba8b3905149}
-
-
-Definition at line 60 of file Msg\-Parser.\-cpp.
-
+)}}\label{class_msg_parser_aa129654a7d90d48ce2cda367c2e21ac8}
+\hypertarget{class_msg_parser_a397a8db3ba7355593edeb6735823042a}{\index{Msg\-Parser@{Msg\-Parser}!to\-Txt\-File@{to\-Txt\-File}}
+\index{to\-Txt\-File@{to\-Txt\-File}!MsgParser@{Msg\-Parser}}
+\subsubsection[{to\-Txt\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Msg\-Parser\-::to\-Txt\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_parser_a397a8db3ba7355593edeb6735823042a}
+\hypertarget{class_msg_parser_a5c5d3f6fd83e1ae8a6e350f920f0041b}{\index{Msg\-Parser@{Msg\-Parser}!to\-Xml\-File@{to\-Xml\-File}}
+\index{to\-Xml\-File@{to\-Xml\-File}!MsgParser@{Msg\-Parser}}
+\subsubsection[{to\-Xml\-File}]{\setlength{\rightskip}{0pt plus 5cm}void Msg\-Parser\-::to\-Xml\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_msg_parser_a5c5d3f6fd83e1ae8a6e350f920f0041b}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_msg_parser_ac6b6991b7abc90ee14dedf95bafa2db3}{\index{Msg\-Parser@{Msg\-Parser}!current\-Msg\-File\-Dat@{current\-Msg\-File\-Dat}}
 \index{current\-Msg\-File\-Dat@{current\-Msg\-File\-Dat}!MsgParser@{Msg\-Parser}}
 \subsubsection[{current\-Msg\-File\-Dat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Msg\-File\-Dat}$\ast$ Msg\-Parser\-::current\-Msg\-File\-Dat\hspace{0.3cm}{\ttfamily [private]}}}\label{class_msg_parser_ac6b6991b7abc90ee14dedf95bafa2db3}
-
-
-Definition at line 28 of file Msg\-Parser.\-h.
-
+\hypertarget{class_msg_parser_a5f738a06fca187d8e0c6ff2530fcd978}{\index{Msg\-Parser@{Msg\-Parser}!msg\-Dir\-Dat@{msg\-Dir\-Dat}}
+\index{msg\-Dir\-Dat@{msg\-Dir\-Dat}!MsgParser@{Msg\-Parser}}
+\subsubsection[{msg\-Dir\-Dat}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Msg\-Dir\-Dat} Msg\-Parser\-::msg\-Dir\-Dat\hspace{0.3cm}{\ttfamily [private]}}}\label{class_msg_parser_a5f738a06fca187d8e0c6ff2530fcd978}
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

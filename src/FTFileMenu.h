@@ -37,8 +37,19 @@ class FTFileMenu : public QMenu
         void handleOpenMenuSlot();
         
     public:
+        /**
+         * Constructor.
+         */
         FTFileMenu();
+        
+        /**
+         * Inits the menu for a file.
+         */
         void initMenu();
+        
+        /**
+         * Destructor.
+         */
         ~FTFileMenu();
 };
 

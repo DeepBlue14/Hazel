@@ -1,6 +1,9 @@
 /* 
- * File:   terminal.h
- * Author: james
+ * File:   QXTerm.h
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class allows a XTerm application to be embedded into
+ *                   a QWidget.  
  *
  * Created on April 29, 2015, 11:25 AM
  */
@@ -33,15 +36,37 @@ class QXTerm : public QWidget
 	Q_OBJECT
 
 public:
+        /**
+        * Constructor.
+        * 
+        * @param Reference to parent type QWidget.
+        */
 	QXTerm(QWidget * = 0);
+        
+        /**
+         * Destructor.
+         */
 	~QXTerm();
 
+        /**
+         * Contains the XTerms execution status.
+         * 
+         * @return the status.
+         */
 	int isRunning();
 
 public slots:
+        /**
+         * Triggers the execution of the XTerm application.
+         * 
+         * @return the applications initial execution status. 
+         */
 	int start();
 
 signals:
+        /**
+         * Terminates the XTerm application.
+         */
 	void exited();
 
 private:

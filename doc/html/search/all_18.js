@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['yaml',['YAML',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5a9c1ec7e2486224af3cec29825d5bd7b6',1,'RideFile']]],
-  ['yellow',['yellow',['../namespace_unix_console_text.html#a8ad6638a6663d3b2b6c0d00faec6438e',1,'UnixConsoleText::yellow()'],['../_windows_console_text_8cpp.html#a9273b40c9ed7ae4e22102dc28691023d',1,'yellow():&#160;WindowsConsoleText.cpp'],['../namespace_windows_console_text.html#a13969e6a4cdad5b49196fb843585fef2',1,'WindowsConsoleText::yellow()']]]
+  ['yaml',['YAML',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9a6e5f004786c952590bfe5c406f36035a',1,'RFile']]],
+  ['yellow',['yellow',['../namespace_unix_console_text.html#a9960d6d3528ecd47643f77f47df378f7',1,'UnixConsoleText::yellow()'],['../namespace_windows_console_text.html#ae70c89bbc8fd9df308996adbd9a81679',1,'WindowsConsoleText::yellow()']]]
 ];

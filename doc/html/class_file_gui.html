@@ -21,12 +21,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ride1.jpg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RIDE
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">ROS Integrated Development Environment</div>
+   <div id="projectbrief">Ros Integrated Development Invironment</div>
   </td>
  </tr>
  </tbody>
@@ -65,7 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -101,13 +100,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for FileGui:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_file_gui__inherit__graph.png" border="0" usemap="#_file_gui_inherit__map" alt="Inheritance graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for FileGui:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui__coll__graph.png" border="0" usemap="#_file_gui_coll__map" alt="Collaboration graph"/></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ <div class="center">
+  <img src="class_file_gui.png" usemap="#FileGui_map" alt=""/>
+  <map id="FileGui_map" name="FileGui_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -123,6 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af5ea5edc018ed2ba6685ae6e5244483f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a704d37c450e30eeb506a89f7e5b7a79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_gui.html#a704d37c450e30eeb506a89f7e5b7a79e">resizeEvent</a> (QResizeEvent *event)</td></tr>
 <tr class="separator:a704d37c450e30eeb506a89f7e5b7a79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d31bd4f4169eff45e59fa79ba4e98f9"><td class="memItemLeft" align="right" valign="top">QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_gui.html#a0d31bd4f4169eff45e59fa79ba4e98f9">toString</a> ()</td></tr>
+<tr class="separator:a0d31bd4f4169eff45e59fa79ba4e98f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276b681a3fbd10e083463e32a361461c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_gui.html#a276b681a3fbd10e083463e32a361461c">~FileGui</a> ()</td></tr>
 <tr class="separator:a276b681a3fbd10e083463e32a361461c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -144,8 +143,8 @@ Private Slots</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a8b5e081f66c2829bd3eb6ce27c5f04ff"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_gui.html#a8b5e081f66c2829bd3eb6ce27c5f04ff">textUnderCursor</a> () const </td></tr>
-<tr class="separator:a8b5e081f66c2829bd3eb6ce27c5f04ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d263213e8a442878876eef041325493"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_gui.html#a3d263213e8a442878876eef041325493">wordUnderCursor</a> () const </td></tr>
+<tr class="separator:a3d263213e8a442878876eef041325493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -154,10 +153,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a71dfac2e67bf84af494667901b51ddc9"><td class="memItemLeft" align="right" valign="top">QCompleter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_file_gui.html#a71dfac2e67bf84af494667901b51ddc9">c</a></td></tr>
 <tr class="separator:a71dfac2e67bf84af494667901b51ddc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_file_gui_8h_source.html#l00030">30</a> of file <a class="el" href="_file_gui_8h_source.html">FileGui.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac7c9b0cdbb2e89190a13318ec84c70a3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -171,17 +167,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00014">14</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_ac7c9b0cdbb2e89190a13318ec84c70a3_cgraph.png" border="0" usemap="#class_file_gui_ac7c9b0cdbb2e89190a13318ec84c70a3_cgraph" alt=""/></div>
-<map name="class_file_gui_ac7c9b0cdbb2e89190a13318ec84c70a3_cgraph" id="class_file_gui_ac7c9b0cdbb2e89190a13318ec84c70a3_cgraph">
-<area shape="rect" id="node2" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639" title="toString" alt="" coords="236,5,303,32"/><area shape="rect" id="node3" href="class_file_gui.html#a498aa60814cc9265695e656e9b7a2e87" title="FileGui::updateLineNumber\lAreaWidth" alt="" coords="422,74,602,115"/><area shape="rect" id="node5" href="class_file_gui.html#ae1ce22662fb60a146101e8768acca3f1" title="FileGui::updateLineNumberArea" alt="" coords="166,107,373,133"/><area shape="rect" id="node6" href="class_file_gui.html#a04e7291acb7167a70377f53dd7bd47f4" title="FileGui::highlightCurrentLine" alt="" coords="176,157,363,184"/><area shape="rect" id="node4" href="class_file_gui.html#af5ea5edc018ed2ba6685ae6e5244483f" title="FileGui::lineNumberAreaWidth" alt="" coords="651,81,850,108"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -198,8 +183,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00262">262</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -215,17 +198,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00050">50</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a741c813e12ed8105bc9b30aa0a48c4d7_icgraph.png" border="0" usemap="#class_file_gui_a741c813e12ed8105bc9b30aa0a48c4d7_icgraph" alt=""/></div>
-<map name="class_file_gui_a741c813e12ed8105bc9b30aa0a48c4d7_icgraph" id="class_file_gui_a741c813e12ed8105bc9b30aa0a48c4d7_icgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#ab95b0b24bfee919e33bcf6c623c72842" title="FileGui::setCompleter" alt="" coords="181,12,331,39"/><area shape="rect" id="node3" href="class_new_file_gui.html#a50cf414bdb9ea40f3cd4ca4fa4566b77" title="NewFileGui::handleFinish\lBtnSlot" alt="" coords="379,5,549,46"/><area shape="rect" id="node4" href="class_new_file_gui.html#ad77edffa59956f16ef2b6d83dd357932" title="NewFileGui::initBtns" alt="" coords="598,12,741,39"/><area shape="rect" id="node5" href="class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d" title="NewFileGui::NewFileGui" alt="" coords="790,12,957,39"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -250,17 +222,6 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00201">201</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a04e7291acb7167a70377f53dd7bd47f4_icgraph.png" border="0" usemap="#class_file_gui_a04e7291acb7167a70377f53dd7bd47f4_icgraph" alt=""/></div>
-<map name="class_file_gui_a04e7291acb7167a70377f53dd7bd47f4_icgraph" id="class_file_gui_a04e7291acb7167a70377f53dd7bd47f4_icgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#ac7c9b0cdbb2e89190a13318ec84c70a3" title="FileGui::FileGui" alt="" coords="240,5,352,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a5b90c98b648fc77ef8474152e6632af3"></a>
@@ -284,17 +245,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00056">56</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a5b90c98b648fc77ef8474152e6632af3_icgraph.png" border="0" usemap="#class_file_gui_a5b90c98b648fc77ef8474152e6632af3_icgraph" alt=""/></div>
-<map name="class_file_gui_a5b90c98b648fc77ef8474152e6632af3_icgraph" id="class_file_gui_a5b90c98b648fc77ef8474152e6632af3_icgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#ab95b0b24bfee919e33bcf6c623c72842" title="FileGui::setCompleter" alt="" coords="224,12,373,39"/><area shape="rect" id="node3" href="class_new_file_gui.html#a50cf414bdb9ea40f3cd4ca4fa4566b77" title="NewFileGui::handleFinish\lBtnSlot" alt="" coords="421,5,592,46"/><area shape="rect" id="node4" href="class_new_file_gui.html#ad77edffa59956f16ef2b6d83dd357932" title="NewFileGui::initBtns" alt="" coords="641,12,783,39"/><area shape="rect" id="node5" href="class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d" title="NewFileGui::NewFileGui" alt="" coords="833,12,999,39"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -321,17 +271,6 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>!! this inserts the closing parens !!! </p>
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00075">75</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_aed2ed675e3d0eec814fda21479babb36_cgraph.png" border="0" usemap="#class_file_gui_aed2ed675e3d0eec814fda21479babb36_cgraph" alt=""/></div>
-<map name="class_file_gui_aed2ed675e3d0eec814fda21479babb36_cgraph" id="class_file_gui_aed2ed675e3d0eec814fda21479babb36_cgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#a8b5e081f66c2829bd3eb6ce27c5f04ff" title="FileGui::textUnderCursor" alt="" coords="214,5,381,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a24940e7e57f49e81c451f137acfbe60a"></a>
@@ -348,17 +287,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00232">232</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a24940e7e57f49e81c451f137acfbe60a_icgraph.png" border="0" usemap="#class_file_gui_a24940e7e57f49e81c451f137acfbe60a_icgraph" alt=""/></div>
-<map name="class_file_gui_a24940e7e57f49e81c451f137acfbe60a_icgraph" id="class_file_gui_a24940e7e57f49e81c451f137acfbe60a_icgraph">
-<area shape="rect" id="node2" href="class_line_number_area.html#a56400934bfe272427deb3ffd975b3a7f" title="LineNumberArea::paintEvent" alt="" coords="248,12,437,39"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="af5ea5edc018ed2ba6685ae6e5244483f"></a>
@@ -373,17 +301,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00158">158</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f_icgraph.png" border="0" usemap="#class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f_icgraph" alt=""/></div>
-<map name="class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f_icgraph" id="class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f_icgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#a498aa60814cc9265695e656e9b7a2e87" title="FileGui::updateLineNumber\lAreaWidth" alt="" coords="254,5,434,46"/><area shape="rect" id="node5" href="class_file_gui.html#a704d37c450e30eeb506a89f7e5b7a79e" title="FileGui::resizeEvent" alt="" coords="274,71,414,97"/><area shape="rect" id="node6" href="class_line_number_area.html#a5d31f7fb107bc1eefd7ae4974c095308" title="LineNumberArea::sizeHint" alt="" coords="257,121,431,148"/><area shape="rect" id="node3" href="class_file_gui.html#ac7c9b0cdbb2e89190a13318ec84c70a3" title="FileGui::FileGui" alt="" coords="739,12,851,39"/><area shape="rect" id="node4" href="class_file_gui.html#ae1ce22662fb60a146101e8768acca3f1" title="FileGui::updateLineNumberArea" alt="" coords="483,37,690,64"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -401,17 +318,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00192">192</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e_cgraph.png" border="0" usemap="#class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e_cgraph" alt=""/></div>
-<map name="class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e_cgraph" id="class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e_cgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#af5ea5edc018ed2ba6685ae6e5244483f" title="FileGui::lineNumberAreaWidth" alt="" coords="195,5,394,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ab95b0b24bfee919e33bcf6c623c72842"></a>
@@ -428,59 +334,20 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00031">31</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_cgraph.png" border="0" usemap="#class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_cgraph" alt=""/></div>
-<map name="class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_cgraph" id="class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_cgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#a741c813e12ed8105bc9b30aa0a48c4d7" title="FileGui::completer" alt="" coords="224,5,352,32"/><area shape="rect" id="node3" href="class_file_gui.html#a5b90c98b648fc77ef8474152e6632af3" title="FileGui::insertCompletion" alt="" coords="203,56,373,83"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_icgraph.png" border="0" usemap="#class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_icgraph" alt=""/></div>
-<map name="class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_icgraph" id="class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_icgraph">
-<area shape="rect" id="node2" href="class_new_file_gui.html#a50cf414bdb9ea40f3cd4ca4fa4566b77" title="NewFileGui::handleFinish\lBtnSlot" alt="" coords="203,5,373,46"/><area shape="rect" id="node3" href="class_new_file_gui.html#ad77edffa59956f16ef2b6d83dd357932" title="NewFileGui::initBtns" alt="" coords="422,12,565,39"/><area shape="rect" id="node4" href="class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d" title="NewFileGui::NewFileGui" alt="" coords="614,12,781,39"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="a8b5e081f66c2829bd3eb6ce27c5f04ff"></a>
+<a class="anchor" id="a0d31bd4f4169eff45e59fa79ba4e98f9"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QString FileGui::textUnderCursor </td>
+          <td class="memname">QString * FileGui::toString </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00067">67</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff_icgraph.png" border="0" usemap="#class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff_icgraph" alt=""/></div>
-<map name="class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff_icgraph" id="class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff_icgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#aed2ed675e3d0eec814fda21479babb36" title="FileGui::keyPressEvent" alt="" coords="221,5,381,32"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -516,26 +383,6 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00180">180</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_ae1ce22662fb60a146101e8768acca3f1_cgraph.png" border="0" usemap="#class_file_gui_ae1ce22662fb60a146101e8768acca3f1_cgraph" alt=""/></div>
-<map name="class_file_gui_ae1ce22662fb60a146101e8768acca3f1_cgraph" id="class_file_gui_ae1ce22662fb60a146101e8768acca3f1_cgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#a498aa60814cc9265695e656e9b7a2e87" title="FileGui::updateLineNumber\lAreaWidth" alt="" coords="262,5,442,46"/><area shape="rect" id="node3" href="class_file_gui.html#af5ea5edc018ed2ba6685ae6e5244483f" title="FileGui::lineNumberAreaWidth" alt="" coords="491,12,690,39"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_ae1ce22662fb60a146101e8768acca3f1_icgraph.png" border="0" usemap="#class_file_gui_ae1ce22662fb60a146101e8768acca3f1_icgraph" alt=""/></div>
-<map name="class_file_gui_ae1ce22662fb60a146101e8768acca3f1_icgraph" id="class_file_gui_ae1ce22662fb60a146101e8768acca3f1_icgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#ac7c9b0cdbb2e89190a13318ec84c70a3" title="FileGui::FileGui" alt="" coords="261,5,373,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a498aa60814cc9265695e656e9b7a2e87"></a>
@@ -560,25 +407,28 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8cpp_source.html#l00174">174</a> of file <a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a498aa60814cc9265695e656e9b7a2e87_cgraph.png" border="0" usemap="#class_file_gui_a498aa60814cc9265695e656e9b7a2e87_cgraph" alt=""/></div>
-<map name="class_file_gui_a498aa60814cc9265695e656e9b7a2e87_cgraph" id="class_file_gui_a498aa60814cc9265695e656e9b7a2e87_cgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#af5ea5edc018ed2ba6685ae6e5244483f" title="FileGui::lineNumberAreaWidth" alt="" coords="235,12,434,39"/></map>
 </div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_file_gui_a498aa60814cc9265695e656e9b7a2e87_icgraph.png" border="0" usemap="#class_file_gui_a498aa60814cc9265695e656e9b7a2e87_icgraph" alt=""/></div>
-<map name="class_file_gui_a498aa60814cc9265695e656e9b7a2e87_icgraph" id="class_file_gui_a498aa60814cc9265695e656e9b7a2e87_icgraph">
-<area shape="rect" id="node2" href="class_file_gui.html#ac7c9b0cdbb2e89190a13318ec84c70a3" title="FileGui::FileGui" alt="" coords="491,12,603,39"/><area shape="rect" id="node3" href="class_file_gui.html#ae1ce22662fb60a146101e8768acca3f1" title="FileGui::updateLineNumberArea" alt="" coords="235,37,442,64"/></map>
 </div>
-</p>
+<a class="anchor" id="a3d263213e8a442878876eef041325493"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString FileGui::wordUnderCursor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -601,8 +451,6 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8h_source.html#l00037">37</a> of file <a class="el" href="_file_gui_8h_source.html">FileGui.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a4fa030b7bda34eeb961eac7324f28b88"></a>
@@ -623,18 +471,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_file_gui_8h_source.html#l00035">35</a> of file <a class="el" href="_file_gui_8h_source.html">FileGui.h</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_file_gui_8h_source.html">FileGui.h</a></li>
-<li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_file_gui_8cpp_source.html">FileGui.cpp</a></li>
+<li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_file_gui_8cpp.html">FileGui.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 15:46:11 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

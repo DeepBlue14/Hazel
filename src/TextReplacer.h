@@ -2,7 +2,9 @@
  * File:   TextReplacer.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: Primitive (non-compiler oriented) text replace/refactoring
+ *                   engine.
+ * @deprecated
  *
  * Reference: http://doc.qt.io/qt-4.8/qstring.html#replace
  *            http://doc.qt.io/qt-4.8/qstring.html#indexOf
@@ -39,10 +41,40 @@ class TextReplacer
         ;
         
     public:
+        /**
+         * Constructor.
+         */
         TextReplacer();
+        
+        /**
+         * 
+         * @deprecated
+         * 
+         * @param file
+         * @param oldToken
+         * @param newToken
+         */
         void replaceEveryOccurenceOf(RFile* file, QString* oldToken, QString* newToken);
+        
+        /**
+         * 
+         * @deprecated
+         * 
+         * @param oldToken
+         * @param newToken
+         */
         void refactor(QString* oldToken, QString* newToken);
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~TextReplacer();
 };
 

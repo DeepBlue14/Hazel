@@ -26,8 +26,21 @@ class ToCMake
         ;
         
     public:
+        /**
+         * Constructor.
+         */
         ToCMake();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return data of this class. 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~ToCMake();
 };
 

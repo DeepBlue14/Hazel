@@ -5,22 +5,10 @@
 
 {\ttfamily \#include $<$Output\-Gui.\-h$>$}
 
-
-
-Inheritance diagram for Output\-Gui\-:\nopagebreak
-\begin{figure}[H]
+Inheritance diagram for Output\-Gui\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=140pt]{class_output_gui__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Output\-Gui\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=140pt]{class_output_gui__coll__graph}
+\includegraphics[height=2.000000cm]{class_output_gui}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -31,6 +19,18 @@ Collaboration diagram for Output\-Gui\-:\nopagebreak
 void \hyperlink{class_output_gui_ad28c34939968c81bdba5e7edcd94fde2}{add\-Tab} (Q\-Widget $\ast$tab, Q\-String $\ast$tab\-Name)
 \item 
 Q\-Tab\-Widget $\ast$ \hyperlink{class_output_gui_acd5d7658edaa37f392fbb2524cb5cd05}{get\-Tab\-Widget} ()
+\item 
+void \hyperlink{class_output_gui_a687667915693352adb03e70308cfd5a7}{set\-Output\-Str\-Ptr} (Q\-String $\ast$\hyperlink{class_output_gui_acea305d3550516efa01d04ac26e7cdfe}{output\-Str\-Ptr})
+\item 
+Q\-String $\ast$ \hyperlink{class_output_gui_ad4abdae16610fff4f63093ee4bda1689}{get\-Output\-Str\-Ptr} ()
+\item 
+void \hyperlink{class_output_gui_acec501555b0a0ab37d25c86c699c5a10}{set\-Output\-Te\-Ptr} (Q\-Text\-Edit $\ast$\hyperlink{class_output_gui_affbe7d587f4f755b67cae654f5e468d8}{output\-Te\-Ptr})
+\item 
+Q\-Text\-Edit $\ast$ \hyperlink{class_output_gui_a00408b170ed757b3aaec0215575f4206}{get\-Output\-Te\-Ptr} ()
+\item 
+void \hyperlink{class_output_gui_aab81451130a0b2006fbc5093368c56bb}{dump\-To\-Gui} (Q\-String $\ast$\hyperlink{class_output_gui_acea305d3550516efa01d04ac26e7cdfe}{output\-Str\-Ptr})
+\item 
+Q\-String $\ast$ \hyperlink{class_output_gui_a54a7652249e8ea5f039e933012e1df73}{to\-String} ()
 \item 
 \hyperlink{class_output_gui_a5b18318b0cf8ebb4118ce9197f80ea49}{$\sim$\-Output\-Gui} ()
 \end{DoxyCompactItemize}
@@ -43,15 +43,10 @@ Q\-Text\-Edit $\ast$ \hyperlink{class_output_gui_affbe7d587f4f755b67cae654f5e468
 \item 
 Q\-Vector$<$ Q\-Widget $\ast$ $>$ \hyperlink{class_output_gui_a669643ee3eabbe9b198bcb43f56ae053}{tab\-Ptr\-Vec}
 \item 
+Q\-String $\ast$ \hyperlink{class_output_gui_acea305d3550516efa01d04ac26e7cdfe}{output\-Str\-Ptr}
+\item 
 Q\-Grid\-Layout $\ast$ \hyperlink{class_output_gui_aa25ed1be530acc4508eaf042144b4458}{outer\-Layout}
 \end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 21 of file Output\-Gui.\-h.
-
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -62,10 +57,6 @@ Definition at line 21 of file Output\-Gui.\-h.
 \item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )}}\label{class_output_gui_a6442997196cceca74c0a79ddb9763d2c}
-
-
-Definition at line 4 of file Output\-Gui.\-cpp.
-
 \hypertarget{class_output_gui_a5b18318b0cf8ebb4118ce9197f80ea49}{\index{Output\-Gui@{Output\-Gui}!$\sim$\-Output\-Gui@{$\sim$\-Output\-Gui}}
 \index{$\sim$\-Output\-Gui@{$\sim$\-Output\-Gui}!OutputGui@{Output\-Gui}}
 \subsubsection[{$\sim$\-Output\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}Output\-Gui\-::$\sim$\-Output\-Gui (
@@ -73,10 +64,6 @@ Definition at line 4 of file Output\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_output_gui_a5b18318b0cf8ebb4118ce9197f80ea49}
-
-
-Definition at line 33 of file Output\-Gui.\-cpp.
-
 
 
 \subsection{Member Function Documentation}
@@ -88,10 +75,27 @@ Definition at line 33 of file Output\-Gui.\-cpp.
 \item[{Q\-String $\ast$}]{tab\-Name}
 \end{DoxyParamCaption}
 )}}\label{class_output_gui_ad28c34939968c81bdba5e7edcd94fde2}
-
-
-Definition at line 20 of file Output\-Gui.\-cpp.
-
+\hypertarget{class_output_gui_aab81451130a0b2006fbc5093368c56bb}{\index{Output\-Gui@{Output\-Gui}!dump\-To\-Gui@{dump\-To\-Gui}}
+\index{dump\-To\-Gui@{dump\-To\-Gui}!OutputGui@{Output\-Gui}}
+\subsubsection[{dump\-To\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}void Output\-Gui\-::dump\-To\-Gui (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{output\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_output_gui_aab81451130a0b2006fbc5093368c56bb}
+\hypertarget{class_output_gui_ad4abdae16610fff4f63093ee4bda1689}{\index{Output\-Gui@{Output\-Gui}!get\-Output\-Str\-Ptr@{get\-Output\-Str\-Ptr}}
+\index{get\-Output\-Str\-Ptr@{get\-Output\-Str\-Ptr}!OutputGui@{Output\-Gui}}
+\subsubsection[{get\-Output\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Output\-Gui\-::get\-Output\-Str\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_output_gui_ad4abdae16610fff4f63093ee4bda1689}
+\hypertarget{class_output_gui_a00408b170ed757b3aaec0215575f4206}{\index{Output\-Gui@{Output\-Gui}!get\-Output\-Te\-Ptr@{get\-Output\-Te\-Ptr}}
+\index{get\-Output\-Te\-Ptr@{get\-Output\-Te\-Ptr}!OutputGui@{Output\-Gui}}
+\subsubsection[{get\-Output\-Te\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Text\-Edit $\ast$ Output\-Gui\-::get\-Output\-Te\-Ptr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_output_gui_a00408b170ed757b3aaec0215575f4206}
 \hypertarget{class_output_gui_acd5d7658edaa37f392fbb2524cb5cd05}{\index{Output\-Gui@{Output\-Gui}!get\-Tab\-Widget@{get\-Tab\-Widget}}
 \index{get\-Tab\-Widget@{get\-Tab\-Widget}!OutputGui@{Output\-Gui}}
 \subsubsection[{get\-Tab\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ Output\-Gui\-::get\-Tab\-Widget (
@@ -99,53 +103,45 @@ Definition at line 20 of file Output\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_output_gui_acd5d7658edaa37f392fbb2524cb5cd05}
-
-
-Definition at line 27 of file Output\-Gui.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_output_gui_acd5d7658edaa37f392fbb2524cb5cd05_icgraph}
-\end{center}
-\end{figure}
-
-
+\hypertarget{class_output_gui_a687667915693352adb03e70308cfd5a7}{\index{Output\-Gui@{Output\-Gui}!set\-Output\-Str\-Ptr@{set\-Output\-Str\-Ptr}}
+\index{set\-Output\-Str\-Ptr@{set\-Output\-Str\-Ptr}!OutputGui@{Output\-Gui}}
+\subsubsection[{set\-Output\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Output\-Gui\-::set\-Output\-Str\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{output\-Str\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_output_gui_a687667915693352adb03e70308cfd5a7}
+\hypertarget{class_output_gui_acec501555b0a0ab37d25c86c699c5a10}{\index{Output\-Gui@{Output\-Gui}!set\-Output\-Te\-Ptr@{set\-Output\-Te\-Ptr}}
+\index{set\-Output\-Te\-Ptr@{set\-Output\-Te\-Ptr}!OutputGui@{Output\-Gui}}
+\subsubsection[{set\-Output\-Te\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Output\-Gui\-::set\-Output\-Te\-Ptr (
+\begin{DoxyParamCaption}
+\item[{Q\-Text\-Edit $\ast$}]{output\-Te\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{class_output_gui_acec501555b0a0ab37d25c86c699c5a10}
+\hypertarget{class_output_gui_a54a7652249e8ea5f039e933012e1df73}{\index{Output\-Gui@{Output\-Gui}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!OutputGui@{Output\-Gui}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Output\-Gui\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_output_gui_a54a7652249e8ea5f039e933012e1df73}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_output_gui_aa25ed1be530acc4508eaf042144b4458}{\index{Output\-Gui@{Output\-Gui}!outer\-Layout@{outer\-Layout}}
 \index{outer\-Layout@{outer\-Layout}!OutputGui@{Output\-Gui}}
 \subsubsection[{outer\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Grid\-Layout$\ast$ Output\-Gui\-::outer\-Layout\hspace{0.3cm}{\ttfamily [private]}}}\label{class_output_gui_aa25ed1be530acc4508eaf042144b4458}
-
-
-Definition at line 29 of file Output\-Gui.\-h.
-
+\hypertarget{class_output_gui_acea305d3550516efa01d04ac26e7cdfe}{\index{Output\-Gui@{Output\-Gui}!output\-Str\-Ptr@{output\-Str\-Ptr}}
+\index{output\-Str\-Ptr@{output\-Str\-Ptr}!OutputGui@{Output\-Gui}}
+\subsubsection[{output\-Str\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String$\ast$ Output\-Gui\-::output\-Str\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_output_gui_acea305d3550516efa01d04ac26e7cdfe}
 \hypertarget{class_output_gui_affbe7d587f4f755b67cae654f5e468d8}{\index{Output\-Gui@{Output\-Gui}!output\-Te\-Ptr@{output\-Te\-Ptr}}
 \index{output\-Te\-Ptr@{output\-Te\-Ptr}!OutputGui@{Output\-Gui}}
 \subsubsection[{output\-Te\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Text\-Edit$\ast$ Output\-Gui\-::output\-Te\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_output_gui_affbe7d587f4f755b67cae654f5e468d8}
-
-
-Definition at line 27 of file Output\-Gui.\-h.
-
 \hypertarget{class_output_gui_a669643ee3eabbe9b198bcb43f56ae053}{\index{Output\-Gui@{Output\-Gui}!tab\-Ptr\-Vec@{tab\-Ptr\-Vec}}
 \index{tab\-Ptr\-Vec@{tab\-Ptr\-Vec}!OutputGui@{Output\-Gui}}
 \subsubsection[{tab\-Ptr\-Vec}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$Q\-Widget$\ast$$>$ Output\-Gui\-::tab\-Ptr\-Vec\hspace{0.3cm}{\ttfamily [private]}}}\label{class_output_gui_a669643ee3eabbe9b198bcb43f56ae053}
-
-
-Definition at line 28 of file Output\-Gui.\-h.
-
 \hypertarget{class_output_gui_a2f8f77a6c77ee8bb00088be2de61c93b}{\index{Output\-Gui@{Output\-Gui}!tab\-Widget\-Ptr@{tab\-Widget\-Ptr}}
 \index{tab\-Widget\-Ptr@{tab\-Widget\-Ptr}!OutputGui@{Output\-Gui}}
 \subsubsection[{tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ Output\-Gui\-::tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_output_gui_a2f8f77a6c77ee8bb00088be2de61c93b}
-
-
-Definition at line 26 of file Output\-Gui.\-h.
-
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

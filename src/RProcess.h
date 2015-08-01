@@ -62,17 +62,93 @@ class RProcess : public QProcess
         void redirectError();
         
     public:
+        /**
+         * Constructor.
+         */
         RProcess();
+        
+        /**
+         * Starts a program on a separate thread.
+         * 
+         * @param program the program/command to be executed.
+         * @param arguments options.
+         * @param mode the mode.
+         */
         void start(const QString& program, const QStringList& arguments, OpenMode mode = ReadWrite);
+        
+        /**
+         * Starts a program on a separate process.
+         * 
+         * @param program the program/command to be executed.
+         * @param mode the mode.
+         */
         void start(const QString& program, OpenMode mode = ReadWrite);
+        
+        /**
+         * Executes a program and waits for it to finish before returning to
+         * the main thread.
+         * 
+         * @param program the program/command to be executed.
+         * @param arguments options.
+         * @return the status of the execution.
+         */
         static int execute(const QString& program, const QStringList& arguments);
+        
+        /**
+         * Executes a program and waits for it to finish before returning to
+         * the main thread.
+         * 
+         * @param program the program/command to be executed.
+         * @return the status of the execution.
+         */
         static int execute(const QString& program);
+        
+        /**
+         * Launches a program on a child process.
+         * 
+         * @param program the program/command to be executed.
+         * @param arguments the options.
+         * @return the status of the execution.
+         */
         static bool startDetached(const QString& program, const QStringList& arguments);
+        
+        /**
+         * Launches a program on a child process.
+         * 
+         * @param program the program/command to be executed.
+         * @param arguments the options.
+         * @param workingDirectory the directory from which the program/command
+         *        should be executed from.
+         * @param pid the pid the child process should be given.
+         * @return the status of the execution.
+         */
         static bool startDetached(const QString& program, const QStringList& arguments, const QString& workingDirectory, qint64* pid = 0);
+        
+        /**
+         * Launches a program on a child process.
+         * 
+         * @param program the program/command to be executed.
+         * @return the status of the execution.
+         */
         static bool startDetached(const QString& program);
+        
+        /**
+         * Mutator to specify an textedit UI for output to be redirected to.  
+         * 
+         * @param outputLocTePtr output textedit.
+         */
         void setOutputLocTePtr(QTextEdit* outputLocTePtr);
+        
+        /**
+         * Accessor of the textedit UI the output is redirected to.
+         * 
+         * @return outputLocTePtr output textedit.
+         */
         QTextEdit* getOutputLocTePtr();
 
+        /**
+         * Destructor.
+         */
         ~RProcess();
 };
 

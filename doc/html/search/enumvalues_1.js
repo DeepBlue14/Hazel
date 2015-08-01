@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['c',['C',['../class_ride_file.html#af2f1eb81fe20b91d4d3b8d96e457380aaf0ba751464dd978d49f06a6fbccd9485',1,'RideFile']]],
-  ['c_5fshell',['C_SHELL',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5aee6e2a4fdc7dfe08c8e198566c18644b',1,'RideFile']]],
-  ['cmakelists',['CMAKELISTS',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5a65ce95d2bbbf280ba87e874c906849ba',1,'RideFile']]],
-  ['cpp',['CPP',['../class_ride_file.html#af2f1eb81fe20b91d4d3b8d96e457380aafced0849313a2bf8cc934cf87f66c708',1,'RideFile']]],
-  ['css',['CSS',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5adf808e16062136eac11f5b06561e1c12',1,'RideFile']]]
+  ['c',['C',['../class_r_file.html#a2dd876f68f419cae13ab815b002e33fbad805c02a63731c0bb8d38c78f3e6e6f7',1,'RFile']]],
+  ['c_5fshell',['C_SHELL',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9a318eccab75f381fdd2f3d6e7025cb70a',1,'RFile']]],
+  ['cmakelists',['CMAKELISTS',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9a0ecde8c0a9780abbb472e47089b8dcfe',1,'RFile']]],
+  ['cpp',['CPP',['../class_r_file.html#a2dd876f68f419cae13ab815b002e33fba96287f1a112e8cd55564debaad85f121',1,'RFile']]],
+  ['css',['CSS',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9ae79e53c3d663c8f35f96471391b13476',1,'RFile']]]
 ];

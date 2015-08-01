@@ -81,65 +81,393 @@ class MasterGui : public QMainWindow
         ;
     
     public:
+        /**
+         * 
+         * 
+         * @param parent
+         */
         MasterGui(QMainWindow* parent = 0);
+        
+        /**
+         * 
+         */
         void initToolBars();
+        
+        /**
+         * 
+         */
         void initMenus();
+        
+        /**
+         * 
+         * 
+         * @param style
+         */
         void loadStyle(QString* style = new QString(/*"./src/qss/Classic.css"*/"./src/qss/Vanilla.css"));
+        
+        /**
+         * 
+         * 
+         * @param fileMenuPtr
+         */
         void setFileMenuPtr(QMenu* fileMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getFileMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param editMenuPtr
+         */
         void setEditMenuPtr(QMenu* editMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getEditMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param viewMenuPtr
+         */
         void setViewMenuPtr(QMenu* viewMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getViewMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param navigateMenuPtr
+         */
         void setNavigateMenuPtr(QMenu* navigateMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getNavigateMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param sourceMenuPtr
+         */
         void setSourceMenuPtr(QMenu* sourceMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getSourceMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param refactorMenuPtr
+         */
         void setRefactorMenuPtr(QMenu* refactorMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getRefactorMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param runMenuPtr
+         */
         void setRunMenuPtr(QMenu* runMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getRunMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param debugMenuPtr
+         */
         void setDebugMenuPtr(QMenu* debugMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getDebugMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param profileMenuPtr
+         */
         void setProfileMenuPtr(QMenu* profileMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getProfileMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param teamMenuPtr
+         */
         void setTeamMenuPtr(QMenu* teamMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getTeamMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param toolsMenuPtr
+         */
         void setToolsMenuPtr(QMenu* toolsMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getToolsMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param windowMenuPtr
+         */
         void setWindowMenuPtr(QMenu* windowMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getWindowMenuPtr();
+        
+        /**
+         * 
+         * 
+         * @param helpMenuPtr
+         */
         void setHelpMenuPtr(QMenu* helpMenuPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QMenu* getHelpMenuPtr();
         
+        
+        /**
+         * 
+         * 
+         * @param groupOneToolBarPtr
+         */
         void setGroupOneToolBarPtr(QToolBar* groupOneToolBarPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QToolBar* getGroupOneToolBarPtr();
+        
+        /**
+         * 
+         * 
+         * @param groupTwoToolBarPtr
+         */
         void setGroupTwoToolBarPtr(QToolBar* groupTwoToolBarPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QToolBar* getGroupTwoToolBarPtr();
+        
+        /**
+         * 
+         * 
+         * @param groupThreeToolBarPtr
+         */
         void setGroupThreeToolBarPtr(QToolBar* groupThreeToolBarPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QToolBar* getGroupThreeToolBarPtr();
+        
+        /**
+         * 
+         * 
+         * @param southToolBarPtr
+         */
         void setSouthToolBarPtr(QToolBar* southToolBarPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QToolBar* getSouthToolBarPtr();
+        
+        /**
+         * 
+         * 
+         * @param eastToolBarPtr
+         */
         void setEastToolBarPtr(QToolBar* eastToolBarPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QToolBar* getEastToolBarPtr();
+        
+        /**
+         * 
+         * 
+         * @param westToolBarPtr
+         */
         void setWestToolBarPtr(QToolBar* westToolBarPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QToolBar* getWestToolBarPtr();
         
+        
+        /**
+         * 
+         * 
+         * @param tabWidget
+         */
         void setTabWidget(QTabWidget* tabWidget);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QTabWidget* getTabWidget();
+        
+        /**
+         * 
+         * 
+         * @param editor
+         */
         void setEditor(QTextEdit* editor);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QTextEdit* getEditor();
+        
+        /**
+         * 
+         * 
+         * @param masterActions
+         */
         void setMasterActions(MasterActions* masterActions);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         MasterActions* getMasterActions();
+        
+        /**
+         * 
+         * 
+         * @param masterToolBars
+         */
         void setMasterToolBars(MasterToolBars* masterToolBars);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         MasterToolBars* getMasterToolBars();
+        
+        /**
+         * 
+         * 
+         * @param masterMenus
+         */
         void setMasterMenus(MasterMenus* masterMenus);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         MasterMenus* getMasterMenus();
+        
+        /**
+         * 
+         * 
+         * @param centralGui
+         */
         void setCentralGui(CentralGui* centralGui);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         CentralGui* getCentralGui();
         
         
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~MasterGui();
             
 };

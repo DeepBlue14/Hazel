@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['yaml',['YAML',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5a9c1ec7e2486224af3cec29825d5bd7b6',1,'RideFile']]]
+  ['yaml',['YAML',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9a6e5f004786c952590bfe5c406f36035a',1,'RFile']]]
 ];

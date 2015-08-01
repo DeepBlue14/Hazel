@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['xmlmaster_2ecpp',['XmlMaster.cpp',['../_xml_master_8cpp.html',1,'']]],
-  ['xmlmaster_2eh',['XmlMaster.h',['../_xml_master_8h.html',1,'']]]
+  ['unittests_2ecpp',['UnitTests.cpp',['../_unit_tests_8cpp.html',1,'']]],
+  ['unixconsoletext_2ecpp',['UnixConsoleText.cpp',['../_unix_console_text_8cpp.html',1,'']]],
+  ['unixconsoletext_2eh',['UnixConsoleText.h',['../_unix_console_text_8h.html',1,'']]]
 ];

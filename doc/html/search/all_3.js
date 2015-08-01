@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['db',['DB',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5a13b514d2636a4422aae49554c67b4bff',1,'RideFile']]],
+  ['db',['DB',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9ab283c59ce311439a5a5bfb78b65dec6f',1,'RFile']]],
   ['debugactionptr',['debugActionPtr',['../class_master_actions.html#ae37993bbbed4a238ea3b11089ac46a61',1,'MasterActions']]],
+  ['debuggui',['DebugGui',['../class_debug_gui.html',1,'DebugGui'],['../class_debug_gui.html#a485d35c472e75d2c5d1f01db42a6ed7e',1,'DebugGui::DebugGui()']]],
+  ['debuggui_2ecpp',['DebugGui.cpp',['../_debug_gui_8cpp.html',1,'']]],
+  ['debuggui_2eh',['DebugGui.h',['../_debug_gui_8h.html',1,'']]],
   ['debugmenuptr',['debugMenuPtr',['../class_master_gui.html#ac1efdb45cdde47584625a8026166c316',1,'MasterGui']]],
   ['defaultfileextchbptr',['defaultFileExtChbPtr',['../class_new_file_page__4.html#a3d192a050512836a080dab3b1cdf3387',1,'NewFilePage_4']]],
-  ['dependsenteredstrlist',['dependsEnteredStrList',['../class_new_project_page__4.html#a1319d6e28b3648b02180579e813ecafb',1,'NewProjectPage_4']]],
-  ['dependsenteredtypelw',['dependsEnteredTypeLw',['../class_new_project_page__4.html#a1cec1dfe07663bca42ba8ce013735d4c',1,'NewProjectPage_4']]],
-  ['dependsleptr',['dependsLePtr',['../class_new_project_page__4.html#a2e6e4ec9aadc2398498d542243b5f9a9',1,'NewProjectPage_4']]],
+  ['dependsenteredstrlist',['dependsEnteredStrList',['../class_custom_pkgs_gui.html#a913d01162ae0abb7debe9f3bb0626a8a',1,'CustomPkgsGui::dependsEnteredStrList()'],['../class_new_project_page__4.html#a1319d6e28b3648b02180579e813ecafb',1,'NewProjectPage_4::dependsEnteredStrList()']]],
+  ['dependsenteredtypelw',['dependsEnteredTypeLw',['../class_custom_pkgs_gui.html#ae286d92a74605a6dfc957e4a59d7536d',1,'CustomPkgsGui::dependsEnteredTypeLw()'],['../class_new_project_page__4.html#a1cec1dfe07663bca42ba8ce013735d4c',1,'NewProjectPage_4::dependsEnteredTypeLw()']]],
+  ['dependsleptr',['dependsLePtr',['../class_custom_pkgs_gui.html#a8109b320a5dfa0948d61e0f91beb0766',1,'CustomPkgsGui::dependsLePtr()'],['../class_new_project_page__4.html#a2e6e4ec9aadc2398498d542243b5f9a9',1,'NewProjectPage_4::dependsLePtr()']]],
   ['devel',['DEVEL',['../class_directory.html#a1c40bdd8c03ef51a29fa097c325fe345ae99347ac7c31d8d87215e88a3805d136',1,'Directory']]],
   ['dirdialogptr',['dirDialogPtr',['../class_new_project_page__2.html#a8cf80ba2a09ce1963365aae0f65a65e7',1,'NewProjectPage_2']]],
   ['directory',['Directory',['../class_directory.html',1,'Directory'],['../class_directory.html#aeecdbc52ed5d2069d57c8e5618a73f1e',1,'Directory::Directory()']]],
@@ -15,5 +18,6 @@ var searchData=
   ['dirptr',['dirPtr',['../class_directory.html#ae8d40a5989c8fe90988aa9517cb87a9a',1,'Directory']]],
   ['dirtype',['DirType',['../class_directory.html#a1c40bdd8c03ef51a29fa097c325fe345',1,'Directory']]],
   ['dirtypeptr',['dirTypePtr',['../class_directory.html#aeb912c1ed24b2bea1febce142fa3a57e',1,'Directory']]],
-  ['dyn_5fconfig',['DYN_CONFIG',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5af64628b607f0ec29ebf85f5926bf5eed',1,'RideFile']]]
+  ['dumptogui',['dumpToGui',['../class_output_gui.html#aab81451130a0b2006fbc5093368c56bb',1,'OutputGui']]],
+  ['dyn_5fconfig',['DYN_CONFIG',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9a1c17f5900d09770ec0dacf6bbced317d',1,'RFile']]]
 ];

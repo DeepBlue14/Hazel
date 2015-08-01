@@ -1,7 +1,7 @@
 var searchData=
 [
   ['c',['c',['../class_file_gui.html#a71dfac2e67bf84af494667901b51ddc9',1,'FileGui']]],
-  ['cancelbtn',['cancelBtn',['../class_new_file_gui.html#a5be4525cfa97c2ec799a7357eb6a1fb4',1,'NewFileGui::cancelBtn()'],['../class_new_project_gui.html#a91a081ae496b19cd64dd33b292b1761e',1,'NewProjectGui::cancelBtn()'],['../class_run_gui.html#aa14d8877052e9cc11c93055561501792',1,'RunGui::cancelBtn()']]],
+  ['cancelbtn',['cancelBtn',['../class_adv_options_gui.html#a509b4c97a7c2d980585593a5b9fa735e',1,'AdvOptionsGui::cancelBtn()'],['../class_help_gui.html#a1c8f622c979b280dbbd41b8a40238f1e',1,'HelpGui::cancelBtn()'],['../class_new_file_gui.html#a5be4525cfa97c2ec799a7357eb6a1fb4',1,'NewFileGui::cancelBtn()'],['../class_new_project_gui.html#a91a081ae496b19cd64dd33b292b1761e',1,'NewProjectGui::cancelBtn()'],['../class_option_gui.html#afc6086cb50707390476c48a4be542292',1,'OptionGui::cancelBtn()'],['../class_reconfig_gui.html#aebd2d70c64697f21c523e80aee399875',1,'ReconfigGui::cancelBtn()'],['../class_run_gui.html#aa14d8877052e9cc11c93055561501792',1,'RunGui::cancelBtn()']]],
   ['cancelpbptr',['cancelPbPtr',['../class_open_project_gui.html#a9e9fc184375d14b4ed336470bc06ffb1',1,'OpenProjectGui']]],
   ['catkinwsabspathstrptr',['catkinWsAbsPathStrPtr',['../class_ride_env.html#a3f048e5d036e957c7776f1e31c648b41',1,'RideEnv']]],
   ['centralgui',['centralGui',['../class_master_gui.html#a565fc5a3622b8b5417b26dd1306439b8',1,'MasterGui']]],
@@ -12,13 +12,19 @@ var searchData=
   ['cmdsenteredstrlist',['cmdsEnteredStrList',['../class_run_page__3.html#afd64ae06d4a206ac0336695d2ed4501b',1,'RunPage_3']]],
   ['cmdsenteredtypelw',['cmdsEnteredTypeLw',['../class_run_page__3.html#a5209fe0d1718a40acb124e54895921f2',1,'RunPage_3']]],
   ['cmdsleptr',['cmdsLePtr',['../class_run_page__3.html#a9feed842f177140df74c6194851114ad',1,'RunPage_3']]],
-  ['cols',['cols',['../class_terminal.html#a7d56233a2d7c1c4ecdba979a73287b68',1,'Terminal']]],
+  ['cols',['cols',['../class_q_x_term.html#a53678b837c0f80bd36d91fb23060072c',1,'QXTerm']]],
   ['commentendexpression',['commentEndExpression',['../class_highlighter.html#a3baa1033bbdf70a16df42940968b72b4',1,'Highlighter']]],
   ['commentstartexpression',['commentStartExpression',['../class_highlighter.html#a67cdecd667929b4eefbc7057d58cd90b',1,'Highlighter']]],
-  ['completer',['completer',['../class_new_file_gui.html#a5c8508fb9dba194838e0cfce4d6f7988',1,'NewFileGui']]],
+  ['compasstabwidgetptr',['compassTabWidgetPtr',['../class_link_file_with_gui.html#a0baae8832ecd14862a386bf7ebfbc730',1,'LinkFileWithGui']]],
+  ['completer',['completer',['../class_link_file_with_gui.html#ae2915e76cf6cdcf37424a03870a62d3c',1,'LinkFileWithGui::completer()'],['../class_new_file_gui.html#a5c8508fb9dba194838e0cfce4d6f7988',1,'NewFileGui::completer()']]],
   ['configforrunactionptr',['configForRunActionPtr',['../class_master_actions.html#acd6548d1110ae426f384bfeb6acc9c1f',1,'MasterActions']]],
   ['createdfileleptr',['createdFileLePtr',['../class_new_file_page__4.html#a34ae0bfeb34f323cc34ae16a9df9ce28',1,'NewFilePage_4']]],
   ['createdfilestrptr',['createdFileStrPtr',['../class_new_file_page__4.html#a40a59859a2576f2fdbddc4218f96d472',1,'NewFilePage_4']]],
+  ['cssfilelstwigptr',['cssFileLstWigPtr',['../class_option_page__1.html#a9f1144ab68d73ed9c772ac9995f69f3b',1,'OptionPage_1']]],
+  ['cssfilestrlstptr',['cssFileStrLstPtr',['../class_option_page__1.html#a21f207fc7b1acc2b757c44b1a9a7256c',1,'OptionPage_1']]],
+  ['curinusefilenmstrlstptr',['curInUseFileNmStrLstPtr',['../class_r_process.html#a66aa093331c038eca75efca51d6fe667',1,'RProcess']]],
   ['currentmsgfiledat',['currentMsgFileDat',['../class_msg_parser.html#ac6b6991b7abc90ee14dedf95bafa2db3',1,'MsgParser']]],
-  ['currentpage',['currentPage',['../class_new_file_gui.html#adaf414f47f140c24e8f08797262c646b',1,'NewFileGui::currentPage()'],['../class_new_project_gui.html#ac1b0414d92030b3d545020fc889b1313',1,'NewProjectGui::currentPage()'],['../class_run_gui.html#a1d93e84df8a71767ca927554e5b0fe0d',1,'RunGui::currentPage()']]]
+  ['currentpage',['currentPage',['../class_help_gui.html#a38731f90c1581f1674fa7a04e2145ee6',1,'HelpGui::currentPage()'],['../class_new_file_gui.html#adaf414f47f140c24e8f08797262c646b',1,'NewFileGui::currentPage()'],['../class_new_project_gui.html#ac1b0414d92030b3d545020fc889b1313',1,'NewProjectGui::currentPage()'],['../class_reconfig_gui.html#aad3035bc7322d1b25fddcc075bf2a727',1,'ReconfigGui::currentPage()'],['../class_run_gui.html#a1d93e84df8a71767ca927554e5b0fe0d',1,'RunGui::currentPage()']]],
+  ['custompkgsguiptr',['customPkgsGuiPtr',['../class_reconfig_page__2.html#a570297e1e473d6e80d7612e21a24e682',1,'ReconfigPage_2']]],
+  ['custompkgspbstr',['customPkgsPbStr',['../class_reconfig_page__2.html#a464501fb927a1fe427b1dd493fbd2298',1,'ReconfigPage_2']]]
 ];

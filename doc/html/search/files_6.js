@@ -1,24 +1,7 @@
 var searchData=
 [
-  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['masteractions_2ecpp',['MasterActions.cpp',['../_master_actions_8cpp.html',1,'']]],
-  ['masteractions_2eh',['MasterActions.h',['../_master_actions_8h.html',1,'']]],
-  ['mastergui_2ecpp',['MasterGui.cpp',['../_master_gui_8cpp.html',1,'']]],
-  ['mastergui_2eh',['MasterGui.h',['../_master_gui_8h.html',1,'']]],
-  ['mastermenus_2ecpp',['MasterMenus.cpp',['../_master_menus_8cpp.html',1,'']]],
-  ['mastermenus_2eh',['MasterMenus.h',['../_master_menus_8h.html',1,'']]],
-  ['masterstatusbar_2ecpp',['MasterStatusBar.cpp',['../_master_status_bar_8cpp.html',1,'']]],
-  ['masterstatusbar_2eh',['MasterStatusBar.h',['../_master_status_bar_8h.html',1,'']]],
-  ['mastertoolbars_2ecpp',['MasterToolBars.cpp',['../_master_tool_bars_8cpp.html',1,'']]],
-  ['mastertoolbars_2eh',['MasterToolBars.h',['../_master_tool_bars_8h.html',1,'']]],
-  ['modifycmakelists_2ecpp',['ModifyCMakeLists.cpp',['../_modify_c_make_lists_8cpp.html',1,'']]],
-  ['modifycmakelists_2eh',['ModifyCMakeLists.h',['../_modify_c_make_lists_8h.html',1,'']]],
-  ['modifymanifest_2ecpp',['ModifyManifest.cpp',['../_modify_manifest_8cpp.html',1,'']]],
-  ['modifymanifest_2eh',['ModifyManifest.h',['../_modify_manifest_8h.html',1,'']]],
-  ['msgfielddat_2ecpp',['MsgFieldDat.cpp',['../_msg_field_dat_8cpp.html',1,'']]],
-  ['msgfielddat_2eh',['MsgFieldDat.h',['../_msg_field_dat_8h.html',1,'']]],
-  ['msgfiledat_2ecpp',['MsgFileDat.cpp',['../_msg_file_dat_8cpp.html',1,'']]],
-  ['msgfiledat_2eh',['MsgFileDat.h',['../_msg_file_dat_8h.html',1,'']]],
-  ['msgparser_2ecpp',['MsgParser.cpp',['../_msg_parser_8cpp.html',1,'']]],
-  ['msgparser_2eh',['MsgParser.h',['../_msg_parser_8h.html',1,'']]]
+  ['linenumberarea_2ecpp',['LineNumberArea.cpp',['../_line_number_area_8cpp.html',1,'']]],
+  ['linenumberarea_2eh',['LineNumberArea.h',['../_line_number_area_8h.html',1,'']]],
+  ['linkfilewithgui_2ecpp',['LinkFileWithGui.cpp',['../_link_file_with_gui_8cpp.html',1,'']]],
+  ['linkfilewithgui_2eh',['LinkFileWithGui.h',['../_link_file_with_gui_8h.html',1,'']]]
 ];

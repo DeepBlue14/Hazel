@@ -50,8 +50,21 @@ class HelpPage_1 : public QWidget
         ;
         
     public:
+        /**
+         * 
+         * 
+         * @param parent
+         */
         HelpPage_1(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void fillList();
+        
+        /**
+         * 
+         */
         ~HelpPage_1();
 };
 

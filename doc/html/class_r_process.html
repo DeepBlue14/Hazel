@@ -21,12 +21,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ride1.jpg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RIDE
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">ROS Integrated Development Environment</div>
+   <div id="projectbrief">Ros Integrated Development Invironment</div>
   </td>
  </tr>
  </tbody>
@@ -65,7 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -87,6 +86,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-slots">Private Slots</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_r_process-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">RProcess Class Reference</div>  </div>
@@ -97,29 +101,69 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="dynheader">
 Inheritance diagram for RProcess:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_r_process__inherit__graph.png" border="0" usemap="#_r_process_inherit__map" alt="Inheritance graph"/></div>
-<map name="_r_process_inherit__map" id="_r_process_inherit__map">
+ <div class="center">
+  <img src="class_r_process.png" usemap="#RProcess_map" alt=""/>
+  <map id="RProcess_map" name="RProcess_map">
 </map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
-<div class="dynheader">
-Collaboration diagram for RProcess:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_r_process__coll__graph.png" border="0" usemap="#_r_process_coll__map" alt="Collaboration graph"/></div>
-<map name="_r_process_coll__map" id="_r_process_coll__map">
-</map>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0feed4537b0182e71e7a6e1487469b46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a0feed4537b0182e71e7a6e1487469b46">RProcess</a> ()</td></tr>
 <tr class="separator:a0feed4537b0182e71e7a6e1487469b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa67a04b5cac4be62c7e92dc1a74c9bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#aa67a04b5cac4be62c7e92dc1a74c9bc9">start</a> (const QString &amp;program, const QStringList &amp;arguments, OpenMode mode=ReadWrite)</td></tr>
+<tr class="separator:aa67a04b5cac4be62c7e92dc1a74c9bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b1e333a100dcbb9c38d002e0a1a7d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a31b1e333a100dcbb9c38d002e0a1a7d5">start</a> (const QString &amp;program, OpenMode mode=ReadWrite)</td></tr>
+<tr class="separator:a31b1e333a100dcbb9c38d002e0a1a7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a51099bf886ea10d8b66f70cc73ac49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a5a51099bf886ea10d8b66f70cc73ac49">setOutputLocTePtr</a> (QTextEdit *<a class="el" href="class_r_process.html#aed80aa706e075172bea530beef40f62b">outputLocTePtr</a>)</td></tr>
+<tr class="separator:a5a51099bf886ea10d8b66f70cc73ac49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad218619a1ef9a225eca8dd1174a4ad80"><td class="memItemLeft" align="right" valign="top">QTextEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#ad218619a1ef9a225eca8dd1174a4ad80">getOutputLocTePtr</a> ()</td></tr>
+<tr class="separator:ad218619a1ef9a225eca8dd1174a4ad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23f0b14a43c115392eb867229af5cfdc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a23f0b14a43c115392eb867229af5cfdc">~RProcess</a> ()</td></tr>
 <tr class="separator:a23f0b14a43c115392eb867229af5cfdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a918195aad5effdeaea7dab1166b7dfbe"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a918195aad5effdeaea7dab1166b7dfbe">execute</a> (const QString &amp;program, const QStringList &amp;arguments)</td></tr>
+<tr class="separator:a918195aad5effdeaea7dab1166b7dfbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab7291d9b08f84ece34998aada97172"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a7ab7291d9b08f84ece34998aada97172">execute</a> (const QString &amp;program)</td></tr>
+<tr class="separator:a7ab7291d9b08f84ece34998aada97172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06adacb5aa5c7fcb6da3e2e69fb58340"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a06adacb5aa5c7fcb6da3e2e69fb58340">startDetached</a> (const QString &amp;program, const QStringList &amp;arguments)</td></tr>
+<tr class="separator:a06adacb5aa5c7fcb6da3e2e69fb58340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf94534843dd204b9c26e3795e6f6a7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#acaf94534843dd204b9c26e3795e6f6a7">startDetached</a> (const QString &amp;program, const QStringList &amp;arguments, const QString &amp;workingDirectory, qint64 *pid=0)</td></tr>
+<tr class="separator:acaf94534843dd204b9c26e3795e6f6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e114e38627b59250104f6f14425a311"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a7e114e38627b59250104f6f14425a311">startDetached</a> (const QString &amp;program)</td></tr>
+<tr class="separator:a7e114e38627b59250104f6f14425a311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-slots"></a>
+Private Slots</h2></td></tr>
+<tr class="memitem:aa6fbcb33f073336328365a6d9a6e1edb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#aa6fbcb33f073336328365a6d9a6e1edb">redirectStdOutput</a> ()</td></tr>
+<tr class="separator:aa6fbcb33f073336328365a6d9a6e1edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb921842cbf1e1577b90b6fc14b0a27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a8bb921842cbf1e1577b90b6fc14b0a27">redirectError</a> ()</td></tr>
+<tr class="separator:a8bb921842cbf1e1577b90b6fc14b0a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a10de16c62d59e6fd06a247de163c8404"><td class="memItemLeft" align="right" valign="top">static QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a10de16c62d59e6fd06a247de163c8404">genTmpFileNameStrPtr</a> ()</td></tr>
+<tr class="separator:a10de16c62d59e6fd06a247de163c8404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805afcc35c2f9a5c96ab036286eaff58"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a805afcc35c2f9a5c96ab036286eaff58">addHeader</a> (<a class="el" href="class_r_file.html">RFile</a> *tmpRideFilePtr)</td></tr>
+<tr class="separator:a805afcc35c2f9a5c96ab036286eaff58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aed80aa706e075172bea530beef40f62b"><td class="memItemLeft" align="right" valign="top">QTextEdit *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#aed80aa706e075172bea530beef40f62b">outputLocTePtr</a></td></tr>
+<tr class="separator:aed80aa706e075172bea530beef40f62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac225a5ee65119726f1631d48b12eec17"><td class="memItemLeft" align="right" valign="top">QProcess&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#ac225a5ee65119726f1631d48b12eec17">testProcess</a></td></tr>
+<tr class="separator:ac225a5ee65119726f1631d48b12eec17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a66aa093331c038eca75efca51d6fe667"><td class="memItemLeft" align="right" valign="top">static QStringList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a66aa093331c038eca75efca51d6fe667">curInUseFileNmStrLstPtr</a> = new QStringList()</td></tr>
+<tr class="separator:a66aa093331c038eca75efca51d6fe667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094c4db859cde3c5965abb54cfdd3090"><td class="memItemLeft" align="right" valign="top">static QList&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_r_process.html#a094c4db859cde3c5965abb54cfdd3090">numsInUseLstPtr</a> = new QList&lt;int&gt;()</td></tr>
+<tr class="separator:a094c4db859cde3c5965abb54cfdd3090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_r_process_8h_source.html#l00020">20</a> of file <a class="el" href="_r_process_8h_source.html">RProcess.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a0feed4537b0182e71e7a6e1487469b46"></a>
 <div class="memitem">
 <div class="memproto">
@@ -132,8 +176,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_r_process_8cpp_source.html#l00004">4</a> of file <a class="el" href="_r_process_8cpp_source.html">RProcess.cpp</a>.</p>
 
 </div>
 </div>
@@ -150,18 +192,442 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_r_process_8cpp_source.html#l00010">10</a> of file <a class="el" href="_r_process_8cpp_source.html">RProcess.cpp</a>.</p>
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a805afcc35c2f9a5c96ab036286eaff58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RProcess::addHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_r_file.html">RFile</a> *&#160;</td>
+          <td class="paramname"><em>tmpRideFilePtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a918195aad5effdeaea7dab1166b7dfbe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RProcess::execute </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>arguments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7ab7291d9b08f84ece34998aada97172"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RProcess::execute </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a10de16c62d59e6fd06a247de163c8404"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString * RProcess::genTmpFileNameStrPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad218619a1ef9a225eca8dd1174a4ad80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTextEdit * RProcess::getOutputLocTePtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8bb921842cbf1e1577b90b6fc14b0a27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RProcess::redirectError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa6fbcb33f073336328365a6d9a6e1edb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RProcess::redirectStdOutput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5a51099bf886ea10d8b66f70cc73ac49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RProcess::setOutputLocTePtr </td>
+          <td>(</td>
+          <td class="paramtype">QTextEdit *&#160;</td>
+          <td class="paramname"><em>outputLocTePtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa67a04b5cac4be62c7e92dc1a74c9bc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RProcess::start </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>arguments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OpenMode&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>ReadWrite</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a31b1e333a100dcbb9c38d002e0a1a7d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RProcess::start </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OpenMode&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>ReadWrite</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a06adacb5aa5c7fcb6da3e2e69fb58340"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RProcess::startDetached </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>arguments</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acaf94534843dd204b9c26e3795e6f6a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RProcess::startDetached </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>program</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>arguments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>workingDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64 *&#160;</td>
+          <td class="paramname"><em>pid</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7e114e38627b59250104f6f14425a311"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RProcess::startDetached </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>program</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a66aa093331c038eca75efca51d6fe667"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList * RProcess::curInUseFileNmStrLstPtr = new QStringList()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a094c4db859cde3c5965abb54cfdd3090"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QList&lt; int &gt; * RProcess::numsInUseLstPtr = new QList&lt;int&gt;()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aed80aa706e075172bea530beef40f62b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTextEdit* RProcess::outputLocTePtr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac225a5ee65119726f1631d48b12eec17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QProcess RProcess::testProcess</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_r_process_8h_source.html">RProcess.h</a></li>
-<li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_r_process_8cpp_source.html">RProcess.cpp</a></li>
+<li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_r_process_8cpp.html">RProcess.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 15:46:12 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

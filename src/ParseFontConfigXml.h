@@ -1,6 +1,6 @@
 /* 
  * File:   ParseFontConfigXml.h
- * Author: james
+ * Author: James Kuczynski
  *
  * Created on May 11, 2015, 2:06 PM
  */
@@ -33,10 +33,30 @@ class ParseFontConfigXml
         QDomDocument* xmlDomDocPtr;
         
     public:
+        /**
+         * Constructor.
+         */
         ParseFontConfigXml();
+        
+        /**
+         * Loads the resouce XML file containing font configurations for the
+         * IDE.
+         */
         void loadFile(/*QFile* xmlFile*/);
+        
+        /**
+         * Reads in the XML data from the IDEs font configurations file.
+         */
         void readDoc();
+        
+        /**
+         * Parses the XML data from the IDEs font configurations file.
+         */
         void parseDoc();
+        
+        /**
+         * Destructor.
+         */
         ~ParseFontConfigXml();
 };
 

@@ -14,6 +14,7 @@
 #define	RECONFIG_PAGE_3_H
 
 #include <QWidget>
+#include <QCheckBox>
 #include <QGridLayout>
 
 class ReconfigPage_3 : public QWidget
@@ -21,13 +22,18 @@ class ReconfigPage_3 : public QWidget
     Q_OBJECT
             
     private:
+        QCheckBox* langCbPtr;
         QGridLayout* outerLayout;
+        
+        QString* langStrPtr;
         
     private slots:
         ;
         
     public:
         ReconfigPage_3(QWidget* parent = 0);
+        void setLangStrPtr(QString langStrPtr);
+        QString getLangStrPtr();
         QString* toString();
         ~ReconfigPage_3();
 };

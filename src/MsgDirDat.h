@@ -35,13 +35,61 @@ class MsgDirDat
         QVector<MsgFileDat*> msgFileDatPtrVecPtr;
         
     public:
+        /**
+         * Constructor.
+         */
         MsgDirDat();
+        
+        /**
+         * Mutator method to set the absolute path of a ROS message directory.
+         * 
+         * @param msgDirStrPtr path in QString* form.
+         */
         void setMsgDirStrPtr(QString* msgDirStrPtr);
+        
+        /**
+         * Accessor method to get the absolute path of a ROS message directory.
+         * 
+         * @return msgDirStrPtr the path in QStringI form.
+         */
         QString* getMsgDirStrPtr();
+        
+        /**
+         * Pushes a MsgFileDat* to the back of the vector.
+         * @see msgFileDatPtrVecPtr.
+         * @see MsgFileDat
+         * 
+         * @param msgFileDatPtr MsgFileDat* object.
+         */
         void pushToMsgFileDatPtrVecPtr(MsgFileDat* msgFileDatPtr);
+        
+        /**
+         * Pops the MsgFileDat* from the back of the vector.
+         * @see msgFileDatPtrVecPtr.
+         * @see MsgFileDat 
+         * 
+         * @return the popped pointer.
+         */
         MsgFileDat* popFromMsgFileDatPtrVecPtr();
+        
+        /**
+         * Accessor method for a pointer to the vector of MsgFileDat*
+         * @see msgFileDatPtrVecPtr;
+         * 
+         * @return the vector msgFileDatPtrVecPtr
+         */
         QVector<MsgFileDat*> getMsgFileDatPtrVecPtr();
+        
+        /**
+         * toString method.
+         * 
+         * @return QString* of data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~MsgDirDat();
 };
 

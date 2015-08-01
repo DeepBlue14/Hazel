@@ -34,16 +34,66 @@ class MsgFieldDat
         QString* fieldCommentsStrPtr;
         
     public:
+        /**
+         * Constructor.
+         */
         MsgFieldDat();
+        
+        /**
+         * Mutator of a pointer to a ROS message field type in QString* form.
+         * 
+         * @param fieldTypeStrPtr contains a ROS message field type.
+         */
         void setFieldTypeStrPtr(QString* fieldTypeStrPtr);
+        
+        /**
+         * Accessor of a ROS message field type in QString* form.
+         * 
+         * @return fieldTypeStrPtr a ROS message field type in QString* form.
+         */
         QString* getFieldTypeStrPtr();
+        
+        /**
+         * Mutator of a ROS field name in QString* form.
+         * 
+         * @param fieldNameStrPtr a ROS message field name in QString* form.
+         */
         void setFieldNameStrPtr(QString* fieldNameStrPtr);
+        
+        /**
+         * Accessor of the ROS field name in QString* form.
+         * 
+         * @return fieldNameStrPtr a ROS message field name in QString* form.
+         */
         QString* getFieldNameStrPtr();
+        
+        /**
+         * Mutator to store a ROS message field comment in QString* form.
+         * 
+         * @param fieldCommentsStrPtr a ROS message field comment in QString*
+         *        form.
+         */
         void setFieldCommentsStrPtr(QString* fieldCommentsStrPtr);
+        
+        /**
+         * Accessor of a ROS message field comment in QString* form.
+         * 
+         * @return fieldCOmmentsStrPtr a ROS message field comment in QString*
+         *         form.
+         */
         QString* getFieldCommentsStrPtr();
+        
+        /**
+         * toString method.
+         * 
+         * @return returns a QString* to data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~MsgFieldDat();
 };
 
 #endif	/* MSG_DAT_H */
-

@@ -1,10 +1,11 @@
 var searchData=
 [
+  ['langcbptr',['langCbPtr',['../class_reconfig_page__3.html#a01342fc372eaa90bd1d2c77d4bf95af2',1,'ReconfigPage_3']]],
   ['langslwptr',['langsLwPtr',['../class_new_file_page__1.html#a33c1a3f115a92a04b0f7344cd1b14a57',1,'NewFilePage_1']]],
   ['langsstrlstptr',['langsStrLstPtr',['../class_new_file_page__1.html#acb912634d0accb1d1fc2cb1f5c2dea78',1,'NewFilePage_1']]],
-  ['langstrptr',['langStrPtr',['../class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a',1,'NewFilePage_1']]],
+  ['langstrptr',['langStrPtr',['../class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a',1,'NewFilePage_1::langStrPtr()'],['../class_reconfig_page__3.html#a5c7bfd929ce6ce8f7447d6c2bd2596bc',1,'ReconfigPage_3::langStrPtr()']]],
+  ['launchfileabspathleptr',['launchFileAbsPathLePtr',['../class_run_page__2.html#a7478e3f884c84a636a547dba64abd2ca',1,'RunPage_2']]],
   ['launchfiledialogptr',['launchFileDialogPtr',['../class_run_page__2.html#aa3d8cc41a4674ec8ddd7c9ee694b5121',1,'RunPage_2']]],
-  ['launchfileleptr',['launchFileLePtr',['../class_run_page__2.html#a5182902471c7f786784df15fe48aec6d',1,'RunPage_2']]],
   ['launchfilepathstrptr',['launchFilePathStrPtr',['../class_run_gui.html#a3766ac7d4bfae38eb0d9f535f0d9bcf5',1,'RunGui']]],
   ['launchfilestrptr',['launchFileStrPtr',['../class_run_page__2.html#a2f0a31e8ef388e15091c88a904d77618',1,'RunPage_2']]],
   ['licensecbptr',['licenseCbPtr',['../class_new_project_page__3.html#a6459aad502f0b64eb7e16b38261bae85',1,'NewProjectPage_3']]],
@@ -12,8 +13,7 @@ var searchData=
   ['licenselistptr',['licenseListPtr',['../class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216',1,'NewProjectPage_3']]],
   ['licensestrptr',['licenseStrPtr',['../class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e',1,'NewProjectPage_3']]],
   ['linenumberarea',['lineNumberArea',['../class_file_gui.html#a4fa030b7bda34eeb961eac7324f28b88',1,'FileGui']]],
-  ['listwidgetptr',['listWidgetPtr',['../class_navigator_gui.html#aa3732fbecbd29c6a22eaebe82bb57af7',1,'NavigatorGui']]],
-  ['loadedfilesstrlstptr',['loadedFilesStrLstPtr',['../class_scout_data.html#a72963d54f28d1ed0f85f97195999006d',1,'ScoutData']]],
+  ['listwidgetptr',['listWidgetPtr',['../class_help_page__1.html#a44b8c9f6eb58e095145449294736a6e3',1,'HelpPage_1::listWidgetPtr()'],['../class_navigator_gui.html#aa3732fbecbd29c6a22eaebe82bb57af7',1,'NavigatorGui::listWidgetPtr()']]],
   ['locationlayout',['locationLayout',['../class_new_project_page__2.html#a17fd912b11ae2dad02da7fa3906f948d',1,'NewProjectPage_2']]],
   ['loccbptr',['locCbPtr',['../class_new_file_page__4.html#afd3456441e46868a662023c1f162c7c0',1,'NewFilePage_4']]],
   ['locpbptr',['locPbPtr',['../class_new_project_page__2.html#ab5056e3d84ca52cffb2842c398ee04b2',1,'NewProjectPage_2']]],

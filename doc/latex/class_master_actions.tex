@@ -5,23 +5,10 @@
 
 {\ttfamily \#include $<$Master\-Actions.\-h$>$}
 
-
-
-Inheritance diagram for Master\-Actions\-:\nopagebreak
-\begin{figure}[H]
+Inheritance diagram for Master\-Actions\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=160pt]{class_master_actions__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Master\-Actions\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions__coll__graph}
+\includegraphics[height=2.000000cm]{class_master_actions}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -35,9 +22,9 @@ void \hyperlink{class_master_actions_ab831fe700bf1327e6cde36f9272ecc11}{set\-Nor
 \item 
 Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_ac58b3c22042de182e6185e1700fa2f5e}{get\-North\-Tab\-Widget\-Ptr} ()
 \item 
-void \hyperlink{class_master_actions_a78be0913c3adbd5c6ec96b60688b0f6f}{set\-South\-Tab\-Widget\-Ptr} (Q\-Tab\-Widget $\ast$\hyperlink{class_master_actions_ae50dea40859da966d8b8a27d2069f6d7}{south\-Tab\-Widget\-Ptr})
+void \hyperlink{class_master_actions_a835def663e007647d721c2aa91d02f02}{set\-South\-Tab\-Widget\-Ptr} (\hyperlink{class_output_gui}{Output\-Gui} $\ast$\hyperlink{class_master_actions_a0cbcc4a5b82537a3f958c462bcaade46}{south\-Tab\-Widget\-Ptr})
 \item 
-Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_ace3070f2fdce3f9bca417e0c05f790fa}{get\-South\-Tab\-Widget\-Ptr} ()
+\hyperlink{class_output_gui}{Output\-Gui} $\ast$ \hyperlink{class_master_actions_aafb5837208f5909593221be23ca3f22f}{get\-South\-Tab\-Widget\-Ptr} ()
 \item 
 void \hyperlink{class_master_actions_ae5856ce1f1a1d1f83622631512638dd8}{set\-Highlighter} (\hyperlink{class_highlighter}{Highlighter} $\ast$\hyperlink{class_master_actions_a50b1565db8b7780ec4e88e59953aa67b}{highlighter})
 \item 
@@ -51,9 +38,9 @@ void \hyperlink{class_master_actions_a4d26f5e2d62c71b71c4a198326b241f1}{set\-New
 \item 
 \hyperlink{class_new_project_gui}{New\-Project\-Gui} $\ast$ \hyperlink{class_master_actions_a30b51649f46b8f105f8be5d9b4a6fb5f}{get\-New\-Project\-Gui\-Ptr} ()
 \item 
-void \hyperlink{class_master_actions_a9a65dcf1c8e292712de196eabbaa9952}{set\-Terminal\-Ptr} (\hyperlink{class_terminal}{Terminal} $\ast$\hyperlink{class_master_actions_accb886e749ad46cb6373187e59921bcf}{terminal\-Ptr})
+void \hyperlink{class_master_actions_a78487f636588daf028a576b47703772e}{set\-Terminal\-Ptr} (\hyperlink{class_q_x_term}{Q\-X\-Term} $\ast$\hyperlink{class_master_actions_a540ec48ffb8bc7955f5630fac7b3865b}{terminal\-Ptr})
 \item 
-\hyperlink{class_terminal}{Terminal} $\ast$ \hyperlink{class_master_actions_aed6c3f33a2f6f7a97d2006299d861269}{get\-Terminal\-Ptr} ()
+\hyperlink{class_q_x_term}{Q\-X\-Term} $\ast$ \hyperlink{class_master_actions_a1d6e583d7c6b63ca210ccc785e58c18d}{get\-Terminal\-Ptr} ()
 \item 
 void \hyperlink{class_master_actions_a67bf77b969dcbe752434110c8163d792}{set\-Run\-Gui\-Ptr} (\hyperlink{class_run_gui}{Run\-Gui} $\ast$\hyperlink{class_master_actions_ad7ff295f2e3067697e290afc4f0fd0df}{run\-Gui\-Ptr})
 \item 
@@ -183,6 +170,8 @@ Q\-Action $\ast$ \hyperlink{class_master_actions_a97e9c1a3bd46f70d1afd640ac06cc1
 \item 
 {\footnotesize template$<$class X $>$ }\\void \hyperlink{class_master_actions_ad8311d5ad31b045095be98a9e29db1bf}{connect\-To\-Project\-West\-Action} (X $\ast$component)
 \item 
+Q\-String $\ast$ \hyperlink{class_master_actions_ad215eb9ceed2d0cd3552585f3dfa3b62}{to\-String} ()
+\item 
 \hyperlink{class_master_actions_a2504de3ca736a30530296fc9b44fb55b}{$\sim$\-Master\-Actions} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Slots}
@@ -265,7 +254,7 @@ Q\-Action $\ast$ \hyperlink{class_master_actions_aa4160469d2e9a840448c49e95bcfa9
 \item 
 Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_a4fbb50c5700fd6b66ace4cff6d3bde3e}{north\-Tab\-Widget\-Ptr}
 \item 
-Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_ae50dea40859da966d8b8a27d2069f6d7}{south\-Tab\-Widget\-Ptr}
+\hyperlink{class_output_gui}{Output\-Gui} $\ast$ \hyperlink{class_master_actions_a0cbcc4a5b82537a3f958c462bcaade46}{south\-Tab\-Widget\-Ptr}
 \item 
 \hyperlink{class_highlighter}{Highlighter} $\ast$ \hyperlink{class_master_actions_a50b1565db8b7780ec4e88e59953aa67b}{highlighter}
 \item 
@@ -273,7 +262,7 @@ Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_ae50dea40859da966d8b8a27d2
 \item 
 \hyperlink{class_new_project_gui}{New\-Project\-Gui} $\ast$ \hyperlink{class_master_actions_a78733336a3d5fd3bbb55eaf0215f0d40}{new\-Project\-Gui\-Ptr}
 \item 
-\hyperlink{class_terminal}{Terminal} $\ast$ \hyperlink{class_master_actions_accb886e749ad46cb6373187e59921bcf}{terminal\-Ptr}
+\hyperlink{class_q_x_term}{Q\-X\-Term} $\ast$ \hyperlink{class_master_actions_a540ec48ffb8bc7955f5630fac7b3865b}{terminal\-Ptr}
 \item 
 \hyperlink{class_run_gui}{Run\-Gui} $\ast$ \hyperlink{class_master_actions_ad7ff295f2e3067697e290afc4f0fd0df}{run\-Gui\-Ptr}
 \item 
@@ -287,13 +276,6 @@ Q\-Tab\-Widget $\ast$ \hyperlink{class_master_actions_ae50dea40859da966d8b8a27d2
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-
-
-Definition at line 37 of file Master\-Actions.\-h.
-
-
-
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_master_actions_ad8eb348b90e75f5876c30692930a2c22}{\index{Master\-Actions@{Master\-Actions}!Master\-Actions@{Master\-Actions}}
 \index{Master\-Actions@{Master\-Actions}!MasterActions@{Master\-Actions}}
@@ -302,22 +284,6 @@ Definition at line 37 of file Master\-Actions.\-h.
 \item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ad8eb348b90e75f5876c30692930a2c22}
-
-
-Definition at line 4 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ad8eb348b90e75f5876c30692930a2c22_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a2504de3ca736a30530296fc9b44fb55b}{\index{Master\-Actions@{Master\-Actions}!$\sim$\-Master\-Actions@{$\sim$\-Master\-Actions}}
 \index{$\sim$\-Master\-Actions@{$\sim$\-Master\-Actions}!MasterActions@{Master\-Actions}}
 \subsubsection[{$\sim$\-Master\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}Master\-Actions\-::$\sim$\-Master\-Actions (
@@ -325,10 +291,6 @@ Here is the call graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a2504de3ca736a30530296fc9b44fb55b}
-
-
-Definition at line 751 of file Master\-Actions.\-cpp.
-
 
 
 \subsection{Member Function Documentation}
@@ -339,22 +301,6 @@ Definition at line 751 of file Master\-Actions.\-cpp.
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a9625507b1a412bd95bdc13ae54bc68a2}
-
-
-Definition at line 679 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a9625507b1a412bd95bdc13ae54bc68a2_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a86232c67d3599a28c6b5238eb6dd4e88}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Clean\-And\-Build\-Action@{connect\-To\-Clean\-And\-Build\-Action}}
 \index{connect\-To\-Clean\-And\-Build\-Action@{connect\-To\-Clean\-And\-Build\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Clean\-And\-Build\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Clean\-And\-Build\-Action (
@@ -362,22 +308,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a86232c67d3599a28c6b5238eb6dd4e88}
-
-
-Definition at line 686 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a86232c67d3599a28c6b5238eb6dd4e88_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a87ff14d6fdf08f3730bb733747335dcb}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Config\-For\-Run\-Action@{connect\-To\-Config\-For\-Run\-Action}}
 \index{connect\-To\-Config\-For\-Run\-Action@{connect\-To\-Config\-For\-Run\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Config\-For\-Run\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Config\-For\-Run\-Action (
@@ -385,22 +315,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a87ff14d6fdf08f3730bb733747335dcb}
-
-
-Definition at line 693 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a87ff14d6fdf08f3730bb733747335dcb_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a9c1baa889fbb545dc9607044839d5813}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Debug\-Action@{connect\-To\-Debug\-Action}}
 \index{connect\-To\-Debug\-Action@{connect\-To\-Debug\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Debug\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Debug\-Action (
@@ -408,22 +322,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a9c1baa889fbb545dc9607044839d5813}
-
-
-Definition at line 707 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a9c1baa889fbb545dc9607044839d5813_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a6624b38f9a52128e261d78f0313fa99d}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Git\-Action@{connect\-To\-Git\-Action}}
 \index{connect\-To\-Git\-Action@{connect\-To\-Git\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Git\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Git\-Action (
@@ -431,22 +329,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a6624b38f9a52128e261d78f0313fa99d}
-
-
-Definition at line 714 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a6624b38f9a52128e261d78f0313fa99d_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_ab8028a378675e16f2d9ae4a42a7114be}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Nav\-East\-Action@{connect\-To\-Nav\-East\-Action}}
 \index{connect\-To\-Nav\-East\-Action@{connect\-To\-Nav\-East\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Nav\-East\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Nav\-East\-Action (
@@ -454,22 +336,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ab8028a378675e16f2d9ae4a42a7114be}
-
-
-Definition at line 737 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ab8028a378675e16f2d9ae4a42a7114be_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a24f67a69e013feac51a24a34d32f2c40}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-New\-File\-Action@{connect\-To\-New\-File\-Action}}
 \index{connect\-To\-New\-File\-Action@{connect\-To\-New\-File\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-New\-File\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-New\-File\-Action (
@@ -477,22 +343,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a24f67a69e013feac51a24a34d32f2c40}
-
-
-Definition at line 623 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a24f67a69e013feac51a24a34d32f2c40_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a7eb69b0a616b949086f7422394f6c881}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-New\-Project\-Action@{connect\-To\-New\-Project\-Action}}
 \index{connect\-To\-New\-Project\-Action@{connect\-To\-New\-Project\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-New\-Project\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-New\-Project\-Action (
@@ -500,22 +350,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a7eb69b0a616b949086f7422394f6c881}
-
-
-Definition at line 637 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a7eb69b0a616b949086f7422394f6c881_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_aeca9ddb448704bcc3a7e9ac3a66d5b57}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-New\-Terminal\-Action@{connect\-To\-New\-Terminal\-Action}}
 \index{connect\-To\-New\-Terminal\-Action@{connect\-To\-New\-Terminal\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-New\-Terminal\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-New\-Terminal\-Action (
@@ -523,22 +357,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aeca9ddb448704bcc3a7e9ac3a66d5b57}
-
-
-Definition at line 630 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_aeca9ddb448704bcc3a7e9ac3a66d5b57_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_aa792c3936e0b0b4c016d01ad4a1c5803}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Open\-Project\-Action@{connect\-To\-Open\-Project\-Action}}
 \index{connect\-To\-Open\-Project\-Action@{connect\-To\-Open\-Project\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Open\-Project\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Open\-Project\-Action (
@@ -546,22 +364,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aa792c3936e0b0b4c016d01ad4a1c5803}
-
-
-Definition at line 644 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_aa792c3936e0b0b4c016d01ad4a1c5803_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a0ccac38f3166e1410f09f20e27b0d020}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Output\-South\-Action@{connect\-To\-Output\-South\-Action}}
 \index{connect\-To\-Output\-South\-Action@{connect\-To\-Output\-South\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Output\-South\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Output\-South\-Action (
@@ -569,22 +371,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a0ccac38f3166e1410f09f20e27b0d020}
-
-
-Definition at line 722 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a0ccac38f3166e1410f09f20e27b0d020_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_ad8311d5ad31b045095be98a9e29db1bf}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Project\-West\-Action@{connect\-To\-Project\-West\-Action}}
 \index{connect\-To\-Project\-West\-Action@{connect\-To\-Project\-West\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Project\-West\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Project\-West\-Action (
@@ -592,22 +378,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ad8311d5ad31b045095be98a9e29db1bf}
-
-
-Definition at line 745 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ad8311d5ad31b045095be98a9e29db1bf_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a6077c09ff4426c4a99eaa33ff12f22e4}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Redo\-Action@{connect\-To\-Redo\-Action}}
 \index{connect\-To\-Redo\-Action@{connect\-To\-Redo\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Redo\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Redo\-Action (
@@ -615,22 +385,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a6077c09ff4426c4a99eaa33ff12f22e4}
-
-
-Definition at line 665 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a6077c09ff4426c4a99eaa33ff12f22e4_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a73ec685aa0f239226bdda78857b9e234}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Run\-Action@{connect\-To\-Run\-Action}}
 \index{connect\-To\-Run\-Action@{connect\-To\-Run\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Run\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Run\-Action (
@@ -638,22 +392,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a73ec685aa0f239226bdda78857b9e234}
-
-
-Definition at line 700 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a73ec685aa0f239226bdda78857b9e234_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_ab859d0b5419ae5f17504e8fdd83be4be}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Save\-All\-Action@{connect\-To\-Save\-All\-Action}}
 \index{connect\-To\-Save\-All\-Action@{connect\-To\-Save\-All\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Save\-All\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Save\-All\-Action (
@@ -661,22 +399,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ab859d0b5419ae5f17504e8fdd83be4be}
-
-
-Definition at line 651 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ab859d0b5419ae5f17504e8fdd83be4be_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a5e25d464651d37d48c7e6a4714130dd7}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Set\-Project\-Config\-Action@{connect\-To\-Set\-Project\-Config\-Action}}
 \index{connect\-To\-Set\-Project\-Config\-Action@{connect\-To\-Set\-Project\-Config\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Set\-Project\-Config\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Set\-Project\-Config\-Action (
@@ -684,22 +406,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a5e25d464651d37d48c7e6a4714130dd7}
-
-
-Definition at line 672 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a5e25d464651d37d48c7e6a4714130dd7_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a9f7d8a2bd25c903cbb62be5e9a9ce8fc}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Terminal\-South\-Action@{connect\-To\-Terminal\-South\-Action}}
 \index{connect\-To\-Terminal\-South\-Action@{connect\-To\-Terminal\-South\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Terminal\-South\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Terminal\-South\-Action (
@@ -707,22 +413,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a9f7d8a2bd25c903cbb62be5e9a9ce8fc}
-
-
-Definition at line 729 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a9f7d8a2bd25c903cbb62be5e9a9ce8fc_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a6590f8772608e4d99efbf16ef9625b78}{\index{Master\-Actions@{Master\-Actions}!connect\-To\-Undo\-Action@{connect\-To\-Undo\-Action}}
 \index{connect\-To\-Undo\-Action@{connect\-To\-Undo\-Action}!MasterActions@{Master\-Actions}}
 \subsubsection[{connect\-To\-Undo\-Action}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class X $>$ void Master\-Actions\-::connect\-To\-Undo\-Action (
@@ -730,22 +420,6 @@ Here is the call graph for this function\-:
 \item[{X $\ast$}]{component}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a6590f8772608e4d99efbf16ef9625b78}
-
-
-Definition at line 658 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a6590f8772608e4d99efbf16ef9625b78_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a2c89cb4aa70c13526d98e449a1e3a1b9}{\index{Master\-Actions@{Master\-Actions}!get\-Build\-Action\-Ptr@{get\-Build\-Action\-Ptr}}
 \index{get\-Build\-Action\-Ptr@{get\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Build\-Action\-Ptr (
@@ -753,10 +427,6 @@ Here is the call graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a2c89cb4aa70c13526d98e449a1e3a1b9}
-
-
-Definition at line 505 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_aa1fb0f2857ad88742c874e22a308e4f4}{\index{Master\-Actions@{Master\-Actions}!get\-Build\-Ptr@{get\-Build\-Ptr}}
 \index{get\-Build\-Ptr@{get\-Build\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Build\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Build} $\ast$ Master\-Actions\-::get\-Build\-Ptr (
@@ -764,10 +434,6 @@ Definition at line 505 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aa1fb0f2857ad88742c874e22a308e4f4}
-
-
-Definition at line 396 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_af23ec377bb3603963735d30876e6147e}{\index{Master\-Actions@{Master\-Actions}!get\-Clean\-And\-Build\-Action\-Ptr@{get\-Clean\-And\-Build\-Action\-Ptr}}
 \index{get\-Clean\-And\-Build\-Action\-Ptr@{get\-Clean\-And\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Clean\-And\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Clean\-And\-Build\-Action\-Ptr (
@@ -775,10 +441,6 @@ Definition at line 396 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_af23ec377bb3603963735d30876e6147e}
-
-
-Definition at line 517 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a5266af068fe6ec921cca9e84b9ad7c13}{\index{Master\-Actions@{Master\-Actions}!get\-Config\-For\-Run\-Action\-Ptr@{get\-Config\-For\-Run\-Action\-Ptr}}
 \index{get\-Config\-For\-Run\-Action\-Ptr@{get\-Config\-For\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Config\-For\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Config\-For\-Run\-Action\-Ptr (
@@ -786,10 +448,6 @@ Definition at line 517 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a5266af068fe6ec921cca9e84b9ad7c13}
-
-
-Definition at line 529 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a38c19285a782f80fd538243f1a7119bc}{\index{Master\-Actions@{Master\-Actions}!get\-Debug\-Action\-Ptr@{get\-Debug\-Action\-Ptr}}
 \index{get\-Debug\-Action\-Ptr@{get\-Debug\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Debug\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Debug\-Action\-Ptr (
@@ -797,10 +455,6 @@ Definition at line 529 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a38c19285a782f80fd538243f1a7119bc}
-
-
-Definition at line 553 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a863ab54858bacd76b50af788a6846e8e}{\index{Master\-Actions@{Master\-Actions}!get\-East\-Widget\-Ptr@{get\-East\-Widget\-Ptr}}
 \index{get\-East\-Widget\-Ptr@{get\-East\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-East\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigator\-Gui} $\ast$ Master\-Actions\-::get\-East\-Widget\-Ptr (
@@ -808,22 +462,6 @@ Definition at line 553 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a863ab54858bacd76b50af788a6846e8e}
-
-
-Definition at line 384 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a863ab54858bacd76b50af788a6846e8e_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a512f6344322707bd745ac413036238df}{\index{Master\-Actions@{Master\-Actions}!get\-Git\-Action\-Ptr@{get\-Git\-Action\-Ptr}}
 \index{get\-Git\-Action\-Ptr@{get\-Git\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Git\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Git\-Action\-Ptr (
@@ -831,10 +469,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a512f6344322707bd745ac413036238df}
-
-
-Definition at line 565 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a2b609608d4fdfe1f4abc4ba386e58923}{\index{Master\-Actions@{Master\-Actions}!get\-Highlighter@{get\-Highlighter}}
 \index{get\-Highlighter@{get\-Highlighter}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Highlighter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Highlighter} $\ast$ Master\-Actions\-::get\-Highlighter (
@@ -842,10 +476,6 @@ Definition at line 565 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a2b609608d4fdfe1f4abc4ba386e58923}
-
-
-Definition at line 300 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_af74c6ae5449f5f738eff1575defbde16}{\index{Master\-Actions@{Master\-Actions}!get\-Nav\-East\-Action\-Ptr@{get\-Nav\-East\-Action\-Ptr}}
 \index{get\-Nav\-East\-Action\-Ptr@{get\-Nav\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Nav\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Nav\-East\-Action\-Ptr (
@@ -853,10 +483,6 @@ Definition at line 300 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_af74c6ae5449f5f738eff1575defbde16}
-
-
-Definition at line 603 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a0ef76147044b06c8b951534a0d7ab7f2}{\index{Master\-Actions@{Master\-Actions}!get\-New\-File\-Action\-Ptr@{get\-New\-File\-Action\-Ptr}}
 \index{get\-New\-File\-Action\-Ptr@{get\-New\-File\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-New\-File\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-New\-File\-Action\-Ptr (
@@ -864,22 +490,6 @@ Definition at line 603 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a0ef76147044b06c8b951534a0d7ab7f2}
-
-
-Definition at line 409 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a0ef76147044b06c8b951534a0d7ab7f2_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_acb2a5079f7000c89fd0817db3ba46040}{\index{Master\-Actions@{Master\-Actions}!get\-New\-File\-Gui\-Ptr@{get\-New\-File\-Gui\-Ptr}}
 \index{get\-New\-File\-Gui\-Ptr@{get\-New\-File\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-New\-File\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-File\-Gui} $\ast$ Master\-Actions\-::get\-New\-File\-Gui\-Ptr (
@@ -887,10 +497,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_acb2a5079f7000c89fd0817db3ba46040}
-
-
-Definition at line 312 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a7065dfa244266181223b152795a996e9}{\index{Master\-Actions@{Master\-Actions}!get\-New\-Project\-Action\-Ptr@{get\-New\-Project\-Action\-Ptr}}
 \index{get\-New\-Project\-Action\-Ptr@{get\-New\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-New\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-New\-Project\-Action\-Ptr (
@@ -898,22 +504,6 @@ Definition at line 312 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a7065dfa244266181223b152795a996e9}
-
-
-Definition at line 433 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a7065dfa244266181223b152795a996e9_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a30b51649f46b8f105f8be5d9b4a6fb5f}{\index{Master\-Actions@{Master\-Actions}!get\-New\-Project\-Gui\-Ptr@{get\-New\-Project\-Gui\-Ptr}}
 \index{get\-New\-Project\-Gui\-Ptr@{get\-New\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-New\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-Project\-Gui} $\ast$ Master\-Actions\-::get\-New\-Project\-Gui\-Ptr (
@@ -921,22 +511,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a30b51649f46b8f105f8be5d9b4a6fb5f}
-
-
-Definition at line 324 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a30b51649f46b8f105f8be5d9b4a6fb5f_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_ae9f9f04302be1d7dc9fe902fc2597a1b}{\index{Master\-Actions@{Master\-Actions}!get\-New\-Terminal\-Action\-Ptr@{get\-New\-Terminal\-Action\-Ptr}}
 \index{get\-New\-Terminal\-Action\-Ptr@{get\-New\-Terminal\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-New\-Terminal\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-New\-Terminal\-Action\-Ptr (
@@ -944,10 +518,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ae9f9f04302be1d7dc9fe902fc2597a1b}
-
-
-Definition at line 421 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ac58b3c22042de182e6185e1700fa2f5e}{\index{Master\-Actions@{Master\-Actions}!get\-North\-Tab\-Widget\-Ptr@{get\-North\-Tab\-Widget\-Ptr}}
 \index{get\-North\-Tab\-Widget\-Ptr@{get\-North\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-North\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ Master\-Actions\-::get\-North\-Tab\-Widget\-Ptr (
@@ -955,22 +525,6 @@ Definition at line 421 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ac58b3c22042de182e6185e1700fa2f5e}
-
-
-Definition at line 276 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ac58b3c22042de182e6185e1700fa2f5e_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_aac19d660169392d11b0ae1c2540cafb5}{\index{Master\-Actions@{Master\-Actions}!get\-Open\-Project\-Action\-Ptr@{get\-Open\-Project\-Action\-Ptr}}
 \index{get\-Open\-Project\-Action\-Ptr@{get\-Open\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Open\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Open\-Project\-Action\-Ptr (
@@ -978,22 +532,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aac19d660169392d11b0ae1c2540cafb5}
-
-
-Definition at line 445 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_aac19d660169392d11b0ae1c2540cafb5_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_ab70b9336f1785ba7759b393d0b6a41db}{\index{Master\-Actions@{Master\-Actions}!get\-Open\-Project\-Gui\-Ptr@{get\-Open\-Project\-Gui\-Ptr}}
 \index{get\-Open\-Project\-Gui\-Ptr@{get\-Open\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Open\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Open\-Project\-Gui} $\ast$ Master\-Actions\-::get\-Open\-Project\-Gui\-Ptr (
@@ -1001,10 +539,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ab70b9336f1785ba7759b393d0b6a41db}
-
-
-Definition at line 360 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_acb9a1d3eb98cab06fd2ae5b9faf30fc3}{\index{Master\-Actions@{Master\-Actions}!get\-Output\-South\-Action\-Ptr@{get\-Output\-South\-Action\-Ptr}}
 \index{get\-Output\-South\-Action\-Ptr@{get\-Output\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Output\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Output\-South\-Action\-Ptr (
@@ -1012,10 +546,6 @@ Definition at line 360 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_acb9a1d3eb98cab06fd2ae5b9faf30fc3}
-
-
-Definition at line 578 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a97e9c1a3bd46f70d1afd640ac06cc18d}{\index{Master\-Actions@{Master\-Actions}!get\-Project\-West\-Action\-Ptr@{get\-Project\-West\-Action\-Ptr}}
 \index{get\-Project\-West\-Action\-Ptr@{get\-Project\-West\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Project\-West\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Project\-West\-Action\-Ptr (
@@ -1023,10 +553,6 @@ Definition at line 578 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a97e9c1a3bd46f70d1afd640ac06cc18d}
-
-
-Definition at line 616 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ab2015974980e97a75d5d91037be9545b}{\index{Master\-Actions@{Master\-Actions}!get\-Redo\-Action\-Ptr@{get\-Redo\-Action\-Ptr}}
 \index{get\-Redo\-Action\-Ptr@{get\-Redo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Redo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Redo\-Action\-Ptr (
@@ -1034,22 +560,6 @@ Definition at line 616 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ab2015974980e97a75d5d91037be9545b}
-
-
-Definition at line 481 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ab2015974980e97a75d5d91037be9545b_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a99017fd6ad87557fb0dbbf60ced23a23}{\index{Master\-Actions@{Master\-Actions}!get\-Run\-Action\-Ptr@{get\-Run\-Action\-Ptr}}
 \index{get\-Run\-Action\-Ptr@{get\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Run\-Action\-Ptr (
@@ -1057,10 +567,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a99017fd6ad87557fb0dbbf60ced23a23}
-
-
-Definition at line 541 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a056278722ed1dbe98df15d1d073454bc}{\index{Master\-Actions@{Master\-Actions}!get\-Run\-Gui\-Ptr@{get\-Run\-Gui\-Ptr}}
 \index{get\-Run\-Gui\-Ptr@{get\-Run\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Run\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Gui} $\ast$ Master\-Actions\-::get\-Run\-Gui\-Ptr (
@@ -1068,10 +574,6 @@ Definition at line 541 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a056278722ed1dbe98df15d1d073454bc}
-
-
-Definition at line 348 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_afd7ef11ff065232fca47f971af02c5e5}{\index{Master\-Actions@{Master\-Actions}!get\-Save\-All\-Action\-Ptr@{get\-Save\-All\-Action\-Ptr}}
 \index{get\-Save\-All\-Action\-Ptr@{get\-Save\-All\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Save\-All\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Save\-All\-Action\-Ptr (
@@ -1079,10 +581,6 @@ Definition at line 348 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_afd7ef11ff065232fca47f971af02c5e5}
-
-
-Definition at line 457 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ad81b766a2f083ba53c529cd3f3582cd0}{\index{Master\-Actions@{Master\-Actions}!get\-Set\-Project\-Config\-Action\-Ptr@{get\-Set\-Project\-Config\-Action\-Ptr}}
 \index{get\-Set\-Project\-Config\-Action\-Ptr@{get\-Set\-Project\-Config\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Set\-Project\-Config\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Set\-Project\-Config\-Action\-Ptr (
@@ -1090,44 +588,20 @@ Definition at line 457 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ad81b766a2f083ba53c529cd3f3582cd0}
-
-
-Definition at line 493 of file Master\-Actions.\-cpp.
-
-\hypertarget{class_master_actions_ace3070f2fdce3f9bca417e0c05f790fa}{\index{Master\-Actions@{Master\-Actions}!get\-South\-Tab\-Widget\-Ptr@{get\-South\-Tab\-Widget\-Ptr}}
+\hypertarget{class_master_actions_aafb5837208f5909593221be23ca3f22f}{\index{Master\-Actions@{Master\-Actions}!get\-South\-Tab\-Widget\-Ptr@{get\-South\-Tab\-Widget\-Ptr}}
 \index{get\-South\-Tab\-Widget\-Ptr@{get\-South\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
-\subsubsection[{get\-South\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ Master\-Actions\-::get\-South\-Tab\-Widget\-Ptr (
+\subsubsection[{get\-South\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\-Gui} $\ast$ Master\-Actions\-::get\-South\-Tab\-Widget\-Ptr (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_master_actions_ace3070f2fdce3f9bca417e0c05f790fa}
-
-
-Definition at line 288 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ace3070f2fdce3f9bca417e0c05f790fa_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_master_actions_aed6c3f33a2f6f7a97d2006299d861269}{\index{Master\-Actions@{Master\-Actions}!get\-Terminal\-Ptr@{get\-Terminal\-Ptr}}
+)}}\label{class_master_actions_aafb5837208f5909593221be23ca3f22f}
+\hypertarget{class_master_actions_a1d6e583d7c6b63ca210ccc785e58c18d}{\index{Master\-Actions@{Master\-Actions}!get\-Terminal\-Ptr@{get\-Terminal\-Ptr}}
 \index{get\-Terminal\-Ptr@{get\-Terminal\-Ptr}!MasterActions@{Master\-Actions}}
-\subsubsection[{get\-Terminal\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Terminal} $\ast$ Master\-Actions\-::get\-Terminal\-Ptr (
+\subsubsection[{get\-Terminal\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-X\-Term} $\ast$ Master\-Actions\-::get\-Terminal\-Ptr (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{class_master_actions_aed6c3f33a2f6f7a97d2006299d861269}
-
-
-Definition at line 336 of file Master\-Actions.\-cpp.
-
+)}}\label{class_master_actions_a1d6e583d7c6b63ca210ccc785e58c18d}
 \hypertarget{class_master_actions_ae9a9fe05579b18051c29f7e54d50a06b}{\index{Master\-Actions@{Master\-Actions}!get\-Terminal\-South\-Action\-Ptr@{get\-Terminal\-South\-Action\-Ptr}}
 \index{get\-Terminal\-South\-Action\-Ptr@{get\-Terminal\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Terminal\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Terminal\-South\-Action\-Ptr (
@@ -1135,10 +609,6 @@ Definition at line 336 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ae9a9fe05579b18051c29f7e54d50a06b}
-
-
-Definition at line 590 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_aeb84d87b232944fc289dd0425c79e1a7}{\index{Master\-Actions@{Master\-Actions}!get\-Undo\-Action\-Ptr@{get\-Undo\-Action\-Ptr}}
 \index{get\-Undo\-Action\-Ptr@{get\-Undo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-Undo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action $\ast$ Master\-Actions\-::get\-Undo\-Action\-Ptr (
@@ -1146,22 +616,6 @@ Definition at line 590 of file Master\-Actions.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aeb84d87b232944fc289dd0425c79e1a7}
-
-
-Definition at line 469 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_aeb84d87b232944fc289dd0425c79e1a7_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_aae29be0bf5f9f2b8f1c7aac0c7efb288}{\index{Master\-Actions@{Master\-Actions}!get\-West\-Widget\-Ptr@{get\-West\-Widget\-Ptr}}
 \index{get\-West\-Widget\-Ptr@{get\-West\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{get\-West\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Tree\-Gui} $\ast$ Master\-Actions\-::get\-West\-Widget\-Ptr (
@@ -1169,22 +623,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aae29be0bf5f9f2b8f1c7aac0c7efb288}
-
-
-Definition at line 372 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_aae29be0bf5f9f2b8f1c7aac0c7efb288_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_aa9af30e92d9f9e4ffb8044f092b06d07}{\index{Master\-Actions@{Master\-Actions}!handle\-Build\-Action\-Slot@{handle\-Build\-Action\-Slot}}
 \index{handle\-Build\-Action\-Slot@{handle\-Build\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Build\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Build\-Action\-Slot (
@@ -1192,34 +630,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_aa9af30e92d9f9e4ffb8044f092b06d07}
-
-
-Definition at line 163 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_aa9af30e92d9f9e4ffb8044f092b06d07_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_aa9af30e92d9f9e4ffb8044f092b06d07_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_ac3621bfbde9a2b681d4d35ae72bd6f14}{\index{Master\-Actions@{Master\-Actions}!handle\-Clean\-And\-Build\-Action\-Slot@{handle\-Clean\-And\-Build\-Action\-Slot}}
 \index{handle\-Clean\-And\-Build\-Action\-Slot@{handle\-Clean\-And\-Build\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Clean\-And\-Build\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Clean\-And\-Build\-Action\-Slot (
@@ -1227,34 +637,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_ac3621bfbde9a2b681d4d35ae72bd6f14}
-
-
-Definition at line 176 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ac3621bfbde9a2b681d4d35ae72bd6f14_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ac3621bfbde9a2b681d4d35ae72bd6f14_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a294fc01ac639ffcdf9b76378f0d21306}{\index{Master\-Actions@{Master\-Actions}!handle\-Config\-For\-Run\-Action\-Slot@{handle\-Config\-For\-Run\-Action\-Slot}}
 \index{handle\-Config\-For\-Run\-Action\-Slot@{handle\-Config\-For\-Run\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Config\-For\-Run\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Config\-For\-Run\-Action\-Slot (
@@ -1262,34 +644,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a294fc01ac639ffcdf9b76378f0d21306}
-
-
-Definition at line 186 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a294fc01ac639ffcdf9b76378f0d21306_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a294fc01ac639ffcdf9b76378f0d21306_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_acc96d5f9401e97aa2a4700a47cfa71bd}{\index{Master\-Actions@{Master\-Actions}!handle\-Debug\-Action\-Slot@{handle\-Debug\-Action\-Slot}}
 \index{handle\-Debug\-Action\-Slot@{handle\-Debug\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Debug\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Debug\-Action\-Slot (
@@ -1297,22 +651,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_acc96d5f9401e97aa2a4700a47cfa71bd}
-
-
-Definition at line 199 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_acc96d5f9401e97aa2a4700a47cfa71bd_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_ac8b0e41e5f68cdc5c845ec9184b2cd6d}{\index{Master\-Actions@{Master\-Actions}!handle\-Git\-Action\-Slot@{handle\-Git\-Action\-Slot}}
 \index{handle\-Git\-Action\-Slot@{handle\-Git\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Git\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Git\-Action\-Slot (
@@ -1320,22 +658,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_ac8b0e41e5f68cdc5c845ec9184b2cd6d}
-
-
-Definition at line 205 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ac8b0e41e5f68cdc5c845ec9184b2cd6d_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a86d0a64d13866d196c05906dfae37b73}{\index{Master\-Actions@{Master\-Actions}!handle\-Nav\-East\-Action\-Slot@{handle\-Nav\-East\-Action\-Slot}}
 \index{handle\-Nav\-East\-Action\-Slot@{handle\-Nav\-East\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Nav\-East\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Nav\-East\-Action\-Slot (
@@ -1343,34 +665,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a86d0a64d13866d196c05906dfae37b73}
-
-
-Definition at line 237 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a86d0a64d13866d196c05906dfae37b73_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a86d0a64d13866d196c05906dfae37b73_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a75943822eee1dbbc3e7c6c1dda4780a0}{\index{Master\-Actions@{Master\-Actions}!handle\-New\-File\-Action\-Slot@{handle\-New\-File\-Action\-Slot}}
 \index{handle\-New\-File\-Action\-Slot@{handle\-New\-File\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-New\-File\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-New\-File\-Action\-Slot (
@@ -1378,34 +672,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a75943822eee1dbbc3e7c6c1dda4780a0}
-
-
-Definition at line 108 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a75943822eee1dbbc3e7c6c1dda4780a0_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a75943822eee1dbbc3e7c6c1dda4780a0_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a81d07306e15f16a66e992138faccfab5}{\index{Master\-Actions@{Master\-Actions}!handle\-New\-Project\-Action\-Slot@{handle\-New\-Project\-Action\-Slot}}
 \index{handle\-New\-Project\-Action\-Slot@{handle\-New\-Project\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-New\-Project\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-New\-Project\-Action\-Slot (
@@ -1413,22 +679,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a81d07306e15f16a66e992138faccfab5}
-
-
-Definition at line 126 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a81d07306e15f16a66e992138faccfab5_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_af1fa0d0d7b074abb49ae5dd6bccffbe9}{\index{Master\-Actions@{Master\-Actions}!handle\-New\-Terminal\-Action\-Slot@{handle\-New\-Terminal\-Action\-Slot}}
 \index{handle\-New\-Terminal\-Action\-Slot@{handle\-New\-Terminal\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-New\-Terminal\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-New\-Terminal\-Action\-Slot (
@@ -1436,34 +686,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_af1fa0d0d7b074abb49ae5dd6bccffbe9}
-
-
-Definition at line 115 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{class_master_actions_af1fa0d0d7b074abb49ae5dd6bccffbe9_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_af1fa0d0d7b074abb49ae5dd6bccffbe9_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_abefe5adf2e269a408626ea1caee182ca}{\index{Master\-Actions@{Master\-Actions}!handle\-Open\-Project\-Action\-Slot@{handle\-Open\-Project\-Action\-Slot}}
 \index{handle\-Open\-Project\-Action\-Slot@{handle\-Open\-Project\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Open\-Project\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Open\-Project\-Action\-Slot (
@@ -1471,22 +693,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_abefe5adf2e269a408626ea1caee182ca}
-
-
-Definition at line 133 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_abefe5adf2e269a408626ea1caee182ca_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_afb11d896980c526784b05a440e6f21ac}{\index{Master\-Actions@{Master\-Actions}!handle\-Output\-South\-Action\-Slot@{handle\-Output\-South\-Action\-Slot}}
 \index{handle\-Output\-South\-Action\-Slot@{handle\-Output\-South\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Output\-South\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Output\-South\-Action\-Slot (
@@ -1494,34 +700,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_afb11d896980c526784b05a440e6f21ac}
-
-
-Definition at line 212 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_afb11d896980c526784b05a440e6f21ac_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_afb11d896980c526784b05a440e6f21ac_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a64bf020d68866c8941c01929879eb839}{\index{Master\-Actions@{Master\-Actions}!handle\-Project\-West\-Action\-Slot@{handle\-Project\-West\-Action\-Slot}}
 \index{handle\-Project\-West\-Action\-Slot@{handle\-Project\-West\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Project\-West\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Project\-West\-Action\-Slot (
@@ -1529,34 +707,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a64bf020d68866c8941c01929879eb839}
-
-
-Definition at line 251 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a64bf020d68866c8941c01929879eb839_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a64bf020d68866c8941c01929879eb839_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a7aa83031542aeafb3f3afe244ce2cd67}{\index{Master\-Actions@{Master\-Actions}!handle\-Redo\-Action\-Slot@{handle\-Redo\-Action\-Slot}}
 \index{handle\-Redo\-Action\-Slot@{handle\-Redo\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Redo\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Redo\-Action\-Slot (
@@ -1564,22 +714,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a7aa83031542aeafb3f3afe244ce2cd67}
-
-
-Definition at line 151 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a7aa83031542aeafb3f3afe244ce2cd67_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a8504741522d18cb1a5fb21b6ad6de14b}{\index{Master\-Actions@{Master\-Actions}!handle\-Run\-Action\-Slot@{handle\-Run\-Action\-Slot}}
 \index{handle\-Run\-Action\-Slot@{handle\-Run\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Run\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Run\-Action\-Slot (
@@ -1587,22 +721,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a8504741522d18cb1a5fb21b6ad6de14b}
-
-
-Definition at line 193 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a8504741522d18cb1a5fb21b6ad6de14b_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a92d9fcaac21c09534c568b3aca195a87}{\index{Master\-Actions@{Master\-Actions}!handle\-Save\-All\-Action\-Slot@{handle\-Save\-All\-Action\-Slot}}
 \index{handle\-Save\-All\-Action\-Slot@{handle\-Save\-All\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Save\-All\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Save\-All\-Action\-Slot (
@@ -1610,34 +728,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a92d9fcaac21c09534c568b3aca195a87}
-
-
-Definition at line 139 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=332pt]{class_master_actions_a92d9fcaac21c09534c568b3aca195a87_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a92d9fcaac21c09534c568b3aca195a87_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a8b46b8a5873dfff5a85e21a7e636b4bf}{\index{Master\-Actions@{Master\-Actions}!handle\-Set\-Project\-Config\-Action\-Slot@{handle\-Set\-Project\-Config\-Action\-Slot}}
 \index{handle\-Set\-Project\-Config\-Action\-Slot@{handle\-Set\-Project\-Config\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Set\-Project\-Config\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Set\-Project\-Config\-Action\-Slot (
@@ -1645,22 +735,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a8b46b8a5873dfff5a85e21a7e636b4bf}
-
-
-Definition at line 157 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a8b46b8a5873dfff5a85e21a7e636b4bf_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a3f3ec7277966d98a9fc5df5ceca1fa97}{\index{Master\-Actions@{Master\-Actions}!handle\-Terminal\-South\-Action\-Slot@{handle\-Terminal\-South\-Action\-Slot}}
 \index{handle\-Terminal\-South\-Action\-Slot@{handle\-Terminal\-South\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Terminal\-South\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Terminal\-South\-Action\-Slot (
@@ -1668,34 +742,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a3f3ec7277966d98a9fc5df5ceca1fa97}
-
-
-Definition at line 225 of file Master\-Actions.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=348pt]{class_master_actions_a3f3ec7277966d98a9fc5df5ceca1fa97_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a3f3ec7277966d98a9fc5df5ceca1fa97_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a87a24d9944e6140a6ae0de92dc8e5647}{\index{Master\-Actions@{Master\-Actions}!handle\-Undo\-Action\-Slot@{handle\-Undo\-Action\-Slot}}
 \index{handle\-Undo\-Action\-Slot@{handle\-Undo\-Action\-Slot}!MasterActions@{Master\-Actions}}
 \subsubsection[{handle\-Undo\-Action\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::handle\-Undo\-Action\-Slot (
@@ -1703,22 +749,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_master_actions_a87a24d9944e6140a6ae0de92dc8e5647}
-
-
-Definition at line 145 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a87a24d9944e6140a6ae0de92dc8e5647_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a9e2ff3903452d1212d530e20af9d7936}{\index{Master\-Actions@{Master\-Actions}!init\-Actions@{init\-Actions}}
 \index{init\-Actions@{init\-Actions}!MasterActions@{Master\-Actions}}
 \subsubsection[{init\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::init\-Actions (
@@ -1726,10 +756,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a9e2ff3903452d1212d530e20af9d7936}
-
-
-Definition at line 264 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a575820c5279053703a99071151ff82c4}{\index{Master\-Actions@{Master\-Actions}!set\-Build\-Action\-Ptr@{set\-Build\-Action\-Ptr}}
 \index{set\-Build\-Action\-Ptr@{set\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Build\-Action\-Ptr (
@@ -1737,10 +763,6 @@ Definition at line 264 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{set\-Build\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a575820c5279053703a99071151ff82c4}
-
-
-Definition at line 499 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_aad032f97113c45d9f02035b7e2ef605f}{\index{Master\-Actions@{Master\-Actions}!set\-Build\-Ptr@{set\-Build\-Ptr}}
 \index{set\-Build\-Ptr@{set\-Build\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Build\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Build\-Ptr (
@@ -1748,10 +770,6 @@ Definition at line 499 of file Master\-Actions.\-cpp.
 \item[{{\bf Build} $\ast$}]{build\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aad032f97113c45d9f02035b7e2ef605f}
-
-
-Definition at line 390 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a9ed58e080af95465715e9be1c9ee71c6}{\index{Master\-Actions@{Master\-Actions}!set\-Clean\-And\-Build\-Action\-Ptr@{set\-Clean\-And\-Build\-Action\-Ptr}}
 \index{set\-Clean\-And\-Build\-Action\-Ptr@{set\-Clean\-And\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Clean\-And\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Clean\-And\-Build\-Action\-Ptr (
@@ -1759,10 +777,6 @@ Definition at line 390 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{clean\-And\-Build\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a9ed58e080af95465715e9be1c9ee71c6}
-
-
-Definition at line 511 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a8b4ef0d552c3dac5c81cf65502650ae5}{\index{Master\-Actions@{Master\-Actions}!set\-Config\-For\-Run\-Action\-Ptr@{set\-Config\-For\-Run\-Action\-Ptr}}
 \index{set\-Config\-For\-Run\-Action\-Ptr@{set\-Config\-For\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Config\-For\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Config\-For\-Run\-Action\-Ptr (
@@ -1770,10 +784,6 @@ Definition at line 511 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{config\-For\-Run\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a8b4ef0d552c3dac5c81cf65502650ae5}
-
-
-Definition at line 523 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a66be4fac5aa53c8c40128e1cfab35676}{\index{Master\-Actions@{Master\-Actions}!set\-Debug\-Action\-Ptr@{set\-Debug\-Action\-Ptr}}
 \index{set\-Debug\-Action\-Ptr@{set\-Debug\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Debug\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Debug\-Action\-Ptr (
@@ -1781,10 +791,6 @@ Definition at line 523 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{debug\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a66be4fac5aa53c8c40128e1cfab35676}
-
-
-Definition at line 547 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a983ce09c5c21c3cbf912472e878c7842}{\index{Master\-Actions@{Master\-Actions}!set\-East\-Widget\-Ptr@{set\-East\-Widget\-Ptr}}
 \index{set\-East\-Widget\-Ptr@{set\-East\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-East\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-East\-Widget\-Ptr (
@@ -1792,22 +798,6 @@ Definition at line 547 of file Master\-Actions.\-cpp.
 \item[{{\bf Navigator\-Gui} $\ast$}]{east\-Widget\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a983ce09c5c21c3cbf912472e878c7842}
-
-
-Definition at line 378 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a983ce09c5c21c3cbf912472e878c7842_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_a785e8465b91e563926ab0ef021907128}{\index{Master\-Actions@{Master\-Actions}!set\-Git\-Action\-Ptr@{set\-Git\-Action\-Ptr}}
 \index{set\-Git\-Action\-Ptr@{set\-Git\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Git\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Git\-Action\-Ptr (
@@ -1815,10 +805,6 @@ Here is the caller graph for this function\-:
 \item[{Q\-Action $\ast$}]{profile\-Proj\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a785e8465b91e563926ab0ef021907128}
-
-
-Definition at line 559 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ae5856ce1f1a1d1f83622631512638dd8}{\index{Master\-Actions@{Master\-Actions}!set\-Highlighter@{set\-Highlighter}}
 \index{set\-Highlighter@{set\-Highlighter}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Highlighter}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Highlighter (
@@ -1826,10 +812,6 @@ Definition at line 559 of file Master\-Actions.\-cpp.
 \item[{{\bf Highlighter} $\ast$}]{highlighter}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ae5856ce1f1a1d1f83622631512638dd8}
-
-
-Definition at line 294 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a42342f8666f61fd111f2cba1fd082d49}{\index{Master\-Actions@{Master\-Actions}!set\-Nav\-East\-Action\-Ptr@{set\-Nav\-East\-Action\-Ptr}}
 \index{set\-Nav\-East\-Action\-Ptr@{set\-Nav\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Nav\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Nav\-East\-Action\-Ptr (
@@ -1837,10 +819,6 @@ Definition at line 294 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{nav\-East\-Actionptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a42342f8666f61fd111f2cba1fd082d49}
-
-
-Definition at line 597 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a4af05020cee8c5e80df586b03c20e765}{\index{Master\-Actions@{Master\-Actions}!set\-New\-File\-Action\-Ptr@{set\-New\-File\-Action\-Ptr}}
 \index{set\-New\-File\-Action\-Ptr@{set\-New\-File\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-New\-File\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-New\-File\-Action\-Ptr (
@@ -1848,10 +826,6 @@ Definition at line 597 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{new\-File\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a4af05020cee8c5e80df586b03c20e765}
-
-
-Definition at line 403 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a4fde279b855381679703cac9037deb08}{\index{Master\-Actions@{Master\-Actions}!set\-New\-File\-Gui\-Ptr@{set\-New\-File\-Gui\-Ptr}}
 \index{set\-New\-File\-Gui\-Ptr@{set\-New\-File\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-New\-File\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-New\-File\-Gui\-Ptr (
@@ -1859,10 +833,6 @@ Definition at line 403 of file Master\-Actions.\-cpp.
 \item[{{\bf New\-File\-Gui} $\ast$}]{new\-File\-Gui\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a4fde279b855381679703cac9037deb08}
-
-
-Definition at line 306 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a4d6a5bfbd44ebe419d7cfa8295a54a39}{\index{Master\-Actions@{Master\-Actions}!set\-New\-Project\-Action\-Ptr@{set\-New\-Project\-Action\-Ptr}}
 \index{set\-New\-Project\-Action\-Ptr@{set\-New\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-New\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-New\-Project\-Action\-Ptr (
@@ -1870,10 +840,6 @@ Definition at line 306 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{new\-Project\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a4d6a5bfbd44ebe419d7cfa8295a54a39}
-
-
-Definition at line 427 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a4d26f5e2d62c71b71c4a198326b241f1}{\index{Master\-Actions@{Master\-Actions}!set\-New\-Project\-Gui\-Ptr@{set\-New\-Project\-Gui\-Ptr}}
 \index{set\-New\-Project\-Gui\-Ptr@{set\-New\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-New\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-New\-Project\-Gui\-Ptr (
@@ -1881,10 +847,6 @@ Definition at line 427 of file Master\-Actions.\-cpp.
 \item[{{\bf New\-Project\-Gui} $\ast$}]{new\-Project\-Gui\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a4d26f5e2d62c71b71c4a198326b241f1}
-
-
-Definition at line 318 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_afe72189da4d2c5657f20d51fbcf6a62c}{\index{Master\-Actions@{Master\-Actions}!set\-New\-Terminal\-Action\-Ptr@{set\-New\-Terminal\-Action\-Ptr}}
 \index{set\-New\-Terminal\-Action\-Ptr@{set\-New\-Terminal\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-New\-Terminal\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-New\-Terminal\-Action\-Ptr (
@@ -1892,10 +854,6 @@ Definition at line 318 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{new\-Terminal\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_afe72189da4d2c5657f20d51fbcf6a62c}
-
-
-Definition at line 415 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ab831fe700bf1327e6cde36f9272ecc11}{\index{Master\-Actions@{Master\-Actions}!set\-North\-Tab\-Widget\-Ptr@{set\-North\-Tab\-Widget\-Ptr}}
 \index{set\-North\-Tab\-Widget\-Ptr@{set\-North\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-North\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-North\-Tab\-Widget\-Ptr (
@@ -1903,22 +861,6 @@ Definition at line 415 of file Master\-Actions.\-cpp.
 \item[{Q\-Tab\-Widget $\ast$}]{north\-Tab\-Widget\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ab831fe700bf1327e6cde36f9272ecc11}
-
-
-Definition at line 270 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_ab831fe700bf1327e6cde36f9272ecc11_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_actions_abbbe38a813adedd51c5f7187c0d045a0}{\index{Master\-Actions@{Master\-Actions}!set\-Open\-Project\-Action\-Ptr@{set\-Open\-Project\-Action\-Ptr}}
 \index{set\-Open\-Project\-Action\-Ptr@{set\-Open\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Open\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Open\-Project\-Action\-Ptr (
@@ -1926,10 +868,6 @@ Here is the caller graph for this function\-:
 \item[{Q\-Action $\ast$}]{open\-Project\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_abbbe38a813adedd51c5f7187c0d045a0}
-
-
-Definition at line 439 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_afc72dd08b2b6c8c25b8c4650b0446172}{\index{Master\-Actions@{Master\-Actions}!set\-Open\-Project\-Gui\-Ptr@{set\-Open\-Project\-Gui\-Ptr}}
 \index{set\-Open\-Project\-Gui\-Ptr@{set\-Open\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Open\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Open\-Project\-Gui\-Ptr (
@@ -1937,10 +875,6 @@ Definition at line 439 of file Master\-Actions.\-cpp.
 \item[{{\bf Open\-Project\-Gui} $\ast$}]{open\-Project\-Gui\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_afc72dd08b2b6c8c25b8c4650b0446172}
-
-
-Definition at line 354 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ac476afca80285f13a11ef0e5cd10778c}{\index{Master\-Actions@{Master\-Actions}!set\-Output\-South\-Action\-Ptr@{set\-Output\-South\-Action\-Ptr}}
 \index{set\-Output\-South\-Action\-Ptr@{set\-Output\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Output\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Output\-South\-Action\-Ptr (
@@ -1948,10 +882,6 @@ Definition at line 354 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{output\-South\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ac476afca80285f13a11ef0e5cd10778c}
-
-
-Definition at line 572 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ad0522fc89be3dd4451d84300208b5925}{\index{Master\-Actions@{Master\-Actions}!set\-Project\-West\-Action\-Ptr@{set\-Project\-West\-Action\-Ptr}}
 \index{set\-Project\-West\-Action\-Ptr@{set\-Project\-West\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Project\-West\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Project\-West\-Action\-Ptr (
@@ -1959,10 +889,6 @@ Definition at line 572 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{project\-West\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ad0522fc89be3dd4451d84300208b5925}
-
-
-Definition at line 610 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_aa470d0d50071545456339dd6efd1cd29}{\index{Master\-Actions@{Master\-Actions}!set\-Redo\-Action\-Ptr@{set\-Redo\-Action\-Ptr}}
 \index{set\-Redo\-Action\-Ptr@{set\-Redo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Redo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Redo\-Action\-Ptr (
@@ -1970,10 +896,6 @@ Definition at line 610 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{redo\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_aa470d0d50071545456339dd6efd1cd29}
-
-
-Definition at line 475 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a28ac730c1a6dd78adf10e1ffcda14aaa}{\index{Master\-Actions@{Master\-Actions}!set\-Run\-Action\-Ptr@{set\-Run\-Action\-Ptr}}
 \index{set\-Run\-Action\-Ptr@{set\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Run\-Action\-Ptr (
@@ -1981,10 +903,6 @@ Definition at line 475 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{run\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a28ac730c1a6dd78adf10e1ffcda14aaa}
-
-
-Definition at line 535 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a67bf77b969dcbe752434110c8163d792}{\index{Master\-Actions@{Master\-Actions}!set\-Run\-Gui\-Ptr@{set\-Run\-Gui\-Ptr}}
 \index{set\-Run\-Gui\-Ptr@{set\-Run\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Run\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Run\-Gui\-Ptr (
@@ -1992,10 +910,6 @@ Definition at line 535 of file Master\-Actions.\-cpp.
 \item[{{\bf Run\-Gui} $\ast$}]{run\-Gui\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a67bf77b969dcbe752434110c8163d792}
-
-
-Definition at line 342 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a28b7a07a0c6932f5f8a55a778c1b2a0f}{\index{Master\-Actions@{Master\-Actions}!set\-Save\-All\-Action\-Ptr@{set\-Save\-All\-Action\-Ptr}}
 \index{set\-Save\-All\-Action\-Ptr@{set\-Save\-All\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Save\-All\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Save\-All\-Action\-Ptr (
@@ -2003,10 +917,6 @@ Definition at line 342 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{save\-All\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a28b7a07a0c6932f5f8a55a778c1b2a0f}
-
-
-Definition at line 451 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a3ec5d73b64fdadc42fe7eb63a3792d53}{\index{Master\-Actions@{Master\-Actions}!set\-Set\-Project\-Config\-Action\-Ptr@{set\-Set\-Project\-Config\-Action\-Ptr}}
 \index{set\-Set\-Project\-Config\-Action\-Ptr@{set\-Set\-Project\-Config\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Set\-Project\-Config\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Set\-Project\-Config\-Action\-Ptr (
@@ -2014,44 +924,20 @@ Definition at line 451 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{set\-Project\-Config\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a3ec5d73b64fdadc42fe7eb63a3792d53}
-
-
-Definition at line 487 of file Master\-Actions.\-cpp.
-
-\hypertarget{class_master_actions_a78be0913c3adbd5c6ec96b60688b0f6f}{\index{Master\-Actions@{Master\-Actions}!set\-South\-Tab\-Widget\-Ptr@{set\-South\-Tab\-Widget\-Ptr}}
+\hypertarget{class_master_actions_a835def663e007647d721c2aa91d02f02}{\index{Master\-Actions@{Master\-Actions}!set\-South\-Tab\-Widget\-Ptr@{set\-South\-Tab\-Widget\-Ptr}}
 \index{set\-South\-Tab\-Widget\-Ptr@{set\-South\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-South\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-South\-Tab\-Widget\-Ptr (
 \begin{DoxyParamCaption}
-\item[{Q\-Tab\-Widget $\ast$}]{south\-Tab\-Widget\-Ptr}
+\item[{{\bf Output\-Gui} $\ast$}]{south\-Tab\-Widget\-Ptr}
 \end{DoxyParamCaption}
-)}}\label{class_master_actions_a78be0913c3adbd5c6ec96b60688b0f6f}
-
-
-Definition at line 282 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a78be0913c3adbd5c6ec96b60688b0f6f_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_master_actions_a9a65dcf1c8e292712de196eabbaa9952}{\index{Master\-Actions@{Master\-Actions}!set\-Terminal\-Ptr@{set\-Terminal\-Ptr}}
+)}}\label{class_master_actions_a835def663e007647d721c2aa91d02f02}
+\hypertarget{class_master_actions_a78487f636588daf028a576b47703772e}{\index{Master\-Actions@{Master\-Actions}!set\-Terminal\-Ptr@{set\-Terminal\-Ptr}}
 \index{set\-Terminal\-Ptr@{set\-Terminal\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Terminal\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Terminal\-Ptr (
 \begin{DoxyParamCaption}
-\item[{{\bf Terminal} $\ast$}]{terminal\-Ptr}
+\item[{{\bf Q\-X\-Term} $\ast$}]{terminal\-Ptr}
 \end{DoxyParamCaption}
-)}}\label{class_master_actions_a9a65dcf1c8e292712de196eabbaa9952}
-
-
-Definition at line 330 of file Master\-Actions.\-cpp.
-
+)}}\label{class_master_actions_a78487f636588daf028a576b47703772e}
 \hypertarget{class_master_actions_a718fd78374dab2c701fef75aa9e7a2fe}{\index{Master\-Actions@{Master\-Actions}!set\-Terminal\-South\-Action\-Ptr@{set\-Terminal\-South\-Action\-Ptr}}
 \index{set\-Terminal\-South\-Action\-Ptr@{set\-Terminal\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Terminal\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Terminal\-South\-Action\-Ptr (
@@ -2059,10 +945,6 @@ Definition at line 330 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{terminal\-South\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a718fd78374dab2c701fef75aa9e7a2fe}
-
-
-Definition at line 584 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_ac1b4b1ac149aabb6530475503f715cd9}{\index{Master\-Actions@{Master\-Actions}!set\-Undo\-Action\-Ptr@{set\-Undo\-Action\-Ptr}}
 \index{set\-Undo\-Action\-Ptr@{set\-Undo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Undo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-Undo\-Action\-Ptr (
@@ -2070,10 +952,6 @@ Definition at line 584 of file Master\-Actions.\-cpp.
 \item[{Q\-Action $\ast$}]{undo\-Action\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_ac1b4b1ac149aabb6530475503f715cd9}
-
-
-Definition at line 463 of file Master\-Actions.\-cpp.
-
 \hypertarget{class_master_actions_a5e02bad0c35da48dcf7dc6a104d4a745}{\index{Master\-Actions@{Master\-Actions}!set\-West\-Widget\-Ptr@{set\-West\-Widget\-Ptr}}
 \index{set\-West\-Widget\-Ptr@{set\-West\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-West\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Actions\-::set\-West\-Widget\-Ptr (
@@ -2081,228 +959,103 @@ Definition at line 463 of file Master\-Actions.\-cpp.
 \item[{{\bf File\-Tree\-Gui} $\ast$}]{west\-Widget\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_actions_a5e02bad0c35da48dcf7dc6a104d4a745}
-
-
-Definition at line 366 of file Master\-Actions.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_actions_a5e02bad0c35da48dcf7dc6a104d4a745_icgraph}
-\end{center}
-\end{figure}
-
-
+\hypertarget{class_master_actions_ad215eb9ceed2d0cd3552585f3dfa3b62}{\index{Master\-Actions@{Master\-Actions}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!MasterActions@{Master\-Actions}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Master\-Actions\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_actions_ad215eb9ceed2d0cd3552585f3dfa3b62}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_master_actions_a627d91b89d122dd27addc931d1c91ca0}{\index{Master\-Actions@{Master\-Actions}!build\-Action\-Ptr@{build\-Action\-Ptr}}
 \index{build\-Action\-Ptr@{build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::build\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a627d91b89d122dd27addc931d1c91ca0}
-
-
-Definition at line 51 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a204854f9bf284e221292497cdb7182ab}{\index{Master\-Actions@{Master\-Actions}!build\-Ptr@{build\-Ptr}}
 \index{build\-Ptr@{build\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{build\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Build}$\ast$ Master\-Actions\-::build\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a204854f9bf284e221292497cdb7182ab}
-
-
-Definition at line 81 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a2c0f332975bec2424d4af212ab566c5a}{\index{Master\-Actions@{Master\-Actions}!clean\-And\-Build\-Action\-Ptr@{clean\-And\-Build\-Action\-Ptr}}
 \index{clean\-And\-Build\-Action\-Ptr@{clean\-And\-Build\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{clean\-And\-Build\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::clean\-And\-Build\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a2c0f332975bec2424d4af212ab566c5a}
-
-
-Definition at line 52 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_acd6548d1110ae426f384bfeb6acc9c1f}{\index{Master\-Actions@{Master\-Actions}!config\-For\-Run\-Action\-Ptr@{config\-For\-Run\-Action\-Ptr}}
 \index{config\-For\-Run\-Action\-Ptr@{config\-For\-Run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{config\-For\-Run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::config\-For\-Run\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_acd6548d1110ae426f384bfeb6acc9c1f}
-
-
-Definition at line 53 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_ae37993bbbed4a238ea3b11089ac46a61}{\index{Master\-Actions@{Master\-Actions}!debug\-Action\-Ptr@{debug\-Action\-Ptr}}
 \index{debug\-Action\-Ptr@{debug\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{debug\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::debug\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ae37993bbbed4a238ea3b11089ac46a61}
-
-
-Definition at line 55 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a24c61c608d67e766f996d3a430a7bae0}{\index{Master\-Actions@{Master\-Actions}!east\-Widget\-Ptr@{east\-Widget\-Ptr}}
 \index{east\-Widget\-Ptr@{east\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{east\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Navigator\-Gui}$\ast$ Master\-Actions\-::east\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a24c61c608d67e766f996d3a430a7bae0}
-
-
-Definition at line 80 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_ac9e25741cf358793122b687e82f7bb85}{\index{Master\-Actions@{Master\-Actions}!git\-Action\-Ptr@{git\-Action\-Ptr}}
 \index{git\-Action\-Ptr@{git\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{git\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::git\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ac9e25741cf358793122b687e82f7bb85}
-
-
-Definition at line 56 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a50b1565db8b7780ec4e88e59953aa67b}{\index{Master\-Actions@{Master\-Actions}!highlighter@{highlighter}}
 \index{highlighter@{highlighter}!MasterActions@{Master\-Actions}}
 \subsubsection[{highlighter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Highlighter}$\ast$ Master\-Actions\-::highlighter\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a50b1565db8b7780ec4e88e59953aa67b}
-
-
-Definition at line 72 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_aa084a718ec328fbb6645bdb23c995df1}{\index{Master\-Actions@{Master\-Actions}!nav\-East\-Action\-Ptr@{nav\-East\-Action\-Ptr}}
 \index{nav\-East\-Action\-Ptr@{nav\-East\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{nav\-East\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::nav\-East\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_aa084a718ec328fbb6645bdb23c995df1}
-
-
-Definition at line 63 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a4da658e527460b8d5b0a263820259e97}{\index{Master\-Actions@{Master\-Actions}!new\-File\-Action\-Ptr@{new\-File\-Action\-Ptr}}
 \index{new\-File\-Action\-Ptr@{new\-File\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{new\-File\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::new\-File\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a4da658e527460b8d5b0a263820259e97}
-
-
-Definition at line 43 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a8839c174acf071c0d9bfe450160218eb}{\index{Master\-Actions@{Master\-Actions}!new\-File\-Gui\-Ptr@{new\-File\-Gui\-Ptr}}
 \index{new\-File\-Gui\-Ptr@{new\-File\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{new\-File\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-File\-Gui}$\ast$ Master\-Actions\-::new\-File\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a8839c174acf071c0d9bfe450160218eb}
-
-
-Definition at line 74 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a114ab55c27fc183af68ebaaa86748a82}{\index{Master\-Actions@{Master\-Actions}!new\-Project\-Action\-Ptr@{new\-Project\-Action\-Ptr}}
 \index{new\-Project\-Action\-Ptr@{new\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{new\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::new\-Project\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a114ab55c27fc183af68ebaaa86748a82}
-
-
-Definition at line 45 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a78733336a3d5fd3bbb55eaf0215f0d40}{\index{Master\-Actions@{Master\-Actions}!new\-Project\-Gui\-Ptr@{new\-Project\-Gui\-Ptr}}
 \index{new\-Project\-Gui\-Ptr@{new\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{new\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf New\-Project\-Gui}$\ast$ Master\-Actions\-::new\-Project\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a78733336a3d5fd3bbb55eaf0215f0d40}
-
-
-Definition at line 75 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a6c3b1d9319fbf23f5a7cbe8305e16fc1}{\index{Master\-Actions@{Master\-Actions}!new\-Terminal\-Action\-Ptr@{new\-Terminal\-Action\-Ptr}}
 \index{new\-Terminal\-Action\-Ptr@{new\-Terminal\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{new\-Terminal\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::new\-Terminal\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a6c3b1d9319fbf23f5a7cbe8305e16fc1}
-
-
-Definition at line 44 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a4fbb50c5700fd6b66ace4cff6d3bde3e}{\index{Master\-Actions@{Master\-Actions}!north\-Tab\-Widget\-Ptr@{north\-Tab\-Widget\-Ptr}}
 \index{north\-Tab\-Widget\-Ptr@{north\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{north\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ Master\-Actions\-::north\-Tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a4fbb50c5700fd6b66ace4cff6d3bde3e}
-
-
-Definition at line 70 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a3b4d98cdbfaa8e287d420513a8df53ee}{\index{Master\-Actions@{Master\-Actions}!open\-Project\-Action\-Ptr@{open\-Project\-Action\-Ptr}}
 \index{open\-Project\-Action\-Ptr@{open\-Project\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{open\-Project\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::open\-Project\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a3b4d98cdbfaa8e287d420513a8df53ee}
-
-
-Definition at line 46 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a6caf7325dd9cb26f72c81a8c877db634}{\index{Master\-Actions@{Master\-Actions}!open\-Project\-Gui\-Ptr@{open\-Project\-Gui\-Ptr}}
 \index{open\-Project\-Gui\-Ptr@{open\-Project\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{open\-Project\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Open\-Project\-Gui}$\ast$ Master\-Actions\-::open\-Project\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a6caf7325dd9cb26f72c81a8c877db634}
-
-
-Definition at line 78 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a5b7a85c6728274eb0fcb48924044b9f6}{\index{Master\-Actions@{Master\-Actions}!output\-South\-Action\-Ptr@{output\-South\-Action\-Ptr}}
 \index{output\-South\-Action\-Ptr@{output\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{output\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::output\-South\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a5b7a85c6728274eb0fcb48924044b9f6}
-
-
-Definition at line 59 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_aa4160469d2e9a840448c49e95bcfa9e5}{\index{Master\-Actions@{Master\-Actions}!project\-West\-Action\-Ptr@{project\-West\-Action\-Ptr}}
 \index{project\-West\-Action\-Ptr@{project\-West\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{project\-West\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::project\-West\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_aa4160469d2e9a840448c49e95bcfa9e5}
-
-
-Definition at line 67 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a7936a9bf0e7418cd864b2fb1ab786d09}{\index{Master\-Actions@{Master\-Actions}!redo\-Action\-Ptr@{redo\-Action\-Ptr}}
 \index{redo\-Action\-Ptr@{redo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{redo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::redo\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a7936a9bf0e7418cd864b2fb1ab786d09}
-
-
-Definition at line 49 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a3377fe0ddc45ce50119766c8a903c039}{\index{Master\-Actions@{Master\-Actions}!run\-Action\-Ptr@{run\-Action\-Ptr}}
 \index{run\-Action\-Ptr@{run\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{run\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::run\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a3377fe0ddc45ce50119766c8a903c039}
-
-
-Definition at line 54 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_ad7ff295f2e3067697e290afc4f0fd0df}{\index{Master\-Actions@{Master\-Actions}!run\-Gui\-Ptr@{run\-Gui\-Ptr}}
 \index{run\-Gui\-Ptr@{run\-Gui\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{run\-Gui\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Run\-Gui}$\ast$ Master\-Actions\-::run\-Gui\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ad7ff295f2e3067697e290afc4f0fd0df}
-
-
-Definition at line 77 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a4e9bf6410023b508d56f235903a44b5f}{\index{Master\-Actions@{Master\-Actions}!save\-All\-Action\-Ptr@{save\-All\-Action\-Ptr}}
 \index{save\-All\-Action\-Ptr@{save\-All\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{save\-All\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::save\-All\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a4e9bf6410023b508d56f235903a44b5f}
-
-
-Definition at line 47 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_abe52f232f77f5a5bff35c8e3dadb3d80}{\index{Master\-Actions@{Master\-Actions}!set\-Project\-Config\-Action\-Ptr@{set\-Project\-Config\-Action\-Ptr}}
 \index{set\-Project\-Config\-Action\-Ptr@{set\-Project\-Config\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{set\-Project\-Config\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::set\-Project\-Config\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_abe52f232f77f5a5bff35c8e3dadb3d80}
-
-
-Definition at line 50 of file Master\-Actions.\-h.
-
-\hypertarget{class_master_actions_ae50dea40859da966d8b8a27d2069f6d7}{\index{Master\-Actions@{Master\-Actions}!south\-Tab\-Widget\-Ptr@{south\-Tab\-Widget\-Ptr}}
+\hypertarget{class_master_actions_a0cbcc4a5b82537a3f958c462bcaade46}{\index{Master\-Actions@{Master\-Actions}!south\-Tab\-Widget\-Ptr@{south\-Tab\-Widget\-Ptr}}
 \index{south\-Tab\-Widget\-Ptr@{south\-Tab\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
-\subsubsection[{south\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ Master\-Actions\-::south\-Tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ae50dea40859da966d8b8a27d2069f6d7}
-
-
-Definition at line 71 of file Master\-Actions.\-h.
-
-\hypertarget{class_master_actions_accb886e749ad46cb6373187e59921bcf}{\index{Master\-Actions@{Master\-Actions}!terminal\-Ptr@{terminal\-Ptr}}
+\subsubsection[{south\-Tab\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Output\-Gui}$\ast$ Master\-Actions\-::south\-Tab\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a0cbcc4a5b82537a3f958c462bcaade46}
+\hypertarget{class_master_actions_a540ec48ffb8bc7955f5630fac7b3865b}{\index{Master\-Actions@{Master\-Actions}!terminal\-Ptr@{terminal\-Ptr}}
 \index{terminal\-Ptr@{terminal\-Ptr}!MasterActions@{Master\-Actions}}
-\subsubsection[{terminal\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Terminal}$\ast$ Master\-Actions\-::terminal\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_accb886e749ad46cb6373187e59921bcf}
-
-
-Definition at line 76 of file Master\-Actions.\-h.
-
+\subsubsection[{terminal\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Q\-X\-Term}$\ast$ Master\-Actions\-::terminal\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a540ec48ffb8bc7955f5630fac7b3865b}
 \hypertarget{class_master_actions_ad96c9f17230e162e9a9f39a867101a53}{\index{Master\-Actions@{Master\-Actions}!terminal\-South\-Action\-Ptr@{terminal\-South\-Action\-Ptr}}
 \index{terminal\-South\-Action\-Ptr@{terminal\-South\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{terminal\-South\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::terminal\-South\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_ad96c9f17230e162e9a9f39a867101a53}
-
-
-Definition at line 60 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a23386959a2f60a89cc6ae1bff012c76c}{\index{Master\-Actions@{Master\-Actions}!undo\-Action\-Ptr@{undo\-Action\-Ptr}}
 \index{undo\-Action\-Ptr@{undo\-Action\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{undo\-Action\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Action$\ast$ Master\-Actions\-::undo\-Action\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a23386959a2f60a89cc6ae1bff012c76c}
-
-
-Definition at line 48 of file Master\-Actions.\-h.
-
 \hypertarget{class_master_actions_a84f8a14213e1f05a00f1855b41a973de}{\index{Master\-Actions@{Master\-Actions}!west\-Widget\-Ptr@{west\-Widget\-Ptr}}
 \index{west\-Widget\-Ptr@{west\-Widget\-Ptr}!MasterActions@{Master\-Actions}}
 \subsubsection[{west\-Widget\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\-Tree\-Gui}$\ast$ Master\-Actions\-::west\-Widget\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_actions_a84f8a14213e1f05a00f1855b41a973de}
-
-
-Definition at line 79 of file Master\-Actions.\-h.
-
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

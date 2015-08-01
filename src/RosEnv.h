@@ -1,12 +1,14 @@
 /* 
  * File:   RosEnv.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: Namespace to contain data utilized by the IDE.
  *
  * Created on June 16, 2015, 12:50 PM
  */
 
-#ifndef ROSENV_H
-#define	ROSENV_H
+#ifndef ROS_ENV_H
+#define	ROS_ENV_H
 
 #include <QWidget>
 #include <QString>
@@ -31,5 +33,4 @@ namespace RosEnv
     extern QString absPathToRosWs;
 }
 
-#endif	/* ROSENV_H */
-
+#endif	/* ROS_ENV_H */

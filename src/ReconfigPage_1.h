@@ -17,6 +17,7 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QFileDialog>
+#include <QMessageBox>
 #include <QString>
 #include <QDir>
 #include <QFile>
@@ -37,8 +38,6 @@ class ReconfigPage_1 : public QWidget
         QFileDialog* rosPkgLocFdPtr;
         QPushButton* vanillaPkgLocPbPtr;
         QPushButton* rosPkgLocPbPtr;
-        QString* vanillaPkgLocStrPtr;
-        QString* rosPkgLocStrPtr;
         QGridLayout* outerLayout;
         
         QString* vanillaPkgAbsPathStr;

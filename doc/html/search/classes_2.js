@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['directory',['Directory',['../class_directory.html',1,'']]]
+  ['centralgui',['CentralGui',['../class_central_gui.html',1,'']]],
+  ['custompkgsgui',['CustomPkgsGui',['../class_custom_pkgs_gui.html',1,'']]]
 ];

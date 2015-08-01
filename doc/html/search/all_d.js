@@ -49,9 +49,10 @@ var searchData=
   ['newprojectpage_5f4_2eh',['NewProjectPage_4.h',['../_new_project_page__4_8h.html',1,'']]],
   ['newprojectpage_5f4ptr',['newProjectPage_4Ptr',['../class_new_project_gui.html#a4c4e20d7598c3c61a45eb51a0332a326',1,'NewProjectGui']]],
   ['newterminalactionptr',['newTerminalActionPtr',['../class_master_actions.html#a6c3b1d9319fbf23f5a7cbe8305e16fc1',1,'MasterActions']]],
-  ['nextbtn',['nextBtn',['../class_new_file_gui.html#ad1fa3cb3fa909bf6e71672497350f980',1,'NewFileGui::nextBtn()'],['../class_new_project_gui.html#af79d8f88c0d0aa8e783240c2e6ba6e8b',1,'NewProjectGui::nextBtn()'],['../class_run_gui.html#a02bb63cd6c6d77933f98087111ce1a66',1,'RunGui::nextBtn()']]],
+  ['nextbtn',['nextBtn',['../class_help_gui.html#ac98267018158493208bc4643f5b126ad',1,'HelpGui::nextBtn()'],['../class_new_file_gui.html#ad1fa3cb3fa909bf6e71672497350f980',1,'NewFileGui::nextBtn()'],['../class_new_project_gui.html#af79d8f88c0d0aa8e783240c2e6ba6e8b',1,'NewProjectGui::nextBtn()'],['../class_reconfig_gui.html#a29777afc14786822821426a295f5d0a4',1,'ReconfigGui::nextBtn()'],['../class_run_gui.html#a02bb63cd6c6d77933f98087111ce1a66',1,'RunGui::nextBtn()']]],
   ['node',['NODE',['../class_directory.html#a1c40bdd8c03ef51a29fa097c325fe345a032f30deac97c5bda25698f881b31b16',1,'Directory']]],
   ['nodeabspathstrlstptr',['nodeAbsPathStrLstPtr',['../class_ride_env.html#a5f1bb71c6e9524f2ce403e6b1dd32244',1,'RideEnv']]],
   ['northguiptr',['northGuiPtr',['../class_central_gui.html#a9b03db6d32ac3138fde0213d41bea0af',1,'CentralGui']]],
-  ['northtabwidgetptr',['northTabWidgetPtr',['../class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a',1,'FileTreeGui::northTabWidgetPtr()'],['../class_master_actions.html#a4fbb50c5700fd6b66ace4cff6d3bde3e',1,'MasterActions::northTabWidgetPtr()'],['../class_new_file_gui.html#a101bfb66cbd62d340e55d632d07d7982',1,'NewFileGui::northTabWidgetPtr()']]]
+  ['northtabwidgetptr',['northTabWidgetPtr',['../class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a',1,'FileTreeGui::northTabWidgetPtr()'],['../class_master_actions.html#a4fbb50c5700fd6b66ace4cff6d3bde3e',1,'MasterActions::northTabWidgetPtr()'],['../class_new_file_gui.html#a101bfb66cbd62d340e55d632d07d7982',1,'NewFileGui::northTabWidgetPtr()']]],
+  ['numsinuselstptr',['numsInUseLstPtr',['../class_r_process.html#a094c4db859cde3c5965abb54cfdd3090',1,'RProcess']]]
 ];

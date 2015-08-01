@@ -34,8 +34,19 @@ class FTDirMenu : public QMenu
         ;
         
     public:
+        /**
+         * Constructor.
+         */
         FTDirMenu();
+        
+        /**
+         * Initialize the directory menu.
+         */
         void initMenu();
+        
+        /**
+         * Destructor.
+         */
         ~FTDirMenu();
 };
 

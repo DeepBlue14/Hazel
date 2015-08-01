@@ -2,7 +2,7 @@
  * File:   ModifyCMakeLists.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: This class modifies an existing CMakeLists.txt file.
  *
  * Note: Inherit from class RideFile? or have-a child of RideFile?
  * 
@@ -40,10 +40,38 @@ class ModifyCMakeLists : public RFile
         ;
         
     public:
+        /**
+         * Constructor.
+         */
         ModifyCMakeLists();
+        
+        /**
+         * 
+         * 
+         * @param absPathToCML
+         * @param fileNameAndExt
+         */
         void addFirstSource(QString* absPathToCML, QString* fileNameAndExt);
+        
+        /**
+         * 
+         * 
+         * @param absPathToCML
+         * @param fileNameAndExt
+         */
         void addNextSource(QString* absPathToCML, QString* fileNameAndExt);
+        
+        /**
+         * 
+         * 
+         * @param absPathToCML
+         * @param fileNameAndExt
+         */
         void rmSource(QString* absPathToCML, QString* fileNameAndExt);
+        
+        /**
+         * Destructor.
+         */
         ~ModifyCMakeLists();
 };
 

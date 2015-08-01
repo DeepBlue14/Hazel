@@ -1,5 +1,3 @@
-#include <qt4/QtGui/qmessagebox.h>
-
 #include "ReconfigPage_1.h"
 
 
@@ -15,8 +13,8 @@ ReconfigPage_1::ReconfigPage_1(QWidget* parent) : QWidget(parent)
     rosPkgLocFdPtr = new QFileDialog();
     vanillaPkgLocPbPtr = new QPushButton("Select...");
     rosPkgLocPbPtr = new QPushButton("Select...");
-    vanillaPkgLocStrPtr = new QString("null");
-    rosPkgLocStrPtr = new QString("null");
+    vanillaPkgAbsPathStr = new QString("null");
+    rosPkgAbsPathStr = new QString("null");
     
     connect(vanillaPkgLocPbPtr, SIGNAL(released()), this, SLOT(handleVanillaPkgLocPbPtrSlot()));
     connect(rosPkgLocPbPtr, SIGNAL(released()), this, SLOT(handleRosPkgLocPbPtrPb()));
@@ -51,13 +49,13 @@ void ReconfigPage_1::handleRosPkgLocPbPtrPb()
 
 void ReconfigPage_1::setVanillaPkgAbsPathStr(QString* rosPkgAbsPathStr)
 {
-    this->rosPkgAbsPathStr = rosPkgAbsPathStr;
+    this->vanillaPkgAbsPathStr = rosPkgAbsPathStr;
 }
 
 
 QString* ReconfigPage_1::getVanillaPkgAbsPathStr()
 {
-    return rosPkgAbsPathStr;
+    return vanillaPkgAbsPathStr;
 }
 
 

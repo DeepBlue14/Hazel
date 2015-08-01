@@ -5,22 +5,10 @@
 
 {\ttfamily \#include $<$File\-Gui.\-h$>$}
 
-
-
-Inheritance diagram for File\-Gui\-:\nopagebreak
-\begin{figure}[H]
+Inheritance diagram for File\-Gui\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=162pt]{class_file_gui__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for File\-Gui\-:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=162pt]{class_file_gui__coll__graph}
+\includegraphics[height=2.000000cm]{class_file_gui}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -37,6 +25,8 @@ void \hyperlink{class_file_gui_a24940e7e57f49e81c451f137acfbe60a}{line\-Number\-
 int \hyperlink{class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f}{line\-Number\-Area\-Width} ()
 \item 
 void \hyperlink{class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e}{resize\-Event} (Q\-Resize\-Event $\ast$event)
+\item 
+Q\-String $\ast$ \hyperlink{class_file_gui_a0d31bd4f4169eff45e59fa79ba4e98f9}{to\-String} ()
 \item 
 \hyperlink{class_file_gui_a276b681a3fbd10e083463e32a361461c}{$\sim$\-File\-Gui} ()
 \end{DoxyCompactItemize}
@@ -59,7 +49,7 @@ void \hyperlink{class_file_gui_ae1ce22662fb60a146101e8768acca3f1}{update\-Line\-
 \subsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-Q\-String \hyperlink{class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff}{text\-Under\-Cursor} () const 
+Q\-String \hyperlink{class_file_gui_a3d263213e8a442878876eef041325493}{word\-Under\-Cursor} () const 
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
 \begin{DoxyCompactItemize}
@@ -70,13 +60,6 @@ Q\-Completer $\ast$ \hyperlink{class_file_gui_a71dfac2e67bf84af494667901b51ddc9}
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-
-
-Definition at line 30 of file File\-Gui.\-h.
-
-
-
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{class_file_gui_ac7c9b0cdbb2e89190a13318ec84c70a3}{\index{File\-Gui@{File\-Gui}!File\-Gui@{File\-Gui}}
 \index{File\-Gui@{File\-Gui}!FileGui@{File\-Gui}}
@@ -85,22 +68,6 @@ Definition at line 30 of file File\-Gui.\-h.
 \item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )}}\label{class_file_gui_ac7c9b0cdbb2e89190a13318ec84c70a3}
-
-
-Definition at line 14 of file File\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_ac7c9b0cdbb2e89190a13318ec84c70a3_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_a276b681a3fbd10e083463e32a361461c}{\index{File\-Gui@{File\-Gui}!$\sim$\-File\-Gui@{$\sim$\-File\-Gui}}
 \index{$\sim$\-File\-Gui@{$\sim$\-File\-Gui}!FileGui@{File\-Gui}}
 \subsubsection[{$\sim$\-File\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}File\-Gui\-::$\sim$\-File\-Gui (
@@ -108,10 +75,6 @@ Here is the call graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_file_gui_a276b681a3fbd10e083463e32a361461c}
-
-
-Definition at line 262 of file File\-Gui.\-cpp.
-
 
 
 \subsection{Member Function Documentation}
@@ -122,22 +85,6 @@ Definition at line 262 of file File\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 ) const}}\label{class_file_gui_a741c813e12ed8105bc9b30aa0a48c4d7}
-
-
-Definition at line 50 of file File\-Gui.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_a741c813e12ed8105bc9b30aa0a48c4d7_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_a04e7291acb7167a70377f53dd7bd47f4}{\index{File\-Gui@{File\-Gui}!highlight\-Current\-Line@{highlight\-Current\-Line}}
 \index{highlight\-Current\-Line@{highlight\-Current\-Line}!FileGui@{File\-Gui}}
 \subsubsection[{highlight\-Current\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::highlight\-Current\-Line (
@@ -145,22 +92,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_gui_a04e7291acb7167a70377f53dd7bd47f4}
-
-
-Definition at line 201 of file File\-Gui.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=340pt]{class_file_gui_a04e7291acb7167a70377f53dd7bd47f4_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_a5b90c98b648fc77ef8474152e6632af3}{\index{File\-Gui@{File\-Gui}!insert\-Completion@{insert\-Completion}}
 \index{insert\-Completion@{insert\-Completion}!FileGui@{File\-Gui}}
 \subsubsection[{insert\-Completion}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::insert\-Completion (
@@ -168,22 +99,6 @@ Here is the caller graph for this function\-:
 \item[{const Q\-String \&}]{completion}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_gui_a5b90c98b648fc77ef8474152e6632af3}
-
-
-Definition at line 56 of file File\-Gui.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_a5b90c98b648fc77ef8474152e6632af3_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_aed2ed675e3d0eec814fda21479babb36}{\index{File\-Gui@{File\-Gui}!key\-Press\-Event@{key\-Press\-Event}}
 \index{key\-Press\-Event@{key\-Press\-Event}!FileGui@{File\-Gui}}
 \subsubsection[{key\-Press\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::key\-Press\-Event (
@@ -191,45 +106,13 @@ Here is the caller graph for this function\-:
 \item[{Q\-Key\-Event $\ast$}]{e}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_file_gui_aed2ed675e3d0eec814fda21479babb36}
-!! this inserts the closing parens !!! 
-
-Definition at line 75 of file File\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_aed2ed675e3d0eec814fda21479babb36_cgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_file_gui_a24940e7e57f49e81c451f137acfbe60a}{\index{File\-Gui@{File\-Gui}!line\-Number\-Area\-Paint\-Event@{line\-Number\-Area\-Paint\-Event}}
+!! this inserts the closing parens !!! \hypertarget{class_file_gui_a24940e7e57f49e81c451f137acfbe60a}{\index{File\-Gui@{File\-Gui}!line\-Number\-Area\-Paint\-Event@{line\-Number\-Area\-Paint\-Event}}
 \index{line\-Number\-Area\-Paint\-Event@{line\-Number\-Area\-Paint\-Event}!FileGui@{File\-Gui}}
 \subsubsection[{line\-Number\-Area\-Paint\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::line\-Number\-Area\-Paint\-Event (
 \begin{DoxyParamCaption}
 \item[{Q\-Paint\-Event $\ast$}]{event}
 \end{DoxyParamCaption}
 )}}\label{class_file_gui_a24940e7e57f49e81c451f137acfbe60a}
-
-
-Definition at line 232 of file File\-Gui.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_a24940e7e57f49e81c451f137acfbe60a_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f}{\index{File\-Gui@{File\-Gui}!line\-Number\-Area\-Width@{line\-Number\-Area\-Width}}
 \index{line\-Number\-Area\-Width@{line\-Number\-Area\-Width}!FileGui@{File\-Gui}}
 \subsubsection[{line\-Number\-Area\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int File\-Gui\-::line\-Number\-Area\-Width (
@@ -237,22 +120,6 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f}
-
-
-Definition at line 158 of file File\-Gui.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_af5ea5edc018ed2ba6685ae6e5244483f_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e}{\index{File\-Gui@{File\-Gui}!resize\-Event@{resize\-Event}}
 \index{resize\-Event@{resize\-Event}!FileGui@{File\-Gui}}
 \subsubsection[{resize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::resize\-Event (
@@ -260,22 +127,6 @@ Here is the caller graph for this function\-:
 \item[{Q\-Resize\-Event $\ast$}]{event}
 \end{DoxyParamCaption}
 )}}\label{class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e}
-
-
-Definition at line 192 of file File\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_a704d37c450e30eeb506a89f7e5b7a79e_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_ab95b0b24bfee919e33bcf6c623c72842}{\index{File\-Gui@{File\-Gui}!set\-Completer@{set\-Completer}}
 \index{set\-Completer@{set\-Completer}!FileGui@{File\-Gui}}
 \subsubsection[{set\-Completer}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::set\-Completer (
@@ -283,57 +134,13 @@ Here is the call graph for this function\-:
 \item[{Q\-Completer $\ast$}]{c}
 \end{DoxyParamCaption}
 )}}\label{class_file_gui_ab95b0b24bfee919e33bcf6c623c72842}
-
-
-Definition at line 31 of file File\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_ab95b0b24bfee919e33bcf6c623c72842_icgraph}
-\end{center}
-\end{figure}
-
-
-\hypertarget{class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff}{\index{File\-Gui@{File\-Gui}!text\-Under\-Cursor@{text\-Under\-Cursor}}
-\index{text\-Under\-Cursor@{text\-Under\-Cursor}!FileGui@{File\-Gui}}
-\subsubsection[{text\-Under\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String File\-Gui\-::text\-Under\-Cursor (
+\hypertarget{class_file_gui_a0d31bd4f4169eff45e59fa79ba4e98f9}{\index{File\-Gui@{File\-Gui}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!FileGui@{File\-Gui}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ File\-Gui\-::to\-String (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff}
-
-
-Definition at line 67 of file File\-Gui.\-cpp.
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_a8b5e081f66c2829bd3eb6ce27c5f04ff_icgraph}
-\end{center}
-\end{figure}
-
-
+)}}\label{class_file_gui_a0d31bd4f4169eff45e59fa79ba4e98f9}
 \hypertarget{class_file_gui_ae1ce22662fb60a146101e8768acca3f1}{\index{File\-Gui@{File\-Gui}!update\-Line\-Number\-Area@{update\-Line\-Number\-Area}}
 \index{update\-Line\-Number\-Area@{update\-Line\-Number\-Area}!FileGui@{File\-Gui}}
 \subsubsection[{update\-Line\-Number\-Area}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::update\-Line\-Number\-Area (
@@ -342,34 +149,6 @@ Here is the caller graph for this function\-:
 \item[{int}]{dy}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_gui_ae1ce22662fb60a146101e8768acca3f1}
-
-
-Definition at line 180 of file File\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_ae1ce22662fb60a146101e8768acca3f1_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_ae1ce22662fb60a146101e8768acca3f1_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_file_gui_a498aa60814cc9265695e656e9b7a2e87}{\index{File\-Gui@{File\-Gui}!update\-Line\-Number\-Area\-Width@{update\-Line\-Number\-Area\-Width}}
 \index{update\-Line\-Number\-Area\-Width@{update\-Line\-Number\-Area\-Width}!FileGui@{File\-Gui}}
 \subsubsection[{update\-Line\-Number\-Area\-Width}]{\setlength{\rightskip}{0pt plus 5cm}void File\-Gui\-::update\-Line\-Number\-Area\-Width (
@@ -377,51 +156,22 @@ Here is the caller graph for this function\-:
 \item[{int}]{new\-Block\-Count}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_file_gui_a498aa60814cc9265695e656e9b7a2e87}
-
-
-Definition at line 174 of file File\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_a498aa60814cc9265695e656e9b7a2e87_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_file_gui_a498aa60814cc9265695e656e9b7a2e87_icgraph}
-\end{center}
-\end{figure}
-
-
+\hypertarget{class_file_gui_a3d263213e8a442878876eef041325493}{\index{File\-Gui@{File\-Gui}!word\-Under\-Cursor@{word\-Under\-Cursor}}
+\index{word\-Under\-Cursor@{word\-Under\-Cursor}!FileGui@{File\-Gui}}
+\subsubsection[{word\-Under\-Cursor}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String File\-Gui\-::word\-Under\-Cursor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_gui_a3d263213e8a442878876eef041325493}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_file_gui_a71dfac2e67bf84af494667901b51ddc9}{\index{File\-Gui@{File\-Gui}!c@{c}}
 \index{c@{c}!FileGui@{File\-Gui}}
 \subsubsection[{c}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Completer$\ast$ File\-Gui\-::c\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_gui_a71dfac2e67bf84af494667901b51ddc9}
-
-
-Definition at line 37 of file File\-Gui.\-h.
-
 \hypertarget{class_file_gui_a4fa030b7bda34eeb961eac7324f28b88}{\index{File\-Gui@{File\-Gui}!line\-Number\-Area@{line\-Number\-Area}}
 \index{line\-Number\-Area@{line\-Number\-Area}!FileGui@{File\-Gui}}
 \subsubsection[{line\-Number\-Area}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Widget$\ast$ File\-Gui\-::line\-Number\-Area\hspace{0.3cm}{\ttfamily [private]}}}\label{class_file_gui_a4fa030b7bda34eeb961eac7324f28b88}
-
-
-Definition at line 35 of file File\-Gui.\-h.
-
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

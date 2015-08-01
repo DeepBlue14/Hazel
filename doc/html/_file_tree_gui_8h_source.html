@@ -21,12 +21,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ride1.jpg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RIDE
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">ROS Integrated Development Environment</div>
+   <div id="projectbrief">Ros Integrated Development Invironment</div>
   </td>
  </tr>
  </tbody>
@@ -122,50 +121,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tree_item_icon_init_8h.html">TreeItemIconInit.h</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_tree_gui.html">FileTreeGui</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">   40</a></span>&#160;        <span class="keyword">static</span> QTreeWidget* <a class="code" href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">treePtr</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">   41</a></span>&#160;        <span class="keyword">static</span> QSplitter* <a class="code" href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">splitter</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">   43</a></span>&#160;        QGridLayout* <a class="code" href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">outerLayout</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">   45</a></span>&#160;        <span class="keyword">static</span> QString* <a class="code" href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">projectRootAbsPathStrPtr</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">   46</a></span>&#160;        QTabWidget* <a class="code" href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">northTabWidgetPtr</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> handleShowDirectorySlot(QTreeWidgetItem* item, <span class="keywordtype">int</span> <span class="comment">/*column*/</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> handleRightClickSlot(<span class="keyword">const</span> QPoint&amp;);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_file_tree_gui.html">FileTreeGui</a>(QWidget* parent = 0);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> initTree();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> addChildren(QTreeWidgetItem* item, QString filePath);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">static</span> QString* getProjectRootAbsPathStrPtr();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> refresh();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        QTabWidget* getNorthTabWidgetPtr();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        ~<a class="code" href="class_file_tree_gui.html">FileTreeGui</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* FILE_TREE_GUI_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_t_project_menu_8h.html">FTProjectMenu.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_t_dir_menu_8h.html">FTDirMenu.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_f_t_file_menu_8h.html">FTFileMenu.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_link_file_with_gui_8h.html">LinkFileWithGui.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_windows_console_text_8h.html">WindowsConsoleText.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_unix_console_text_8h.html">UnixConsoleText.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = WindowsConsoleText;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#elif __APPLE</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#elif __linux</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_file_tree_gui.html">FileTreeGui</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">   54</a></span>&#160;        <span class="keyword">static</span> QTreeWidget* <a class="code" href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">treePtr</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">   55</a></span>&#160;        <span class="keyword">static</span> QSplitter* <a class="code" href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">splitter</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">   57</a></span>&#160;        QGridLayout* <a class="code" href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">outerLayout</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">   59</a></span>&#160;        <span class="keyword">static</span> QString* <a class="code" href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">projectRootAbsPathStrPtr</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#a51591bd328287179146de851e7263b70">   60</a></span>&#160;        <span class="keyword">static</span> QString* <a class="code" href="class_file_tree_gui.html#a51591bd328287179146de851e7263b70">projectNameStrPtr</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">   61</a></span>&#160;        QTabWidget* <a class="code" href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">northTabWidgetPtr</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> handleShowDirectorySlot(QTreeWidgetItem* item, <span class="keywordtype">int</span> <span class="comment">/*column*/</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> handleRightClickSlot(<span class="keyword">const</span> QPoint&amp;);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> handleDoubleClickSlot(<span class="keyword">const</span> QModelIndex&amp; mIndex);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_file_tree_gui.html">FileTreeGui</a>(QWidget* parent = 0);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> initTree();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> addChildren(QTreeWidgetItem* item, QString filePath);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">static</span> QString* getProjectRootAbsPathStrPtr();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> setProjectNameStrPtr(QString* projectNameStrPtr);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">static</span> QString* getProjectNameStrPtr();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> refresh();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        QTabWidget* getNorthTabWidgetPtr();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        QString* <a class="code" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        ~<a class="code" href="class_file_tree_gui.html">FileTreeGui</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* FILE_TREE_GUI_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="_tree_item_icon_init_8h_html"><div class="ttname"><a href="_tree_item_icon_init_8h.html">TreeItemIconInit.h</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_a43e8677ba8c50059d003f298b631e131"><div class="ttname"><a href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">FileTreeGui::splitter</a></div><div class="ttdeci">static QSplitter * splitter</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00041">FileTreeGui.h:41</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_aaf8b63a4775b1d46d635cdaef94b979a"><div class="ttname"><a href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">FileTreeGui::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00043">FileTreeGui.h:43</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_ae44c6d73787d55eae9bed8e16ff9f34a"><div class="ttname"><a href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">FileTreeGui::northTabWidgetPtr</a></div><div class="ttdeci">QTabWidget * northTabWidgetPtr</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00046">FileTreeGui.h:46</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html"><div class="ttname"><a href="class_file_tree_gui.html">FileTreeGui</a></div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00035">FileTreeGui.h:35</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_a9ce991f8f95f583aa5fb1bec7a9bcd4c"><div class="ttname"><a href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">FileTreeGui::projectRootAbsPathStrPtr</a></div><div class="ttdeci">static QString * projectRootAbsPathStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00045">FileTreeGui.h:45</a></div></div>
-<div class="ttc" id="class_file_tree_gui_html_a46dee8099b8a67b854a57a761528b493"><div class="ttname"><a href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">FileTreeGui::treePtr</a></div><div class="ttdeci">static QTreeWidget * treePtr</div><div class="ttdef"><b>Definition:</b> <a href="_file_tree_gui_8h_source.html#l00040">FileTreeGui.h:40</a></div></div>
+<div class="ttc" id="class_file_tree_gui_html_a43e8677ba8c50059d003f298b631e131"><div class="ttname"><a href="class_file_tree_gui.html#a43e8677ba8c50059d003f298b631e131">FileTreeGui::splitter</a></div><div class="ttdeci">static QSplitter * splitter</div><div class="ttdef"><b>Definition:</b> FileTreeGui.h:55</div></div>
+<div class="ttc" id="_link_file_with_gui_8h_html"><div class="ttname"><a href="_link_file_with_gui_8h.html">LinkFileWithGui.h</a></div></div>
+<div class="ttc" id="class_file_tree_gui_html_aaf8b63a4775b1d46d635cdaef94b979a"><div class="ttname"><a href="class_file_tree_gui.html#aaf8b63a4775b1d46d635cdaef94b979a">FileTreeGui::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> FileTreeGui.h:57</div></div>
+<div class="ttc" id="class_file_tree_gui_html_ae44c6d73787d55eae9bed8e16ff9f34a"><div class="ttname"><a href="class_file_tree_gui.html#ae44c6d73787d55eae9bed8e16ff9f34a">FileTreeGui::northTabWidgetPtr</a></div><div class="ttdeci">QTabWidget * northTabWidgetPtr</div><div class="ttdef"><b>Definition:</b> FileTreeGui.h:61</div></div>
+<div class="ttc" id="class_file_tree_gui_html"><div class="ttname"><a href="class_file_tree_gui.html">FileTreeGui</a></div><div class="ttdef"><b>Definition:</b> FileTreeGui.h:49</div></div>
+<div class="ttc" id="_ride_env_8cpp_html_a676f4ed0a423d771b78df4c02b3ae639"><div class="ttname"><a href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a></div><div class="ttdeci">QString * toString()</div><div class="ttdef"><b>Definition:</b> RideEnv.cpp:66</div></div>
+<div class="ttc" id="_windows_console_text_8h_html"><div class="ttname"><a href="_windows_console_text_8h.html">WindowsConsoleText.h</a></div></div>
+<div class="ttc" id="_f_t_dir_menu_8h_html"><div class="ttname"><a href="_f_t_dir_menu_8h.html">FTDirMenu.h</a></div></div>
+<div class="ttc" id="class_file_tree_gui_html_a9ce991f8f95f583aa5fb1bec7a9bcd4c"><div class="ttname"><a href="class_file_tree_gui.html#a9ce991f8f95f583aa5fb1bec7a9bcd4c">FileTreeGui::projectRootAbsPathStrPtr</a></div><div class="ttdeci">static QString * projectRootAbsPathStrPtr</div><div class="ttdef"><b>Definition:</b> FileTreeGui.h:59</div></div>
+<div class="ttc" id="class_file_tree_gui_html_a46dee8099b8a67b854a57a761528b493"><div class="ttname"><a href="class_file_tree_gui.html#a46dee8099b8a67b854a57a761528b493">FileTreeGui::treePtr</a></div><div class="ttdeci">static QTreeWidget * treePtr</div><div class="ttdef"><b>Definition:</b> FileTreeGui.h:54</div></div>
+<div class="ttc" id="class_file_tree_gui_html_a51591bd328287179146de851e7263b70"><div class="ttname"><a href="class_file_tree_gui.html#a51591bd328287179146de851e7263b70">FileTreeGui::projectNameStrPtr</a></div><div class="ttdeci">static QString * projectNameStrPtr</div><div class="ttdef"><b>Definition:</b> FileTreeGui.h:60</div></div>
+<div class="ttc" id="_f_t_file_menu_8h_html"><div class="ttname"><a href="_f_t_file_menu_8h.html">FTFileMenu.h</a></div></div>
+<div class="ttc" id="_unix_console_text_8h_html"><div class="ttname"><a href="_unix_console_text_8h.html">UnixConsoleText.h</a></div></div>
+<div class="ttc" id="_f_t_project_menu_8h_html"><div class="ttname"><a href="_f_t_project_menu_8h.html">FTProjectMenu.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 15:46:11 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

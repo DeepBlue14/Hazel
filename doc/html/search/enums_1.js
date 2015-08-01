@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['filelang',['FileLang',['../class_ride_file.html#af2f1eb81fe20b91d4d3b8d96e457380a',1,'RideFile']]],
-  ['filetype',['FileType',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5',1,'RideFile']]]
+  ['filelang',['FileLang',['../class_r_file.html#a2dd876f68f419cae13ab815b002e33fb',1,'RFile']]],
+  ['filetype',['FileType',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9',1,'RFile']]]
 ];

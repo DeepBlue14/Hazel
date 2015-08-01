@@ -42,16 +42,79 @@ class MasterToolBars : public QWidget
         ;
     
     public:
+        /**
+         * 
+         * 
+         * @param parent
+         */
         MasterToolBars(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param masterActionsPtr
+         */
         void setMasterActionsPtr(MasterActions* masterActionsPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         MasterActions* getMasterActionsPtr();
+        
+        /**
+         * 
+         * 
+         * @param toolbarPtr
+         */
         void initNorthGroupOneToolBar(QToolBar* toolbarPtr); 
+        
+        /**
+         * 
+         * 
+         * @param toolbarPtr
+         */
         void initNorthGroupTwoToolBar(QToolBar* toolbarPtr);
+        
+        /**
+         * 
+         * 
+         * @param toolbarPtr
+         */
         void initNorthGroupThreeToolBar(QToolBar* toolbarPtr);
+        
+        /**
+         * 
+         * 
+         * @param toolbarPtr
+         */
         void initSouthGroupOneToolBar(QToolBar* toolbarPtr);
+        
+        /**
+         * 
+         * 
+         * @param toolbarPtr
+         */
         void initEastGroupOneToolBar(QToolBar* toolbarPtr);
+        
+        /**
+         * 
+         * 
+         * @param toolbarPtr
+         */
         void initWestGroupOneToolBar(QToolBar* toolbarPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~MasterToolBars();
             
 };

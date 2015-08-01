@@ -1,7 +1,7 @@
 var searchData=
 [
   ['centralgui',['CentralGui',['../class_central_gui.html#aba31873e4b5d4bf9fd1e563601efc4e7',1,'CentralGui']]],
-  ['closefile',['closeFile',['../class_ride_file.html#a085e690a03feb6293c2be03213af4312',1,'RideFile']]],
+  ['closefile',['closeFile',['../class_r_file.html#a6260a0ec48be61165cd82ae263e0645b',1,'RFile']]],
   ['completer',['completer',['../class_file_gui.html#a741c813e12ed8105bc9b30aa0a48c4d7',1,'FileGui']]],
   ['connecttobuildaction',['connectToBuildAction',['../class_master_actions.html#a9625507b1a412bd95bdc13ae54bc68a2',1,'MasterActions']]],
   ['connecttocleanandbuildaction',['connectToCleanAndBuildAction',['../class_master_actions.html#a86232c67d3599a28c6b5238eb6dd4e88',1,'MasterActions']]],
@@ -21,5 +21,6 @@ var searchData=
   ['connecttosetprojectconfigaction',['connectToSetProjectConfigAction',['../class_master_actions.html#a5e25d464651d37d48c7e6a4714130dd7',1,'MasterActions']]],
   ['connecttoterminalsouthaction',['connectToTerminalSouthAction',['../class_master_actions.html#a9f7d8a2bd25c903cbb62be5e9a9ce8fc',1,'MasterActions']]],
   ['connecttoundoaction',['connectToUndoAction',['../class_master_actions.html#a6590f8772608e4d99efbf16ef9625b78',1,'MasterActions']]],
-  ['cyan',['cyan',['../namespace_unix_console_text.html#ab00fc9eacb44b0bafacffb506092bcbe',1,'UnixConsoleText::cyan()'],['../_windows_console_text_8cpp.html#adfc34281f9233dc05e03bf3414335671',1,'cyan():&#160;WindowsConsoleText.cpp'],['../namespace_windows_console_text.html#a4b1c94cd1e4282defb9baa7bf368fc64',1,'WindowsConsoleText::cyan()']]]
+  ['custompkgsgui',['CustomPkgsGui',['../class_custom_pkgs_gui.html#afb9b77b926ee4dda199e400ac48d34c2',1,'CustomPkgsGui']]],
+  ['cyan',['cyan',['../namespace_unix_console_text.html#a50dbc6f26051f8b6a7e5b8583f5a1a5b',1,'UnixConsoleText::cyan()'],['../namespace_windows_console_text.html#a0cd99007708e3636ffbb80689ccbf4cf',1,'WindowsConsoleText::cyan()']]]
 ];

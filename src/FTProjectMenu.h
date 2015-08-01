@@ -34,8 +34,19 @@ class FTProjectMenu : public QMenu
         ;
         
     public:
+        /**
+         * Constructor.
+         */
         FTProjectMenu();
+        
+        /**
+         * Inits the menu for an entire RIDE project.
+         */
         void initMenu();
+        
+        /**
+         * Destructor.
+         */
         ~FTProjectMenu();
 };
 

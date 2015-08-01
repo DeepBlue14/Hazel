@@ -28,8 +28,21 @@ class ToRosMake : public ToCMake
         ;
     
     public:
+        /**
+         * Constructor.
+         */
         ToRosMake();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~ToRosMake();
 };
 

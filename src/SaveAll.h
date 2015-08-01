@@ -2,7 +2,8 @@
  * File:   SaveAll.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: This namespace saves all changes in the UI files to the
+ *                   physical files.
  *
  * Created on May 25, 2015, 3:12 PM
  */
@@ -37,9 +38,30 @@ namespace SaveAll
 {
     extern QVector<RFile*> rideFilePtrVec;
     
+    /**
+     * Add file to the vector of those which are updatable.
+     * 
+     * @param rideFilePtr reference to file.
+     */
     void pushToRideFilePtrVec(RFile* rideFilePtr);
+    
+    /**
+     * Remove specified file from the vector of those currently updatable.
+     * 
+     * @param rideFilePtr reference to file.
+     */
     void removeFromRideFileVec(RFile* rideFilePtr);
+    
+    /**
+     * Reference to vector of updatable files in the project(s).
+     * 
+     * @return the vector.
+     */
     QVector<RFile*> getRideFilePtrVec();
+    
+    /**
+     * saves all changes in the UI files to the physical files.
+     */
     void save();
 };
 

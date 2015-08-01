@@ -21,12 +21,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ride1.jpg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RIDE
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">ROS Integrated Development Environment</div>
+   <div id="projectbrief">Ros Integrated Development Invironment</div>
   </td>
  </tr>
  </tbody>
@@ -114,52 +113,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_new_file_page__1.html">NewFilePage_1</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#acb912634d0accb1d1fc2cb1f5c2dea78">   31</a></span>&#160;        QStringList* <a class="code" href="class_new_file_page__1.html#acb912634d0accb1d1fc2cb1f5c2dea78">langsStrLstPtr</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964">   32</a></span>&#160;        QVector&lt;QStringList*&gt; <a class="code" href="class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964">fileTypeStrLstPtrVec</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a33c1a3f115a92a04b0f7344cd1b14a57">   33</a></span>&#160;        QListWidget* <a class="code" href="class_new_file_page__1.html#a33c1a3f115a92a04b0f7344cd1b14a57">langsLwPtr</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72">   34</a></span>&#160;        QListWidget* <a class="code" href="class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72">fileTypeLwPtr</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a161e24cf061ed28e5ee5f61e5087a9fc">   36</a></span>&#160;        QGridLayout* <a class="code" href="class_new_file_page__1.html#a161e24cf061ed28e5ee5f61e5087a9fc">outerLayoutPtr</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a">   38</a></span>&#160;        QString* <a class="code" href="class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a">langStrPtr</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#ac03bd12c5904b2a858137bf7bb93502c">   39</a></span>&#160;        QString* <a class="code" href="class_new_file_page__1.html#ac03bd12c5904b2a858137bf7bb93502c">fileTypeStrPtr</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> handleSwapOptionsSlot();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_new_file_page__1.html">NewFilePage_1</a>(QWidget* parent = 0);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> setLangStrPtr();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        QString* getLangStrPtr();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> setFileTypeStrPtr();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        QString* getFileTypeStrPtr();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> triggerMutators();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        QString* <a class="code" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        ~<a class="code" href="class_new_file_page__1.html">NewFilePage_1</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* NEW_FILE_PAGE_1_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_new_file_page__1_html_ac03bd12c5904b2a858137bf7bb93502c"><div class="ttname"><a href="class_new_file_page__1.html#ac03bd12c5904b2a858137bf7bb93502c">NewFilePage_1::fileTypeStrPtr</a></div><div class="ttdeci">QString * fileTypeStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00039">NewFilePage_1.h:39</a></div></div>
-<div class="ttc" id="class_new_file_page__1_html"><div class="ttname"><a href="class_new_file_page__1.html">NewFilePage_1</a></div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00026">NewFilePage_1.h:26</a></div></div>
-<div class="ttc" id="class_new_file_page__1_html_a33c1a3f115a92a04b0f7344cd1b14a57"><div class="ttname"><a href="class_new_file_page__1.html#a33c1a3f115a92a04b0f7344cd1b14a57">NewFilePage_1::langsLwPtr</a></div><div class="ttdeci">QListWidget * langsLwPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00033">NewFilePage_1.h:33</a></div></div>
-<div class="ttc" id="class_new_file_page__1_html_a28c75fb5624badef97ed17d38f0c598a"><div class="ttname"><a href="class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a">NewFilePage_1::langStrPtr</a></div><div class="ttdeci">QString * langStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00038">NewFilePage_1.h:38</a></div></div>
-<div class="ttc" id="_ride_env_8cpp_html_a676f4ed0a423d771b78df4c02b3ae639"><div class="ttname"><a href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a></div><div class="ttdeci">QString * toString()</div><div class="ttdef"><b>Definition:</b> <a href="_ride_env_8cpp_source.html#l00057">RideEnv.cpp:57</a></div></div>
-<div class="ttc" id="class_new_file_page__1_html_a5c348b3e762867bc02861bd317eb4964"><div class="ttname"><a href="class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964">NewFilePage_1::fileTypeStrLstPtrVec</a></div><div class="ttdeci">QVector&lt; QStringList * &gt; fileTypeStrLstPtrVec</div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00032">NewFilePage_1.h:32</a></div></div>
-<div class="ttc" id="class_new_file_page__1_html_acb912634d0accb1d1fc2cb1f5c2dea78"><div class="ttname"><a href="class_new_file_page__1.html#acb912634d0accb1d1fc2cb1f5c2dea78">NewFilePage_1::langsStrLstPtr</a></div><div class="ttdeci">QStringList * langsStrLstPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00031">NewFilePage_1.h:31</a></div></div>
-<div class="ttc" id="class_new_file_page__1_html_a161e24cf061ed28e5ee5f61e5087a9fc"><div class="ttname"><a href="class_new_file_page__1.html#a161e24cf061ed28e5ee5f61e5087a9fc">NewFilePage_1::outerLayoutPtr</a></div><div class="ttdeci">QGridLayout * outerLayoutPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00036">NewFilePage_1.h:36</a></div></div>
-<div class="ttc" id="class_new_file_page__1_html_a4886ed76812d01820e2868006b8cde72"><div class="ttname"><a href="class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72">NewFilePage_1::fileTypeLwPtr</a></div><div class="ttdeci">QListWidget * fileTypeLwPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_file_page__1_8h_source.html#l00034">NewFilePage_1.h:34</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_windows_console_text_8h.html">WindowsConsoleText.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_unix_console_text_8h.html">UnixConsoleText.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = WindowsConsoleText;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#elif __APPLE</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#elif __linux</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_new_file_page__1.html">NewFilePage_1</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#acb912634d0accb1d1fc2cb1f5c2dea78">   42</a></span>&#160;        QStringList* <a class="code" href="class_new_file_page__1.html#acb912634d0accb1d1fc2cb1f5c2dea78">langsStrLstPtr</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964">   43</a></span>&#160;        QVector&lt;QStringList*&gt; <a class="code" href="class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964">fileTypeStrLstPtrVec</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a33c1a3f115a92a04b0f7344cd1b14a57">   44</a></span>&#160;        QListWidget* <a class="code" href="class_new_file_page__1.html#a33c1a3f115a92a04b0f7344cd1b14a57">langsLwPtr</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72">   45</a></span>&#160;        QListWidget* <a class="code" href="class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72">fileTypeLwPtr</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a161e24cf061ed28e5ee5f61e5087a9fc">   47</a></span>&#160;        QGridLayout* <a class="code" href="class_new_file_page__1.html#a161e24cf061ed28e5ee5f61e5087a9fc">outerLayoutPtr</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a">   49</a></span>&#160;        QString* <a class="code" href="class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a">langStrPtr</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_new_file_page__1.html#ac03bd12c5904b2a858137bf7bb93502c">   50</a></span>&#160;        QString* <a class="code" href="class_new_file_page__1.html#ac03bd12c5904b2a858137bf7bb93502c">fileTypeStrPtr</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> handleSwapOptionsSlot();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_new_file_page__1.html">NewFilePage_1</a>(QWidget* parent = 0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> setLangStrPtr();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        QString* getLangStrPtr();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> setFileTypeStrPtr();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        QString* getFileTypeStrPtr();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> triggerMutators();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        QString* <a class="code" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        ~<a class="code" href="class_new_file_page__1.html">NewFilePage_1</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* NEW_FILE_PAGE_1_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="class_new_file_page__1_html_ac03bd12c5904b2a858137bf7bb93502c"><div class="ttname"><a href="class_new_file_page__1.html#ac03bd12c5904b2a858137bf7bb93502c">NewFilePage_1::fileTypeStrPtr</a></div><div class="ttdeci">QString * fileTypeStrPtr</div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:50</div></div>
+<div class="ttc" id="class_new_file_page__1_html"><div class="ttname"><a href="class_new_file_page__1.html">NewFilePage_1</a></div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:37</div></div>
+<div class="ttc" id="class_new_file_page__1_html_a33c1a3f115a92a04b0f7344cd1b14a57"><div class="ttname"><a href="class_new_file_page__1.html#a33c1a3f115a92a04b0f7344cd1b14a57">NewFilePage_1::langsLwPtr</a></div><div class="ttdeci">QListWidget * langsLwPtr</div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:44</div></div>
+<div class="ttc" id="class_new_file_page__1_html_a28c75fb5624badef97ed17d38f0c598a"><div class="ttname"><a href="class_new_file_page__1.html#a28c75fb5624badef97ed17d38f0c598a">NewFilePage_1::langStrPtr</a></div><div class="ttdeci">QString * langStrPtr</div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:49</div></div>
+<div class="ttc" id="_ride_env_8cpp_html_a676f4ed0a423d771b78df4c02b3ae639"><div class="ttname"><a href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a></div><div class="ttdeci">QString * toString()</div><div class="ttdef"><b>Definition:</b> RideEnv.cpp:66</div></div>
+<div class="ttc" id="_windows_console_text_8h_html"><div class="ttname"><a href="_windows_console_text_8h.html">WindowsConsoleText.h</a></div></div>
+<div class="ttc" id="class_new_file_page__1_html_a5c348b3e762867bc02861bd317eb4964"><div class="ttname"><a href="class_new_file_page__1.html#a5c348b3e762867bc02861bd317eb4964">NewFilePage_1::fileTypeStrLstPtrVec</a></div><div class="ttdeci">QVector&lt; QStringList * &gt; fileTypeStrLstPtrVec</div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:43</div></div>
+<div class="ttc" id="_unix_console_text_8h_html"><div class="ttname"><a href="_unix_console_text_8h.html">UnixConsoleText.h</a></div></div>
+<div class="ttc" id="class_new_file_page__1_html_acb912634d0accb1d1fc2cb1f5c2dea78"><div class="ttname"><a href="class_new_file_page__1.html#acb912634d0accb1d1fc2cb1f5c2dea78">NewFilePage_1::langsStrLstPtr</a></div><div class="ttdeci">QStringList * langsStrLstPtr</div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:42</div></div>
+<div class="ttc" id="class_new_file_page__1_html_a161e24cf061ed28e5ee5f61e5087a9fc"><div class="ttname"><a href="class_new_file_page__1.html#a161e24cf061ed28e5ee5f61e5087a9fc">NewFilePage_1::outerLayoutPtr</a></div><div class="ttdeci">QGridLayout * outerLayoutPtr</div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:47</div></div>
+<div class="ttc" id="class_new_file_page__1_html_a4886ed76812d01820e2868006b8cde72"><div class="ttname"><a href="class_new_file_page__1.html#a4886ed76812d01820e2868006b8cde72">NewFilePage_1::fileTypeLwPtr</a></div><div class="ttdeci">QListWidget * fileTypeLwPtr</div><div class="ttdef"><b>Definition:</b> NewFilePage_1.h:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 15:46:11 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

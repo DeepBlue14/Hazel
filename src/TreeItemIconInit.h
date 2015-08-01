@@ -32,7 +32,18 @@ using namespace std;
 
 namespace TreeItemIconInit
 {
+    /**
+     * Mutator to add a corresponding icon to a project root in a tree widget.
+     * 
+     * @param child the project root in need of an icon.
+     */
     void setProjIcon(QTreeWidgetItem* child);
+    
+    /**
+     * Mutator to add a corresponding icon to a child in a tree widget.
+     * 
+     * @param child the file/subdir in need of an icon.
+     */
     void setIcon(QTreeWidgetItem* child);
 }
 

@@ -2,7 +2,8 @@
  * File:   XmlMaster.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: Basic XML file reader namespace to be used by several
+ *                   classes of this project.
  *
  * Created on May 30, 2015, 11:37 PM
  */
@@ -36,8 +37,27 @@ namespace XmlMaster
     QFile* filePtr;
     QDomDocument* xmlDomDocPtr;
     
+    /**
+     * Loads an XML file.
+     * 
+     * @param filePtr reference to the file.
+     */
     void loadFile(QFile* filePtr);
+    
+    /**
+     * Outputs the contents of the file. 
+     * 
+     * @param filePtr reference to the file.
+     */
     void printXmlFile(QFile* filePtr);
+    
+    /**
+     * Inserts data into a XML file at a specified location.
+     * 
+     * @param filePtr reference to file.
+     * @param occurrenceOfStrPtr search param.
+     * @param insertionStrPtr data to insert.
+     */
     void insertAfterLastOccurrence(QFile* filePtr, QString* occurrenceOfStrPtr, QString* insertionStrPtr);
     // ...
 }

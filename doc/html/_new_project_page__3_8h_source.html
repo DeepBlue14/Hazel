@@ -21,12 +21,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ride1.jpg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RIDE
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">ROS Integrated Development Environment</div>
+   <div id="projectbrief">Ros Integrated Development Invironment</div>
   </td>
  </tr>
  </tbody>
@@ -114,60 +113,73 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_new_project_page__3.html">NewProjectPage_3</a> : <span class="keyword">public</span> QWidget</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;           </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aea99558cfb4c4d06ab1d090276c8b500">   31</a></span>&#160;        QLineEdit* <a class="code" href="class_new_project_page__3.html#aea99558cfb4c4d06ab1d090276c8b500">authorNameLePtr</a>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a34b1101f7b0179d76b0cf77e5584233c">   32</a></span>&#160;        QLineEdit* <a class="code" href="class_new_project_page__3.html#a34b1101f7b0179d76b0cf77e5584233c">authorEmailLePtr</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216">   33</a></span>&#160;        QStringList* <a class="code" href="class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216">licenseListPtr</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a6459aad502f0b64eb7e16b38261bae85">   34</a></span>&#160;        QComboBox* <a class="code" href="class_new_project_page__3.html#a6459aad502f0b64eb7e16b38261bae85">licenseCbPtr</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aee5b07b36bc086e99302a67d8f3fd7b7">   35</a></span>&#160;        QLineEdit* <a class="code" href="class_new_project_page__3.html#aee5b07b36bc086e99302a67d8f3fd7b7">licenseLePtr</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aae75a18bd217f0736861efe3e3821a6d">   37</a></span>&#160;        QFormLayout* <a class="code" href="class_new_project_page__3.html#aae75a18bd217f0736861efe3e3821a6d">formLayout</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#ade0fb5d0c05524c44f8b411150533757">   38</a></span>&#160;        QGridLayout* <a class="code" href="class_new_project_page__3.html#ade0fb5d0c05524c44f8b411150533757">outerLayout</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a40c6cfc7ba480fd2572459c9ff2d08bb">   40</a></span>&#160;        QString* <a class="code" href="class_new_project_page__3.html#a40c6cfc7ba480fd2572459c9ff2d08bb">authorNameStrPtr</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a5c83d9f13f428782e082537dd4c65187">   41</a></span>&#160;        QString* <a class="code" href="class_new_project_page__3.html#a5c83d9f13f428782e082537dd4c65187">authorEmailStrPtr</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e">   42</a></span>&#160;        QString* <a class="code" href="class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e">licenseStrPtr</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> handleOtherLicenseSlot();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_new_project_page__3.html">NewProjectPage_3</a>(QWidget* parent = 0);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> setAuthorNameStrPtr();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        QString* getAuthorNameStrPtr();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> setAuthorEmailStrPtr();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        QString* getAuthorEmailStrPtr();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">void</span> setLicenseStrPtr();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        QString* getLicenseStrPtr();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> triggerMutators();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        QString* <a class="code" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ~<a class="code" href="class_new_project_page__3.html">NewProjectPage_3</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* NEW_PROJECT_PAGE_3_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_new_project_page__3_html_a40c6cfc7ba480fd2572459c9ff2d08bb"><div class="ttname"><a href="class_new_project_page__3.html#a40c6cfc7ba480fd2572459c9ff2d08bb">NewProjectPage_3::authorNameStrPtr</a></div><div class="ttdeci">QString * authorNameStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00040">NewProjectPage_3.h:40</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html"><div class="ttname"><a href="class_new_project_page__3.html">NewProjectPage_3</a></div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00026">NewProjectPage_3.h:26</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_a6459aad502f0b64eb7e16b38261bae85"><div class="ttname"><a href="class_new_project_page__3.html#a6459aad502f0b64eb7e16b38261bae85">NewProjectPage_3::licenseCbPtr</a></div><div class="ttdeci">QComboBox * licenseCbPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00034">NewProjectPage_3.h:34</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_a5c83d9f13f428782e082537dd4c65187"><div class="ttname"><a href="class_new_project_page__3.html#a5c83d9f13f428782e082537dd4c65187">NewProjectPage_3::authorEmailStrPtr</a></div><div class="ttdeci">QString * authorEmailStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00041">NewProjectPage_3.h:41</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_aea99558cfb4c4d06ab1d090276c8b500"><div class="ttname"><a href="class_new_project_page__3.html#aea99558cfb4c4d06ab1d090276c8b500">NewProjectPage_3::authorNameLePtr</a></div><div class="ttdeci">QLineEdit * authorNameLePtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00031">NewProjectPage_3.h:31</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_aae75a18bd217f0736861efe3e3821a6d"><div class="ttname"><a href="class_new_project_page__3.html#aae75a18bd217f0736861efe3e3821a6d">NewProjectPage_3::formLayout</a></div><div class="ttdeci">QFormLayout * formLayout</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00037">NewProjectPage_3.h:37</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_aa571b8638ba533ee7e6bee7c476d259e"><div class="ttname"><a href="class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e">NewProjectPage_3::licenseStrPtr</a></div><div class="ttdeci">QString * licenseStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00042">NewProjectPage_3.h:42</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_ade0fb5d0c05524c44f8b411150533757"><div class="ttname"><a href="class_new_project_page__3.html#ade0fb5d0c05524c44f8b411150533757">NewProjectPage_3::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00038">NewProjectPage_3.h:38</a></div></div>
-<div class="ttc" id="_ride_env_8cpp_html_a676f4ed0a423d771b78df4c02b3ae639"><div class="ttname"><a href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a></div><div class="ttdeci">QString * toString()</div><div class="ttdef"><b>Definition:</b> <a href="_ride_env_8cpp_source.html#l00057">RideEnv.cpp:57</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_aee5b07b36bc086e99302a67d8f3fd7b7"><div class="ttname"><a href="class_new_project_page__3.html#aee5b07b36bc086e99302a67d8f3fd7b7">NewProjectPage_3::licenseLePtr</a></div><div class="ttdeci">QLineEdit * licenseLePtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00035">NewProjectPage_3.h:35</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_a34b1101f7b0179d76b0cf77e5584233c"><div class="ttname"><a href="class_new_project_page__3.html#a34b1101f7b0179d76b0cf77e5584233c">NewProjectPage_3::authorEmailLePtr</a></div><div class="ttdeci">QLineEdit * authorEmailLePtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00032">NewProjectPage_3.h:32</a></div></div>
-<div class="ttc" id="class_new_project_page__3_html_a5bcc5f30aa601338c5ee258e21868216"><div class="ttname"><a href="class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216">NewProjectPage_3::licenseListPtr</a></div><div class="ttdeci">QStringList * licenseListPtr</div><div class="ttdef"><b>Definition:</b> <a href="_new_project_page__3_8h_source.html#l00033">NewProjectPage_3.h:33</a></div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_windows_console_text_8h.html">WindowsConsoleText.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_unix_console_text_8h.html">UnixConsoleText.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = WindowsConsoleText;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#elif __APPLE</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#elif __linux</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_new_project_page__3.html">NewProjectPage_3</a> : <span class="keyword">public</span> QWidget</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;           </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aea99558cfb4c4d06ab1d090276c8b500">   42</a></span>&#160;        QLineEdit* <a class="code" href="class_new_project_page__3.html#aea99558cfb4c4d06ab1d090276c8b500">authorNameLePtr</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a34b1101f7b0179d76b0cf77e5584233c">   43</a></span>&#160;        QLineEdit* <a class="code" href="class_new_project_page__3.html#a34b1101f7b0179d76b0cf77e5584233c">authorEmailLePtr</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216">   44</a></span>&#160;        QStringList* <a class="code" href="class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216">licenseListPtr</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a6459aad502f0b64eb7e16b38261bae85">   45</a></span>&#160;        QComboBox* <a class="code" href="class_new_project_page__3.html#a6459aad502f0b64eb7e16b38261bae85">licenseCbPtr</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aee5b07b36bc086e99302a67d8f3fd7b7">   46</a></span>&#160;        QLineEdit* <a class="code" href="class_new_project_page__3.html#aee5b07b36bc086e99302a67d8f3fd7b7">licenseLePtr</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aae75a18bd217f0736861efe3e3821a6d">   48</a></span>&#160;        QFormLayout* <a class="code" href="class_new_project_page__3.html#aae75a18bd217f0736861efe3e3821a6d">formLayout</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#ade0fb5d0c05524c44f8b411150533757">   49</a></span>&#160;        QGridLayout* <a class="code" href="class_new_project_page__3.html#ade0fb5d0c05524c44f8b411150533757">outerLayout</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a40c6cfc7ba480fd2572459c9ff2d08bb">   51</a></span>&#160;        QString* <a class="code" href="class_new_project_page__3.html#a40c6cfc7ba480fd2572459c9ff2d08bb">authorNameStrPtr</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#a5c83d9f13f428782e082537dd4c65187">   52</a></span>&#160;        QString* <a class="code" href="class_new_project_page__3.html#a5c83d9f13f428782e082537dd4c65187">authorEmailStrPtr</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e">   53</a></span>&#160;        QString* <a class="code" href="class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e">licenseStrPtr</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> handleOtherLicenseSlot();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_new_project_page__3.html">NewProjectPage_3</a>(QWidget* parent = 0);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> setAuthorNameStrPtr();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        QString* getAuthorNameStrPtr();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> setAuthorEmailStrPtr();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        QString* getAuthorEmailStrPtr();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> setLicenseStrPtr();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        QString* getLicenseStrPtr();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> triggerMutators();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        QString* <a class="code" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ~<a class="code" href="class_new_project_page__3.html">NewProjectPage_3</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* NEW_PROJECT_PAGE_3_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="class_new_project_page__3_html_a40c6cfc7ba480fd2572459c9ff2d08bb"><div class="ttname"><a href="class_new_project_page__3.html#a40c6cfc7ba480fd2572459c9ff2d08bb">NewProjectPage_3::authorNameStrPtr</a></div><div class="ttdeci">QString * authorNameStrPtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:51</div></div>
+<div class="ttc" id="class_new_project_page__3_html"><div class="ttname"><a href="class_new_project_page__3.html">NewProjectPage_3</a></div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:37</div></div>
+<div class="ttc" id="class_new_project_page__3_html_a6459aad502f0b64eb7e16b38261bae85"><div class="ttname"><a href="class_new_project_page__3.html#a6459aad502f0b64eb7e16b38261bae85">NewProjectPage_3::licenseCbPtr</a></div><div class="ttdeci">QComboBox * licenseCbPtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:45</div></div>
+<div class="ttc" id="class_new_project_page__3_html_a5c83d9f13f428782e082537dd4c65187"><div class="ttname"><a href="class_new_project_page__3.html#a5c83d9f13f428782e082537dd4c65187">NewProjectPage_3::authorEmailStrPtr</a></div><div class="ttdeci">QString * authorEmailStrPtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:52</div></div>
+<div class="ttc" id="class_new_project_page__3_html_aea99558cfb4c4d06ab1d090276c8b500"><div class="ttname"><a href="class_new_project_page__3.html#aea99558cfb4c4d06ab1d090276c8b500">NewProjectPage_3::authorNameLePtr</a></div><div class="ttdeci">QLineEdit * authorNameLePtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:42</div></div>
+<div class="ttc" id="class_new_project_page__3_html_aae75a18bd217f0736861efe3e3821a6d"><div class="ttname"><a href="class_new_project_page__3.html#aae75a18bd217f0736861efe3e3821a6d">NewProjectPage_3::formLayout</a></div><div class="ttdeci">QFormLayout * formLayout</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:48</div></div>
+<div class="ttc" id="class_new_project_page__3_html_aa571b8638ba533ee7e6bee7c476d259e"><div class="ttname"><a href="class_new_project_page__3.html#aa571b8638ba533ee7e6bee7c476d259e">NewProjectPage_3::licenseStrPtr</a></div><div class="ttdeci">QString * licenseStrPtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:53</div></div>
+<div class="ttc" id="class_new_project_page__3_html_ade0fb5d0c05524c44f8b411150533757"><div class="ttname"><a href="class_new_project_page__3.html#ade0fb5d0c05524c44f8b411150533757">NewProjectPage_3::outerLayout</a></div><div class="ttdeci">QGridLayout * outerLayout</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:49</div></div>
+<div class="ttc" id="_ride_env_8cpp_html_a676f4ed0a423d771b78df4c02b3ae639"><div class="ttname"><a href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a></div><div class="ttdeci">QString * toString()</div><div class="ttdef"><b>Definition:</b> RideEnv.cpp:66</div></div>
+<div class="ttc" id="_windows_console_text_8h_html"><div class="ttname"><a href="_windows_console_text_8h.html">WindowsConsoleText.h</a></div></div>
+<div class="ttc" id="class_new_project_page__3_html_aee5b07b36bc086e99302a67d8f3fd7b7"><div class="ttname"><a href="class_new_project_page__3.html#aee5b07b36bc086e99302a67d8f3fd7b7">NewProjectPage_3::licenseLePtr</a></div><div class="ttdeci">QLineEdit * licenseLePtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:46</div></div>
+<div class="ttc" id="class_new_project_page__3_html_a34b1101f7b0179d76b0cf77e5584233c"><div class="ttname"><a href="class_new_project_page__3.html#a34b1101f7b0179d76b0cf77e5584233c">NewProjectPage_3::authorEmailLePtr</a></div><div class="ttdeci">QLineEdit * authorEmailLePtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:43</div></div>
+<div class="ttc" id="_unix_console_text_8h_html"><div class="ttname"><a href="_unix_console_text_8h.html">UnixConsoleText.h</a></div></div>
+<div class="ttc" id="class_new_project_page__3_html_a5bcc5f30aa601338c5ee258e21868216"><div class="ttname"><a href="class_new_project_page__3.html#a5bcc5f30aa601338c5ee258e21868216">NewProjectPage_3::licenseListPtr</a></div><div class="ttdeci">QStringList * licenseListPtr</div><div class="ttdef"><b>Definition:</b> NewProjectPage_3.h:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 15:46:11 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

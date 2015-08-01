@@ -5,23 +5,10 @@
 
 {\ttfamily \#include $<$Master\-Gui.\-h$>$}
 
-
-
-Inheritance diagram for Master\-Gui\-:\nopagebreak
-\begin{figure}[H]
+Inheritance diagram for Master\-Gui\-:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=160pt]{class_master_gui__inherit__graph}
-\end{center}
-\end{figure}
-
-
-Collaboration diagram for Master\-Gui\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_gui__coll__graph}
+\includegraphics[height=2.000000cm]{class_master_gui}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -32,6 +19,8 @@ Collaboration diagram for Master\-Gui\-:
 void \hyperlink{class_master_gui_aa8cb5efc03f304d4a80d0d743a30e5b3}{init\-Tool\-Bars} ()
 \item 
 void \hyperlink{class_master_gui_a65f7212a54b92bdd21498478b9689631}{init\-Menus} ()
+\item 
+void \hyperlink{class_master_gui_a266df8320dd219d029630f4439c8ceca}{load\-Style} (Q\-String $\ast$style=new Q\-String(\char`\"{}./src/qss/Vanilla.\-css\char`\"{}))
 \item 
 void \hyperlink{class_master_gui_a4ee6b41a4beb5adfd5c2c15e2490384e}{set\-File\-Menu\-Ptr} (Q\-Menu $\ast$\hyperlink{class_master_gui_a1d768ad74ddb657928df8539c356abb6}{file\-Menu\-Ptr})
 \item 
@@ -133,6 +122,8 @@ void \hyperlink{class_master_gui_a76571dfcf6fac7274f39e90d72929564}{set\-Central
 \item 
 \hyperlink{class_central_gui}{Central\-Gui} $\ast$ \hyperlink{class_master_gui_a8672503d8c79f2377f76a04791e56530}{get\-Central\-Gui} ()
 \item 
+Q\-String $\ast$ \hyperlink{class_master_gui_a96d5da37e4de63a0c0e9d36eb4a53f1e}{to\-String} ()
+\item 
 \hyperlink{class_master_gui_a4eeae08177c54aba4aad160fc1c5efc6}{$\sim$\-Master\-Gui} ()
 \end{DoxyCompactItemize}
 \subsection*{Private Attributes}
@@ -186,15 +177,10 @@ Q\-Text\-Edit $\ast$ \hyperlink{class_master_gui_a0681f0b3d1828d84c0c0cd7e4d765d
 \item 
 \hyperlink{class_master_menus}{Master\-Menus} $\ast$ \hyperlink{class_master_gui_a27f793278e486a5bfec69ef366199e5d}{master\-Menus}
 \item 
+\hyperlink{class_master_status_bar}{Master\-Status\-Bar} $\ast$ \hyperlink{class_master_gui_a69899e3a9712e70d91f42b9d8ba2bd22}{master\-Status\-Bar}
+\item 
 \hyperlink{class_central_gui}{Central\-Gui} $\ast$ \hyperlink{class_master_gui_a565fc5a3622b8b5417b26dd1306439b8}{central\-Gui}
 \end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 35 of file Master\-Gui.\-h.
-
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -205,22 +191,6 @@ Definition at line 35 of file Master\-Gui.\-h.
 \item[{Q\-Main\-Window $\ast$}]{parent = {\ttfamily 0}}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a9d3221a5d6791ffab353e038452e8b79}
-
-
-Definition at line 3 of file Master\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_gui_a9d3221a5d6791ffab353e038452e8b79_cgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_gui_a4eeae08177c54aba4aad160fc1c5efc6}{\index{Master\-Gui@{Master\-Gui}!$\sim$\-Master\-Gui@{$\sim$\-Master\-Gui}}
 \index{$\sim$\-Master\-Gui@{$\sim$\-Master\-Gui}!MasterGui@{Master\-Gui}}
 \subsubsection[{$\sim$\-Master\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}Master\-Gui\-::$\sim$\-Master\-Gui (
@@ -228,10 +198,6 @@ Here is the call graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a4eeae08177c54aba4aad160fc1c5efc6}
-
-
-Definition at line 403 of file Master\-Gui.\-cpp.
-
 
 
 \subsection{Member Function Documentation}
@@ -242,10 +208,6 @@ Definition at line 403 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a8672503d8c79f2377f76a04791e56530}
-
-
-Definition at line 397 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_af9af9881ddfbae0aa41c0a7c4095ac21}{\index{Master\-Gui@{Master\-Gui}!get\-Debug\-Menu\-Ptr@{get\-Debug\-Menu\-Ptr}}
 \index{get\-Debug\-Menu\-Ptr@{get\-Debug\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Debug\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Debug\-Menu\-Ptr (
@@ -253,10 +215,6 @@ Definition at line 397 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_af9af9881ddfbae0aa41c0a7c4095ac21}
-
-
-Definition at line 193 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a88a3c0c4762455d7a4f416fe752b8723}{\index{Master\-Gui@{Master\-Gui}!get\-East\-Tool\-Bar\-Ptr@{get\-East\-Tool\-Bar\-Ptr}}
 \index{get\-East\-Tool\-Bar\-Ptr@{get\-East\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-East\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar $\ast$ Master\-Gui\-::get\-East\-Tool\-Bar\-Ptr (
@@ -264,10 +222,6 @@ Definition at line 193 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a88a3c0c4762455d7a4f416fe752b8723}
-
-
-Definition at line 313 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a50196fb1473d723bc940c54879ef6388}{\index{Master\-Gui@{Master\-Gui}!get\-Edit\-Menu\-Ptr@{get\-Edit\-Menu\-Ptr}}
 \index{get\-Edit\-Menu\-Ptr@{get\-Edit\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Edit\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Edit\-Menu\-Ptr (
@@ -275,10 +229,6 @@ Definition at line 313 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a50196fb1473d723bc940c54879ef6388}
-
-
-Definition at line 121 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a1f6fc301c337d7ec0e77425a3b6573c1}{\index{Master\-Gui@{Master\-Gui}!get\-Editor@{get\-Editor}}
 \index{get\-Editor@{get\-Editor}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Editor}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Text\-Edit $\ast$ Master\-Gui\-::get\-Editor (
@@ -286,10 +236,6 @@ Definition at line 121 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a1f6fc301c337d7ec0e77425a3b6573c1}
-
-
-Definition at line 349 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a91a38d0a69249c1f2d6a6175e9fb5342}{\index{Master\-Gui@{Master\-Gui}!get\-File\-Menu\-Ptr@{get\-File\-Menu\-Ptr}}
 \index{get\-File\-Menu\-Ptr@{get\-File\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-File\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-File\-Menu\-Ptr (
@@ -297,10 +243,6 @@ Definition at line 349 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a91a38d0a69249c1f2d6a6175e9fb5342}
-
-
-Definition at line 109 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a7da1e17d6cfd6254a7b5da4be625e4ff}{\index{Master\-Gui@{Master\-Gui}!get\-Group\-One\-Tool\-Bar\-Ptr@{get\-Group\-One\-Tool\-Bar\-Ptr}}
 \index{get\-Group\-One\-Tool\-Bar\-Ptr@{get\-Group\-One\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Group\-One\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar $\ast$ Master\-Gui\-::get\-Group\-One\-Tool\-Bar\-Ptr (
@@ -308,10 +250,6 @@ Definition at line 109 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a7da1e17d6cfd6254a7b5da4be625e4ff}
-
-
-Definition at line 265 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_ae60fb73908b05d9f41eb78197163e10f}{\index{Master\-Gui@{Master\-Gui}!get\-Group\-Three\-Tool\-Bar\-Ptr@{get\-Group\-Three\-Tool\-Bar\-Ptr}}
 \index{get\-Group\-Three\-Tool\-Bar\-Ptr@{get\-Group\-Three\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Group\-Three\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar $\ast$ Master\-Gui\-::get\-Group\-Three\-Tool\-Bar\-Ptr (
@@ -319,10 +257,6 @@ Definition at line 265 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_ae60fb73908b05d9f41eb78197163e10f}
-
-
-Definition at line 289 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a3559e8ead0441f1bfe9704f023665b44}{\index{Master\-Gui@{Master\-Gui}!get\-Group\-Two\-Tool\-Bar\-Ptr@{get\-Group\-Two\-Tool\-Bar\-Ptr}}
 \index{get\-Group\-Two\-Tool\-Bar\-Ptr@{get\-Group\-Two\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Group\-Two\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar $\ast$ Master\-Gui\-::get\-Group\-Two\-Tool\-Bar\-Ptr (
@@ -330,10 +264,6 @@ Definition at line 289 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a3559e8ead0441f1bfe9704f023665b44}
-
-
-Definition at line 277 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a6eb5ec7778681673520dc9fffd080056}{\index{Master\-Gui@{Master\-Gui}!get\-Help\-Menu\-Ptr@{get\-Help\-Menu\-Ptr}}
 \index{get\-Help\-Menu\-Ptr@{get\-Help\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Help\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Help\-Menu\-Ptr (
@@ -341,10 +271,6 @@ Definition at line 277 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a6eb5ec7778681673520dc9fffd080056}
-
-
-Definition at line 253 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a529d566a29d89fd686a5f8d37cad8aef}{\index{Master\-Gui@{Master\-Gui}!get\-Master\-Actions@{get\-Master\-Actions}}
 \index{get\-Master\-Actions@{get\-Master\-Actions}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Master\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\-Actions} $\ast$ Master\-Gui\-::get\-Master\-Actions (
@@ -352,10 +278,6 @@ Definition at line 253 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a529d566a29d89fd686a5f8d37cad8aef}
-
-
-Definition at line 361 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_ab2d15cb4a25f2fb75a10e01e0f93a850}{\index{Master\-Gui@{Master\-Gui}!get\-Master\-Menus@{get\-Master\-Menus}}
 \index{get\-Master\-Menus@{get\-Master\-Menus}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Master\-Menus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\-Menus} $\ast$ Master\-Gui\-::get\-Master\-Menus (
@@ -363,10 +285,6 @@ Definition at line 361 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_ab2d15cb4a25f2fb75a10e01e0f93a850}
-
-
-Definition at line 385 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a14e04dcaf7233f6ce5fce47b58e18ef5}{\index{Master\-Gui@{Master\-Gui}!get\-Master\-Tool\-Bars@{get\-Master\-Tool\-Bars}}
 \index{get\-Master\-Tool\-Bars@{get\-Master\-Tool\-Bars}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Master\-Tool\-Bars}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\-Tool\-Bars} $\ast$ Master\-Gui\-::get\-Master\-Tool\-Bars (
@@ -374,10 +292,6 @@ Definition at line 385 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a14e04dcaf7233f6ce5fce47b58e18ef5}
-
-
-Definition at line 373 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a72fd20d98b2d2754fe37beb40e4f5bc6}{\index{Master\-Gui@{Master\-Gui}!get\-Navigate\-Menu\-Ptr@{get\-Navigate\-Menu\-Ptr}}
 \index{get\-Navigate\-Menu\-Ptr@{get\-Navigate\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Navigate\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Navigate\-Menu\-Ptr (
@@ -385,10 +299,6 @@ Definition at line 373 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a72fd20d98b2d2754fe37beb40e4f5bc6}
-
-
-Definition at line 145 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a5d529e740085f8db54937ee0c50a40b3}{\index{Master\-Gui@{Master\-Gui}!get\-Profile\-Menu\-Ptr@{get\-Profile\-Menu\-Ptr}}
 \index{get\-Profile\-Menu\-Ptr@{get\-Profile\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Profile\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Profile\-Menu\-Ptr (
@@ -396,10 +306,6 @@ Definition at line 145 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a5d529e740085f8db54937ee0c50a40b3}
-
-
-Definition at line 205 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a53f1c9667111f13cf966c6eb9d0c6ebf}{\index{Master\-Gui@{Master\-Gui}!get\-Refactor\-Menu\-Ptr@{get\-Refactor\-Menu\-Ptr}}
 \index{get\-Refactor\-Menu\-Ptr@{get\-Refactor\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Refactor\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Refactor\-Menu\-Ptr (
@@ -407,10 +313,6 @@ Definition at line 205 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a53f1c9667111f13cf966c6eb9d0c6ebf}
-
-
-Definition at line 169 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a1f42aebf18ac8c07ffcd057bd5bbe22b}{\index{Master\-Gui@{Master\-Gui}!get\-Run\-Menu\-Ptr@{get\-Run\-Menu\-Ptr}}
 \index{get\-Run\-Menu\-Ptr@{get\-Run\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Run\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Run\-Menu\-Ptr (
@@ -418,10 +320,6 @@ Definition at line 169 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a1f42aebf18ac8c07ffcd057bd5bbe22b}
-
-
-Definition at line 181 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_ab3b214293b67475e58c899a0683c4b52}{\index{Master\-Gui@{Master\-Gui}!get\-Source\-Menu\-Ptr@{get\-Source\-Menu\-Ptr}}
 \index{get\-Source\-Menu\-Ptr@{get\-Source\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Source\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Source\-Menu\-Ptr (
@@ -429,10 +327,6 @@ Definition at line 181 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_ab3b214293b67475e58c899a0683c4b52}
-
-
-Definition at line 157 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_af58b51918353ad37b1a8817098da1140}{\index{Master\-Gui@{Master\-Gui}!get\-South\-Tool\-Bar\-Ptr@{get\-South\-Tool\-Bar\-Ptr}}
 \index{get\-South\-Tool\-Bar\-Ptr@{get\-South\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-South\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar $\ast$ Master\-Gui\-::get\-South\-Tool\-Bar\-Ptr (
@@ -440,10 +334,6 @@ Definition at line 157 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_af58b51918353ad37b1a8817098da1140}
-
-
-Definition at line 301 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a6dd82c5ecf1ed32a4b67de6d4778b5d8}{\index{Master\-Gui@{Master\-Gui}!get\-Tab\-Widget@{get\-Tab\-Widget}}
 \index{get\-Tab\-Widget@{get\-Tab\-Widget}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Tab\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget $\ast$ Master\-Gui\-::get\-Tab\-Widget (
@@ -451,10 +341,6 @@ Definition at line 301 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a6dd82c5ecf1ed32a4b67de6d4778b5d8}
-
-
-Definition at line 337 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_ac65ef2f0b70bf6edf23fe7dfba0c8d94}{\index{Master\-Gui@{Master\-Gui}!get\-Team\-Menu\-Ptr@{get\-Team\-Menu\-Ptr}}
 \index{get\-Team\-Menu\-Ptr@{get\-Team\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Team\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Team\-Menu\-Ptr (
@@ -462,10 +348,6 @@ Definition at line 337 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_ac65ef2f0b70bf6edf23fe7dfba0c8d94}
-
-
-Definition at line 217 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a8086c7b6829b3bd0cf3eccad2e608f02}{\index{Master\-Gui@{Master\-Gui}!get\-Tools\-Menu\-Ptr@{get\-Tools\-Menu\-Ptr}}
 \index{get\-Tools\-Menu\-Ptr@{get\-Tools\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Tools\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Tools\-Menu\-Ptr (
@@ -473,10 +355,6 @@ Definition at line 217 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a8086c7b6829b3bd0cf3eccad2e608f02}
-
-
-Definition at line 229 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a3fb03d1a102443e480594a5823917e1a}{\index{Master\-Gui@{Master\-Gui}!get\-View\-Menu\-Ptr@{get\-View\-Menu\-Ptr}}
 \index{get\-View\-Menu\-Ptr@{get\-View\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-View\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-View\-Menu\-Ptr (
@@ -484,10 +362,6 @@ Definition at line 229 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a3fb03d1a102443e480594a5823917e1a}
-
-
-Definition at line 133 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a6863200bf96fb94a3afee4696762f259}{\index{Master\-Gui@{Master\-Gui}!get\-West\-Tool\-Bar\-Ptr@{get\-West\-Tool\-Bar\-Ptr}}
 \index{get\-West\-Tool\-Bar\-Ptr@{get\-West\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-West\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar $\ast$ Master\-Gui\-::get\-West\-Tool\-Bar\-Ptr (
@@ -495,10 +369,6 @@ Definition at line 133 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a6863200bf96fb94a3afee4696762f259}
-
-
-Definition at line 325 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a68e66c032b5e7728e0a7e88a04575abc}{\index{Master\-Gui@{Master\-Gui}!get\-Window\-Menu\-Ptr@{get\-Window\-Menu\-Ptr}}
 \index{get\-Window\-Menu\-Ptr@{get\-Window\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{get\-Window\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu $\ast$ Master\-Gui\-::get\-Window\-Menu\-Ptr (
@@ -506,10 +376,6 @@ Definition at line 325 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a68e66c032b5e7728e0a7e88a04575abc}
-
-
-Definition at line 241 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a65f7212a54b92bdd21498478b9689631}{\index{Master\-Gui@{Master\-Gui}!init\-Menus@{init\-Menus}}
 \index{init\-Menus@{init\-Menus}!MasterGui@{Master\-Gui}}
 \subsubsection[{init\-Menus}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::init\-Menus (
@@ -517,34 +383,6 @@ Definition at line 241 of file Master\-Gui.\-cpp.
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a65f7212a54b92bdd21498478b9689631}
-
-
-Definition at line 31 of file Master\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_gui_a65f7212a54b92bdd21498478b9689631_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=340pt]{class_master_gui_a65f7212a54b92bdd21498478b9689631_icgraph}
-\end{center}
-\end{figure}
-
-
 \hypertarget{class_master_gui_aa8cb5efc03f304d4a80d0d743a30e5b3}{\index{Master\-Gui@{Master\-Gui}!init\-Tool\-Bars@{init\-Tool\-Bars}}
 \index{init\-Tool\-Bars@{init\-Tool\-Bars}!MasterGui@{Master\-Gui}}
 \subsubsection[{init\-Tool\-Bars}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::init\-Tool\-Bars (
@@ -552,34 +390,13 @@ Here is the caller graph for this function\-:
 {}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_aa8cb5efc03f304d4a80d0d743a30e5b3}
-
-
-Definition at line 75 of file Master\-Gui.\-cpp.
-
-
-
-Here is the call graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_gui_aa8cb5efc03f304d4a80d0d743a30e5b3_cgraph}
-\end{center}
-\end{figure}
-
-
-
-
-Here is the caller graph for this function\-:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_master_gui_aa8cb5efc03f304d4a80d0d743a30e5b3_icgraph}
-\end{center}
-\end{figure}
-
-
+\hypertarget{class_master_gui_a266df8320dd219d029630f4439c8ceca}{\index{Master\-Gui@{Master\-Gui}!load\-Style@{load\-Style}}
+\index{load\-Style@{load\-Style}!MasterGui@{Master\-Gui}}
+\subsubsection[{load\-Style}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::load\-Style (
+\begin{DoxyParamCaption}
+\item[{Q\-String $\ast$}]{style = {\ttfamily new~QString(\char`\"{}./src/qss/Vanilla.css\char`\"{})}}
+\end{DoxyParamCaption}
+)}}\label{class_master_gui_a266df8320dd219d029630f4439c8ceca}
 \hypertarget{class_master_gui_a76571dfcf6fac7274f39e90d72929564}{\index{Master\-Gui@{Master\-Gui}!set\-Central\-Gui@{set\-Central\-Gui}}
 \index{set\-Central\-Gui@{set\-Central\-Gui}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Central\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Central\-Gui (
@@ -587,10 +404,6 @@ Here is the caller graph for this function\-:
 \item[{{\bf Central\-Gui} $\ast$}]{central\-Gui}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a76571dfcf6fac7274f39e90d72929564}
-
-
-Definition at line 391 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_ae43df54970c7b84ed577ac04d593e6f9}{\index{Master\-Gui@{Master\-Gui}!set\-Debug\-Menu\-Ptr@{set\-Debug\-Menu\-Ptr}}
 \index{set\-Debug\-Menu\-Ptr@{set\-Debug\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Debug\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Debug\-Menu\-Ptr (
@@ -598,10 +411,6 @@ Definition at line 391 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{debug\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_ae43df54970c7b84ed577ac04d593e6f9}
-
-
-Definition at line 187 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a5e58bb546e83e37dc826405a5bc3e8fe}{\index{Master\-Gui@{Master\-Gui}!set\-East\-Tool\-Bar\-Ptr@{set\-East\-Tool\-Bar\-Ptr}}
 \index{set\-East\-Tool\-Bar\-Ptr@{set\-East\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-East\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-East\-Tool\-Bar\-Ptr (
@@ -609,10 +418,6 @@ Definition at line 187 of file Master\-Gui.\-cpp.
 \item[{Q\-Tool\-Bar $\ast$}]{east\-Tool\-Bar\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a5e58bb546e83e37dc826405a5bc3e8fe}
-
-
-Definition at line 307 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a91cccfac6fdcd723b4d127a0a668adc7}{\index{Master\-Gui@{Master\-Gui}!set\-Edit\-Menu\-Ptr@{set\-Edit\-Menu\-Ptr}}
 \index{set\-Edit\-Menu\-Ptr@{set\-Edit\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Edit\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Edit\-Menu\-Ptr (
@@ -620,10 +425,6 @@ Definition at line 307 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{edit\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a91cccfac6fdcd723b4d127a0a668adc7}
-
-
-Definition at line 115 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_ab468fb7b10a30bf6350bf030ce32a5fa}{\index{Master\-Gui@{Master\-Gui}!set\-Editor@{set\-Editor}}
 \index{set\-Editor@{set\-Editor}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Editor}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Editor (
@@ -631,10 +432,6 @@ Definition at line 115 of file Master\-Gui.\-cpp.
 \item[{Q\-Text\-Edit $\ast$}]{editor}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_ab468fb7b10a30bf6350bf030ce32a5fa}
-
-
-Definition at line 343 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a4ee6b41a4beb5adfd5c2c15e2490384e}{\index{Master\-Gui@{Master\-Gui}!set\-File\-Menu\-Ptr@{set\-File\-Menu\-Ptr}}
 \index{set\-File\-Menu\-Ptr@{set\-File\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-File\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-File\-Menu\-Ptr (
@@ -642,10 +439,6 @@ Definition at line 343 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{file\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a4ee6b41a4beb5adfd5c2c15e2490384e}
-
-
-Definition at line 103 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a83cb5a184a605d368841854ba1cb461b}{\index{Master\-Gui@{Master\-Gui}!set\-Group\-One\-Tool\-Bar\-Ptr@{set\-Group\-One\-Tool\-Bar\-Ptr}}
 \index{set\-Group\-One\-Tool\-Bar\-Ptr@{set\-Group\-One\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Group\-One\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Group\-One\-Tool\-Bar\-Ptr (
@@ -653,10 +446,6 @@ Definition at line 103 of file Master\-Gui.\-cpp.
 \item[{Q\-Tool\-Bar $\ast$}]{group\-One\-Tool\-Bar\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a83cb5a184a605d368841854ba1cb461b}
-
-
-Definition at line 259 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a4ee9de81a0827f42423f0c589cd4f1b4}{\index{Master\-Gui@{Master\-Gui}!set\-Group\-Three\-Tool\-Bar\-Ptr@{set\-Group\-Three\-Tool\-Bar\-Ptr}}
 \index{set\-Group\-Three\-Tool\-Bar\-Ptr@{set\-Group\-Three\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Group\-Three\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Group\-Three\-Tool\-Bar\-Ptr (
@@ -664,10 +453,6 @@ Definition at line 259 of file Master\-Gui.\-cpp.
 \item[{Q\-Tool\-Bar $\ast$}]{group\-Three\-Tool\-Bar\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a4ee9de81a0827f42423f0c589cd4f1b4}
-
-
-Definition at line 283 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a677763f96267d87f843c61dff2d7e4ca}{\index{Master\-Gui@{Master\-Gui}!set\-Group\-Two\-Tool\-Bar\-Ptr@{set\-Group\-Two\-Tool\-Bar\-Ptr}}
 \index{set\-Group\-Two\-Tool\-Bar\-Ptr@{set\-Group\-Two\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Group\-Two\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Group\-Two\-Tool\-Bar\-Ptr (
@@ -675,10 +460,6 @@ Definition at line 283 of file Master\-Gui.\-cpp.
 \item[{Q\-Tool\-Bar $\ast$}]{group\-Two\-Tool\-Bar\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a677763f96267d87f843c61dff2d7e4ca}
-
-
-Definition at line 271 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a72a4772ee0ff74f6158f99e94c41189a}{\index{Master\-Gui@{Master\-Gui}!set\-Help\-Menu\-Ptr@{set\-Help\-Menu\-Ptr}}
 \index{set\-Help\-Menu\-Ptr@{set\-Help\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Help\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Help\-Menu\-Ptr (
@@ -686,10 +467,6 @@ Definition at line 271 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{help\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a72a4772ee0ff74f6158f99e94c41189a}
-
-
-Definition at line 247 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_aa7ab2e7e8f2a5128eb8b6b14fc569ec4}{\index{Master\-Gui@{Master\-Gui}!set\-Master\-Actions@{set\-Master\-Actions}}
 \index{set\-Master\-Actions@{set\-Master\-Actions}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Master\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Master\-Actions (
@@ -697,10 +474,6 @@ Definition at line 247 of file Master\-Gui.\-cpp.
 \item[{{\bf Master\-Actions} $\ast$}]{master\-Actions}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_aa7ab2e7e8f2a5128eb8b6b14fc569ec4}
-
-
-Definition at line 355 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a377da4ce23db123d0e2cef68d2409e1d}{\index{Master\-Gui@{Master\-Gui}!set\-Master\-Menus@{set\-Master\-Menus}}
 \index{set\-Master\-Menus@{set\-Master\-Menus}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Master\-Menus}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Master\-Menus (
@@ -708,10 +481,6 @@ Definition at line 355 of file Master\-Gui.\-cpp.
 \item[{{\bf Master\-Menus} $\ast$}]{master\-Menus}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a377da4ce23db123d0e2cef68d2409e1d}
-
-
-Definition at line 379 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a355c5dcc87dc16c5bbe5b5917cc54392}{\index{Master\-Gui@{Master\-Gui}!set\-Master\-Tool\-Bars@{set\-Master\-Tool\-Bars}}
 \index{set\-Master\-Tool\-Bars@{set\-Master\-Tool\-Bars}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Master\-Tool\-Bars}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Master\-Tool\-Bars (
@@ -719,10 +488,6 @@ Definition at line 379 of file Master\-Gui.\-cpp.
 \item[{{\bf Master\-Tool\-Bars} $\ast$}]{master\-Tool\-Bars}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a355c5dcc87dc16c5bbe5b5917cc54392}
-
-
-Definition at line 367 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a2479e3fe7c83858e517855dededf2c51}{\index{Master\-Gui@{Master\-Gui}!set\-Navigate\-Menu\-Ptr@{set\-Navigate\-Menu\-Ptr}}
 \index{set\-Navigate\-Menu\-Ptr@{set\-Navigate\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Navigate\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Navigate\-Menu\-Ptr (
@@ -730,10 +495,6 @@ Definition at line 367 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{navigate\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a2479e3fe7c83858e517855dededf2c51}
-
-
-Definition at line 139 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_ae4baf92ceb9abc180d12d133199780cd}{\index{Master\-Gui@{Master\-Gui}!set\-Profile\-Menu\-Ptr@{set\-Profile\-Menu\-Ptr}}
 \index{set\-Profile\-Menu\-Ptr@{set\-Profile\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Profile\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Profile\-Menu\-Ptr (
@@ -741,10 +502,6 @@ Definition at line 139 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{profile\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_ae4baf92ceb9abc180d12d133199780cd}
-
-
-Definition at line 199 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a63c4e2fc02d8101c5d2113783dc86449}{\index{Master\-Gui@{Master\-Gui}!set\-Refactor\-Menu\-Ptr@{set\-Refactor\-Menu\-Ptr}}
 \index{set\-Refactor\-Menu\-Ptr@{set\-Refactor\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Refactor\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Refactor\-Menu\-Ptr (
@@ -752,10 +509,6 @@ Definition at line 199 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{refactor\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a63c4e2fc02d8101c5d2113783dc86449}
-
-
-Definition at line 163 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a9d5a2185276d6a2a7a62227b55e9c8be}{\index{Master\-Gui@{Master\-Gui}!set\-Run\-Menu\-Ptr@{set\-Run\-Menu\-Ptr}}
 \index{set\-Run\-Menu\-Ptr@{set\-Run\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Run\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Run\-Menu\-Ptr (
@@ -763,10 +516,6 @@ Definition at line 163 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{run\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a9d5a2185276d6a2a7a62227b55e9c8be}
-
-
-Definition at line 175 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a58264652e48e97b3313819f0f67bb19e}{\index{Master\-Gui@{Master\-Gui}!set\-Source\-Menu\-Ptr@{set\-Source\-Menu\-Ptr}}
 \index{set\-Source\-Menu\-Ptr@{set\-Source\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Source\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Source\-Menu\-Ptr (
@@ -774,10 +523,6 @@ Definition at line 175 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{source\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a58264652e48e97b3313819f0f67bb19e}
-
-
-Definition at line 151 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a8d3dd60f8b7760d8e50eacd53b32e69a}{\index{Master\-Gui@{Master\-Gui}!set\-South\-Tool\-Bar\-Ptr@{set\-South\-Tool\-Bar\-Ptr}}
 \index{set\-South\-Tool\-Bar\-Ptr@{set\-South\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-South\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-South\-Tool\-Bar\-Ptr (
@@ -785,10 +530,6 @@ Definition at line 151 of file Master\-Gui.\-cpp.
 \item[{Q\-Tool\-Bar $\ast$}]{south\-Tool\-Bar\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a8d3dd60f8b7760d8e50eacd53b32e69a}
-
-
-Definition at line 295 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a528332ae24456ea6efddaba74527852b}{\index{Master\-Gui@{Master\-Gui}!set\-Tab\-Widget@{set\-Tab\-Widget}}
 \index{set\-Tab\-Widget@{set\-Tab\-Widget}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Tab\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Tab\-Widget (
@@ -796,10 +537,6 @@ Definition at line 295 of file Master\-Gui.\-cpp.
 \item[{Q\-Tab\-Widget $\ast$}]{tab\-Widget}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a528332ae24456ea6efddaba74527852b}
-
-
-Definition at line 331 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a06fc56181b6ae4854f3c51172d5672fb}{\index{Master\-Gui@{Master\-Gui}!set\-Team\-Menu\-Ptr@{set\-Team\-Menu\-Ptr}}
 \index{set\-Team\-Menu\-Ptr@{set\-Team\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Team\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Team\-Menu\-Ptr (
@@ -807,10 +544,6 @@ Definition at line 331 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{team\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a06fc56181b6ae4854f3c51172d5672fb}
-
-
-Definition at line 211 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a3361c70cc3726e7f91aaf856ab1df816}{\index{Master\-Gui@{Master\-Gui}!set\-Tools\-Menu\-Ptr@{set\-Tools\-Menu\-Ptr}}
 \index{set\-Tools\-Menu\-Ptr@{set\-Tools\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Tools\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Tools\-Menu\-Ptr (
@@ -818,10 +551,6 @@ Definition at line 211 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{tools\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a3361c70cc3726e7f91aaf856ab1df816}
-
-
-Definition at line 223 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a4a18f80bfecff6ff5bae16721044dcac}{\index{Master\-Gui@{Master\-Gui}!set\-View\-Menu\-Ptr@{set\-View\-Menu\-Ptr}}
 \index{set\-View\-Menu\-Ptr@{set\-View\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-View\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-View\-Menu\-Ptr (
@@ -829,10 +558,6 @@ Definition at line 223 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{view\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a4a18f80bfecff6ff5bae16721044dcac}
-
-
-Definition at line 127 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_a768fa0a0b9cb7886f703b7b60f0b1f57}{\index{Master\-Gui@{Master\-Gui}!set\-West\-Tool\-Bar\-Ptr@{set\-West\-Tool\-Bar\-Ptr}}
 \index{set\-West\-Tool\-Bar\-Ptr@{set\-West\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-West\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-West\-Tool\-Bar\-Ptr (
@@ -840,10 +565,6 @@ Definition at line 127 of file Master\-Gui.\-cpp.
 \item[{Q\-Tool\-Bar $\ast$}]{west\-Tool\-Bar\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_a768fa0a0b9cb7886f703b7b60f0b1f57}
-
-
-Definition at line 319 of file Master\-Gui.\-cpp.
-
 \hypertarget{class_master_gui_aea25ff33b56b0111863b5b7af3513a59}{\index{Master\-Gui@{Master\-Gui}!set\-Window\-Menu\-Ptr@{set\-Window\-Menu\-Ptr}}
 \index{set\-Window\-Menu\-Ptr@{set\-Window\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{set\-Window\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}void Master\-Gui\-::set\-Window\-Menu\-Ptr (
@@ -851,188 +572,94 @@ Definition at line 319 of file Master\-Gui.\-cpp.
 \item[{Q\-Menu $\ast$}]{window\-Menu\-Ptr}
 \end{DoxyParamCaption}
 )}}\label{class_master_gui_aea25ff33b56b0111863b5b7af3513a59}
-
-
-Definition at line 235 of file Master\-Gui.\-cpp.
-
+\hypertarget{class_master_gui_a96d5da37e4de63a0c0e9d36eb4a53f1e}{\index{Master\-Gui@{Master\-Gui}!to\-String@{to\-String}}
+\index{to\-String@{to\-String}!MasterGui@{Master\-Gui}}
+\subsubsection[{to\-String}]{\setlength{\rightskip}{0pt plus 5cm}Q\-String $\ast$ Master\-Gui\-::to\-String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_master_gui_a96d5da37e4de63a0c0e9d36eb4a53f1e}
 
 
 \subsection{Member Data Documentation}
 \hypertarget{class_master_gui_a565fc5a3622b8b5417b26dd1306439b8}{\index{Master\-Gui@{Master\-Gui}!central\-Gui@{central\-Gui}}
 \index{central\-Gui@{central\-Gui}!MasterGui@{Master\-Gui}}
 \subsubsection[{central\-Gui}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Central\-Gui}$\ast$ Master\-Gui\-::central\-Gui\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a565fc5a3622b8b5417b26dd1306439b8}
-
-
-Definition at line 66 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_ac1efdb45cdde47584625a8026166c316}{\index{Master\-Gui@{Master\-Gui}!debug\-Menu\-Ptr@{debug\-Menu\-Ptr}}
 \index{debug\-Menu\-Ptr@{debug\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{debug\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::debug\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_ac1efdb45cdde47584625a8026166c316}
-
-
-Definition at line 47 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a289b4db70744b812566a689bf368c37c}{\index{Master\-Gui@{Master\-Gui}!east\-Tool\-Bar\-Ptr@{east\-Tool\-Bar\-Ptr}}
 \index{east\-Tool\-Bar\-Ptr@{east\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{east\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar$\ast$ Master\-Gui\-::east\-Tool\-Bar\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a289b4db70744b812566a689bf368c37c}
-
-
-Definition at line 58 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_aeb708f257518fb47d567d1130bfc7f7f}{\index{Master\-Gui@{Master\-Gui}!edit\-Menu\-Ptr@{edit\-Menu\-Ptr}}
 \index{edit\-Menu\-Ptr@{edit\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{edit\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::edit\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_aeb708f257518fb47d567d1130bfc7f7f}
-
-
-Definition at line 41 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a0681f0b3d1828d84c0c0cd7e4d765d98}{\index{Master\-Gui@{Master\-Gui}!editor@{editor}}
 \index{editor@{editor}!MasterGui@{Master\-Gui}}
 \subsubsection[{editor}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Text\-Edit$\ast$ Master\-Gui\-::editor\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a0681f0b3d1828d84c0c0cd7e4d765d98}
-
-
-Definition at line 62 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a1d768ad74ddb657928df8539c356abb6}{\index{Master\-Gui@{Master\-Gui}!file\-Menu\-Ptr@{file\-Menu\-Ptr}}
 \index{file\-Menu\-Ptr@{file\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{file\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::file\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a1d768ad74ddb657928df8539c356abb6}
-
-
-Definition at line 40 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a67441e41e16e245976536f18cd7f2d6d}{\index{Master\-Gui@{Master\-Gui}!group\-One\-Tool\-Bar\-Ptr@{group\-One\-Tool\-Bar\-Ptr}}
 \index{group\-One\-Tool\-Bar\-Ptr@{group\-One\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{group\-One\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar$\ast$ Master\-Gui\-::group\-One\-Tool\-Bar\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a67441e41e16e245976536f18cd7f2d6d}
-
-
-Definition at line 54 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_af620c7fd8a0903c84581a657d23ef45b}{\index{Master\-Gui@{Master\-Gui}!group\-Three\-Tool\-Bar\-Ptr@{group\-Three\-Tool\-Bar\-Ptr}}
 \index{group\-Three\-Tool\-Bar\-Ptr@{group\-Three\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{group\-Three\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar$\ast$ Master\-Gui\-::group\-Three\-Tool\-Bar\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_af620c7fd8a0903c84581a657d23ef45b}
-
-
-Definition at line 56 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_aa2c7522e568a43f38861795af343bf76}{\index{Master\-Gui@{Master\-Gui}!group\-Two\-Tool\-Bar\-Ptr@{group\-Two\-Tool\-Bar\-Ptr}}
 \index{group\-Two\-Tool\-Bar\-Ptr@{group\-Two\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{group\-Two\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar$\ast$ Master\-Gui\-::group\-Two\-Tool\-Bar\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_aa2c7522e568a43f38861795af343bf76}
-
-
-Definition at line 55 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a4125e9702c79a263642bf83f5f1e2192}{\index{Master\-Gui@{Master\-Gui}!help\-Menu\-Ptr@{help\-Menu\-Ptr}}
 \index{help\-Menu\-Ptr@{help\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{help\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::help\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a4125e9702c79a263642bf83f5f1e2192}
-
-
-Definition at line 52 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a85dc72333d336db18a92207a09db4ce3}{\index{Master\-Gui@{Master\-Gui}!master\-Actions@{master\-Actions}}
 \index{master\-Actions@{master\-Actions}!MasterGui@{Master\-Gui}}
 \subsubsection[{master\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\-Actions}$\ast$ Master\-Gui\-::master\-Actions\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a85dc72333d336db18a92207a09db4ce3}
-
-
-Definition at line 63 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a27f793278e486a5bfec69ef366199e5d}{\index{Master\-Gui@{Master\-Gui}!master\-Menus@{master\-Menus}}
 \index{master\-Menus@{master\-Menus}!MasterGui@{Master\-Gui}}
 \subsubsection[{master\-Menus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\-Menus}$\ast$ Master\-Gui\-::master\-Menus\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a27f793278e486a5bfec69ef366199e5d}
-
-
-Definition at line 65 of file Master\-Gui.\-h.
-
+\hypertarget{class_master_gui_a69899e3a9712e70d91f42b9d8ba2bd22}{\index{Master\-Gui@{Master\-Gui}!master\-Status\-Bar@{master\-Status\-Bar}}
+\index{master\-Status\-Bar@{master\-Status\-Bar}!MasterGui@{Master\-Gui}}
+\subsubsection[{master\-Status\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\-Status\-Bar}$\ast$ Master\-Gui\-::master\-Status\-Bar\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a69899e3a9712e70d91f42b9d8ba2bd22}
 \hypertarget{class_master_gui_afb90e8f19dae43cb78c8495e5708e68b}{\index{Master\-Gui@{Master\-Gui}!master\-Tool\-Bars@{master\-Tool\-Bars}}
 \index{master\-Tool\-Bars@{master\-Tool\-Bars}!MasterGui@{Master\-Gui}}
 \subsubsection[{master\-Tool\-Bars}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Master\-Tool\-Bars}$\ast$ Master\-Gui\-::master\-Tool\-Bars\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_afb90e8f19dae43cb78c8495e5708e68b}
-
-
-Definition at line 64 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_aec75bd894b1c0eecea35c67ecdfcf1b0}{\index{Master\-Gui@{Master\-Gui}!navigate\-Menu\-Ptr@{navigate\-Menu\-Ptr}}
 \index{navigate\-Menu\-Ptr@{navigate\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{navigate\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::navigate\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_aec75bd894b1c0eecea35c67ecdfcf1b0}
-
-
-Definition at line 43 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a9c0ef6beee1cb9afcfff786bc4c6bd06}{\index{Master\-Gui@{Master\-Gui}!profile\-Menu\-Ptr@{profile\-Menu\-Ptr}}
 \index{profile\-Menu\-Ptr@{profile\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{profile\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::profile\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a9c0ef6beee1cb9afcfff786bc4c6bd06}
-
-
-Definition at line 48 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a44e789008fcc276a7a4294beb98d02c7}{\index{Master\-Gui@{Master\-Gui}!refactor\-Menu\-Ptr@{refactor\-Menu\-Ptr}}
 \index{refactor\-Menu\-Ptr@{refactor\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{refactor\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::refactor\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a44e789008fcc276a7a4294beb98d02c7}
-
-
-Definition at line 45 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_ae5b13b338972e99f29e623d258088b07}{\index{Master\-Gui@{Master\-Gui}!run\-Menu\-Ptr@{run\-Menu\-Ptr}}
 \index{run\-Menu\-Ptr@{run\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{run\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::run\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_ae5b13b338972e99f29e623d258088b07}
-
-
-Definition at line 46 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a3ffd8337f87c7c6eca6b4740fa8d1c57}{\index{Master\-Gui@{Master\-Gui}!source\-Menu\-Ptr@{source\-Menu\-Ptr}}
 \index{source\-Menu\-Ptr@{source\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{source\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::source\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a3ffd8337f87c7c6eca6b4740fa8d1c57}
-
-
-Definition at line 44 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a4a0234ba347ba345e79eff8c19ba27c8}{\index{Master\-Gui@{Master\-Gui}!south\-Tool\-Bar\-Ptr@{south\-Tool\-Bar\-Ptr}}
 \index{south\-Tool\-Bar\-Ptr@{south\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{south\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar$\ast$ Master\-Gui\-::south\-Tool\-Bar\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a4a0234ba347ba345e79eff8c19ba27c8}
-
-
-Definition at line 57 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_a3bca8bd4cc4ecef70de27afff52a7b08}{\index{Master\-Gui@{Master\-Gui}!tab\-Widget@{tab\-Widget}}
 \index{tab\-Widget@{tab\-Widget}!MasterGui@{Master\-Gui}}
 \subsubsection[{tab\-Widget}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tab\-Widget$\ast$ Master\-Gui\-::tab\-Widget\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_a3bca8bd4cc4ecef70de27afff52a7b08}
-
-
-Definition at line 61 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_ad1d5b1e487d4695bab91ab0db856d795}{\index{Master\-Gui@{Master\-Gui}!team\-Menu\-Ptr@{team\-Menu\-Ptr}}
 \index{team\-Menu\-Ptr@{team\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{team\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::team\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_ad1d5b1e487d4695bab91ab0db856d795}
-
-
-Definition at line 49 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_ab751e75ffdf91f5b90b4c2900975f308}{\index{Master\-Gui@{Master\-Gui}!tools\-Menu\-Ptr@{tools\-Menu\-Ptr}}
 \index{tools\-Menu\-Ptr@{tools\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{tools\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::tools\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_ab751e75ffdf91f5b90b4c2900975f308}
-
-
-Definition at line 50 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_acb6a42ddb59a05f60ab7aa2a9fdddbc8}{\index{Master\-Gui@{Master\-Gui}!view\-Menu\-Ptr@{view\-Menu\-Ptr}}
 \index{view\-Menu\-Ptr@{view\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{view\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::view\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_acb6a42ddb59a05f60ab7aa2a9fdddbc8}
-
-
-Definition at line 42 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_ad8bf561c56063077e97f9a993fa38ee4}{\index{Master\-Gui@{Master\-Gui}!west\-Tool\-Bar\-Ptr@{west\-Tool\-Bar\-Ptr}}
 \index{west\-Tool\-Bar\-Ptr@{west\-Tool\-Bar\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{west\-Tool\-Bar\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Tool\-Bar$\ast$ Master\-Gui\-::west\-Tool\-Bar\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_ad8bf561c56063077e97f9a993fa38ee4}
-
-
-Definition at line 59 of file Master\-Gui.\-h.
-
 \hypertarget{class_master_gui_ae33b742ac5529096317c8096984ffef1}{\index{Master\-Gui@{Master\-Gui}!window\-Menu\-Ptr@{window\-Menu\-Ptr}}
 \index{window\-Menu\-Ptr@{window\-Menu\-Ptr}!MasterGui@{Master\-Gui}}
 \subsubsection[{window\-Menu\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Menu$\ast$ Master\-Gui\-::window\-Menu\-Ptr\hspace{0.3cm}{\ttfamily [private]}}}\label{class_master_gui_ae33b742ac5529096317c8096984ffef1}
-
-
-Definition at line 51 of file Master\-Gui.\-h.
-
 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}

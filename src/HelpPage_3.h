@@ -37,7 +37,16 @@ class HelpPage_3 : public QWidget
         ;
         
     public:
+        /**
+         * 
+         * 
+         * @param parent
+         */
         HelpPage_3(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         ~HelpPage_3();
 };
 

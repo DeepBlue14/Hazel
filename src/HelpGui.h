@@ -65,26 +65,102 @@ class HelpGui : public QWidget
         HelpPage_4* helpPage_4Ptr;
         
     private slots:
+        /**
+         * Slot for the back button.
+         */
         void handleBackBtnSlot();
+        
+        /**
+         * Slot for the next button.
+         */
         void handleNextBtnSlot();
+        
+        /**
+         * Slot for the finish button.
+         */
         void handleFinishBtnSlot();
+        
+        /**
+         * Slot for the help button.
+         */
         void handleHelpBntSlot();
+        
+        /**
+         * Slot for the cancel button.
+         */
         void handleCancelBtnSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent Reference to parent class.
+         */
         HelpGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initBtns();
+        
+        /**
+         * 
+         */
         void swapNextPage();
+        
+        /**
+         * 
+         */
         void swapBackPage();
+        
+        /**
+         * 
+         */
         void loadPage_1();
+        
+        /**
+         * 
+         */
         void unloadPage_1();
+        
+        /**
+         * 
+         */
         void loadPage_2();
+        
+        /**
+         * 
+         */
         void unloadPage_2();
+        
+        /**
+         * 
+         */
         void loadPage_3();
+        
+        /**
+         * 
+         */
         void unloadPage_3();
+        
+        /**
+         * 
+         */
         void loadPage_4();
+        
+        /**
+         * 
+         */
         void unloadPage_4();
+        
+        /**
+         * 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~HelpGui();
 };
 

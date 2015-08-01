@@ -84,29 +84,169 @@ class RFile : public QFile
         //QString* fromQByteArray(QByteArray* byteArray);
         
     public:
+        /**
+         * Constructor.
+         */
         RFile();
+        
+        /**
+         * Overloaded constructor.
+         * 
+         * @param name file name.
+         */
         RFile(QString name);
+        
+        /**
+         * Set the programming/markup/etc. language (ie. C, C++, XML, etc.)
+         * which this file will contain.
+         * 
+         * @param fileLangPtr the selected language.
+         */
         void setFileLangPtr(FileLang* fileLangPtr);
+        
+        /**
+         * Accessor for a pointer to the file.
+         * 
+         * @return pointer to the file.
+         */
         FileLang* getFileLangPtr();
+        
+        /**
+         * Mutator for the file type variable.
+         */
         void setFileTypePtr(FileType* fileTypePtr);
+        
+        /**
+         * Accessor of the file type.
+         * 
+         * @return file type.
+         */
         FileType* getFileTypePtr();
+        
+        /**
+         * Mutator for the file name.m
+         * 
+         * @param fileNameStrPtr the files name.
+         */
         void setFileNameStrPtr(QString* fileNameStrPtr);
+        
+        /**
+         * Accessor of the file name
+         * 
+         * @return fileNameStrPtr the file name
+         */
         QString* getFileNameStrPtr();
+        
+        /**
+         * Mutator of the file extension.
+         * 
+         * @param fileExtStrPtr the file extension.
+         */
         void setFileExtStrPtr(QString* fileExtStrPtr);
+        
+        /**
+         * Accessor of the file extension.
+         * 
+         * @return fileExtStrPtr the file extension.
+         */
         QString* getFileExtStrPtr();
+        
+        /**
+         * Mutator for the absolute file path.
+         * 
+         * @param absFilePathStrPtr absolute path of the file.
+         */
         void setAbsFilePathStrPtr(QString* absFilePathStrPtr);
+        
+        /**
+         * Accessor for the file's path.
+         * 
+         * @return absFilePathStrPtr.
+         */
         QString* getAbsFilePathStrPtr();
+        
+        /**
+         * Mutator for the relative path of the file.
+         * 
+         * @param relFilePathStrPtr relative path to the file.
+         */
         void setRelFilePathStrPtr(QString* relFilePathStrPtr);
+        
+        /**
+         * Accessor of the file's relative path.
+         * 
+         * @return relFilePathStrPtr.
+         */
         QString* getRelFilePathStrPtr();
+        
+        /**
+         * Mutator of the reference to the physical (backend) file connected
+         * to this frontend textedit.
+         * 
+         * @param parallelFileGuiPtr the physical file
+         */
         void setParallelFileGuiPtr(FileGui* parallelFileGuiPtr);
+        
+        /**
+         * Accessor of the physical file connected to the GUI.
+         * 
+         * @return parallelFileGuiPtr.
+         */
         FileGui* getParallelFileGuiPtr();
+        
+        /**
+         * Determines the status of the file.
+         * 
+         * @return true if the file is open with read privileges.
+         */
         bool openRdFile();
+        
+        /**
+         * Determines the status of the file.
+         * 
+         * @return true if the file is open with write privileges.
+         */
         bool openWrFile();
+        
+        /**
+         * Determines the of the file.
+         * 
+         * @return true if the file is open with read and write privileges.
+         */
         bool openRdWrFile();
+        
+        /**
+         * Reads all the file's contents.
+         * 
+         * @return the file's contents.
+         */
         QString* readFile();
+        
+        /**
+         * Writes to the end of the file.
+         * 
+         * @param text data to be stored in the file.
+         * @return true if the operation was completed successfully.
+         */
         bool writeFile(QString* text);
+        
+        /**
+         * Closes the file.
+         * 
+         * @return true if the operation was completed successfully.
+         */
         bool closeFile();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return data of the class.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~RFile();
 };
 

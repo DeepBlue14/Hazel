@@ -21,12 +21,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ride1.jpg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RIDE
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">ROS Integrated Development Environment</div>
+   <div id="projectbrief">Ros Integrated Development Invironment</div>
   </td>
  </tr>
  </tbody>
@@ -103,47 +102,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef MSG_TYPE_DAT_H</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MSG_TYPE_DAT_H</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QVector&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_msg_field_dat_8h.html">MsgFieldDat.h</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_windows_console_text_8h.html">WindowsConsoleText.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_unix_console_text_8h.html">UnixConsoleText.h</a>&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_msg_file_dat.html">MsgFileDat</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html#a219fbb888679f6785c3351d949902a05">   24</a></span>&#160;        <span class="keywordtype">string</span>* <a class="code" href="class_msg_file_dat.html#a219fbb888679f6785c3351d949902a05">msgFileNameStrPtr</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html#a255d1a1881daf9f5d710c1c868c41a5b">   25</a></span>&#160;        <span class="keywordtype">string</span>* <a class="code" href="class_msg_file_dat.html#a255d1a1881daf9f5d710c1c868c41a5b">msgFileHeaderStrPtr</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html#ab2dbc7dcb9a7c27db1384a3f2a816acd">   26</a></span>&#160;        vector&lt;MsgFieldDat*&gt;* <a class="code" href="class_msg_file_dat.html#ab2dbc7dcb9a7c27db1384a3f2a816acd">msgFieldDatPtrVecPtr</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="class_msg_file_dat.html">MsgFileDat</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">void</span> setMsgFileNameStrPtr(<span class="keywordtype">string</span>* msgFileNameStrPtr);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">string</span>* getMsgFileNameStrPtr();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> setMsgFileHeaderStrPtr(<span class="keywordtype">string</span>* msgFileHeaderStrPtr);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">string</span>* getMsgFileHeaderStrPtr();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> pushToMsgFieldDatPtrVecPtr(<a class="code" href="class_msg_field_dat.html">MsgFieldDat</a>* msgFieldDatPtr);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_msg_field_dat.html">MsgFieldDat</a>* popFromMsgFieldDatPtrVecPtr();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        vector&lt;MsgFieldDat*&gt;* getMsgFieldDatPtrVecPtr();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">string</span>* <a class="code" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        ~<a class="code" href="class_msg_file_dat.html">MsgFileDat</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* MSG_TYPE_DAT_H */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="class_msg_file_dat_html_a255d1a1881daf9f5d710c1c868c41a5b"><div class="ttname"><a href="class_msg_file_dat.html#a255d1a1881daf9f5d710c1c868c41a5b">MsgFileDat::msgFileHeaderStrPtr</a></div><div class="ttdeci">string * msgFileHeaderStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_msg_file_dat_8h_source.html#l00025">MsgFileDat.h:25</a></div></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = WindowsConsoleText;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#elif __APPLE</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#elif __linux</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>cct = UnixConsoleText;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_msg_file_dat.html">MsgFileDat</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html#a6fe034583c677bc9a21b96061fe80898">   34</a></span>&#160;        QString <a class="code" href="class_msg_file_dat.html#a6fe034583c677bc9a21b96061fe80898">msgFileNameStrPtr</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html#aadbf86f44cd8bd440bd6ecbff36c540d">   35</a></span>&#160;        QString* <a class="code" href="class_msg_file_dat.html#aadbf86f44cd8bd440bd6ecbff36c540d">msgFileHeaderStrPtr</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_msg_file_dat.html#aa40638f3cc6eaee686c0f5f729349ae5">   36</a></span>&#160;        QVector&lt;MsgFieldDat*&gt; <a class="code" href="class_msg_file_dat.html#aa40638f3cc6eaee686c0f5f729349ae5">msgFieldDatPtrVecPtr</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_msg_file_dat.html">MsgFileDat</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> setMsgFileNameStrPtr(QString msgFileNameStrPtr);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        QString getMsgFileNameStrPtr();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">void</span> setMsgFileHeaderStrPtr(QString* msgFileHeaderStrPtr);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        QString* getMsgFileHeaderStrPtr();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> pushToMsgFieldDatPtrVecPtr(<a class="code" href="class_msg_field_dat.html">MsgFieldDat</a>* msgFieldDatPtr);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_msg_field_dat.html">MsgFieldDat</a>* popFromMsgFieldDatPtrVecPtr();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        QVector&lt;MsgFieldDat*&gt; getMsgFieldDatPtrVecPtr();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        QString* <a class="code" href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        ~<a class="code" href="class_msg_file_dat.html">MsgFileDat</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* MSG_TYPE_DAT_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="_msg_field_dat_8h_html"><div class="ttname"><a href="_msg_field_dat_8h.html">MsgFieldDat.h</a></div></div>
-<div class="ttc" id="class_msg_file_dat_html_a219fbb888679f6785c3351d949902a05"><div class="ttname"><a href="class_msg_file_dat.html#a219fbb888679f6785c3351d949902a05">MsgFileDat::msgFileNameStrPtr</a></div><div class="ttdeci">string * msgFileNameStrPtr</div><div class="ttdef"><b>Definition:</b> <a href="_msg_file_dat_8h_source.html#l00024">MsgFileDat.h:24</a></div></div>
-<div class="ttc" id="class_msg_file_dat_html"><div class="ttname"><a href="class_msg_file_dat.html">MsgFileDat</a></div><div class="ttdef"><b>Definition:</b> <a href="_msg_file_dat_8h_source.html#l00021">MsgFileDat.h:21</a></div></div>
-<div class="ttc" id="_ride_env_8cpp_html_a676f4ed0a423d771b78df4c02b3ae639"><div class="ttname"><a href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a></div><div class="ttdeci">QString * toString()</div><div class="ttdef"><b>Definition:</b> <a href="_ride_env_8cpp_source.html#l00057">RideEnv.cpp:57</a></div></div>
-<div class="ttc" id="class_msg_field_dat_html"><div class="ttname"><a href="class_msg_field_dat.html">MsgFieldDat</a></div><div class="ttdef"><b>Definition:</b> <a href="_msg_field_dat_8h_source.html#l00018">MsgFieldDat.h:18</a></div></div>
-<div class="ttc" id="class_msg_file_dat_html_ab2dbc7dcb9a7c27db1384a3f2a816acd"><div class="ttname"><a href="class_msg_file_dat.html#ab2dbc7dcb9a7c27db1384a3f2a816acd">MsgFileDat::msgFieldDatPtrVecPtr</a></div><div class="ttdeci">vector&lt; MsgFieldDat * &gt; * msgFieldDatPtrVecPtr</div><div class="ttdef"><b>Definition:</b> <a href="_msg_file_dat_8h_source.html#l00026">MsgFileDat.h:26</a></div></div>
+<div class="ttc" id="class_msg_file_dat_html"><div class="ttname"><a href="class_msg_file_dat.html">MsgFileDat</a></div><div class="ttdef"><b>Definition:</b> MsgFileDat.h:31</div></div>
+<div class="ttc" id="class_msg_file_dat_html_a6fe034583c677bc9a21b96061fe80898"><div class="ttname"><a href="class_msg_file_dat.html#a6fe034583c677bc9a21b96061fe80898">MsgFileDat::msgFileNameStrPtr</a></div><div class="ttdeci">QString msgFileNameStrPtr</div><div class="ttdef"><b>Definition:</b> MsgFileDat.h:34</div></div>
+<div class="ttc" id="_ride_env_8cpp_html_a676f4ed0a423d771b78df4c02b3ae639"><div class="ttname"><a href="_ride_env_8cpp.html#a676f4ed0a423d771b78df4c02b3ae639">toString</a></div><div class="ttdeci">QString * toString()</div><div class="ttdef"><b>Definition:</b> RideEnv.cpp:66</div></div>
+<div class="ttc" id="_windows_console_text_8h_html"><div class="ttname"><a href="_windows_console_text_8h.html">WindowsConsoleText.h</a></div></div>
+<div class="ttc" id="class_msg_field_dat_html"><div class="ttname"><a href="class_msg_field_dat.html">MsgFieldDat</a></div><div class="ttdef"><b>Definition:</b> MsgFieldDat.h:29</div></div>
+<div class="ttc" id="class_msg_file_dat_html_aadbf86f44cd8bd440bd6ecbff36c540d"><div class="ttname"><a href="class_msg_file_dat.html#aadbf86f44cd8bd440bd6ecbff36c540d">MsgFileDat::msgFileHeaderStrPtr</a></div><div class="ttdeci">QString * msgFileHeaderStrPtr</div><div class="ttdef"><b>Definition:</b> MsgFileDat.h:35</div></div>
+<div class="ttc" id="class_msg_file_dat_html_aa40638f3cc6eaee686c0f5f729349ae5"><div class="ttname"><a href="class_msg_file_dat.html#aa40638f3cc6eaee686c0f5f729349ae5">MsgFileDat::msgFieldDatPtrVecPtr</a></div><div class="ttdeci">QVector&lt; MsgFieldDat * &gt; msgFieldDatPtrVecPtr</div><div class="ttdef"><b>Definition:</b> MsgFileDat.h:36</div></div>
+<div class="ttc" id="_unix_console_text_8h_html"><div class="ttname"><a href="_unix_console_text_8h.html">UnixConsoleText.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 15:46:11 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

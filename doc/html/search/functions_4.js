@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['exited',['exited',['../class_terminal.html#ac42a237a8eb0e9628f2c68d1876c7688',1,'Terminal']]],
-  ['extractcomment',['extractComment',['../class_msg_parser.html#af4f977684abaa8c2660f8ff0649d0557',1,'MsgParser']]],
-  ['extractname',['extractName',['../class_msg_parser.html#add6a7751c58dc76e77b4b8dfd4afebf8',1,'MsgParser']]],
-  ['extracttype',['extractType',['../class_msg_parser.html#a315c9b8c16fe487199abfae3c953155a',1,'MsgParser']]]
+  ['execute',['execute',['../class_r_process.html#a918195aad5effdeaea7dab1166b7dfbe',1,'RProcess::execute(const QString &amp;program, const QStringList &amp;arguments)'],['../class_r_process.html#a7ab7291d9b08f84ece34998aada97172',1,'RProcess::execute(const QString &amp;program)']]],
+  ['exited',['exited',['../class_q_x_term.html#accd2958b9c2702c35ca367258fd20da5',1,'QXTerm']]],
+  ['extractattributes',['extractAttributes',['../class_msg_parser.html#ae61a0ab6192ce566652b89df9253181c',1,'MsgParser']]]
 ];

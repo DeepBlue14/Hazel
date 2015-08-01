@@ -3,6 +3,7 @@
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Currently not in use
+ * @deprecated
  * 
  * 
  * 
@@ -43,8 +44,20 @@ class Build
         QProcess* buildProcessPtr;
         
     public:
+        /**
+         * Constructor.
+         */
         Build();
+        
+        /**
+         * Executes the build command.
+         * @deprecated.
+         */
         void runBuildCmd();
+        
+        /**
+         * Destructor.
+         */
         ~Build();
         
 };

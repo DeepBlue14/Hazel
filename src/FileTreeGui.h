@@ -66,17 +66,83 @@ class FileTreeGui : public QWidget
         void handleDoubleClickSlot(const QModelIndex& mIndex);
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent
+         */
         FileTreeGui(QWidget* parent = 0);
+        
+        /**
+         * Inits the file tree.
+         */
         static void initTree();
+        
+        /**
+         * Adds children to a filetree.
+         * 
+         * @param item a file or directory.
+         * @param filePath path to the file or dir.
+         */
         static void addChildren(QTreeWidgetItem* item, QString filePath);
+        
+        /**
+         * Mutator of a reference to a RIDE project root directory.
+         * 
+         * @param projectRootAbsPathStrPtr RIDE project root directory.
+         */
         static void setProjectRootAbsPathStrPtr(QString* projectRootAbsPathStrPtr);
+        
+        /**
+         * Accessor of a reference to a RIDE project root directory.
+         * 
+         * @return projectRootAbsPathStrPtr RIDE project root directory.
+         */
         static QString* getProjectRootAbsPathStrPtr();
+        
+        /**
+         * Mutator of the loaded RIDE project name.
+         * 
+         * @param projectNameStrPtr loaded RIDE project name
+         */
         static void setProjectNameStrPtr(QString* projectNameStrPtr);
+        
+        /**
+         * Accessor of the loaded RIDE project name.
+         * 
+         * @return projectNameStrPtr.
+         */
         static QString* getProjectNameStrPtr();
+        
+        /**
+         * Reloads tree structure.
+         */
         static void refresh();
+        
+        /**
+         * Mutator of the north tab.
+         * 
+         * @param masterTabWidgetPtr north tab.
+         */
         void setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        
+        /**
+         * Accessor of the north tab.
+         * 
+         * @return northTabWidgetPtr.
+         */
         QTabWidget* getNorthTabWidgetPtr();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~FileTreeGui();
 };
 

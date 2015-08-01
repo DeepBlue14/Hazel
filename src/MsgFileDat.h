@@ -36,17 +36,80 @@ class MsgFileDat
         QVector<MsgFieldDat*> msgFieldDatPtrVecPtr;
         
     public:
+        /**
+         * Constructor.
+         */
         MsgFileDat();
+        
+        /**
+         * Mutator of a ROS message file name in QString* form.
+         * 
+         * @param msgFileNameStrPtr ROS message field name.
+         */
         void setMsgFileNameStrPtr(QString msgFileNameStrPtr);
+        
+        /**
+         * Accessor of the ROS message file name.
+         * 
+         * @return ROS message file name.
+         */
         QString getMsgFileNameStrPtr();
+        
+        /**
+         * Mutator of a ROS message file header.
+         * 
+         * @param msgFileHeaderStrPtr a ROS message file header.
+         */
         void setMsgFileHeaderStrPtr(QString* msgFileHeaderStrPtr);
+        
+        /**
+         * Accessor of the ROS message file header.
+         * 
+         * @return msgFileHeaderStrPtr ROS message file header.
+         */
         QString* getMsgFileHeaderStrPtr();
+        
+        /**
+         * Push a pointer to a MsgFieldDat object to the back of the vector
+         * msgFieldDatPtrVecPtr.
+         * @see MsgFieldDat.
+         * @see msgFieldDatPtrVecPtr.
+         * 
+         * @param msgFieldDatPtr a MsgFieldDat*.
+         */
         void pushToMsgFieldDatPtrVecPtr(MsgFieldDat* msgFieldDatPtr);
+        
+        /**
+         * Pop the pointer to a MsgFieldDat object from the back of the vector
+         * msgFieldDatPtrVecPtr.
+         * @see MsgFieldDat.
+         * @see msgFieldDatPtrVecPtr.
+         * 
+         * @return the pointer removed from the back of the vector.
+         */
         MsgFieldDat* popFromMsgFieldDatPtrVecPtr();
+        
+        /**
+         * Accessor method to get a pointer to the vector of pointers to
+         * MsgFieldDat objects.
+         * @see MsgFieldDat.
+         * @see msgFieldDatPtrVecPtr.
+         * 
+         * @return msgFieldDatPtrVecPtr.
+         */
         QVector<MsgFieldDat*> getMsgFieldDatPtrVecPtr();
+        
+        /**
+         * toString method.
+         * 
+         * @return data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~MsgFileDat();
 };
 
 #endif	/* MSG_TYPE_DAT_H */
-

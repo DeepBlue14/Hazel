@@ -39,7 +39,16 @@ class PhysicalAttribLog : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent class QWidget.
+         */
         PhysicalAttribLog(QWidget* parent = 0);
+        
+        /**
+         * Destructor.
+         */
         ~PhysicalAttribLog();
 };
 

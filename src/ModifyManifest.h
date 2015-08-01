@@ -1,6 +1,8 @@
 /* 
  * File:   ModifyPackage.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class modifies existing ROS manifest.xml files.
  *
  * Created on May 30, 2015, 11:34 PM
  */
@@ -20,5 +22,9 @@ namespace cct = UnixConsoleText;
 #elif __linux
 namespace cct = UnixConsoleText;
 #endif
+
+
+
+
 
 #endif	/* MODIFY_MANIFEST_H */

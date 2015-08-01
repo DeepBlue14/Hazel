@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['text',['TEXT',['../class_ride_file.html#af8610cfd653a22e79b91ed2f675fc9d5a177ee42e718379672875012a5e372a70',1,'RideFile']]]
+  ['text',['TEXT',['../class_r_file.html#ace4e71e1151ef5fa81a546780ee8c4f9abbc19786bb4565701289aed82b2411ca',1,'RFile']]]
 ];

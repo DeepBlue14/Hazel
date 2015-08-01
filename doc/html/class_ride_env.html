@@ -21,12 +21,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="ride1.jpg"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RIDE
    &#160;<span id="projectnumber">0.0.1</span>
    </div>
-   <div id="projectbrief">ROS Integrated Development Environment</div>
+   <div id="projectbrief">Ros Integrated Development Invironment</div>
   </td>
  </tr>
  </tbody>
@@ -65,7 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -110,10 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a76e027be4d88b381619e7dd215fbe6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c2c75b9cd3cb86cc2dc59f3ad3320d"><td class="memItemLeft" align="right" valign="top">QStringList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#af1c2c75b9cd3cb86cc2dc59f3ad3320d">getNodeAbsPathStrLstPtr</a> ()</td></tr>
 <tr class="separator:af1c2c75b9cd3cb86cc2dc59f3ad3320d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31d3e3a49c68bf86e3e58951f129ce7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#a31d3e3a49c68bf86e3e58951f129ce7c">setRideProjDirAbsPathStrPtr</a> (QString *<a class="el" href="class_ride_env.html#aa809a64cf5c8f8c91cefc2a2c19fd225">rideProjDirAbsPathStrPtr</a>)</td></tr>
-<tr class="separator:a31d3e3a49c68bf86e3e58951f129ce7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f85451f474f68e938caf38959e42f7"><td class="memItemLeft" align="right" valign="top">QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#ae4f85451f474f68e938caf38959e42f7">getRideProjDirAbsPathStrPtr</a> ()</td></tr>
-<tr class="separator:ae4f85451f474f68e938caf38959e42f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af33b92e6b30bf486f40cf50ac0436386"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#af33b92e6b30bf486f40cf50ac0436386">pushToRideProjDirAbsPathStrPtr</a> (QString *rideProjDirAbsPathStr)</td></tr>
+<tr class="separator:af33b92e6b30bf486f40cf50ac0436386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bdc02eec0f8db43b0d8da4bfd34cece"><td class="memItemLeft" align="right" valign="top">QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#a4bdc02eec0f8db43b0d8da4bfd34cece">popFromRideProjDirAbsPathStrPtr</a> ()</td></tr>
+<tr class="separator:a4bdc02eec0f8db43b0d8da4bfd34cece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dffe5335f27d00972f15afc942990ea"><td class="memItemLeft" align="right" valign="top">QStringList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#a5dffe5335f27d00972f15afc942990ea">getRideProjDirAbsPathStrPtr</a> ()</td></tr>
+<tr class="separator:a5dffe5335f27d00972f15afc942990ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a535f35f5a22ea7aa14d902c85745f0a2"><td class="memItemLeft" align="right" valign="top">QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#a535f35f5a22ea7aa14d902c85745f0a2">toString</a> ()</td></tr>
 <tr class="separator:a535f35f5a22ea7aa14d902c85745f0a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30c54432b90b1208f5085730fa1ec3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#ae30c54432b90b1208f5085730fa1ec3d">~RideEnv</a> ()</td></tr>
@@ -125,13 +126,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3f048e5d036e957c7776f1e31c648b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f1bb71c6e9524f2ce403e6b1dd32244"><td class="memItemLeft" align="right" valign="top">QStringList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#a5f1bb71c6e9524f2ce403e6b1dd32244">nodeAbsPathStrLstPtr</a></td></tr>
 <tr class="separator:a5f1bb71c6e9524f2ce403e6b1dd32244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa809a64cf5c8f8c91cefc2a2c19fd225"><td class="memItemLeft" align="right" valign="top">QString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#aa809a64cf5c8f8c91cefc2a2c19fd225">rideProjDirAbsPathStrPtr</a></td></tr>
-<tr class="separator:aa809a64cf5c8f8c91cefc2a2c19fd225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17923c8161a2456aa4a0d02e6418a4c"><td class="memItemLeft" align="right" valign="top">QStringList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ride_env.html#af17923c8161a2456aa4a0d02e6418a4c">rideProjDirAbsPathStrLstPtr</a></td></tr>
+<tr class="separator:af17923c8161a2456aa4a0d02e6418a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_ride_env_8h_source.html#l00026">26</a> of file <a class="el" href="_ride_env_8h_source.html">RideEnv.h</a>.</p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a6229a6564da7aed3bc7f01a8c6d5d30a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -144,8 +142,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00004">4</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
 
 </div>
 </div>
@@ -161,8 +157,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00066">66</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
 
 </div>
 </div>
@@ -180,8 +174,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00018">18</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="af1c2c75b9cd3cb86cc2dc59f3ad3320d"></a>
@@ -197,24 +189,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00039">39</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="ae4f85451f474f68e938caf38959e42f7"></a>
+<a class="anchor" id="a5dffe5335f27d00972f15afc942990ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QString * RideEnv::getRideProjDirAbsPathStrPtr </td>
+          <td class="memname">QStringList * RideEnv::getRideProjDirAbsPathStrPtr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00051">51</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
 
 </div>
 </div>
@@ -231,7 +219,20 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00030">30</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a4bdc02eec0f8db43b0d8da4bfd34cece"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString * RideEnv::popFromRideProjDirAbsPathStrPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -249,7 +250,21 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00024">24</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
+</div>
+</div>
+<a class="anchor" id="af33b92e6b30bf486f40cf50ac0436386"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RideEnv::pushToRideProjDirAbsPathStrPtr </td>
+          <td>(</td>
+          <td class="paramtype">QString *&#160;</td>
+          <td class="paramname"><em>rideProjDirAbsPathStr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -266,26 +281,6 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00012">12</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a31d3e3a49c68bf86e3e58951f129ce7c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void RideEnv::setRideProjDirAbsPathStrPtr </td>
-          <td>(</td>
-          <td class="paramtype">QString *&#160;</td>
-          <td class="paramname"><em>rideProjDirAbsPathStrPtr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_ride_env_8cpp_source.html#l00045">45</a> of file <a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a>.</p>
 
 </div>
 </div>
@@ -324,8 +319,6 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Absolute path to the ROS catkin workspace being used. </p>
 
-<p>Definition at line <a class="el" href="_ride_env_8h_source.html#l00032">32</a> of file <a class="el" href="_ride_env_8h_source.html">RideEnv.h</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a5f1bb71c6e9524f2ce403e6b1dd32244"></a>
@@ -347,11 +340,9 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Absolute paths to the "root" directory of each node. </p>
 
-<p>Definition at line <a class="el" href="_ride_env_8h_source.html#l00037">37</a> of file <a class="el" href="_ride_env_8h_source.html">RideEnv.h</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="aa809a64cf5c8f8c91cefc2a2c19fd225"></a>
+<a class="anchor" id="af17923c8161a2456aa4a0d02e6418a4c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -359,7 +350,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QString* RideEnv::rideProjDirAbsPathStrPtr</td>
+          <td class="memname">QStringList* RideEnv::rideProjDirAbsPathStrLstPtr</td>
         </tr>
       </table>
   </td>
@@ -368,20 +359,18 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Absolute path to the .ridePorject directory of each node. </p>
-
-<p>Definition at line <a class="el" href="_ride_env_8h_source.html#l00042">42</a> of file <a class="el" href="_ride_env_8h_source.html">RideEnv.h</a>.</p>
+<p>Absolute path to the .rideProject directory of each node. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_ride_env_8h_source.html">RideEnv.h</a></li>
-<li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_ride_env_8cpp_source.html">RideEnv.cpp</a></li>
+<li>/home/james/NetBeansProjects/ride/src/<a class="el" href="_ride_env_8cpp.html">RideEnv.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 12 2015 13:46:29 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 31 2015 15:46:12 for RIDE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

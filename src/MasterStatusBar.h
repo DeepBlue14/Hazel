@@ -1,12 +1,14 @@
 /* 
  * File:   MasterStatusBar.h
- * Author: james
+ * Author: James Kuczynski
+ * Email:
+ * File Description: 
  *
  * Created on July 20, 2015, 7:41 PM
  */
 
-#ifndef MASTERSTATUSBAR_H
-#define	MASTERSTATUSBAR_H
+#ifndef MASTER_STATUS_BAR_H
+#define	MASTER_STATUS_BAR_H
 
 #include <QWidget>
 #include <QProgressBar>
@@ -24,12 +26,39 @@ class MasterStatusBar : public QWidget
         
         
     public:
+        /**
+         * 
+         * 
+         * @param parent
+         */
         MasterStatusBar(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param progressBar
+         */
         static void setProgressBar(QProgressBar* progressBar);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         static QProgressBar* getProgressBar();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~MasterStatusBar();
 };
 
-#endif	/* MASTERSTATUSBAR_H */
+#endif	/* MASTER_STATUS_BAR_H */
 
