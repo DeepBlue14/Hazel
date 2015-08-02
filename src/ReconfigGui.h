@@ -55,28 +55,114 @@ class ReconfigGui : public QWidget
         QGridLayout* outerLayout;
         
     private slots:
+        /**
+         * 
+         */
         void handleBackBtnSlot();
+        
+        /**
+         * 
+         */
         void handleNextBtnSlot();
+        
+        /**
+         * 
+         */
         void handleFinishBtnSlot();
+        
+        /**
+         * 
+         */
         void handleHelpBntSlot();
+        
+        /**
+         * 
+         */
         void handleCancelBtnSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         ReconfigGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initBtns();
+        
+        /**
+         * 
+         */
         void swapBackPage();
+        
+        /**
+         * 
+         */
         void swapNextPage();
+        
+        /**
+         * 
+         */
         void loadPage_1();
+        
+        /**
+         * 
+         */
         void unloadPage_1();
+        
+        /**
+         * 
+         */
         void loadPage_2();
+        
+        /**
+         * 
+         */
         void unloadPage_2();
+        
+        /**
+         * 
+         */
         void loadPage_3();
+        
+        /**
+         * 
+         */
         void unloadPage_3();
+        
+        /**
+         * 
+         */
         void loadPage_4();
+        
+        /**
+         * 
+         */
         void unloadPage_4();
+        
+        /**
+         * 
+         */
         void loadPage_5();
+        
+        /**
+         * 
+         */
         void unloadPage_5();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data. 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~ReconfigGui();
 };
 

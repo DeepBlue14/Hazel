@@ -44,10 +44,24 @@ class ScoutGui : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         ScoutGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~ScoutGui();
 };
 
 #endif	/* SCOUT_GUI_H */
-

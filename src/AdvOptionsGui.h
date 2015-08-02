@@ -53,16 +53,49 @@ class AdvOptionsGui : public QWidget
         QGridLayout* outerLayout;
         
     private slots:
+        /**
+         * 
+         */
         void handleOkBtnSlot();
+        
+        /**
+         * 
+         */
         void handleCancelBtnSlot();
+        
+        /**
+         * 
+         */
         void handleApplyBtnSlot();
+        
+        /**
+         * 
+         */
         void handleHelpBtnSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         AdvOptionsGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initBtns();
         //loaders and unloaders for each page
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~AdvOptionsGui();
 };
 

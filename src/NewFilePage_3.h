@@ -56,18 +56,68 @@ class NewFilePage_3 : public QWidget
         QString* specificMsgStrPtr;
         
     private slots:
+        /**
+         * 
+         */
         void handleSwapOptionsSlot();
+        
+        /**
+         * 
+         */
         void handleAddBtnPtrSlot();
+        
+        /**
+         * 
+         */
         void handleRemoveBtnPtrSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewFilePage_3(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setMsgCatagoryStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getMsgCatagoryStrPtr();
+        
+        /**
+         * 
+         */
         void setSpecificMsgStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getSpecificMsgStrPtr();
+        
+        /**
+         * 
+         */
         void triggerMutators();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewFilePage_3();
 };
 

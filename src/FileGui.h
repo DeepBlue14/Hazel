@@ -52,26 +52,96 @@ class FileGui : public QPlainTextEdit
         QString wordUnderCursor() const;
         
     private slots:
+        /**
+         * 
+         * 
+         * @param completion
+         */
         void insertCompletion(const QString& completion);
         
+        /**
+         * 
+         * 
+         * @param newBlockCount
+         */
         void updateLineNumberAreaWidth(int newBlockCount);
+        
+        /**
+         * 
+         */
         void highlightCurrentLine();
+        
+        /**
+         * 
+         * 
+         * @param 
+         * @param 
+         */
         void updateLineNumberArea(const QRect&, int);
         
     protected:
+        /**
+         * 
+         * 
+         * @param e
+         */
         void keyPressEvent(QKeyEvent* e);
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         FileGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param c
+         */
         void setCompleter(QCompleter* c);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QCompleter* completer() const;
+        
+        /**
+         * 
+         * 
+         * @param event
+         */
         void lineNumberAreaPaintEvent(QPaintEvent* event);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         int lineNumberAreaWidth();
+        
+        /**
+         * 
+         * 
+         * @param event
+         */
         void resizeEvent(QResizeEvent* event);
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~FileGui();
         
 };
 
 #endif	/* FILE_H */
-

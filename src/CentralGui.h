@@ -52,19 +52,100 @@ class CentralGui : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         CentralGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param northGuiPtr
+         */
         void setNorthGuiPtr(TabGui* northGuiPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         TabGui* getNorthGuiPtr();
+        
+        /**
+         * 
+         * 
+         * @param fileTreeGuiPtr
+         */
         void setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         FileTreeGui* getFileTreeGuiPtr();
+        
+        /**
+         * 
+         * 
+         * @param navigatorGuiPtr
+         */
         void setNavigatorGuiPtr(NavigatorGui* navigatorGuiPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         NavigatorGui* getNavigatorGuiPtr();
+        
+        /**
+         * 
+         * 
+         * @param southGuiPtr
+         */
         void setSouthGuiPtr(OutputGui* southGuiPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         OutputGui* getSouthGuiPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         static QProgressBar getProgressBarPtr();
+        
+        /**
+         * 
+         * 
+         * @param northTabWidgetPtr
+         */
         void passNorthTabWidgetPtr(QTabWidget* northTabWidgetPtr);
+        
+        /**
+         * 
+         * 
+         * @param southTabWidgetPtr
+         */
         void passSouthTabWidgetPtr(QTabWidget* southTabWidgetPtr);
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~CentralGui();
 };
 

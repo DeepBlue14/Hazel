@@ -35,12 +35,38 @@ class LineNumberArea : public QWidget
         FileGui* file;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         LineNumberArea(FileGui* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QSize sizeHint() const;
+        
+        /**
+         * 
+         * 
+         * @param event
+         */
         void paintEvent(QPaintEvent* event);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~LineNumberArea();
 };
 
 #endif	/* LINENUMBERAREA_H */
-

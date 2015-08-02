@@ -32,15 +32,72 @@ namespace RideFont
 {
     QFont* font;
         
+    /**
+     * 
+     */
     void initDefaultValues();
+    
+    /**
+     * 
+     * 
+     * @param fontName
+     */
     void setFamily(QString* fontName);
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     QString* getFamily();
+    
+    /**
+     * 
+     * 
+     * @param isFixedPitch
+     */
     void setFixedPitch(bool isFixedPitch);
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     bool getFixedPitch();
+    
+    /**
+     * 
+     * 
+     * @param pointSize
+     */
     void setPointSize(int pointSize);
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     int getPointSize();
+    
+    /**
+     * 
+     * 
+     * @param fontWeight
+     */
     void setWeight(int fontWeight);
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     int getWeight();
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     QString* toString();
 }
 

@@ -7,8 +7,8 @@
  * Created on May 5, 2015, 1:36 PM
  */
 
-#ifndef NEWPROJECTPAGE_4_H
-#define	NEWPROJECTPAGE_4_H
+#ifndef NEW_PROJECT_PAGE_4_H
+#define	NEW_PROJECT_PAGE_4_H
 
 #include <QWidget>
 #include <QListWidget>
@@ -48,15 +48,42 @@ class NewProjectPage_4 : public QWidget
         
 
     private slots:
+        /**
+         * 
+         */
         void handleAddToListBtnPtrSlot();
+        
+        /**
+         * 
+         */
         void handleRmFromListBtnPtrSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewProjectPage_4(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QStringList* getDependsEnteredStrList();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data. 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewProjectPage_4();
 };
 
-#endif	/* NEWPROJECTPAGE_4_H */
-
+#endif	/* NEW_PROJECT_PAGE_4_H */

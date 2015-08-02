@@ -24,7 +24,16 @@ class ReconfigPage_4 : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         ReconfigPage_4(QWidget* parent = 0);
+        
+        /**
+         * Destructor.
+         */
         ~ReconfigPage_4();
 };
 

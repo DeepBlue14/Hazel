@@ -64,32 +64,135 @@ class RunGui : public QWidget
         RunPage_3* runPage_3Ptr;
         
     private slots:
+        /**
+         * 
+         */
         void handleBackBtnSlot();
+        
+        /**
+         * 
+         */
         void handleNextBtnSlot();
+        
+        /**
+         * 
+         */
         void handleFinishBtnSlot();
+        
+        /**
+         * 
+         */
         void handleHelpBntSlot();
+        
+        /**
+         * 
+         */
         void handleCancelBtnSlot();        
        
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         RunGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initBtns();
+        
+        /**
+         * 
+         */
         void reset();
+        
+        /**
+         * 
+         * 
+         * @param launchFilePathStrPtr
+         */
         void setLaunchFilePathStrPtr(QString* launchFilePathStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getLaunchFilePathStrPtr();
+        
+        /**
+         * 
+         */
         void swapNextPage();
+        
+        /**
+         * 
+         */
         void swapBackPage();
+        
+        /**
+         * 
+         */
         void loadPage_1();
+        
+        /**
+         * 
+         */
         void unloadPage_1();
+        
+        /**
+         * 
+         */
         void loadPage_2();
+        
+        /**
+         * 
+         */
         void unloadPage_2();
+        
+        /**
+         * 
+         */
         void loadPage_3();
+        
+        /**
+         * 
+         */
         void unloadPage_3();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         RunPage_1* getRunPage_1Ptr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         RunPage_2* getRunPage_2Ptr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         RunPage_3* getRunPage_3Ptr();
+        
+        /**
+         * Classic toString method
+         * 
+         * @return class and helper class data. 
+         */
         QString* toString();    
+        
+        /**
+         * Destructor.
+         */
         ~RunGui();
 };
 
 #endif	/* RUN_GUI_H */
-

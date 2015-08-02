@@ -63,25 +63,111 @@ class NewFilePage_4 : public QWidget
         QString* createdFileStrPtr;
 
     private slots:
+        /**
+         * 
+         */
         void handleFolderPbPtrSlot();
     
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewFilePage_4(QWidget* parent = 0);
+        
+        /**
+         * Initialize core components of this class
+         */
         void initCore();
+        
+        /**
+         * 
+         */
         void setFileNameStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getFileNameStrPtr();
+        
+        /**
+         * 
+         */
         void setFileExtStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getFileExtStrPtr();
+        
+        /**
+         * 
+         */
         void setProjectStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getProjectStrPtr();
+        
+        /**
+         * 
+         */
         void setLocStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getLocStrPtr();
+        
+        /**
+         * 
+         */
         void setFolderStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getFolderStrPtr();
+        
+        /**
+         * 
+         */
         void setCreatedFileStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getCreatedFileStrPtr();
+        
+        /**
+         * 
+         */
         void triggerMutators();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewFilePage_4();
         
 };

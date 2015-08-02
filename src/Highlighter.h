@@ -54,11 +54,31 @@ private:
     QTextCharFormat functionFormat;
      
 protected:
+    /**
+     * 
+     * 
+     * @param text
+     */
     void highlightBlock(const QString &text);
      
 public:
+    /**
+     * Constructor.
+     * 
+     * @param parent reference to parent type.
+     */
     Highlighter(QTextDocument* parent = 0);
+    
+    /**
+     * Classic toString method.
+     * 
+     * @return class data. 
+     */
     QString* toString();
+    
+    /**
+     * Destructor.
+     */
     ~Highlighter();
 };
 

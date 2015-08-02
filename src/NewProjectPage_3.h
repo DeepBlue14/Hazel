@@ -53,20 +53,71 @@ class NewProjectPage_3 : public QWidget
         QString* licenseStrPtr;
         
     private slots:
+        /**
+         * 
+         */
         void handleOtherLicenseSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewProjectPage_3(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setAuthorNameStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getAuthorNameStrPtr();
+        
+        /**
+         * 
+         */
         void setAuthorEmailStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getAuthorEmailStrPtr();
+        
+        /**
+         * 
+         */
         void setLicenseStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getLicenseStrPtr();
+        
+        /**
+         * 
+         */
         void triggerMutators();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewProjectPage_3();
 };
 
 #endif	/* NEW_PROJECT_PAGE_3_H */
-

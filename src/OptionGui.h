@@ -50,14 +50,42 @@ class OptionGui : public QWidget
         QGridLayout* outerLayout;
         
     private slots:
+        /**
+         * 
+         */
         void handleOkBtnSlot();
+        
+        /**
+         * 
+         */
         void handleApplyBtnSlot();
+        
+        /**
+         * 
+         */
         void handleCancelBtnSlot();
+        
+        /**
+         * 
+         */
         void handleHelpBtnSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         OptionGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initBtns();
+        
+        /**
+         * Destructor.
+         */
         ~OptionGui();
 };
 

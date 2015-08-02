@@ -31,10 +31,37 @@ class ReconfigPage_3 : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         ReconfigPage_3(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param langStrPtr
+         */
         void setLangStrPtr(QString langStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString getLangStrPtr();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~ReconfigPage_3();
 };
 

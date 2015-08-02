@@ -79,33 +79,154 @@ class NewProjectGui : public QWidget
         QString* absPathToProjCreateFileStrPtr;
     
     private slots:
+        /**
+         * 
+         */
         void handleBackBtnSlot();
+        
+        /**
+         * 
+         */
         void handleNextBtnSlot();
+        
+        /**
+         * 
+         */
         void handleFinishBtnSlot();
+        
+        /**
+         * 
+         */
         void handleHelpBntSlot();
+        
+        /**
+         * 
+         */
         void handleCancelBtnSlot();
     
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewProjectGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initBtns();
+        
+        /**
+         * 
+         */
         void swapNextPage();
+        
+        /**
+         * 
+         */
         void swapBackPage();
+        
+        /**
+         * 
+         */
         void loadPage_1();
+        
+        /**
+         * 
+         */
         void unloadPage_1();
+        
+        /**
+         * 
+         */
         void loadPage_2();
+        
+        /**
+         * 
+         */
         void unloadPage_2();
+        
+        /**
+         * 
+         */
         void loadPage_3();
+        
+        /**
+         * 
+         */
         void unloadPage_3();
+        
+        /**
+         * 
+         */
         void loadPage_4();
+        
+        /**
+         * 
+         */
         void unloadPage_4();
+        
+        /**
+         * 
+         * 
+         * @param process
+         * @param projectRootStrPtr
+         */
         void genRideProjDepends(QProcess* process, QString* projectRootStrPtr);
+        
+        /**
+         * 
+         * 
+         * @param absPathToProjBuildFileStrPtr
+         */
         void setAbsPathToProjBuildFileStrPtr(QString* absPathToProjBuildFileStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getAbsPathToProjBuildFileStrPtr();
+        
+        /**
+         * 
+         * 
+         * @param absPathToProjRunFileStrPtr
+         */
         void setAbsPathToProjRunFileStrPtr(QString* absPathToProjRunFileStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getAbsPathToProjRunFileStrPtr();
+        
+        /**
+         * 
+         * 
+         * @param absPathToProjLaunchFileStrPtr
+         */
         void setAbsPathToProjLaunchFileStrPtr(QString* absPathToProjLaunchFileStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getAbsPathToProjLaunchFileStrPtr();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewProjectGui();
     
 };

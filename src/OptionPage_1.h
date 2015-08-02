@@ -42,11 +42,29 @@ class OptionPage_1 : public QWidget
         QGridLayout* outerLayout;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         OptionPage_1(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QStringList* scanForCssFiles();
+        
+        /**
+         * 
+         */
         void initCssOptionLstWig();
+        
+        /**
+         * Destructor.
+         */
         ~OptionPage_1();
 };
 
 #endif	/* OPTIONPAGE_1_H */
-

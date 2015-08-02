@@ -46,11 +46,40 @@ class NewProjectPage_1 : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewProjectPage_1(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setRosVersionStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getRosVersionStrPtr();
+        
+        /**
+         * 
+         */
         void triggerMutators();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewProjectPage_1();
 };
 

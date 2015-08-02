@@ -46,13 +46,41 @@ class RunPage_3 : public QWidget
         
 
     private slots:
+        /**
+         * 
+         */
         void handleAddToListBtnPtrSlot();
+        
+        /**
+         * 
+         */
         void handleRmFromListBtnPtrSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         RunPage_3(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QStringList* getCmdsEnteredStrList();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~RunPage_3();
 };
 #endif	/* RUN_PAGE_3_H */

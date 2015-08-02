@@ -22,10 +22,22 @@ class DebugGui : public QWidget
         QVBoxLayout* toolBarLayout;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         DebugGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initToolBars();
+        
+        /**
+         * 
+         */
         ~DebugGui();
 };
 
 #endif	/* DEBUGGUI_H */
-

@@ -50,16 +50,58 @@ class NewFilePage_1 : public QWidget
         QString* fileTypeStrPtr;
         
     private slots:
+        /**
+         * 
+         */
         void handleSwapOptionsSlot();
         
     public:
+        /**
+         * 
+         * 
+         * @param parent
+         */
         NewFilePage_1(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setLangStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getLangStrPtr();
+        
+        /**
+         * 
+         */
         void setFileTypeStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getFileTypeStrPtr();
+        
+        /**
+         * 
+         */
         void triggerMutators();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewFilePage_1();
 };
 

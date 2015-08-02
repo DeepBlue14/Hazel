@@ -39,7 +39,16 @@ class AdvOptPage_3 : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         AdvOptPage_3(QWidget* parent = 0);
+        
+        /**
+         * Destructor.
+         */
         ~AdvOptPage_3();
         
 };

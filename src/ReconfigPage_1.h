@@ -44,17 +44,70 @@ class ReconfigPage_1 : public QWidget
         QString* rosPkgAbsPathStr;
         
     private slots:
+        /**
+         * 
+         */
         void handleVanillaPkgLocPbPtrSlot();
+        
+        /**
+         * 
+         */
         void handleRosPkgLocPbPtrPb();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         ReconfigPage_1(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param rosPkgAbsPathStr
+         */
         void setVanillaPkgAbsPathStr(QString* rosPkgAbsPathStr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getVanillaPkgAbsPathStr();
+        
+        /**
+         * 
+         * 
+         * @param rosPkgAbsPathStr
+         */
         void setRosPkgAbsPathStr(QString* rosPkgAbsPathStr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getRosPkgAbsPathStr();
+        
+        /**
+         * 
+         * 
+         * @param absPathToWs
+         * @return 
+         */
         bool isValidRosWs(QString* absPathToWs);
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data. 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~ReconfigPage_1();
 };
 

@@ -51,11 +51,42 @@ class NavigatorGui : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NavigatorGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void loadData();
+        
+        /**
+         * 
+         * 
+         * @param masterTabWidgetPtr
+         */
         void setWestTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QTabWidget* getWestTabWidgetPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~NavigatorGui();
 };
 

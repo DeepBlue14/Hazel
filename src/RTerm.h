@@ -36,7 +36,16 @@ class RTerm : public QTextEdit
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         RTerm();
+        
+        /**
+         * Destructor.
+         */
         ~RTerm();
 };
 

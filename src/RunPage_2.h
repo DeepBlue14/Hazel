@@ -50,19 +50,70 @@ class RunPage_2 : public QWidget
         QString* launchFileStrPtr;
         
     private slots:
+        /**
+         * 
+         */
         void handleSelectLaunchFilePbPtrSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         RunPage_2(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setLaunchFileStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getLaunchFileStrPtr();
+        
+        /**
+         * 
+         * 
+         * @param pkgStrPtr
+         */
         void setPkgStrPtr(QString pkgStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString getPkgStrPtr();
+        
+        /**
+         * 
+         * 
+         * @param fileStrPtr
+         */
         void setFileStrPtr(QString fileStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString getFileStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~RunPage_2();
 };
 
 #endif	/* RUNPAGE_2_H */
-

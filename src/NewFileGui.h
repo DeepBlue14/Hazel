@@ -94,30 +94,132 @@ private:
     QAbstractItemModel* modelFromFile(const QString& fileName);
     
 private slots:
+    /**
+     * 
+     */
     void handleBackBtnSlot();
+    
+    /**
+     * 
+     */
     void handleNextBtnSlot();
+    
+    /**
+     * 
+     */
     void handleFinishBtnSlot();
+    
+    /**
+     * 
+     */
     void handleHelpBntSlot();
+    
+    /**
+     * 
+     */
     void handleCancelBtnSlot();
     
 public:
+    /**
+     * 
+     * 
+     * @param parent
+     */
     NewFileGui(QWidget* parent = 0/*, QTabWidget* masterTabWidgetPtr = 0*/);
+    
+    /**
+     * 
+     * 
+     * @param masterTabWidgetPtr
+     */
     void setNorthTabWidgetPtr(QTabWidget* masterTabWidgetPtr);
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     QTabWidget* getMasterTabWidgetPtr();
+    
+    /**
+     * 
+     * 
+     * @param highlighterPtr
+     */
     void setHighlighterPtr(Highlighter* highlighterPtr);
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     Highlighter* getHighlighterPtr();
+    
+    /**
+     * 
+     */
     void initBtns();
+    
+    /**
+     * 
+     */
     void swapNextPage();
+    
+    /**
+     * 
+     */
     void swapBackPage();
+    
+    /**
+     * 
+     */
     void loadPage_1();
+    
+    /**
+     * 
+     */
     void unloadPage_1();
+    
+    /**
+     * 
+     */
     void loadPage_2();
+    
+    /**
+     * 
+     */
     void unloadPage_2();
+    
+    /**
+     * 
+     */
     void loadPage_3();
+    
+    /**
+     * 
+     */
     void unloadPage_3();
+    
+    /**
+     * 
+     */
     void loadPage_4();
+    
+    /**
+     * 
+     */
     void unloadPage_4();
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     QString* toString();
+    
+    /**
+     * 
+     */
     ~NewFileGui();
     
 };

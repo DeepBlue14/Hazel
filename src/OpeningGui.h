@@ -46,11 +46,25 @@ private slots:
     ;
     
 public:
+    /**
+     * Constructor.
+     * 
+     * @param parent reference to parent type.
+     */
     OpeningGui(QWidget* parent = 0);
+    
+    /**
+     * 
+     * 
+     * @return 
+     */
     QString* toString();
+    
+    /**
+     * 
+     */
     ~OpeningGui();
         
 };
 
 #endif	/* OPENING_GUI_H */
-

@@ -33,7 +33,16 @@ class SplashScreen : public QSplashScreen
         QPixmap* logoPixmapPtr;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         SplashScreen();
+        
+        /**
+         * 
+         */
         ~SplashScreen();
 };
 

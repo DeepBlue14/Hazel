@@ -56,20 +56,71 @@ class NewProjectPage_2 : public QWidget
         QString* projectTypeStrPtr;
         
     private slots:
+        /**
+         * 
+         */
         void handleLocPbPtrSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewProjectPage_2(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setProjectNameStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getProjectNameStrPtr();
+        
+        /**
+         * 
+         */
         void setProjectLocStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getProjectLocStrPtr();
+        
+        /**
+         * 
+         */
         void setProjectTypeStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getProjectTypeStrPtr();
+        
+        /**
+         * 
+         */
         void triggerMutators();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewProjectPage_2();
 };
 
 #endif	/* NEW_PROJECT_PAGE_2_H */
-

@@ -50,15 +50,53 @@ class OpenProjectGui : public QWidget
         QString* projectStrPtr;
         
     private slots:
+        /**
+         * 
+         */
         void handleFileDialogPbPtrSlot();
+        
+        /**
+         * 
+         */
         void handleOpenProjectPbPtrSlot();
+        
+        /**
+         * 
+         */
         void handleCancelPbPtrSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         OpenProjectGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param projectStrPtr
+         */
         void setProjectStrPtr(QString* projectStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getProjectStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~OpenProjectGui();
 };
 

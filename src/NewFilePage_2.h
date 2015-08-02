@@ -46,11 +46,40 @@ class NewFilePage_2 : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         NewFilePage_2(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setOptionStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getOptionStrPtr();
+        
+        /**
+         * 
+         */
         void triggerMutators();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~NewFilePage_2();
 };
 

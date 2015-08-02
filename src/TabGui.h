@@ -49,11 +49,38 @@ class TabGui : public QWidget
         void handleCloseTabSlot(int index);
     
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         TabGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param tabType
+         */
         template<class TabType>
         void addTab(TabType* tabType);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QTabWidget* getTabWidget();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~TabGui();
             
 };

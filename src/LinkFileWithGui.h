@@ -48,15 +48,79 @@ class LinkFileWithGui
     
     
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         LinkFileWithGui();
+        
+        /**
+         * 
+         * 
+         * @param compassTabWidget
+         */
         void setcompassTabWidgetPtr(QTabWidget* compassTabWidget);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QTabWidget* getCompassTabWidgetPtr();
+        
+        /**
+         * 
+         * 
+         * @param compassTabWidget
+         * @param absPathToNewFileStrPtr
+         * @param fileName
+         * @param editor
+         */
         void linkNew(QTabWidget* compassTabWidget, QString absPathToNewFileStrPtr, QString fileName, FileGui* editor);
+        
+        /**
+         * 
+         * 
+         * @param compassTabWidget
+         * @param absPathToExistingFileStrPtr
+         * @param fileName
+         * @param editor
+         */
         void linkExisting(QTabWidget* compassTabWidget, QString* absPathToExistingFileStrPtr, QString fileName, FileGui* editor);
+        
+        /**
+         * 
+         * 
+         * @param highlighter
+         */
         void setHighlighterPtr(Highlighter* highlighter);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         Highlighter* getHighlighterPtr();
+        
+        /**
+         * 
+         * 
+         * @param fileName
+         * @return 
+         */
         QAbstractItemModel* modelFromFile(const QString& fileName);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~LinkFileWithGui();
 };
 

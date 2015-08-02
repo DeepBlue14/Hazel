@@ -48,15 +48,73 @@ class OutputGui : public QWidget
         ;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         OutputGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @param tab
+         * @param tabName
+         */
         void addTab(QWidget* tab, QString* tabName);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QTabWidget* getTabWidget();
+        
+        /**
+         * 
+         * 
+         * @param outputStrPtr
+         */
         void setOutputStrPtr(QString* outputStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getOutputStrPtr();
+        
+        /**
+         * 
+         * 
+         * @param outputTePtr
+         */
         void setOutputTePtr(QTextEdit* outputTePtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QTextEdit* getOutputTePtr();
+        
+        /**
+         * 
+         * 
+         * @param outputStrPtr
+         */
         void dumpToGui(QString* outputStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~OutputGui();
 };
 

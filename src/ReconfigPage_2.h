@@ -39,13 +39,39 @@ class ReconfigPage_2 : public QWidget
         //
         
     private slots:
+        /**
+         * 
+         */
         void handleCustomPkgsPbStr();
+        
+        /**
+         * 
+         */
         void handleAdvancedOptionsPbStr();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         ReconfigPage_2(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void initRosPkgStrLstPtr();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~ReconfigPage_2();
 };
 

@@ -37,10 +37,35 @@ class SearchWidget : public QLineEdit
         QString* searchInputStrPtr;
     
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         SearchWidget(QWidget* parent = 0);
+        
+        /**
+         * 
+         */
         void setSearchInputStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getSearchInputStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* toString();
+        
+        /**
+         * 
+         */
         ~SearchWidget();
 };
 

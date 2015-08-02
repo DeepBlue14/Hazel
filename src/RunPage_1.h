@@ -41,11 +41,31 @@ class RunPage_1 : public QWidget
         QGridLayout* outerLayoutPtr;
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         RunPage_1(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QString* getRunOptionPtr();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~RunPage_1();
 };
 
 #endif	/* RUN_PAGE_1_H */
-

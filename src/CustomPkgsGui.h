@@ -48,13 +48,41 @@ class CustomPkgsGui : public QWidget
         
 
     private slots:
+        /**
+         * 
+         */
         void handleAddToListBtnPtrSlot();
+        
+        /**
+         * 
+         */
         void handleRmFromListBtnPtrSlot();
         
     public:
+        /**
+         * Constructor.
+         * 
+         * @param parent reference to parent type.
+         */
         CustomPkgsGui(QWidget* parent = 0);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
         QStringList* getDependsEnteredStrList();
+        
+        /**
+         * Classic toString method.
+         * 
+         * @return class data.
+         */
         QString* toString();
+        
+        /**
+         * Destructor.
+         */
         ~CustomPkgsGui();
 };
 
