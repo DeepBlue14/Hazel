@@ -1,7 +1,0 @@
-<map id="MasterActions::handleConfigForRunActionSlot" name="MasterActions::handleConfigForRunActionSlot">
-<area shape="rect" id="node2" href="$class_run_gui.html#ac732d44ad96c7d14f1666d1193c43d65" title="RunGui::reset" alt="" coords="246,56,349,83"/>
-<area shape="rect" id="node3" href="$class_run_gui.html#a469be74273ddc6441a9f87e65d3ab2c9" title="RunGui::swapBackPage" alt="" coords="397,56,563,83"/>
-<area shape="rect" id="node4" href="$class_run_gui.html#a3192d643a700244e066f3e0ca4389c4b" title="RunGui::unloadPage_2" alt="" coords="611,5,767,32"/>
-<area shape="rect" id="node5" href="$class_run_gui.html#a381d265f46ec8473a7858974a19674c5" title="RunGui::loadPage_1" alt="" coords="618,56,761,83"/>
-<area shape="rect" id="node6" href="$class_run_gui.html#a410e373ff032fb779b52b1dd501c3128" title="RunGui::unloadPage_3" alt="" coords="611,107,767,133"/>
-</map>

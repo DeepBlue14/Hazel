@@ -1,7 +1,0 @@
-<map id="RunPage_1::getRunOptionPtr" name="RunPage_1::getRunOptionPtr">
-<area shape="rect" id="node2" href="$class_run_gui.html#a011495c9158d92b794941ac108b5b148" title="RunGui::handleFinishBtnSlot" alt="" coords="459,5,650,32"/>
-<area shape="rect" id="node5" href="$class_run_gui.html#ac4c0fed5ead22a1dc40d5bebe2d6f176" title="RunGui::swapNextPage" alt="" coords="248,56,411,83"/>
-<area shape="rect" id="node3" href="$class_run_gui.html#ad78d722a104e6e893b57642340c3b937" title="RunGui::initBtns" alt="" coords="699,31,818,57"/>
-<area shape="rect" id="node4" href="$class_run_gui.html#af41e6138b6401d18ff8a3f8db680cd43" title="RunGui::RunGui" alt="" coords="867,31,986,57"/>
-<area shape="rect" id="node6" href="$class_run_gui.html#a267f472d21d57258adb28ebdcc83b256" title="RunGui::handleNextBtnSlot" alt="" coords="463,56,646,83"/>
-</map>

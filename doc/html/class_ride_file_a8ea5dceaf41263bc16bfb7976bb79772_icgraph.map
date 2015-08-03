@@ -1,9 +1,0 @@
-<map id="RideFile::openRdWrFile" name="RideFile::openRdWrFile">
-<area shape="rect" id="node2" href="$class_new_file_gui.html#a50cf414bdb9ea40f3cd4ca4fa4566b77" title="NewFileGui::handleFinish\lBtnSlot" alt="" coords="225,5,396,46"/>
-<area shape="rect" id="node5" href="$class_new_project_gui.html#a5dac69b4d7cd4a6d0beb033f5406825b" title="NewProjectGui::genRideProj\lDepends" alt="" coords="216,70,405,111"/>
-<area shape="rect" id="node3" href="$class_new_file_gui.html#ad77edffa59956f16ef2b6d83dd357932" title="NewFileGui::initBtns" alt="" coords="478,12,621,39"/>
-<area shape="rect" id="node4" href="$class_new_file_gui.html#a090f156ef13c1915fe96cd47f6ff049d" title="NewFileGui::NewFileGui" alt="" coords="694,12,861,39"/>
-<area shape="rect" id="node6" href="$class_new_project_gui.html#ad47832cd6388ea36101b1e0002837546" title="NewProjectGui::handleFinish\lBtnSlot" alt="" coords="454,70,645,111"/>
-<area shape="rect" id="node7" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="696,77,859,104"/>
-<area shape="rect" id="node8" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="910,77,1117,104"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="MasterActions::connectToBuildAction" name="MasterActions::connectToBuildAction">
-<area shape="rect" id="node2" href="$class_master_actions.html#aa9af30e92d9f9e4ffb8044f092b06d07" title="MasterActions::handleBuild\lActionSlot" alt="" coords="229,5,411,46"/>
-<area shape="rect" id="node3" href="$class_master_actions.html#a30b51649f46b8f105f8be5d9b4a6fb5f" title="MasterActions::getNewProject\lGuiPtr" alt="" coords="459,5,659,46"/>
-</map>

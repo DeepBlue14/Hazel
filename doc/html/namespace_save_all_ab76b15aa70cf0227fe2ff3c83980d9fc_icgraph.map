@@ -1,5 +1,0 @@
-<map id="SaveAll::save" name="SaveAll::save">
-<area shape="rect" id="node2" href="$class_master_actions.html#a92d9fcaac21c09534c568b3aca195a87" title="MasterActions::handleSave\lAllActionSlot" alt="" coords="158,27,341,69"/>
-<area shape="rect" id="node3" href="$class_master_actions.html#ad8eb348b90e75f5876c30692930a2c22" title="MasterActions::MasterActions" alt="" coords="390,5,589,32"/>
-<area shape="rect" id="node4" href="$class_master_actions.html#ab859d0b5419ae5f17504e8fdd83be4be" title="MasterActions::connectTo\lSaveAllAction" alt="" coords="402,57,577,98"/>
-</map>

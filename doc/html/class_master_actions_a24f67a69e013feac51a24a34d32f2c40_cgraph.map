@@ -1,4 +1,0 @@
-<map id="MasterActions::connectToNewFileAction" name="MasterActions::connectToNewFileAction">
-<area shape="rect" id="node2" href="$class_master_actions.html#a75943822eee1dbbc3e7c6c1dda4780a0" title="MasterActions::handleNew\lFileActionSlot" alt="" coords="229,5,408,46"/>
-<area shape="rect" id="node3" href="$class_new_file_gui.html#ad64da4ff0c0aa64f2045e77fbd0f50f1" title="NewFileGui::setNorthTabWidgetPtr" alt="" coords="457,12,685,39"/>
-</map>

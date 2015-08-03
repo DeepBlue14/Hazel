@@ -1,8 +1,0 @@
-<map id="NewFileGui::swapBackPage" name="NewFileGui::swapBackPage">
-<area shape="rect" id="node2" href="$class_new_file_gui.html#a38230b8cf285f610595f9e762be4a3ba" title="NewFileGui::unloadPage_2" alt="" coords="243,5,423,32"/>
-<area shape="rect" id="node3" href="$class_new_file_gui.html#ae279a6aa9f6e065254f02595491870bf" title="NewFileGui::loadPage_1" alt="" coords="250,56,417,83"/>
-<area shape="rect" id="node4" href="$class_new_file_gui.html#a7ef65bd194d94091ff27648f765023b6" title="NewFileGui::unloadPage_3" alt="" coords="243,107,423,133"/>
-<area shape="rect" id="node5" href="$class_new_file_gui.html#a734dbe5493abf2d090b331c9b5d3ea39" title="NewFileGui::loadPage_2" alt="" coords="250,157,417,184"/>
-<area shape="rect" id="node6" href="$class_new_file_gui.html#a7f604bc4692d3ebd66d00544fb1eb2de" title="NewFileGui::unloadPage_4" alt="" coords="243,208,423,235"/>
-<area shape="rect" id="node7" href="$class_new_file_gui.html#a7f61834fa8074aeefebfcb8600bba8cd" title="NewFileGui::loadPage_3" alt="" coords="250,259,417,285"/>
-</map>

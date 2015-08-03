@@ -1,6 +1,0 @@
-<map id="NewProjectGui::loadPage_4" name="NewProjectGui::loadPage_4">
-<area shape="rect" id="node2" href="$class_new_project_gui.html#ae56f35367fded2e1d303312cbc0549e1" title="NewProjectGui::swapNextPage" alt="" coords="241,12,447,39"/>
-<area shape="rect" id="node3" href="$class_new_project_gui.html#a247f62254e88454615d89be32464ce28" title="NewProjectGui::handleNext\lBtnSlot" alt="" coords="496,5,680,46"/>
-<area shape="rect" id="node4" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="728,12,891,39"/>
-<area shape="rect" id="node5" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="939,12,1146,39"/>
-</map>

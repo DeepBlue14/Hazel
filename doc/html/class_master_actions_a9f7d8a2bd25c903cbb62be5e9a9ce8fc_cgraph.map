@@ -1,4 +1,0 @@
-<map id="MasterActions::connectToTerminalSouthAction" name="MasterActions::connectToTerminalSouthAction">
-<area shape="rect" id="node2" href="$class_master_actions.html#a3f3ec7277966d98a9fc5df5ceca1fa97" title="MasterActions::handleTerminal\lSouthActionSlot" alt="" coords="229,5,432,46"/>
-<area shape="rect" id="node3" href="$class_terminal.html#aab08ef06e15138f44838f2f643cdb70e" title="Terminal::start" alt="" coords="480,12,587,39"/>
-</map>

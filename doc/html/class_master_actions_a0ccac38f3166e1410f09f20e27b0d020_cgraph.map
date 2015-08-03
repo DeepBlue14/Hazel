@@ -1,4 +1,0 @@
-<map id="MasterActions::connectToOutputSouthAction" name="MasterActions::connectToOutputSouthAction">
-<area shape="rect" id="node2" href="$class_master_actions.html#afb11d896980c526784b05a440e6f21ac" title="MasterActions::handleOutput\lSouthActionSlot" alt="" coords="230,5,421,46"/>
-<area shape="rect" id="node3" href="$class_master_actions.html#ace3070f2fdce3f9bca417e0c05f790fa" title="MasterActions::getSouthTab\lWidgetPtr" alt="" coords="470,5,658,46"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="NewFilePage_4::triggerMutators" name="NewFilePage_4::triggerMutators">
-<area shape="rect" id="node2" href="$class_new_file_page__4.html#a42933a07b4d1a56f42d52244ab57f81a" title="NewFilePage_4::setFileName\lStrPtr" alt="" coords="265,5,461,46"/>
-<area shape="rect" id="node3" href="$class_new_file_page__4.html#ad50df188d5e7b1e6865dadbae1acc518" title="NewFilePage_4::setFileExt\lStrPtr" alt="" coords="272,70,453,111"/>
-<area shape="rect" id="node4" href="$class_new_file_page__4.html#a697c7546c4530ca898d15d6a1b7a862f" title="NewFilePage_4::setProject\lStrPtr" alt="" coords="272,135,453,177"/>
-<area shape="rect" id="node5" href="$class_new_file_page__4.html#a91db2de63f481e2a95e0198ec77ec3db" title="NewFilePage_4::setLocStrPtr" alt="" coords="265,201,460,228"/>
-<area shape="rect" id="node6" href="$class_new_file_page__4.html#a0a525af0cbf467308a73626aefef8d25" title="NewFilePage_4::setFolder\lStrPtr" alt="" coords="275,253,451,294"/>
-<area shape="rect" id="node7" href="$class_new_file_page__4.html#aa0c4287cae62cede06c2e2a7d9c0dd6e" title="NewFilePage_4::setCreated\lFileStrPtr" alt="" coords="269,318,456,359"/>
-</map>

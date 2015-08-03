@@ -13,6 +13,8 @@
             <itemPath>src/MsgParser.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="Reconfig" projectFiles="true">
+            <itemPath>src/ParseCMake.h</itemPath>
+            <itemPath>src/ParseMake.h</itemPath>
             <itemPath>src/ToCMake.h</itemPath>
             <itemPath>src/ToRosMake.h</itemPath>
           </logicalFolder>
@@ -527,9 +529,13 @@
       </item>
       <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ParseCMake.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ParseFontConfigXml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ParseMake.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -917,9 +923,13 @@
       </item>
       <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ParseCMake.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ParseFontConfigXml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ParseMake.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>

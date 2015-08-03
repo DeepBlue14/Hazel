@@ -1,5 +1,0 @@
-<map id="MasterActions::getNewFileActionPtr" name="MasterActions::getNewFileActionPtr">
-<area shape="rect" id="node2" href="$class_master_menus.html#aa8bc0efcd6904b557923f10135b4a6f0" title="MasterMenus::initFileMenuPtr" alt="" coords="235,12,431,39"/>
-<area shape="rect" id="node3" href="$class_master_gui.html#a65f7212a54b92bdd21498478b9689631" title="MasterGui::initMenus" alt="" coords="480,12,627,39"/>
-<area shape="rect" id="node4" href="$class_master_gui.html#a9d3221a5d6791ffab353e038452e8b79" title="MasterGui::MasterGui" alt="" coords="675,12,826,39"/>
-</map>

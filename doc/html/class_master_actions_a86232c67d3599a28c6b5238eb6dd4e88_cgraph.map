@@ -1,4 +1,0 @@
-<map id="MasterActions::connectToCleanAndBuildAction" name="MasterActions::connectToCleanAndBuildAction">
-<area shape="rect" id="node2" href="$class_master_actions.html#ac3621bfbde9a2b681d4d35ae72bd6f14" title="MasterActions::handleClean\lAndBuildActionSlot" alt="" coords="229,5,416,46"/>
-<area shape="rect" id="node3" href="$class_open_project_gui.html#aa26ced8181a1e103229b08cfa94c19be" title="OpenProjectGui::getProject\lStrPtr" alt="" coords="464,5,645,46"/>
-</map>

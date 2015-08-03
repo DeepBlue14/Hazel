@@ -1,5 +1,0 @@
-<map id="MasterActions::getEastWidgetPtr" name="MasterActions::getEastWidgetPtr">
-<area shape="rect" id="node2" href="$class_master_actions.html#a86d0a64d13866d196c05906dfae37b73" title="MasterActions::handleNav\lEastActionSlot" alt="" coords="272,27,448,69"/>
-<area shape="rect" id="node3" href="$class_master_actions.html#ad8eb348b90e75f5876c30692930a2c22" title="MasterActions::MasterActions" alt="" coords="497,5,695,32"/>
-<area shape="rect" id="node4" href="$class_master_actions.html#ab8028a378675e16f2d9ae4a42a7114be" title="MasterActions::connectTo\lNavEastAction" alt="" coords="509,57,683,98"/>
-</map>

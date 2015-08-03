@@ -1,6 +1,0 @@
-<map id="NewProjectGui::loadPage_1" name="NewProjectGui::loadPage_1">
-<area shape="rect" id="node2" href="$class_new_project_gui.html#ac04edf99653bbc5881e3cba6b385e967" title="NewProjectGui::swapBackPage" alt="" coords="241,12,450,39"/>
-<area shape="rect" id="node3" href="$class_new_project_gui.html#ae8c086687f029bada59f3934aa16ad9b" title="NewProjectGui::handleBack\lBtnSlot" alt="" coords="499,5,685,46"/>
-<area shape="rect" id="node4" href="$class_new_project_gui.html#a5822d7472aff8da63b822e09afa481e1" title="NewProjectGui::initBtns" alt="" coords="733,12,896,39"/>
-<area shape="rect" id="node5" href="$class_new_project_gui.html#a477f5d0a5d466be598b3bdf55d22b7f1" title="NewProjectGui::NewProjectGui" alt="" coords="945,12,1151,39"/>
-</map>
