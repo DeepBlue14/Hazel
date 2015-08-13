@@ -167,20 +167,14 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     //cout << "FileTreeGui::handleRightClickSlot(...)" << endl;
     
     QPoint globalPos = treePtr->mapToGlobal(pos);
-    //QMenu myMenu;
-    //myMenu.addAction("Open");
-    //myMenu.addAction("Hide");
-    //myMenu.addAction("Delete");
-    //myMenu.addAction("Rename...");
-    //myMenu.addAction("Refactor");
-    //myMenu.addAction("Git");
-    //myMenu.addAction("Properties");
+    
     if(treePtr->selectedItems().size() == 0)
     {
         return;
     }
 
-    if(treePtr->selectedItems().at(0)->text(1) == "")
+    //sort of hack--technically a dir name could contain a "."
+    if(treePtr->selectedItems().at(0)->text(1) == "" || treePtr->selectedItems().at(0)->text(1).contains(".", Qt::CaseSensitive))
     {
         FTFileMenu myMenu;
         QAction* selectedItem = myMenu.exec(globalPos);

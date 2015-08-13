@@ -60,7 +60,7 @@ void AdvOptionsGui::initBtns()
     
     connect(okBtn, SIGNAL(released() ), this, SLOT(handleOkBtnSlot() ) );
     connect(cancelBtn, SIGNAL(released() ), this, SLOT(handleCancelBtnSlot() ) );
-    connect(applyBtn, SIGNAL(released() ), this, SLOT(handleapplyBtnSlot() ) );
+    connect(applyBtn, SIGNAL(released() ), this, SLOT(handleApplyBtnSlot() ) );
     connect(helpBtn, SIGNAL(released() ), this, SLOT(handleHelpBtnSlot() ) );
     
     //outerLayout->addWidget(advOptPage_1, 0, 0);

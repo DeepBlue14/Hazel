@@ -22,12 +22,12 @@
           </logicalFolder>
           <itemPath>src/Build.h</itemPath>
           <itemPath>src/Directory.h</itemPath>
+          <itemPath>src/MiscHelpers.h</itemPath>
           <itemPath>src/ModifyCMakeLists.h</itemPath>
           <itemPath>src/ModifyManifest.h</itemPath>
           <itemPath>src/ParseFontConfigXml.h</itemPath>
           <itemPath>src/PhysicalAttribLog.h</itemPath>
           <itemPath>src/QXTerm.h</itemPath>
-          <itemPath>src/QtTypeConvs.h</itemPath>
           <itemPath>src/RFile.h</itemPath>
           <itemPath>src/RProcess.h</itemPath>
           <itemPath>src/RideEnv.h</itemPath>
@@ -168,12 +168,12 @@
           </logicalFolder>
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
+          <itemPath>src/MiscHelpers.cpp</itemPath>
           <itemPath>src/ModifyCMakeLists.cpp</itemPath>
           <itemPath>src/ModifyManifest.cpp</itemPath>
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
           <itemPath>src/PhysicalAttribLog.cpp</itemPath>
           <itemPath>src/QXTerm.cpp</itemPath>
-          <itemPath>src/QtTypeConvs.cpp</itemPath>
           <itemPath>src/RFile.cpp</itemPath>
           <itemPath>src/RProcess.cpp</itemPath>
           <itemPath>src/RideEnv.cpp</itemPath>
@@ -441,6 +441,10 @@
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MiscHelpers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MiscHelpers.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ModifyCMakeLists.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ModifyCMakeLists.h" ex="false" tool="3" flavor2="0">
@@ -548,10 +552,6 @@
       <item path="src/QXTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/QXTerm.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/QtTypeConvs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/QtTypeConvs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RFile.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -839,6 +839,10 @@
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MiscHelpers.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MiscHelpers.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ModifyCMakeLists.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ModifyCMakeLists.h" ex="false" tool="3" flavor2="0">
@@ -946,10 +950,6 @@
       <item path="src/QXTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/QXTerm.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/QtTypeConvs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/QtTypeConvs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RFile.cpp" ex="false" tool="1" flavor2="0">
       </item>
