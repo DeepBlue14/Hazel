@@ -3,7 +3,7 @@
 
 NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
 {
-    rosVersionStrPtr = new QString("");
+    rosVersionStrPtr = new QString("null");
     
     rosVersionsStrLstPtr = new QStringList();
     rosVersionsStrLstPtr->push_back("Fuerte");

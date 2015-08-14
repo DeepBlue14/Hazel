@@ -3,9 +3,9 @@
 
 NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
 {
-    authorNameStrPtr = new QString("");
-    authorEmailStrPtr = new QString("");
-    licenseStrPtr = new QString("");
+    authorNameStrPtr = new QString("null");
+    authorEmailStrPtr = new QString("null");
+    licenseStrPtr = new QString("null");
     
     authorNameLePtr = new QLineEdit();
     authorEmailLePtr = new QLineEdit();

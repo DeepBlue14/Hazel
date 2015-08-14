@@ -40,6 +40,7 @@
 #include "NewFilePage_2.h"
 #include "NewFilePage_3.h"
 #include "NewFilePage_4.h"
+#include "NewFilePage_5.h"
 #include "SaveAll.h"
 #include "FileTreeGui.h"
 //#include "LinkFileWithGui.h"
@@ -67,7 +68,8 @@ private:
         PAGE_ONE,
         PAGE_TWO,
         PAGE_THREE,
-        PAGE_FOUR
+        PAGE_FOUR,
+        PAGE_FIVE
     };
     
     Page currentPage;
@@ -90,6 +92,7 @@ private:
     NewFilePage_2* newFilePage_2Ptr;
     NewFilePage_3* newFilePage_3Ptr;
     NewFilePage_4* newFilePage_4Ptr;
+    NewFilePage_5* newFilePage_5Ptr;
     
     QAbstractItemModel* modelFromFile(const QString& fileName);
     
@@ -209,6 +212,16 @@ public:
      * 
      */
     void unloadPage_4();
+    
+    /**
+     * 
+     */
+    void loadPage_5();
+    
+    /**
+     * 
+     */
+    void unloadPage_5();
     
     /**
      * 

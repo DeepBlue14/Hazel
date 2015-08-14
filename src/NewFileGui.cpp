@@ -12,6 +12,7 @@ NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* northTabWidgetPtr*/) : QWi
     newFilePage_2Ptr = new NewFilePage_2();
     newFilePage_3Ptr = new NewFilePage_3();
     newFilePage_4Ptr = new NewFilePage_4();
+    newFilePage_5Ptr = new NewFilePage_5();
     
     currentPage = PAGE_ONE;
     
@@ -69,9 +70,11 @@ void NewFileGui::handleFinishBtnSlot()
     cout << "successfully triggered f2" << endl;
     newFilePage_3Ptr->triggerMutators();
     cout << "successfully triggered f3" << endl;
-    //newFilePage_4Ptr updates automatically
     newFilePage_4Ptr->triggerMutators();
     cout << "successfully triggered f4" << endl;
+    //newFilePage_5Ptr updates automatically
+    newFilePage_5Ptr->triggerMutators();
+    cout << "successfully triggered f5" << endl;
     cout << toString()->toStdString() << endl;
     
     //create file
@@ -102,14 +105,14 @@ void NewFileGui::handleFinishBtnSlot()
     setHighlighterPtr(highlighterPtr = new Highlighter(editor->document() ) );
 
     //create physical file and tab
-    RFile* rideFile = new RFile(*newFilePage_4Ptr->getLocStrPtr()
+    RFile* rideFile = new RFile(*newFilePage_5Ptr->getLocStrPtr()
                                     + "/"
-                                    + *newFilePage_4Ptr->getFileNameStrPtr()
-                                    + *newFilePage_4Ptr->getFileExtStrPtr() );
+                                    + *newFilePage_5Ptr->getFileNameStrPtr()
+                                    + *newFilePage_5Ptr->getFileExtStrPtr() );
     //-----------------
-    cout << "\t\tLoc: " << newFilePage_4Ptr->getLocStrPtr()->toStdString() << endl;
-    cout << "\t\tName: " << newFilePage_4Ptr->getFileNameStrPtr()->toStdString() << endl;
-    cout << "\t\tExt: " << newFilePage_4Ptr->getFileExtStrPtr()->toStdString() << endl;
+    cout << "\t\tLoc: " << newFilePage_5Ptr->getLocStrPtr()->toStdString() << endl;
+    cout << "\t\tName: " << newFilePage_5Ptr->getFileNameStrPtr()->toStdString() << endl;
+    cout << "\t\tExt: " << newFilePage_5Ptr->getFileExtStrPtr()->toStdString() << endl;
 
 
     rideFile->openRdWrFile();
@@ -117,8 +120,8 @@ void NewFileGui::handleFinishBtnSlot()
     QByteArray tmpBArr;
     tmpBArr.append(editor->toPlainText());
     editor->setPlainText(rideFile->readAll() );
-    northTabWidgetPtr->addTab(editor, *newFilePage_4Ptr->getFileNameStrPtr()
-                                        + *newFilePage_4Ptr->getFileExtStrPtr());
+    northTabWidgetPtr->addTab(editor, *newFilePage_5Ptr->getFileNameStrPtr()
+                                        + *newFilePage_5Ptr->getFileExtStrPtr());
     
     rideFile->setParallelFileGuiPtr(editor);
     SaveAll::pushToRideFilePtrVec(rideFile);
@@ -216,6 +219,11 @@ void NewFileGui::swapBackPage()
             unloadPage_4();
             loadPage_3();
             currentPage = PAGE_THREE;
+            break;
+        case PAGE_FIVE:
+            unloadPage_5();
+            loadPage_4();
+            currentPage = PAGE_FOUR;
             nextBtn->setEnabled(true);
             finishBtn->setEnabled(false);
             break;
@@ -244,6 +252,11 @@ void NewFileGui::swapNextPage()
             unloadPage_3();
             loadPage_4();
             currentPage = PAGE_FOUR;
+            break;
+        case PAGE_FOUR:
+            unloadPage_4();
+            loadPage_5();
+            currentPage = PAGE_FIVE;
             nextBtn->setEnabled(false);
             finishBtn->setEnabled(true);
             break;
@@ -317,6 +330,22 @@ void NewFileGui::unloadPage_4()
 }
 
 
+void NewFileGui::loadPage_5()
+{
+    outerLayout->addWidget(newFilePage_5Ptr, 0, 0);
+    newFilePage_5Ptr->setVisible(true);
+    newFilePage_5Ptr->setEnabled(true);
+}
+
+
+void NewFileGui::unloadPage_5()
+{
+    outerLayout->removeWidget(newFilePage_5Ptr);
+    newFilePage_5Ptr->setVisible(false);
+    newFilePage_5Ptr->setEnabled(false);
+}
+
+
 QString* NewFileGui::toString()
 {
     QString* tmp = new QString("NewProjectGui");
@@ -327,7 +356,7 @@ QString* NewFileGui::toString()
     tmp->append("\n");
     tmp->append(newFilePage_3Ptr->toString() );
     tmp->append("\n");
-    tmp->append(newFilePage_4Ptr->toString() );
+    tmp->append(newFilePage_5Ptr->toString() );
     
     return tmp;
 }

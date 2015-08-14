@@ -3,9 +3,9 @@
 
 NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
 {
-    projectNameStrPtr = new QString("");
-    projectLocStrPtr = new QString("NULL");
-    projectTypeStrPtr = new QString("");
+    projectNameStrPtr = new QString("null");
+    projectLocStrPtr = new QString("null");
+    projectTypeStrPtr = new QString("null");
         
     projectNameLePtr = new QLineEdit(this);
     projectLocLePtr = new QLineEdit(this);

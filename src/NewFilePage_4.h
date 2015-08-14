@@ -4,7 +4,7 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
- * Created on May 15, 2015, 2:56 PM
+ * Created on August 14, 2015, 1:34 PM
  */
 
 #ifndef NEW_FILE_PAGE_4_H
@@ -12,12 +12,8 @@
 
 #include <QWidget>
 #include <QString>
-#include <QLineEdit>
-#include <QComboBox>
-#include <QCheckBox>
-#include <QPushButton>
-#include <QFileDialog>
-#include <QFormLayout>
+#include <QStringList>
+#include <QListWidget>
 #include <QGridLayout>
 
 #include <iostream>
@@ -40,118 +36,26 @@ class NewFilePage_4 : public QWidget
     Q_OBJECT
             
     private:
-        QLineEdit* fileNameLePtr;
-        QStringList* fileExtsStrLstPtr;
-        QComboBox* fileExtCbPtr;
-        QCheckBox* defaultFileExtChbPtr;
-        QLineEdit* projectLePtr;
-        QComboBox* locCbPtr;
-        QLineEdit* folderLePtr;
-        QFileDialog* folderDialogPtr;
-        QPushButton* folderPbPtr;
-        QLineEdit* createdFileLePtr;
-    
-        QGridLayout* folderLayoutPtr;
-        QFormLayout* formLayoutPtr;
-        QGridLayout* outerLayoutPtr;
-    
-        QString* fileNameStrPtr;
-        QString* fileExtStrPtr;
-        QString* projectStrPtr;
-        QString* locStrPtr;
-        QString* folderStrPtr;
-        QString* createdFileStrPtr;
-
-    private slots:
-        /**
-         * 
-         */
-        void handleFolderPbPtrSlot();
-    
+        QStringList* cHeaderTemplateStrLst;
+        QStringList* cSourceTemplateStrLst;
+        QStringList* cppHeaderTemplateStrLst;
+        QStringList* cppSourceTemplateStrLst;
+        QStringList* pySourceTemplateStrLst;
+        QStringList* jSourceTemplateStrLst;
+        QStringList* lispSourceTemplateStdrLst;
+        
+        QListWidget* templatesLstWidPtr;
+        QGridLayout* outerLayout;
+        
+        QString* selectedTemplateStrPtr;
+        
     public:
         /**
          * Constructor.
          * 
-         * @param parent reference to parent type.
+         * @param parent pointer to object of parent type.
          */
         NewFilePage_4(QWidget* parent = 0);
-        
-        /**
-         * Initialize core components of this class
-         */
-        void initCore();
-        
-        /**
-         * 
-         */
-        void setFileNameStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getFileNameStrPtr();
-        
-        /**
-         * 
-         */
-        void setFileExtStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getFileExtStrPtr();
-        
-        /**
-         * 
-         */
-        void setProjectStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getProjectStrPtr();
-        
-        /**
-         * 
-         */
-        void setLocStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getLocStrPtr();
-        
-        /**
-         * 
-         */
-        void setFolderStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getFolderStrPtr();
-        
-        /**
-         * 
-         */
-        void setCreatedFileStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getCreatedFileStrPtr();
         
         /**
          * 
@@ -159,9 +63,23 @@ class NewFilePage_4 : public QWidget
         void triggerMutators();
         
         /**
-         * Classic toString method.
          * 
-         * @return data.
+         * 
+         * @param selectedTemplateStrPtr
+         */
+        void setSelectedTemplateStrPtr(QString* selectedTemplateStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
+        QString* getSelectedTemplateStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
          */
         QString* toString();
         
@@ -169,7 +87,6 @@ class NewFilePage_4 : public QWidget
          * Destructor.
          */
         ~NewFilePage_4();
-        
 };
 
 #endif	/* NEW_FILE_PAGE_4_H */

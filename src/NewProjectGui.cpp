@@ -90,6 +90,7 @@ void NewProjectGui::handleFinishBtnSlot()
     FileTreeGui::setProjectRootAbsPathStrPtr(new QString(*newProjectPage_2Ptr->getProjectLocStrPtr()
                                                        + "/"
                                                        + *newProjectPage_2Ptr->getProjectNameStrPtr() ));
+    FileTreeGui::setProjectNameStrPtr(newProjectPage_2Ptr->getProjectNameStrPtr() );
     
     
     QString tmp5(*newProjectPage_2Ptr->getProjectLocStrPtr() + "/" + *newProjectPage_2Ptr->getProjectNameStrPtr() );

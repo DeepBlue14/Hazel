@@ -1,6 +1,8 @@
 /* 
- * File:   highlighter.h
- * Author: james
+ * File:   Highlighter.h
+ * Author: James
+ * Email: 
+ * File Description: 
  *
  * Created on April 20, 2015, 11:41 PM
  */
@@ -68,6 +70,8 @@ public:
      * @param parent reference to parent type.
      */
     Highlighter(QTextDocument* parent = 0);
+    
+    
     
     /**
      * Classic toString method.

@@ -60,11 +60,13 @@
             <itemPath>src/MasterToolBars.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
+            <itemPath>src/LoadTemplate.h</itemPath>
             <itemPath>src/NewFileGui.h</itemPath>
             <itemPath>src/NewFilePage_1.h</itemPath>
             <itemPath>src/NewFilePage_2.h</itemPath>
             <itemPath>src/NewFilePage_3.h</itemPath>
             <itemPath>src/NewFilePage_4.h</itemPath>
+            <itemPath>src/NewFilePage_5.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="NewProject" projectFiles="true">
             <itemPath>src/NewProjectGui.h</itemPath>
@@ -76,6 +78,11 @@
           <logicalFolder name="f6" displayName="Options" projectFiles="true">
             <itemPath>src/OptionGui.h</itemPath>
             <itemPath>src/OptionPage_1.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f10" displayName="PrettySyntax" projectFiles="true">
+            <itemPath>src/FileGui.h</itemPath>
+            <itemPath>src/Highlighter.h</itemPath>
+            <itemPath>src/MirrorChar.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
             <itemPath>src/AdvOptPage_1.h</itemPath>
@@ -103,8 +110,6 @@
           </logicalFolder>
           <itemPath>src/CentralGui.h</itemPath>
           <itemPath>src/DebugGui.h</itemPath>
-          <itemPath>src/FileGui.h</itemPath>
-          <itemPath>src/Highlighter.h</itemPath>
           <itemPath>src/LineNumberArea.h</itemPath>
           <itemPath>src/LinkFileWithGui.h</itemPath>
           <itemPath>src/NavigatorGui.h</itemPath>
@@ -206,11 +211,13 @@
             <itemPath>src/MasterToolBars.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
+            <itemPath>src/LoadTemplate.cpp</itemPath>
             <itemPath>src/NewFileGui.cpp</itemPath>
             <itemPath>src/NewFilePage_1.cpp</itemPath>
             <itemPath>src/NewFilePage_2.cpp</itemPath>
             <itemPath>src/NewFilePage_3.cpp</itemPath>
             <itemPath>src/NewFilePage_4.cpp</itemPath>
+            <itemPath>src/NewFilePage_5.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="NewProject" projectFiles="true">
             <itemPath>src/NewProjectGui.cpp</itemPath>
@@ -222,6 +229,11 @@
           <logicalFolder name="f6" displayName="Options" projectFiles="true">
             <itemPath>src/OptionGui.cpp</itemPath>
             <itemPath>src/OptionPage_1.cpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f10" displayName="PrettySyntax" projectFiles="true">
+            <itemPath>src/FileGui.cpp</itemPath>
+            <itemPath>src/Highlighter.cpp</itemPath>
+            <itemPath>src/MirrorChar.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
             <itemPath>src/AdvOptPage_1.cpp</itemPath>
@@ -249,8 +261,6 @@
           </logicalFolder>
           <itemPath>src/CentralGui.cpp</itemPath>
           <itemPath>src/DebugGui.cpp</itemPath>
-          <itemPath>src/FileGui.cpp</itemPath>
-          <itemPath>src/Highlighter.cpp</itemPath>
           <itemPath>src/LineNumberArea.cpp</itemPath>
           <itemPath>src/LinkFileWithGui.cpp</itemPath>
           <itemPath>src/NavigatorGui.cpp</itemPath>
@@ -419,6 +429,10 @@
       </item>
       <item path="src/LinkFileWithGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/LoadTemplate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LoadTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/MakeBridge.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
@@ -440,6 +454,10 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MiscHelpers.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -492,6 +510,10 @@
       <item path="src/NewFilePage_4.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/NewFilePage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_5.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -817,6 +839,10 @@
       </item>
       <item path="src/LinkFileWithGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/LoadTemplate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LoadTemplate.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/MakeBridge.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
@@ -838,6 +864,10 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MiscHelpers.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -890,6 +920,10 @@
       <item path="src/NewFilePage_4.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/NewFilePage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_5.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_5.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/NewProjectGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

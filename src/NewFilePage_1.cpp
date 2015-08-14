@@ -3,8 +3,8 @@
 
 NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
 {
-    langStrPtr = new QString("");
-    fileTypeStrPtr = new QString("");
+    langStrPtr = new QString("null");
+    fileTypeStrPtr = new QString("null");
     
     langsStrLstPtr = new QStringList();
     langsStrLstPtr->push_back("C");
@@ -16,8 +16,8 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     langsStrLstPtr->push_back("Other");
     
     QStringList* cStrLstPtr = new QStringList();
-    cStrLstPtr->push_back("header file");
-    cStrLstPtr->push_back("source file");
+    cStrLstPtr->push_back("Header file");
+    cStrLstPtr->push_back("Source file");
     
     QStringList* cppStrLstPtr = new QStringList();
     cppStrLstPtr->push_back("Header");
@@ -28,7 +28,8 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     pythonStrLstPtr->push_back("Dynamic Reconfiguration");
     
     QStringList* javaStrLstPtr = new QStringList();
-    javaStrLstPtr->push_back("Source");
+    javaStrLstPtr->push_back("Class");
+    javaStrLstPtr->push_back("Interface");
     
     QStringList* lispStrLstPtr = new QStringList();
     lispStrLstPtr->push_back("Source");
@@ -54,6 +55,7 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     
     langsLwPtr = new QListWidget();
     langsLwPtr->addItems(*langsStrLstPtr);
+    //langsLwPtr->item(0)->setSelected(true);
     connect(langsLwPtr, SIGNAL(itemSelectionChanged()), this, SLOT(handleSwapOptionsSlot()));
     
     fileTypeStrLstPtrVec.push_back(cStrLstPtr);

@@ -46,7 +46,7 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
     cPlusPlusPreprocessorCmds << "#elif"         << "#ifdef"            << "#include"
                               << "#endif"        << "#ifndef"           << "#line"
                               << "#defined"      << "#define"           << "#error"
-                                                      << "#undef"            << "#pragma";
+                                                 << "#undef"            << "#pragma";
     
     QStringList javaKeywordPatterns;
     javaKeywordPatterns      << "abstract"      << "assert"           << "boolean"
@@ -112,8 +112,8 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
         highlightingRules.append(rule);
     }
     
-    keywordFormat.setForeground(Qt::red);
-    //keywordFormat.setBackground(Qt::darkYellow);
+    keywordFormat.setForeground(Qt::darkYellow);
+    //keywordFormat.setBackground(Qt::yellow);
     //keywordFormat.setFontWeight(QFont::Bold);
     foreach (const QString &pattern, mirrorKeyCharPatterns)
     {
