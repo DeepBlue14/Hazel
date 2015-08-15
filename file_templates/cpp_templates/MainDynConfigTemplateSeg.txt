@@ -1,0 +1,14 @@
+#include <dynamic_reconfigure/server.h>
+#include <<PACKAGE_NAME>/<DYN_CONFIG_CFG_NAME>.h>
+
+
+void drCallback(<PACKAGE_NAME>::<DYN_CONFIG_CFG_NAME>& config, uint32_t level)
+{
+    ;
+}
+
+
+dynamic_reconfigure::Server<<PACKAGE_NAME>::<DYN_CONFIG_CFG_NAME>> server;
+dynamic_reconfigure::Server<<PACKAGE_NAME>::<DYN_CONFIG_CFG_NAME>>::CallbackType f;
+f = boost::bind(&drCallback, _1, _2);
+server.setCallback(f);

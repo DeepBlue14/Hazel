@@ -14,6 +14,7 @@
 #include <QFile>
 #include <QString>
 #include <QStringList>
+#include <QTextStream>
 
 #include <iostream>
 
@@ -38,6 +39,14 @@ class LoadTemplate
         QString* fileContentsStrPtr;
         
     public:
+        enum LangTemplate
+        {
+            BELL = 0,
+            C,
+            CPP,
+            PYTHON
+        };
+        
         enum FileTemplate
         {
             CLASS_TEMPLATE = 0,
@@ -51,13 +60,16 @@ class LoadTemplate
         };
         
         LoadTemplate();
-        void loadFile(FileTemplate fileTemplate);
+        QString* loadFile(LangTemplate langTemplate, FileTemplate fileTemplate);
         void setAbsPathToTemplateDirStrPtr(QString* absPathToTemplateDirStrPtr);
         QString* getAbsPathToTemplateDirStrPtr();
         void setTemplateStrLstPtr(QStringList* templateStrLstPtr);
         QStringList* getTemplateStrLstPtr();
         void setFileContentsStrPtr(QString* fileContentsStrPtr);
         QString* getFileContentsStrPtr();
+        //-----
+        
+        //-----
         QString* toString();
         ~LoadTemplate();
 };

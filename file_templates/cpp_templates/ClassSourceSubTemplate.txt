@@ -1,0 +1,19 @@
+#include "<FILENAME>.h"
+
+
+<FILENAME>::<FILENAME>()
+{
+    ;
+}
+
+
+<FILENAME>::callback(<PARAM>)
+{
+    ;
+}
+
+
+<FILENAME>::~<FILENAME>()
+{
+    ;
+}
