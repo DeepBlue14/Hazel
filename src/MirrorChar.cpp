@@ -1,5 +1,3 @@
-#include <qt4/QtCore/qstringbuilder.h>
-
 #include "MirrorChar.h"
 
 

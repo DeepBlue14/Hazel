@@ -1,19 +1,23 @@
 /* 
- * File:   NewFilePage_2.h
+ * File:   NewFilePage_3.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description:
+ * File Description: 
  *
- * Created on May 15, 2015, 9:25 AM
+ * Created on May 15, 2015, 10:53 PM
  */
 
-#ifndef NEW_FILE_PAGE_2_H
-#define	NEW_FILE_PAGE_2_H
+#ifndef NEW_FILE_PAGE_3_H
+#define	NEW_FILE_PAGE_3_H
 
 #include <QWidget>
+#include <QStringList>
+#include <QVector>
 #include <QString>
-#include <QRadioButton>
-#include <QButtonGroup>
+#include <QListWidget>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QHBoxLayout>
 #include <QGridLayout>
 
 #include <iostream>
@@ -36,14 +40,43 @@ class NewFilePage_2 : public QWidget
     Q_OBJECT
             
     private:
-        QButtonGroup* buttonGroupPtr;
-        
+        QStringList* msgCatagoryStrLstPtr;
+        QVector<QStringList*> specificMsgStrLstVec;
+        QStringList* typesEnteredStrLstPtr;
+        QListWidget* msgCatagoryLwPtr;
+        QListWidget* specificMsgLwPtr;
+        QListWidget* addedLwPtr;
+        QPushButton* custBtnPtr;
+        QPushButton* addBtnPtr;
+        QPushButton* removeBtnPtr;
+
+        QHBoxLayout* btnLayout;
         QGridLayout* outerLayoutPtr;
         
-        QString* optionStrPtr;
+        QString* msgCatagoryStrPtr;
+        QString* specificMsgStrPtr;
         
     private slots:
-        ;
+        
+        /**
+         * 
+         */
+        void handleCustBtnPtrSlot();
+        
+        /**
+         * 
+         */
+        void handleSwapOptionsSlot();
+        
+        /**
+         * 
+         */
+        void handleAddBtnPtrSlot();
+        
+        /**
+         * 
+         */
+        void handleRemoveBtnPtrSlot();
         
     public:
         /**
@@ -56,14 +89,26 @@ class NewFilePage_2 : public QWidget
         /**
          * 
          */
-        void setOptionStrPtr();
+        void setMsgCatagoryStrPtr();
         
         /**
          * 
          * 
          * @return 
          */
-        QString* getOptionStrPtr();
+        QString* getMsgCatagoryStrPtr();
+        
+        /**
+         * 
+         */
+        void setSpecificMsgStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
+        QString* getSpecificMsgStrPtr();
         
         /**
          * 
@@ -71,9 +116,9 @@ class NewFilePage_2 : public QWidget
         void triggerMutators();
         
         /**
+         * Classic toString method.
          * 
-         * 
-         * @return 
+         * @return data.
          */
         QString* toString();
         
@@ -83,4 +128,4 @@ class NewFilePage_2 : public QWidget
         ~NewFilePage_2();
 };
 
-#endif	/* NEW_FILE_PAGE_2_H */
+#endif	/* NEW_FILE_PAGE_3_H */

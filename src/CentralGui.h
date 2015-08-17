@@ -16,6 +16,7 @@
 #include <QWidget>
 #include <QGridLayout>
 #include <QTabWidget>
+#include <QProgressBar>
 
 #include <iostream>
 

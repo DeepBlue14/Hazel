@@ -13,6 +13,7 @@
 #ifndef MIRROR_CHAR_H
 #define	MIRROR_CHAR_H
 
+#include <QStringBuilder>
 #include <QString>
 #include <QChar>
 

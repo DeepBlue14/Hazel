@@ -1,23 +1,19 @@
 /* 
- * File:   NewFilePage_3.h
+ * File:   NewFilePage_4.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
- * Created on May 15, 2015, 10:53 PM
+ * Created on August 14, 2015, 1:34 PM
  */
 
-#ifndef NEW_FILE_PAGE_3_H
-#define	NEW_FILE_PAGE_3_H
+#ifndef NEW_FILE_PAGE_4_H
+#define	NEW_FILE_PAGE_4_H
 
 #include <QWidget>
-#include <QStringList>
-#include <QVector>
 #include <QString>
+#include <QStringList>
 #include <QListWidget>
-#include <QLineEdit>
-#include <QPushButton>
-#include <QHBoxLayout>
 #include <QGridLayout>
 
 #include <iostream>
@@ -40,68 +36,26 @@ class NewFilePage_3 : public QWidget
     Q_OBJECT
             
     private:
-        QStringList* msgCatagoryStrLstPtr;
-        QVector<QStringList*> specificMsgStrLstVec;
-        QStringList* typesEnteredStrLstPtr;
-        QListWidget* msgCatagoryLwPtr;
-        QListWidget* specificMsgLwPtr;
-        QListWidget* addedLwPtr;
-        QPushButton* addBtnPtr;
-        QPushButton* removeBtnPtr;
-
-        QHBoxLayout* btnLayout;
-        QGridLayout* outerLayoutPtr;
+        QStringList* cHeaderTemplateStrLst;
+        QStringList* cSourceTemplateStrLst;
+        QStringList* cppHeaderTemplateStrLst;
+        QStringList* cppSourceTemplateStrLst;
+        QStringList* pySourceTemplateStrLst;
+        QStringList* jSourceTemplateStrLst;
+        QStringList* lispSourceTemplateStdrLst;
         
-        QString* msgCatagoryStrPtr;
-        QString* specificMsgStrPtr;
+        QListWidget* templatesLstWidPtr;
+        QGridLayout* outerLayout;
         
-    private slots:
-        /**
-         * 
-         */
-        void handleSwapOptionsSlot();
-        
-        /**
-         * 
-         */
-        void handleAddBtnPtrSlot();
-        
-        /**
-         * 
-         */
-        void handleRemoveBtnPtrSlot();
+        QString* selectedTemplateStrPtr;
         
     public:
         /**
          * Constructor.
          * 
-         * @param parent reference to parent type.
+         * @param parent pointer to object of parent type.
          */
         NewFilePage_3(QWidget* parent = 0);
-        
-        /**
-         * 
-         */
-        void setMsgCatagoryStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getMsgCatagoryStrPtr();
-        
-        /**
-         * 
-         */
-        void setSpecificMsgStrPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* getSpecificMsgStrPtr();
         
         /**
          * 
@@ -109,9 +63,23 @@ class NewFilePage_3 : public QWidget
         void triggerMutators();
         
         /**
-         * Classic toString method.
          * 
-         * @return data.
+         * 
+         * @param selectedTemplateStrPtr
+         */
+        void setSelectedTemplateStrPtr(QString* selectedTemplateStrPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
+        QString* getSelectedTemplateStrPtr();
+        
+        /**
+         * 
+         * 
+         * @return 
          */
         QString* toString();
         
@@ -121,4 +89,4 @@ class NewFilePage_3 : public QWidget
         ~NewFilePage_3();
 };
 
-#endif	/* NEW_FILE_PAGE_3_H */
+#endif	/* NEW_FILE_PAGE_4_H */

@@ -13,6 +13,7 @@
 #include <QWidget>
 #include <QMainWindow>
 #include <QToolBar>
+#include <QStatusBar>
 #include <QDockWidget>
 #include <QMenuBar>
 #include <QMenu>

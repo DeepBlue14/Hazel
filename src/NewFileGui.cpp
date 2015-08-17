@@ -10,9 +10,9 @@ NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* northTabWidgetPtr*/) : QWi
     outerLayout = new QGridLayout(this);
     newFilePage_1Ptr = new NewFilePage_1();
     newFilePage_2Ptr = new NewFilePage_2();
-    newFilePage_3Ptr = new NewFilePage_3();
-    newFilePage_4Ptr = new NewFilePage_4();
-    newFilePage_5Ptr = new NewFilePage_5();
+    newFilePage_3Ptr = new NewFilePage_2();
+    newFilePage_4Ptr = new NewFilePage_3();
+    newFilePage_5Ptr = new NewFilePage_4();
     
     currentPage = PAGE_ONE;
     
