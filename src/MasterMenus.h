@@ -17,6 +17,7 @@
 #include <iostream>
 
 #include "MasterActions.h"
+
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

@@ -12,6 +12,8 @@
 
 #include <QWidget>
 #include <QString>
+#include <QDir>
+#include <QFileInfoList>
 #include <QStringList>
 #include <QGridLayout>
 

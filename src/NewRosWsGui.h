@@ -12,10 +12,13 @@
 
 #include <QWidget>
 #include <QString>
+#include <QPushButton>
 #include <QHBoxLayout>
 #include <QGridLayout>
 
 #include <iostream>
+
+#include "NewRosWsPage_1.h"
 
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
@@ -35,10 +38,50 @@ class NewRosWsGui : public QWidget
     Q_OBJECT
             
     private:
-        ;
+        enum Page
+        {
+            PAGE_ONE,
+            PAGE_TWO
+        };
+        
+        Page currentPage;
+        
+        QPushButton* backBtn;
+        QPushButton* nextBtn;
+        QPushButton* finishBtn;
+        QPushButton* helpBtn;
+        QPushButton* cancelBtn;
+    
+        QGridLayout* outerLayout;
+        QHBoxLayout* buttonLayout;
+        
+        NewRosWsPage_1* newRosWsPage_1Ptr;
         
     private slots:
-        ;
+    /**
+     * 
+     */
+    void handleBackBtnSlot();
+    
+    /**
+     * 
+     */
+    void handleNextBtnSlot();
+    
+    /**
+     * 
+     */
+    void handleFinishBtnSlot();
+    
+    /**
+     * 
+     */
+    void handleHelpBntSlot();
+    
+    /**
+     * 
+     */
+    void handleCancelBtnSlot();
         
     public:
         /**
@@ -47,6 +90,21 @@ class NewRosWsGui : public QWidget
          * @param parent
          */
         NewRosWsGui(QWidget* parent = 0);
+        
+        
+        void initBtns();
+        
+        
+        void swapNextPage();
+        
+        
+        void swapBackPage();
+        
+        
+        void loadPage_1();
+        
+        
+        void unloadPage_1();
         
         /**
          * 

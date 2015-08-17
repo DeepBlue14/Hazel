@@ -54,10 +54,14 @@
           </logicalFolder>
           <logicalFolder name="f9" displayName="MasterFEnd" projectFiles="true">
             <itemPath>src/MasterActions.h</itemPath>
+            <itemPath>src/MasterEastActions.h</itemPath>
             <itemPath>src/MasterGui.h</itemPath>
             <itemPath>src/MasterMenus.h</itemPath>
+            <itemPath>src/MasterNorthActions.h</itemPath>
+            <itemPath>src/MasterSouthActions.h</itemPath>
             <itemPath>src/MasterStatusBar.h</itemPath>
             <itemPath>src/MasterToolBars.h</itemPath>
+            <itemPath>src/MasterWestActions.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
             <itemPath>src/CustomMsgsGui.h</itemPath>
@@ -210,10 +214,14 @@
           </logicalFolder>
           <logicalFolder name="f9" displayName="MasterFEnd" projectFiles="true">
             <itemPath>src/MasterActions.cpp</itemPath>
+            <itemPath>src/MasterEastActions.cpp</itemPath>
             <itemPath>src/MasterGui.cpp</itemPath>
             <itemPath>src/MasterMenus.cpp</itemPath>
+            <itemPath>src/MasterNorthActions.cpp</itemPath>
+            <itemPath>src/MasterSouthActions.cpp</itemPath>
             <itemPath>src/MasterStatusBar.cpp</itemPath>
             <itemPath>src/MasterToolBars.cpp</itemPath>
+            <itemPath>src/MasterWestActions.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
             <itemPath>src/CustomMsgsGui.cpp</itemPath>
@@ -453,6 +461,10 @@
       </item>
       <item path="src/MasterActions.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MasterEastActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterEastActions.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterGui.h" ex="false" tool="3" flavor2="0">
@@ -461,6 +473,14 @@
       </item>
       <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MasterNorthActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterNorthActions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterSouthActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterSouthActions.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/MasterStatusBar.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterStatusBar.h" ex="false" tool="3" flavor2="0">
@@ -468,6 +488,10 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterWestActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterWestActions.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -875,6 +899,10 @@
       </item>
       <item path="src/MasterActions.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MasterEastActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterEastActions.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterGui.h" ex="false" tool="3" flavor2="0">
@@ -883,6 +911,14 @@
       </item>
       <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MasterNorthActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterNorthActions.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterSouthActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterSouthActions.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/MasterStatusBar.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterStatusBar.h" ex="false" tool="3" flavor2="0">
@@ -890,6 +926,10 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterWestActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterWestActions.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -10,6 +10,7 @@
  *                   the ROS environment) to be run. 
  *                   
  * Reference: http://www.codeprogress.com/cpp/libraries/qt/showQtExample.php?index=474&key=QProcessRedirectOutput
+ *            http://stackoverflow.com/questions/17856897/qt-5-and-qprocess-redirect-stdout-with-signal-slot-readyread
  *
  * Created on June 9, 2015, 6:53 PM
  */
