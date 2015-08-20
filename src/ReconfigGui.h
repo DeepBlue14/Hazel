@@ -1,12 +1,14 @@
 /* 
  * File:   ReconfigGui.h
  * Author: james
+ * Email:
+ * File Description: 
  *
  * Created on July 20, 2015, 5:05 PM
  */
 
-#ifndef RECONFIGGUI_H
-#define	RECONFIGGUI_H
+#ifndef RECONFIG_GUI_H
+#define	RECONFIG_GUI_H
 
 #include <QWidget>
 #include <QPushButton>
@@ -166,4 +168,4 @@ class ReconfigGui : public QWidget
         ~ReconfigGui();
 };
 
-#endif	/* RECONFIGGUI_H */
+#endif	/* RECONFIG_GUI_H */

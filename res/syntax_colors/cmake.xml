@@ -1,0 +1,13 @@
+<lang>
+    <type
+        color="blueGreen"
+        word="cmake_minimum_required"
+        word="find_package"
+        word="find_executable"
+        word="target_link_libraries"
+        word="include"
+        word="link_directories"
+        word="add_definitions"
+        word="include_directories" />
+        <!-- anything inside a ${} should be colored dark green and bold-->
+</lang>

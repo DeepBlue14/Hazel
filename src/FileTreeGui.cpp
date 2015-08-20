@@ -180,9 +180,10 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
         QAction* selectedItem = myMenu.exec(globalPos);
         LinkFileWithGui lfwg;
         FileGui* fg;
-        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
-                treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
-        lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
+        cout << "Chosen One: " << treePtr->selectedItems().size() << endl;
+        //QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+        //        treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+        //lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
         //cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
     else
@@ -197,7 +198,7 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 
 void FileTreeGui::handleDoubleClickSlot(const QModelIndex& mIndex)
 {
-    if(treePtr->selectedItems().at(0)->text(1) == "")
+    if(treePtr->selectedItems().at(0)->text(1) == "" || treePtr->selectedItems().at(0)->text(1).contains(".", Qt::CaseSensitive))
     {
         LinkFileWithGui lfwg;
         FileGui* fg;

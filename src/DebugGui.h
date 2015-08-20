@@ -1,6 +1,8 @@
 /* 
  * File:   DebugGui.h
  * Author: james
+ * Email:
+ * File Description: 
  *
  * Created on June 30, 2015, 12:49 AM
  */

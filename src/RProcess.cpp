@@ -14,14 +14,14 @@ RProcess::RProcess()
 void RProcess::redirectStdOutput()
 {
     cout << "\n>>" << endl;
-    outputLocTePtr->append(readAllStandardOutput());
+    outputLocTePtr->append(readAllStandardOutput() );
 }
 
 
 void RProcess::redirectError()
 {
     cout << "\n>>" << endl;
-    outputLocTePtr->append((readAllStandardOutput()));
+    outputLocTePtr->append((readAllStandardOutput()) );
 }
 
 
@@ -107,6 +107,25 @@ void RProcess::start(const QString& program, OpenMode mode)
     
     testProcess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
     testProcess.waitForFinished(-1);
+    
+    
+    /*
+    QTextStream rsyncStdOutStream(testProcess.readAll() );
+    QString buffer;
+    int count = 0;
+    while(true)
+    {
+        QString line = rsyncStdOutStream.readLine();
+        if(line.isNull() && count == 50 )
+            break;
+        else if(line.isNull() )
+            count++;
+        else
+            buffer.append("\n" + line);
+    }
+    cout << cct::bold("\nOutput: " ) << buffer.toStdString() << ":End" << endl;
+    */
+    
     QByteArray output = testProcess.readAllStandardOutput();
     cout << cct::bold("\nOutput: ") << output.data() << ":End" << endl;
     outputLocTePtr->append(output.data());

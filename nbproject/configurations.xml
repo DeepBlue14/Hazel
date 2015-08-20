@@ -34,6 +34,7 @@
           <itemPath>src/RosEnv.h</itemPath>
           <itemPath>src/SaveAll.h</itemPath>
           <itemPath>src/TextReplacer.h</itemPath>
+          <itemPath>src/Timer.h</itemPath>
           <itemPath>src/XmlMaster.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="frontend" projectFiles="true">
@@ -54,14 +55,14 @@
           </logicalFolder>
           <logicalFolder name="f9" displayName="MasterFEnd" projectFiles="true">
             <itemPath>src/MasterActions.h</itemPath>
-            <itemPath>src/MasterEastActions.h</itemPath>
+            <itemPath>src/MasterActionsEast.h</itemPath>
+            <itemPath>src/MasterActionsNorth.h</itemPath>
+            <itemPath>src/MasterActionsSouth.h</itemPath>
+            <itemPath>src/MasterActionsWest.h</itemPath>
             <itemPath>src/MasterGui.h</itemPath>
             <itemPath>src/MasterMenus.h</itemPath>
-            <itemPath>src/MasterNorthActions.h</itemPath>
-            <itemPath>src/MasterSouthActions.h</itemPath>
             <itemPath>src/MasterStatusBar.h</itemPath>
             <itemPath>src/MasterToolBars.h</itemPath>
-            <itemPath>src/MasterWestActions.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
             <itemPath>src/CustomMsgsGui.h</itemPath>
@@ -107,6 +108,7 @@
             <itemPath>src/ReconfigPage_3.h</itemPath>
             <itemPath>src/ReconfigPage_4.h</itemPath>
             <itemPath>src/ReconfigPage_5.h</itemPath>
+            <itemPath>src/ReconfigToolBar.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.h</itemPath>
@@ -177,8 +179,12 @@
             <itemPath>src/MsgParser.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="Reconfig" projectFiles="true">
+            <itemPath>src/MakeBridge.cpp</itemPath>
+            <itemPath>src/ParseCMake.cpp</itemPath>
+            <itemPath>src/ParseMake.cpp</itemPath>
             <itemPath>src/ToCMake.cpp</itemPath>
             <itemPath>src/ToRosMake.cpp</itemPath>
+            <itemPath>src/TouchSrcs.cpp</itemPath>
           </logicalFolder>
           <itemPath>src/Build.cpp</itemPath>
           <itemPath>src/Directory.cpp</itemPath>
@@ -194,6 +200,7 @@
           <itemPath>src/RosEnv.cpp</itemPath>
           <itemPath>src/SaveAll.cpp</itemPath>
           <itemPath>src/TextReplacer.cpp</itemPath>
+          <itemPath>src/Timer.cpp</itemPath>
           <itemPath>src/XmlMaster.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="frontend" projectFiles="true">
@@ -214,14 +221,14 @@
           </logicalFolder>
           <logicalFolder name="f9" displayName="MasterFEnd" projectFiles="true">
             <itemPath>src/MasterActions.cpp</itemPath>
-            <itemPath>src/MasterEastActions.cpp</itemPath>
+            <itemPath>src/MasterActionsEast.cpp</itemPath>
+            <itemPath>src/MasterActionsNorth.cpp</itemPath>
+            <itemPath>src/MasterActionsSouth.cpp</itemPath>
+            <itemPath>src/MasterActionsWest.cpp</itemPath>
             <itemPath>src/MasterGui.cpp</itemPath>
             <itemPath>src/MasterMenus.cpp</itemPath>
-            <itemPath>src/MasterNorthActions.cpp</itemPath>
-            <itemPath>src/MasterSouthActions.cpp</itemPath>
             <itemPath>src/MasterStatusBar.cpp</itemPath>
             <itemPath>src/MasterToolBars.cpp</itemPath>
-            <itemPath>src/MasterWestActions.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="NewFile" projectFiles="true">
             <itemPath>src/CustomMsgsGui.cpp</itemPath>
@@ -267,6 +274,7 @@
             <itemPath>src/ReconfigPage_3.cpp</itemPath>
             <itemPath>src/ReconfigPage_4.cpp</itemPath>
             <itemPath>src/ReconfigPage_5.cpp</itemPath>
+            <itemPath>src/ReconfigToolBar.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
             <itemPath>src/RTerm.cpp</itemPath>
@@ -455,15 +463,29 @@
       </item>
       <item path="src/LoadTemplate.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MakeBridge.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/MakeBridge.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterActions.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/MasterEastActions.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/MasterActionsEast.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/MasterEastActions.h" ex="false" tool="3" flavor2="0">
+      <item path="src/MasterActionsEast.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActionsNorth.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActionsNorth.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActionsSouth.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActionsSouth.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActionsWest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActionsWest.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -473,14 +495,6 @@
       </item>
       <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/MasterNorthActions.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterNorthActions.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MasterSouthActions.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterSouthActions.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/MasterStatusBar.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterStatusBar.h" ex="false" tool="3" flavor2="0">
@@ -488,10 +502,6 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MasterWestActions.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterWestActions.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -605,11 +615,15 @@
       </item>
       <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ParseCMake.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/ParseCMake.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ParseMake.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseMake.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -656,6 +670,10 @@
       <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -709,6 +727,10 @@
       </item>
       <item path="src/TextReplacer.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/Timer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Timer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ToCMake.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ToCMake.h" ex="false" tool="3" flavor2="0">
@@ -716,6 +738,8 @@
       <item path="src/ToRosMake.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ToRosMake.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TouchSrcs.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/TouchSrcs.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -893,15 +917,29 @@
       </item>
       <item path="src/LoadTemplate.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/MakeBridge.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/MakeBridge.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterActions.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/MasterEastActions.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/MasterActionsEast.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/MasterEastActions.h" ex="false" tool="3" flavor2="0">
+      <item path="src/MasterActionsEast.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActionsNorth.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActionsNorth.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActionsSouth.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActionsSouth.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterActionsWest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterActionsWest.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -911,14 +949,6 @@
       </item>
       <item path="src/MasterMenus.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/MasterNorthActions.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterNorthActions.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MasterSouthActions.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterSouthActions.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/MasterStatusBar.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterStatusBar.h" ex="false" tool="3" flavor2="0">
@@ -926,10 +956,6 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MasterWestActions.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MasterWestActions.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1043,11 +1069,15 @@
       </item>
       <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ParseCMake.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/ParseCMake.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ParseMake.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseMake.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -1094,6 +1124,10 @@
       <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1147,6 +1181,10 @@
       </item>
       <item path="src/TextReplacer.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/Timer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Timer.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/ToCMake.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ToCMake.h" ex="false" tool="3" flavor2="0">
@@ -1154,6 +1192,8 @@
       <item path="src/ToRosMake.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ToRosMake.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TouchSrcs.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/TouchSrcs.h" ex="false" tool="3" flavor2="0">
       </item>

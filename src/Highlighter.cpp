@@ -48,6 +48,10 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
                               << "#defined"      << "#define"           << "#error"
                                                  << "#undef"            << "#pragma";
     
+    //QStringList cmakeKeywords;
+    //cmakeKeywords            << "cmake_minimum_requried" << "VERSION" << "project"  
+    //                         << "find_package" << "add_executable" << "target_link_libraries";
+    
     QStringList javaKeywordPatterns;
     javaKeywordPatterns      << "abstract"      << "assert"           << "boolean"
                              << "break"         << "byte"             << "case"

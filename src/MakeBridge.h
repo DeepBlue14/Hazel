@@ -13,8 +13,10 @@
 #include <QtXml>
 #include <QFile>
 #include <QIODevice>
+#include <QString>
 
 #include <iostream>
+
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -36,6 +38,7 @@ class MakeBridget
         
     public:
         MakeBridge();
+        QString* toString();
         ~MakeBridge();
         
 };
