@@ -1,7 +1,7 @@
 #include "FTFileMenu.h"
 
 
-FTFileMenu::FTFileMenu()
+FTFileMenu::FTFileMenu(QWidget* parent) : QWidget(parent)
 {
     initMenu();
 }
@@ -9,32 +9,47 @@ FTFileMenu::FTFileMenu()
 
 void FTFileMenu::initMenu()
 {
-    this->addAction("Open");
+    menu = new QMenu();
     
-    this->addAction("Hide");
+    //this->addAction("Open");
+    openAct = new QAction(tr("&Open"), this);
+    openAct->setShortcut(QKeySequence::Open);
+    openAct->setStatusTip("Open file");
+    //openAct->setToolTip("Open file");
+    connect(openAct, SIGNAL(triggered()), this, SLOT(handleOpenMenuSlot()));
+    menu->addAction(openAct);
+    
+    menu->addAction("Hide");
 
-    this->addAction("Delete");
+    menu->addAction("Delete");
     
-    this->addAction("Rename...");
+    menu->addAction("Rename...");
     
-    this->addAction("Refactor");
+    menu->addAction("Refactor");
     
-    QMenu* gitMenu = this->addMenu("Git");
+    QMenu* gitMenu = menu->addMenu("Git");
     gitMenu->addAction("Add");
     gitMenu->addAction("Commit");
     gitMenu->addAction("Reset");
     
-    this->addAction("Properties");
+    menu->addAction("Properties");
     
     
     
-    connect(gitMenu, SIGNAL(triggered(QAction* )), this, SLOT(handleOpenMenuSlot()));
+    //connect(gitMenu, SIGNAL(triggered(QAction* )), this, SLOT(handleOpenMenuSlot()));
+    //connect(gitMenu, SIGNAL(triggered(), this, SLOT(handleOpenMenuSlot()));
 }
 
 
 void FTFileMenu::handleOpenMenuSlot()
 {
     cout << "FTFileMenu::handleOpenMenuSlot() triggered" << endl;
+}
+
+
+QMenu* FTFileMenu::getMenu()
+{
+    return menu;
 }
 
 

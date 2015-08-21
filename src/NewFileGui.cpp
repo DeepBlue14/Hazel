@@ -120,8 +120,11 @@ void NewFileGui::handleFinishBtnSlot()
     QByteArray tmpBArr;
     tmpBArr.append(editor->toPlainText());
     editor->setPlainText(rideFile->readAll() );
+    //add tab via "tunnel"
     northTabWidgetPtr->addTab(editor, *newFilePage_5Ptr->getFileNameStrPtr()
                                         + *newFilePage_5Ptr->getFileExtStrPtr());
+    //make it the visible one.
+    northTabWidgetPtr->setCurrentIndex(/*northTabWidgetPtr->count() */1);
     
     rideFile->setParallelFileGuiPtr(editor);
     SaveAll::pushToRideFilePtrVec(rideFile);

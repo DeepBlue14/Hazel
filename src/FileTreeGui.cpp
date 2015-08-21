@@ -177,14 +177,16 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     if(treePtr->selectedItems().at(0)->text(1) == "" || treePtr->selectedItems().at(0)->text(1).contains(".", Qt::CaseSensitive))
     {
         FTFileMenu myMenu;
-        QAction* selectedItem = myMenu.exec(globalPos);
+        QAction* selectedItem = myMenu.getMenu()->exec(globalPos);
         LinkFileWithGui lfwg;
         FileGui* fg;
         cout << "Chosen One: " << treePtr->selectedItems().size() << endl;
-        //QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
-        //        treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
-        //lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
-        //cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
+        //these next four lines open the file in the GUI
+        //See also: https://www.trinitydesktop.org/docs/qt4/mainwindows-menus.html
+        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+                treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+        lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
+        cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
     else
     {

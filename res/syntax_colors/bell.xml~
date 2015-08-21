@@ -1,25 +1,63 @@
+<!-- 
+- File:   .xml
+- Author: James Kuczynski
+- Email: jkuczyns@cs.uml.edu
+- File Description: 
+-
+- Created August 22, 2015 at 2:15
+- Last Modified: 8/22/2015
+- Modification: Created
+-->
+
 <lang>
     <type
-        color="blueGreen"
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word=""
-        word="" />
+        color="blue"
+        word="abstract"
+        word="assert"
+        word="boolean"
+        word="break"
+        word="byte"
+        word="case"
+        word="const"
+        word="continue"
+        word="default"
+        word="do"
+        word="double"
+        word="else"
+        word="enum"
+        word="extends"
+        word="final"
+        word="finally"
+        word="float"
+        word="for"
+        word="goto"
+        word="if"
+        word="implements"
+        word="import"
+        word="instanceof"
+        word="int"
+        word="interface"
+        word="long"
+        word="native"
+        word="new"
+        word="package"
+        word="private"
+        word="protected"
+        word="public"
+        word="real"
+        word="return"
+        word="short"
+        word="static"
+        word="strictfp"
+        word="super"
+        word="switch"
+        word="synchronized"
+        word="this"
+        word="throw"
+        word="throws"
+        word="transient"
+        word="try"
+        word="void"
+        word="volatile"
+        word="while" />
 </lang>

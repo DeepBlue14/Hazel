@@ -92,6 +92,7 @@
           <logicalFolder name="f10" displayName="PrettySyntax" projectFiles="true">
             <itemPath>src/FileGui.h</itemPath>
             <itemPath>src/Highlighter.h</itemPath>
+            <itemPath>src/LineNumberArea.h</itemPath>
             <itemPath>src/MirrorChar.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
@@ -119,18 +120,20 @@
             <itemPath>src/RunPage_2.h</itemPath>
             <itemPath>src/RunPage_3.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f12" displayName="Search" projectFiles="true">
+            <itemPath>src/NavigatorGui.h</itemPath>
+            <itemPath>src/SearchType.h</itemPath>
+            <itemPath>src/SearchWidget.h</itemPath>
+          </logicalFolder>
           <itemPath>src/CentralGui.h</itemPath>
           <itemPath>src/DebugGui.h</itemPath>
-          <itemPath>src/LineNumberArea.h</itemPath>
           <itemPath>src/LinkFileWithGui.h</itemPath>
-          <itemPath>src/NavigatorGui.h</itemPath>
           <itemPath>src/OpenProjectGui.h</itemPath>
           <itemPath>src/OpeningGui.h</itemPath>
           <itemPath>src/OutputGui.h</itemPath>
           <itemPath>src/PageModAbc.h</itemPath>
           <itemPath>src/RideFont.h</itemPath>
           <itemPath>src/ScoutGui.h</itemPath>
-          <itemPath>src/SearchWidget.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
           <itemPath>src/TabGui.h</itemPath>
         </logicalFolder>
@@ -258,6 +261,7 @@
           <logicalFolder name="f10" displayName="PrettySyntax" projectFiles="true">
             <itemPath>src/FileGui.cpp</itemPath>
             <itemPath>src/Highlighter.cpp</itemPath>
+            <itemPath>src/LineNumberArea.cpp</itemPath>
             <itemPath>src/MirrorChar.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
@@ -285,18 +289,20 @@
             <itemPath>src/RunPage_2.cpp</itemPath>
             <itemPath>src/RunPage_3.cpp</itemPath>
           </logicalFolder>
+          <logicalFolder name="f12" displayName="Search" projectFiles="true">
+            <itemPath>src/NavigatorGui.cpp</itemPath>
+            <itemPath>src/SearchType.cpp</itemPath>
+            <itemPath>src/SearchWidget.cpp</itemPath>
+          </logicalFolder>
           <itemPath>src/CentralGui.cpp</itemPath>
           <itemPath>src/DebugGui.cpp</itemPath>
-          <itemPath>src/LineNumberArea.cpp</itemPath>
           <itemPath>src/LinkFileWithGui.cpp</itemPath>
-          <itemPath>src/NavigatorGui.cpp</itemPath>
           <itemPath>src/OpenProjectGui.cpp</itemPath>
           <itemPath>src/OpeningGui.cpp</itemPath>
           <itemPath>src/OutputGui.cpp</itemPath>
           <itemPath>src/PageModAbc.cpp</itemPath>
           <itemPath>src/RideFont.cpp</itemPath>
           <itemPath>src/ScoutGui.cpp</itemPath>
-          <itemPath>src/SearchWidget.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
           <itemPath>src/TabGui.cpp</itemPath>
         </logicalFolder>
@@ -710,6 +716,10 @@
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SearchType.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SearchType.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SearchWidget.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1164,6 +1174,10 @@
       <item path="src/ScoutGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ScoutGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SearchType.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SearchType.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/SearchWidget.cpp" ex="false" tool="1" flavor2="0">
       </item>

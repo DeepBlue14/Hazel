@@ -28,10 +28,11 @@ namespace cct = UnixConsoleText;
 
 using namespace std;
 
-class FTFileMenu : public QMenu
+class FTFileMenu : public QWidget
 {
     private:
-        ;
+        QMenu* menu;
+        QAction* openAct;
         
     private slots:
         void handleOpenMenuSlot();
@@ -40,12 +41,19 @@ class FTFileMenu : public QMenu
         /**
          * Constructor.
          */
-        FTFileMenu();
+        FTFileMenu(QWidget* parent = 0);
         
         /**
          * Inits the menu for a file.
          */
         void initMenu();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
+        QMenu* getMenu();
         
         /**
          * Destructor.

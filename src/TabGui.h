@@ -41,10 +41,9 @@ class TabGui : public QWidget
     
     private:
         QTabWidget* tabWidget;
-        
         QGridLayout* outerLayout;
-        
         OpeningGui* openingGui;
+        
     private slots:
         void handleCloseTabSlot(int index);
     
