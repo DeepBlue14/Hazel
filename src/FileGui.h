@@ -46,6 +46,7 @@ class FileGui : public QPlainTextEdit
     
     private:
         QWidget* lineNumberArea;
+        QWidget* codeFoldArea;
         
         QCompleter* c;
         
@@ -115,6 +116,14 @@ class FileGui : public QPlainTextEdit
          * @param event
          */
         void lineNumberAreaPaintEvent(QPaintEvent* event);
+        
+        /**
+         * This method is similar to the previous one, except that it is for
+         * the code folding instead of the line numbers.
+         * 
+         * @param event
+         */
+        void codeFoldingAreaPaintEvent(QPaintEvent* event);
         
         /**
          * 

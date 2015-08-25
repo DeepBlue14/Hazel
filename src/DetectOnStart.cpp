@@ -8,6 +8,38 @@ DetectOnStart::DetectOnStart()
 }
 
 
+void DetectOnStart::findExeLoc()
+{
+    ;
+}
+
+
+void DetectOnStart::findUsersName()
+{
+    QProcess proc;
+    proc.start("echo $USER");
+    
+}
+
+
+void DetectOnStart::findRosDistros()
+{
+    
+}
+
+
+void DetectOnStart::setExeLoc(QString* exeLocStrPtr)
+{
+    this->exeLocStrPtr = exeLocStrPtr;
+}
+
+
+QString* DetectOnStart::getExeLoc()
+{
+    return exeLocStrPtr;
+}
+
+
 void DetectOnStart::setUsersNameStrPtr(QString* usersNameStrPtr)
 {
     this->usersNameStrPtr = usersNameStrPtr;

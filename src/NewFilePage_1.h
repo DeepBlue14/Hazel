@@ -39,7 +39,8 @@ class NewFilePage_1 : public QWidget
     Q_OBJECT
             
     private:
-        QStringList* langsStrLstPtr;
+        //QStringList* langsStrLstPtr;
+        QVector<QListWidgetItem*>* langsStrLstPtr;
         QVector<QStringList*> fileTypeStrLstPtrVec;
         QListWidget* langsLwPtr;
         QListWidget* fileTypeLwPtr;

@@ -5,15 +5,20 @@ NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
 {
     rosVersionStrPtr = new QString("null");
     
-    rosVersionsStrLstPtr = new QStringList();
-    rosVersionsStrLstPtr->push_back("Fuerte");
-    rosVersionsStrLstPtr->push_back("Groovy");
-    rosVersionsStrLstPtr->push_back("Hydro");
-    rosVersionsStrLstPtr->push_back("Indigo");
-    rosVersionsStrLstPtr->push_back("Jade");
+    rosVersionsStrLstPtr = new QVector<QListWidgetItem*>();
+    rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/fuerte.jpg"), "Fuerte"));
+    rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/groovy.jpg"), "Groovy"));
+    rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/hydro.png"), "Hydro"));
+    rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/indigo.png"), "Indigo"));
+    rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/jade.png"), "Jade"));
     
     rosVersionsLwPtr = new QListWidget();
-    rosVersionsLwPtr->addItems(*rosVersionsStrLstPtr);
+    //rosVersionsLwPtr->addItems(*rosVersionsStrLstPtr);
+    for(size_t i = 0; i < rosVersionsStrLstPtr->size(); i++)
+    {
+        rosVersionsLwPtr->addItem(rosVersionsStrLstPtr->at(i) );
+    }
+    
     rosVersionsLwPtr->setSelectionMode(QAbstractItemView::SingleSelection);
     rosVersionsLwPtr->item(3)->setSelected(true);
     

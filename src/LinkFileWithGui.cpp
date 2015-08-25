@@ -54,7 +54,7 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNe
         cerr << "Error opening file!" << endl;
     
     QString lineStr;
-    while(!rideFile->atEnd())
+    while(!rideFile->atEnd() )
     {
         QByteArray line = rideFile->readLine();
         lineStr.append(line);
@@ -66,6 +66,58 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNe
     cout << "Does the editor exist?: " << editor->document()->toPlainText().toStdString() << endl;
     rideFile->setParallelFileGuiPtr(editor);
     northTabWidgetPtr->addTab(editor, fileName);
+    
+    if(fileName.mid(fileName.size()-1, 1) == "h")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/hFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-3, 3) == "hpp")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/hFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-1, 1) == "c")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-3, 3) == "cpp")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-3, 3) == "java")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-3, 3) == "lisp")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-3, 3) == "bell")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName == "CMakeLists.txt")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName == "package.xml")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-3, 3) == "xml")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else if(fileName.mid(fileName.size()-3, 3) == "txt")
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+    }
+    else
+    {
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/file.png") );
+    }
+    
+
+    northTabWidgetPtr->setCurrentIndex(northTabWidgetPtr->count()-1);
     SaveAll::pushToRideFilePtrVec(rideFile);
     
     cout << "Successfully ended file creation sequence" << endl;
@@ -74,7 +126,7 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNe
 
 void LinkFileWithGui::linkExisting(QTabWidget* northTabWidget, QString* absPathToExistingFileStrPtr, QString fileName, FileGui* editor)
 {
-    ;
+    ;//TODO implement, or delete if not needed.
 }
 
 

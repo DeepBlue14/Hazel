@@ -1,10 +1,12 @@
 /* 
  * File:   DetectOnStart.h
- * Author: james
- * Email:
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: This class detects various programs, directories, etc. on
- *                   the users computer, such as the username and the ROS
- *                   distributions installed under /opt. 
+ *                   the users computer, such as the location of the RIDE
+ *                   executable (i.e. where RIDE was installed), the username
+ *                   and the ROS distributions installed under /opt.
+ *                   
  *
  * Created on August 23, 2015, 8:25 PM
  */
@@ -14,6 +16,7 @@
 
 #include <QString>
 #include <QStringList>
+#include <QProcess>
 
 #include <iostream>
 
@@ -33,11 +36,17 @@ using namespace std;
 class DetectOnStart
 {
     private:
+        QString* exeLocStrPtr;
         QString* usersNameStrPtr;
         QStringList* rosDistrosStrLstPtr;
         
     public:
         DetectOnStart();
+        void findExeLoc();
+        void findUsersName();
+        void findRosDistros();
+        void setExeLoc(QString* exeLocStrPtr);
+        QString* getExeLoc();
         void setUsersNameStrPtr(QString* usersNameStrPtr);
         QString* getUsersNameStrPtr();
         void setRosDistrosStrLstPtr(QStringList* rosDistrosStrLstPtr);

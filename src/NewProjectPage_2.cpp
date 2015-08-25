@@ -23,10 +23,11 @@ NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
     formLayout->addRow(tr("Package Location"), locationLayout);
     
     projectTypeLstWidItemPtrVecPtr = new QVector<QListWidgetItem*>();
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "C/C++"));
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "Python"));
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "Java"));
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/project201.png"), "Lisp"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cpp.png"), "C/C++"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/python.png"), "Python"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/java.jpg"), "Java"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/lisp.jpg"), "Lisp"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/bell.jpg"), "Bell"));
     
     projectTypeLwPtr = new QListWidget(this);
     for(size_t i = 0; i < projectTypeLstWidItemPtrVecPtr->size(); i++)

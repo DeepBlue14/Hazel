@@ -6,14 +6,14 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     langStrPtr = new QString("null");
     fileTypeStrPtr = new QString("null");
     
-    langsStrLstPtr = new QStringList();
-    langsStrLstPtr->push_back("C");
-    langsStrLstPtr->push_back("C++");
-    langsStrLstPtr->push_back("Python");
-    langsStrLstPtr->push_back("Java");
-    langsStrLstPtr->push_back("Lisp");
-    langsStrLstPtr->push_back("Shell Script");
-    langsStrLstPtr->push_back("Other");
+    langsStrLstPtr = new QVector<QListWidgetItem*>();
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"), "C") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png"), "C++") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/pyFile.jpg"), "Python") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/javaFile.png"), "Java") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/lispFile.jpg"), "Lisp") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/shellFile.png"), "Shell Script") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/file.png"), "Other") );
     
     QStringList* cStrLstPtr = new QStringList();
     cStrLstPtr->push_back("Header file");
@@ -49,12 +49,16 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     otherStrLstPtr->push_back("sql");
     otherStrLstPtr->push_back("CMakeLists");
     otherStrLstPtr->push_back("package");
-    otherStrLstPtr ->push_back("Markdown");
-    otherStrLstPtr ->push_back("Text");
-    otherStrLstPtr ->push_back("Empty");
+    otherStrLstPtr->push_back("Markdown");
+    otherStrLstPtr->push_back("Text");
+    otherStrLstPtr->push_back("Empty");
     
     langsLwPtr = new QListWidget();
-    langsLwPtr->addItems(*langsStrLstPtr);
+    //langsLwPtr->addItems(*langsStrLstPtr);
+    for(size_t i = 0; i < langsStrLstPtr->size(); i++)
+    {
+        langsLwPtr->addItem(langsStrLstPtr->at(i) );
+    }
     //langsLwPtr->item(0)->setSelected(true);
     connect(langsLwPtr, SIGNAL(itemSelectionChanged()), this, SLOT(handleSwapOptionsSlot()));
     

@@ -18,6 +18,7 @@ FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), c(0)
                           QKeySequence("Ctrl+E").toString(QKeySequence::NativeText));
     
     lineNumberArea = new LineNumberArea(this);
+    codeFoldArea = new LineNumberArea(this);
     
     connect(this, SIGNAL(blockCountChanged(int)), this, SLOT(updateLineNumberAreaWidth(int)));
     connect(this, SIGNAL(updateRequest(QRect,int)), this, SLOT(updateLineNumberArea(QRect,int)));
@@ -278,6 +279,12 @@ void FileGui::highlightCurrentLine()
     }
     
     setExtraSelections(extraSelections);
+}
+
+
+void codeFoldingAreaPaintEvent(QPaintEvent* event)
+{
+    ;
 }
 
 

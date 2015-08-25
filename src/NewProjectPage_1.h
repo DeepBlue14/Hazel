@@ -36,7 +36,7 @@ class NewProjectPage_1 : public QWidget
     Q_OBJECT
             
     private:
-        QStringList* rosVersionsStrLstPtr;
+        QVector<QListWidgetItem*>* rosVersionsStrLstPtr;
         QListWidget* rosVersionsLwPtr;
         
         QGridLayout* outerLayoutPtr;
