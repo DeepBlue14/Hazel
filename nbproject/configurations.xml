@@ -129,6 +129,8 @@
           </logicalFolder>
           <itemPath>src/CentralGui.h</itemPath>
           <itemPath>src/DebugGui.h</itemPath>
+          <itemPath>src/FetchWebSource.h</itemPath>
+          <itemPath>src/FindRospackPkgs.h</itemPath>
           <itemPath>src/OpenProjectGui.h</itemPath>
           <itemPath>src/OpeningGui.h</itemPath>
           <itemPath>src/OutputGui.h</itemPath>
@@ -299,6 +301,8 @@
           </logicalFolder>
           <itemPath>src/CentralGui.cpp</itemPath>
           <itemPath>src/DebugGui.cpp</itemPath>
+          <itemPath>src/FetchWebSource.cpp</itemPath>
+          <itemPath>src/FindRospackPkgs.cpp</itemPath>
           <itemPath>src/OpenProjectGui.cpp</itemPath>
           <itemPath>src/OpeningGui.cpp</itemPath>
           <itemPath>src/OutputGui.cpp</itemPath>
@@ -340,7 +344,7 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <qt>
-        <modules>core gui widgets xml</modules>
+        <modules>core gui widgets xml webkit</modules>
         <mocDir>src/moc</mocDir>
       </qt>
       <compileType>
@@ -431,6 +435,10 @@
       </item>
       <item path="src/FTPropertiesGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/FetchWebSource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FetchWebSource.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
@@ -438,6 +446,10 @@
       <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FindRospackPkgs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FindRospackPkgs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/HelpGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -893,6 +905,10 @@
       </item>
       <item path="src/FTPropertiesGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/FetchWebSource.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FetchWebSource.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
@@ -900,6 +916,10 @@
       <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FindRospackPkgs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FindRospackPkgs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/HelpGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

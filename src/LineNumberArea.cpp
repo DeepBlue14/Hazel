@@ -59,6 +59,7 @@ QSize LineNumberArea::sizeHint() const
 void LineNumberArea::paintEvent(QPaintEvent* event)
 {
     file->lineNumberAreaPaintEvent(event);
+    file->codeFoldingAreaPaintEvent(event);
 }
 
 

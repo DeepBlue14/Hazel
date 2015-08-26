@@ -24,6 +24,7 @@
 #include <QPaintEvent>
 #include <QResizeEvent>
 #include <QSize>
+#include <QPixmap>
 
 #include <iostream>
 
@@ -54,9 +55,9 @@ class FileGui : public QPlainTextEdit
         
     private slots:
         /**
+         * Inserts the completion of the word.
          * 
-         * 
-         * @param completion
+         * @param completion 
          */
         void insertCompletion(const QString& completion);
         
@@ -87,6 +88,14 @@ class FileGui : public QPlainTextEdit
          * @param e
          */
         void keyPressEvent(QKeyEvent* e);
+        
+        /**
+         * 
+         * see: http://doc.qt.io/qt-4.8/qplaintextedit.html
+         * 
+         * @param e
+         */
+        void mousePressEvent(QMouseEvent* e);
         
     public:
         /**

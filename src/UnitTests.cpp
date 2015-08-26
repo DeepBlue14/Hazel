@@ -28,6 +28,7 @@
 #include "RTerm.h"
 #include "OptionGui.h"
 #include "ReconfigGui.h"
+#include "FetchWebSource.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -55,7 +56,7 @@ int main(int argc, char *argv[])
          << "\n\t 3) Test QProcess"
          << "\n\t 4) Font XML file parsing"
          << "\n\t 5) MsgParser"
-         << "\n\t 6) "
+         << "\n\t 6) Web Extraction"
          << "\n\t 7) Help GUI"
          << "\n\t 8) RTerm (standalone)"
          << "\n\t 9) Options"
@@ -63,6 +64,7 @@ int main(int argc, char *argv[])
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
+    FetchWebSource fw;
     
     MasterGui masterGui;
     HelpGui helpGui;
@@ -79,7 +81,7 @@ int main(int argc, char *argv[])
     switch(choiceInt)
     {
         case 0:
-            return EXIT_SUCCESS;
+            //return EXIT_SUCCESS;
             break;
         case 1:
             masterGui.show();
@@ -107,7 +109,8 @@ int main(int argc, char *argv[])
             return EXIT_SUCCESS;
             break;
         case 6:
-            ;
+            //fw.view.show();
+            return app.exec();
             break;
         case 7:
             helpGui.show();
@@ -126,6 +129,9 @@ int main(int argc, char *argv[])
             return app.exec();
             break;
     } // End of switch
+
+    
+    //fw.doStuff();
     
     return EXIT_SUCCESS;
 } // End of main()
