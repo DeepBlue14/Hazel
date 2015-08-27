@@ -135,6 +135,8 @@
           <itemPath>src/OpeningGui.h</itemPath>
           <itemPath>src/OutputGui.h</itemPath>
           <itemPath>src/PageModAbc.h</itemPath>
+          <itemPath>src/PkgManagerGui.h</itemPath>
+          <itemPath>src/PkgManagerTabs.h</itemPath>
           <itemPath>src/RideFont.h</itemPath>
           <itemPath>src/ScoutGui.h</itemPath>
           <itemPath>src/SplashScreen.h</itemPath>
@@ -307,6 +309,8 @@
           <itemPath>src/OpeningGui.cpp</itemPath>
           <itemPath>src/OutputGui.cpp</itemPath>
           <itemPath>src/PageModAbc.cpp</itemPath>
+          <itemPath>src/PkgManagerGui.cpp</itemPath>
+          <itemPath>src/PkgManagerTabs.cpp</itemPath>
           <itemPath>src/RideFont.cpp</itemPath>
           <itemPath>src/ScoutGui.cpp</itemPath>
           <itemPath>src/SplashScreen.cpp</itemPath>
@@ -654,6 +658,14 @@
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PkgManagerGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PkgManagerGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PkgManagerTabs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PkgManagerTabs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/QXTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1124,6 +1136,14 @@
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PkgManagerGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PkgManagerGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PkgManagerTabs.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PkgManagerTabs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/QXTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>

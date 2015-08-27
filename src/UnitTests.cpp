@@ -27,6 +27,7 @@
 #include "MsgParser.h"
 #include "RTerm.h"
 #include "OptionGui.h"
+#include "PkgManagerGui.h"
 #include "ReconfigGui.h"
 #include "FetchWebSource.h"
 #include "WindowsConsoleText.h"
@@ -61,6 +62,7 @@ int main(int argc, char *argv[])
          << "\n\t 8) RTerm (standalone)"
          << "\n\t 9) Options"
          << "\n\t10) Ros Reconfigure"
+         << "\n\t11) software center"
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
@@ -77,6 +79,7 @@ int main(int argc, char *argv[])
     RTerm rterm;
     OptionGui optionGui;
     ReconfigGui reconfigGui;
+    PkgManagerGui pkgManagerGui;
     
     switch(choiceInt)
     {
@@ -123,6 +126,9 @@ int main(int argc, char *argv[])
             return app.exec();
         case 10:
             reconfigGui.show();
+            return app.exec();
+        case 11:
+            pkgManagerGui.show();
             return app.exec();
         default:
             masterGui.show();

@@ -1,6 +1,8 @@
 /* 
  * File:   MasterMenus.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Reference: http://zetcode.com/gui/qt4/menusandtoolbars/
  * 

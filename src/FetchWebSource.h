@@ -7,6 +7,7 @@
  *                   then extracts the package names.
  * 
  * References: http://www.ros.org/browse/list.php
+ *             http://www.ros.org/browse/list.php?package_type=package&distro=indigo
  *             http://doc.qt.io/qt-5/qtwebkitexamples-webkitwidgets-domtraversal-example.html
  *
  * Created on August 26, 2015, 3:31 PM
@@ -16,12 +17,19 @@
 #define	FETCH_WEB_SOURCE_H
 
 #include <QWidget>
-#include <QWebView>
 #include <QUrl>
-#include <QWebFrame>
-#include <QWebElement>
 #include <QString>
 #include <QStringList>
+
+#if(QT_VERSION < 0x050000)
+#include <QWebView>
+#include <QWebFrame>
+#include <QWebElement>
+#else
+#include <QtWebKitWidgets/QWebView>
+#include <QtWebKitWidgets/QWebFrame>
+#include <QtWebKitWidgets/QWebElement>
+#endif
 
 #include <iostream>
 

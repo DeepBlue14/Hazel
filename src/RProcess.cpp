@@ -105,7 +105,7 @@ void RProcess::start(const QString& program, OpenMode mode)
     //QProcess qprocess;
     testProcess.execute("chmod", stringlst);
     
-    testProcess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinate recursion!!!
+    testProcess.start(*tmpFileNameStrPtr, mode); //don't run this->execute; this would result in infinite recursion!!!
     testProcess.waitForFinished(-1);
     
     
@@ -127,6 +127,7 @@ void RProcess::start(const QString& program, OpenMode mode)
     */
     
     QByteArray output = testProcess.readAllStandardOutput();
+    //QByteArray output2 = testProcess.readAllStandardError();//!!!Need to read both!!!
     cout << cct::bold("\nOutput: ") << output.data() << ":End" << endl;
     outputLocTePtr->append(output.data());
     cout << "exiting RProcess::start(...)" << endl;

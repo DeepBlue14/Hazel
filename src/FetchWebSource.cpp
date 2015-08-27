@@ -6,9 +6,8 @@ FetchWebSource::FetchWebSource(QWidget* parent) : QWidget(parent)
     attributeValStrLstPtr = new QStringList();
     rosPkgStrLstPtr = new QStringList();
     
-    view.load(QUrl("http://www.ros.org/browse/list.php") );
-    
-    connect(&view, SIGNAL(loadFinished(bool)), this, SLOT(doStuff()));
+    view.load(QUrl("http://www.ros.org/browse/list.php?package_type=package&distro=indigo") );
+    connect(&view, SIGNAL(loadFinished(bool)), this, SLOT(doStuff()) );
 }
 
 
@@ -28,7 +27,7 @@ void FetchWebSource::examineChildElements(const QWebElement& parentElement)
 {
     QWebElement element = parentElement.firstChild();
     
-    while(!element.isNull())
+    while(!element.isNull() )
     {
         QString* item = new QString();
         *item = element.tagName();

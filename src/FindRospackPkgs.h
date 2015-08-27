@@ -1,7 +1,7 @@
 /* 
  * File:   FindInstalledRosPkgs.h
- * Author: james
- * Email:
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: This class runs the "rospack list-names" command on the
  *                   system to get a list of the ros packages installed on
  *                   the computer.
@@ -13,6 +13,8 @@
 #define	FIND_ROSPACK_PKGS_H
 
 #include <QString>
+#include <QStringList>
+#include <QProcess>
 
 #include <iostream>
 
@@ -32,10 +34,11 @@ using namespace std;
 class FindRospackPkgs
 {
     private:
-        ;
+        QStringList* rosPkgStrLstPtr;
         
     public:
         FindRospackPkgs();
+        void findPkgs();
         QString* toString();
         ~FindRospackPkgs();
 };
