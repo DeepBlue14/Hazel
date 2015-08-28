@@ -11,7 +11,9 @@
 #ifndef TIMER_H
 #define	TIMER_H
 
+#include <QWidget>
 #include <QString>
+#include <QTimer>
 
 #include <iostream>
 
@@ -28,13 +30,19 @@ namespace cct = UnixConsoleText;
 
 using namespace std;
 
-class Timer
+class Timer : public QWidget
 {
+    Q_OBJECT
+    
     private:
         ;
         
+    private slots:
+        void doStuff();
+        
     public:
         Timer();
+        void restart();
         QString* toString();
         ~Timer();
 };

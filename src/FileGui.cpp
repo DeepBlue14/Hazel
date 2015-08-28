@@ -1,28 +1,19 @@
-/*
- * File:  FileGui.cpp
- * Author: James Kuczynski
- * Email: jkuczyns@cs.uml.edu
- * File Description: 
- * 
- * Created 05/25/2015
- */
-
 #include "FileGui.h"
 #include "LineNumberArea.h"
 
 
-FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), c(0)
+FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
 {
     this->setPlainText(tr("This TextEdit provides autocompletions for words that have more than"
                           " 3 characters. You can trigger autocompletion using ") +
                           QKeySequence("Ctrl+E").toString(QKeySequence::NativeText));
     
     lineNumberArea = new LineNumberArea(this);
-    codeFoldArea = new LineNumberArea(this);
+    //codeFoldArea = new LineNumberArea(this);
     
-    connect(this, SIGNAL(blockCountChanged(int )), this, SLOT(updateLineNumberAreaWidth(int )));
-    connect(this, SIGNAL(updateRequest(QRect, int )), this, SLOT(updateLineNumberArea(QRect, int )));
-    connect(this, SIGNAL(cursorPositionChanged()), this, SLOT(highlightCurrentLine()));
+    connect(this, SIGNAL(blockCountChanged(int )), this, SLOT(updateLineNumberAreaWidth(int )) );
+    connect(this, SIGNAL(updateRequest(QRect, int )), this, SLOT(updateLineNumberArea(QRect, int )) );
+    connect(this, SIGNAL(cursorPositionChanged()), this, SLOT(highlightCurrentLine()) );
     
     //this->setMouseTracking(true);
 
@@ -33,18 +24,18 @@ FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), c(0)
 
 void FileGui::setCompleter(QCompleter* completer)
 {
-    if(c)
+    if(completerPtr)
     
-        QObject::disconnect(c, 0, this, 0);
+        QObject::disconnect(completerPtr, 0, this, 0);
         
-    c = completer;
+    completerPtr = completer;
     
-    if(!c)
+    if(!completerPtr)
         return;
     
-    c->setWidget(this);
-    c->setCompletionMode(QCompleter::PopupCompletion);
-    c->setCaseSensitivity(Qt::CaseInsensitive);
+    completerPtr->setWidget(this);
+    completerPtr->setCompletionMode(QCompleter::PopupCompletion);
+    completerPtr->setCaseSensitivity(Qt::CaseInsensitive);
     QObject::connect(completer, SIGNAL(activated(const QString&)),
                      this, SLOT(insertCompletion(const QString&)));
 }
@@ -52,14 +43,14 @@ void FileGui::setCompleter(QCompleter* completer)
 
 QCompleter* FileGui::completer() const
 {    
-    return c;
+    return completerPtr;
 }
 
 
 void FileGui::insertCompletion(const QString& completion)
 {
     QTextCursor tc = textCursor();
-    int extra = completion.length() - c->completionPrefix().length();
+    int extra = completion.length() - completerPtr->completionPrefix().length();
     tc.movePosition(QTextCursor::Left);
     tc.movePosition(QTextCursor::EndOfWord);
     tc.insertText(completion.right(extra));
@@ -77,7 +68,7 @@ QString FileGui::wordUnderCursor() const
 
 void FileGui::keyPressEvent(QKeyEvent* e)
 {
-    if(c && c->popup()->isVisible() )
+    if(completerPtr && completerPtr->popup()->isVisible() )
     {
         // The following keys are forwarded by the completer to the widget
         switch (e->key() )
@@ -95,13 +86,13 @@ void FileGui::keyPressEvent(QKeyEvent* e)
     }
     
     bool isShortcut = ((e->modifiers() & Qt::ControlModifier) && e->key() == Qt::Key_E); // CTRL+E
-    if (!c || !isShortcut) // don't process the shortcut when we have a completer
+    if (!completerPtr || !isShortcut) // don't process the shortcut when we have a completer
     {
         QPlainTextEdit::keyPressEvent(e);
     }
 
     const bool ctrlOrShift = e->modifiers() & (Qt::ControlModifier | Qt::ShiftModifier);
-    if(!c || (ctrlOrShift && e->text().isEmpty()) )
+    if(!completerPtr || (ctrlOrShift && e->text().isEmpty()) )
     {
         return;
     }
@@ -180,35 +171,35 @@ void FileGui::keyPressEvent(QKeyEvent* e)
         setTextCursor(tcg);
     }
 
-     
+    
     //------------------------------------------
         
     if(!isShortcut && (hasModifier || e->text().isEmpty()|| completionPrefix.length() < 3
                        || eow.contains(e->text().right(1))) )
     {
-        c->popup()->hide();
+        completerPtr->popup()->hide();
         return;
     }
 
-    if (completionPrefix != c->completionPrefix() )
+    if (completionPrefix != completerPtr->completionPrefix() )
     {
-        c->setCompletionPrefix(completionPrefix);
-        c->popup()->setCurrentIndex(c->completionModel()->index(0, 0) );
+        completerPtr->setCompletionPrefix(completionPrefix);
+        completerPtr->popup()->setCurrentIndex(completerPtr->completionModel()->index(0, 0) );
     }
     QRect cr = cursorRect();
-    cr.setWidth(c->popup()->sizeHintForColumn(0)
-              + c->popup()->verticalScrollBar()->sizeHint().width() );
-    c->complete(cr); // popup it up!
+    cr.setWidth(completerPtr->popup()->sizeHintForColumn(0)
+              + completerPtr->popup()->verticalScrollBar()->sizeHint().width() );
+    completerPtr->complete(cr); // popup it up!
 }
 
 
 void FileGui::mousePressEvent(QMouseEvent* e)
 {
     cout << "Detected mouse press event at FileGui::mousePressEvent(...)" << endl;
-    if(codeFoldArea->contentsRect().contains(e->pos()) )
+    /*if(codeFoldArea->contentsRect().contains(e->pos()) )
     {
         cout << "\n\nat FileGui::mousePressEvent(...)\n\n" << endl;
-    }
+    }*/
 }
 
 
@@ -239,12 +230,12 @@ void FileGui::updateLineNumberArea(const QRect& rect, int dy)
     if(dy)
     {
         lineNumberArea->scroll(0, dy);
-        codeFoldArea->scroll(0, dy);
+        //codeFoldArea->scroll(0, dy);
     }
     else
     {
         lineNumberArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
-        codeFoldArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
+        //codeFoldArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
     }
     
     if(rect.contains(viewport()->rect()) )
@@ -262,7 +253,7 @@ void FileGui::resizeEvent(QResizeEvent* e)
     
     QRect cr = contentsRect();
     lineNumberArea->setGeometry(QRect(cr.left(), cr.top(), lineNumberAreaWidth(), cr.height()) );
-    codeFoldArea->setGeometry(QRect(lineNumberAreaWidth(), cr.top(), lineNumberAreaWidth(), cr.height()) );
+    //codeFoldArea->setGeometry(QRect(lineNumberAreaWidth(), cr.top(), lineNumberAreaWidth(), cr.height()) );
     
 }
 
@@ -298,34 +289,34 @@ void FileGui::highlightCurrentLine()
 }
 
 
-void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
+/*void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
 {
-    /*QPainter cfaPainter(codeFoldArea);
-    cfaPainter.fillRect(event->rect(), Qt::white);
-    
-    
-    QTextBlock block2 = firstVisibleBlock();
-    //int blockNumber2 = block2.blockNumber();
-    int top2 = (int) blockBoundingGeometry(block2).translated(contentOffset()).top();
-    int bottom2 = top2 + (int) blockBoundingRect(block2).height();
+//    QPainter cfaPainter(codeFoldArea);
+//    cfaPainter.fillRect(event->rect(), Qt::white);
+//    
+//    
+//    QTextBlock block2 = firstVisibleBlock();
+//    //int blockNumber2 = block2.blockNumber();
+//    int top2 = (int) blockBoundingGeometry(block2).translated(contentOffset()).top();
+//    int bottom2 = top2 + (int) blockBoundingRect(block2).height();
+//
+//    while(block2.isValid() && top2 <= event->rect().bottom() )
+//    {
+//        if (block2.isVisible() && bottom2 >= event->rect().top() )
+//        {
+//            QPixmap pixmap;
+//            pixmap.load("/home/james/NetBeansProjects/ride/images/plus.jpg");
+//            //cfaPainter.drawPixmap(0, top2, codeFoldArea->width()/2, fontMetrics().height()/2, pixmap);
+//        }
+//
+//        block2 = block2.next();
+//        top2 = bottom2;
+//        bottom2 = top2 + (int) blockBoundingRect(block2).height();
+//        
+//        //blockNumber2++;
+//    }
 
-    while(block2.isValid() && top2 <= event->rect().bottom() )
-    {
-        if (block2.isVisible() && bottom2 >= event->rect().top() )
-        {
-            QPixmap pixmap;
-            pixmap.load("/home/james/NetBeansProjects/ride/images/plus.jpg");
-            //cfaPainter.drawPixmap(0, top2, codeFoldArea->width()/2, fontMetrics().height()/2, pixmap);
-        }
-
-        block2 = block2.next();
-        top2 = bottom2;
-        bottom2 = top2 + (int) blockBoundingRect(block2).height();
-        
-        //blockNumber2++;
-    }*/
-
-}
+}*/
 
 
 void FileGui::lineNumberAreaPaintEvent(QPaintEvent* event)

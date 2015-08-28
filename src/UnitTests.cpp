@@ -112,7 +112,8 @@ int main(int argc, char *argv[])
             return EXIT_SUCCESS;
             break;
         case 6:
-            //fw.view.show();
+            //fw.view.show(); // display web page
+            fw.loadPage();
             return app.exec();
             break;
         case 7:

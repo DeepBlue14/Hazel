@@ -8,7 +8,7 @@
 #                                                                   #
 # Reference: http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc7  #
 #                                                                   #
-# Last Modified June 16, 2015 at 6:00pm                             #
+# Last Modified August 28, 2015 at 3:00pm                             #
 #                                                                   #
 #####################################################################
 
@@ -20,6 +20,9 @@ echo "Welcome to the RIDE installer."
 echo "You will be allowed to specify where certain tasks take place."
 echo "However, we strongly suggest that you use the defaults, since"
 echo "these have recieved the most vigorous testing."
+
+echo "DISCLAIMER OF WARRANTY"
+echo "ALL THE COMPUTER PROGRAMS AND SOFTWARE ARE PROVIDED \"AS IS\" WITHOUT WARRANTY OF ANY KIND. WE MAKE NO WARRANTIES, EXPRESS OR IMPLIED, THAT THEY ARE FREE OF ERROR, OR ARE CONSISTENT WITH ANY PARTICULAR STANDARD OF MERCHANTABILITY, OR THAT THEY WILL MEET YOUR REQUIREMENTS FOR ANY PARTICULAR APPLICATION. THEY SHOULD NOT BE RELIED ON FOR SOLVING A PROBLEM WHOSE INCORRECT SOLUTION COULD RESULT IN INJURY OR DEATH TO A PERSON OR LOSS OF PROPERTY. IF YOU DO USE THEM IN SUCH A MANNER, IT IS AT YOUR OWN RISK. THE AUTHOR AND PUBLISHER DISCLAIM ALL LIABILITY FOR DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES RESULTING FROM YOUR USE OF THE PROGRAMS."
 
 
 ## Array of ros distros which are catkin compatible
@@ -97,7 +100,7 @@ if [ "$CHOICE" == "Y" ] || [ "$CHOICE" == "y" ] || [ "$CHOICE" == "" ]; then
         echo "Perl must be installed for this action to take place."
         echo "Would you like it to be installed? (Y/n)"
         read CHOICE
-        if [ "$CHOICE" == "Y" ] || [$"CHOCIE" == "y" ] || [ "$CHOICE" == "" ]; then
+        if [ "$CHOICE" == "Y" ] || [ "$CHOICE" == "y" ] || [ "$CHOICE" == "" ]; then
             sudo apt-get install perl
         else
             break; # will this actually break?

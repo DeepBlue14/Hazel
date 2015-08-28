@@ -6,7 +6,7 @@ FetchWebSource::FetchWebSource(QWidget* parent) : QWidget(parent)
     attributeValStrLstPtr = new QStringList();
     rosPkgStrLstPtr = new QStringList();
     
-    view.load(QUrl("http://www.ros.org/browse/list.php?package_type=package&distro=indigo") );
+    //view.load(QUrl("http://www.ros.org/browse/list.php?package_type=package&distro=indigo") );
     connect(&view, SIGNAL(loadFinished(bool)), this, SLOT(doStuff()) );
 }
 
@@ -21,7 +21,13 @@ void FetchWebSource::doStuff()
     
     extractRosPkgs();
 }
- 
+
+
+void FetchWebSource::loadPage()
+{
+    view.load(QUrl("http://www.ros.org/browse/list.php?package_type=package&distro=indigo") );
+}
+
 
 void FetchWebSource::examineChildElements(const QWebElement& parentElement)
 {
@@ -55,6 +61,7 @@ void FetchWebSource::extractRosPkgs()
         index = attributeValStrLstPtr->at(i).indexOf("=", index+1);
         rosPkg = attributeValStrLstPtr->at(i).mid(index+1, attributeValStrLstPtr->at(i).size()-index );
         cout << "Pkg: " << rosPkg.toStdString() << endl;
+        addToRosPkgStrLstPtr(new QString(rosPkg) );
     }
 }
 
@@ -63,7 +70,7 @@ void FetchWebSource::setRosPkgStrLstPtr(QStringList* rosPkgStrLstPtr)
 {
     this->rosPkgStrLstPtr = rosPkgStrLstPtr;
 }
-        
+
 
 void FetchWebSource::addToRosPkgStrLstPtr(QString* rosPkgStrPtr)
 {
@@ -79,7 +86,13 @@ QStringList* FetchWebSource::getRosPkgStrLstPtr()
 
 QString* FetchWebSource::toString()
 {
-    QString* tmp = new QString("***METHOD STUB***");
+    QString* tmp = new QString("------Ros pkgs------");
+    
+    for(size_t i = 0; i < rosPkgStrLstPtr->size(); i++)
+    {
+        tmp->append("\n");
+        tmp->append(rosPkgStrLstPtr->at(i) );
+    }
     
     return tmp;
 }

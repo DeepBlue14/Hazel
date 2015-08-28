@@ -1,12 +1,15 @@
 /* 
  * File:   LineNumberArea.h
- * Author: james
- * Email:  
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class handles the area along the left margin which
+ *                   contains the line numbers.
+ * 
  * Created on May 11, 2015, 11:21 AM
  */
 
-#ifndef LINENUMBERAREA_H
-#define	LINENUMBERAREA_H
+#ifndef LINE_NUMBER_AREA_H
+#define	LINE_NUMBER_AREA_H
 
 #include <QWidget>
 #include <QPaintEvent>
@@ -55,6 +58,12 @@ class LineNumberArea : public QWidget
          * @param event
          */
         void paintEvent(QPaintEvent* event);
+        
+        
+        void setFile(FileGui* file);
+        
+        
+        FileGui* getFile();
         
         /**
          * 

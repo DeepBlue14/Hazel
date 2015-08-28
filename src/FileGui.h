@@ -47,9 +47,9 @@ class FileGui : public QPlainTextEdit
     
     private:
         QWidget* lineNumberArea;
-        QWidget* codeFoldArea;
+        //QWidget* codeFoldArea;
         
-        QCompleter* c;
+        QCompleter* completerPtr;
         
         QString wordUnderCursor() const;
         
@@ -132,7 +132,7 @@ class FileGui : public QPlainTextEdit
          * 
          * @param event
          */
-        void codeFoldingAreaPaintEvent(QPaintEvent* event);
+        //void codeFoldingAreaPaintEvent(QPaintEvent* event);
         
         /**
          * 

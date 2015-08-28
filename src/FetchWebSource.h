@@ -71,6 +71,8 @@ class FetchWebSource : public QWidget
          */
         FetchWebSource(QWidget* parent = 0);
         
+        void loadPage();
+        
         /**
          * 
          * 
