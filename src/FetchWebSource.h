@@ -20,15 +20,14 @@
 #include <QUrl>
 #include <QString>
 #include <QStringList>
+#include <QWebElement>
 
 #if(QT_VERSION < 0x050000)
 #include <QWebView>
 #include <QWebFrame>
-#include <QWebElement>
 #else
 #include <QtWebKitWidgets/QWebView>
 #include <QtWebKitWidgets/QWebFrame>
-#include <QtWebKitWidgets/QWebElement>
 #endif
 
 #include <iostream>

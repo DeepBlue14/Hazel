@@ -350,6 +350,11 @@
       <qt>
         <modules>core gui widgets xml webkit</modules>
         <mocDir>src/moc</mocDir>
+        <defs>
+          <Elem>greaterThan(QT_MAJOR_VERSION, 4) {</Elem>
+          <Elem>QT += webkitwidgets</Elem>
+          <Elem>}</Elem>
+        </defs>
       </qt>
       <compileType>
         <linkerTool>
