@@ -59,7 +59,7 @@ class PkgManagerGui : public QWidget
         PkgManagerTabs* availableTab;
        
     private slots:
-        ;
+        void handleDistroChangeSlot(int newIndex);
         
     public:
         PkgManagerGui(QWidget* parent = 0);

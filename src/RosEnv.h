@@ -31,6 +31,15 @@ using namespace std;
 namespace RosEnv
 {
     extern QString absPathToRosWs;
+    
+    enum RosDistro
+    {
+        FUERTE = 0,
+        GROOVY,
+        HYDRO,
+        INDIGO,
+        JADE
+    };
 }
 
 #endif	/* ROS_ENV_H */

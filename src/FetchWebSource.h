@@ -83,7 +83,7 @@ class FetchWebSource : public QWidget
         /**
          * 
          */
-        void extractRosPkgs();
+        QStringList* extractRosPkgs();
         
         void setRosPkgStrLstPtr(QStringList* rosPkgStrLstPtr);
         

@@ -20,6 +20,8 @@ PkgManagerGui::PkgManagerGui(QWidget* parent) : QWidget(parent)
     rosVersionCbPtr->setCurrentIndex(3);
     rosVersionCbPtr->setMaximumWidth(100);
     
+    connect(rosVersionCbPtr, SIGNAL(currentIndexChanged(int )), this, SLOT(handleDistroChangeSlot(int ) ) );
+    
     installBtnPtr = new QPushButton("Install");
     installBtnPtr->setEnabled(false);
     exitBtnPtr = new QPushButton("Exit");
@@ -47,6 +49,20 @@ PkgManagerGui::PkgManagerGui(QWidget* parent) : QWidget(parent)
     
     
     this->setLayout(outerLayout);
+}
+
+
+void PkgManagerGui::handleDistroChangeSlot(int newIndex)
+{
+    if(tabWidgetPtr->currentIndex() == 0)
+    {
+        //cout << "index = 0" << endl;
+        availableTab->load();
+    }
+    else
+    {
+        //cout << "index != 0" << endl;
+    }
 }
 
 

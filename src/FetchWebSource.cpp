@@ -51,7 +51,7 @@ void FetchWebSource::examineChildElements(const QWebElement& parentElement)
 }
 
 
-void FetchWebSource::extractRosPkgs()
+QStringList* FetchWebSource::extractRosPkgs()
 {
     int index;
     QString rosPkg;
@@ -60,9 +60,11 @@ void FetchWebSource::extractRosPkgs()
         index = attributeValStrLstPtr->at(i).indexOf("=");
         index = attributeValStrLstPtr->at(i).indexOf("=", index+1);
         rosPkg = attributeValStrLstPtr->at(i).mid(index+1, attributeValStrLstPtr->at(i).size()-index );
-        cout << "Pkg: " << rosPkg.toStdString() << endl;
+        //cout << "Pkg: " << rosPkg.toStdString() << endl;
         addToRosPkgStrLstPtr(new QString(rosPkg) );
     }
+    
+    return rosPkgStrLstPtr;
 }
 
 

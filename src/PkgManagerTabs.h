@@ -17,6 +17,7 @@
 
 #include <iostream>
 
+#include "FetchWebSource.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -41,11 +42,14 @@ class PkgManagerTabs : public QWidget
         QStringList* pkgDescStrLstPtr;
         QGridLayout* outerLayout;
         
+        FetchWebSource* fetchWebSourcePtr;
+        
     private slots:
         ;
         
     public:
         PkgManagerTabs(QWidget* parent = 0);
+        void load(QString rosDistro = "indigo", int fetchOrFind = 0);
         QString* toString();
         ~PkgManagerTabs();
 };
