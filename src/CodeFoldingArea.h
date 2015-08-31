@@ -38,6 +38,15 @@ class CodeFoldingArea : public QWidget
     private:
         FileGui* file;
         
+    protected slots:
+        /**
+         * 
+         * see: http://doc.qt.io/qt-4.8/qplaintextedit.html
+         * 
+         * @param e
+         */
+        void mousePressEvent(QMouseEvent* e);
+        
     public:
         /**
          * Constructor.

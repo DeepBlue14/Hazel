@@ -48,6 +48,7 @@ class FileGui : public QPlainTextEdit
     private:
         QWidget* lineNumberArea;
         //QWidget* codeFoldArea;
+        QWidget* codeFoldArea;
         
         QCompleter* completerPtr;
         
@@ -89,13 +90,6 @@ class FileGui : public QPlainTextEdit
          */
         void keyPressEvent(QKeyEvent* e);
         
-        /**
-         * 
-         * see: http://doc.qt.io/qt-4.8/qplaintextedit.html
-         * 
-         * @param e
-         */
-        void mousePressEvent(QMouseEvent* e);
         
     public:
         /**
@@ -132,7 +126,7 @@ class FileGui : public QPlainTextEdit
          * 
          * @param event
          */
-        //void codeFoldingAreaPaintEvent(QPaintEvent* event);
+        void codeFoldingAreaPaintEvent(QPaintEvent* event);
         
         /**
          * 
@@ -140,6 +134,13 @@ class FileGui : public QPlainTextEdit
          * @return 
          */
         int lineNumberAreaWidth();
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
+        int codeFoldingAreaWidth();
         
         /**
          * 

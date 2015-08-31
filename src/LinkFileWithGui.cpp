@@ -79,7 +79,7 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNe
     {
         northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
     }
-    else if(fileName.mid(fileName.size()-4, 4) == "cpp")
+    else if(fileName.mid(fileName.size()-3, 3) == "cpp")
     {
         northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
     }
@@ -91,7 +91,7 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNe
     {
         northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/lispFile.png") );
     }
-    else if(fileName.mid(fileName.size()-3, 3) == "bell")
+    else if(fileName.mid(fileName.size()-4, 4) == "bell")
     {
         northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/bell.jpg") );
     }

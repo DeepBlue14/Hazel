@@ -6,6 +6,22 @@ CodeFoldingArea::CodeFoldingArea(FileGui* file) : QWidget(file)
     this->file = file;
     
 }
+
+
+void CodeFoldingArea::mousePressEvent(QMouseEvent* e)
+{
+    cout << "Detected mouse press event at CodeFoldingArea::mousePressEvent(...)" << endl;
+    /*if(codeFoldArea->contentsRect().contains(e->pos()) )
+    {
+        cout << "\n\nat FileGui::mousePressEvent(...)\n\n" << endl;
+    }
+    else
+    {
+        highlightCurrentLine();
+    }*/
+    
+}
+
         
 QSize CodeFoldingArea::sizeHint() const
 {
@@ -14,7 +30,7 @@ QSize CodeFoldingArea::sizeHint() const
         
 void CodeFoldingArea::paintEvent(QPaintEvent* event)
 {
-    ;//file->codeFoldingAreaPaintEvent(event);
+    file->codeFoldingAreaPaintEvent(event);
 }
 
 

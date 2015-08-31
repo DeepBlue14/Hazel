@@ -1,5 +1,6 @@
 #include "FileGui.h"
 #include "LineNumberArea.h"
+#include "CodeFoldingArea.h"
 
 
 FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
@@ -9,7 +10,7 @@ FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
                           QKeySequence("Ctrl+E").toString(QKeySequence::NativeText));
     
     lineNumberArea = new LineNumberArea(this);
-    //codeFoldArea = new LineNumberArea(this);
+    codeFoldArea = new CodeFoldingArea(this);
     
     connect(this, SIGNAL(blockCountChanged(int )), this, SLOT(updateLineNumberAreaWidth(int )) );
     connect(this, SIGNAL(updateRequest(QRect, int )), this, SLOT(updateLineNumberArea(QRect, int )) );
@@ -171,10 +172,10 @@ void FileGui::keyPressEvent(QKeyEvent* e)
         setTextCursor(tcg);
     }
 
-    
+
     //------------------------------------------
-        
-    if(!isShortcut && (hasModifier || e->text().isEmpty()|| completionPrefix.length() < 3
+
+    if(!isShortcut && (hasModifier || e->text().isEmpty() || completionPrefix.length() < 3
                        || eow.contains(e->text().right(1))) )
     {
         completerPtr->popup()->hide();
@@ -193,17 +194,23 @@ void FileGui::keyPressEvent(QKeyEvent* e)
 }
 
 
-void FileGui::mousePressEvent(QMouseEvent* e)
+int FileGui::lineNumberAreaWidth()
 {
-    cout << "Detected mouse press event at FileGui::mousePressEvent(...)" << endl;
-    /*if(codeFoldArea->contentsRect().contains(e->pos()) )
+    int digits = 1;
+    int max = qMax(1, blockCount() );
+    while(max >= 10)
     {
-        cout << "\n\nat FileGui::mousePressEvent(...)\n\n" << endl;
-    }*/
+        max /= 10;
+        digits++;
+    }
+    
+    int space = 3 + fontMetrics().width(QLatin1Char('9')) * digits;
+    
+    return space;
 }
 
 
-int FileGui::lineNumberAreaWidth()
+int FileGui::codeFoldingAreaWidth()
 {
     int digits = 1;
     int max = qMax(1, blockCount() );
@@ -230,12 +237,12 @@ void FileGui::updateLineNumberArea(const QRect& rect, int dy)
     if(dy)
     {
         lineNumberArea->scroll(0, dy);
-        //codeFoldArea->scroll(0, dy);
+        codeFoldArea->scroll(0, dy);
     }
     else
     {
         lineNumberArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
-        //codeFoldArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
+        codeFoldArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
     }
     
     if(rect.contains(viewport()->rect()) )
@@ -253,7 +260,7 @@ void FileGui::resizeEvent(QResizeEvent* e)
     
     QRect cr = contentsRect();
     lineNumberArea->setGeometry(QRect(cr.left(), cr.top(), lineNumberAreaWidth(), cr.height()) );
-    //codeFoldArea->setGeometry(QRect(lineNumberAreaWidth(), cr.top(), lineNumberAreaWidth(), cr.height()) );
+    codeFoldArea->setGeometry(QRect(lineNumberAreaWidth(), cr.top(), lineNumberAreaWidth(), cr.height()) );
     
 }
 
@@ -266,7 +273,6 @@ void FileGui::highlightCurrentLine()
     {
         QTextEdit::ExtraSelection selection;
         
-        //QColor lineColor = QColor(Qt::yellow).lighter(160);
         QColor lineColor = QColor(224, 232, 241);
         
         selection.format.setBackground(lineColor);
@@ -287,36 +293,6 @@ void FileGui::highlightCurrentLine()
     
     setExtraSelections(extraSelections);
 }
-
-
-/*void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
-{
-//    QPainter cfaPainter(codeFoldArea);
-//    cfaPainter.fillRect(event->rect(), Qt::white);
-//    
-//    
-//    QTextBlock block2 = firstVisibleBlock();
-//    //int blockNumber2 = block2.blockNumber();
-//    int top2 = (int) blockBoundingGeometry(block2).translated(contentOffset()).top();
-//    int bottom2 = top2 + (int) blockBoundingRect(block2).height();
-//
-//    while(block2.isValid() && top2 <= event->rect().bottom() )
-//    {
-//        if (block2.isVisible() && bottom2 >= event->rect().top() )
-//        {
-//            QPixmap pixmap;
-//            pixmap.load("/home/james/NetBeansProjects/ride/images/plus.jpg");
-//            //cfaPainter.drawPixmap(0, top2, codeFoldArea->width()/2, fontMetrics().height()/2, pixmap);
-//        }
-//
-//        block2 = block2.next();
-//        top2 = bottom2;
-//        bottom2 = top2 + (int) blockBoundingRect(block2).height();
-//        
-//        //blockNumber2++;
-//    }
-
-}*/
 
 
 void FileGui::lineNumberAreaPaintEvent(QPaintEvent* event)
@@ -349,6 +325,36 @@ void FileGui::lineNumberAreaPaintEvent(QPaintEvent* event)
     
     
     
+}
+
+
+void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
+{
+    QPainter cfaPainter(codeFoldArea);
+    cfaPainter.fillRect(event->rect(), QColor(Qt::blue).lighter(150) );
+    
+    
+    QTextBlock block2 = firstVisibleBlock();
+    //int blockNumber2 = block2.blockNumber();
+    int top2 = (int) blockBoundingGeometry(block2).translated(contentOffset()).top();
+    int bottom2 = top2 + (int) blockBoundingRect(block2).height();
+
+    while(block2.isValid() && top2 <= event->rect().bottom() )
+    {
+        if (block2.isVisible() && bottom2 >= event->rect().top() )
+        {
+            QPixmap pixmap;
+            pixmap.load("/home/james/NetBeansProjects/ride/images/plus.jpg");
+            //cfaPainter.drawPixmap(0, top2, codeFoldArea->width()/2, fontMetrics().height()/2, pixmap);
+        }
+
+        block2 = block2.next();
+        top2 = bottom2;
+        bottom2 = top2 + (int) blockBoundingRect(block2).height();
+        
+        //blockNumber2++;
+    }
+
 }
 
 

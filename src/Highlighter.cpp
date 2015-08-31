@@ -38,7 +38,7 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
                              << "do"           << "protected"        << "wchar_t"
                              << "double"       << "public"           << "while"
                              << "dynamic_cast" << "register"         << "xor"
-                                                     << "reinterpret_cast" << "xor_eq";
+                                               << "reinterpret_cast" << "xor_eq";
     QStringList cPlusPlusIdentifiers;
     cPlusPlusIdentifiers     << "override"    << "final";
     

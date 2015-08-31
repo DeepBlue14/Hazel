@@ -71,7 +71,10 @@ public:
      */
     Highlighter(QTextDocument* parent = 0);
     
-    
+    /**
+     * 
+     */
+    void loadLang();
     
     /**
      * Classic toString method.
