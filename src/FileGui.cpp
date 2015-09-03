@@ -38,7 +38,7 @@ void FileGui::setCompleter(QCompleter* completer)
     completerPtr->setCompletionMode(QCompleter::PopupCompletion);
     completerPtr->setCaseSensitivity(Qt::CaseInsensitive);
     QObject::connect(completer, SIGNAL(activated(const QString&)),
-                     this, SLOT(insertCompletion(const QString&)));
+                     this, SLOT(insertCompletion(const QString&)) );
 }
 
 
@@ -54,7 +54,7 @@ void FileGui::insertCompletion(const QString& completion)
     int extra = completion.length() - completerPtr->completionPrefix().length();
     tc.movePosition(QTextCursor::Left);
     tc.movePosition(QTextCursor::EndOfWord);
-    tc.insertText(completion.right(extra));
+    tc.insertText(completion.right(extra) );
     setTextCursor(tc);
 }
 

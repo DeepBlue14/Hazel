@@ -22,6 +22,8 @@
 
 #include <iostream>
 
+#include "CustomMsgsGui.h"
+
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -50,6 +52,8 @@ class NewFilePage_2 : public QWidget
         QPushButton* addBtnPtr;
         QPushButton* removeBtnPtr;
 
+        CustomMsgsGui* customMsgsGuiPtr;
+        
         QHBoxLayout* btnLayout;
         QGridLayout* outerLayoutPtr;
         

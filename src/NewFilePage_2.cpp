@@ -46,6 +46,8 @@ NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
     btnLayout->addWidget(addBtnPtr);
     btnLayout->addWidget(removeBtnPtr);
     
+    customMsgsGuiPtr = new CustomMsgsGui();
+    
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addWidget(msgCatagoryLwPtr, 0, 0);
     outerLayoutPtr->addWidget(custBtnPtr, 1, 0);
@@ -73,7 +75,8 @@ void NewFilePage_2::handleSwapOptionsSlot()
 
 void NewFilePage_2::handleCustBtnPtrSlot()
 {
-    cout << "custom btn activated but not implemented at NewFilePage_2::handleCustBtnPtrSlot()" << endl;
+    customMsgsGuiPtr->show();
+    cout << "custom btn activated but not fully implemented at NewFilePage_2::handleCustBtnPtrSlot()" << endl;
 }
 
 

@@ -8,28 +8,31 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     titleFont->setBold(true);
     titleFont->setPointSize(16);
     
-    applicationNameLabelPtr = new QLabel("<i>Ride</i>", this);
+    applicationNameLabelPtr = new QLabel("<i>RIDE</i>", this);
     applicationNameLabelPtr->setFont(*titleFont);
     applicationNameIconLabelPtr = new QLabel();
     
-    //QPixmap organizationLogoPixmapPtr("/home/james/NetBeansProjects/Hazel/images/cs.xpm");
-    QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/ride1.xpm");
+    //QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/ride1.xpm");
     
     appLabelPtr = new QLabel();
     QFont* subheaderFont = new QFont("Serif");
     subheaderFont->setPointSize(14);
-    appLabelPtr->setText("----------<b>R</b>OS <b>I</b>ntegrated <b>D</b>evelopment <b>E</b>nvironment----------");
+    appLabelPtr->setText("<p align=\"center\"><b>R</b>OS <b>I</b>ntegrated <b>D</b>evelopment <b>E</b>nvironment</p>"
+    "<p align=\"center\"><i>Developer: put some very long quote or something line that about ROS here!</i></p>");
     
-    //organizationNameLabelPtr->setPixmap(organizationLogoPixmapPtr);
-    applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(250, 200, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
+    //applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(250, 200, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
     
     //QLabel::setOpenExternalLinks(true); //this is Qt > 4.2?
-    githubLabelPtr = new QLabel("<u><a href=\"http://www.qtcentre.org\">QtCentre</a></u>");
+    githubLabelPtr = new QLabel("<a href=\"https://github.com/DeepBlue14/ride\">RIDE Git Repository</a>");
+    githubLabelPtr->setTextFormat(Qt::RichText);
+    githubLabelPtr->setTextInteractionFlags(Qt::TextBrowserInteraction);
+    githubLabelPtr->setOpenExternalLinks(true);
     
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addWidget(applicationNameLabelPtr, 0, 0, Qt::AlignHCenter);
     outerLayoutPtr->addWidget(appLabelPtr, 1, 0, Qt::AlignHCenter);
-    outerLayoutPtr->addWidget(applicationNameIconLabelPtr, 2, 0, Qt::AlignHCenter);
+    outerLayoutPtr->addWidget(githubLabelPtr, 2, 0, Qt::AlignHCenter);
+    outerLayoutPtr->addWidget(applicationNameIconLabelPtr, 3, 0, Qt::AlignHCenter);
     
     this->setLayout(outerLayoutPtr);
 }
