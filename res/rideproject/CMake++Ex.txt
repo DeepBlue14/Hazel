@@ -1,0 +1,5 @@
+#searches everywhere on the system for the package (instead of just /usr/..., as CMake would).
+find_package(PCL 1.8 EXACT REQUIRED SEARCH_ALL)
+
+#does this for you: http://www.cmake.org/pipermail/cmake/2012-June/050632.html
+find_package(OpenCV 3.0 EXACT REQUIRED PATH=/home/james/NetBeansProjects)

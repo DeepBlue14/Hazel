@@ -4,7 +4,13 @@
 CustomMsgsGui::CustomMsgsGui(QWidget* parent) : QWidget(parent)
 {
     customPkgLePtr = new QLineEdit();
+    customPkgLePtr->setEchoMode(QLineEdit::Normal);
+    customPkgLePtr->setPlaceholderText("package");
+    
     customMsgLePtr = new QLineEdit();
+    customMsgLePtr->setEchoMode(QLineEdit::Normal);
+    customMsgLePtr->setPlaceholderText("msg");
+    
     okBtnPtr = new QPushButton("Ok");
     cancelBtnPtr = new QPushButton("Cancel");
     

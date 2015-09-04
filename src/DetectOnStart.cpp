@@ -8,12 +8,6 @@ DetectOnStart::DetectOnStart()
 }
 
 
-void DetectOnStart::findExeLoc()
-{
-    ;
-}
-
-
 void DetectOnStart::findUsersName()
 {
     QProcess proc;
@@ -24,19 +18,13 @@ void DetectOnStart::findUsersName()
 
 void DetectOnStart::findRosDistros()
 {
-    
+    ;
 }
 
 
-void DetectOnStart::setExeLoc(QString* exeLocStrPtr)
+void DetectOnStart::loadPreOpenedProjs()
 {
-    this->exeLocStrPtr = exeLocStrPtr;
-}
-
-
-QString* DetectOnStart::getExeLoc()
-{
-    return exeLocStrPtr;
+    ;
 }
 
 

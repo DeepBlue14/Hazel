@@ -36,22 +36,19 @@ using namespace std;
 class DetectOnStart
 {
     private:
-        QString* exeLocStrPtr;
         QString* usersNameStrPtr;
-        QStringList* rosDistrosStrLstPtr;
+        QStringList* installedRosDistrosStrLstPtr;
         
     public:
         DetectOnStart();
-        void findExeLoc();
         void findUsersName();
-        void findRosDistros();
-        void setExeLoc(QString* exeLocStrPtr);
-        QString* getExeLoc();
+        void findInstalledRosDistros();
+        void loadPreOpenedProjs();//TODO !!!implement!!!
         void setUsersNameStrPtr(QString* usersNameStrPtr);
         QString* getUsersNameStrPtr();
-        void setRosDistrosStrLstPtr(QStringList* rosDistrosStrLstPtr);
-        void addToRosDistrosStrLstPtr(QString* rosDistrosStrPtr);
-        QStringList* getRosDistrosStrLstPtr();
+        void setInstalledRosDistrosStrLstPtr(QStringList* installedRosDistrosStrLstPtr);
+        void addToInstalledRosDistrosStrLstPtr(QString* installedRosDistrosStrPtr);
+        QStringList* getInstalledRosDistrosStrLstPtr();
         QString* toString();
         ~DetectOnStart();
 };

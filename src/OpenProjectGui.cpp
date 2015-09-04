@@ -6,6 +6,7 @@ OpenProjectGui::OpenProjectGui(QWidget* parent) : QWidget(parent)
     projectLePtr = new QLineEdit();
     projectFileDialogPtr = new QFileDialog();
     fileDialogPbPtr = new QPushButton("Select...");
+    fileDialogPbPtr->setAutoDefault(true);
     openProjectPbPtr = new QPushButton(tr("&Open Project"));
     cancelPbPtr = new QPushButton("Cancel");
     buttonLayoutPtr = new QHBoxLayout();

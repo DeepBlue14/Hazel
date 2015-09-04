@@ -1,0 +1,49 @@
+<!-- 
+- File:   .xml
+- Author: James Kuczynski
+- Email: jkuczyns@cs.uml.edu
+- File Description: 
+-
+- Created August 22, 2015 at 2:15
+- Last Modified: 8/22/2015
+- Modification: Created.
+-->
+
+<lang>
+    <type
+        color="blue"
+        word="False"
+        word="None"
+        word="True"
+        word="and"
+        word="as"
+        word="assert"
+        word="break"
+        word="class"
+        word="continue"
+        word="def"
+        word="del"
+        word="elif"
+        word="else"
+        word="except"
+        word="finally"
+        word="for"
+        word="from"
+        word="global"
+        word="if"
+        word="import"
+        word="in"
+        word="is"
+        word="lambda"
+        word="nonlocal"
+        word="not"
+        word="or"
+        word="pass"
+        word="raise"
+        word="return"
+        word="try"
+        word="while"
+        word="with"
+        word="yield" />
+</lang>
+

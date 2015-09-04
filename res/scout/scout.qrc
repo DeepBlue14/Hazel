@@ -1,7 +1,0 @@
-<!DOCTYPE RCC><RCC version="1.0">
-    <qresource prefix="/">
-        <!-- <file>resources/countries.txt</file> -->
-        <!-- <file>resources/wordlist.txt</file> -->
-	<file>project/test.txt</file>
-    </qresource>
-</RCC>
