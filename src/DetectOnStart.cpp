@@ -4,7 +4,7 @@
 DetectOnStart::DetectOnStart()
 {
     usersNameStrPtr = new QString("null");
-    rosDistrosStrLstPtr = new QStringList();
+    installedRosDistrosStrLstPtr = new QStringList();
 }
 
 
@@ -16,7 +16,7 @@ void DetectOnStart::findUsersName()
 }
 
 
-void DetectOnStart::findRosDistros()
+void DetectOnStart::findInstalledRosDistros()
 {
     ;
 }
@@ -40,21 +40,21 @@ QString* DetectOnStart::getUsersNameStrPtr()
 }
 
 
-void DetectOnStart::setRosDistrosStrLstPtr(QStringList* rosDistrosStrLstPtr)
+void DetectOnStart::setInstalledRosDistrosStrLstPtr(QStringList* installedRosDistrosStrLstPtr)
 {
-    this->rosDistrosStrLstPtr = rosDistrosStrLstPtr;
+    this->installedRosDistrosStrLstPtr = installedRosDistrosStrLstPtr;
 }
 
 
-void DetectOnStart::addToRosDistrosStrLstPtr(QString* rosDistrosStrPtr)
+void DetectOnStart::addToInstalledRosDistrosStrLstPtr(QString* installedRosDistrosStrPtr)
 {
-    rosDistrosStrLstPtr->push_back(*rosDistrosStrPtr);
+    installedRosDistrosStrLstPtr->push_back(*installedRosDistrosStrPtr);
 }
 
 
-QStringList* DetectOnStart::getRosDistrosStrLstPtr()
+QStringList* DetectOnStart::getInstalledRosDistrosStrLstPtr()
 {
-    return rosDistrosStrLstPtr;
+    return installedRosDistrosStrLstPtr;
 }
 
 
