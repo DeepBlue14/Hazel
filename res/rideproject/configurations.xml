@@ -1,63 +1,23 @@
 <!-- File:   configurations.xml 					                        -->
 <!-- Author: James Kuczynski 						                        -->
 <!-- Email: jkuczyns@cs.uml.edu 					                        -->
-<!-- File Description: This file will contain the files in the "open"       -->
-<!-- 		           RIDE projects. Data in the "system" subtree is that  -->
-<!--                   which is pertinent to the current system.  Data      -->
-<!--                   in the "universe" subtree is is the same universally -->
-<!--                   true, i.e. the list of ROS pkgs available.           -->					           
+<!-- File Description: This file will contain data about the system.		-->				           
 <!--  									                                    -->
 <!-- Created 05/23/2015 9:50pm						                        -->
 
 <configurations>
     <system>
+    	<ubuntu
+    		version="14.04"
+    		subversion="2"
+    		kernel="3.13"
+    	/>
         <userName>james/</userName>
-        <rosDistros>
-            <indigo>
-                <pkgs
-                actionlib="descrition..."
-                actionlib_msgs="description..."
-                pkg="amcl" />
-            </indigo>
-        </rosDistros>
-        <project name="test_node" loc="/home/james/catkin_ws/src/test_node"/>
+        <project name="test_node" loc="/home/james/catkin_ws/src/test_node"/><!-- list of previously open projects -->
+        <project name="test_node" loc="/home/james/catkin_ws/src/test_node_2"/><!-- list of previously open projects -->
+        <theme>Modern.xml</theme> <!-- css GUI theme, @ src/qss -->
+        <style>Modern.xml</style> <!-- syntax color style @ res/options/pretty_print -->
+        <theme>
     </system>
-    <universe>
-        <rosDistros>
-            <fuerte>
-                <pkgs
-                    actionlib="descrition..."
-                    actionlib_msgs="description..."
-                    amcl="description..." />
-                 </fuerte>
-            <groovy>
-                <pkgs
-                    actionlib="descrition..."
-                    actionlib_msgs="description..."
-                    amcl="description..."
-                    angles="description..." />
-            </groovy>
-            <hydro>
-                <pkgs
-                    actionlib="descrition..."
-                    actionlib_msgs="description..."
-                    amcl="description..."
-                    angles="description..." />
-            </hydro>
-            <indigo>
-                <pkgs
-                actionlib="descrition..."
-                actionlib_msgs="description..."
-                amcl="description..."
-                angles="description..." />
-            </indigo>
-            <jade>
-                <pkgs
-                actionlib="descrition..."
-                actionlib_msgs="description..."
-                amcl="description..."
-                angles="description..." />
-            </jade>
-        </rosDistros>
-    </universe>
+
 </configurations>
