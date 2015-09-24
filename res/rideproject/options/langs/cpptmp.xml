@@ -1,0 +1,14 @@
+<lang>
+    <access_modifier text_exact="public"/>
+    <access_modifier text_exact="protected"/>
+    <access_modifier text_exact="private"/>
+    <comment text_begin="//">
+    <comment text_begin="/*"/>
+    <comment text_end="*/">
+    <custom text_exact="!!!"/>
+    <keyword text_exact="if"/>
+    <keyword text_exact="case"/>
+    <keyword text_exact="switch"/>
+    <keyword text_exact="while"/>
+    <keyword text_exact="for"/>
+</lang>
