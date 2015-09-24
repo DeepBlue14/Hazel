@@ -2,7 +2,11 @@
 File:   Classic.xml
 Author: James Kuczynski
 Email: jkuczyns@cs.uml.edu
-File Description: 
+File Description: the IDE will load a style file and a lang file, and
+                  match keys (i.e. identifier with identifier, etc.).
+                  This level of abstraction allows the user to create
+                  custom style keys to correspond with custom lang
+                  keys.
 
 Created: September 12 2015 at 11:00pm 
  -->
@@ -34,6 +38,13 @@ Created: September 12 2015 at 11:00pm
 			size="10"
 		/>
 		<text>
+		    <!-- public, private, etc. -->
+		    <access_modifier
+		        foreground=""
+		        background=""
+		        effect=""
+		        effect_color=""
+		    />
 			<!-- 'a' -->
 			<character
 				foreground="red"
@@ -47,6 +58,13 @@ Created: September 12 2015 at 11:00pm
 				background=""
 				effect=""
 				effect_color=""
+			/>
+			<!-- custom sequence specified by the user in a lang.xml file -->
+			<custom
+			    foreground=""
+			    background=""
+			    effect=""
+			    effect_color=""
 			/>
 			<!-- default color and attributes -->
 			<default
@@ -66,8 +84,8 @@ Created: September 12 2015 at 11:00pm
 			<error
 				foreground=""
 				background=""
-				effect=""
-				effect_color=""
+				effect="underline_wavy"
+				effect_color="red"
 			/>
 			<!-- the function name -->
 			<function_name
@@ -180,10 +198,17 @@ Created: September 12 2015 at 11:00pm
 			<todo
 				foreground="white"
 				background="yellow"
-				effect=""
+				effect="bold"
 				effect_color=""
 			/>
-			<!-- int float double bool -->
+			<!-- unsigned, short -->
+			<type_modifier
+			    foreground="green"
+			    background=""
+			    effect=""
+			    effect_color=""
+			/>
+			<!-- int int8_t size_t float double bool -->
 			<type_primative
 				foreground="green"
 				background=""
