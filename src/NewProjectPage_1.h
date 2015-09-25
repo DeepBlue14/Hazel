@@ -39,11 +39,14 @@ class NewProjectPage_1 : public QWidget
     private:
         QLabel* titlePtr;
         QVector<QListWidgetItem*>* rosVersionsStrLstPtr;
+        QVector<QListWidgetItem*>* newOrFromExStrLstPtr;
         QListWidget* rosVersionsLwPtr;
+        QListWidget* newOrFromExLwPtr;
         
         QGridLayout* outerLayoutPtr;
         
         QString* rosVersionStrPtr;
+        QString* newOrFromExStrPtr;
     private slots:
         ;
         
@@ -66,6 +69,18 @@ class NewProjectPage_1 : public QWidget
          * @return 
          */
         QString* getRosVersionStrPtr();
+        
+        /**
+         * Mutator.
+         */
+        void setNewOrFromExStrPtr();
+        
+        /**
+         * Accessor.
+         * 
+         * @return 
+         */
+        QString* getNewOrFromExStrPtr();
         
         /**
          * 

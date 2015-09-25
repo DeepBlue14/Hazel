@@ -89,7 +89,7 @@ private:
     
     NewFilePage_1* newFilePage_1Ptr;
     NewFilePage_2* newFilePage_2Ptr;
-    NewFilePage_2* newFilePage_3Ptr;
+    NewFilePage_3* newFilePage_3Ptr;
     NewFilePage_3* newFilePage_4Ptr;
     NewFilePage_4* newFilePage_5Ptr;
     
@@ -237,4 +237,3 @@ public:
 };
 
 #endif	/* NEW_FILE_GUI_H */
-
