@@ -3,6 +3,8 @@
 
 NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Select template</b>");
+    
     cHeaderTemplateStrLst = new QStringList();
     cHeaderTemplateStrLst->push_back("No template");
     cHeaderTemplateStrLst->push_back("Main template");
@@ -21,7 +23,8 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     templatesLstWidPtr->addItems(*cHeaderTemplateStrLst);
     
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(templatesLstWidPtr, 0, 0);
+    outerLayout->addWidget(titlePtr, 0, 0, Qt::AlignHCenter);
+    outerLayout->addWidget(templatesLstWidPtr, 1, 0);
     
     selectedTemplateStrPtr = new QString("null");
     

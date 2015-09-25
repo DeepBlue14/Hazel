@@ -2,6 +2,8 @@
 
 NewFilePage_4::NewFilePage_4(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Name and location</b>");
+    
     fileNameLePtr = new QLineEdit();
     fileNameLePtr->setText("newfile");
     fileExtsStrLstPtr = new QStringList();
@@ -37,7 +39,8 @@ NewFilePage_4::NewFilePage_4(QWidget* parent) : QWidget(parent)
     initCore();
     
     outerLayoutPtr = new QGridLayout();
-    outerLayoutPtr->addLayout(formLayoutPtr, 0, 0);
+    outerLayoutPtr->addWidget(titlePtr, 0, 0, Qt::AlignHCenter);
+    outerLayoutPtr->addLayout(formLayoutPtr, 1, 0);
     
     this->setLayout(outerLayoutPtr);
 }

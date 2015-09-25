@@ -3,12 +3,11 @@
 
 void XmlMaster::loadFile(QFile* filePtr)
 {
-    filePtr = new QFile("/home/james/NetBeansProjects/Hazel/config/SyntaxColors/NetBeans.xml");
+    filePtr = new QFile(filePtr);
     xmlDomDocPtr = new QDomDocument();
     
     if(!filePtr->open(QIODevice::ReadOnly) )
     {
-        //error while loading file
         cerr << "Error while loading file" << endl;
     }
     

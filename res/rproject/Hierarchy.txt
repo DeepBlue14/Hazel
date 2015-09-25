@@ -1,0 +1,25 @@
+Global
+
+ride
+   |
+   res
+     |
+     langs  styles  themes  configurations.java
+         |
+         cpp.xml    java.xml    ...
+         
+  
+------------------------------------------
+Local
+
+catkin_ws
+        |
+        src
+           |
+           test_node
+                    |
+                    .rideProject
+                    |
+                    ast_dat     configurations.xml  
+                          |
+                          (AST stuff)

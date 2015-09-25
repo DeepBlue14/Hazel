@@ -1,0 +1,164 @@
+<!-- variables: $ENDLINE, $element_name -->
+<!-- keys: text_exact, text_begin, text_end -->
+<lang>
+    <characteristics name="C++" version="X11" />
+    <access_modifier>
+        <element text_exact="public" />
+        <element text_exact="protected" />
+        <element text_exact="private" />
+    </access_modifier>
+    <comment>
+        <element text_begin="//" text_end="$ENDLINE"/>
+        <element text_begin="/*" text_end="*/" />
+    <custom>
+        <element text_exact="!!!" />
+    </custom>
+    <keyword>
+        <element text_exact="alignas" />
+        <element text_exact="alignof" />
+        <element text_exact="and" />
+        <element text_exact="and_eq" />
+        <element text_exact="asm" />
+        <element text_exact="auto" />
+        <element text_exact="bitand" />
+        <element text_exact="bitor" />
+        <element text_exact="break" />
+        <element text_exact="case" />
+        <element text_exact="catch" />
+        <element text_exact="class" />
+        <element text_exact="compl" />
+        <element text_exact="concept" />
+        <element text_exact="constexpr" />
+        <element text_exact="const_case" />
+        <element text_exact="continue" />
+        <element text_exact="decltype" />
+        <element text_exact="default" />
+        <element text_exact="delete" />
+        <element text_exact="do" />
+        <element text_exact="dynamic_cast" />
+        <element text_exact="else" />
+        <element text_exact="enum" />
+        <element text_exact="explicit" />
+        <element text_exact="export" />
+        <element text_exact="extern" />
+        <element text_exact="false" />
+        <element text_exact="for" />
+        <element text_exact="friend" />
+        <element text_exact="goto" />
+        <element text_exact="if" />
+        <element text_exact="inline" />
+        <element text_exact="mutable" />
+        <element text_exact="namespace" />
+        <element text_exact="new" />
+        <element text_exact="noexcept" />
+        <element text_exact="not" />
+        <element text_exact="not_eq" />
+        <element text_exact="nullptr" />
+        <element text_exact="operator" />
+        <element text_exact="or" />
+        <element text_exact="or_eq" />
+        <element text_exact="register" />
+        <element text_exact="reinterpret_cast" />
+        <element text_exact="requires" />
+        <element text_exact="return" />
+        <element text_exact="sizeof" />
+        <element text_exact="static_assert" />
+        <element text_exact="static_cast" />
+        <element text_exact="struct" />
+        <element text_exact="switch" />
+        <element text_exact="template" />
+        <element text_exact="this" />
+        <element text_exact="thread_local" />
+        <element text_exact="throw" />
+        <element text_exact="true" />
+        <element text_exact="try" />
+        <element text_exact="typedef" />
+        <element text_exact="typeid" />
+        <element text_exact="typename" />
+        <element text_exact="union" />
+        <element text_exact="using" />
+        <element text_exact="virtual" />
+        <element text_exact="void" />
+        <element text_exact="volatile" />
+        <element text_exact="while" />
+        <element text_exact="xor" />
+        <element text_exact="xor_eq" />
+        <element text_exact="override" />
+        <element text_exact="final" />
+    </keyword>
+    <operator>
+        <element text_exact="+" />
+        <element text_exact="-" />
+        <element text_exact="++" />
+        <element text_exact="--" />
+        <element text_exact="*" />
+        <element text_exact="/" />
+        <element text_exact="%" />
+        <element text_exact="!" />
+        <element text_exact="=" />
+        <element text_exact="==" />
+        <element text_exact="&amp;" />
+        <element text_exact="**" />
+        <element text_exact="&gt;" />
+        <element text_exact="&gt;&gt;" />
+        <element text_exact="&lt; " />
+        <element text_exact="&lt;&lt;" />
+    </operator>
+    <preproc_identifier>
+       <element text_after="$preproc_keyword" text_end="$ENDLINE" />
+    </preproc_identifier>
+    <preproc_keyword>
+        <element text_exact="#elif" />
+        <element text_exact="#endif" />
+        <element text_exact="#defined" />
+        <element text_exact="#ifdef" />
+        <element text_exact="#ifndef" />
+        <element text_exact="#define" />
+        <element text_exact="#undef" />
+        <element text_exact="#include" />
+        <element text_exact="#line" />
+        <element text_exact="#error" />
+        <element text_exact="#pragma" />
+    </preproc_keyword>
+    <separator>
+        <element text_exact=";" />
+        <element text_exact="{" />
+        <element text_exact="}" />
+        <element text_exact="[" />
+        <element text_exact="]" />
+        <element text_exact="(" />
+        <element text_exact=")" />
+        <element text_exact="," />
+        <element text_exact="." />
+    </separator>
+    <string_escape_seq_valid>
+        <element text_exact="\n" />
+        <element text_exact="\t" />
+        <element text_exact="\a" />
+        <element text_exact="%d" />
+        <element text_exact="%s" />
+    </string_escape_seq_valid>
+    <type_modifier>
+        <element text_exact="unsigned" />
+        <element text_exact="signed" />
+        <element text_exact="short" />
+        <element text_exact="long" />
+        <element text_exact="static" />
+        <element text_exact="const" />
+    </type_modifier>
+    <type_primative>
+        <element text_exact="int" />
+        <element text_exact="float" />
+        <element text_exact="double" />
+        <element text_exact="char" />
+        <element text_exact="bool" />
+        <element text_exact="int8_t" />
+        <element text_exact="int16_t" />
+        <element text_exact="int32_t" />
+        <element text_exact="int64_t" />
+        <element text_exact="size_t" />
+        <element text_exact="char16_t" />
+        <element text_exact="char32_t" />
+        <element text_exact="wchar_t" />
+    </type_primative>
+</lang>

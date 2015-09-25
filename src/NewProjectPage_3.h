@@ -13,6 +13,7 @@
 #include <QWidget>
 #include <QLineEdit>
 #include <QStringList>
+#include <QLabel>
 #include <QString>
 #include <QListWidget>
 #include <QComboBox>
@@ -39,6 +40,7 @@ class NewProjectPage_3 : public QWidget
     Q_OBJECT
            
     private:
+        QLabel* titlePtr;
         QLineEdit* authorNameLePtr;
         QLineEdit* authorEmailLePtr;
         QStringList* licenseListPtr;

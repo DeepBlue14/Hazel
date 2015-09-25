@@ -14,6 +14,7 @@
 #include <QStringList>
 #include <QVector>
 #include <QString>
+#include <QLabel>
 #include <QListWidget>
 #include <QLineEdit>
 #include <QPushButton>
@@ -42,6 +43,7 @@ class NewFilePage_2 : public QWidget
     Q_OBJECT
             
     private:
+        QLabel* titlePtr;
         QStringList* msgCatagoryStrLstPtr;
         QVector<QStringList*> specificMsgStrLstVec;
         QStringList* typesEnteredStrLstPtr;

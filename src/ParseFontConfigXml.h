@@ -39,7 +39,7 @@ class ParseFontConfigXml
         ParseFontConfigXml();
         
         /**
-         * Loads the resouce XML file containing font configurations for the
+         * Loads the resource XML file containing font configurations for the
          * IDE.
          */
         void loadFile(/*QFile* xmlFile*/);
@@ -51,6 +51,7 @@ class ParseFontConfigXml
         
         /**
          * Parses the XML data from the IDEs font configurations file.
+         * TODO: implement!
          */
         void parseDoc();
         

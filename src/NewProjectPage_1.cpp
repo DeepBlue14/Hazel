@@ -3,6 +3,8 @@
 
 NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Select a ROS distribution</b>");
+    
     rosVersionStrPtr = new QString("null");
     
     rosVersionsStrLstPtr = new QVector<QListWidgetItem*>();
@@ -23,6 +25,7 @@ NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
     rosVersionsLwPtr->item(3)->setSelected(true);
     
     outerLayoutPtr = new QGridLayout();
+    outerLayoutPtr->addWidget(titlePtr, 0, 0, Qt::AlignHCenter);
     outerLayoutPtr->addWidget(rosVersionsLwPtr);
     
     this->setLayout(outerLayoutPtr);

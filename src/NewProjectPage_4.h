@@ -14,6 +14,7 @@
 #include <QListWidget>
 #include <QStringList>
 #include <QString>
+#include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QGridLayout>
@@ -38,6 +39,7 @@ class NewProjectPage_4 : public QWidget
     Q_OBJECT
            
     private:
+        QLabel* titlePtr;
         QStringList* dependsEnteredStrList;
         QLineEdit* dependsLePtr;
         QPushButton* addToListBtnPtr;

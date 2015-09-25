@@ -3,6 +3,8 @@
 
 NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Select subscriber type(s)</b>");
+    
     msgCatagoryStrPtr = new QString("");
     specificMsgStrPtr = new QString("");
     

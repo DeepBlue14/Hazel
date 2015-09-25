@@ -87,6 +87,7 @@
           <itemPath>src/MakeBridge.h</itemPath>
           <itemPath>src/ParseCMake.h</itemPath>
           <itemPath>src/ParseMake.h</itemPath>
+          <itemPath>src/ReconfigCentralWid.h</itemPath>
           <itemPath>src/ReconfigGui.h</itemPath>
           <itemPath>src/ReconfigPage_1.h</itemPath>
           <itemPath>src/ReconfigPage_2.h</itemPath>
@@ -112,6 +113,10 @@
           <itemPath>src/SearchType.h</itemPath>
           <itemPath>src/SearchWidget.h</itemPath>
         </logicalFolder>
+        <logicalFolder name="f14" displayName="XmlLib" projectFiles="true">
+          <itemPath>src/ParseFontConfigXml.h</itemPath>
+          <itemPath>src/XmlMaster.h</itemPath>
+        </logicalFolder>
         <itemPath>src/Build.h</itemPath>
         <itemPath>src/CentralGui.h</itemPath>
         <itemPath>src/DebugGui.h</itemPath>
@@ -124,7 +129,6 @@
         <itemPath>src/OpeningGui.h</itemPath>
         <itemPath>src/OutputGui.h</itemPath>
         <itemPath>src/PageModAbc.h</itemPath>
-        <itemPath>src/ParseFontConfigXml.h</itemPath>
         <itemPath>src/PhysicalAttribLog.h</itemPath>
         <itemPath>src/QXTerm.h</itemPath>
         <itemPath>src/RFile.h</itemPath>
@@ -140,7 +144,6 @@
         <itemPath>src/Timer.h</itemPath>
         <itemPath>src/UnixConsoleText.h</itemPath>
         <itemPath>src/WindowsConsoleText.h</itemPath>
-        <itemPath>src/XmlMaster.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -259,6 +262,7 @@
           <itemPath>src/MakeBridge.cpp</itemPath>
           <itemPath>src/ParseCMake.cpp</itemPath>
           <itemPath>src/ParseMake.cpp</itemPath>
+          <itemPath>src/ReconfigCentralWid.cpp</itemPath>
           <itemPath>src/ReconfigGui.cpp</itemPath>
           <itemPath>src/ReconfigPage_1.cpp</itemPath>
           <itemPath>src/ReconfigPage_2.cpp</itemPath>
@@ -284,6 +288,10 @@
           <itemPath>src/SearchType.cpp</itemPath>
           <itemPath>src/SearchWidget.cpp</itemPath>
         </logicalFolder>
+        <logicalFolder name="f14" displayName="XmlLib" projectFiles="true">
+          <itemPath>src/ParseFontConfigXml.cpp</itemPath>
+          <itemPath>src/XmlMaster.cpp</itemPath>
+        </logicalFolder>
         <itemPath>src/Build.cpp</itemPath>
         <itemPath>src/CentralGui.cpp</itemPath>
         <itemPath>src/DebugGui.cpp</itemPath>
@@ -296,7 +304,6 @@
         <itemPath>src/OpeningGui.cpp</itemPath>
         <itemPath>src/OutputGui.cpp</itemPath>
         <itemPath>src/PageModAbc.cpp</itemPath>
-        <itemPath>src/ParseFontConfigXml.cpp</itemPath>
         <itemPath>src/PhysicalAttribLog.cpp</itemPath>
         <itemPath>src/QXTerm.cpp</itemPath>
         <itemPath>src/RFile.cpp</itemPath>
@@ -313,7 +320,6 @@
         <itemPath>src/UnitTests.cpp</itemPath>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
         <itemPath>src/WindowsConsoleText.cpp</itemPath>
-        <itemPath>src/XmlMaster.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -688,6 +694,10 @@
       <item path="src/RTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RTerm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigCentralWid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigCentralWid.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ReconfigGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1172,6 +1182,10 @@
       <item path="src/RTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RTerm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ReconfigCentralWid.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ReconfigCentralWid.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ReconfigGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

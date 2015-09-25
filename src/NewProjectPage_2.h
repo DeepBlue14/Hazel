@@ -13,6 +13,7 @@
 #include <QWidget>
 #include <QStringList>
 #include <QString>
+#include <QLabel>
 #include <QLineEdit>
 #include <QFileDialog>
 #include <QPushButton>
@@ -40,6 +41,7 @@ class NewProjectPage_2 : public QWidget
     Q_OBJECT
            
     private:
+        QLabel* titlePtr;
         QLineEdit* projectNameLePtr;
         QLineEdit* projectLocLePtr;
         QFileDialog* dirDialogPtr;

@@ -9,7 +9,7 @@ ParseFontConfigXml::ParseFontConfigXml()
 
 void ParseFontConfigXml::loadFile(/*QFile* xmlFile*/)
 {
-    filePtr = new QFile("/home/james/NetBeansProjects/Hazel/config/SyntaxColors/NetBeans.xml");
+    filePtr = new QFile("/home/james/NetBeansProjects/ride/res/rproject/options/pretty_print/Classic.xml");
     xmlDomDocPtr = new QDomDocument();
     
     if(!filePtr->open(QIODevice::ReadOnly) )
@@ -30,29 +30,29 @@ void ParseFontConfigXml::readDoc()
     QDomElement root = xmlDomDocPtr->documentElement();
     
     //get root names and attributes
-    QString type = root.tagName();
-    cout << "<" << type.toStdString() << ">" << endl;
+    QString rootOpTag = root.tagName();
+    cout << "<" << rootOpTag.toStdString() << ">" << endl;
     
-    QDomElement component = root.firstChild().toElement();
-    cout << "  <" << component.tagName().toStdString() << ">" << endl;
+    QDomElement element = root.firstChild().toElement();
+    //cout << "  <" << element.tagName().toStdString() << ">" << endl;
 
-    component = component.firstChild().toElement();
+    //element = element.firstChild().toElement();
     
-    while(!component.isNull() )
+    while(!element.isNull() )
     {
-        QString foreground = component.attribute("Foreground", "no value");
-        QString background = component.attribute("Background", "no value");
-        QString effects = component.attribute("Effects", "no value");
-        QString effect_color = component.attribute("Effect_Color", "no value");
-    
-        cout << "     <" << component.tagName().toStdString()
-             << " Foreground=\"" << foreground.toStdString() << "\""
-             << " Background=\"" << background.toStdString() << "\""
-             << " Effects=\"" << effects.toStdString() << "\""
-             << " \"Effect_Color=\"" << effect_color.toStdString() << "\""
-             << "/>" << endl;
+        while(element.hasChildNodes() )
+        {
+            QDomNodeList childNodes = element.childNodes();
+            for(size_t i = 0; i < childNodes.size(); i++)
+            {
+                //childNodes.at(i).attributes()
+            }
+            
+            
+        }
+
         
-        component = component.nextSibling().toElement();
+        element = element.nextSibling().toElement();
     }
 
     

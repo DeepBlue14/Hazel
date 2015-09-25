@@ -12,6 +12,7 @@
 
 #include <QWidget>
 #include <QString>
+#include <QLabel>
 #include <QLineEdit>
 #include <QComboBox>
 #include <QCheckBox>
@@ -40,6 +41,7 @@ class NewFilePage_4 : public QWidget
     Q_OBJECT
             
     private:
+        QLabel* titlePtr;
         QLineEdit* fileNameLePtr;
         QStringList* fileExtsStrLstPtr;
         QComboBox* fileExtCbPtr;

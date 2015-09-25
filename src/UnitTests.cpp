@@ -30,6 +30,7 @@
 #include "PkgManagerGui.h"
 #include "ReconfigGui.h"
 #include "FetchWebSource.h"
+#include "ParseFontConfigXml.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -55,7 +56,7 @@ int main(int argc, char *argv[])
          << "\n\t 1) Regular run"
          << "\n\t 2) Test RProcess"
          << "\n\t 3) Test QProcess"
-         << "\n\t 4) Font XML file parsing"
+         << "\n\t 4) Font XML file parsing (font config file)"
          << "\n\t 5) MsgParser"
          << "\n\t 6) Web Extraction"
          << "\n\t 7) Help GUI"
@@ -63,6 +64,7 @@ int main(int argc, char *argv[])
          << "\n\t 9) Options"
          << "\n\t10) Ros Reconfigure"
          << "\n\t11) software center"
+         << "\n\t12) parse package.xml file"
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
@@ -78,8 +80,9 @@ int main(int argc, char *argv[])
     QString tmpDir("/opt/ros/indigo/share/sensor_msgs");
     RTerm rterm;
     OptionGui optionGui;
-    ReconfigGui reconfigGui;
+    ReconfigCentralWid reconfigGui;
     PkgManagerGui pkgManagerGui;
+    
     
     switch(choiceInt)
     {
@@ -131,6 +134,9 @@ int main(int argc, char *argv[])
         case 11:
             pkgManagerGui.show();
             return app.exec();
+        case 12:
+            cout << "Sorry, this option has not yet been implemented" << endl;
+            break;
         default:
             masterGui.show();
             return app.exec();

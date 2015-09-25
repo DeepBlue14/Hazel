@@ -12,6 +12,7 @@
 
 #include <QWidget>
 #include <QString>
+#include <QLabel>
 #include <QStringList>
 #include <QListWidget>
 #include <QGridLayout>
@@ -36,6 +37,7 @@ class NewProjectPage_1 : public QWidget
     Q_OBJECT
             
     private:
+        QLabel* titlePtr;
         QVector<QListWidgetItem*>* rosVersionsStrLstPtr;
         QListWidget* rosVersionsLwPtr;
         

@@ -3,6 +3,8 @@
 
 NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Select file type</b>");
+    
     langStrPtr = new QString("null");
     fileTypeStrPtr = new QString("null");
     
@@ -74,8 +76,9 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     fileTypeLwPtr->addItems(*(fileTypeStrLstPtrVec.at(0)) ); // default
     
     outerLayoutPtr = new QGridLayout();
-    outerLayoutPtr->addWidget(langsLwPtr, 0, 0);
-    outerLayoutPtr->addWidget(fileTypeLwPtr, 0, 1);
+    outerLayoutPtr->addWidget(titlePtr, 0, 0, 1, 2, Qt::AlignHCenter);
+    outerLayoutPtr->addWidget(langsLwPtr, 1, 0);
+    outerLayoutPtr->addWidget(fileTypeLwPtr, 1, 1);
 
     this->setLayout(outerLayoutPtr);
 }

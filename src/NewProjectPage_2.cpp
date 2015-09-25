@@ -3,6 +3,8 @@
 
 NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Select for package generation</b>");
+    
     projectNameStrPtr = new QString("null");
     projectLocStrPtr = new QString("null");
     projectTypeStrPtr = new QString("null");
@@ -19,6 +21,7 @@ NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
     locationLayout->addWidget(locPbPtr, 0, 1);
     
     formLayout = new QFormLayout(this);
+    formLayout->addWidget(titlePtr);
     formLayout->addRow(tr("&Package Name"), projectNameLePtr);
     formLayout->addRow(tr("Package Location"), locationLayout);
     

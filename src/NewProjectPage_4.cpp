@@ -3,6 +3,8 @@
 
 NewProjectPage_4::NewProjectPage_4(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Select ROS dependencies</b>");
+    
     dependsEnteredStrList = new QStringList();
     dependsLePtr = new QLineEdit();
     addToListBtnPtr = new QPushButton("->", this);
@@ -13,10 +15,11 @@ NewProjectPage_4::NewProjectPage_4(QWidget* parent) : QWidget(parent)
     rmFromListBtnPtr->setIconSize(QSize(50, 50));
     
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(dependsLePtr, 0, 0);
-    outerLayout->addWidget(addToListBtnPtr, 0, 1);
-    outerLayout->addWidget(dependsEnteredTypeLw, 0, 2);
-    outerLayout->addWidget(rmFromListBtnPtr, 1, 2);
+    outerLayout->addWidget(titlePtr, 0, 0, Qt::AlignHCenter);
+    outerLayout->addWidget(dependsLePtr, 1, 0);
+    outerLayout->addWidget(addToListBtnPtr, 1, 1);
+    outerLayout->addWidget(dependsEnteredTypeLw, 1, 2);
+    outerLayout->addWidget(rmFromListBtnPtr, 2, 2);
     
     connect(addToListBtnPtr, SIGNAL(released() ), this, SLOT(handleAddToListBtnPtrSlot() ) );
     connect(rmFromListBtnPtr, SIGNAL(released() ), this, SLOT(handleRmFromListBtnPtrSlot() ) );

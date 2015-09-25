@@ -12,6 +12,7 @@
 
 #include <QWidget>
 #include <QString>
+#include <QLabel>
 #include <QStringList>
 #include <QStringListModel>
 #include <QVector>
@@ -39,6 +40,7 @@ class NewFilePage_1 : public QWidget
     Q_OBJECT
             
     private:
+        QLabel* titlePtr;
         //QStringList* langsStrLstPtr;
         QVector<QListWidgetItem*>* langsStrLstPtr;
         QVector<QStringList*> fileTypeStrLstPtrVec;

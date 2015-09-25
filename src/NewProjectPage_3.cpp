@@ -3,6 +3,8 @@
 
 NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
 {
+    titlePtr = new QLabel("<b>Enter data for custom package.xml file</b>");
+    
     authorNameStrPtr = new QString("null");
     authorEmailStrPtr = new QString("null");
     licenseStrPtr = new QString("null");
@@ -28,7 +30,8 @@ NewProjectPage_3::NewProjectPage_3(QWidget* parent) : QWidget(parent)
     formLayout->addRow("", licenseLePtr);
     
     outerLayout = new QGridLayout();
-    outerLayout->addLayout(formLayout, 0, 0, Qt::AlignCenter);
+    outerLayout->addWidget(titlePtr, 0, 0, Qt::AlignHCenter);
+    outerLayout->addLayout(formLayout, 1, 0, Qt::AlignCenter);
     
     this->setLayout(outerLayout);
 }
