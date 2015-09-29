@@ -70,8 +70,9 @@ private:
         PAGE_FOUR,
         PAGE_FIVE
     };
-    
     Page currentPage;
+    
+
     
     QPushButton* backBtn;
     QPushButton* nextBtn;

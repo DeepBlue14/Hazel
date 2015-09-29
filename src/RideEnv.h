@@ -38,7 +38,7 @@ using namespace std;
 
 class RideEnv
 { 
-    private:
+    private:   
         /**
          * Absolute path to the ROS catkin workspace being used.
          */
@@ -55,6 +55,38 @@ class RideEnv
         QStringList* rideProjDirAbsPathStrLstPtr;
     
     public:
+        enum Lang
+        {
+            C,
+            CPP,
+            PYTHON,
+            JAVA,
+            LISP,
+            SHELL,
+            OTHER
+        };
+        
+        enum FileType
+        {
+            HEADER,
+            SOURCE,
+            DYN_CONFIG,
+            PACKAGE,
+            CMAKELISTS,
+            BASH_SHELL,
+            BOURNE_SHELL,
+            C_SHELL,
+            KORN_SHELL,
+            Z_SHELL,
+            XML,
+            JSON,
+            DB,
+            YAML,
+            CSS,
+            TEXT,
+            EMPTY
+        };
+        
         /**
          * Constructor.
          */

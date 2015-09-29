@@ -22,6 +22,7 @@
 
 #include <iostream>
 
+#include "RideEnv.h"
 #include "FileGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
@@ -39,40 +40,10 @@ using namespace std;
 class RFile : public QFile
 {
     private:
-        enum FileLang
-        {
-            C,
-            CPP,
-            PYTHON,
-            JAVA,
-            LISP,
-            SHELL,
-            OTHER
-        };
-        
-        enum FileType
-        {
-            HEADER,
-            SOURCE,
-            DYN_CONFIG,
-            PACKAGE,
-            CMAKELISTS,
-            BASH_SHELL,
-            BOURNE_SHELL,
-            C_SHELL,
-            KORN_SHELL,
-            Z_SHELL,
-            XML,
-            JSON,
-            DB,
-            YAML,
-            CSS,
-            TEXT,
-            EMPTY
-        };
-        
-        FileLang* fileLangPtr;
-        FileType* fileTypePtr;
+        RideEnv::Lang* fileLangPtr;
+        //FileLang* fileLangPtr;
+        RideEnv::FileType* fileTypePtr;
+        //FileType* fileTypePtr;
         QString* fileNameStrPtr;
         QString* fileExtStrPtr;
         QString* absFilePathStrPtr;
@@ -102,26 +73,26 @@ class RFile : public QFile
          * 
          * @param fileLangPtr the selected language.
          */
-        void setFileLangPtr(FileLang* fileLangPtr);
+        void setFileLangPtr(RideEnv::Lang* fileLangPtr);
         
         /**
          * Accessor for a pointer to the file.
          * 
          * @return pointer to the file.
          */
-        FileLang* getFileLangPtr();
+        RideEnv::Lang* getFileLangPtr();
         
         /**
          * Mutator for the file type variable.
          */
-        void setFileTypePtr(FileType* fileTypePtr);
+        void setFileTypePtr(RideEnv::FileType* fileTypePtr);
         
         /**
          * Accessor of the file type.
          * 
          * @return file type.
          */
-        FileType* getFileTypePtr();
+        RideEnv::FileType* getFileTypePtr();
         
         /**
          * Mutator for the file name.m

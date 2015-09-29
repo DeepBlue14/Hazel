@@ -6,7 +6,9 @@ ride
      |
      langs  styles  themes  configurations.java
          |
-         cpp.xml    java.xml    ...
+         cpp                    java
+           |                       |
+           cpp.xml  templates      java.xml  templates
          
   
 ------------------------------------------

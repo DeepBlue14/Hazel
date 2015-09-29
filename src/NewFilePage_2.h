@@ -19,6 +19,7 @@
 
 #include <iostream>
 
+#include "RideEnv.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -63,6 +64,20 @@ class NewFilePage_2 : public QWidget
          * 
          */
         void triggerMutators();
+        
+        /**
+         * Loads the template list for the language selected by the user
+         * on the previous UI fragment into the UI.
+         */
+        void pushLangTemplatesToUi(RideEnv::Lang lang, RideEnv::FileType fileType); // !!!???should this be a slot!!!???
+        
+        void pushCTemplatesToUi(RideEnv::FileType fileType);
+        void pushCppTemplatesToUi(RideEnv::FileType fileType);
+        void pushPythonTemplatesToUi(RideEnv::FileType fileType);
+        void pushJavaTemplatesToUi(RideEnv::FileType fileType);
+        void pushLispTemplatesToUi(RideEnv::FileType fileType);
+        void pushShellTemplatesToUi(RideEnv::FileType fileType);
+        void pushOtherTemplatesToUi(RideEnv::FileType fileType);
         
         /**
          * 

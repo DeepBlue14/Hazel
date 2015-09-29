@@ -13,25 +13,25 @@ RFile::RFile(QString name)
 }
 
 
-void RFile::setFileLangPtr(FileLang* fileLangPtr)
+void RFile::setFileLangPtr(RideEnv::Lang* fileLangPtr)
 {
     this->fileLangPtr = fileLangPtr;
 }
 
 
-RFile::FileLang* RFile::getFileLangPtr()
+RideEnv::Lang* RFile::getFileLangPtr()
 {
     return fileLangPtr;
 }
 
 
-void RFile::setFileTypePtr(FileType* fileTypePtr)
+void RFile::setFileTypePtr(RideEnv::FileType* fileTypePtr)
 {
     this->fileTypePtr = fileTypePtr;
 }
 
 
-RFile::FileType* RFile::getFileTypePtr()
+RideEnv::FileType* RFile::getFileTypePtr()
 {
     return fileTypePtr;
 }
