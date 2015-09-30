@@ -1,6 +1,6 @@
 ####**Naming Conventions**
 
-Alternatively, you may append the whole name off the type to the variable.  For other types not mentioned here, use a similar process as shown below (i.e. append a 3-4 character abbreviation to the end of the variable name) or use the aforementioned method. 
+Alternatively, you may append the whole name off the type to the variable.  For other types not mentioned here, use a similar process as shown below (i.e. append a 2-4 character abbreviation to the end of the variable name) or use the aforementioned method. 
 
 |  Data Type           | Convention | Library |
 |:--------------------:|:----------:|:-------:|

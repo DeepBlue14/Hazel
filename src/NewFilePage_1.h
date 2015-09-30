@@ -43,7 +43,14 @@ class NewFilePage_1 : public QWidget
         QLabel* titlePtr;
         //QStringList* langsStrLstPtr;
         QVector<QListWidgetItem*>* langsStrLstPtr;
-        QVector<QStringList*> fileTypeStrLstPtrVec;
+        QVector<QListWidgetItem*>* cFileOptLstWidPtrVecPtr;
+        QVector<QListWidgetItem*>* cppFileOptLstWidPtrVecPtr;
+        QVector<QListWidgetItem*>* pythonFileOptLstWidPtrVecPtr;
+        QVector<QListWidgetItem*>* javaFileOptLstWidPtrVecPtr;
+        QVector<QListWidgetItem*>* lispFileOptLstWidPtrVecPtr;
+        QVector<QListWidgetItem*>* shellFileOptLstWidPtrVecPtr;
+        QVector<QListWidgetItem*>* otherFileOptLstWidPtrVecPtr;
+        QVector<QVector<QListWidgetItem*>*>* fileTypeStrLstPtrVec;
         QListWidget* langsLwPtr;
         QListWidget* fileTypeLwPtr;
         

@@ -51,11 +51,12 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     customMsgsGuiPtr = new CustomMsgsGui();
     
     outerLayoutPtr = new QGridLayout();
-    outerLayoutPtr->addWidget(msgCatagoryLwPtr, 0, 0);
-    outerLayoutPtr->addWidget(custBtnPtr, 1, 0);
-    outerLayoutPtr->addWidget(specificMsgLwPtr, 0, 1);
-    outerLayoutPtr->addWidget(addedLwPtr, 0, 2);
-    outerLayoutPtr->addLayout(btnLayout, 1, 2);
+    outerLayoutPtr->addWidget(titlePtr, 0, 0, 1, 3, Qt::AlignHCenter);
+    outerLayoutPtr->addWidget(msgCatagoryLwPtr, 1, 0);
+    outerLayoutPtr->addWidget(custBtnPtr, 2, 0);
+    outerLayoutPtr->addWidget(specificMsgLwPtr, 1, 1);
+    outerLayoutPtr->addWidget(addedLwPtr, 1, 2);
+    outerLayoutPtr->addLayout(btnLayout, 2, 2);
     
     connect(custBtnPtr, SIGNAL(released() ), this, SLOT(handleCustBtnPtrSlot() ) );
     connect(addBtnPtr, SIGNAL(released() ), this, SLOT(handleAddBtnPtrSlot() ) );
@@ -122,6 +123,19 @@ void NewFilePage_3::handleRemoveBtnPtrSlot()
     }
     
     delete tmp;
+}
+
+
+void NewFilePage_3::setTitlePtrText(QString* titlePtr)
+{
+    //!!!remove old text!!!
+    titlePtr->append(titlePtr);
+}
+
+
+QString* NewFilePage_3::getTitlePtrText()
+{
+    return new QString(titlePtr->text() );
 }
 
 

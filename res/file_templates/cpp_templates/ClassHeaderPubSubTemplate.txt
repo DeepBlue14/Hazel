@@ -1,0 +1,30 @@
+/*
+ * File:   <FILE_NAME>.h
+ * Author: <AUTHOR>
+ * Email: <EMAIL>
+ * File Description: 
+ *
+ *
+ * Last Modified: <DATE>
+ */
+
+
+
+#ifndef <FILENAME_CAPS>_H
+#define <FILENAME_CAPS>_H
+
+#include <ros/ros.h>
+
+class <FILE_NAME>
+{
+    private:
+        Publisher* pub;
+
+    public:
+	<FILENAME>();
+	void callback(<PARAM>);
+	<FILENAME>();
+
+};
+
+#endif /* <FILENAME_CAPS>_H */

@@ -94,6 +94,20 @@ class NewFilePage_3 : public QWidget
         
         /**
          * 
+         * 
+         * @param titlePtr
+         */
+        void setTitlePtrText(QString* titlePtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
+        QString* getTitlePtrText();
+        
+        /**
+         * 
          */
         void setMsgCatagoryStrPtr();
         

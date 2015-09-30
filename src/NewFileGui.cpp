@@ -11,7 +11,9 @@ NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* northTabWidgetPtr*/) : QWi
     newFilePage_1Ptr = new NewFilePage_1();
     newFilePage_2Ptr = new NewFilePage_2();
     newFilePage_3Ptr = new NewFilePage_3();
+    newFilePage_3Ptr->setTitlePtrText(new QString("<b>Select subscriber type(s)</b>") );
     newFilePage_4Ptr = new NewFilePage_3();
+    newFilePage_4Ptr->setTitlePtrText(new QString("<b>Select publisher type(s)</b>") );
     newFilePage_5Ptr = new NewFilePage_4();
     
     currentPage = PAGE_ONE;

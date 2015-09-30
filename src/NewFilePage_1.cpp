@@ -17,43 +17,74 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/shellFile.png"), "Shell Script") );
     langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/file.png"), "Other") );
     
-    QStringList* cStrLstPtr = new QStringList();
-    cStrLstPtr->push_back("Header file");
-    cStrLstPtr->push_back("Source file");
     
-    QStringList* cppStrLstPtr = new QStringList();
-    cppStrLstPtr->push_back("Header");
-    cppStrLstPtr->push_back("Source");
     
-    QStringList* pythonStrLstPtr = new QStringList();
-    pythonStrLstPtr->push_back("Source");
-    pythonStrLstPtr->push_back("Dynamic Reconfiguration");
+    cFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
+    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                                 "Header file") );
+    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                                 "Source file") );
+
+    cppFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
+    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Header file") );
+    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Source file") );
     
-    QStringList* javaStrLstPtr = new QStringList();
-    javaStrLstPtr->push_back("Class");
-    javaStrLstPtr->push_back("Interface");
+    pythonFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
+    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Header file") );
+    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Dynamic Reconfiguration") );
     
-    QStringList* lispStrLstPtr = new QStringList();
-    lispStrLstPtr->push_back("Source");
+    javaFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
+    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Class file") );
+    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Interface file") );
     
-    QStringList* shellScriptsStrLstPtr = new QStringList();
-    shellScriptsStrLstPtr->push_back("Bash");
-    shellScriptsStrLstPtr->push_back("Bourne");
-    shellScriptsStrLstPtr->push_back("C Shell");
+    lispFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
+    lispFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Source file") );
     
-    QStringList* otherStrLstPtr = new QStringList();
-    otherStrLstPtr->push_back("msg");
-    otherStrLstPtr->push_back("srv");
-    otherStrLstPtr->push_back("css");
-    otherStrLstPtr->push_back("xml");
-    otherStrLstPtr->push_back("json");
-    otherStrLstPtr->push_back("yaml");
-    otherStrLstPtr->push_back("sql");
-    otherStrLstPtr->push_back("CMakeLists");
-    otherStrLstPtr->push_back("package");
-    otherStrLstPtr->push_back("Markdown");
-    otherStrLstPtr->push_back("Text");
-    otherStrLstPtr->push_back("Empty");
+    shellFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "BASH file") );
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Bourne file") );
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "C Shell file") );
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Korn file") );
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Z Shell file") );
+    
+    otherFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "msg file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "srv file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "css file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "xml file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "json file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "yaml file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "sql file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "CMakeLists file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "package file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "Markdown file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "text file") );
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                             "empty file") );
+   
     
     langsLwPtr = new QListWidget();
     //langsLwPtr->addItems(*langsStrLstPtr);
@@ -64,17 +95,24 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     //langsLwPtr->item(0)->setSelected(true);
     connect(langsLwPtr, SIGNAL(itemSelectionChanged()), this, SLOT(handleSwapOptionsSlot()));
     
-    fileTypeStrLstPtrVec.push_back(cStrLstPtr);
-    fileTypeStrLstPtrVec.push_back(cppStrLstPtr);
-    fileTypeStrLstPtrVec.push_back(pythonStrLstPtr);
-    fileTypeStrLstPtrVec.push_back(javaStrLstPtr);
-    fileTypeStrLstPtrVec.push_back(lispStrLstPtr);
-    fileTypeStrLstPtrVec.push_back(shellScriptsStrLstPtr);
-    fileTypeStrLstPtrVec.push_back(otherStrLstPtr);
+    fileTypeStrLstPtrVec = new QVector<QVector<QListWidgetItem*>*>();
+    fileTypeStrLstPtrVec->push_back(cFileOptLstWidPtrVecPtr);
+    fileTypeStrLstPtrVec->push_back(cppFileOptLstWidPtrVecPtr);
+    fileTypeStrLstPtrVec->push_back(pythonFileOptLstWidPtrVecPtr);
+    fileTypeStrLstPtrVec->push_back(javaFileOptLstWidPtrVecPtr);
+    fileTypeStrLstPtrVec->push_back(lispFileOptLstWidPtrVecPtr);
+    fileTypeStrLstPtrVec->push_back(shellFileOptLstWidPtrVecPtr);
+    fileTypeStrLstPtrVec->push_back(otherFileOptLstWidPtrVecPtr);
     
     fileTypeLwPtr = new QListWidget();
-    fileTypeLwPtr->addItems(*(fileTypeStrLstPtrVec.at(0)) ); // default
+    //fileTypeLwPtr->addItems(*(fileTypeStrLstPtrVec.at(0)) ); // default
     
+    for(size_t i = 0; i < fileTypeStrLstPtrVec->at(0)->size(); i++)
+    {
+        fileTypeLwPtr->addItem(new QListWidgetItem(*fileTypeStrLstPtrVec->at(0)->at(i)) ); // default
+    }
+    
+
     outerLayoutPtr = new QGridLayout();
     outerLayoutPtr->addWidget(titlePtr, 0, 0, 1, 2, Qt::AlignHCenter);
     outerLayoutPtr->addWidget(langsLwPtr, 1, 0);
@@ -86,8 +124,12 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
 
 void NewFilePage_1::handleSwapOptionsSlot()
 {
-    fileTypeLwPtr->clear();
-    fileTypeLwPtr->addItems(*(fileTypeStrLstPtrVec.at(langsLwPtr->currentRow()) ) );
+    fileTypeLwPtr->clear(); // Remove old items (actually, it deletes them totally--not just form the UI)
+    
+    for(size_t i = 0; i < fileTypeStrLstPtrVec->at(langsLwPtr->currentRow())->size(); i++)
+    {
+        fileTypeLwPtr->addItem(new QListWidgetItem(*fileTypeStrLstPtrVec->at(langsLwPtr->currentRow())->at(i)) );
+    }
 }
 
 
