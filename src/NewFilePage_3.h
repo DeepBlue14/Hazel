@@ -16,6 +16,7 @@
 #include <QString>
 #include <QLabel>
 #include <QListWidget>
+#include <QListWidgetItem>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QHBoxLayout>
@@ -44,9 +45,9 @@ class NewFilePage_3 : public QWidget
             
     private:
         QLabel* titlePtr;
-        QStringList* msgCatagoryStrLstPtr;
-        QVector<QStringList*> specificMsgStrLstVec;
-        QStringList* typesEnteredStrLstPtr;
+        QVector<QListWidgetItem*>* msgCatagoryStrLstPtr;
+        QVector<QVector<QListWidgetItem*>*>* specificMsgStrLstVec;
+        QVector<QListWidgetItem*>* typesEnteredStrLstPtr;
         QListWidget* msgCatagoryLwPtr;
         QListWidget* specificMsgLwPtr;
         QListWidget* addedLwPtr;
@@ -97,7 +98,7 @@ class NewFilePage_3 : public QWidget
          * 
          * @param titlePtr
          */
-        void setTitlePtrText(QString* titlePtr);
+        void setTitlePtrText(QString* titleText);
         
         /**
          * 

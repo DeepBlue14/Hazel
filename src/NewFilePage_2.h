@@ -39,13 +39,13 @@ class NewFilePage_2 : public QWidget
             
     private:
         QLabel* titlePtr;
-        QStringList* cHeaderTemplateStrLst;
-        QStringList* cSourceTemplateStrLst;
-        QStringList* cppHeaderTemplateStrLst;
-        QStringList* cppSourceTemplateStrLst;
-        QStringList* pySourceTemplateStrLst;
-        QStringList* jSourceTemplateStrLst;
-        QStringList* lispSourceTemplateStdrLst;
+        QVector<QListWidgetItem*>* cHeaderTemplateStrLst;
+        QVector<QListWidgetItem*>* cSourceTemplateStrLst;
+        QVector<QListWidgetItem*>* cppHeaderTemplateStrLst;
+        QVector<QListWidgetItem*>* cppSourceTemplateStrLst;
+        QVector<QListWidgetItem*>* pySourceTemplateStrLst;
+        QVector<QListWidgetItem*>* jSourceTemplateStrLst;
+        QVector<QListWidgetItem*>* lispSourceTemplateStdrLst;
         
         QListWidget* templatesLstWidPtr;
         QGridLayout* outerLayout;

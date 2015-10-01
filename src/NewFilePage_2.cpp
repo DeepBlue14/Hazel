@@ -6,22 +6,35 @@ NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
 {
     titlePtr = new QLabel("<b>Select template</b>");
     
-    cHeaderTemplateStrLst = new QStringList();
-    cHeaderTemplateStrLst->push_back("No template"); // !!!Do this in "load from xml" method!!!
-    cHeaderTemplateStrLst->push_back("Main template");
-    cHeaderTemplateStrLst->push_back("No template");
-    cHeaderTemplateStrLst->push_back("No template");
-    cHeaderTemplateStrLst->push_back("No template");
+    cHeaderTemplateStrLst = new QVector<QListWidgetItem*>();
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                         "No template") ); // !!!Do this in "load from xml" method!!!
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                         "No template") ); // !!!Do this in "load from xml" method!!!
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                         "No template") ); // !!!Do this in "load from xml" method!!!
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                         "No template") ); // !!!Do this in "load from xml" method!!!
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                         "No template") ); // !!!Do this in "load from xml" method!!!
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                         "No template") ); // !!!Do this in "load from xml" method!!!
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                         "No template") ); // !!!Do this in "load from xml" method!!!
 
-    cSourceTemplateStrLst = new QStringList();
-    cppHeaderTemplateStrLst = new QStringList();
-    cppSourceTemplateStrLst = new QStringList();
-    pySourceTemplateStrLst = new QStringList();
-    jSourceTemplateStrLst = new QStringList();
-    lispSourceTemplateStdrLst = new QStringList();
+    cSourceTemplateStrLst = new QVector<QListWidgetItem*>();
+    cppHeaderTemplateStrLst = new QVector<QListWidgetItem*>();
+    cppSourceTemplateStrLst = new QVector<QListWidgetItem*>();
+    pySourceTemplateStrLst = new QVector<QListWidgetItem*>();
+    jSourceTemplateStrLst = new QVector<QListWidgetItem*>();
+    lispSourceTemplateStdrLst = new QVector<QListWidgetItem*>();
     
     templatesLstWidPtr = new QListWidget();
-    templatesLstWidPtr->addItems(*cHeaderTemplateStrLst); //!!!delete!!!
+    for(size_t i = 0; i < cHeaderTemplateStrLst->size(); i++)
+    {
+        templatesLstWidPtr->addItem(new QListWidgetItem(*cHeaderTemplateStrLst->at(i)) ); //Copy; else they will be perminenty deleted
+    }
+    
     
     outerLayout = new QGridLayout();
     outerLayout->addWidget(titlePtr, 0, 0, Qt::AlignHCenter);
@@ -73,13 +86,21 @@ void NewFilePage_2::pushLangTemplatesToUi(RideEnv::Lang lang, RideEnv::FileType 
 
 void NewFilePage_2::pushCTemplatesToUi(RideEnv::FileType fileType)
 {
+    templatesLstWidPtr->clear();
+    
     switch(fileType)
     {
         case RideEnv::HEADER:
-            templatesLstWidPtr->addItems(*cHeaderTemplateStrLst);
+            for(size_t i = 0; i < cHeaderTemplateStrLst->size(); i++)
+            {
+                templatesLstWidPtr->addItem(new QListWidgetItem(*cHeaderTemplateStrLst->at(i)) );
+            }
             break;
         case RideEnv::SOURCE:
-            templatesLstWidPtr->addItems(*cSourceTemplateStrLst);
+            for(size_t i = 0; i < cSourceTemplateStrLst->size(); i++)
+            {
+                templatesLstWidPtr->addItem(new QListWidgetItem(*cSourceTemplateStrLst->at(i)) );
+            }
             break;
         default:
             cerr << "ERROR @ NewFilePage_2::pushCTemplatesToUi(...)" << endl;
@@ -89,13 +110,21 @@ void NewFilePage_2::pushCTemplatesToUi(RideEnv::FileType fileType)
 
 void NewFilePage_2::pushCppTemplatesToUi(RideEnv::FileType fileType)
 {
+    templatesLstWidPtr->clear();
+    
     switch(fileType)
     {
         case RideEnv::HEADER:
-            templatesLstWidPtr->addItems(*cppHeaderTemplateStrLst);
+            for(size_t i = 0; i < cppHeaderTemplateStrLst->size(); i++)
+            {
+                templatesLstWidPtr->addItem(new QListWidgetItem(*cppHeaderTemplateStrLst->at(i)) );
+            }
             break;
         case RideEnv::SOURCE:
-            templatesLstWidPtr->addItems(*cppSourceTemplateStrLst);
+            for(size_t i = 0; i < cppSourceTemplateStrLst->size(); i++)
+            {
+                templatesLstWidPtr->addItem(new QListWidgetItem(*cppSourceTemplateStrLst->at(i)) );
+            }
             break;
         default:
             cerr << "ERROR @ pushCppTemplatesToUi(...)" << endl;
@@ -105,6 +134,8 @@ void NewFilePage_2::pushCppTemplatesToUi(RideEnv::FileType fileType)
 
 void NewFilePage_2::pushPythonTemplatesToUi(RideEnv::FileType fileType)
 {
+    templatesLstWidPtr->clear();
+    
     switch(fileType)
     {
         case RideEnv::SOURCE:
@@ -121,6 +152,8 @@ void NewFilePage_2::pushPythonTemplatesToUi(RideEnv::FileType fileType)
 
 void NewFilePage_2::pushJavaTemplatesToUi(RideEnv::FileType fileType)
 {
+    templatesLstWidPtr->clear();
+    
     switch(fileType)
     {
         case RideEnv::SOURCE:
@@ -134,6 +167,8 @@ void NewFilePage_2::pushJavaTemplatesToUi(RideEnv::FileType fileType)
 
 void NewFilePage_2::pushLispTemplatesToUi(RideEnv::FileType fileType)
 {
+    templatesLstWidPtr->clear();
+    
     switch(fileType)
     {
         case RideEnv::SOURCE:
@@ -147,6 +182,8 @@ void NewFilePage_2::pushLispTemplatesToUi(RideEnv::FileType fileType)
 
 void NewFilePage_2::pushShellTemplatesToUi(RideEnv::FileType fileType)
 {
+    templatesLstWidPtr->clear();
+    
     switch(fileType)
     {
         case RideEnv::BASH_SHELL:
@@ -172,6 +209,8 @@ void NewFilePage_2::pushShellTemplatesToUi(RideEnv::FileType fileType)
 
 void NewFilePage_2::pushOtherTemplatesToUi(RideEnv::FileType fileType)
 {
+    templatesLstWidPtr->clear();
+    
     switch(fileType)
     {
         case RideEnv::PACKAGE:

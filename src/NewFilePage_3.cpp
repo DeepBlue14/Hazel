@@ -3,41 +3,62 @@
 
 NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
 {
-    titlePtr = new QLabel("<b>Select subscriber type(s)</b>");
+    titlePtr = new QLabel();
     
     msgCatagoryStrPtr = new QString("");
     specificMsgStrPtr = new QString("");
     
-    msgCatagoryStrLstPtr = new QStringList();
-    msgCatagoryStrLstPtr->push_back("std_msgs");
-    msgCatagoryStrLstPtr->push_back("sensor_msgs");
-    msgCatagoryStrLstPtr->push_back("geometry_msgs");
+    msgCatagoryStrLstPtr = new QVector<QListWidgetItem*>();
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "std_msgs") );
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "sensor_msgs") );
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "geometry_msgs") );
 
-    typesEnteredStrLstPtr = new QStringList();
+    typesEnteredStrLstPtr = new QVector<QListWidgetItem*>();
     
-    QStringList* std_msgsStrLstPtr = new QStringList();
-    std_msgsStrLstPtr->push_back("char");
-    std_msgsStrLstPtr->push_back("std_string");
+    // !!!Load this stuff from an xml res file!!!
+    QVector<QListWidgetItem*>* std_msgsStrLstPtr = new QVector<QListWidgetItem*>();
+    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                     "Char") );
+    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                     "String") );
     
-    QStringList* sensor_msgsStrLstPtr = new QStringList();
-    sensor_msgsStrLstPtr->push_back("image");
-    sensor_msgsStrLstPtr->push_back("pointcloud");
-    sensor_msgsStrLstPtr->push_back("pointcloud2");
-    sensor_msgsStrLstPtr->push_back("imu");
+    QVector<QListWidgetItem*>* sensor_msgsStrLstPtr = new QVector<QListWidgetItem*>();
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "Image") );
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "PointCloud") );
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "PointCloud2") );
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "Imu") );
     
-    QStringList* geometry_msgsStrLstPtr = new QStringList();
-    geometry_msgsStrLstPtr->push_back("vector2");
-    geometry_msgsStrLstPtr->push_back("vector3");
+    QVector<QListWidgetItem*>* geometry_msgsStrLstPtr = new QVector<QListWidgetItem*>();
+    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "vector2") );
+    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                        "vector3") );
 
-    specificMsgStrLstVec.push_back(std_msgsStrLstPtr);
-    specificMsgStrLstVec.push_back(sensor_msgsStrLstPtr);
-    specificMsgStrLstVec.push_back(geometry_msgsStrLstPtr);
+    specificMsgStrLstVec = new QVector<QVector<QListWidgetItem*>*>();
+    specificMsgStrLstVec->push_back(std_msgsStrLstPtr);
+    specificMsgStrLstVec->push_back(sensor_msgsStrLstPtr);
+    specificMsgStrLstVec->push_back(geometry_msgsStrLstPtr);
     
     msgCatagoryLwPtr = new QListWidget();
-    msgCatagoryLwPtr->addItems(*msgCatagoryStrLstPtr);
+    //msgCatagoryLwPtr->addItems(*msgCatagoryStrLstPtr);
+    for(size_t i = 0; i < msgCatagoryStrLstPtr->size(); i++)
+    {
+        msgCatagoryLwPtr->addItem(new QListWidgetItem(*msgCatagoryStrLstPtr->at(i)) );
+    }
     connect(msgCatagoryLwPtr, SIGNAL(itemSelectionChanged()), this, SLOT(handleSwapOptionsSlot()));
     specificMsgLwPtr = new QListWidget();
-    specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(0)) ); // default: first option
+    //specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(0)) ); // default: first option
+    for(size_t i = 0; i < specificMsgStrLstVec->at(0)->size(); i++)
+    {
+        specificMsgLwPtr->addItem(new QListWidgetItem(*specificMsgStrLstVec->at(0)->at(i)) );
+    }
     
     addedLwPtr = new QListWidget();
     custBtnPtr = new QPushButton("Custom");
@@ -71,7 +92,11 @@ void NewFilePage_3::handleSwapOptionsSlot()
     cout << "swapping!" << endl;
     specificMsgLwPtr->clear();
     cout << "\tcleared selection" << endl;
-    specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(msgCatagoryLwPtr->currentRow()) ) ); // currentIndex() returns qt specific type
+    //specificMsgLwPtr->addItems(*(specificMsgStrLstVec.at(msgCatagoryLwPtr->currentRow()) ) ); // currentIndex() returns qt specific type
+    for(size_t i = 0; i < specificMsgStrLstVec->at(msgCatagoryLwPtr->currentRow())->size(); i++)
+    {
+        specificMsgLwPtr->addItem(new QListWidgetItem(*specificMsgStrLstVec->at(msgCatagoryLwPtr->currentRow())->at(i)) );
+    }
     cout << "\tadding list at index:" << msgCatagoryLwPtr->currentRow() << endl;
 }
 
@@ -92,14 +117,16 @@ void NewFilePage_3::handleAddBtnPtrSlot()
         
         for(size_t i = 0; i < typesEnteredStrLstPtr->size(); i++)
         {
-            if(tmp == typesEnteredStrLstPtr->at(i) )
+            if(tmp == typesEnteredStrLstPtr->at(i)->text() )
             {
                 return; //if match is found, don't re-add it
             }
         }
         
-        typesEnteredStrLstPtr->push_back(*tmp);
-        addedLwPtr->addItem(*tmp);
+        typesEnteredStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                     "std::string") );
+        addedLwPtr->addItem(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                     "std::string") );
         cout << "added to list: " << tmp->toStdString() << endl;
     }
     else
@@ -116,9 +143,9 @@ void NewFilePage_3::handleRemoveBtnPtrSlot()
     
     for(size_t i = 0; i < typesEnteredStrLstPtr->size(); i++)
     {
-        if(typesEnteredStrLstPtr->at(i) == tmp->text() )
+        if(typesEnteredStrLstPtr->at(i)->text() == tmp->text() )
         {
-            typesEnteredStrLstPtr->removeAt(i);
+            typesEnteredStrLstPtr->remove(i);
         }
     }
     
@@ -126,10 +153,9 @@ void NewFilePage_3::handleRemoveBtnPtrSlot()
 }
 
 
-void NewFilePage_3::setTitlePtrText(QString* titlePtr)
+void NewFilePage_3::setTitlePtrText(QString* titleText)
 {
-    //!!!remove old text!!!
-    titlePtr->append(titlePtr);
+    titlePtr->setText(*titleText);
 }
 
 

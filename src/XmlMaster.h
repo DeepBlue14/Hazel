@@ -4,6 +4,8 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description: Basic XML file reader namespace to be used by several
  *                   classes of this project.
+ * 
+ * Use QXmlStreamReader instead of dom stuff
  *
  * Created on May 30, 2015, 11:37 PM
  */

@@ -4,4 +4,6 @@
 namespace RosEnv
 {
     QString absPathToRosWs;
+    QString rideInstallLoc;
+    QString sigilHome;
 }
