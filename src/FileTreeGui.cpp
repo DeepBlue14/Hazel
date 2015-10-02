@@ -174,7 +174,8 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     }
 
     //sort of hack--technically a dir name could contain a "."
-    if(treePtr->selectedItems().at(0)->text(1) == "" || treePtr->selectedItems().at(0)->text(1).contains(".", Qt::CaseSensitive))
+    if( (treePtr->selectedItems().at(0)->text(1) == "" || treePtr->selectedItems().at(0)->text(1).contains(".", Qt::CaseSensitive))
+            && treePtr->selectedItems().at(0)->childCount() == 0)
     {
         FTFileMenu myMenu;
         QAction* selectedItem = myMenu.getMenu()->exec(globalPos);
@@ -182,14 +183,20 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
         FileGui* fg;
         cout << "Chosen One: " << treePtr->selectedItems().size() << endl;
         //these next four lines open the file in the GUI
-        //See also: https://www.trinitydesktop.org/docs/qt4/mainwindows-menus.html
-        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+        //!!!move this to FTFileMenu slot!!!
+        /*QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
                 treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
-        lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);
+        lfwg.linkNew(getNorthTabWidgetPtr(), treePtr->selectedItems().at(0)->toolTip(0), fileName, fg);*/
         cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
+    }
+    else if(!treePtr->selectedItems().at(0)->parent() )
+    {
+        //root node
     }
     else
     {
+        FTDirMenu myMenu;
+        QAction* selectedItem = myMenu.getMenu()->exec(globalPos);
         //cout << "diretory: " << treePtr->selectedItems().at(0)->text(0).toStdString() << endl;
         //cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;
     }
@@ -200,7 +207,12 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
 
 void FileTreeGui::handleDoubleClickSlot(const QModelIndex& mIndex)
 {
-    if(treePtr->selectedItems().at(0)->text(1) == "" || treePtr->selectedItems().at(0)->text(1).contains(".", Qt::CaseSensitive))
+    //cout << "^^^" << treePtr->selectedItems().at(0)->text(0).toStdString() << endl;
+    //cout << "^^^" << treePtr->selectedItems().at(0)->text(1).toStdString() << endl;
+    //cout << "#children: " << treePtr->selectedItems().at(0)->childCount() << endl;
+    // !!!clean up this!!!
+    if( (treePtr->selectedItems().at(0)->text(1) == "" || treePtr->selectedItems().at(0)->text(1).contains(".", Qt::CaseSensitive))
+            && treePtr->selectedItems().at(0)->childCount() == 0)
     {
         LinkFileWithGui lfwg;
         FileGui* fg;

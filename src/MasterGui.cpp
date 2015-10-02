@@ -10,7 +10,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
      this->ensurePolished(); // ???
     */
     loadStyle();
-    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/ride1.jpg") );
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/icon.jpg") );
     this->setWindowTitle("Ride");
     
     masterActions = new MasterActions();
@@ -35,6 +35,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     masterActions->setNorthTabWidgetPtr(centralGui->getNorthGuiPtr()->getTabWidget() );
     masterActions->setSouthTabWidgetPtr(centralGui->getSouthGuiPtr()/*->getTabWidget()*/ );
     masterActions->setWestWidgetPtr(centralGui->getFileTreeGuiPtr() ); // Pass ("tunnel") method
+    masterActions->setEast0WidgetPtr(centralGui->getRunPanelGuiPtr() );
     masterActions->setEastWidgetPtr(centralGui->getNavigatorGuiPtr() );
     
     this->resize(1000, 800);

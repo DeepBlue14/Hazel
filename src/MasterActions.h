@@ -27,10 +27,11 @@
 #include "NewProjectGui.h"
 #include "OutputGui.h"
 #include "QXTerm.h"
-#include "RunGui.h"
+#include "RunSetupGui.h"
 #include "OpenProjectGui.h"
 #include "SaveAll.h"
 #include "FileTreeGui.h"
+#include "RunPanelGui.h"
 #include "NavigatorGui.h"
 #include "Build.h"
 #include "RProcess.h"
@@ -74,6 +75,7 @@ class MasterActions : public QWidget
         QAction* terminalSouthActionPtr;
         
         // East
+        QAction* runEastActionPtr;
         QAction* navEastActionPtr;
         
         
@@ -88,9 +90,10 @@ class MasterActions : public QWidget
         NewFileGui* newFileGuiPtr;
         NewProjectGui* newProjectGuiPtr;
         QXTerm* terminalPtr;
-        RunGui* runGuiPtr;
+        RunSetupGui* runGuiPtr;
         OpenProjectGui* openProjectGuiPtr;
         FileTreeGui* westWidgetPtr; // i.e. west widget
+        RunPanelGui* east0WidgetPtr;
         NavigatorGui* eastWidgetPtr;
         Build* buildPtr;
         
@@ -181,6 +184,9 @@ class MasterActions : public QWidget
         
         
         // East
+        
+        void handleRunEastActionSlot();
+        
         /**
          * 
          */
@@ -297,14 +303,14 @@ class MasterActions : public QWidget
          * 
          * @param runGuiPtr
          */
-        void setRunGuiPtr(RunGui* runGuiPtr);
+        void setRunGuiPtr(RunSetupGui* runGuiPtr);
         
         /**
          * 
          * 
          * @return 
          */
-        RunGui* getRunGuiPtr();
+        RunSetupGui* getRunGuiPtr();
         
         /**
          * 
@@ -333,6 +339,12 @@ class MasterActions : public QWidget
          * @return 
          */
         FileTreeGui* getWestWidgetPtr();
+        
+        
+        void setEast0WidgetPtr(RunPanelGui* east0WidgetPtr);
+        
+        
+        RunPanelGui* getEast0WidgetPtr();
         
         /**
          * 
@@ -592,6 +604,13 @@ class MasterActions : public QWidget
         
         
         // East
+        
+        void setRunEastActionPtr(QAction* runEastActionPtr);
+        
+        
+        QAction* getRunEastActionPtr();
+        
+        
         /**
          * 
          * 
@@ -756,6 +775,10 @@ class MasterActions : public QWidget
         
         
         // East
+        template<class X>
+        void connectToRunEastAction(X* component);
+        
+        
         /**
          * 
          * 

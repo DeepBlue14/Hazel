@@ -33,6 +33,31 @@ class FTProjectMenu : public QMenu
     private:
         ;
         
+    private slots:
+        QMenu* menu;
+        QAction* cMakeListsAct; //sub
+        QAction* packageAct; //sub
+        QAction* newDirAct;
+        QAction* buildAct;
+        QAction* runAct;
+        QAction* closeAct;
+        QAction* deleteAct;
+        QAction* renameAct;
+        QAction* propertiesAct;
+        
+        
+    private slots:
+        void handleCMakeListsMenuSlot();
+        void handlePackageMenuSlot();
+        void handleNewDirMenuSlot();
+        void handleBuildMenuSlot();
+        void handleRunMenuSlot();
+        void handleCloseMenuSlot();
+        void handleDeleteMenuSlot();
+        void handleRenameMenuSlot();
+        void handlePropertiesMenuSlot();
+        
+        
     public:
         /**
          * Constructor.
@@ -43,6 +68,13 @@ class FTProjectMenu : public QMenu
          * Inits the menu for an entire RIDE project.
          */
         void initMenu();
+        
+        /**
+         * Accessor.
+         * 
+         * @return 
+         */
+        QMenu* getMenu();
         
         /**
          * Destructor.

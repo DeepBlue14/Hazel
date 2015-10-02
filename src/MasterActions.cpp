@@ -4,7 +4,7 @@
 
 MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
 {
-    runGuiPtr = new RunGui();
+    runGuiPtr = new RunSetupGui();
     openProjectGuiPtr = new OpenProjectGui();
     buildPtr = new Build();
     
@@ -91,6 +91,11 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     connect(terminalSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleTerminalSouthActionSlot() ) );
     
     // East
+    runEastActionPtr = new QAction(QIcon("images/rocket.jpg"), tr("&Launcher"), this);
+    runEastActionPtr->setShortcut(QKeySequence::New);
+    runEastActionPtr->setStatusTip("Launcher");
+    connect(runEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleRunEastActionSlot() ) );
+    
     navEastActionPtr = new QAction(QIcon("images/navigator01.png"), tr("&Output"), this);
     navEastActionPtr->setShortcut(QKeySequence::New);
     navEastActionPtr->setStatusTip("Navigator");
@@ -242,6 +247,19 @@ void MasterActions::handleTerminalSouthActionSlot()
 
 
 // East
+void MasterActions::handleRunEastActionSlot()
+{
+    if(getEast0WidgetPtr()->isVisible() )
+    {
+        getEast0WidgetPtr()->hide();
+    }
+    else
+    {
+        getEast0WidgetPtr()->show();
+    }
+}
+
+
 void MasterActions::handleNavEastActionSlot()
 {
     if(getEastWidgetPtr()->isVisible() )
@@ -347,13 +365,13 @@ QXTerm* MasterActions::getTerminalPtr()
 }
 
 
-void MasterActions::setRunGuiPtr(RunGui* runGuiPtr)
+void MasterActions::setRunGuiPtr(RunSetupGui* runGuiPtr)
 {
     this->runGuiPtr = runGuiPtr;
 }
 
 
-RunGui* MasterActions::getRunGuiPtr()
+RunSetupGui* MasterActions::getRunGuiPtr()
 {
     return runGuiPtr;
 }
@@ -382,6 +400,18 @@ void MasterActions::setWestWidgetPtr(FileTreeGui* fileTreeGuiPtr)
 FileTreeGui* MasterActions::getWestWidgetPtr()
 {
     return westWidgetPtr;
+}
+
+
+void MasterActions::setEast0WidgetPtr(RunPanelGui* east0WidgetPtr)
+{
+    this->east0WidgetPtr = east0WidgetPtr;
+}
+
+
+RunPanelGui* MasterActions::getEast0WidgetPtr()
+{
+    return east0WidgetPtr;
 }
 
 
@@ -604,6 +634,18 @@ QAction* MasterActions::getTerminalSouthActionPtr()
 
 
 // East
+void MasterActions::setRunEastActionPtr(QAction* runEastActionPtr)
+{
+    this->runEastActionPtr = runEastActionPtr;
+}
+
+
+QAction* MasterActions::getRunEastActionPtr()
+{
+    return runEastActionPtr;
+}
+
+
 void MasterActions::setNavEastActionPtr(QAction* navWestActionPtr)
 {
     this->navEastActionPtr = navWestActionPtr;
@@ -743,6 +785,13 @@ void MasterActions::connectToTerminalSouthAction(X* component)
 
 
 // East
+template<class X>
+void MasterActions::connectToRunEastAction(X* component)
+{
+    connect(component, SIGNAL(released() ), this, SLOT(handleRunEastActionSlot() ) );
+}
+
+
 template<class X>
 void MasterActions::connectToNavEastAction(X* component)
 {

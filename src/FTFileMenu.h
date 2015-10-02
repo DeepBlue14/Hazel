@@ -30,12 +30,30 @@ using namespace std;
 
 class FTFileMenu : public QWidget
 {
+    Q_OBJECT
+    
     private:
         QMenu* menu;
         QAction* openAct;
+        QAction* hideAct;
+        QAction* deleteAct;
+        QAction* renameAct;
+        QAction* refactorAct;
+        QAction* addAct;
+        QAction* commitAct;
+        QAction* removeAct;
+        QAction* propertiesAct;
         
     private slots:
         void handleOpenMenuSlot();
+        void handleHideMenuSlot();
+        void handleDeleteMenuSlot();
+        void handleRenameMenuSlot();
+        void handleRefactorMenuSlot();
+        void handleAddMenuSlot();
+        void handleCommitMenuSlot();
+        void handleRemoveMenuSlot();
+        void handlePropertiesMenuSlot();
         
     public:
         /**

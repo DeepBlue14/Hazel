@@ -1,11 +1,11 @@
-#include "RunPage_2.h"
+#include "RunSetupPage_2.h"
 
 
-QString RunPage_2::fileStrPtr;
-QString RunPage_2::pkgStrPtr;
+QString RunSetupPage_2::fileStrPtr;
+QString RunSetupPage_2::pkgStrPtr;
 
 
-RunPage_2::RunPage_2(QWidget* parent) : QWidget(parent)
+RunSetupPage_2::RunSetupPage_2(QWidget* parent) : QWidget(parent)
 {
     launchFileAbsPathLePtr = new QLineEdit();
     pkgLePtr = new QLineEdit();
@@ -29,7 +29,7 @@ RunPage_2::RunPage_2(QWidget* parent) : QWidget(parent)
 }
 
 
-void RunPage_2::handleSelectLaunchFilePbPtrSlot()
+void RunSetupPage_2::handleSelectLaunchFilePbPtrSlot()
 {
     QString fileAbsPathStr = launchFileDialogPtr->getOpenFileName(this, tr("&Open Directory"), "/home");
     launchFileAbsPathLePtr->setText(fileAbsPathStr);
@@ -46,43 +46,43 @@ void RunPage_2::handleSelectLaunchFilePbPtrSlot()
 }
 
 
-void RunPage_2::setLaunchFileStrPtr()
+void RunSetupPage_2::setLaunchFileStrPtr()
 {
     launchFileStrPtr = new QString(launchFileAbsPathLePtr->text() );
 }
 
 
-QString* RunPage_2::getLaunchFileStrPtr()
+QString* RunSetupPage_2::getLaunchFileStrPtr()
 {
     return launchFileStrPtr;
 }
 
 
-void RunPage_2::setPkgStrPtr(QString pkgStrPtr)
+void RunSetupPage_2::setPkgStrPtr(QString pkgStrPtr)
 {
-    RunPage_2::pkgStrPtr = pkgStrPtr;
+    RunSetupPage_2::pkgStrPtr = pkgStrPtr;
 }
 
 
-QString RunPage_2::getPkgStrPtr()
+QString RunSetupPage_2::getPkgStrPtr()
 {
     return pkgStrPtr;
 }
 
 
-void RunPage_2::setFileStrPtr(QString fileStrPtr)
+void RunSetupPage_2::setFileStrPtr(QString fileStrPtr)
 {
-    RunPage_2::fileStrPtr = fileStrPtr;
+    RunSetupPage_2::fileStrPtr = fileStrPtr;
 }
 
 
-QString RunPage_2::getFileStrPtr()
+QString RunSetupPage_2::getFileStrPtr()
 {
     return fileStrPtr;
 }
 
 
-QString* RunPage_2::toString()
+QString* RunSetupPage_2::toString()
 {
     QString* tmp = new QString();
     tmp->append("***method stub***");
@@ -91,7 +91,7 @@ QString* RunPage_2::toString()
 }
 
 
-RunPage_2::~RunPage_2()
+RunSetupPage_2::~RunSetupPage_2()
 {
     ;
 }

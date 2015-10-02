@@ -3,17 +3,43 @@
 
 void XmlMaster::loadFile(QFile* filePtr)
 {
-    filePtr = new QFile(filePtr);
-    xmlDomDocPtr = new QDomDocument();
+    QFile* file = new QFile("/home/james/NetBeansProjects/ride/res/test.xml");
+    file->open(QFile::ReadOnly);
+    QXmlStreamReader xmlReader;
+    xmlReader.setDevice(file);
     
-    if(!filePtr->open(QIODevice::ReadOnly) )
+    xmlReader.readNext();
+    
+    int safety = 0;
+    while(!xmlReader.isEndDocument() && safety < 50 )
     {
-        cerr << "Error while loading file" << endl;
+        
+     
+        if(!xmlReader.isEndElement() )
+        {
+            QString openingTag = xmlReader.name().toString();
+            cout << openingTag.toStdString() << endl;
+        }
+        else
+        {
+            QString closingTag = xmlReader.name().toString();
+            //cout << closingTag.toStdString() << endl;
+        }
+        
+        QXmlStreamAttributes attributes = xmlReader.attributes();
+        for(size_t i = 0; i < attributes.size(); i++)
+        {
+            cout << attributes.at(i).name().toString().toStdString() << endl;
+            cout << attributes.at(i).value().toString().toStdString() << endl;
+        }
+        
+        
+        xmlReader.readNext();
+        
+        safety++;
     }
     
-    //set data into QDomDocument before processing
-    xmlDomDocPtr->setContent(filePtr);
-    filePtr->close();
+    
 }
 
 

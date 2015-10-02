@@ -12,7 +12,7 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     applicationNameLabelPtr->setFont(*titleFont);
     applicationNameIconLabelPtr = new QLabel();
     
-    //QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/ride1.xpm");
+    QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/icon.jpg");
     
     appLabelPtr = new QLabel();
     QFont* subheaderFont = new QFont("Serif");
@@ -20,7 +20,7 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     appLabelPtr->setText("<p align=\"center\"><b>R</b>OS <b>I</b>ntegrated <b>D</b>evelopment <b>E</b>nvironment</p>"
     "<p align=\"center\"><i>Developer: put some very long quote or something line that about ROS here!</i></p>");
     
-    //applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(250, 200, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
+    applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(195, 166, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
     
     //QLabel::setOpenExternalLinks(true); //this is Qt > 4.2?
     githubLabelPtr = new QLabel("<a href=\"https://github.com/DeepBlue14/ride\">RIDE Git Repository</a>");

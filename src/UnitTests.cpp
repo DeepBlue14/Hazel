@@ -4,8 +4,8 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file provides a series of unit tests to validate
  *                   different components.  If running with NetBeans IDE,
- *                   you will have to comment out the main function in main.cpp,
- *                   otherwise you will get a "multiple main" error.
+ *                   you will have to comment out the main function in
+ *                   main.cpp, otherwise you will get a "multiple main" error.
  *
  * Created on June 15, 2015, 4:00 PM
  */
@@ -31,6 +31,7 @@
 #include "ReconfigGui.h"
 #include "FetchWebSource.h"
 #include "ParseFontConfigXml.h"
+#include "XmlMaster.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -65,6 +66,7 @@ int main(int argc, char *argv[])
          << "\n\t10) Ros Reconfigure"
          << "\n\t11) software center"
          << "\n\t12) parse package.xml file"
+         << "\n\t13) run XmlMaster on a file"
          << cct::bold("\nENTER: ");
     cin >> choiceInt;
     
@@ -136,6 +138,10 @@ int main(int argc, char *argv[])
             return app.exec();
         case 12:
             cout << "Sorry, this option has not yet been implemented" << endl;
+            break;
+        case 13:
+            XmlMaster::loadFile(new QFile(
+                        "/home/james/NetBeansProjects/ride/res/test.xml") );
             break;
         default:
             masterGui.show();

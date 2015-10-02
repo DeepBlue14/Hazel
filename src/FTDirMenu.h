@@ -30,8 +30,24 @@ using namespace std;
 
 class FTDirMenu : public QMenu
 {
+    Q_OBJECT
+    
     private:
-        ;
+        QMenu* menu;
+        QAction* cMakeListsAct;
+        QAction* packageAct;
+        QAction* newDirAct;
+        QAction* deleteAct;
+        QAction* renameAct;
+        QAction* propertiesAct;
+        
+    private slots:
+        void handleCMakeListsMenuSlot();
+        void handlePackageMenuSlot();
+        void handleNewDirMenuSlot();
+        void handleDeleteMenuSlot();
+        void handleRenameMenuSlot();
+        void handlePropertiesMenuSlot();
         
     public:
         /**
@@ -43,6 +59,13 @@ class FTDirMenu : public QMenu
          * Initialize the directory menu.
          */
         void initMenu();
+        
+        /**
+         * Accessor.
+         * 
+         * @return 
+         */
+        QMenu* getMenu();
         
         /**
          * Destructor.

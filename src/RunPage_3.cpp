@@ -1,7 +1,7 @@
-#include "RunPage_3.h"
+#include "RunSetupPage_3.h"
 
 
-RunPage_3::RunPage_3(QWidget* parent) : QWidget(parent)
+RunSetupPage_3::RunSetupPage_3(QWidget* parent) : QWidget(parent)
 {
     cmdsEnteredStrList = new QStringList();
     cmdsLePtr = new QLineEdit();
@@ -25,7 +25,7 @@ RunPage_3::RunPage_3(QWidget* parent) : QWidget(parent)
 }
 
 
-void RunPage_3::handleAddToListBtnPtrSlot()
+void RunSetupPage_3::handleAddToListBtnPtrSlot()
 {
     //dependsLePtr->selectedText()
     if(cmdsLePtr->text() == "")
@@ -52,7 +52,7 @@ void RunPage_3::handleAddToListBtnPtrSlot()
 }
 
 
-void RunPage_3::handleRmFromListBtnPtrSlot()
+void RunSetupPage_3::handleRmFromListBtnPtrSlot()
 {
     //cout << dependsEnteredTypeLw->selectedItems().at(0)->text().toStdString() << endl;
     QListWidgetItem* tmp = cmdsEnteredTypeLw->selectedItems().at(0);
@@ -70,13 +70,13 @@ void RunPage_3::handleRmFromListBtnPtrSlot()
 }
 
 
-QStringList* RunPage_3::getCmdsEnteredStrList()
+QStringList* RunSetupPage_3::getCmdsEnteredStrList()
 {
     return cmdsEnteredStrList;
 }
 
 
-QString* RunPage_3::toString()
+QString* RunSetupPage_3::toString()
 {
     QString* tmp = new QString("ROS Depends:");
     
@@ -90,7 +90,7 @@ QString* RunPage_3::toString()
 }
 
 
-RunPage_3::~RunPage_3()
+RunSetupPage_3::~RunSetupPage_3()
 {
     ;
 }

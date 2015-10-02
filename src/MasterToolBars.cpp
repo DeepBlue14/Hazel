@@ -57,6 +57,7 @@ void MasterToolBars::initSouthGroupOneToolBar(QToolBar* toolbarPtr)
 
 void MasterToolBars::initEastGroupOneToolBar(QToolBar* toolbarPtr)
 {
+    toolbarPtr->addAction(getMasterActionsPtr()->getRunEastActionPtr() );
     toolbarPtr->addAction(getMasterActionsPtr()->getNavEastActionPtr() );
 }
 

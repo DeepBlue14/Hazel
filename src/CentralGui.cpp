@@ -5,6 +5,7 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
 {
     northGuiPtr = new TabGui();
     fileTreeGuiPtr = new FileTreeGui();
+    runPanelGuiPtr = new RunPanelGui();
     navigatorGuiPtr = new NavigatorGui();
     southGuiPtr = new OutputGui();
     
@@ -12,8 +13,12 @@ CentralGui::CentralGui(QWidget* parent) : QWidget(parent)
     splitter0->setOrientation(Qt::Horizontal);
     splitter0->addWidget(fileTreeGuiPtr);
     splitter0->addWidget(northGuiPtr);
-    splitter0->addWidget(navigatorGuiPtr);
-    
+
+    QSplitter* splitter0sub1 = new QSplitter();
+    splitter0sub1->setOrientation(Qt::Vertical);
+    splitter0sub1->addWidget(runPanelGuiPtr);
+    splitter0sub1->addWidget(navigatorGuiPtr);
+    splitter0->addWidget(splitter0sub1);
     QSplitter* splitter1 = new QSplitter();
     splitter1->setOrientation(Qt::Vertical);
     splitter1->addWidget(splitter0);
@@ -47,6 +52,18 @@ void CentralGui::setFileTreeGuiPtr(FileTreeGui* fileTreeGuiPtr)
 FileTreeGui* CentralGui::getFileTreeGuiPtr()
 {
     return fileTreeGuiPtr;
+}
+
+
+void CentralGui::setRunPanelGuiPtr(RunPanelGui* runPanelGuiPtr)
+{
+    this->runPanelGuiPtr = runPanelGuiPtr;
+}
+
+
+RunPanelGui* CentralGui::getRunPanelGuiPtr()
+{
+    return runPanelGuiPtr;
 }
 
 

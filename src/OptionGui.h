@@ -57,7 +57,7 @@ class OptionGui : public QWidget
         
         /**
          * 
-         */
+         */;
         void handleApplyBtnSlot();
         
         /**

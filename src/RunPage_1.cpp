@@ -1,7 +1,7 @@
-#include "RunPage_1.h"
+#include "RunSetupPage_1.h"
 
 
-RunPage_1::RunPage_1(QWidget* parent) : QWidget(parent)
+RunSetupPage_1::RunSetupPage_1(QWidget* parent) : QWidget(parent)
 {
     buttonGroupPtr = new QButtonGroup();
     buttonGroupPtr->addButton(new QRadioButton(tr("Launch File")));
@@ -18,7 +18,7 @@ RunPage_1::RunPage_1(QWidget* parent) : QWidget(parent)
 }
 
 
-QString* RunPage_1::getRunOptionPtr()
+QString* RunSetupPage_1::getRunOptionPtr()
 {
     for(size_t i = 0; i < buttonGroupPtr->buttons().size(); i++)
     {
@@ -33,7 +33,7 @@ QString* RunPage_1::getRunOptionPtr()
 }
 
 
-QString* RunPage_1::toString()
+QString* RunSetupPage_1::toString()
 {
     QString* tmp = new QString("RunPage_1::toString()");
     tmp->append("Selected run type: ");
@@ -41,7 +41,7 @@ QString* RunPage_1::toString()
 }
 
 
-RunPage_1::~RunPage_1()
+RunSetupPage_1::~RunSetupPage_1()
 {
     ;
 }

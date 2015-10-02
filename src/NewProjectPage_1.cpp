@@ -16,7 +16,7 @@ NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
     rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/jade.png"), "Jade"));
     
     newOrFromExStrLstPtr = new QVector<QListWidgetItem*>();
-    newOrFromExStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/ride1.jpg"), "New"));
+    newOrFromExStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/icon.jpg"), "New"));
     newOrFromExStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/rosv2.png"), "From existing sources"));
     
     rosVersionsLwPtr = new QListWidget();

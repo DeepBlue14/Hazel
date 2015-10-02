@@ -22,6 +22,7 @@
 
 #include "TabGui.h"
 #include "FileTreeGui.h"
+#include "RunPanelGui.h"
 #include "NavigatorGui.h"
 #include "OutputGui.h"
 #include "WindowsConsoleText.h"
@@ -44,6 +45,7 @@ class CentralGui : public QWidget
     private:
         TabGui* northGuiPtr;
         FileTreeGui* fileTreeGuiPtr;
+        RunPanelGui* runPanelGuiPtr;
         NavigatorGui* navigatorGuiPtr;
         OutputGui* southGuiPtr;
         
@@ -87,6 +89,12 @@ class CentralGui : public QWidget
          * @return 
          */
         FileTreeGui* getFileTreeGuiPtr();
+        
+        
+        void setRunPanelGuiPtr(RunPanelGui* runPanelGuiPtr);
+        
+        
+        RunPanelGui* getRunPanelGuiPtr();
         
         /**
          * 

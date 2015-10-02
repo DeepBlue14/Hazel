@@ -1,15 +1,15 @@
-#include "RunGui.h"
+#include "RunSetupGui.h"
 
 
-RunGui::RunGui(QWidget* parent) : QWidget(parent)
+RunSetupGui::RunSetupGui(QWidget* parent) : QWidget(parent)
 {
     this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
     this->setWindowTitle("Ride");
     
     outerLayoutPtr = new QGridLayout();
-    runPage_1Ptr = new RunPage_1();
-    runPage_2Ptr = new RunPage_2();
-    runPage_3Ptr = new RunPage_3();
+    runPage_1Ptr = new RunSetupPage_1();
+    runPage_2Ptr = new RunSetupPage_2();
+    runPage_3Ptr = new RunSetupPage_3();
     
     currentPage = PAGE_ONE;
 
@@ -19,19 +19,19 @@ RunGui::RunGui(QWidget* parent) : QWidget(parent)
 }
 
 
-void RunGui::handleBackBtnSlot()
+void RunSetupGui::handleBackBtnSlot()
 {
     swapBackPage();
 }
 
 
-void RunGui::handleNextBtnSlot()
+void RunSetupGui::handleNextBtnSlot()
 {
     swapNextPage();
 }
 
 
-void RunGui::handleFinishBtnSlot()
+void RunSetupGui::handleFinishBtnSlot()
 {
     if(*runPage_1Ptr->getRunOptionPtr() == "Launch File")
     {
@@ -48,19 +48,19 @@ void RunGui::handleFinishBtnSlot()
 }
 
 
-void RunGui::handleHelpBntSlot()
+void RunSetupGui::handleHelpBntSlot()
 {
     ;
 }
 
 
-void RunGui::handleCancelBtnSlot()
+void RunSetupGui::handleCancelBtnSlot()
 {
     this->close();
 }
 
 
-void RunGui::initBtns()
+void RunSetupGui::initBtns()
 {
     backBtn = new QPushButton("< Back", this);
     backBtn->setEnabled(false);
@@ -88,7 +88,7 @@ void RunGui::initBtns()
 }
 
 
-void RunGui::reset()
+void RunSetupGui::reset()
 {
     if(currentPage != PAGE_ONE)
     {
@@ -97,19 +97,19 @@ void RunGui::reset()
 }
 
 
-void RunGui::setLaunchFilePathStrPtr(QString* launchFilePathStrPtr)
+void RunSetupGui::setLaunchFilePathStrPtr(QString* launchFilePathStrPtr)
 {
     this->launchFilePathStrPtr = launchFilePathStrPtr;
 }
 
 
-QString* RunGui::getLaunchFilePathStrPtr()
+QString* RunSetupGui::getLaunchFilePathStrPtr()
 {
     return launchFilePathStrPtr;
 }
 
 
-void RunGui::swapBackPage()
+void RunSetupGui::swapBackPage()
 {
     switch(currentPage)
     {
@@ -133,7 +133,7 @@ void RunGui::swapBackPage()
 }
 
 
-void RunGui::swapNextPage()
+void RunSetupGui::swapNextPage()
 {
     switch(currentPage)
     {
@@ -169,7 +169,7 @@ void RunGui::swapNextPage()
 }
 
 
-void RunGui::loadPage_1()
+void RunSetupGui::loadPage_1()
 {
     outerLayoutPtr->addWidget(runPage_1Ptr, 0, 0);
     runPage_1Ptr->setVisible(true);
@@ -177,7 +177,7 @@ void RunGui::loadPage_1()
 }
 
 
-void RunGui::unloadPage_1()
+void RunSetupGui::unloadPage_1()
 {
     outerLayoutPtr->removeWidget(runPage_1Ptr);
     runPage_1Ptr->setVisible(false);
@@ -185,7 +185,7 @@ void RunGui::unloadPage_1()
 }
 
 
-void RunGui::loadPage_2()
+void RunSetupGui::loadPage_2()
 {
     outerLayoutPtr->addWidget(runPage_2Ptr, 0, 0);
     runPage_2Ptr->setVisible(true);
@@ -193,7 +193,7 @@ void RunGui::loadPage_2()
 }
 
 
-void RunGui::unloadPage_2()
+void RunSetupGui::unloadPage_2()
 {
     outerLayoutPtr->removeWidget(runPage_2Ptr);
     runPage_2Ptr->setVisible(false);
@@ -201,7 +201,7 @@ void RunGui::unloadPage_2()
 }
 
 
-void RunGui::loadPage_3()
+void RunSetupGui::loadPage_3()
 {
     outerLayoutPtr->addWidget(runPage_3Ptr, 0, 0);
     runPage_3Ptr->setVisible(true);
@@ -209,7 +209,7 @@ void RunGui::loadPage_3()
 }
 
 
-void RunGui::unloadPage_3()
+void RunSetupGui::unloadPage_3()
 {
     outerLayoutPtr->removeWidget(runPage_3Ptr);
     runPage_3Ptr->setVisible(false);
@@ -217,25 +217,25 @@ void RunGui::unloadPage_3()
 }
 
 
-RunPage_1* RunGui::getRunPage_1Ptr()
+RunSetupPage_1* RunSetupGui::getRunPage_1Ptr()
 {
     return runPage_1Ptr;
 }
 
 
-RunPage_2* RunGui::getRunPage_2Ptr()
+RunSetupPage_2* RunSetupGui::getRunPage_2Ptr()
 {
     return runPage_2Ptr;
 }
 
 
-RunPage_3* RunGui::getRunPage_3Ptr()
+RunSetupPage_3* RunSetupGui::getRunPage_3Ptr()
 {
     return runPage_3Ptr;
 }
 
 
-QString* RunGui::toString()
+QString* RunSetupGui::toString()
 {
     QString* tmp = new QString("RunGui");
     
@@ -243,7 +243,7 @@ QString* RunGui::toString()
 }
 
 
-RunGui::~RunGui()
+RunSetupGui::~RunSetupGui()
 {
     ;
 }

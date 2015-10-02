@@ -6,6 +6,7 @@
  *                   classes of this project.
  * 
  * Use QXmlStreamReader instead of dom stuff
+ * Ref: http://doc.qt.io/qt-4.8/qxmlstreamreader.html#isEndElement
  *
  * Created on May 30, 2015, 11:37 PM
  */
@@ -15,7 +16,7 @@
 
 #include <QWidget>
 #include <QtXml>
-#include <QDomElement>
+#include <QXmlStreamReader>
 #include <QFile>
 #include <QString>
 
@@ -36,8 +37,8 @@ using namespace std;
 
 namespace XmlMaster
 {
-    QFile* filePtr;
-    QDomDocument* xmlDomDocPtr;
+    //QFile* filePtr;
+    //QDomDocument* xmlDomDocPtr;
     
     /**
      * Loads an XML file.
