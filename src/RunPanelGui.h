@@ -48,6 +48,7 @@ class RunPanelGui : public QWidget
     Q_OBJECT
     
     private:
+        int numOfNodes;
         QTableWidget* tableWidgetPtr;
         QVector<QTableWidgetItem*>* runablesTblWidItmPtrVecPtr;
         QTabWidget* westTabWidgetPtr;

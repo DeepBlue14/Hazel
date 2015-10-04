@@ -1,4 +1,5 @@
 **TODO**
+- see https://forum.qt.io/topic/3569/adding-a-toolbar-to-children-widget-of-a-qsplitter
 - implement: https://ui.netbeans.org/docs/ui/code_folding/cf_uispec.html
 - Check out QT drag and drop widgets
 - add separate ROS "lang"(s) for srv or msg files?

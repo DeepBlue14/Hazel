@@ -76,6 +76,8 @@
           <itemPath>src/LineNumberArea.h</itemPath>
           <itemPath>src/MirrorChar.h</itemPath>
         </logicalFolder>
+        <logicalFolder name="f15" displayName="Properties" projectFiles="true">
+        </logicalFolder>
         <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
           <itemPath>src/AdvOptPage_1.h</itemPath>
           <itemPath>src/AdvOptPage_2.h</itemPath>
@@ -251,6 +253,8 @@
           <itemPath>src/Highlighter.cpp</itemPath>
           <itemPath>src/LineNumberArea.cpp</itemPath>
           <itemPath>src/MirrorChar.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f15" displayName="Properties" projectFiles="true">
         </logicalFolder>
         <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
           <itemPath>src/AdvOptPage_1.cpp</itemPath>

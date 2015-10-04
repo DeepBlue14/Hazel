@@ -3,6 +3,7 @@
 
 RunPanelGui::RunPanelGui(QWidget* parent) : QWidget(parent)
 {
+    numOfNodes = 0;
     tableWidgetPtr = new QTableWidget();
     runablesTblWidItmPtrVecPtr = new QVector<QTableWidgetItem*>();
 
@@ -16,11 +17,17 @@ RunPanelGui::RunPanelGui(QWidget* parent) : QWidget(parent)
     item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
     item->setCheckState(Qt::Checked);
     
+    QSpinBox* spinBoxPtr = new QSpinBox();
+    spinBoxPtr->setMaximum(numOfNodes);
     tableWidgetPtr->setItem(0, 0, item);
-    tableWidgetPtr->setCellWidget(0, 1, new QSpinBox() );
+    tableWidgetPtr->setCellWidget(0, 1, spinBoxPtr);
+
     
     westTabWidgetPtr = new QTabWidget();
-    //tableWidgetPtr->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+    
+    //if QT5, then tableWidgetPtr->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+    tableWidgetPtr->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+
     outerLayout = new QGridLayout();
     outerLayout->addWidget(tableWidgetPtr, 0, 0, 1, 0);
 
