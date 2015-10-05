@@ -2,7 +2,7 @@
  * File:   OptionPage_1.h
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: This "page" displays themes and some available previews.
  *
  * Created on June 26, 2015, 12:17 AM
  */

@@ -1,12 +1,16 @@
 /* 
  * File:   ReconfigPage_4.h
- * Author: james
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This "page" displays what the program is doing during
+ *                   run-time (i.e. searching the old project for makefiles,
+ *                   creating a new project, etc.).
  *
  * Created on July 20, 2015, 5:11 PM
  */
 
-#ifndef RECONFIGPAGE_4_H
-#define	RECONFIGPAGE_4_H
+#ifndef RECONFIG_PAGE_4_H
+#define	RECONFIG_PAGE_4_H
 
 #include <QWidget>
 #include <QTextEdit>
@@ -37,4 +41,4 @@ class ReconfigPage_4 : public QWidget
         ~ReconfigPage_4();
 };
 
-#endif	/* RECONFIGPAGE_4_H */
+#endif	/* RECONFIG_PAGE_4_H */

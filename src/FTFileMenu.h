@@ -15,6 +15,7 @@
 
 #include <iostream>
 
+#include "FilePropGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -43,6 +44,8 @@ class FTFileMenu : public QWidget
         QAction* commitAct;
         QAction* removeAct;
         QAction* propertiesAct;
+        
+        FilePropGui* filePropGuiPtr;
         
     private slots:
         void handleOpenMenuSlot();

@@ -1,8 +1,13 @@
 /* 
  * File:   ReconfigPage_5.h
- * Author: James
- * Email:
- * File Description: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This "page" tells the user that the preliminary work has
+ *                   been completed, and that it is time to:
+ *                   1) review the new custom package.xml files generated.
+ *                   2) do the actual makefile/CMakeLists-->ROS-CMakeLists
+ *                   conversions.
+ *                   
  *
  * Created on July 31, 2015, 12:42 PM
  */

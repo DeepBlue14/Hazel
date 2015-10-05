@@ -1,3 +1,5 @@
+Hierarchy of resources
+
 Global (/usr/local/ride)
 
 /my/download/loc
@@ -6,11 +8,11 @@ ride
    |
    res
      |
-     langs  styles  themes  configurations.java
+     langs  styles  themes  images  configurations.java
          |
-         cpp                    java
+         cpp                    java                    ...
            |                       |
-           cpp.xml  templates      java.xml  templates
+           cpp.xml  templates      java.xml  templates  ...
          
   
 ------------------------------------------

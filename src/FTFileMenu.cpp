@@ -57,9 +57,10 @@ void FTFileMenu::initMenu()
     gitMenu->addAction(removeAct);
     
     propertiesAct = new QAction(tr("&Properties"), this);
-    connect(propertiesAct, SIGNAL(triggered()), this, SLOT(handleRemoveMenuSlot() ) );
+    connect(propertiesAct, SIGNAL(triggered()), this, SLOT(handlePropertiesMenuSlot() ) );
     menu->addAction(propertiesAct);
     
+    filePropGuiPtr = new FilePropGui();
     
     
 }
@@ -115,7 +116,8 @@ void FTFileMenu::handleRemoveMenuSlot()
 
 void FTFileMenu::handlePropertiesMenuSlot()
 {
-    cout << "FTFileMenu::handlePropertiesMenuSlot() triggered" << endl;
+    //cout << "FTFileMenu::handlePropertiesMenuSlot() triggered" << endl;
+    filePropGuiPtr->show();
 }
 
 
