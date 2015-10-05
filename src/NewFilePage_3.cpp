@@ -123,10 +123,17 @@ void NewFilePage_3::handleAddBtnPtrSlot()
             }
         }
         
+        // Add selection to list
         typesEnteredStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
-                                                     "std::string") );
+                                                     msgCatagoryLwPtr->selectedItems().at(0)->text() +
+                                                     "::" +
+                                                     specificMsgLwPtr->selectedItems().at(0)->text()) );
+        
+        // Add selection to GUI
         addedLwPtr->addItem(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
-                                                     "std::string") );
+                                                     msgCatagoryLwPtr->selectedItems().at(0)->text() +
+                                                     "::" +
+                                                     specificMsgLwPtr->selectedItems().at(0)->text()) );
         cout << "added to list: " << tmp->toStdString() << endl;
     }
     else

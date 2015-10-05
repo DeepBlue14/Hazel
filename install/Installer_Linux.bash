@@ -8,7 +8,7 @@
 #                                                                   #
 # Reference: http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html#toc7  #
 #                                                                   #
-# Last Modified August 28, 2015 at 3:00pm                             #
+# Last Modified August 28, 2015 at 3:00pm                           #
 #                                                                   #
 #####################################################################
 
