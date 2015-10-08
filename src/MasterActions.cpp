@@ -8,6 +8,14 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     openProjectGuiPtr = new OpenProjectGui();
     buildPtr = new Build();
     
+    northGroupOneActPtrVecPtr = new QVector<QAction*>();
+    northGroupTwoActPtrVecPtr = new QVector<QAction*>();
+    northGroupThreeActPtrVecPtr = new QVector<QAction*>();
+    northActPtrVecPtr = new QVector<QAction*>();
+    southActPtrVecPtr = new QVector<QAction*>();
+    eastActPtrVecPtr = new QVector<QAction*>();
+    westActPtrVecPtr = new QVector<QAction*>();
+    
     // North
     newFileActionPtr = new QAction(QIcon("images/newFile01.png"), tr("&New File"), this);
     newFileActionPtr->setShortcut(QKeySequence::New);
@@ -286,10 +294,59 @@ void MasterActions::handleProjectWestActionSlot()
     }
 }
 
+//-----------------END of slots-----------------
 
 void MasterActions::initActions()
 {
     ;
+}
+
+
+void MasterActions::groupActions()
+{
+    //northGroupOneActPtrVecPtr->push_back()
+}
+
+
+QVector<QAction*>* MasterActions::getNorthGroupOneActPtrVecPtr()
+{
+    return northGroupOneActPtrVecPtr;
+}
+
+
+QVector<QAction*>* MasterActions::getNorthGroupTwoActPtrVecPtr()
+{
+    return northGroupTwoActPtrVecPtr;
+}
+
+
+QVector<QAction*>* MasterActions::getNorthGroupThreeActPtrVecPtr()
+{
+    return northGroupThreeActPtrVecPtr;
+}
+
+
+QVector<QAction*>* MasterActions::getNorthActPtrVecPtr()
+{
+    return northActPtrVecPtr;
+}
+
+
+QVector<QAction*>* MasterActions::getSouthActPtrVecPtr()
+{
+    return southActPtrVecPtr;
+}
+
+
+QVector<QAction*>* MasterActions::getEastActPtrVecPtr()
+{
+    return eastActPtrVecPtr;
+}
+
+
+QVector<QAction*>* MasterActions::getWestActPtrVecPtr()
+{
+    return westActPtrVecPtr;
 }
 
 

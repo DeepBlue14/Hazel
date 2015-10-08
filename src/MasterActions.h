@@ -17,6 +17,7 @@
 #include <QProcessEnvironment>
 #include <QDebug>
 #include <QString>
+#include <QVector>
 
 #include <iostream>
 
@@ -54,6 +55,14 @@ class MasterActions : public QWidget
     Q_OBJECT
     
     private:
+        QVector<QAction*>* northGroupOneActPtrVecPtr;
+        QVector<QAction*>* northGroupTwoActPtrVecPtr;
+        QVector<QAction*>* northGroupThreeActPtrVecPtr;
+        QVector<QAction*>* northActPtrVecPtr;
+        QVector<QAction*>* southActPtrVecPtr;
+        QVector<QAction*>* eastActPtrVecPtr;
+        QVector<QAction*>* westActPtrVecPtr;
+        
         // North
         QAction* newFileActionPtr;
         QAction* newTerminalActionPtr;
@@ -77,7 +86,6 @@ class MasterActions : public QWidget
         // East
         QAction* runEastActionPtr;
         QAction* navEastActionPtr;
-        
         
         // West
         QAction* projectWestActionPtr;
@@ -211,6 +219,16 @@ class MasterActions : public QWidget
          * 
          */
         void initActions();
+        void groupActions();
+        
+        
+        QVector<QAction*>* getNorthGroupOneActPtrVecPtr();
+        QVector<QAction*>* getNorthGroupTwoActPtrVecPtr();
+        QVector<QAction*>* getNorthGroupThreeActPtrVecPtr();
+        QVector<QAction*>* getNorthActPtrVecPtr();
+        QVector<QAction*>* getSouthActPtrVecPtr();
+        QVector<QAction*>* getEastActPtrVecPtr();
+        QVector<QAction*>* getWestActPtrVecPtr();
         
         
         /**

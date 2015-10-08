@@ -14,13 +14,16 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     this->setWindowTitle("Ride");
     
     masterActions = new MasterActions();
+    masterToolBtns = new MasterToolBtns();
     masterToolBars = new MasterToolBars();
     //openingGui = new OpeningGui();
     masterMenus = new MasterMenus();
     centralGui = new CentralGui();
     centralGui->passNorthTabWidgetPtr(masterActions->getNorthTabWidgetPtr() );
     
-    masterToolBars->setMasterActionsPtr(masterActions);
+    masterToolBtns->setMasterActionsPtr(masterActions);
+    //masterToolBars->setMasterActionsPtr(masterActions);
+    masterToolBars->setMasterToolBtnsPtr(masterToolBtns);
     masterMenus->setMasterActionsPtr(masterActions);
     
     masterStatusBar = new MasterStatusBar();
@@ -29,6 +32,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     this->setStatusBar(statusBar);
     
     initMenus();
+    initToolBtns();
     initToolBars();
 
     this->setCentralWidget(centralGui);
@@ -83,6 +87,17 @@ void MasterGui::initMenus()
     helpMenuPtr = menuBar()->addMenu(tr("&Help") );
     masterMenus->initHelpMenuPtr(helpMenuPtr);
     
+}
+
+
+void MasterGui::initToolBtns()
+{
+    masterToolBtns->initNorthGroupOneToolBtns();
+    masterToolBtns->initNorthGroupTwoToolBtns();
+    masterToolBtns->initNorthGroupThreeToolBtns();
+    masterToolBtns->initSouthGroupOneToolBtns();
+    masterToolBtns->initEastGroupOneToolBtns();
+    masterToolBtns->initWestGroupOneToolBtns();
 }
 
 

@@ -3,6 +3,17 @@
 
 OutputGui::OutputGui(QWidget* parent) : QWidget(parent)
 {
+    //--------------------------------
+    debugWidPtr = new QToolBar();
+
+    QAction* tmpAct = new QAction(QIcon("images/newFile01.png"), tr("&New File"), this);
+    tmpAct->setShortcut(QKeySequence::New);
+    tmpAct->setStatusTip("New File");
+    connect(tmpAct, SIGNAL(triggered() ), this, SLOT(handleNewFileActionSlot() ) );
+    
+    debugWidPtr->addAction(tmpAct);
+    //-----------------------------
+    
     outputTePtr = new QTextEdit("");
     //outputTePtr->setEnabled(false);
     outputTePtr->setReadOnly(true);
@@ -13,7 +24,9 @@ OutputGui::OutputGui(QWidget* parent) : QWidget(parent)
     tabWidgetPtr->setTabsClosable(true);
     
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(tabWidgetPtr, 0, 0);
+    outerLayout->addWidget(debugWidPtr, 0, 0);
+    outerLayout->addWidget(tabWidgetPtr, 1, 0);
+    
     
     
     this->setLayout(outerLayout);

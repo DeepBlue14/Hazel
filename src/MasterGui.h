@@ -26,6 +26,7 @@
 
 //#include "NewProjectGui.h"
 #include "MasterActions.h"
+#include "MasterToolBtns.h"
 #include "MasterToolBars.h"
 //#include "OpeningGui.h"
 #include "CentralGui.h"
@@ -73,6 +74,7 @@ class MasterGui : public QMainWindow
         QTabWidget* tabWidget;
         QTextEdit* editor;
         MasterActions* masterActions;
+        MasterToolBtns* masterToolBtns;
         MasterToolBars* masterToolBars;
         MasterMenus* masterMenus;
         MasterStatusBar* masterStatusBar;
@@ -88,6 +90,8 @@ class MasterGui : public QMainWindow
          * @param parent
          */
         MasterGui(QMainWindow* parent = 0);
+        
+        void initToolBtns();
         
         /**
          * 

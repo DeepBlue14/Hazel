@@ -13,8 +13,10 @@
 
 #include <QWidget>
 #include <QTextEdit>
+#include <QToolBar>
 #include <QGridLayout>
 #include <QTabWidget>
+#include <QAction>
 #include <QVector>
 #include <QString>
 
@@ -38,6 +40,7 @@ class OutputGui : public QWidget
     Q_OBJECT
        
     private:
+        QToolBar* debugWidPtr; // ???make this it's own class???
         QTabWidget* tabWidgetPtr;
         QTextEdit* outputTePtr;
         QVector<QWidget*> tabPtrVec;

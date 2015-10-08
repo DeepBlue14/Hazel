@@ -4,6 +4,7 @@
  * Email: jkuczyns@cs.uml.edu
  * File Description: This "page" displays the custom package.xml files
  *                   generated for the new ROS project (one at a time).
+ *                   The modified parts will be highlighted for convenience.
  *                   Some additional data (i.e. the location of the file, etc.)
  *                   is also listed.
  * Created on October 4, 2015, 7:26 PM

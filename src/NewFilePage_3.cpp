@@ -130,10 +130,12 @@ void NewFilePage_3::handleAddBtnPtrSlot()
                                                      specificMsgLwPtr->selectedItems().at(0)->text()) );
         
         // Add selection to GUI
-        addedLwPtr->addItem(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+        /*addedLwPtr->addItem(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
                                                      msgCatagoryLwPtr->selectedItems().at(0)->text() +
                                                      "::" +
-                                                     specificMsgLwPtr->selectedItems().at(0)->text()) );
+                                                     specificMsgLwPtr->selectedItems().at(0)->text()) );*/
+        addedLwPtr->addItem(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+                                                     typesEnteredStrLstPtr->back()->text()) );
         cout << "added to list: " << tmp->toStdString() << endl;
     }
     else

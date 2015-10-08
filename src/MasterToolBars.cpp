@@ -6,65 +6,65 @@ MasterToolBars::MasterToolBars(QWidget* parent) : QWidget(parent)
     ;
 }
 
-void MasterToolBars::setMasterActionsPtr(MasterActions* masterActionsPtr)
+
+void MasterToolBars::setMasterToolBtnsPtr(MasterToolBtns* masterToolBtnsPtr)
 {
-    this->masterActions = masterActionsPtr;
+    this->masterToolBtnsPtr = masterToolBtnsPtr;
 }
 
-
-MasterActions* MasterToolBars::getMasterActionsPtr()
+MasterToolBtns* MasterToolBars::getMasterToolBtnsPtr()
 {
-    return masterActions;
+    return masterToolBtnsPtr;
 }
 
 
 void MasterToolBars::initNorthGroupOneToolBar(QToolBar* toolbar)
 {
-    toolbar->addAction(getMasterActionsPtr()->getNewFileActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getNewTerminalActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getNewProjectActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getOpenProjectActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getSaveAllActionPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getNewFileToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getNewTerminalToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getNewProjectToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getOpenProjectToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getSaveAllToolBtnPtr() );
 }
 
 
 void MasterToolBars::initNorthGroupTwoToolBar(QToolBar* toolbar)
 {
-    toolbar->addAction(getMasterActionsPtr()->getUndoActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getRedoActionPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getUndoToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getRedoToolBtnPtr() );
 }
 
 
 void MasterToolBars::initNorthGroupThreeToolBar(QToolBar* toolbar)
 {
-    toolbar->addAction(getMasterActionsPtr()->getGitActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getBuildActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getCleanAndBuildActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getConfigForRunActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getRunActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getDebugActionPtr() );
-    toolbar->addAction(getMasterActionsPtr()->getGitActionPtr() );
+    //toolbar->addAction(getMasterActionsPtr()->getGitActionPtr() ); // should be projectconfig
+    toolbar->addWidget(getMasterToolBtnsPtr()->getBuildToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getCleanAndBuildToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getConfigForRunToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getRunToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getDebugToolBtnPtr() );
+    toolbar->addWidget(getMasterToolBtnsPtr()->getGitToolBtnPtr() );
 }
 
 
 void MasterToolBars::initSouthGroupOneToolBar(QToolBar* toolbarPtr)
 {
-    toolbarPtr->addAction(getMasterActionsPtr()->getOutputSouthActionPtr() );
-    toolbarPtr->addAction(getMasterActionsPtr()->getTerminalSouthActionPtr() );
+    toolbarPtr->addWidget(getMasterToolBtnsPtr()->getOutputSouthToolBtnPtr() );
+    toolbarPtr->addWidget(getMasterToolBtnsPtr()->getTerminalSouthToolBtnPtr() );
     //toolbarPtr->setOrientation(Qt::Vertical);
 }
 
 
 void MasterToolBars::initEastGroupOneToolBar(QToolBar* toolbarPtr)
 {
-    toolbarPtr->addAction(getMasterActionsPtr()->getRunEastActionPtr() );
-    toolbarPtr->addAction(getMasterActionsPtr()->getNavEastActionPtr() );
+    toolbarPtr->addWidget(getMasterToolBtnsPtr()->getRunEastToolBtnPtr() );
+    toolbarPtr->addWidget(getMasterToolBtnsPtr()->getNavEastToolBtnPtr() );
 }
 
 
 void MasterToolBars::initWestGroupOneToolBar(QToolBar* toolbarPtr)
 {
-    toolbarPtr->addAction(getMasterActionsPtr()->getProjectWestActionPtr() );
+    toolbarPtr->addWidget(getMasterToolBtnsPtr()->getProjectWestToolBtnPtr() );
 }
 
 

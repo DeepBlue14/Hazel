@@ -17,7 +17,8 @@
 #include <iostream>
 
 #include "NewProjectGui.h"
-#include "MasterActions.h"
+//#include "MasterActions.h"
+#include "MasterToolBtns.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -36,7 +37,8 @@ class MasterToolBars : public QWidget
     Q_OBJECT
     
     private:
-        MasterActions* masterActions;
+        //MasterActions* masterActions;
+        MasterToolBtns* masterToolBtnsPtr;
         
     private slots:
         ;
@@ -50,25 +52,25 @@ class MasterToolBars : public QWidget
         MasterToolBars(QWidget* parent = 0);
         
         /**
+         * Mutator.
          * 
-         * 
-         * @param masterActionsPtr
+         * @param masterToolBtnsPtr
          */
-        void setMasterActionsPtr(MasterActions* masterActionsPtr);
+        void setMasterToolBtnsPtr(MasterToolBtns* masterToolBtnsPtr);
         
         /**
-         * 
+         * Accessor.
          * 
          * @return 
          */
-        MasterActions* getMasterActionsPtr();
+        MasterToolBtns* getMasterToolBtnsPtr();
         
         /**
          * 
          * 
          * @param toolbarPtr
          */
-        void initNorthGroupOneToolBar(QToolBar* toolbarPtr); 
+        void initNorthGroupOneToolBar(QToolBar* toolbarPtr);
         
         /**
          * 

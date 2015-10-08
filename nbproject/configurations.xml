@@ -5,6 +5,9 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="f17" displayName="Debug" projectFiles="true">
+          <itemPath>src/DebugActions.h</itemPath>
+        </logicalFolder>
         <logicalFolder name="f4" displayName="FileTree" projectFiles="true">
           <itemPath>src/FTDirMenu.h</itemPath>
           <itemPath>src/FTFileMenu.h</itemPath>
@@ -30,6 +33,8 @@
           <itemPath>src/MasterMenus.h</itemPath>
           <itemPath>src/MasterStatusBar.h</itemPath>
           <itemPath>src/MasterToolBars.h</itemPath>
+          <itemPath>src/MasterToolBtns.h</itemPath>
+          <itemPath>src/RunBtnMenu.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="MsgManip" projectFiles="true">
           <itemPath>src/MsgDirDat.h</itemPath>
@@ -190,6 +195,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="f17" displayName="Debug" projectFiles="true">
+          <itemPath>src/DebugActions.cpp</itemPath>
+        </logicalFolder>
         <logicalFolder name="f4" displayName="FileTree" projectFiles="true">
           <itemPath>src/FTDirMenu.cpp</itemPath>
           <itemPath>src/FTFileMenu.cpp</itemPath>
@@ -215,6 +223,8 @@
           <itemPath>src/MasterMenus.cpp</itemPath>
           <itemPath>src/MasterStatusBar.cpp</itemPath>
           <itemPath>src/MasterToolBars.cpp</itemPath>
+          <itemPath>src/MasterToolBtns.cpp</itemPath>
+          <itemPath>src/RunBtnMenu.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="MsgManip" projectFiles="true">
           <itemPath>src/MsgDirDat.cpp</itemPath>
@@ -443,6 +453,10 @@
       </item>
       <item path="src/CustomPkgsGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/DebugActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DebugActions.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/DebugGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/DebugGui.h" ex="false" tool="3" flavor2="0">
@@ -570,6 +584,10 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterToolBtns.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterToolBtns.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -778,6 +796,10 @@
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -955,6 +977,10 @@
       </item>
       <item path="src/CustomPkgsGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/DebugActions.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DebugActions.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/DebugGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/DebugGui.h" ex="false" tool="3" flavor2="0">
@@ -1082,6 +1108,10 @@
       <item path="src/MasterToolBars.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/MasterToolBars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MasterToolBtns.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MasterToolBtns.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1290,6 +1320,10 @@
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

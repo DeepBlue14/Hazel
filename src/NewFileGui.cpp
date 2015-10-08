@@ -118,7 +118,7 @@ void NewFileGui::handleFinishBtnSlot()
 
 
     rideFile->openRdWrFile();
-    cout << "HERE" << endl;
+
     QByteArray tmpBArr;
     tmpBArr.append(editor->toPlainText());
     editor->setPlainText(rideFile->readAll() );
