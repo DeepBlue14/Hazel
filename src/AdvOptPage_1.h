@@ -1,5 +1,6 @@
 /* 
  * File:   AdvOptPage_1.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class provides the "ROS" options for AdvOptionsGui

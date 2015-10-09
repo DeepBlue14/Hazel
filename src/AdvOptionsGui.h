@@ -1,5 +1,6 @@
 /* 
  * File:   AdvOptionsGui.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class contains advanced options for setting up a 

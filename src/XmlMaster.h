@@ -1,5 +1,6 @@
 /* 
  * File:   XmlMaster.h
+ * Module: XmlLib
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Basic XML file reader namespace to be used by several

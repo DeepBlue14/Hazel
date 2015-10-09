@@ -1,5 +1,6 @@
 /* 
  * File:   Directory.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class stores data of a given directory.

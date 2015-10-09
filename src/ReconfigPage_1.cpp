@@ -94,7 +94,9 @@ bool ReconfigPage_1::isValidRosWs(QString* absPathToWs)
 
 QString* ReconfigPage_1::toString()
 {
+    QString* tmp = new QString("***METHOD STUB***");
     
+    return tmp;
 }
 
 

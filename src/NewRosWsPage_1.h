@@ -1,5 +1,6 @@
 /* 
  * File:   NewRosWsPage_1.h
+ * Module: NewRosWs
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: 

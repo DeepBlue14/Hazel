@@ -1,5 +1,6 @@
 /* 
  * File:   LinkFileWithGui.h
+ * Module: NewFile
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class provides methods to link a physical file

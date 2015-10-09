@@ -1,5 +1,6 @@
 /* 
  * File:   LineNumberArea.h
+ * Module: PrettySyntax
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class handles the area along the left margin which

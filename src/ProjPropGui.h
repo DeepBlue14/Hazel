@@ -1,5 +1,6 @@
 /* 
  * File:   ProjPropGui.h
+ * Module: Properties
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This UI opens when the user right-clicks on a projects

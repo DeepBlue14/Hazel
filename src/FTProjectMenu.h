@@ -1,5 +1,6 @@
 /* 
  * File:   FTProjectMenu.h
+ * Module: FileTree
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Menu (opened on right click) for projects listed in the

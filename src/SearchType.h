@@ -1,5 +1,6 @@
 /* 
  * File:   SearchType.h
+ * Module: Run
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This custom type contains a string (the abs path to a

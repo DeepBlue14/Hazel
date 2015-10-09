@@ -1,5 +1,6 @@
 /* 
  * File:   RosEnv.h
+ * Module: Properties
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Namespace to contain data utilized by the IDE.

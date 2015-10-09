@@ -1,5 +1,6 @@
 /* 
  * File:   RunPanelGui.h
+ * Module: Run
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This is the base class of the RunPanelGui, a fragment of

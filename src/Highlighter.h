@@ -1,5 +1,6 @@
 /* 
  * File:   Highlighter.h
+ * Module: PrettySyntax
  * Author: James
  * Email: 
  * File Description: 

@@ -11,6 +11,10 @@ void FTFileMenu::initMenu()
 {
     menu = new QMenu();
     
+    fileNameStrPtr = new QString("null");
+    fileLocStrPtr = new QString("null");
+    lastModdedStrPtr = new QString("null");
+    
     //this->addAction("Open");
     openAct = new QAction(tr("&Open"), this);
     //openAct->setShortcut(QKeySequence::Open);
@@ -117,6 +121,12 @@ void FTFileMenu::handleRemoveMenuSlot()
 void FTFileMenu::handlePropertiesMenuSlot()
 {
     //cout << "FTFileMenu::handlePropertiesMenuSlot() triggered" << endl;
+    filePropGuiPtr->setFileNameStrPtr(fileNameStrPtr);
+    filePropGuiPtr->setFileLocStrPtr(fileLocStrPtr);
+    filePropGuiPtr->setLastModdedStrPtr(lastModdedStrPtr);
+    
+    filePropGuiPtr->fillUiComponents();
+    
     filePropGuiPtr->show();
 }
 
@@ -124,6 +134,42 @@ void FTFileMenu::handlePropertiesMenuSlot()
 QMenu* FTFileMenu::getMenu()
 {
     return menu;
+}
+
+
+void FTFileMenu::setFileNameStrPtr(QString* fileChosenStrPtr)
+{
+    this->fileNameStrPtr = fileChosenStrPtr;
+}
+        
+        
+QString* FTFileMenu::getFileNameStrPtr()
+{
+    return fileNameStrPtr;
+}
+
+
+void FTFileMenu::setFileLocStrPtr(QString* fileLocStrPtr)
+{
+    this->fileLocStrPtr = fileLocStrPtr;
+}
+
+
+QString* FTFileMenu::getFileLocStrPtr()
+{
+    return fileLocStrPtr;
+}
+
+
+void FTFileMenu::setLastModdedStrPtr(QString* lastModdedStrPtr)
+{
+    this->lastModdedStrPtr = lastModdedStrPtr;
+}
+        
+        
+QString* FTFileMenu::getLastModdedStrPtr()
+{
+    return lastModdedStrPtr;
 }
 
 

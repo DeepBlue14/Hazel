@@ -1,5 +1,6 @@
 /* 
  * File:   TextReplacer.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Primitive (non-compiler oriented) text replace/refactoring

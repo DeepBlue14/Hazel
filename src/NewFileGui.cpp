@@ -124,7 +124,7 @@ void NewFileGui::handleFinishBtnSlot()
     editor->setPlainText(rideFile->readAll() );
     //add tab via "tunnel"
     northTabWidgetPtr->addTab(editor, *newFilePage_5Ptr->getFileNameStrPtr()
-                                        + *newFilePage_5Ptr->getFileExtStrPtr());
+                                        + *newFilePage_5Ptr->getFileExtStrPtr() );
     //make it the visible one.
     northTabWidgetPtr->setCurrentIndex(/*northTabWidgetPtr->count() */1);
     

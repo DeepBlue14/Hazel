@@ -1,5 +1,6 @@
 /* 
  * File:   NewProjectPage_3.h
+ * Module: NewProject
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: 

@@ -1,5 +1,6 @@
 /* 
  * File:   NewProjectPage_2.h
+ * Module: NewProject
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: for package.xml data

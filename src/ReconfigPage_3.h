@@ -1,5 +1,6 @@
 /* 
  * File:   ReconfigPage_3.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class features a "page" widget to allow the user

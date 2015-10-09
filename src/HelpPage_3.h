@@ -1,5 +1,6 @@
 /* 
  * File:   HelpPage_3.h
+ * Module: Help
  * Author: james
  *
  * Created on June 18, 2015, 5:50 PM

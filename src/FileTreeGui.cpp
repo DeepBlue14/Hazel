@@ -178,6 +178,14 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
             && treePtr->selectedItems().at(0)->childCount() == 0)
     {
         FTFileMenu myMenu;
+        //---------------------- ???instead, find actual file via path???
+        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+                treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+        myMenu.setFileNameStrPtr(new QString(fileName) );
+        myMenu.setFileLocStrPtr(new QString(treePtr->selectedItems().at(0)->toolTip(0)) );
+        //myMenu
+        //----------------------
+        
         QAction* selectedItem = myMenu.getMenu()->exec(globalPos);
         LinkFileWithGui lfwg;
         FileGui* fg;
@@ -195,7 +203,12 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     }
     else
     {
+        cout << "Activating FTDirmenu" << endl;
         FTDirMenu myMenu;
+        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+                treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+        myMenu.setDirNameStrPtr(new QString(fileName) );
+        myMenu.setDirLocStrPtr(new QString(treePtr->selectedItems().at(0)->toolTip(0)) );
         QAction* selectedItem = myMenu.getMenu()->exec(globalPos);
         //cout << "diretory: " << treePtr->selectedItems().at(0)->text(0).toStdString() << endl;
         //cout << "file: " << treePtr->selectedItems().at(0)->toolTip(0).toStdString() << endl;

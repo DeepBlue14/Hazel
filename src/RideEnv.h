@@ -1,5 +1,6 @@
 /* 
  * File:   EnvCmds.h
+ * Module: Properties
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file contains data specific to each "project", i.e.

@@ -1,5 +1,6 @@
 /* 
  * File:   MsgParser.h
+ * Module: MsgManip
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class parses ROS message files.

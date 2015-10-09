@@ -1,5 +1,6 @@
 /* 
  * File:   FTPropertiesGui.h
+ * Module: FileTree
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Properties GUI for configuring compiler and linker

@@ -1,5 +1,6 @@
 /* 
  * File:   TouchSrcs.h
+ * Module: Reconfig
  * Author: james
  * Email: 
  * File Description: 

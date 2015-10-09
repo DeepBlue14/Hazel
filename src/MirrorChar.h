@@ -1,5 +1,6 @@
 /* 
  * File:   MirrorChar.h
+ * Module: PrettySyntax
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class is a type for parentheses, curly and square

@@ -1,5 +1,6 @@
 /* 
  * File:   OutputGui.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: The GUI serves as the widget where the build & run output

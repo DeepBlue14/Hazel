@@ -1,5 +1,6 @@
 /* 
  * File:   MsgDat.h
+ * Module: MsgManip
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: 

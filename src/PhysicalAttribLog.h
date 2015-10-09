@@ -1,5 +1,6 @@
 /* 
  * File:   PhysicalAttribLog.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file will organize and store pointers to the current

@@ -1,5 +1,6 @@
 /* 
  * File:   ReconfigPage_5.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This "page" tells the user that the preliminary work has

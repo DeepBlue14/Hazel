@@ -1,5 +1,6 @@
 /* 
  * File:   ConsoleColors.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Console color for UNIX-type systems.

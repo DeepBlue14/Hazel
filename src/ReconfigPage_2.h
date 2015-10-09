@@ -1,5 +1,6 @@
 /* 
  * File:   ReconfigPage_2.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class contains a "page" which allows the user to

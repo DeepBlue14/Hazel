@@ -1,5 +1,6 @@
 /* 
  * File:   QtTypeConvs.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This interface contains a series of methods which I have

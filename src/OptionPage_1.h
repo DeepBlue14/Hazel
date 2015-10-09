@@ -1,5 +1,6 @@
 /* 
  * File:   OptionPage_1.h
+ * Module: Options
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This "page" displays themes and some available previews.

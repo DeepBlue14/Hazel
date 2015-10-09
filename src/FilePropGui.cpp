@@ -6,9 +6,13 @@ FilePropGui::FilePropGui(QWidget* parent) : QWidget(parent)
     fileNameLblPtr = new QLabel("File name:");
     fileLocLblPtr = new QLabel("File location:");
     lastModdedLblPtr = new QLabel("Last modified:");
+    
     fileNameLePtr = new QLineEdit();
+    fileNameLePtr->setEnabled(false);
     fileLocLePtr = new QLineEdit();
+    fileLocLePtr->setEnabled(false);
     lastModdedLePtr = new QLineEdit();
+    lastModdedLePtr->setEnabled(false);
     
     fileNameStrPtr = new QString();
     fileLocStrPtr = new QString();
@@ -28,8 +32,18 @@ FilePropGui::FilePropGui(QWidget* parent) : QWidget(parent)
 }
 
 
+void FilePropGui::fillUiComponents()
+{
+    cout << "setting text: 2" << fileNameStrPtr->toStdString() << endl;
+    fileNameLePtr->setText(*fileNameStrPtr);
+    fileLocLePtr->setText(*fileLocStrPtr);
+    lastModdedLePtr->setText(*lastModdedStrPtr);
+}
+
+
 void FilePropGui::setFileNameStrPtr(QString* fileNameStrPtr)
 {
+    cout << "setting text: 1" << fileNameStrPtr->toStdString() << endl;
     this->fileNameStrPtr = fileNameStrPtr;
 }
 

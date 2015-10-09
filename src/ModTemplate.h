@@ -1,5 +1,6 @@
 /* 
  * File:   ModTemplate.h
+ * Module: NewFile
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Insert the user's custom data into the template.

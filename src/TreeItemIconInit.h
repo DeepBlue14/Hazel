@@ -1,5 +1,6 @@
 /* 
  * File:   FileTreeIconInit.h
+ * Module: FileTree
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file sets icons for the different types of files

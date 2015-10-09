@@ -1,5 +1,6 @@
 /* 
  * File:   DebugActions.h
+ * Module: Debug
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class creates the different valid actions which can

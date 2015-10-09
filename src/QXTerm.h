@@ -1,5 +1,6 @@
 /* 
  * File:   QXTerm.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class allows a XTerm application to be embedded into

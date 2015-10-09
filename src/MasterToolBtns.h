@@ -1,5 +1,6 @@
 /* 
  * File:   MasterToolBtns.h
+ * Module: Core
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: 

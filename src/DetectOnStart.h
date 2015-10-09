@@ -1,5 +1,6 @@
 /* 
  * File:   DetectOnStart.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class detects various programs, directories, etc. on

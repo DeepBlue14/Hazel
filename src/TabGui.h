@@ -1,5 +1,6 @@
 /* 
  * File:   MasterTabs.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file creates the tab widget that will be contained
@@ -17,6 +18,7 @@
 #include <QMenu>
 #include <QGridLayout>
 #include <QString>
+#include <QVector>
 
 
 #include <iostream>
@@ -48,6 +50,14 @@ class TabGui : public QWidget
         void handleCloseTabSlot(int index);
     
     public:
+        enum TabType
+        {
+            FILE,
+            TERM,
+            OTHER
+        };
+        QVector<TabType> tabTypeVec;
+        
         /**
          * Constructor.
          * 
@@ -60,8 +70,8 @@ class TabGui : public QWidget
          * 
          * @param tabType
          */
-        template<class TabType>
-        void addTab(TabType* tabType);
+        template<class GenericTab>
+        void addTab(GenericTab* tab, TabType tabType);
         
         /**
          * 

@@ -1,5 +1,6 @@
 /* 
  * File:   MasterStatusBar.h
+ * Module: Core
  * Author: James Kuczynski
  * Email:
  * File Description: 

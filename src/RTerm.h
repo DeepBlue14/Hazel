@@ -1,5 +1,6 @@
 /* 
  * File:   RTerm.h
+ * Module: RTerm
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class is the frontend of RTerm, a terminal emulator

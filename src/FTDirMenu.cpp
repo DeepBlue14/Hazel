@@ -9,6 +9,10 @@ FTDirMenu::FTDirMenu()
 
 void FTDirMenu::initMenu()
 {
+    dirNameStrPtr = new QString();
+    dirLocStrPtr = new QString();
+    lastModdedStrPtr = new QString();
+        
     menu = new QMenu();
 
     QMenu* newFileMenu = menu->addMenu("New File");
@@ -37,7 +41,7 @@ void FTDirMenu::initMenu()
     connect(propertiesAct, SIGNAL(triggered()), this, SLOT(handlePropertiesMenuSlot() ) );
     menu->addAction(propertiesAct);
 
-
+    dirPropGuiPtr = new DirPropGui();
 }
 
 
@@ -73,13 +77,56 @@ void FTDirMenu::handleRenameMenuSlot()
 
 void FTDirMenu::handlePropertiesMenuSlot()
 {
+    //cout << "FTFileMenu::handlePropertiesMenuSlot() triggered" << endl;
+    dirPropGuiPtr->setDirNameStrPtr(dirNameStrPtr);
+    dirPropGuiPtr->setDirLocStrPtr(dirLocStrPtr);
+    dirPropGuiPtr->setLastModdedStrPtr(lastModdedStrPtr);
     
+    dirPropGuiPtr->fillUiComponents();
+    
+    dirPropGuiPtr->show();
 }
 
 
 QMenu* FTDirMenu::getMenu()
 {
     return menu;
+}
+
+
+void FTDirMenu::setDirNameStrPtr(QString* dirNameStrPtr)
+{
+    this->dirNameStrPtr = dirNameStrPtr;
+}
+
+
+QString* FTDirMenu::getDirNameStrPtr()
+{
+    return dirNameStrPtr;
+}
+
+
+void FTDirMenu::setDirLocStrPtr(QString* dirLocStrPtr)
+{
+    this->dirLocStrPtr = dirLocStrPtr;
+}
+
+
+QString* FTDirMenu::getDirLocStrPtr()
+{
+    return dirLocStrPtr;
+}
+
+
+void FTDirMenu::setLastModdedStrPtr(QString* lastModdedStrPtr)
+{
+    this->lastModdedStrPtr = lastModdedStrPtr;
+}
+
+
+QString* FTDirMenu::getLastModdedStrPtr()
+{
+    return lastModdedStrPtr;
 }
 
 

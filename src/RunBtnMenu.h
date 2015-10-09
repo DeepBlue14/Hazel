@@ -1,5 +1,6 @@
 /* 
  * File:   RunBtnMenu.h
+ * Module: Core
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class implements a menu for the "Run" button located

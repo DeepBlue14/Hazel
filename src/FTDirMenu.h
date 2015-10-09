@@ -1,5 +1,6 @@
 /* 
  * File:   FTDirMenu.h
+ * Module: FileTree
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Menu (opened on right click) for directories listed in the
@@ -15,6 +16,7 @@
 
 #include <iostream>
 
+#include "DirPropGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -41,6 +43,12 @@ class FTDirMenu : public QMenu
         QAction* renameAct;
         QAction* propertiesAct;
         
+        QString* dirNameStrPtr;
+        QString* dirLocStrPtr;
+        QString* lastModdedStrPtr;
+        
+        DirPropGui* dirPropGuiPtr;
+        
     private slots:
         void handleCMakeListsMenuSlot();
         void handlePackageMenuSlot();
@@ -66,6 +74,14 @@ class FTDirMenu : public QMenu
          * @return 
          */
         QMenu* getMenu();
+        
+        
+        void setDirNameStrPtr(QString* dirNameStrPtr);
+        QString* getDirNameStrPtr();
+        void setDirLocStrPtr(QString* dirLocStrPtr);
+        QString* getDirLocStrPtr();
+        void setLastModdedStrPtr(QString* lastModdedStrPtr);
+        QString* getLastModdedStrPtr();
         
         /**
          * Destructor.

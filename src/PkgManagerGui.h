@@ -1,8 +1,10 @@
 /* 
  * File:   PkgManagerGui.h
+ * Module: PkgInstaller
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: This class contains the UI which holds the installer data,
+ *                   including the tabs (see PkgManagerTabs.h).
  *
  * Created on August 27, 2015, 10:36 AM
  */

@@ -1,5 +1,6 @@
 /* 
  * File:   FetchWebSource.h
+ * Module: PkgInstaller
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class loads to the ROS web page containing the list

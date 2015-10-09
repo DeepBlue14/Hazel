@@ -1,5 +1,6 @@
 /* 
  * File:   File.h
+ * Module: PrettySyntax
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class inherits from class QPlainTextEdit.  It

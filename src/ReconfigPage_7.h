@@ -1,5 +1,6 @@
 /* 
  * File:   ReconfigPage_7.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This "page" allows the user to interactively modify the

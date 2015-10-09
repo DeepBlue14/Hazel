@@ -1,5 +1,6 @@
 /* 
  * File:   ModifyPackage.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class modifies existing ROS manifest.xml files.

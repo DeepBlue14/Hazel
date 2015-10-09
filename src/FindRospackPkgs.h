@@ -1,5 +1,6 @@
 /* 
  * File:   FindInstalledRosPkgs.h
+ * Module: PkgInstaller
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class runs the "rospack list-names" command on the

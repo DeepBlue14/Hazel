@@ -1,8 +1,9 @@
 /* 
  * File:   PkgManagerTabs.h
+ * Module: PkgInstaller
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: This class contains the ...
  *
  * Created on August 27, 2015, 5:44 PM
  */
@@ -13,6 +14,7 @@
 #include <QWidget>
 #include <QListWidget>
 #include <QString>
+#include <QThread>
 #include <QGridLayout>
 
 #include <iostream>

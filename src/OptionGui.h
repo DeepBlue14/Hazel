@@ -1,5 +1,6 @@
 /* 
  * File:   OptionsGui.h
+ * Module: Options
  * Author: James Kuczynski
  * Email jkuczyns@cs.uml.edu
  * File Description: GUI to allow the user to modify the look and feel.

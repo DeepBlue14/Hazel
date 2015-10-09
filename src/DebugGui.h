@@ -1,5 +1,6 @@
 /* 
  * File:   DebugGui.h
+ * Module: Unaffiliated
  * Author: james
  * Email:
  * File Description: 

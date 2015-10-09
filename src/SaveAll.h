@@ -1,5 +1,6 @@
 /* 
  * File:   SaveAll.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This namespace saves all changes in the UI files to the

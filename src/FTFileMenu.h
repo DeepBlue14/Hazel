@@ -1,5 +1,6 @@
 /* 
  * File:   FileTreeMenu.h
+ * Module: FileTree
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: Menu (opened on right click) for files listed in the
@@ -45,6 +46,10 @@ class FTFileMenu : public QWidget
         QAction* removeAct;
         QAction* propertiesAct;
         
+        QString* fileNameStrPtr;
+        QString* fileLocStrPtr;
+        QString* lastModdedStrPtr;
+        
         FilePropGui* filePropGuiPtr;
         
     private slots:
@@ -75,6 +80,27 @@ class FTFileMenu : public QWidget
          * @return 
          */
         QMenu* getMenu();
+        
+        
+        void setFileNameStrPtr(QString* fileNameStrPtr);
+        
+        
+        QString* getFileNameStrPtr();
+        
+        
+        void setFileLocStrPtr(QString* fileLocStrPtr);
+        
+        
+        QString* getFileLocStrPtr();
+        
+        
+        void setLastModdedStrPtr(QString* lastModdedStrPtr);
+        
+        
+        QString* getLastModdedStrPtr();
+        
+        
+        
         
         /**
          * Destructor.

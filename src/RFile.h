@@ -1,5 +1,6 @@
 /* 
  * File:   RideFile.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class inherits from class QFile, and acts as an

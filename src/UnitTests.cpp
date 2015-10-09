@@ -1,5 +1,6 @@
 /*
  * File:   UnitTests.cpp
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file provides a series of unit tests to validate

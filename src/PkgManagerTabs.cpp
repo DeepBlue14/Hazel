@@ -1,3 +1,5 @@
+#include <qt4/QtCore/qtconcurrentrun.h>
+
 #include "PkgManagerTabs.h"
 
 
@@ -26,6 +28,7 @@ void PkgManagerTabs::load(QString rosDistro, int fetchOrFind)
     {
         cout << "loading" << endl;
         fetchWebSourcePtr->loadPage();
+        
         *pkgNamesStrLstPtr = *fetchWebSourcePtr->getRosPkgStrLstPtr();
         //cout << "^^^: " << pkgNamesStrLstPtr->at(0).toStdString() << endl;
         pkgNamesLstWidPtr->addItems(*pkgNamesStrLstPtr);

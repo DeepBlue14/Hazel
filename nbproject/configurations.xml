@@ -107,6 +107,7 @@
           <itemPath>src/ReconfigPage_4.h</itemPath>
           <itemPath>src/ReconfigPage_5.h</itemPath>
           <itemPath>src/ReconfigPage_6.h</itemPath>
+          <itemPath>src/ReconfigPage_7.h</itemPath>
           <itemPath>src/ReconfigToolBar.h</itemPath>
           <itemPath>src/ToCMake.h</itemPath>
           <itemPath>src/ToRosMake.h</itemPath>
@@ -159,7 +160,6 @@
         <itemPath>src/UnixConsoleText.h</itemPath>
         <itemPath>src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
-      <itemPath>src/ReconfigPage_7.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"

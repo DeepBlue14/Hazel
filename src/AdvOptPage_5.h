@@ -1,5 +1,6 @@
 /* 
  * File:   AdvOptPage_5.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class provides the "Run" options for AdvOptionsGui.

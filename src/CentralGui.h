@@ -1,5 +1,6 @@
 /* 
  * File:   CentralGui.h
+ * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file will contain the qcentralwidget of the

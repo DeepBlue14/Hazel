@@ -1,5 +1,6 @@
 /* 
  * File:   ReconfigPage_4.h
+ * Module: Reconfig
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This "page" displays what the program is doing during

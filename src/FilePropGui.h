@@ -1,5 +1,6 @@
 /* 
  * File:   FilePropGui.h
+ * Module: Properties
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This UI opens when the user right-clicks a file in the
@@ -48,6 +49,7 @@ class FilePropGui : public QWidget
         
     public:
         FilePropGui(QWidget* parent = 0);
+        void fillUiComponents();
         void setFileNameStrPtr(QString* fileNameStrPtr);
         QString* getFileNameStrPtr();
         void setFileLocStrPtr(QString* fileLocStrPtr);
