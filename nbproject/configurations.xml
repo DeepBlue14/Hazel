@@ -132,6 +132,8 @@
         </logicalFolder>
         <logicalFolder name="f14" displayName="XmlLib" projectFiles="true">
           <itemPath>src/ParseFontConfigXml.h</itemPath>
+          <itemPath>src/ThemeDat.h</itemPath>
+          <itemPath>src/ThemeTxtElem.h</itemPath>
           <itemPath>src/XmlMaster.h</itemPath>
         </logicalFolder>
         <itemPath>src/Build.h</itemPath>
@@ -167,8 +169,6 @@
       <logicalFolder name="file_templates"
                      displayName="file_templates"
                      projectFiles="true">
-        <itemPath>file_templates/c_templates</itemPath>
-        <itemPath>file_templates/python_templates</itemPath>
       </logicalFolder>
       <logicalFolder name="qss" displayName="qss" projectFiles="true">
         <itemPath>src/qss/Classic.css</itemPath>
@@ -184,11 +184,8 @@
         </logicalFolder>
         <logicalFolder name="scout" displayName="scout" projectFiles="true">
           <logicalFolder name="project" displayName="project" projectFiles="true">
-            <itemPath>resources/scout/project/test.txt</itemPath>
           </logicalFolder>
-          <itemPath>resources/scout/scout.qrc</itemPath>
         </logicalFolder>
-        <itemPath>CMakeLists.txt</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
@@ -322,6 +319,8 @@
         </logicalFolder>
         <logicalFolder name="f14" displayName="XmlLib" projectFiles="true">
           <itemPath>src/ParseFontConfigXml.cpp</itemPath>
+          <itemPath>src/ThemeDat.cpp</itemPath>
+          <itemPath>src/ThemeTxtElem.cpp</itemPath>
           <itemPath>src/XmlMaster.cpp</itemPath>
         </logicalFolder>
         <itemPath>src/Build.cpp</itemPath>
@@ -394,20 +393,10 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="CMakeLists.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="file_templates/c_templates" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="file_templates/python_templates" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="resources/ride_project/configurations.xml"
             ex="false"
             tool="3"
             flavor2="0">
-      </item>
-      <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/AdvOptPage_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -848,6 +837,14 @@
       <item path="src/TextReplacer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/TextReplacer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ThemeDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ThemeDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ThemeTxtElem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ThemeTxtElem.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Timer.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -918,20 +915,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="CMakeLists.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="file_templates/c_templates" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="file_templates/python_templates" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="resources/ride_project/configurations.xml"
             ex="false"
             tool="3"
             flavor2="0">
-      </item>
-      <item path="resources/scout/project/test.txt" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="resources/scout/scout.qrc" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/AdvOptPage_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1372,6 +1359,14 @@
       <item path="src/TextReplacer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/TextReplacer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ThemeDat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ThemeDat.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ThemeTxtElem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ThemeTxtElem.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Timer.cpp" ex="false" tool="1" flavor2="0">
       </item>

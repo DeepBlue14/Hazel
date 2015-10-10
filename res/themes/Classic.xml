@@ -2,18 +2,21 @@
 File:   Classic.xml
 Author: James Kuczynski
 Email: jkuczyns@cs.uml.edu
-File Description: the IDE will load a style file and a lang file, and
+File Description: the IDE will load a theme file and a lang file, and
                   match keys (i.e. identifier with identifier, etc.).
                   This level of abstraction allows the user to create
-                  custom style keys to correspond with custom lang
+                  custom theme keys to correspond with custom lang
                   keys.
 
 Created: September 12 2015 at 11:00pm 
  -->
 
 
-<pretty_print>
-	<style name="Classic.xml">
+<theme>
+	<general
+	    name="Classic.xml"
+	    loc="/home/james/NetBeansProjects/ride/res/themes"
+	/>
 	<line_number_area>
 		<font
 			name="Monospace"
@@ -238,4 +241,4 @@ Created: September 12 2015 at 11:00pm
 				/>
 		</text>
 	</text_field>
-</pretty_print>
+</theme>
