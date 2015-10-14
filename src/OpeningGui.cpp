@@ -18,7 +18,7 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     QFont* subheaderFont = new QFont("Serif");
     subheaderFont->setPointSize(14);
     appLabelPtr->setText("<p align=\"center\"><b>R</b>OS <b>I</b>ntegrated <b>D</b>evelopment <b>E</b>nvironment</p>"
-    "<p align=\"center\"><i>Developer: put some very long quote or something line that about ROS here!</i></p>");
+    "<p align=\"center\"><i>Revel in its power!</i></p>");
     
     applicationNameIconLabelPtr->setPixmap(applicationLogoPixmapPtr.scaled(195, 166, Qt::IgnoreAspectRatio, Qt::FastTransformation) );
     

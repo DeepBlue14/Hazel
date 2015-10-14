@@ -3,7 +3,7 @@
  * Module: Properties
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: This file contains data specific to each "project", i.e.
+ * File Description: This file contains data specific to EACH "project", i.e.
  *                   the ROS catkin workspace the project is located in,
  *                   the absolute path to the project root directory, etc.
  * 

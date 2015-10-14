@@ -33,6 +33,7 @@
 #include "FetchWebSource.h"
 #include "ParseFontConfigXml.h"
 #include "XmlMaster.h"
+#include "SplashScreen.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -87,13 +88,24 @@ int main(int argc, char *argv[])
     PkgManagerGui pkgManagerGui;
     
     
+    SplashScreen* splash = new SplashScreen(&app);
+
+    
     switch(choiceInt)
     {
         case 0:
             //return EXIT_SUCCESS;
             break;
         case 1:
-            masterGui.show();
+            splash->show();
+            cout << "HERE (1)" << endl;
+            QTimer::singleShot(5000, splash, SLOT(close() ) );
+            cout << "HERE (2)" << endl;
+            QTimer::singleShot(5000, &masterGui, SLOT(show() ) );
+            cout << "HERE (3)" << endl;
+            
+            splash->spin();
+            //masterGui.show();
             return app.exec();
         case 2:
             cout << "Beginning RProcess test." << endl;

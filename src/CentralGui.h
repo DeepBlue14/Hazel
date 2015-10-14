@@ -1,6 +1,6 @@
 /* 
  * File:   CentralGui.h
- * Module: Unaffiliated
+ * Module: MasterFEnd
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This file will contain the qcentralwidget of the

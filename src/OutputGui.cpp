@@ -1,18 +1,18 @@
 #include "OutputGui.h"
+#include "DebugToolbar.h"
 
 
-OutputGui::OutputGui(QWidget* parent) : QWidget(parent)
+OutputGui::OutputGui(QMainWindow* parent) : QMainWindow(parent)
 {
-    //--------------------------------
+    debugToolbarPtr = new DebugToolbar();
     debugWidPtr = new QToolBar();
 
-    QAction* tmpAct = new QAction(QIcon("images/newFile01.png"), tr("&New File"), this);
-    tmpAct->setShortcut(QKeySequence::New);
-    tmpAct->setStatusTip("New File");
-    connect(tmpAct, SIGNAL(triggered() ), this, SLOT(handleNewFileActionSlot() ) );
-    
-    debugWidPtr->addAction(tmpAct);
-    //-----------------------------
+    QVector<QAction*>* tmpActVec = debugToolbarPtr->getActions();
+    for(size_t i = 0; i < tmpActVec->size(); i++)
+    {
+        debugWidPtr->addAction(tmpActVec->at(i) );
+    }
+
     
     outputTePtr = new QTextEdit("");
     //outputTePtr->setEnabled(false);
@@ -23,13 +23,11 @@ OutputGui::OutputGui(QWidget* parent) : QWidget(parent)
     tabWidgetPtr->addTab(outputTePtr, "output text");
     tabWidgetPtr->setTabsClosable(true);
     
-    outerLayout = new QGridLayout();
-    outerLayout->addWidget(debugWidPtr, 0, 0);
-    outerLayout->addWidget(tabWidgetPtr, 1, 0);
     
+    this->setCentralWidget(tabWidgetPtr);
+    this->addToolBar(Qt::RightToolBarArea, debugWidPtr);
+
     
-    
-    this->setLayout(outerLayout);
 }
 
 

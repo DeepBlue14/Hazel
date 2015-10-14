@@ -10,12 +10,12 @@
 - Implement xml parsing: http://3gfp.com/2015/01/qt-xml-parsing-continued/
 - Implement CMakeLists parsing/insertion
 - Finish modifing "run" button backend; see: http://www.walletfox.com/course/customqtoolbutton.php
-& finish refactoring the "master" files (have separate master actions for toolbar?)
+    & finish refactoring the "master" files (have separate master actions for toolbar?)
 - Finish messing with the FileTreeGui module
 - Un-hardcode @ NewFilePage_3 "add" slot
 - Implement Tyranosaurus Lex
 - Add debug toolbar (connected to output widget?)
-- For pkg_manager on RIDE, use QFuture<> thread
+- Implement threading
 
 
 Ref this:

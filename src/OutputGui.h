@@ -1,10 +1,10 @@
 /* 
  * File:   OutputGui.h
- * Module: Unaffiliated
+ * Module: South
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: The GUI serves as the widget where the build & run output
- *                   is displayed.
+ *                   is displayed.  It also contains debug options, etc.
  *
  * Created on May 6, 2015, 4:44 PM
  */
@@ -12,6 +12,7 @@
 #ifndef OUTPUT_GUI_H
 #define	OUTPUT_GUI_H
 
+#include <QMainWindow>
 #include <QWidget>
 #include <QTextEdit>
 #include <QToolBar>
@@ -23,6 +24,7 @@
 
 #include <iostream>
 
+#include "DebugToolbar.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -36,11 +38,12 @@ namespace cct = UnixConsoleText;
 
 using namespace std;
 
-class OutputGui : public QWidget
+class OutputGui : public QMainWindow
 {
     Q_OBJECT
        
     private:
+        DebugToolbar* debugToolbarPtr;
         QToolBar* debugWidPtr; // ???make this it's own class???
         QTabWidget* tabWidgetPtr;
         QTextEdit* outputTePtr;
@@ -57,7 +60,7 @@ class OutputGui : public QWidget
          * 
          * @param parent reference to parent type.
          */
-        OutputGui(QWidget* parent = 0);
+        OutputGui(QMainWindow* parent = 0);
         
         /**
          * 

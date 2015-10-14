@@ -1,9 +1,11 @@
 /* 
  * File:   ReconfigGui.h
  * Module: Reconfig
- * Author: james
- * Email:
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: 
+ * 
+ * Reference: http://stackoverflow.com/questions/16650825/converting-old-makefile-to-cmake
  *
  * Created on July 20, 2015, 5:05 PM
  */
