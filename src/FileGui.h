@@ -26,6 +26,7 @@
 #include <QResizeEvent>
 #include <QSize>
 #include <QPixmap>
+#include <QMessageBox>
 
 #include <iostream>
 
@@ -149,6 +150,9 @@ class FileGui : public QPlainTextEdit
          * @param event
          */
         void resizeEvent(QResizeEvent* event);
+        
+        
+        void closeEvent(QCloseEvent* event);
         
         /**
          * Classic toString method.

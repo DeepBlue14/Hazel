@@ -27,13 +27,19 @@ void TabGui::handleCloseTabSlot(int index)
     if(tabWidget->tabText(index).contains(".") )
     {
         cout << "attempting to close FILE type" << endl;
+        cout << "closing tab" << endl;
+        QWidget* tmpWid = tabWidget->widget(index);
+        FileGui* tmpFg = (FileGui*) tmpWid;
+        cout << tmpFg->toString()->toStdString() << endl;
+        emit tmpFg->closeEvent(new QCloseEvent() );
     }
     else
     {
         cout << "attempting to close generic tab" << endl;
     }
+    
+    
     tabWidget->removeTab(index);
-    cout << "closing tab" << endl;
 }
 
 // !!!This is never called (I think)!!!

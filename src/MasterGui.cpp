@@ -439,6 +439,24 @@ CentralGui* MasterGui::getCentralGui()
 }
 
 
+void MasterGui::closeEvent(QCloseEvent* event)
+{
+    cout << "Termination is eminent!!!" << endl;
+    QMessageBox::StandardButton resBtn = QMessageBox::question(this, "Ride",
+            "Are you sure?\n", QMessageBox::Cancel | QMessageBox::No | QMessageBox::Yes);
+    
+    if(resBtn != QMessageBox::Yes)
+    {
+        event->ignore();
+    }
+    else
+    {
+        event->accept();
+    }
+                                                               
+}
+
+
 QString* MasterGui::toString()
 {
     QString* tmp = new QString();

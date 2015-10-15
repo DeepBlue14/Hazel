@@ -31,17 +31,34 @@ QVector<RFile*> SaveAll::getRideFilePtrVec()
 }
 
 
-void SaveAll::save()
+bool SaveAll::save()
 {
     for(size_t i = 0; i < rideFilePtrVec.size(); i++)
     {
         if(!rideFilePtrVec.at(i)->openRdWrFile() )
         {
             cerr << "Failed to open file for rd wr" << endl;
+            return false;
         }
         QTextStream out(rideFilePtrVec.at(i) );
         rideFilePtrVec.at(i)->resize(0);
         out << rideFilePtrVec.at(i)->getParallelFileGuiPtr()->toPlainText() << endl;
     }
     
+    return true;
+}
+
+
+bool SaveAll::save(int tabIndex)
+{
+    if(!rideFilePtrVec.at(tabIndex)->openRdWrFile() )
+    {
+        cerr << "Failed to open file for rd wr" << endl;
+        return false;
+    }
+    QTextStream out(rideFilePtrVec.at(tabIndex) );
+    rideFilePtrVec.at(tabIndex)->resize(0);
+    out << rideFilePtrVec.at(tabIndex)->getParallelFileGuiPtr()->toPlainText() << endl;
+    
+    return true;
 }

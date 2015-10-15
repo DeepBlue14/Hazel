@@ -22,7 +22,9 @@
 
 
 #include <iostream>
+#include <typeinfo>
 
+#include "FileGui.h"
 #include "OpeningGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"

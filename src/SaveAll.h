@@ -63,7 +63,10 @@ namespace SaveAll
     /**
      * saves all changes in the UI files to the physical files.
      */
-    void save();
+    bool save();
+    
+    
+    bool save(int tabIndex);
 };
 
 #endif	/* SAVE_ALL_H */

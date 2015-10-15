@@ -1,6 +1,7 @@
 #include "FileGui.h"
 #include "LineNumberArea.h"
 #include "CodeFoldingArea.h"
+#include "SaveAll.h"
 
 
 FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
@@ -358,10 +359,29 @@ void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
 }
 
 
+void FileGui::closeEvent(QCloseEvent* event)
+{
+    cout << "Termination is eminent!!!" << endl;
+    QMessageBox::StandardButton resBtn = QMessageBox::question(this, "Ride",
+            "Would you like to save before closing?\n", QMessageBox::Cancel | QMessageBox::No | QMessageBox::Yes);
+    
+    if(resBtn != QMessageBox::Yes)
+    {
+        event->ignore();
+    }
+    else
+    {
+        SaveAll::save(); // Save all files
+        event->accept();
+    }
+                                                               
+}
+
+
 QString* FileGui::toString()
 {
     QString* tmp = new QString();
-    tmp->append("***method stub***");
+    tmp->append("***METHOD STUB***");
     
     return tmp;
 }

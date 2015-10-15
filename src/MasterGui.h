@@ -464,6 +464,9 @@ class MasterGui : public QMainWindow
         CentralGui* getCentralGui();
         
         
+        void closeEvent(QCloseEvent* event);
+        
+        
         /**
          * 
          * 

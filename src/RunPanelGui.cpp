@@ -25,8 +25,11 @@ RunPanelGui::RunPanelGui(QWidget* parent) : QWidget(parent)
     
     westTabWidgetPtr = new QTabWidget();
     
-    //if QT5, then tableWidgetPtr->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+#if(QT_VERSION < 0x050000)
     tableWidgetPtr->horizontalHeader()->setResizeMode(0, QHeaderView::Stretch);
+#else
+    tableWidgetPtr->horizontalHeader()->setSectionResizeMode(0, QHeaderView::Stretch);
+#endif
 
     outerLayout = new QGridLayout();
     outerLayout->addWidget(tableWidgetPtr, 0, 0, 1, 0);
