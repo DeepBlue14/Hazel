@@ -1,0 +1,21 @@
+<!-- 
+File:   configurations.xml 					                        
+Author: James Kuczynski 						                        
+Email: jkuczyns@cs.uml.edu 					                        
+File Description: This file will contain data about an individual project.          
+ 									                                
+Created 05/23/2015 9:50pm						                        
+-->
+<configurations>
+    <project
+        name="test_node"
+        loc="/home/james/catkin_ws/src/test_node"
+        ws="/home/james/catkin_ws"
+        ros_version="indigo"
+    />
+    <cmake_rules>
+        <var CMAKE_REFIX_PATH="/opt/ros/indigo:/home/james/catkin_ws" />
+        <var PROJECT_NAME="test_node" />
+        <!-- <flag > -->
+    </cmake_rules>
+</configurations>

@@ -1,0 +1,244 @@
+<!--
+File:   Classic.xml
+Author: James Kuczynski
+Email: jkuczyns@cs.uml.edu
+File Description: the IDE will load a theme file and a lang file, and
+                  match keys (i.e. identifier with identifier, etc.).
+                  This level of abstraction allows the user to create
+                  custom theme keys to correspond with custom lang
+                  keys.
+
+Created: September 12 2015 at 11:00pm 
+ -->
+
+
+<theme>
+	<general
+	    name="Classic.xml"
+	    loc="/home/james/NetBeansProjects/ride/res/themes"
+	/>
+	<line_number_area>
+		<font
+			name="Monospace"
+			size="10"
+		/>
+		<background_color>black</background_color>
+		<foreground_color>yellow</foreground_color>
+	</line_number_area>
+	<code_folding_area>
+		<font
+			name="Monospace"
+			size="10"
+		/>
+		<background_color>black</background_color>
+		<foreground_color>white</foreground_color>
+	</code_folding_area>
+	<text_field>
+		<background_color>black</background_color>
+		<highlight_color>dark_gray</highlight_color>
+		<font
+			name="Monospace"
+			size="10"
+		/>
+		<text>
+		    <!-- public, private, etc. -->
+		    <access_modifier
+		        foreground=""
+		        background=""
+		        effect=""
+		        effect_color=""
+		    />
+			<!-- 'a' -->
+			<character
+				foreground="red"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- //comment /*comment*/ -->
+			<comment
+				foreground="blue"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- custom sequence specified by the user in a lang.xml file -->
+			<custom
+			    foreground=""
+			    background=""
+			    effect=""
+			    effect_color=""
+			/>
+			<!-- default color and attributes -->
+			<default
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- /** doxygen*/ -->
+			<doxygen
+				foreground="blue"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- errors -->
+			<error
+				foreground=""
+				background=""
+				effect="underline_wavy"
+				effect_color="red"
+			/>
+			<!-- the function name -->
+			<function_name
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- the both formal params and args -->
+			<function_params
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/><!-- identifier = name of var or name of #define -->
+			<identifier 
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<inactive_preproc_block
+				foreground=""
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- <stdio> -->
+			<system_include
+				foreground="red"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- "MyClass.h" -->
+			<user_include
+				foreground="red"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- if switch while for -->
+			<keyword
+				foreground="green"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- Q_OBJECT -->
+			<macro
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- 22 -->
+			<number
+				foreground="red"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- + - = * / % && || etc -->
+			<operator
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- MY_CLASS_H -->
+			<preproc_identifier
+				foreground="purple"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- #include, #define, etc -->
+			<preproc_keyword
+				foreground="purple"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- ; { [ ( , -->
+			<separator
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<string
+				foreground="red"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<string_escape_seq_valid
+				foreground="purple"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<string_escape_seq_invalid
+				foreground="purple"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- TODO -->
+			<todo
+				foreground="white"
+				background="yellow"
+				effect="bold"
+				effect_color=""
+			/>
+			<!-- unsigned, short -->
+			<type_modifier
+			    foreground="green"
+			    background=""
+			    effect=""
+			    effect_color=""
+			/>
+			<!-- int int8_t size_t float double bool -->
+			<type_primative
+				foreground="green"text_field
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- string, Integer -->
+			<type_system
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- MyClass -->
+			<type_user
+				foreground="white"
+				background=""
+				effect=""
+				effect_color=""
+			/>
+			<!-- warnings -->
+			<warning
+				foreground=""
+				background=""
+				effect=""
+				effect_color=""
+				/>
+		</text>
+	</text_field>
+</theme>
