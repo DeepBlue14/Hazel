@@ -34,6 +34,7 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
 #include "FileGui.h"
 #include "RFile.h"
 #include "Highlighter.h"

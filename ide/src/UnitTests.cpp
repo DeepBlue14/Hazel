@@ -19,6 +19,7 @@
 #include <iostream>
 #include <cstdlib>
 
+#include "RosEnv.h"
 #include "MasterGui.h"
 #include "HelpGui.h"
 #include "ParseFontConfigXml.h"
@@ -154,7 +155,7 @@ int main(int argc, char *argv[])
             break;
         case 13:
             XmlMaster::loadFile(new QFile(
-                        "/home/james/NetBeansProjects/ride/res/test.xml") );
+                        RosEnv::rideInstallLoc + "ride/res/test.xml") );
             break;
         default:
             masterGui.show();

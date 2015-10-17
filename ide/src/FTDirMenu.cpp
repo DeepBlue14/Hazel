@@ -17,11 +17,11 @@ void FTDirMenu::initMenu()
 
     QMenu* newFileMenu = menu->addMenu("New File");
 
-    cMakeListsAct = new QAction(QIcon("/home/james/NetBeansProjects/ride/images/cmake.png"), "CMakeLists", this);
+    cMakeListsAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "cmake.png"), "CMakeLists", this);
     connect(cMakeListsAct, SIGNAL(triggered()), this, SLOT(handleCMakeListsMenuSlot() ) );
     newFileMenu->addAction(cMakeListsAct);
 
-    packageAct = new QAction(QIcon("/home/james/NetBeansProjects/ride/images/xmlFile.jpg"), "package", this);
+    packageAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "xmlFile.jpg"), "package", this);
     connect(packageAct, SIGNAL(triggered()), this, SLOT(handlePackageMenuSlot() ) );
     newFileMenu->addAction(packageAct);
 

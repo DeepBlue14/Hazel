@@ -23,6 +23,7 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
 #include "FileGui.h"
 #include "Highlighter.h"
 #include "RFile.h"

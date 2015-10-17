@@ -4,7 +4,7 @@
 
 NewFileGui::NewFileGui(QWidget* parent/*, QTabWidget* northTabWidgetPtr*/) : QWidget(parent), completer(0)
 {   
-    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowIcon(QIcon(RosEnv::imagesInstallLoc + "project2.jpg") );
     this->setWindowTitle("Ride");
     
     outerLayout = new QGridLayout(this);

@@ -10,7 +10,7 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
      this->ensurePolished(); // ???
     */
     loadStyle();
-    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/icon.jpg") );
+    this->setWindowIcon(QIcon(RosEnv::imagesInstallLoc + "icon.jpg") );
     this->setWindowTitle("Ride");
     
     masterActions = new MasterActions();

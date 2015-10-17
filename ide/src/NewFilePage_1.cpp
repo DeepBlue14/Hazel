@@ -9,80 +9,80 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     fileTypeStrPtr = new QString("null");
     
     langsStrLstPtr = new QVector<QListWidgetItem*>();
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"), "C") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png"), "C++") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/pyFile.jpg"), "Python") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/javaFile.png"), "Java") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/lispFile.jpg"), "Lisp") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/shellFile.png"), "Shell Script") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/file.png"), "Other") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"), "C") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cppFile.png"), "C++") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "pyFile.jpg"), "Python") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "javaFile.png"), "Java") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "lispFile.jpg"), "Lisp") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "shellFile.png"), "Shell Script") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "file.png"), "Other") );
     
     
     
     cFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                                  "Header file") );
-    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                                  "Source file") );
 
     cppFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Header file") );
-    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Source file") );
     
     pythonFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Header file") );
-    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Dynamic Reconfiguration") );
     
     javaFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Class file") );
-    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Interface file") );
     
     lispFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    lispFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    lispFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Source file") );
     
     shellFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "BASH file") );
-    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Bourne file") );
-    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "C Shell file") );
-    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Korn file") );
-    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    shellFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Z Shell file") );
     
     otherFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "msg file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "srv file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "css file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "xml file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "json file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "yaml file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "sql file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "CMakeLists file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "package file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "Markdown file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "text file") );
-    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    otherFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                              "empty file") );
    
     

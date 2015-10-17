@@ -25,13 +25,13 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
 #include "NewProjectPage_1.h"
 #include "NewProjectPage_2.h"
 #include "NewProjectPage_3.h"
 #include "NewProjectPage_4.h"
 #include "RFile.h"
 #include "FileTreeGui.h"
-
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

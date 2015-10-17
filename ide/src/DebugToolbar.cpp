@@ -43,31 +43,31 @@ void DebugToolbar::handleStepOverActPtrSlot()
 
 void DebugToolbar::initActions()
 {
-    startActPtr = new QAction(QIcon("/home/james/NetBeansProjects/ride/images/placeholder.jpg"), tr("&New File"), this);
+    startActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     startActPtr->setShortcut(QKeySequence::New);
     startActPtr->setStatusTip("New File");
     connect(startActPtr, SIGNAL(triggered() ), this, SLOT(handleStartActPtrSlot() ) );
     actionPtrVecPtr->push_back(startActPtr);
     
-    stopActPtr = new QAction(QIcon("/home/james/NetBeansProjects/ride/images/placeholder.jpg"), tr("&New File"), this);
+    stopActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     stopActPtr->setShortcut(QKeySequence::New);
     stopActPtr->setStatusTip("New File");
     connect(stopActPtr, SIGNAL(triggered() ), this, SLOT(handleStopActPtrSlot() ) );
     actionPtrVecPtr->push_back(stopActPtr);
     
-    pauseActPtr = new QAction(QIcon("/home/james/NetBeansProjects/ride/images/placeholder.jpg"), tr("&New File"), this);
+    pauseActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     pauseActPtr->setShortcut(QKeySequence::New);
     pauseActPtr->setStatusTip("New File");
     connect(pauseActPtr, SIGNAL(triggered() ), this, SLOT(handlePauseActPtrSlot() ) );
     actionPtrVecPtr->push_back(pauseActPtr);
     
-    stepIntoActPtr = new QAction(QIcon("/home/james/NetBeansProjects/ride/images/placeholder.jpg"), tr("&New File"), this);
+    stepIntoActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     stepIntoActPtr->setShortcut(QKeySequence::New);
     stepIntoActPtr->setStatusTip("New File");
     connect(stepIntoActPtr, SIGNAL(triggered() ), this, SLOT(handleStepIntoActPtrSlot() ) );
     actionPtrVecPtr->push_back(stepIntoActPtr);
     
-    stepOverActPtr = new QAction(QIcon("/home/james/NetBeansProjects/ride/images/placeholder.jpg"), tr("&New File"), this);
+    stepOverActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     stepOverActPtr->setShortcut(QKeySequence::New);
     stepOverActPtr->setStatusTip("New File");
     connect(stepOverActPtr, SIGNAL(triggered() ), this, SLOT(handleStepOverActPtrSlot() ) );

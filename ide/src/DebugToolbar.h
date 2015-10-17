@@ -18,6 +18,8 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
+
 using namespace std;
 
 class DebugToolbar : public QToolBar

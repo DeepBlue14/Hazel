@@ -19,6 +19,7 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
 #include "RunSetupPage_1.h"
 #include "RunSetupPage_2.h"
 #include "RunSetupPage_3.h"

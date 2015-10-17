@@ -3,7 +3,7 @@
 
 void TreeItemIconInit::setProjIcon(QTreeWidgetItem* child)
 {
-    child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/robot01.png")));
+    child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "robot01.png")));
 }
 
 
@@ -11,23 +11,23 @@ void TreeItemIconInit::setIcon(QTreeWidgetItem* child)
 {
     if(child->text(0).contains(QRegExp("^[^.]*$")) )
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/projects01.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "projects01.png")));
     }
     else if(child->text(0).contains(QRegExp("(\\.h$)|(\\.hpp$)")) )
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/hFile.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "hFile.png")));
     }
     else if(child->text(0).contains(QRegExp("(\\.c$)|(\\.cpp$)|(\\.cxx)")) )
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "cppFile.png")));
     }
     else if(child->text(0).contains(QRegExp("\\.py$")))
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/pyFile.jpg")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "pyFile.jpg")));
     }
     else if(child->text(0).contains(QRegExp("\\.cfg$")))
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/pyFile.jpg")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "pyFile.jpg")));
     }
     else if(child->text(0).contains(QRegExp("\\.lisp$")))
     {
@@ -43,31 +43,31 @@ void TreeItemIconInit::setIcon(QTreeWidgetItem* child)
     }
     else if(child->text(0).contains(QRegExp("^CMakeLists.txt$")))
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/cmake.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "cmake.png")));
     }
     else if(child->text(0).contains(QRegExp("\\.txt$")) )
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "file.png")));
     }
     else if(child->text(0).contains(QRegExp("^package.xml$")))
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/config2File.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "config2File.png")));
     }
     else if(child->text(0).contains(QRegExp("\\.xml$")))
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/xmlFile.jpg")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "xmlFile.jpg")));
     }
     else if(child->text(0).contains(QRegExp("\\.launch$")))
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/generate01.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "generate01.png")));
     }
     else if(child->text(0).contains(QRegExp("\\.rb$")))
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/rubyFile.jpg")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "rubyFile.jpg")));
     }
     else
     {
-        child->setIcon(0, *(new QIcon("/home/james/NetBeansProjects/ride/images/file.png")));
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "file.png")));
     }
     
     

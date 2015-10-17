@@ -33,6 +33,7 @@ namespace RosEnv
 {
     extern QString absPathToRosWs;
     extern QString rideInstallLoc; // Location where RIDE is installed
+    extern QString imagesInstallLoc;
     extern QString sigilHome; // the value of $HOME
     
     enum RosDistro

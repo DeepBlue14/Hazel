@@ -19,8 +19,8 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
 #include "NewRosWsPage_1.h"
-
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

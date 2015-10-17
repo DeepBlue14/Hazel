@@ -3,7 +3,7 @@
 
 SplashScreen::SplashScreen(QApplication* aApp, QWidget* parent) : QSplashScreen(parent), app(aApp)
 {
-    this->setPixmap(QPixmap("/home/james/NetBeansProjects/ride/images/iconSplash.png") );
+    this->setPixmap(QPixmap(RosEnv::imagesInstallLoc + "iconSplash.png") );
     this->setCursor(Qt::BusyCursor);
     this->showMessage(QObject::tr("Loading..."),
             Qt::AlignCenter,

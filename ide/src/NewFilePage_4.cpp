@@ -19,8 +19,9 @@ NewFilePage_4::NewFilePage_4(QWidget* parent) : QWidget(parent)
     
     fileNameStrPtr = new QString("NewFile");
     projectStrPtr = new QString("ProjectName");
-    locStrPtr = new QString("/home/james/NetBeansProjects/ride/");
-    folderStrPtr = new QString("/home/james/NetBeansProjects/ride/NewFile.cpp");
+    //locStrPtr = new QString(RosEnv::imagesInstallLoc + "ride/");
+    locStrPtr = new QString(RosEnv::rideInstallLoc + "ride/ide");
+    folderStrPtr = new QString(RosEnv::imagesInstallLoc + "NewFile.cpp");
     createdFileStrPtr = new QString("");
     
     folderLayoutPtr = new QGridLayout();

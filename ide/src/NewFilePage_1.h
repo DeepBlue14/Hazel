@@ -23,6 +23,7 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

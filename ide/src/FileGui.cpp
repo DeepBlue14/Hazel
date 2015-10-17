@@ -345,7 +345,7 @@ void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
         if (block2.isVisible() && bottom2 >= event->rect().top() )
         {
             QPixmap pixmap;
-            pixmap.load("/home/james/NetBeansProjects/ride/images/plus.jpg");
+            pixmap.load(RosEnv::imagesInstallLoc + "plus.jpg");
             //cfaPainter.drawPixmap(0, top2, codeFoldArea->width()/2, fontMetrics().height()/2, pixmap);
         }
 

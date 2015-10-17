@@ -25,6 +25,7 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
 //#include "NewProjectGui.h"
 #include "MasterActions.h"
 #include "MasterToolBtns.h"

@@ -19,6 +19,8 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
+
 using namespace std;
 
 class RunBtnMenu : public QWidget

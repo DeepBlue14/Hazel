@@ -21,6 +21,7 @@
 #include <iostream>
 
 #include "RideEnv.h"
+#include "RosEnv.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

@@ -4,6 +4,7 @@
 namespace RosEnv
 {
     QString absPathToRosWs;
-    QString rideInstallLoc;
+    QString rideInstallLoc = "/home/james/NetBeansProjects/";
+    QString imagesInstallLoc = rideInstallLoc + "ride/ide/images/";
     QString sigilHome;
 }

@@ -26,11 +26,11 @@ NewProjectPage_2::NewProjectPage_2(QWidget* parent) : QWidget(parent)
     formLayout->addRow(tr("Package Location"), locationLayout);
     
     projectTypeLstWidItemPtrVecPtr = new QVector<QListWidgetItem*>();
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cpp.png"), "C/C++"));
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/python.png"), "Python"));
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/java.jpg"), "Java"));
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/lisp.jpg"), "Lisp"));
-    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/bell.jpg"), "Bell"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cpp.png"), "C/C++"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "python.png"), "Python"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "java.jpg"), "Java"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "lisp.jpg"), "Lisp"));
+    projectTypeLstWidItemPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "bell.jpg"), "Bell"));
     
     projectTypeLwPtr = new QListWidget(this);
     for(size_t i = 0; i < projectTypeLstWidItemPtrVecPtr->size(); i++)

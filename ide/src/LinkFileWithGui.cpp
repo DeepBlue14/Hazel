@@ -69,67 +69,67 @@ void LinkFileWithGui::linkNew(QTabWidget* northTabWidgetPtr, QString absPathToNe
     
     if(fileName.mid(fileName.size()-1, 1) == "h")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/hFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "hFile.png") );
     }
     else if(fileName.mid(fileName.size()-3, 3) == "hpp")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/hFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "hFile.png") );
     }
     else if(fileName.mid(fileName.size()-1, 1) == "c")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "cppFile.png") );
     }
     else if(fileName.mid(fileName.size()-3, 3) == "cpp")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cppFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "cppFile.png") );
     }
     else if(fileName.mid(fileName.size()-3, 3) == "java")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/javaFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "javaFile.png") );
     }
     else if(fileName.mid(fileName.size()-4, 4) == "lisp")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/lispFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "lispFile.png") );
     }
     else if(fileName.mid(fileName.size()-4, 4) == "bell")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/bell.jpg") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "bell.jpg") );
     }
     else if(fileName == "CMakeLists.txt")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/cmake.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "cmake.png") );
     }
     else if(fileName == "package.xml")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/xmlFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "xmlFile.png") );
     }
     else if(fileName == "manifest.xml")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/xmlFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "xmlFile.png") );
     }
     else if(fileName.mid(fileName.size()-3, 3) == "xml")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/xmlFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "xmlFile.png") );
     }
     else if(fileName.mid(fileName.size()-2, 2) == "rb")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/rubyFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "rubyFile.png") );
     }
     else if(fileName.mid(fileName.size()-3, 3) == "txt")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/file.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "file.png") );
     }
     else if(fileName.mid(fileName.size()-4, 4) == "bash")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/shellFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "shellFile.png") );
     }
     else if(fileName.mid(fileName.size()-4, 4) == "bash")
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/shellFile.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "shellFile.png") );
     }
     else
     {
-        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon("/home/james/NetBeansProjects/ride/images/file.png") );
+        northTabWidgetPtr->setTabIcon(northTabWidgetPtr->count()-1, QIcon(RosEnv::imagesInstallLoc + "file.png") );
     }
     
 

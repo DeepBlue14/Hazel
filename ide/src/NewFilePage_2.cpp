@@ -7,19 +7,19 @@ NewFilePage_2::NewFilePage_2(QWidget* parent) : QWidget(parent)
     titlePtr = new QLabel("<b>Select template</b>");
     
     cHeaderTemplateStrLst = new QVector<QListWidgetItem*>();
-    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                          "No template") ); // !!!Do this in "load from xml" method!!!
-    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                          "No template") ); // !!!Do this in "load from xml" method!!!
-    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                          "No template") ); // !!!Do this in "load from xml" method!!!
-    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                          "No template") ); // !!!Do this in "load from xml" method!!!
-    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                          "No template") ); // !!!Do this in "load from xml" method!!!
-    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                          "No template") ); // !!!Do this in "load from xml" method!!!
-    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    cHeaderTemplateStrLst->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                          "No template") ); // !!!Do this in "load from xml" method!!!
 
     cSourceTemplateStrLst = new QVector<QListWidgetItem*>();

@@ -12,7 +12,7 @@ OpeningGui::OpeningGui(QWidget* parent) : QWidget(parent)
     applicationNameLabelPtr->setFont(*titleFont);
     applicationNameIconLabelPtr = new QLabel();
     
-    QPixmap applicationLogoPixmapPtr("/home/james/NetBeansProjects/ride/images/icon.jpg");
+    QPixmap applicationLogoPixmapPtr(RosEnv::imagesInstallLoc + "icon.jpg");
     
     appLabelPtr = new QLabel();
     QFont* subheaderFont = new QFont("Serif");

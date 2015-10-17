@@ -3,7 +3,7 @@
 
 NewRosWsGui::NewRosWsGui(QWidget* parent) : QWidget(parent)
 {
-    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/ride/images/project2.jpg") );
+    this->setWindowIcon(QIcon(RosEnv::imagesInstallLoc + "project2.jpg") );
     this->setWindowTitle("Ride");
     
     outerLayout = new QGridLayout();

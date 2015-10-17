@@ -9,36 +9,36 @@ NewFilePage_3::NewFilePage_3(QWidget* parent) : QWidget(parent)
     specificMsgStrPtr = new QString("");
     
     msgCatagoryStrLstPtr = new QVector<QListWidgetItem*>();
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "std_msgs") );
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "sensor_msgs") );
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "geometry_msgs") );
 
     typesEnteredStrLstPtr = new QVector<QListWidgetItem*>();
     
     // !!!Load this stuff from an xml res file!!!
     QVector<QListWidgetItem*>* std_msgsStrLstPtr = new QVector<QListWidgetItem*>();
-    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                      "Char") );
-    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                      "String") );
     
     QVector<QListWidgetItem*>* sensor_msgsStrLstPtr = new QVector<QListWidgetItem*>();
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "Image") );
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "PointCloud") );
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "PointCloud2") );
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "Imu") );
     
     QVector<QListWidgetItem*>* geometry_msgsStrLstPtr = new QVector<QListWidgetItem*>();
-    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "vector2") );
-    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                         "vector3") );
 
     specificMsgStrLstVec = new QVector<QVector<QListWidgetItem*>*>();
@@ -124,17 +124,17 @@ void NewFilePage_3::handleAddBtnPtrSlot()
         }
         
         // Add selection to list
-        typesEnteredStrLstPtr->push_back(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+        typesEnteredStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                      msgCatagoryLwPtr->selectedItems().at(0)->text() +
                                                      "::" +
                                                      specificMsgLwPtr->selectedItems().at(0)->text()) );
         
         // Add selection to GUI
-        /*addedLwPtr->addItem(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+        /*addedLwPtr->addItem(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                      msgCatagoryLwPtr->selectedItems().at(0)->text() +
                                                      "::" +
                                                      specificMsgLwPtr->selectedItems().at(0)->text()) );*/
-        addedLwPtr->addItem(new QListWidgetItem(QIcon("/home/james/NetBeansProjects/ride/images/cFile.png"),
+        addedLwPtr->addItem(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                      typesEnteredStrLstPtr->back()->text()) );
         cout << "added to list: " << tmp->toStdString() << endl;
     }

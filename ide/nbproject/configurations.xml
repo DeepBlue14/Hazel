@@ -309,11 +309,11 @@
           <itemPath>src/RTerm.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f7" displayName="Run" projectFiles="true">
-          <itemPath>src/RunGui.cpp</itemPath>
-          <itemPath>src/RunPage_1.cpp</itemPath>
-          <itemPath>src/RunPage_2.cpp</itemPath>
-          <itemPath>src/RunPage_3.cpp</itemPath>
           <itemPath>src/RunPanelGui.cpp</itemPath>
+          <itemPath>src/RunSetupGui.cpp</itemPath>
+          <itemPath>src/RunSetupPage_1.cpp</itemPath>
+          <itemPath>src/RunSetupPage_2.cpp</itemPath>
+          <itemPath>src/RunSetupPage_3.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f12" displayName="Search" projectFiles="true">
           <itemPath>src/NavigatorGui.cpp</itemPath>
@@ -804,23 +804,23 @@
       </item>
       <item path="src/RunBtnMenu.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RunPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RunPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RunPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="src/RunPanelGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunPanelGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RunSetupGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/RunSetupGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunSetupPage_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunSetupPage_1.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RunSetupPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/RunSetupPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunSetupPage_3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunSetupPage_3.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -1330,23 +1330,23 @@
       </item>
       <item path="src/RunBtnMenu.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/RunGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RunPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RunPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RunPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="src/RunPanelGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunPanelGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RunSetupGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/RunSetupGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunSetupPage_1.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunSetupPage_1.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/RunSetupPage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/RunSetupPage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunSetupPage_3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RunSetupPage_3.h" ex="false" tool="3" flavor2="0">
       </item>
