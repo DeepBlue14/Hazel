@@ -1,10 +1,10 @@
 ##############################################################################
 ##
-## File:
-## Module:
-## Author:
-## Email:
-## File Description:
+## File:   Makefile
+## Module: tyrannosaurus_lex
+## Author: James Kuczynski 
+## Email: jkuczyns@cs.uml.edu
+## File Description: Makefile for tyrannosaurus_lex
 ##
 ##
 ##############################################################################

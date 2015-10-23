@@ -5,7 +5,6 @@
 - NewProjectGui has stuff that relies on paths; test if this is still valid
 - Finish implementing RosReconfig frontend
 - Implement code folding: https://ui.netbeans.org/docs/ui/code_folding/cf_uispec.html
-- Implement movable widgets: http://doc.qt.io/qt-5/qtwidgets-mainwindows-dockwidgets-example.html
 - Implement xml parsing: http://3gfp.com/2015/01/qt-xml-parsing-continued/
 - Implement CMakeLists parsing/insertion
 - Finish modifing "run" button backend; see: http://www.walletfox.com/course/customqtoolbutton.php
@@ -15,6 +14,7 @@
 - Implement Tyranosaurus Lex
 - Add debug toolbar (connected to output widget?)
 - Implement threading
+- add/remove sequential_launch?
 
 
 Ref this:

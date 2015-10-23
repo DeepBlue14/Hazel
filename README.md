@@ -26,7 +26,7 @@ This project is an IDE **specifically** for [ROS][3].  It has only been in devel
 
 ###**Introduction**
 
-RIDE is devided into two main components: the IDE itself, which contains the core elements and UI, and tyrannosaurus_lex, the program which handles the code-competion and refactoring backend, AST building, etc.  RIDE may be compiled and run without it.  This program will be intended to run with both ROS 1 and ROS 2. **WARNING: This project is currently pre-alpha, so we do NOT advise attempting to use it yet.** 
+RIDE is devided into two main components: the IDE itself, which contains the core elements and UI, tyrannosaurus_lex, the program which handles the code-competion and refactoring backend, AST building, etc., and UTerm, a terminal which can swap UNIX <--> Windows commands.  RIDE may be compiled and run without it.  This program will be intended to run with both ROS 1 and ROS 2. **WARNING: This project is currently pre-alpha, so we do NOT advise attempting to use it yet.** 
 
 
 ###**Dependencies**

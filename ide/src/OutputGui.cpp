@@ -1,5 +1,4 @@
 #include "OutputGui.h"
-#include "DebugToolbar.h"
 
 
 OutputGui::OutputGui(QMainWindow* parent) : QMainWindow(parent)

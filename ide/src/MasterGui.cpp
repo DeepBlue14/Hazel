@@ -35,7 +35,26 @@ MasterGui::MasterGui(QMainWindow* parent) : QMainWindow(parent)
     initToolBtns();
     initToolBars();
 
-    this->setCentralWidget(centralGui);
+    //FIXME: Should this be done in CentralGui
+    this->setCentralWidget(centralGui->getNorthGuiPtr() );
+    
+    QDockWidget* southDock = new QDockWidget();
+    southDock->setWidget(centralGui->getSouthGuiPtr() );
+    this->addDockWidget(Qt::BottomDockWidgetArea, southDock);
+    
+    QDockWidget* eastDock1 = new QDockWidget();
+    eastDock1->setWidget(centralGui->getRunPanelGuiPtr() );
+    this->addDockWidget(Qt::RightDockWidgetArea, eastDock1);
+    
+    QDockWidget* eastDock2 = new QDockWidget();
+    eastDock2->setWidget(centralGui->getNavigatorGuiPtr() );
+    this->addDockWidget(Qt::RightDockWidgetArea, eastDock2);
+    
+    QDockWidget* westDock = new QDockWidget();
+    westDock->setWidget(centralGui->getFileTreeGuiPtr() );
+    this->addDockWidget(Qt::LeftDockWidgetArea, westDock);
+    
+    
     masterActions->setNorthTabWidgetPtr(centralGui->getNorthGuiPtr()->getTabWidget() );
     masterActions->setSouthTabWidgetPtr(centralGui->getSouthGuiPtr()/*->getTabWidget()*/ );
     masterActions->setWestWidgetPtr(centralGui->getFileTreeGuiPtr() ); // Pass ("tunnel") method

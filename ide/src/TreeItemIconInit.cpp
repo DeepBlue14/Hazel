@@ -65,6 +65,12 @@ void TreeItemIconInit::setIcon(QTreeWidgetItem* child)
     {
         child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "rubyFile.jpg")));
     }
+    else if(child->text(0).contains(QRegExp("\\.bash$")) ||
+            child->text(0).contains(QRegExp("\\.?sh$")) ||
+            child->text(0).contains(QRegExp("\\.sh$")))
+    {
+        child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "shell.jpg")));
+    }
     else
     {
         child->setIcon(0, *(new QIcon(RosEnv::imagesInstallLoc + "file.png")));
