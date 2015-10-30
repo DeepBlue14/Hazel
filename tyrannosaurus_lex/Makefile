@@ -1,10 +1,12 @@
 ##############################################################################
 ##
-## File:   Makefile
+## File: Makefile
 ## Module: tyrannosaurus_lex
-## Author: James Kuczynski 
+## Author: James Kuczynski
 ## Email: jkuczyns@cs.uml.edu
-## File Description: Makefile for tyrannosaurus_lex
+## File Description: This is the makefile for tyrannosaurus_lex.  It builds
+##		     (or rather, will build) both the refactoring and
+##		     code-completion programs.
 ##
 ##
 ##############################################################################
@@ -17,12 +19,16 @@ LLVMCONFIG := /usr/lib/llvm-3.6/bin/llvm-config
 CXXFLAGS := -I$(shell $(LLVMCONFIG) --src-root)/tools/clang/include -I$(shell $(LLVMCONFIG) --obj-root)/tools/clang/include $(shell $(LLVMCONFIG) --cxxflags) $(RTTIFLAG)
 LLVMLDFLAGS := $(shell $(LLVMCONFIG) --ldflags --libs $(LLVMCOMPONENTS))
 
-SOURCES = main.cpp
+SOURCEDIR = src
+BUILDDIR = build
+
+SOURCES = src/main.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 EXES = $(OBJECTS:.o=)
 CLANGLIBS = \
 				-lclangTooling\
+				-lclangToolingCore\
 				-lclangFrontendTool\
 				-lclangFrontend\
 				-lclangDriver\
@@ -38,6 +44,7 @@ CLANGLIBS = \
 				-lclangRewrite\
 				-lclangRewriteFrontend\
 				-lclangEdit\
+				-lclangASTMatchers\
 				-lclangAST\
 				-lclangLex\
 				-lclangBasic\
@@ -45,10 +52,13 @@ CLANGLIBS = \
 				$(shell $(LLVMCONFIG) --system-libs)\
                 -lcurses
 
-all: $(OBJECTS) $(EXES)
+all: obj exe
 
-%: %.o
-	$(CXX) -o $@ $< $(CLANGLIBS) $(LLVMLDFLAGS)
+obj:
+	$(CXX) -c -o build/main.o src/main.cpp $(CXXFLAGS)
+
+exe:
+	$(CXX) -o dist/main build/main.o $(CLANGLIBS)
 
 clean:
 	-rm -f $(EXES) $(OBJECTS) *~

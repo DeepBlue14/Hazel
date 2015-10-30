@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Name=Ride
-Commnet=RIDE--an IDE for ROS.
+Comment=RIDE--an IDE for ROS.
 Exec=/home/james/NetBeansProjects/ride/dist/Debug/GNU-Linux-x86/ride
 Path=/home/james/NetBeansProjects/ride/dist/Debug/GNU-Linux-x86
 Icon=/home/james/NetBeansProjects/ride/images/ride1.xpm

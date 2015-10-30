@@ -89,7 +89,7 @@ read CHOICE
 
 
 
-## Create destkop shortcut
+## Create destkop shortcut--is this using my hard-coded path in the Ride.desktop file?
 echo "Would you like to create a desktop shortcut? (Y/n)"
 read CHOICE
 
