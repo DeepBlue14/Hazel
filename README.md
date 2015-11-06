@@ -36,7 +36,7 @@ This project utalizes *(or will utalize)* the follow libraries:
 - [QT][4] >= 4 *(tested with 4.8 and 5.5)*
 - [C++X11][5]-dev libraries
 - [XTerm][6] *(optional)*
-- [LLVM/Clang][7]3.6 *(required for tyrannosaurus_lex only)*
+- [LLVM/Clang][7] 3.6 *(required for tyrannosaurus_lex only)*
 
 
 ###**Install**
