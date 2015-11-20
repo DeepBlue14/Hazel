@@ -74,6 +74,20 @@ class RunPanelGui : public QWidget
         /**
          * 
          * 
+         * @param runablesTblWidItmPtrVecPtr
+         */
+        void setRunablesTblWidItmPtrVecPtr(QVector<QTableWidgetItem*>* runablesTblWidItmPtrVecPtr);
+        
+        /**
+         * 
+         * 
+         * @return 
+         */
+        QVector<QTableWidgetItem*>* getRunablesTblWidItmPtrVecPtr();
+        
+        /**
+         * 
+         * 
          * @param masterTabWidgetPtr
          */
         void setWestTabWidgetPtr(QTabWidget* masterTabWidgetPtr);

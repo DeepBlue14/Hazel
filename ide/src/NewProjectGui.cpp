@@ -14,7 +14,7 @@
 NewProjectGui::NewProjectGui(QWidget* parent) : QWidget(parent)
 {
     this->setWindowIcon(QIcon(RosEnv::imagesInstallLoc + "project2.jpg") );
-    this->setWindowTitle("Ride");
+    this->setWindowTitle("rqt_ide");
     
     outerLayout = new QGridLayout(this);
     newProjectPage_1Ptr = new NewProjectPage_1();
@@ -270,7 +270,7 @@ void NewProjectGui::genRideProjDepends(QProcess* process, QString* projectRootSt
     cout << "cCCreateing at: " << projectRootStrPtr->toStdString() << endl;
     
     //----------------
-    //proc->start("/home/james/NetBeansProjects/ride/ide/resources/setup.bash");
+    //proc->start("/home/james/NetBeansProjects/rqt_ide/ide/resources/setup.bash");
     QDir tmpdir(*projectRootStrPtr);
     tmpdir.cdUp();
     tmpdir.cdUp();

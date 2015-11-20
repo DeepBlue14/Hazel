@@ -1,15 +1,16 @@
 /* 
  * File:   DebugGui.h
  * Module: Unaffiliated
- * Author: james
- * Email:
- * File Description: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class features a toolbar of buttons for executing gcd
+ *                   debug commands (step into, step over, pause, etc.). 
  *
  * Created on June 30, 2015, 12:49 AM
  */
 
-#ifndef DEBUGGUI_H
-#define	DEBUGGUI_H
+#ifndef DEBUG_GUI_H
+#define	DEBUG_GUI_H
 
 #include <QWidget>
 #include <QToolBar>
@@ -43,4 +44,4 @@ class DebugGui : public QWidget
         ~DebugGui();
 };
 
-#endif	/* DEBUGGUI_H */
+#endif	/* DEBUG_GUI_H */

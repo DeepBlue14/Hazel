@@ -70,6 +70,8 @@ QString FileGui::wordUnderCursor() const
 
 void FileGui::keyPressEvent(QKeyEvent* e)
 {
+    cout << "user modified the program (@ FileGui::keyPressEvent(...) )" << endl;
+    //MasterActions.getSaveAllActionPtr()->setEnabled(true);
     if(completerPtr && completerPtr->popup()->isVisible() )
     {
         // The following keys are forwarded by the completer to the widget

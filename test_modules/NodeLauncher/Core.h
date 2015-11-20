@@ -10,6 +10,7 @@
 #include <QString>
 #include <QVector>
 #include <QDockWidget>
+#include <QTextEdit>
 
 #ifndef CORE_H
 #define	CORE_H
@@ -29,4 +30,3 @@ class Core : public QMainWindow
 };
 
 #endif	/* CORE_H */
-

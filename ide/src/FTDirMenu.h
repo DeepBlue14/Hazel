@@ -37,8 +37,16 @@ class FTDirMenu : public QMenu
     
     private:
         QMenu* menu;
+        
         QAction* cMakeListsAct;
         QAction* packageAct;
+        QAction* cHeaderAct;
+        QAction* cSourceAct;
+        QAction* pyAct;
+        QAction* cfgAct;
+        QAction* scriptAct;
+        QAction* launchAct;
+        
         QAction* newDirAct;
         QAction* deleteAct;
         QAction* renameAct;
@@ -53,6 +61,13 @@ class FTDirMenu : public QMenu
     private slots:
         void handleCMakeListsMenuSlot();
         void handlePackageMenuSlot();
+        void handleCHeaderMenuSlot();
+        void handleCSourceMenuSlot();
+        void handlePyMenuSlot();
+        void handleCfgMenuSlot();
+        void handleScriptMenuSlot();
+        void handleLaunchMenuSlot();
+        
         void handleNewDirMenuSlot();
         void handleDeleteMenuSlot();
         void handleRenameMenuSlot();

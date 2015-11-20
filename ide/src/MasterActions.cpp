@@ -17,100 +17,100 @@ MasterActions::MasterActions(QWidget* parent) : QWidget(parent)
     westActPtrVecPtr = new QVector<QAction*>();
     
     // North
-    newFileActionPtr = new QAction(QIcon("images/newFile01.png"), tr("&New File"), this);
+    newFileActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "newFile01.png"), tr("&New File"), this);
     newFileActionPtr->setShortcut(QKeySequence::New);
     newFileActionPtr->setStatusTip("New File");
     connect(newFileActionPtr, SIGNAL(triggered() ), this, SLOT(handleNewFileActionSlot() ) );
     
-    newTerminalActionPtr = new QAction(QIcon("images/terminal01.png"), tr("&New Terminal"), this);
+    newTerminalActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "terminal01.png"), tr("&New Terminal"), this);
     newTerminalActionPtr->setShortcut(QKeySequence::New);
     newTerminalActionPtr->setStatusTip("New Terminal");
     connect(newTerminalActionPtr, SIGNAL(triggered() ), this, SLOT(handleNewTerminalActionSlot() ) );
     
-    newProjectActionPtr = new QAction(QIcon("images/newProject01.png"), tr("&New Project"), this);
+    newProjectActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "newProject01.png"), tr("&New Project"), this);
     newProjectActionPtr->setShortcut(QKeySequence::New);
     newProjectActionPtr->setStatusTip("New Project");
     connect(newProjectActionPtr, SIGNAL(triggered() ), this, SLOT(handleNewProjectActionSlot() ) );
     
-    openProjectActionPtr = new QAction(QIcon("images/openProject01.png"), tr("&Open Project"), this);
+    openProjectActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "openProject01.png"), tr("&Open Project"), this);
     openProjectActionPtr->setShortcut(QKeySequence::New);
     openProjectActionPtr->setStatusTip("Open Existing Project");
     connect(openProjectActionPtr, SIGNAL(triggered() ), this, SLOT(handleOpenProjectActionSlot() ) );
     
-    saveAllActionPtr = new QAction(QIcon("images/save01.png"), tr("&Save All"), this);
+    saveAllActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "save01.png"), tr("&Save All"), this);
     saveAllActionPtr->setShortcut(QKeySequence::New);
     saveAllActionPtr->setStatusTip("Save All");
     connect(saveAllActionPtr, SIGNAL(triggered() ), this, SLOT(handleSaveAllActionSlot() ) );
     
-    undoActionPtr = new QAction(QIcon("images/undo01.png"), tr("&Undo"), this);
+    undoActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "undo01.png"), tr("&Undo"), this);
     undoActionPtr->setShortcut(QKeySequence::New);
     undoActionPtr->setStatusTip("Undo");
     connect(undoActionPtr, SIGNAL(triggered() ), this, SLOT(handleUndoActionSlot() ) );
     
-    redoActionPtr = new QAction(QIcon("images/redo01.png"), tr("&Redo"), this);
+    redoActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "redo01.png"), tr("&Redo"), this);
     redoActionPtr->setShortcut(QKeySequence::New);
     redoActionPtr->setStatusTip("Redo");
     connect(redoActionPtr, SIGNAL(triggered() ), this, SLOT(handleRedoActionSlot() ) );
 
-    setProjectConfigActionPtr = new QAction(QIcon("images/generate01.png"), tr("&set Project Configuration"), this);
+    setProjectConfigActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "generate01.png"), tr("&set Project Configuration"), this);
     setProjectConfigActionPtr->setShortcut(QKeySequence::New);
     setProjectConfigActionPtr->setStatusTip("Configure");
     connect(setProjectConfigActionPtr, SIGNAL(triggered() ), this, SLOT(handleSetProjectConfigActionSlot() ) );
     
-    buildActionPtr = new QAction(QIcon("images/build01.png"), tr("&Build Project"), this);
+    buildActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "build01.png"), tr("&Build Project"), this);
     buildActionPtr->setShortcut(QKeySequence::New);
     buildActionPtr->setStatusTip("Build");
     connect(buildActionPtr, SIGNAL(triggered() ), this, SLOT(handleBuildActionSlot() ) );
     
-    cleanAndBuildActionPtr = new QAction(QIcon("images/cleanAndBuild01.png"), tr("&Clean and Build Project"), this);
+    cleanAndBuildActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "cleanAndBuild01.png"), tr("&Clean and Build Project"), this);
     cleanAndBuildActionPtr->setShortcut(QKeySequence::New);
     cleanAndBuildActionPtr->setStatusTip("Clean and Build");
     connect(cleanAndBuildActionPtr, SIGNAL(triggered() ), this, SLOT(handleCleanAndBuildActionSlot() ) );
     
-    configForRunActionPtr = new QAction(QIcon("images/configForRun01.png"), tr("&Configure for Execution"), this);
+    configForRunActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "configForRun01.png"), tr("&Configure for Execution"), this);
     configForRunActionPtr->setShortcut(QKeySequence::New);
     configForRunActionPtr->setStatusTip("Configure for execution");
     connect(configForRunActionPtr, SIGNAL(triggered() ), this, SLOT(handleConfigForRunActionSlot() ) );
     
-    runActionPtr = new QAction(QIcon("images/run01.png"), tr("&Run Project"), this);
+    runActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "run01.png"), tr("&Run Project"), this);
     runActionPtr->setShortcut(QKeySequence::New);
     runActionPtr->setStatusTip("Run Project");
     connect(runActionPtr, SIGNAL(triggered() ), this, SLOT(handleRunActionSlot() ) );
     
-    debugActionPtr = new QAction(QIcon("images/debug01.png"), tr("&Debug Project"), this);
+    debugActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "debug01.png"), tr("&Debug Project"), this);
     debugActionPtr->setShortcut(QKeySequence::New);
     debugActionPtr->setStatusTip("Debug");
     connect(debugActionPtr, SIGNAL(triggered() ), this, SLOT(handleDebugActionSlot() ) );
     
-    gitActionPtr = new QAction(QIcon("images/github01.png"), tr("&Git/GitHub"), this);
+    gitActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "github01.png"), tr("&Git/GitHub"), this);
     gitActionPtr->setShortcut(QKeySequence::New);
     gitActionPtr->setStatusTip("Git");
     connect(gitActionPtr, SIGNAL(triggered() ), this, SLOT(handleGitActionSlot() ) );
 
     // South
-    outputSouthActionPtr = new QAction(QIcon("images/output.jpg"), tr("&Output"), this);
+    outputSouthActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "output.jpg"), tr("&Output"), this);
     outputSouthActionPtr->setShortcut(QKeySequence::New);
     outputSouthActionPtr->setStatusTip("Output");
     connect(outputSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleOutputSouthActionSlot() ) );
     
-    terminalSouthActionPtr = new QAction(QIcon("images/terminal01.png"), tr("&Output"), this);
+    terminalSouthActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "terminal01.png"), tr("&Output"), this);
     terminalSouthActionPtr->setShortcut(QKeySequence::New);
     terminalSouthActionPtr->setStatusTip("Terminal");
     connect(terminalSouthActionPtr, SIGNAL(triggered() ), this, SLOT(handleTerminalSouthActionSlot() ) );
     
     // East
-    runEastActionPtr = new QAction(QIcon("images/rocket.jpg"), tr("&Launcher"), this);
+    runEastActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "rocket.jpg"), tr("&Launcher"), this);
     runEastActionPtr->setShortcut(QKeySequence::New);
     runEastActionPtr->setStatusTip("Launcher");
     connect(runEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleRunEastActionSlot() ) );
     
-    navEastActionPtr = new QAction(QIcon("images/navigator01.png"), tr("&Output"), this);
+    navEastActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "navigator01.png"), tr("&Output"), this);
     navEastActionPtr->setShortcut(QKeySequence::New);
     navEastActionPtr->setStatusTip("Navigator");
     connect(navEastActionPtr, SIGNAL(triggered() ), this, SLOT(handleNavEastActionSlot() ) );
     
     // West
-    projectWestActionPtr = new QAction(QIcon("images/tree01.png"), tr("&Output"), this);
+    projectWestActionPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "tree01.png"), tr("&Output"), this);
     projectWestActionPtr->setShortcut(QKeySequence::New);
     projectWestActionPtr->setStatusTip("Project Tree");
     connect(projectWestActionPtr, SIGNAL(triggered() ), this, SLOT(handleProjectWestActionSlot() ) );

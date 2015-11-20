@@ -9,7 +9,7 @@ LoadTemplate::LoadTemplate()
 
 QString* LoadTemplate::loadFile(LangTemplate langTemplate, FileTemplate fileTemplate)
 {
-    QString* absPathToFileStrPtr = new QString(RosEnv::rideInstallLoc + "ride/ide/file_templates/");
+    QString* absPathToFileStrPtr = new QString(RosEnv::rideInstallLoc + "rqt_ide/ide/file_templates/");
     
     switch(langTemplate)
     {

@@ -18,7 +18,6 @@
 #include <iostream>
 
 #include "NewProjectGui.h"
-//#include "MasterActions.h"
 #include "MasterToolBtns.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"

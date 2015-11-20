@@ -37,6 +37,7 @@
 #include "NavigatorGui.h"
 #include "Build.h"
 #include "RProcess.h"
+#include "RosEnv.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 

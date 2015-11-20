@@ -10,7 +10,7 @@ ParseFontConfigXml::ParseFontConfigXml()
 
 void ParseFontConfigXml::loadFile(/*QFile* xmlFile*/)
 {
-    filePtr = new QFile(RosEnv::rideInstallLoc + "ride/res/rproject/options/pretty_print/Classic.xml");
+    filePtr = new QFile(RosEnv::rideInstallLoc + "rqt_ide/res/rproject/options/pretty_print/Classic.xml");
     xmlDomDocPtr = new QDomDocument();
     
     if(!filePtr->open(QIODevice::ReadOnly) )

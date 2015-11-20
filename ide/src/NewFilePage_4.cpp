@@ -19,8 +19,8 @@ NewFilePage_4::NewFilePage_4(QWidget* parent) : QWidget(parent)
     
     fileNameStrPtr = new QString("NewFile");
     projectStrPtr = new QString("ProjectName");
-    //locStrPtr = new QString(RosEnv::imagesInstallLoc + "ride/");
-    locStrPtr = new QString(RosEnv::rideInstallLoc + "ride/ide");
+    //locStrPtr = new QString(RosEnv::imagesInstallLoc + "rqt_ide/");
+    locStrPtr = new QString(RosEnv::rideInstallLoc + "rqt_ide/ide");
     folderStrPtr = new QString(RosEnv::imagesInstallLoc + "NewFile.cpp");
     createdFileStrPtr = new QString("");
     

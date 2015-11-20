@@ -44,6 +44,18 @@ void RunPanelGui::loadData()
 }
 
 
+void RunPanelGui::setRunablesTblWidItmPtrVecPtr(QVector<QTableWidgetItem*>* runablesTblWidItmPtrVecPtr)
+{
+    this->runablesTblWidItmPtrVecPtr = runablesTblWidItmPtrVecPtr;
+}
+        
+
+QVector<QTableWidgetItem*>* RunPanelGui::getRunablesTblWidItmPtrVecPtr()
+{
+    return runablesTblWidItmPtrVecPtr;
+}
+
+
 void RunPanelGui::setWestTabWidgetPtr(QTabWidget* westTabWidgetPtr)
 {
     this->westTabWidgetPtr = westTabWidgetPtr;

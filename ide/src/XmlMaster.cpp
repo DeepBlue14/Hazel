@@ -3,7 +3,7 @@
 
 void XmlMaster::loadFile(QFile* filePtr)
 {
-    QFile* file = new QFile(RosEnv::rideInstallLoc + "ride/res/test.xml");
+    QFile* file = new QFile(RosEnv::rideInstallLoc + "rqt_ide/res/test.xml");
     file->open(QFile::ReadOnly);
     QXmlStreamReader xmlReader;
     xmlReader.setDevice(file);

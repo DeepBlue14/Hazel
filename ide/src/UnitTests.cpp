@@ -155,7 +155,7 @@ int main(int argc, char *argv[])
             break;
         case 13:
             XmlMaster::loadFile(new QFile(
-                        RosEnv::rideInstallLoc + "ride/res/test.xml") );
+                        RosEnv::rideInstallLoc + "rqt_ide/res/test.xml") );
             break;
         default:
             masterGui.show();
