@@ -10,8 +10,12 @@ OutputGui::OutputGui(QMainWindow* parent) : QMainWindow(parent)
     for(size_t i = 0; i < tmpActVec->size(); i++)
     {
         debugWidPtr->addAction(tmpActVec->at(i) );
+        
     }
-
+    
+    //TODO: if the user presses the "debug" button, enable/vis this
+    debugWidPtr->setEnabled(false);
+    debugWidPtr->setVisible(false);
     
     outputTePtr = new QTextEdit("");
     //outputTePtr->setEnabled(false);
@@ -40,15 +44,6 @@ void OutputGui::addTab(QWidget* tab, QString* tabName)
 QTabWidget* OutputGui::getTabWidget()
 {
     return tabWidgetPtr;
-}
-
-
-QString* OutputGui::toString()
-{
-    QString* tmp = new QString();
-    tmp->append("***method stub***");
-    
-    return tmp;
 }
 
 
@@ -83,4 +78,13 @@ void OutputGui::dumpToGui(QString* outputStrPtr)
 OutputGui::~OutputGui()
 {
     ;
+}
+
+
+QString* OutputGui::toString()
+{
+    QString* tmp = new QString();
+    tmp->append("***method stub***");
+    
+    return tmp;
 }
