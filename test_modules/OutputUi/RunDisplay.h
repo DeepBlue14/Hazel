@@ -1,9 +1,14 @@
 /* 
  * File:   Core.h
  * Author: james
+ * Email: 
+ * File Description: 
  *
  * Created on November 6, 2015, 1:41 PM
  */
+
+#ifndef RUN_DISPLAY_H
+#define	RUN_DISPLAY_H
 
 #include <QWidget>
 #include <QMainWindow>
@@ -12,10 +17,8 @@
 #include <QDockWidget>
 #include <QTextEdit>
 
-#ifndef CORE_H
-#define	CORE_H
 
-class Core : public QMainWindow
+class RunDisplay : public QMainWindow
 {
     Q_OBJECT
             
@@ -23,10 +26,10 @@ class Core : public QMainWindow
         ;
         
     public:
-        Core(QMainWindow* parent = 0);
+        RunDisplay(QMainWindow* parent = 0);
         void setup();
         QString* toString();
-        ~Core();
+        ~RunDisplay();
 };
 
-#endif	/* CORE_H */
+#endif	/* RUN_DISPLAY_H */

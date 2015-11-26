@@ -6,7 +6,8 @@
  */
 
 #include <QApplication>
-#include "Core.h"
+//#include "ExeDisplay.h"
+#include "OutputUi.h"
 
 int main(int argc, char *argv[]) {
     // initialize resources, if needed
@@ -15,9 +16,10 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     // create and show your widgets here
-    Core outputGui;
-    outputGui.show();
-    
+    //ExeDisplay outputGui;
+    //outputGui.show();
+    OutputUi outputUi;
+    outputUi.show();
     
     return app.exec();
 }

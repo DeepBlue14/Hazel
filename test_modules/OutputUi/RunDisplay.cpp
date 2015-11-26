@@ -1,13 +1,13 @@
-#include "Core.h"
+#include "RunDisplay.h"
 
 
-Core::Core(QMainWindow* parent) : QMainWindow(parent)
+RunDisplay::RunDisplay(QMainWindow* parent) : QMainWindow(parent)
 {
     setup();
 }
 
 
-void Core::setup()
+void RunDisplay::setup()
 {
     QTabWidget* tabWidgetPtr = new QTabWidget();
     this->setCentralWidget(tabWidgetPtr);
@@ -47,13 +47,13 @@ void Core::setup()
 }
 
 
-QString* Core::toString()
+QString* RunDisplay::toString()
 {
     return new QString("***METHOD STUB***");
 }
 
 
-Core::~Core()
+RunDisplay::~RunDisplay()
 {
     ;
 }

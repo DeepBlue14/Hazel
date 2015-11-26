@@ -4,7 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>Core.h</itemPath>
+      <itemPath>BuildDisplay.h</itemPath>
+      <itemPath>OutputUi.h</itemPath>
+      <itemPath>RunDisplay.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -13,7 +15,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Core.cpp</itemPath>
+      <itemPath>BuildDisplay.cpp</itemPath>
+      <itemPath>OutputUi.cpp</itemPath>
+      <itemPath>RunDisplay.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -41,9 +45,17 @@
       </qt>
       <compileType>
       </compileType>
-      <item path="Core.cpp" ex="false" tool="1" flavor2="0">
+      <item path="BuildDisplay.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Core.h" ex="false" tool="3" flavor2="0">
+      <item path="BuildDisplay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OutputUi.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OutputUi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RunDisplay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RunDisplay.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -72,9 +84,17 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Core.cpp" ex="false" tool="1" flavor2="0">
+      <item path="BuildDisplay.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Core.h" ex="false" tool="3" flavor2="0">
+      <item path="BuildDisplay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="OutputUi.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="OutputUi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RunDisplay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RunDisplay.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
