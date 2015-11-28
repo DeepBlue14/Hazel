@@ -5,18 +5,25 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>BuildDisplay.h</itemPath>
+      <itemPath>DebugGui.h</itemPath>
+      <itemPath>DebugToolbar.h</itemPath>
       <itemPath>OutputUi.h</itemPath>
+      <itemPath>RosEnv.h</itemPath>
       <itemPath>RunDisplay.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <itemPath>Classic.css</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>BuildDisplay.cpp</itemPath>
+      <itemPath>DebugGui.cpp</itemPath>
+      <itemPath>DebugToolbar.cpp</itemPath>
       <itemPath>OutputUi.cpp</itemPath>
+      <itemPath>RosEnv.cpp</itemPath>
       <itemPath>RunDisplay.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
@@ -49,9 +56,23 @@
       </item>
       <item path="BuildDisplay.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Classic.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DebugGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DebugGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DebugToolbar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DebugToolbar.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="OutputUi.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="OutputUi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RosEnv.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="RunDisplay.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -88,9 +109,23 @@
       </item>
       <item path="BuildDisplay.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Classic.css" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DebugGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DebugGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="DebugToolbar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DebugToolbar.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="OutputUi.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="OutputUi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="RosEnv.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="RunDisplay.cpp" ex="false" tool="1" flavor2="0">
       </item>

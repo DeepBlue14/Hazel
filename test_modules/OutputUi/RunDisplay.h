@@ -1,10 +1,12 @@
 /* 
- * File:   Core.h
- * Author: james
- * Email: 
+ * File:   RunDisplay.h
+ * Module: Output (or South)
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
  * Created on November 6, 2015, 1:41 PM
+ * Last Modified on 11/26/2015 by JK
  */
 
 #ifndef RUN_DISPLAY_H
@@ -28,6 +30,8 @@ class RunDisplay : public QMainWindow
     public:
         RunDisplay(QMainWindow* parent = 0);
         void setup();
+        void loadTabMode();
+        void loadPanelMode();
         QString* toString();
         ~RunDisplay();
 };

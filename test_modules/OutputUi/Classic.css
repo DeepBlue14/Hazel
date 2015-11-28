@@ -1,0 +1,25 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 27, 2015, 9:22:01 AM
+    Author     : james
+*/
+
+
+QTabWidget:active {
+    background-color: darkgray;
+    color: black;
+}
+
+QTabWidget {
+    background-color: lightgray;
+    color: black;
+}
+
+QTextEdit {
+    background-color: black;
+    color: whitesmoke;
+}

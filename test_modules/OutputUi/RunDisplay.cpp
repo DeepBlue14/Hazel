@@ -9,12 +9,33 @@ RunDisplay::RunDisplay(QMainWindow* parent) : QMainWindow(parent)
 
 void RunDisplay::setup()
 {
+    // Two different available modes
+    //loadTabMode();
+    loadPanelMode();
+}
+
+
+void RunDisplay::loadTabMode()
+{
     QTabWidget* tabWidgetPtr = new QTabWidget();
     this->setCentralWidget(tabWidgetPtr);
     
     for(size_t i = 0; i < 9; i++)
     {
-        /*
+        QTextEdit* textEditPtr = new QTextEdit();
+        textEditPtr->setText("hello world 0");
+        tabWidgetPtr->addTab(textEditPtr, "tab");
+    }
+}
+
+
+void RunDisplay::loadPanelMode()
+{
+    QTabWidget* tabWidgetPtr = new QTabWidget();
+    //this->setCentralWidget(tabWidgetPtr);
+    
+    for(size_t i = 0; i < 8; i++)
+    {
         QDockWidget* dockWidgetPtr = new QDockWidget("d" + i);
         QTextEdit* textEditPtr = new QTextEdit();
         textEditPtr->setText("hello world 0");
@@ -35,15 +56,9 @@ void RunDisplay::setup()
                 this->addDockWidget(Qt::RightDockWidgetArea, dockWidgetPtr);
                 break;
         }
-        */
         
-        QTextEdit* textEditPtr = new QTextEdit();
-        textEditPtr->setText("hello world 0");
-        tabWidgetPtr->addTab(textEditPtr, "tab");
         
     }
-    
-    
 }
 
 

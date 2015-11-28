@@ -1,8 +1,12 @@
 /* 
  * File:   BuildDisplay.h
- * Author: james
+ * Module: Output (or South)
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
  *
  * Created on November 25, 2015, 5:56 PM
+ * Last Modified 11/26/2015 by James Kuczynski
  */
 
 #ifndef BUILD_DISPLAY_H
@@ -10,6 +14,8 @@
 
 #include <QMainWindow>
 #include <QWidget>
+#include <QTabWidget>
+#include <QTextEdit>
 #include <QString>
 
 #include <iostream>
@@ -23,6 +29,8 @@ class BuildDisplay : public QMainWindow
     Q_OBJECT
             
     private:
+        QTabWidget* tabWidgetPtr;
+        QTextEdit* textEditPtr;
         RunDisplay* runDisplayPtr;
         
     public:
