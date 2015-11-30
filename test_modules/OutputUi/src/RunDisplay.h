@@ -18,14 +18,17 @@
 #include <QVector>
 #include <QDockWidget>
 #include <QTextEdit>
+#include <QToolBar>
 
+#include "RunToolbar.h"
 
 class RunDisplay : public QMainWindow
 {
     Q_OBJECT
             
     private:
-        ;
+        RunToolbar* runToolbarPtr;
+        //QToolBar* runWidPtr;
         
     public:
         RunDisplay(QMainWindow* parent = 0);

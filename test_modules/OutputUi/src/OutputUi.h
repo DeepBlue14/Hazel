@@ -21,6 +21,7 @@
 #include <iostream>
 
 #include "BuildDisplay.h"
+#include "OutputToolbar.h"
 #include "DebugToolbar.h"
 
 using namespace std;
@@ -31,7 +32,9 @@ class OutputUi : public QMainWindow
             
     private:
         BuildDisplay* buildDisplayPtr;
+        OutputToolbar* outputToolbarPtr;
         DebugToolbar* debugToolbarPtr;
+        QToolBar* outputWidPtr;
         QToolBar* debugWidPtr;
         
     public:
