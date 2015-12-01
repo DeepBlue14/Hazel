@@ -20,6 +20,7 @@
 
 #include <iostream>
 
+#include "SigTextEdit.h"
 #include "RunDisplay.h"
 
 using namespace std;
@@ -30,7 +31,7 @@ class BuildDisplay : public QMainWindow
             
     private:
         QTabWidget* tabWidgetPtr;
-        QTextEdit* textEditPtr;
+        SigTextEdit* textEditPtr;
         RunDisplay* runDisplayPtr;
         
     public:

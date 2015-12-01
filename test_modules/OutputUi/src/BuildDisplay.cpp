@@ -12,7 +12,7 @@ BuildDisplay::BuildDisplay(QMainWindow* parent) : QMainWindow(parent)
 void BuildDisplay::setup()
 {
     tabWidgetPtr = new QTabWidget();
-    textEditPtr = new QTextEdit();
+    textEditPtr = new SigTextEdit();
     textEditPtr->setHtml("<p>Running: catkin_make<br>"
             "Source space: /home/james/catkin_ws/src<br>"
             "Build space: /home/james/catkin_ws/build<br>"

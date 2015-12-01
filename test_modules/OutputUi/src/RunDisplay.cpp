@@ -34,7 +34,7 @@ void RunDisplay::loadTabMode()
     
     for(size_t i = 0; i < 9; i++)
     {
-        QTextEdit* textEditPtr = new QTextEdit();
+        SigTextEdit* textEditPtr = new SigTextEdit();
         textEditPtr->setText("hello world 0");
         tabWidgetPtr->addTab(textEditPtr, "tab");
     }
@@ -49,7 +49,7 @@ void RunDisplay::loadPanelMode()
     for(size_t i = 0; i < 8; i++)
     {
         QDockWidget* dockWidgetPtr = new QDockWidget("d" + i);
-        QTextEdit* textEditPtr = new QTextEdit();
+        SigTextEdit* textEditPtr = new SigTextEdit();
         textEditPtr->setText("hello world 0");
         dockWidgetPtr->setWidget(textEditPtr);
         

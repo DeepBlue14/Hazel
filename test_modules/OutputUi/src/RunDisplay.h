@@ -20,6 +20,7 @@
 #include <QTextEdit>
 #include <QToolBar>
 
+#include "SigTextEdit.h"
 #include "RunToolbar.h"
 
 class RunDisplay : public QMainWindow
