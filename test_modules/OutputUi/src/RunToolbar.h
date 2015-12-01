@@ -24,18 +24,22 @@ class RunToolbar : public QToolBar
     Q_OBJECT
             
     private:
+        bool isOpenMode;
         QAction* hideActPtr;
+        QAction* runActPtr;
         QAction* termActPtr;
         QVector<QAction*>* actionPtrVecPtr;
         
         
     private slots:
         void handleHideActPtrSlot();
+        void handleRunActPtrSlot();
         void handleTermActPtrSlot();
         
     public:
         RunToolbar(QToolBar* parent = 0);
         void initActions();
+        void swapActionStatus();
         QVector<QAction*>* getActions();
         QString* toString();
         ~RunToolbar();
