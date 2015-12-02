@@ -21,8 +21,9 @@ LLVMLDFLAGS := $(shell $(LLVMCONFIG) --ldflags --libs $(LLVMCOMPONENTS))
 
 SOURCEDIR = src
 BUILDDIR = build
+EXEDIR = dist
 
-SOURCES = src/main.cpp
+SOURCES = src/main.cpp src/IfStmtHandler.cpp
 
 OBJECTS = $(SOURCES:.cpp=.o)
 EXES = $(OBJECTS:.o=)
@@ -54,11 +55,15 @@ CLANGLIBS = \
 
 all: obj exe
 
+# $(BUILDDIR)/IfStmtHandler.o 
+# $(SOURCEDIR)/IfStmtHandler.cpp
+# $(BUILDDIR)/IfStmtHandler.o
 obj:
-	$(CXX) -c -o build/main.o src/main.cpp $(CXXFLAGS)
+	$(CXX) -c -o $(BUILDDIR)/main.o $(SOURCEDIR)/main.cpp $(CXXFLAGS)
+	$(CXX) -c -o $(BUILDDIR)/IfStmtHandler.o  $(SOURCEDIR)/IfStmtHandler.cpp $(CXXFLAGS)
 
 exe:
-	$(CXX) -o dist/main build/main.o $(CLANGLIBS)
+	$(CXX) -o $(EXEDIR)/main $(BUILDDIR)/main.o $(BUILDDIR)/IfStmtHandler.o $(CLANGLIBS)
 
 clean:
-	-rm -f $(EXES) $(OBJECTS) *~
+	rm $(BUILDDIR)/main.o $(BUILDDIR)/IfStmtHandler.o $(EXEDIR)/main *~
