@@ -55,6 +55,7 @@ void BuildDisplay::setup()
     runDisplayPtr = new RunDisplay();
     tabWidgetPtr->addTab(textEditPtr, "Build");
     tabWidgetPtr->addTab(runDisplayPtr, "Run");
+    //runDisplayPtr->resize(runDisplayPtr->geometry().width()/2, runDisplayPtr->geometry().height()/2);
 }
 
 

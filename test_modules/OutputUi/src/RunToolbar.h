@@ -27,6 +27,8 @@ class RunToolbar : public QToolBar
         bool isOpenMode;
         QAction* hideActPtr;
         QAction* runActPtr;
+        QAction* controlCActPtr;
+        QAction* controlBackslashActPtr;
         QAction* termActPtr;
         QVector<QAction*>* actionPtrVecPtr;
         
@@ -34,6 +36,8 @@ class RunToolbar : public QToolBar
     private slots:
         void handleHideActPtrSlot();
         void handleRunActPtrSlot();
+        void handleControlCActPtrSlot();
+        void handleControlBackslashActPtrSlot();
         void handleTermActPtrSlot();
         
     public:

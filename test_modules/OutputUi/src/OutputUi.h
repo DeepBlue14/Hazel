@@ -21,7 +21,7 @@
 #include <iostream>
 
 #include "BuildDisplay.h"
-#include "OutputToolbar.h"
+#include "OutputToolBar.h"
 #include "DebugToolbar.h"
 
 using namespace std;

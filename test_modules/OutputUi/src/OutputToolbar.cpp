@@ -1,4 +1,4 @@
-#include "OutputToolbar.h"
+#include "OutputToolBar.h"
 
 OutputToolbar::OutputToolbar(QToolBar* parent) : QToolBar(parent)
 {
