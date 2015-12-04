@@ -16,6 +16,8 @@
         <itemPath>src/RunDisplay.h</itemPath>
         <itemPath>src/RunToolbar.h</itemPath>
         <itemPath>src/SigTextEdit.h</itemPath>
+        <itemPath>src/SigTextToolBar.h</itemPath>
+        <itemPath>src/SigWindow.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -40,6 +42,8 @@
         <itemPath>src/RunDisplay.cpp</itemPath>
         <itemPath>src/RunToolbar.cpp</itemPath>
         <itemPath>src/SigTextEdit.cpp</itemPath>
+        <itemPath>src/SigTextToolBar.cpp</itemPath>
+        <itemPath>src/SigWindow.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -116,6 +120,14 @@
       </item>
       <item path="src/SigTextEdit.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/SigTextToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigTextToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigWindow.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigWindow.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/qss/Classic.css" ex="false" tool="3" flavor2="0">
@@ -188,6 +200,14 @@
       <item path="src/SigTextEdit.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/SigTextEdit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigTextToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigTextToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigWindow.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigWindow.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>

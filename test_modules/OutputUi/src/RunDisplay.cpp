@@ -10,12 +10,10 @@ RunDisplay::RunDisplay(QMainWindow* parent) : QMainWindow(parent)
 void RunDisplay::setup()
 {
     runToolbarPtr = new RunToolbar();
-    //runWidPtr = new QToolBar();
     
     QVector<QAction*>* tmpRunActVec = runToolbarPtr->getActions();
     for(size_t i = 0; i < tmpRunActVec->size(); i++)
     {
-        //runWidPtr->addAction(tmpRunActVec->at(i) );
         runToolbarPtr->addAction(tmpRunActVec->at(i) );
     }    
     
@@ -43,15 +41,17 @@ void RunDisplay::loadTabMode()
 
 void RunDisplay::loadPanelMode()
 {
-    QTabWidget* tabWidgetPtr = new QTabWidget();
+    //QTabWidget* tabWidgetPtr = new QTabWidget();
     //this->setCentralWidget(tabWidgetPtr);
     
     for(size_t i = 0; i < 8; i++)
     {
         QDockWidget* dockWidgetPtr = new QDockWidget("d" + i);
-        SigTextEdit* textEditPtr = new SigTextEdit();
+        //SigTextEdit* textEditPtr = new SigTextEdit();
+        SigWindow* sigWindowPtr = new SigWindow();
+        SigTextEdit* textEditPtr = sigWindowPtr->getSigTextToolBarPtr();
         textEditPtr->setText("hello world 0");
-        dockWidgetPtr->setWidget(textEditPtr);
+        dockWidgetPtr->setWidget(sigWindowPtr/*textEditPtr*/);
         
         switch(i%4)
         {

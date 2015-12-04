@@ -2,7 +2,7 @@
 
 
 SigTextEdit::SigTextEdit(QTextEdit* parent) : QTextEdit(parent)
-{
+{   
     ;
 }
 

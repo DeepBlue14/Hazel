@@ -17,10 +17,13 @@
 
 #include <QEvent>
 #include <QKeyEvent>
+#include <QDockWidget>
 #include <QTextEdit>
 #include <QString>
 
 #include <iostream>
+
+#include "RunToolbar.h"
 
 using namespace std;
 

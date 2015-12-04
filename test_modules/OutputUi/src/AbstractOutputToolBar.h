@@ -34,17 +34,19 @@ class AbstractOutputToolBar : public QToolBar
     private:
         bool isOpenMode;
         QAction* hideActPtr;
+        QVector<QAction*>* actionPtrVecPtr;
         
     private slots:
-        virtual void handleHideActPtrSlot() = 0;
+        void handleHideActPtrSlot();
             
     public:
         AbstractOutputToolBar(QToolBar* parent = 0);
         virtual void initActions() = 0;
-        void swapActionStatus(QAction* hideActPtr, QVector<QAction*>* actionPtrVecPtr);
-        virtual QVector<QAction*>* getActions() = 0;
+        virtual void initBtnConnecter() = 0; //connect buttons to actual processes
+        void swapActionStatus();
+        QVector<QAction*>* getActions();
         QString* toString();
-        ~AbstractOutputToolBar();
+        virtual ~AbstractOutputToolBar();
     
 };
 

@@ -8,7 +8,7 @@ RunToolbar::RunToolbar(QToolBar* parent) : QToolBar(parent)
     
     initActions();
     
-    this->setIconSize(QSize(this->iconSize().width()/2, this->iconSize().height()/2) );
+    //this->setIconSize(QSize(this->iconSize().width()/2, this->iconSize().height()/2) );
 }
 
 

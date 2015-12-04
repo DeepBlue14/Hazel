@@ -21,6 +21,7 @@
 #include <QToolBar>
 
 #include "SigTextEdit.h"
+#include "SigWindow.h"
 #include "RunToolbar.h"
 
 class RunDisplay : public QMainWindow
@@ -29,7 +30,6 @@ class RunDisplay : public QMainWindow
             
     private:
         RunToolbar* runToolbarPtr;
-        //QToolBar* runWidPtr;
         
     public:
         RunDisplay(QMainWindow* parent = 0);
