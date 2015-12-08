@@ -12,9 +12,31 @@
 - Finish messing with the FileTreeGui module
 - Un-hardcode @ NewFilePage_3 "add" slot
 - Implement Tyranosaurus Lex
-- Add debug toolbar (connected to output widget?)
 - Implement threading
-- add/remove sequential_launch?
+
+
+
+
+modules/hierarchy:
+- core
+- output
+- tyrannosaurus_lex
+- jrrtoken
+- uterm
+- cct
+- rqt_bridge
+- configure
+    - roscpp
+    - rospy
+    - roslisp
+    - rosjava
+    -----------
+    - make
+    - cmake
+    - rosbuild
+    - catkin
+
+
 
 
 Ref this:

@@ -1,10 +1,8 @@
 #include "DebugToolbar.h"
 
 
-DebugToolbar::DebugToolbar(QToolBar* parent) : QToolBar(parent)
+DebugToolbar::DebugToolbar(AbstractOutputToolBar* parent) : AbstractOutputToolBar(parent)
 {
-    actionPtrVecPtr = new QVector<QAction*>();
-    
     initActions();
     
     
@@ -47,33 +45,39 @@ void DebugToolbar::initActions()
     startActPtr->setShortcut(QKeySequence::New);
     startActPtr->setStatusTip("New File");
     connect(startActPtr, SIGNAL(triggered() ), this, SLOT(handleStartActPtrSlot() ) );
-    actionPtrVecPtr->push_back(startActPtr);
+    this->getActions()->push_back(startActPtr);
     
     stopActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     stopActPtr->setShortcut(QKeySequence::New);
     stopActPtr->setStatusTip("New File");
     connect(stopActPtr, SIGNAL(triggered() ), this, SLOT(handleStopActPtrSlot() ) );
-    actionPtrVecPtr->push_back(stopActPtr);
+    this->getActions()->push_back(stopActPtr);
     
     pauseActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     pauseActPtr->setShortcut(QKeySequence::New);
     pauseActPtr->setStatusTip("New File");
     connect(pauseActPtr, SIGNAL(triggered() ), this, SLOT(handlePauseActPtrSlot() ) );
-    actionPtrVecPtr->push_back(pauseActPtr);
+    this->getActions()->push_back(pauseActPtr);
     
     stepIntoActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     stepIntoActPtr->setShortcut(QKeySequence::New);
     stepIntoActPtr->setStatusTip("New File");
     connect(stepIntoActPtr, SIGNAL(triggered() ), this, SLOT(handleStepIntoActPtrSlot() ) );
-    actionPtrVecPtr->push_back(stepIntoActPtr);
+    this->getActions()->push_back(stepIntoActPtr);
     
     stepOverActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "placeholder.jpg"), tr("&New File"), this);
     stepOverActPtr->setShortcut(QKeySequence::New);
     stepOverActPtr->setStatusTip("New File");
     connect(stepOverActPtr, SIGNAL(triggered() ), this, SLOT(handleStepOverActPtrSlot() ) );
-    actionPtrVecPtr->push_back(stepOverActPtr);
+    this->getActions()->push_back(stepOverActPtr);
     
     
+}
+
+
+void DebugToolbar::initBtnConnecter()
+{
+    ;
 }
 
 
@@ -82,12 +86,6 @@ QString* DebugToolbar::toString()
     QString* tmp = new QString("***METHOD STUB***");
     
     return tmp;
-}
-
-
-QVector<QAction*>* DebugToolbar::getActions()
-{
-    return actionPtrVecPtr;
 }
 
 

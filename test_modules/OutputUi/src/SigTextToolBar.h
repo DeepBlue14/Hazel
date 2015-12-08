@@ -1,8 +1,11 @@
 /* 
  * File:   SigTextToolBar.h
+ * Module: 
  * Author: james
+ * Email
  *
  * Created on December 3, 2015, 10:00 PM
+ * Last Modified: 
  */
 
 #ifndef SIGTEXTTOOLBAR_H
@@ -19,6 +22,8 @@ using namespace std;
 
 class SigTextToolBar : public AbstractOutputToolBar
 {
+    Q_OBJECT
+    
     private:
         QAction* runActPtr;
         QAction* controlCActPtr;
@@ -26,7 +31,10 @@ class SigTextToolBar : public AbstractOutputToolBar
         QAction* termActPtr;
         
     private slots:
-        ;
+        void handleRunActPtrSlot();
+        void handleControlCActPtrSlot();
+        void handleControlBackslashActPtrSlot();
+        void handleTermActPtrSlot();
         
     public:
         SigTextToolBar(AbstractOutputToolBar* parent = 0);

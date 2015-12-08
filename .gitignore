@@ -1,3 +1,5 @@
 /test_modules/NodeLauncher/dist/
 /test_modules/OutputUi/dist/
 /test_modules/OutputUi/build/
+/test_modules/Configure/build/
+/test_modules/Configure/dist/

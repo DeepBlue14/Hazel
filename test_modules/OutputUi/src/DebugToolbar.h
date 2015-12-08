@@ -20,10 +20,11 @@
 #include <iostream>
 
 #include "RosEnv.h"
+#include "AbstractOutputToolBar.h"
 
 using namespace std;
 
-class DebugToolbar : public QToolBar
+class DebugToolbar : public AbstractOutputToolBar
 {
     Q_OBJECT
             
@@ -33,7 +34,6 @@ class DebugToolbar : public QToolBar
         QAction* pauseActPtr;
         QAction* stepIntoActPtr;
         QAction* stepOverActPtr;
-        QVector<QAction*>* actionPtrVecPtr;
         
     private slots:
         void handleStartActPtrSlot();
@@ -43,9 +43,9 @@ class DebugToolbar : public QToolBar
         void handleStepOverActPtrSlot();
         
     public:
-        DebugToolbar(QToolBar* parent = 0);
+        DebugToolbar(AbstractOutputToolBar* parent = 0);
         void initActions();
-        QVector<QAction*>* getActions();
+        void initBtnConnecter();
         QString* toString();
         ~DebugToolbar();
             

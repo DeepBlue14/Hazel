@@ -22,14 +22,14 @@
 
 #include "SigTextEdit.h"
 #include "SigWindow.h"
-#include "RunToolbar.h"
+#include "RunToolBar.h"
 
 class RunDisplay : public QMainWindow
 {
     Q_OBJECT
             
     private:
-        RunToolbar* runToolbarPtr;
+        RunToolBar* runToolbarPtr;
         
     public:
         RunDisplay(QMainWindow* parent = 0);

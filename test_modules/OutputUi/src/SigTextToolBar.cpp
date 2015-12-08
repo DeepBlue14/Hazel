@@ -9,9 +9,33 @@ SigTextToolBar::SigTextToolBar(AbstractOutputToolBar* parent) : AbstractOutputTo
 }
 
 
+void SigTextToolBar::handleRunActPtrSlot()
+{
+    cout << "@ RunToolbar::handleRunActPtrSlot()" << endl;
+}
+
+
+void SigTextToolBar::handleControlCActPtrSlot()
+{
+    cout << "@ RunToolbar::handleControlCActPtrSlot()" << endl;
+}
+
+
+void SigTextToolBar::handleControlBackslashActPtrSlot()
+{
+    cout << "@ RunToolbar::handleControlBackslashActPtrSlot()" << endl;
+}
+
+
+void SigTextToolBar::handleTermActPtrSlot()
+{
+    cout << "@ RunToolbar::handleTermActPtrSlot()" << endl;
+}
+
+
 void SigTextToolBar::initActions()
 {
-    runActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "run201.png"), tr("&Re-run all"), this);
+    runActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "run201.png"), tr("&Re-run"), this);
     runActPtr->setShortcut(QKeySequence::New);
     runActPtr->setStatusTip("Re-run all");
     connect(runActPtr, SIGNAL(triggered() ), this, SLOT(handleRunActPtrSlot() ) );

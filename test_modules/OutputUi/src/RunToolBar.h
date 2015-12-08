@@ -1,52 +1,50 @@
 /* 
  * File:   RunToolbar.h
- * Author: james
- *
+ * Module: Output-South
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: 
+ * 
  * Created on November 29, 2015, 6:36 PM
+ * Last Modified 12/04/2015 by JK
  */
 
 #ifndef RUN_TOOLBAR_H
 #define	RUN_TOOLBAR_H
 
 #include <QToolBar>
-#include <QAction>
-#include <QVector>
 #include <QString>
 
 #include <iostream>
 
-#include "RosEnv.h"
+#include "AbstractOutputToolBar.h"
 
 using namespace std;
 
-class RunToolbar : public QToolBar
+
+class RunToolBar : public AbstractOutputToolBar
 {
     Q_OBJECT
             
     private:
-        bool isOpenMode;
-        QAction* hideActPtr;
         QAction* runActPtr;
         QAction* controlCActPtr;
         QAction* controlBackslashActPtr;
         QAction* termActPtr;
-        QVector<QAction*>* actionPtrVecPtr;
         
         
     private slots:
-        void handleHideActPtrSlot();
         void handleRunActPtrSlot();
         void handleControlCActPtrSlot();
         void handleControlBackslashActPtrSlot();
         void handleTermActPtrSlot();
         
     public:
-        RunToolbar(QToolBar* parent = 0);
+        RunToolBar(AbstractOutputToolBar* parent = 0);
         void initActions();
-        void swapActionStatus();
-        QVector<QAction*>* getActions();
+        void initBtnConnecter();
         QString* toString();
-        ~RunToolbar();
+        ~RunToolBar();
         
 };
 

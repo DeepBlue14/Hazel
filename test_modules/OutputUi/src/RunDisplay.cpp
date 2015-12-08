@@ -9,9 +9,10 @@ RunDisplay::RunDisplay(QMainWindow* parent) : QMainWindow(parent)
 
 void RunDisplay::setup()
 {
-    runToolbarPtr = new RunToolbar();
-    
+    runToolbarPtr = new RunToolBar();
+
     QVector<QAction*>* tmpRunActVec = runToolbarPtr->getActions();
+    
     for(size_t i = 0; i < tmpRunActVec->size(); i++)
     {
         runToolbarPtr->addAction(tmpRunActVec->at(i) );
@@ -20,7 +21,6 @@ void RunDisplay::setup()
     // Two different available modes
     //loadTabMode();
     loadPanelMode();
-    //this->addToolBar(Qt::LeftToolBarArea, runWidPtr);
     this->addToolBar(Qt::LeftToolBarArea, runToolbarPtr);
 }
 

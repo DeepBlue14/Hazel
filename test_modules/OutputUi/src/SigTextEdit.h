@@ -23,7 +23,7 @@
 
 #include <iostream>
 
-#include "RunToolbar.h"
+#include "RunToolBar.h"
 
 using namespace std;
 

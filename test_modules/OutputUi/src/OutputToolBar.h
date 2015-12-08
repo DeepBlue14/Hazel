@@ -16,27 +16,25 @@
 #include <iostream>
 
 #include "RosEnv.h"
+#include "AbstractOutputToolBar.h"
 
 using namespace std;
 
-class OutputToolbar : public QToolBar
+class OutputToolbar : public AbstractOutputToolBar
 {
     Q_OBJECT
             
     private:
-        QAction* hideActPtr;
         QAction* termActPtr;
-        QVector<QAction*>* actionPtrVecPtr;
         
         
     private slots:
-        void handleHideActPtrSlot();
         void handleTermActPtrSlot();
         
     public:
-        OutputToolbar(QToolBar* parent = 0);
+        OutputToolbar(AbstractOutputToolBar* parent = 0);
         void initActions();
-        QVector<QAction*>* getActions();
+        void initBtnConnecter();
         QString* toString();
         ~OutputToolbar();
         
