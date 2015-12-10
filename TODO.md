@@ -15,13 +15,22 @@
 - Implement threading
 
 
+Directory Hierarchy:
+
+rqt_ide----------------------
+      |         |
+      0.1       docs
+         |
+         gcc_64
+
+
 
 
 modules/hierarchy:
 - core
 - output
 - tyrannosaurus_lex
-- jrrtoken
+- parsnip
 - uterm
 - cct
 - rqt_bridge
@@ -35,6 +44,7 @@ modules/hierarchy:
     - cmake
     - rosbuild
     - catkin
+    - ROS2
 
 
 

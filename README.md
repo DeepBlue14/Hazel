@@ -13,17 +13,28 @@
 
 ###**Index**
 
+Subcategories in the *"Modules"* list marked with a US flag :us: can be run as independent programs or libraries.
+
 - [Project Synopsis](#project-synopsis)
 - [Introduction](#introduction)
 - [Modules](#modules)
   - [core](#core) *(core components)*
-  - [configure](#configure) *(ROS-ification/migration)*
-  - [tyrannosaurus_lex](#tyrannosaurus_lex) *(auto-suggest)*
+  - [gui](#gui) *(frontend user interface)*
+  - [backend](#backend) *(backend components; FIXME: this module may need to be divided)*
+  - [version_control](#version-control) *(version control)*
+  - [web_engine](#web-engine) *(for viewing plugins)*
+  - [plugin_bridge](#plugin-bridge) *(allows QT-based programs to be dynamically embedded into the IDE)*
+  - [xml](#xml) *(parser for package.xml and manifest.xml files)*
+  - [json](#json) *(NA)*
+  - [configure](#configure) *(ROS-ification/migration)* :us:
+  - [mind_games](#mind-games) *(controls saving/updating physical files and "remembers" previous session data)*
+  - [tyrannosaurus_lex](#tyrannosaurus_lex) *(auto-suggest)* :us:
   - [parsnip](#parsnip) *(refactor)*
   - [project_apollo](#project_apollo) *(build/run/debug)*
-  - [console_color_text](#console-color-text)
-  - [uterm](#uterm) *(universal OS terminal)*
-  - [bell](#bell) *(custom language)*
+  - [console_color_text](#console-color-text) :us:
+  - [uterm](#uterm) *(universal OS terminal)* :us:
+  - [bell](#bell) *(custom language)* :us:
+  - [help](#help) *(man pages and more)*
 - [Dependencies](#dependencies)
 - [Install](#install)
 - [Future Work](#future-work)
@@ -35,8 +46,8 @@ This project is an IDE **specifically** for [ROS][3].  It has only been in devel
 
 ###**Introduction**
 
-rqt_ide is devided into several main components: the IDE itself, which contains the core elements and UI, tyrannosaurus_lex, the program which handles the code-competion and refactoring backend, AST building, etc., Output-South, which enables effortless compilation and execution of ROS executable types, and UTerm, a cross-shell terminal which can swap UNIX <--> Windows commands.  rqt_ide may be compiled and run without it.  This program will be intended to run with both ROS 1 and ROS 2.
-**WARNING: This project is currently pre-alpha, so we do NOT advise attempting to use it yet.** 
+rqt_ide is devided into several main components: the IDE itself, which contains the core elements, custom ROS node templates, etc., and UI, tyrannosaurus_lex, the program which handles the code-competion and refactoring backend, AST building, etc., Output-South, which enables effortless compilation and execution of ROS executable types, and UTerm, a cross-shell terminal which can swap UNIX <--> Windows commands.  rqt_ide may be compiled and run without it.  This program will be intended to run with both ROS 1 and ROS 2.
+:skull: :skull: **WARNING: This project is currently pre-alpha, so we do NOT advise attempting to use it yet.** :skull: :skull:
 
 
 ###**Modules**
