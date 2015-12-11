@@ -15,6 +15,8 @@
 #define	RECONFIG_GUI_H
 
 #include <QMainWindow>
+#include <QAction>
+#include <QToolBar>
 #include <QString>
 
 #include <iostream>
@@ -36,6 +38,9 @@ class ReconfigGui : public QMainWindow
     Q_OBJECT
             
     private:
+        QAction* reconfigActPtr;
+        QAction* findPkgTypeActPtr;
+        QToolBar* toolBarPtr;
         ReconfigCentralWid* reconfigCentralWidPtr;
         
     public:

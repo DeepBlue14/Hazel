@@ -20,12 +20,12 @@ Subcategories in the *"Modules"* list marked with a US flag :us: can be run as i
 - [Modules](#modules)
   - [core](#core) *(core components)*
   - [gui](#gui) *(frontend user interface)*
+  - [editor](#editor) *(advanced embedded text ui)*
   - [backend](#backend) *(backend components; FIXME: this module may need to be divided)*
   - [version_control](#version-control) *(version control)*
   - [web_engine](#web-engine) *(for viewing plugins)*
-  - [plugin_bridge](#plugin-bridge) *(allows QT-based programs to be dynamically embedded into the IDE)*
+  - [qt_bridge](#qt-bridge) *(allows QT-based programs to be dynamically embedded into the IDE)*
   - [xml](#xml) *(parser for package.xml and manifest.xml files)*
-  - [json](#json) *(NA)*
   - [configure](#configure) *(ROS-ification/migration)* :us:
   - [mind_games](#mind-games) *(controls saving/updating physical files and "remembers" previous session data)*
   - [tyrannosaurus_lex](#tyrannosaurus_lex) *(auto-suggest)* :us:
@@ -46,7 +46,7 @@ This project is an IDE **specifically** for [ROS][3].  It has only been in devel
 
 ###**Introduction**
 
-rqt_ide is devided into several main components: the IDE itself, which contains the core elements, custom ROS node templates, etc., and UI, tyrannosaurus_lex, the program which handles the code-competion and refactoring backend, AST building, etc., Output-South, which enables effortless compilation and execution of ROS executable types, and UTerm, a cross-shell terminal which can swap UNIX <--> Windows commands.  rqt_ide may be compiled and run without it.  This program will be intended to run with both ROS 1 and ROS 2.
+rqt_ide is devided into several main components: the IDE itself, which contains the core elements, custom ROS node templates, etc., and UI, tyrannosaurus_lex, the program which handles the code-competion and refactoring backend, AST building, etc., Output-South, which enables effortless compilation and execution of ROS executable types, and UTerm, a cross-shell terminal which can swap UNIX <--> Windows commands.  rqt_ide may be compiled and run without it.  This program will be intended to run with both ROS 1 and ROS 2.  However, as ROS 2 is stull very much under development, no ROS 2 features, migration, or compatability has been implimented yet.
 :skull: :skull: **WARNING: This project is currently pre-alpha, so we do NOT advise attempting to use it yet.** :skull: :skull:
 
 
@@ -60,9 +60,49 @@ This project is divided into a series of modules to facilitate easier testing, m
 This module contains the core components of the IDE.
 
 
+####**gui**
+
+Frontend components.
+
+####**editor**
+
+The text-editor is an independent module becuase of the number and complexity of features required.  These include syntax highlighting, underlining of errors, tooltips for reconfiguration of build files, etc.
+
+
+####**backend**
+
+Backend components, including
+- package creation
+- file creation
+- thread and process controll ("Houston")
+- etc.
+
+This module may be split into multiple sub-modules in the future.
+
+
+####**version_control**
+
+Allows the user to utalize version control systems such as git within the IDE.
+
+
+####**web_engine**
+
+...
+
+
+####**xml**
+
+...
+
+
 ####**configure**
 
 This module implements automated or assistive migration (the later case is the only option currently for make projects) from make, cmake, or rosbuild projects to catkin-style ROS packages.  It also supports partial migration from catkin to the ROS2 format.
+
+
+####**mind_games**
+
+Mind Games controls saving data to disk.  This includes saving files modified in the GUI, as well as saving data about the last session, so that the next time the program is run it "remembers" which projects/files where open, what user preferences were on, etc.
 
 
 ####**tyrannosaurus_lex**
@@ -95,9 +135,14 @@ This module handles the colorization of text printed out to the terminal(s).  Th
 UTerm stands for **U**niversal **Term**inal.  It is a terminal emulator which will translate Windows and UNIX commands.  For example, if you are running it on Windows, and enter a UNIX command, it will run the appropriate Windows variant of this same command.  The reverse senario will also work.
 
 
-####**bell**
+####**Bell**
 
-This module is my attempt to create my own computer language--more for fun then any practical reason.  The grammer takes (in my opinion) the best of C++ and Java.  my trans-compiler converts the Bell files to C++, so it can use any existing C/C++ library.
+This module is my attempt to create my own computer language--more for fun then any practical reason.  The grammar takes (in my opinion) the best of C++ and Java.  My trans-compiler converts the Bell files to C++, so it can use any existing C/C++ library.
+
+
+####**help**
+
+...
 
 
 ###**Dependencies**
@@ -105,7 +150,7 @@ This module is my attempt to create my own computer language--more for fun then 
 This project utalizes *(or will utalize)* the follow libraries:
 - [ROS][3] >= electric *(tested with indigo)*
 - [QT][4] >= 4 *(tested with 4.8 and 5.5)*
-- [C++X11][5]-dev libraries
+- [C++X11][5]-dev libraries *(recomended)*
 - [XTerm][6] *(optional)*
 - [LLVM/Clang][7] 3.6 *(required for tyrannosaurus_lex only)*
 

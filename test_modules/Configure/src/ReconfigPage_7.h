@@ -45,4 +45,4 @@ class ReconfigPage_7 : public QWidget
         
 };
 
-#endif	/* RECONFIG_PAGE_7_H */
+#endif	/* RECONFIG_PAGE_8_H */

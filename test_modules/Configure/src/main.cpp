@@ -30,7 +30,8 @@ int main(int argc, char *argv[]) {
 
     QApplication app(argc, argv);
 
-    ReconfigCentralWid reconfigGui;
+    //ReconfigCentralWid reconfigGui;
+    ReconfigGui reconfigGui;
     reconfigGui.show();
 
     return app.exec();

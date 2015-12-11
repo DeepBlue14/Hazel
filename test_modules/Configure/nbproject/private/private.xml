@@ -9,6 +9,9 @@
         <group>
             <file>file:/home/james/NetBeansProjects/rqt_ide/test_modules/Configure/src/ReconfigGui.h</file>
             <file>file:/home/james/NetBeansProjects/rqt_ide/test_modules/Configure/src/ReconfigGui.cpp</file>
+            <file>file:/home/james/NetBeansProjects/rqt_ide/test_modules/Configure/src/ReconfigCentralWid.h</file>
+            <file>file:/home/james/NetBeansProjects/rqt_ide/test_modules/Configure/src/main.cpp</file>
+            <file>file:/home/james/NetBeansProjects/rqt_ide/test_modules/Configure/src/ReconfigCentralWid.cpp</file>
         </group>
     </open-files>
 </project-private>
