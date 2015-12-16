@@ -9,8 +9,8 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     fileTypeStrPtr = new QString("null");
     
     langsStrLstPtr = new QVector<QListWidgetItem*>();
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"), "C") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cppFile.png"), "C++") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile2.png"/*"cFile.png"*/), "C") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cppFile2.png"), "C++") );
     langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "pyFile.jpg"), "Python") );
     langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "javaFile.png"), "Java") );
     langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "lispFile.jpg"), "Lisp") );

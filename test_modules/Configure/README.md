@@ -2,6 +2,8 @@
 
 This module implements automated or assistive migration (the later case is the only option currently for make projects) from make, cmake, or rosbuild projects to catkin-style ROS packages.  It also supports partial migration from catkin to the ROS2 format.
 
+In addition, it can be used to check the status if packages (i.e. there build type), and other build-related data (such as the location of build files);
+
 **WARNING: Most of this module is not even in development phase yet, so DO NOT USE!**
 
 **Why "Assistive"?**
