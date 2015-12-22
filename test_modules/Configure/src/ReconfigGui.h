@@ -43,6 +43,10 @@ class ReconfigGui : public QMainWindow
         QToolBar* toolBarPtr;
         ReconfigCentralWid* reconfigCentralWidPtr;
         
+    private slots:
+        void handleReconfigActPtrSlot();
+        void handleFindPkgTypeActPtrSlot();
+        
     public:
         ReconfigGui(QMainWindow* parent = 0);
         QString* toString();

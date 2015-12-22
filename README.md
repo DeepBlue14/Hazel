@@ -47,6 +47,9 @@ This project is an IDE **specifically** for [ROS][3].  It has only been in devel
 ###**Introduction**
 
 rqt_ide is devided into several main components: the IDE itself, which contains the core elements, custom ROS node templates, etc., and UI, tyrannosaurus_lex, the program which handles the code-competion and refactoring backend, AST building, etc., Output-South, which enables effortless compilation and execution of ROS executable types, and UTerm, a cross-shell terminal which can swap UNIX <--> Windows commands.  rqt_ide may be compiled and run without it.  This program will be intended to run with both ROS 1 and ROS 2.  However, as ROS 2 is stull very much under development, no ROS 2 features, migration, or compatability has been implimented yet.
+
+Since ROS--and robotics in general--covers the entire range from low-level to high-level development, our philosophy is to make this IDE with the maximum flexability.  Components can be modified, added, and removed at will to suit the needs of individual developers.
+
 :skull: :skull: **WARNING: This project is currently pre-alpha, so we do NOT advise attempting to use it yet.** :skull: :skull:
 
 

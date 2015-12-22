@@ -20,6 +20,8 @@
 
 #include <iostream>
 
+#include "ReconfigDashboard.h"
+#include "OperationPage.h"
 #include "ReconfigPage_1.h"
 #include "ReconfigPage_2.h"
 #include "ReconfigPage_3.h"
@@ -52,12 +54,17 @@ class ReconfigCentralWid : public QWidget
         
         Page currentPage;
         
+        QPushButton* scanBtnPtr;
+        QPushButton* reconfigBtnPtr;
+        
         QPushButton* backBtn;
         QPushButton* nextBtn;
         QPushButton* finishBtn;
         QPushButton* helpBtn;
         QPushButton* cancelBtn;
         
+        ReconfigDashboard* reconfigDashboardPtr;
+        OperationPage* operationPagePtr;
         ReconfigPage_1* reconfigPage_1Ptr;
         ReconfigPage_2* reconfigPage_2Ptr;
         ReconfigPage_3* reconfigPage_3Ptr;
@@ -68,6 +75,10 @@ class ReconfigCentralWid : public QWidget
         QGridLayout* outerLayout;
         
     private slots:
+        void handleScanBtnSlot();
+        
+        void handleReconfigBtnSlot();
+        
         /**
          * 
          */
@@ -105,6 +116,9 @@ class ReconfigCentralWid : public QWidget
          * 
          */
         void initBtns();
+        
+        
+        //void hideBtns(bool hide);
         
         /**
          * 

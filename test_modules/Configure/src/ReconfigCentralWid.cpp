@@ -4,6 +4,14 @@
 ReconfigCentralWid::ReconfigCentralWid(QWidget* parent) : QWidget(parent)
 {
     outerLayout = new QGridLayout();
+    /*
+    scanBtnPtr = new QPushButton(QIcon(RosEnv::imagesInstallLoc + "search.png"), "Scan");
+    reconfigBtnPtr = new QPushButton(QIcon(RosEnv::imagesInstallLoc + "searchAndTransform.png"), "Reconfig");
+    connect(scanBtnPtr, SIGNAL(released()), this, SLOT(handleScanBtnSlot()));
+    connect(reconfigBtnPtr, SIGNAL(released()), this, SLOT(handleReconfigBtnSlot()));
+    */
+    reconfigDashboardPtr = new ReconfigDashboard();
+    operationPagePtr = new OperationPage();
     reconfigPage_1Ptr = new ReconfigPage_1();
     reconfigPage_2Ptr = new ReconfigPage_2();
     reconfigPage_3Ptr = new ReconfigPage_3();
@@ -12,9 +20,26 @@ ReconfigCentralWid::ReconfigCentralWid(QWidget* parent) : QWidget(parent)
     
     currentPage = PAGE_ONE;
     
+    outerLayout->addWidget(reconfigDashboardPtr/*reconfigPage_1Ptr*/, 0, 0);
+    //outerLayout->addWidget(scanBtnPtr, 2, 0);
+    //outerLayout->addWidget(reconfigBtnPtr, 3, 0);
     initBtns();
     
     this->setLayout(outerLayout);
+}
+
+
+void ReconfigCentralWid::handleScanBtnSlot()
+{
+    cout << "handleScanBtnSlot() triggered" << endl;
+    //hideBtns(false);
+}
+
+
+void ReconfigCentralWid::handleReconfigBtnSlot()
+{
+    cout << "handleReconfigBtnSlot() triggered" << endl;
+    //hideBtns(false);
 }
 
 
@@ -57,6 +82,8 @@ void ReconfigCentralWid::initBtns()
     finishBtn->setEnabled(false);
     helpBtn = new QPushButton("Help", this);
     cancelBtn = new QPushButton("Cancel", this);
+    //hideBtns(true);
+    
     
     buttonLayout = new QHBoxLayout();
     buttonLayout->addWidget(backBtn);
@@ -71,9 +98,39 @@ void ReconfigCentralWid::initBtns()
     connect(helpBtn, SIGNAL(released() ), this, SLOT(handleHelpBntSlot() ) );
     connect(cancelBtn, SIGNAL(released() ), this, SLOT(handleCancelBtnSlot() ) );
     
-    outerLayout->addWidget(reconfigPage_1Ptr, 0, 0);
     outerLayout->addLayout(buttonLayout, 1, 0, Qt::AlignBottom);
 }
+
+
+/*void ReconfigCentralWid::hideBtns(bool hide)
+{
+    if(hide)
+    {
+        backBtn->setVisible(false);
+        backBtn->setEnabled(false);
+        nextBtn->setVisible(false);
+        nextBtn->setEnabled(false);
+        finishBtn->setVisible(false);
+        finishBtn->setEnabled(false);
+        helpBtn->setVisible(false);
+        helpBtn->setEnabled(false);
+        cancelBtn->setVisible(false);
+        cancelBtn->setEnabled(false);
+    }
+    else
+    {
+        backBtn->setVisible(true);
+        //backBtn->setEnabled(true);
+        nextBtn->setVisible(true);
+        nextBtn->setEnabled(true);
+        finishBtn->setVisible(true);
+        //finishBtn->setEnabled(true);
+        helpBtn->setVisible(true);
+        helpBtn->setEnabled(true);
+        cancelBtn->setVisible(true);
+        cancelBtn->setEnabled(true);
+    }
+}*/
 
 
 void ReconfigCentralWid::swapBackPage()
@@ -142,33 +199,41 @@ void ReconfigCentralWid::swapNextPage()
 
 void ReconfigCentralWid::loadPage_1()
 {
-    outerLayout->addWidget(reconfigPage_1Ptr, 0, 0);
-    reconfigPage_1Ptr->setVisible(true);
-    reconfigPage_1Ptr->setEnabled(true);
+    outerLayout->addWidget(reconfigDashboardPtr, 0, 0);
+    reconfigDashboardPtr->setVisible(true);
+    reconfigDashboardPtr->setEnabled(true);
+    //reconfigPage_1Ptr->setVisible(true);
+    //reconfigPage_1Ptr->setEnabled(true);
 }
 
 
 void ReconfigCentralWid::unloadPage_1()
 {
-    outerLayout->removeWidget(reconfigPage_1Ptr);
-    reconfigPage_1Ptr->setVisible(false);
-    reconfigPage_1Ptr->setEnabled(false);
+    outerLayout->removeWidget(reconfigDashboardPtr);
+    //reconfigPage_1Ptr->setVisible(false);
+    //reconfigPage_1Ptr->setEnabled(false);
+    reconfigDashboardPtr->setVisible(false);
+    reconfigDashboardPtr->setEnabled(false);
 }
 
 
 void ReconfigCentralWid::loadPage_2()
 {
-    outerLayout->addWidget(reconfigPage_2Ptr, 0, 0);
-    reconfigPage_2Ptr->setVisible(true);
-    reconfigPage_2Ptr->setEnabled(true);
+    outerLayout->addWidget(operationPagePtr, 0, 0);
+    //reconfigPage_2Ptr->setVisible(true);
+    //reconfigPage_2Ptr->setEnabled(true);
+    operationPagePtr->setVisible(true);
+    operationPagePtr->setVisible(true);
 }
 
 
 void ReconfigCentralWid::unloadPage_2()
 {
-    outerLayout->removeWidget(reconfigPage_2Ptr);
-    reconfigPage_2Ptr->setVisible(false);
-    reconfigPage_2Ptr->setEnabled(false);
+    outerLayout->removeWidget(operationPagePtr);
+    //reconfigPage_2Ptr->setVisible(false);
+    //reconfigPage_2Ptr->setEnabled(false);
+    operationPagePtr->setVisible(false);
+    operationPagePtr->setEnabled(false);
 }
 
 

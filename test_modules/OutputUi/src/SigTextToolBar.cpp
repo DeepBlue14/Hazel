@@ -41,13 +41,13 @@ void SigTextToolBar::initActions()
     connect(runActPtr, SIGNAL(triggered() ), this, SLOT(handleRunActPtrSlot() ) );
     this->getActions()->push_back(runActPtr);
     
-    controlCActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "control_c.jpg"), tr("[&CTRL]-C"), this);
+    controlCActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "control_c.png"), tr("[&CTRL]-C"), this);
     controlCActPtr->setShortcut(QKeySequence::New);
     controlCActPtr->setStatusTip("[CTRL]-C");
     connect(controlCActPtr, SIGNAL(triggered() ), this, SLOT(handleControlCActPtrSlot() ) );
     this->getActions()->push_back(controlCActPtr);
     
-    controlBackslashActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "control_backslash.jpg"), tr("[&CTRL]-\\"), this);
+    controlBackslashActPtr = new QAction(QIcon(RosEnv::imagesInstallLoc + "control_backslash.png"), tr("[&CTRL]-\\"), this);
     controlBackslashActPtr->setShortcut(QKeySequence::New);
     controlBackslashActPtr->setStatusTip("[CTRL]-\\");
     connect(runActPtr, SIGNAL(triggered() ), this, SLOT(handleControlBackslashActPtrSlot() ) );

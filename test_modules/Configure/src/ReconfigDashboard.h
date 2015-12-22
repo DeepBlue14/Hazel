@@ -13,9 +13,12 @@
 #define	RECONFIG_DASHBOARD_H
 
 #include <QWidget>
-#include <QTextEdit>
+#include <QLabel>
+#include <QStringList>
+#include <QListWidget>
 #include <QString>
 #include <QGridLayout>
+#include "RosEnv.h"
 
 #include <iostream>
 
@@ -27,7 +30,8 @@ class ReconfigDashboard : public QWidget
     Q_OBJECT
             
     private:
-        ;
+        QListWidget* historyLstWidPtr;
+        QGridLayout* outerLayout;
         
     public:
         ReconfigDashboard(QWidget* parent = 0);

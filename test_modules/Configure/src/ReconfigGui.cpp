@@ -8,11 +8,35 @@ ReconfigGui::ReconfigGui(QMainWindow* parent) : QMainWindow(parent)
     toolBarPtr = new QToolBar();
     toolBarPtr->addAction(reconfigActPtr);
     toolBarPtr->addAction(findPkgTypeActPtr);
+    toolBarPtr->setVisible(false);
     
     reconfigCentralWidPtr = new ReconfigCentralWid();
     
+    connect(reconfigActPtr, SIGNAL(triggered()), this, SLOT(handleReconfigActPtrSlot()));
+    connect(findPkgTypeActPtr, SIGNAL(triggered()), this, SLOT(handleFindPkgTypeActPtrSlot()));
+    
     this->setCentralWidget(reconfigCentralWidPtr);
     this->addToolBar(Qt::TopToolBarArea, toolBarPtr);
+}
+
+
+void ReconfigGui::handleReconfigActPtrSlot()
+{
+    cout << "handleReconfigActPtrSlot() pressed" << endl;
+    //reconfigCentralWidPtr->hideBtns(false);
+    //toolBarPtr->setVisible(false);
+    toolBarPtr->setEnabled(false);
+    reconfigCentralWidPtr->swapNextPage(); // FIXME:
+}
+
+
+void ReconfigGui::handleFindPkgTypeActPtrSlot()
+{
+    cout << "handleFindPkgTypeActPtrSlot() pressed" << endl;
+    //reconfigCentralWidPtr->hideBtns(false);
+    //toolBarPtr->setVisible(false);
+    toolBarPtr->setEnabled(false);
+    reconfigCentralWidPtr->swapNextPage(); // FIXME:
 }
 
 
