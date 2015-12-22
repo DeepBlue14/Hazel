@@ -14,6 +14,9 @@
           </logicalFolder>
           <logicalFolder name="f3" displayName="RosBuild" projectFiles="true">
           </logicalFolder>
+          <logicalFolder name="f5" displayName="Scan" projectFiles="true">
+            <itemPath>src/PkgScanner.h</itemPath>
+          </logicalFolder>
         </logicalFolder>
         <logicalFolder name="f5" displayName="Frontend" projectFiles="true">
           <itemPath>src/AdvOptPage_1.h</itemPath>
@@ -22,19 +25,20 @@
           <itemPath>src/AdvOptPage_4.h</itemPath>
           <itemPath>src/AdvOptPage_5.h</itemPath>
           <itemPath>src/AdvOptionsGui.h</itemPath>
+          <itemPath>src/ConvOptPage.h</itemPath>
+          <itemPath>src/ConvTypePage.h</itemPath>
+          <itemPath>src/CustomMsgsPage.h</itemPath>
           <itemPath>src/CustomPkgsGui.h</itemPath>
-          <itemPath>src/OperationPage.h</itemPath>
+          <itemPath>src/FileListingPage.h</itemPath>
+          <itemPath>src/InitialSetupPage.h</itemPath>
+          <itemPath>src/OutputPage.h</itemPath>
           <itemPath>src/ReconfigCentralWid.h</itemPath>
           <itemPath>src/ReconfigDashboard.h</itemPath>
           <itemPath>src/ReconfigGui.h</itemPath>
-          <itemPath>src/ReconfigPage_1.h</itemPath>
-          <itemPath>src/ReconfigPage_2.h</itemPath>
-          <itemPath>src/ReconfigPage_3.h</itemPath>
-          <itemPath>src/ReconfigPage_4.h</itemPath>
-          <itemPath>src/ReconfigPage_5.h</itemPath>
-          <itemPath>src/ReconfigPage_6.h</itemPath>
-          <itemPath>src/ReconfigPage_7.h</itemPath>
           <itemPath>src/ReconfigToolBar.h</itemPath>
+          <itemPath>src/ResultsPage.h</itemPath>
+          <itemPath>src/SubPubPage.h</itemPath>
+          <itemPath>src/SummaryPage.h</itemPath>
         </logicalFolder>
         <itemPath>src/RosEnv.h</itemPath>
         <itemPath>src/UnixConsoleText.h</itemPath>
@@ -58,6 +62,9 @@
           </logicalFolder>
           <logicalFolder name="f3" displayName="RosBuild" projectFiles="true">
           </logicalFolder>
+          <logicalFolder name="f5" displayName="Scan" projectFiles="true">
+            <itemPath>src/PkgScanner.cpp</itemPath>
+          </logicalFolder>
         </logicalFolder>
         <logicalFolder name="f5" displayName="Frontend" projectFiles="true">
           <itemPath>src/AdvOptPage_1.cpp</itemPath>
@@ -66,19 +73,20 @@
           <itemPath>src/AdvOptPage_4.cpp</itemPath>
           <itemPath>src/AdvOptPage_5.cpp</itemPath>
           <itemPath>src/AdvOptionsGui.cpp</itemPath>
+          <itemPath>src/ConvOptPage.cpp</itemPath>
+          <itemPath>src/ConvTypePage.cpp</itemPath>
+          <itemPath>src/CustomMsgsPage.cpp</itemPath>
           <itemPath>src/CustomPkgsGui.cpp</itemPath>
-          <itemPath>src/OperationPage.cpp</itemPath>
+          <itemPath>src/FileListingPage.cpp</itemPath>
+          <itemPath>src/InitialSetupPage.cpp</itemPath>
+          <itemPath>src/OutputPage.cpp</itemPath>
           <itemPath>src/ReconfigCentralWid.cpp</itemPath>
           <itemPath>src/ReconfigDashboard.cpp</itemPath>
           <itemPath>src/ReconfigGui.cpp</itemPath>
-          <itemPath>src/ReconfigPage_1.cpp</itemPath>
-          <itemPath>src/ReconfigPage_2.cpp</itemPath>
-          <itemPath>src/ReconfigPage_3.cpp</itemPath>
-          <itemPath>src/ReconfigPage_4.cpp</itemPath>
-          <itemPath>src/ReconfigPage_5.cpp</itemPath>
-          <itemPath>src/ReconfigPage_6.cpp</itemPath>
-          <itemPath>src/ReconfigPage_7.cpp</itemPath>
           <itemPath>src/ReconfigToolBar.cpp</itemPath>
+          <itemPath>src/ResultsPage.cpp</itemPath>
+          <itemPath>src/SubPubPage.cpp</itemPath>
+          <itemPath>src/SummaryPage.cpp</itemPath>
         </logicalFolder>
         <itemPath>src/RosEnv.cpp</itemPath>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
@@ -139,13 +147,37 @@
       </item>
       <item path="src/AdvOptionsGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ConvOptPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ConvOptPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ConvTypePage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ConvTypePage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CustomMsgsPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CustomMsgsPage.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/CustomPkgsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/CustomPkgsGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/OperationPage.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/FileListingPage.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/OperationPage.h" ex="false" tool="3" flavor2="0">
+      <item path="src/FileListingPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/InitialSetupPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/InitialSetupPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OutputPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PkgScanner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PkgScanner.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ReconfigCentralWid.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -159,41 +191,25 @@
       </item>
       <item path="src/ReconfigGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/ReconfigPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_1.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/ReconfigToolBar.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ReconfigToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ResultsPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ResultsPage.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SubPubPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SubPubPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SummaryPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SummaryPage.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -254,13 +270,37 @@
       </item>
       <item path="src/AdvOptionsGui.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ConvOptPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ConvOptPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ConvTypePage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ConvTypePage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CustomMsgsPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CustomMsgsPage.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/CustomPkgsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/CustomPkgsGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/OperationPage.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/FileListingPage.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/OperationPage.h" ex="false" tool="3" flavor2="0">
+      <item path="src/FileListingPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/InitialSetupPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/InitialSetupPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OutputPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/PkgScanner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PkgScanner.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/ReconfigCentralWid.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -274,41 +314,25 @@
       </item>
       <item path="src/ReconfigGui.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/ReconfigPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_1.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/ReconfigToolBar.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ReconfigToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/ResultsPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ResultsPage.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SubPubPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SubPubPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SummaryPage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SummaryPage.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -24,7 +24,7 @@
 #include "CustomPkgsGui.h"
 #include "AdvOptionsGui.h"
 
-class ReconfigPage_2 : public QWidget
+class ConvOptPage : public QWidget
 {
     Q_OBJECT
 
@@ -57,7 +57,7 @@ class ReconfigPage_2 : public QWidget
          * 
          * @param parent reference to parent type.
          */
-        ReconfigPage_2(QWidget* parent = 0);
+        ConvOptPage(QWidget* parent = 0);
         
         /**
          * 
@@ -74,7 +74,7 @@ class ReconfigPage_2 : public QWidget
         /**
          * Destructor.
          */
-        ~ReconfigPage_2();
+        ~ConvOptPage();
 };
 
 #endif	/* RECONFIG_PAGE_2_H */

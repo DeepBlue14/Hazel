@@ -21,12 +21,14 @@
 #include <iostream>
 
 #include "ReconfigDashboard.h"
-#include "OperationPage.h"
-#include "ReconfigPage_1.h"
-#include "ReconfigPage_2.h"
-#include "ReconfigPage_3.h"
-#include "ReconfigPage_4.h"
-#include "ReconfigPage_5.h"
+#include "InitialSetupPage.h"
+#include "ResultsPage.h"
+#include "OutputPage.h"
+#include "ConvTypePage.h"
+#include "ConvOptPage.h"
+#include "SubPubPage.h"
+#include "FileListingPage.h"
+#include "SummaryPage.h"
 
 #ifdef _WIN32
 namespace cct = WindowsConsoleText;
@@ -43,13 +45,28 @@ class ReconfigCentralWid : public QWidget
     Q_OBJECT
             
     private:
+        enum Mode
+        {
+            SCAN,
+            RECONFIG
+        };
+        
+        Mode currentMode;
+        
         enum Page
         {
             PAGE_ONE,
             PAGE_TWO,
             PAGE_THREE,
             PAGE_FOUR,
-            PAGE_FIVE
+            PAGE_FIVE,
+            PAGE_SIX,
+            PAGE_SEVEN,
+            PAGE_EIGHT,
+            PAGE_NINE,
+            PAGE_TEN,
+            PAGE_ELEVEN,
+            PAGE_TWELVE
         };
         
         Page currentPage;
@@ -64,20 +81,26 @@ class ReconfigCentralWid : public QWidget
         QPushButton* cancelBtn;
         
         ReconfigDashboard* reconfigDashboardPtr;
-        OperationPage* operationPagePtr;
-        ReconfigPage_1* reconfigPage_1Ptr;
-        ReconfigPage_2* reconfigPage_2Ptr;
-        ReconfigPage_3* reconfigPage_3Ptr;
-        ReconfigPage_4* reconfigPage_4Ptr;
-        ReconfigPage_5* reconfigPage_5Ptr;
+        InitialSetupPage* initialSetupPagePtr;
+        OutputPage* initialOutputPagePtr;
+        ResultsPage* resultsPagePtr;
+        ConvTypePage* convTypePagePtr;
+        ConvOptPage* convOptPagePtr;
+        SubPubPage* subPagePtr;
+        SubPubPage* pubPagePtr;
+        OutputPage* creationOutputPagePtr;
+        FileListingPage* fileListingPagePtr;
+        OutputPage* buildOutputPagePtr;
+        SummaryPage* summaryPagePtr;
+        
         
         QHBoxLayout* buttonLayout;
         QGridLayout* outerLayout;
         
     private slots:
-        void handleScanBtnSlot();
+        //void handleScanBtnSlot();
         
-        void handleReconfigBtnSlot();
+        //void handleReconfigBtnSlot();
         
         /**
          * 
@@ -179,6 +202,76 @@ class ReconfigCentralWid : public QWidget
          * 
          */
         void unloadPage_5();
+        
+        /**
+         * 
+         */
+        void loadPage_6();
+        
+        /**
+         * 
+         */
+        void unloadPage_6();
+        
+        /**
+         * 
+         */
+        void loadPage_7();
+        
+        /**
+         * 
+         */
+        void unloadPage_7();
+        
+        /**
+         * 
+         */
+        void loadPage_8();
+        
+        /**
+         * 
+         */
+        void unloadPage_8();
+        
+        /**
+         * 
+         */
+        void loadPage_9();
+        
+        /**
+         * 
+         */
+        void unloadPage_9();
+        
+        /**
+         * 
+         */
+        void loadPage_10();
+        
+        /**
+         * 
+         */
+        void unloadPage_10();
+        
+        /**
+         * 
+         */
+        void loadPage_11();
+        
+        /**
+         * 
+         */
+        void unloadPage_11();
+        
+        /**
+         * 
+         */
+        void loadPage_12();
+        
+        /**
+         * 
+         */
+        void unloadPage_12();
         
         /**
          * Classic toString method.

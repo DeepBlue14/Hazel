@@ -19,7 +19,7 @@
 #include <QCheckBox>
 #include <QGridLayout>
 
-class ReconfigPage_3 : public QWidget
+class ResultsPage : public QWidget
 {
     Q_OBJECT
             
@@ -38,7 +38,7 @@ class ReconfigPage_3 : public QWidget
          * 
          * @param parent reference to parent type.
          */
-        ReconfigPage_3(QWidget* parent = 0);
+        ResultsPage(QWidget* parent = 0);
         
         /**
          * 
@@ -64,7 +64,7 @@ class ReconfigPage_3 : public QWidget
         /**
          * Destructor.
          */
-        ~ReconfigPage_3();
+        ~ResultsPage();
 };
 
 #endif	/* RECONFIG_PAGE_3_H */

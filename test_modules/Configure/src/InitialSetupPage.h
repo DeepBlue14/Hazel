@@ -17,7 +17,9 @@
 
 #include <QWidget>
 #include <QLineEdit>
+#include <QRadioButton>
 #include <QPushButton>
+#include <QCheckBox>
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QString>
@@ -27,25 +29,40 @@
 
 #include <iostream>
 
+#include "RosEnv.h"
+
 using namespace std;
 
-class ReconfigPage_1 : public QWidget
+class InitialSetupPage : public QWidget
 {
     Q_OBJECT
+    
+    
             
     private:
+        QRadioButton* scanBtnPtr;
+        QRadioButton* reconfigBtnPtr;
+        
         QLineEdit* vanillaPkgLocLePtr;
         QLineEdit* rosPkgLocLePtr;
         QFileDialog* vanillaPkgLocFdPtr;
         QFileDialog* rosPkgLocFdPtr;
         QPushButton* vanillaPkgLocPbPtr;
         QPushButton* rosPkgLocPbPtr;
+        
+        QCheckBox* verifyCbPtr;
+        QCheckBox* buildCbPtr;
+        
         QGridLayout* outerLayout;
         
         QString* vanillaPkgAbsPathStr;
         QString* rosPkgAbsPathStr;
         
+        QGridLayout* btnLayout;
+        
     private slots:
+        void handleScanMode();
+        void handleVerifyMode();
         /**
          * 
          */
@@ -62,7 +79,10 @@ class ReconfigPage_1 : public QWidget
          * 
          * @param parent reference to parent type.
          */
-        ReconfigPage_1(QWidget* parent = 0);
+        InitialSetupPage(QWidget* parent = 0);
+        
+        
+        void swapOptionMode(bool isScanMode);
         
         /**
          * 
@@ -110,7 +130,7 @@ class ReconfigPage_1 : public QWidget
         /**
          * Destructor.
          */
-        ~ReconfigPage_1();
+        ~InitialSetupPage();
 };
 
 #endif	/* RECONFIG_PAGE_1_H */

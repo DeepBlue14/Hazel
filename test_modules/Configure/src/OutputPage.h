@@ -18,7 +18,7 @@
 #include <QTextEdit>
 #include <QGridLayout>
 
-class ReconfigPage_4 : public QWidget
+class OutputPage : public QWidget
 {
     Q_OBJECT
             
@@ -35,12 +35,12 @@ class ReconfigPage_4 : public QWidget
          * 
          * @param parent reference to parent type.
          */
-        ReconfigPage_4(QWidget* parent = 0);
+        OutputPage(QWidget* parent = 0);
         
         /**
          * Destructor.
          */
-        ~ReconfigPage_4();
+        ~OutputPage();
 };
 
 #endif	/* RECONFIG_PAGE_4_H */

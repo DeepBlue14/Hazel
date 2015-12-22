@@ -1,7 +1,7 @@
-#include "ReconfigPage_3.h"
+#include "ResultsPage.h"
 
 
-ReconfigPage_3::ReconfigPage_3(QWidget* parent) : QWidget(parent)
+ResultsPage::ResultsPage(QWidget* parent) : QWidget(parent)
 {
     outerLayout = new QGridLayout();
     
@@ -9,7 +9,7 @@ ReconfigPage_3::ReconfigPage_3(QWidget* parent) : QWidget(parent)
 }
 
 
-QString* ReconfigPage_3::toString()
+QString* ResultsPage::toString()
 {
     QString* tmp = new QString();
     tmp->append("***method stub***");
@@ -18,7 +18,7 @@ QString* ReconfigPage_3::toString()
 }
 
 
-ReconfigPage_3::~ReconfigPage_3()
+ResultsPage::~ResultsPage()
 {
     ;
 }

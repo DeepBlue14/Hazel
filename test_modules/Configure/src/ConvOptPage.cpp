@@ -1,7 +1,7 @@
-#include "ReconfigPage_2.h"
+#include "ConvOptPage.h"
 
 
-ReconfigPage_2::ReconfigPage_2(QWidget* parent) : QWidget(parent)
+ConvOptPage::ConvOptPage(QWidget* parent) : QWidget(parent)
 {
     rosPkgStrLstPtr = new QStringList();
     initRosPkgStrLstPtr();
@@ -35,19 +35,19 @@ ReconfigPage_2::ReconfigPage_2(QWidget* parent) : QWidget(parent)
 }
 
 
-void ReconfigPage_2::handleCustomPkgsPbStr()
+void ConvOptPage::handleCustomPkgsPbStr()
 {
     customPkgsGuiPtr->show();
 }
 
 
-void ReconfigPage_2::handleAdvancedOptionsPbStr()
+void ConvOptPage::handleAdvancedOptionsPbStr()
 {
     advOptionsGuiPtr->show();
 }
 
 
-void ReconfigPage_2::initRosPkgStrLstPtr()
+void ConvOptPage::initRosPkgStrLstPtr()
 {
     rosPkgStrLstPtr->push_back("actionlib_msgs");
     rosPkgStrLstPtr->push_back("diagnostic_msgs");
@@ -62,13 +62,13 @@ void ReconfigPage_2::initRosPkgStrLstPtr()
 }
 
 
-QString* ReconfigPage_2::toString()
+QString* ConvOptPage::toString()
 {
     
 }
 
 
-ReconfigPage_2::~ReconfigPage_2()
+ConvOptPage::~ConvOptPage()
 {
     ;
 }

@@ -1,7 +1,7 @@
 # This file is generated automatically. Do not edit.
 # Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
-DESTDIR = dist/Release/GNU-Linux-x86
+DESTDIR = dist/Release/GNU-Linux
 TARGET = ide
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
@@ -13,7 +13,7 @@ HEADERS += src/AdvOptPage_1.h src/AdvOptPage_2.h src/AdvOptPage_3.h src/AdvOptPa
 FORMS +=
 RESOURCES +=
 TRANSLATIONS +=
-OBJECTS_DIR = build/Release/GNU-Linux-x86
+OBJECTS_DIR = build/Release/GNU-Linux
 MOC_DIR = 
 RCC_DIR = 
 UI_DIR = 

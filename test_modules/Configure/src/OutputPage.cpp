@@ -1,7 +1,7 @@
-#include "ReconfigPage_4.h"
+#include "OutputPage.h"
 
 
-ReconfigPage_4::ReconfigPage_4(QWidget* parent) : QWidget(parent)
+OutputPage::OutputPage(QWidget* parent) : QWidget(parent)
 {
     outputTe = new QTextEdit();
     outputTe->setEnabled(false);
@@ -13,7 +13,7 @@ ReconfigPage_4::ReconfigPage_4(QWidget* parent) : QWidget(parent)
 }
 
 
-ReconfigPage_4::~ReconfigPage_4()
+OutputPage::~OutputPage()
 {
     ;
 }

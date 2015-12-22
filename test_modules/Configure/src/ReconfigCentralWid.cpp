@@ -3,44 +3,42 @@
 
 ReconfigCentralWid::ReconfigCentralWid(QWidget* parent) : QWidget(parent)
 {
-    outerLayout = new QGridLayout();
-    /*
-    scanBtnPtr = new QPushButton(QIcon(RosEnv::imagesInstallLoc + "search.png"), "Scan");
-    reconfigBtnPtr = new QPushButton(QIcon(RosEnv::imagesInstallLoc + "searchAndTransform.png"), "Reconfig");
-    connect(scanBtnPtr, SIGNAL(released()), this, SLOT(handleScanBtnSlot()));
-    connect(reconfigBtnPtr, SIGNAL(released()), this, SLOT(handleReconfigBtnSlot()));
-    */
     reconfigDashboardPtr = new ReconfigDashboard();
-    operationPagePtr = new OperationPage();
-    reconfigPage_1Ptr = new ReconfigPage_1();
-    reconfigPage_2Ptr = new ReconfigPage_2();
-    reconfigPage_3Ptr = new ReconfigPage_3();
-    reconfigPage_4Ptr = new ReconfigPage_4();
-    reconfigPage_5Ptr = new ReconfigPage_5();
+    initialSetupPagePtr = new InitialSetupPage();
+    initialOutputPagePtr = new OutputPage();
+    resultsPagePtr = new ResultsPage();
+    convTypePagePtr = new ConvTypePage();
+    convOptPagePtr = new ConvOptPage();
+    subPagePtr = new SubPubPage();
+    pubPagePtr = new SubPubPage();
+    creationOutputPagePtr = new OutputPage();
+    fileListingPagePtr = new FileListingPage();
+    buildOutputPagePtr = new OutputPage();
+    summaryPagePtr = new SummaryPage();
     
     currentPage = PAGE_ONE;
     
-    outerLayout->addWidget(reconfigDashboardPtr/*reconfigPage_1Ptr*/, 0, 0);
-    //outerLayout->addWidget(scanBtnPtr, 2, 0);
-    //outerLayout->addWidget(reconfigBtnPtr, 3, 0);
+    outerLayout = new QGridLayout();
+    outerLayout->addWidget(reconfigDashboardPtr, 0, 0);
+
     initBtns();
     
     this->setLayout(outerLayout);
 }
 
 
-void ReconfigCentralWid::handleScanBtnSlot()
+/*void ReconfigCentralWid::handleScanBtnSlot()
 {
     cout << "handleScanBtnSlot() triggered" << endl;
-    //hideBtns(false);
+    currentMode = SCAN;
 }
 
 
 void ReconfigCentralWid::handleReconfigBtnSlot()
 {
     cout << "handleReconfigBtnSlot() triggered" << endl;
-    //hideBtns(false);
-}
+    currentMode = RECONFIG;
+}*/
 
 
 void ReconfigCentralWid::handleBackBtnSlot()
@@ -102,37 +100,6 @@ void ReconfigCentralWid::initBtns()
 }
 
 
-/*void ReconfigCentralWid::hideBtns(bool hide)
-{
-    if(hide)
-    {
-        backBtn->setVisible(false);
-        backBtn->setEnabled(false);
-        nextBtn->setVisible(false);
-        nextBtn->setEnabled(false);
-        finishBtn->setVisible(false);
-        finishBtn->setEnabled(false);
-        helpBtn->setVisible(false);
-        helpBtn->setEnabled(false);
-        cancelBtn->setVisible(false);
-        cancelBtn->setEnabled(false);
-    }
-    else
-    {
-        backBtn->setVisible(true);
-        //backBtn->setEnabled(true);
-        nextBtn->setVisible(true);
-        nextBtn->setEnabled(true);
-        finishBtn->setVisible(true);
-        //finishBtn->setEnabled(true);
-        helpBtn->setVisible(true);
-        helpBtn->setEnabled(true);
-        cancelBtn->setVisible(true);
-        cancelBtn->setEnabled(true);
-    }
-}*/
-
-
 void ReconfigCentralWid::swapBackPage()
 {
     switch(currentPage)
@@ -152,13 +119,54 @@ void ReconfigCentralWid::swapBackPage()
             unloadPage_4();
             loadPage_3();
             currentPage = PAGE_THREE;
+            /*if(currentMode == SCAN)
+            {
+                nextBtn->setEnabled(true);
+                finishBtn->setEnabled(false);
+            }*/
             break;
         case PAGE_FIVE:
             unloadPage_5();
             loadPage_4();
             currentPage = PAGE_FOUR;
+            break;
+        case PAGE_SIX:
+            unloadPage_6();
+            loadPage_5();
+            currentPage = PAGE_FIVE;
+            break;
+        case PAGE_SEVEN:
+            unloadPage_7();
+            loadPage_6();
+            currentPage = PAGE_SIX;
+            break;
+        case PAGE_EIGHT:
+            unloadPage_8();
+            loadPage_7();
+            currentPage = PAGE_SEVEN;
+            break;
+        case PAGE_NINE:
+            unloadPage_9();
+            loadPage_8();
+            currentPage = PAGE_EIGHT;
+            break;
+        case PAGE_TEN:
+            unloadPage_10();
+            loadPage_9();
+            currentPage = PAGE_NINE;
+            break;
+        case PAGE_ELEVEN:
+            unloadPage_11();
+            loadPage_10();
+            currentPage = PAGE_TEN;
+            break;
+        case PAGE_TWELVE:
+            unloadPage_12();
+            loadPage_11();
+            currentPage = PAGE_ELEVEN;
             nextBtn->setEnabled(true);
             finishBtn->setEnabled(false);
+            break;
         default:
             cerr << "ERROR in switch at: NewProjectGui::swapBackPage()" << endl;
     }
@@ -184,13 +192,54 @@ void ReconfigCentralWid::swapNextPage()
             unloadPage_3();
             loadPage_4();
             currentPage = PAGE_FOUR;
+            if(currentMode == SCAN)
+            {
+                nextBtn->setEnabled(false);
+                finishBtn->setEnabled(true);
+            }
             break;
         case PAGE_FOUR:
             unloadPage_4();
             loadPage_5();
             currentPage = PAGE_FIVE;
+            break;
+        case PAGE_FIVE:
+            unloadPage_5();
+            loadPage_6();
+            currentPage = PAGE_SIX;
+            break;
+        case PAGE_SIX:
+            unloadPage_6();
+            loadPage_7();
+            currentPage = PAGE_SEVEN;
+            break;
+        case PAGE_SEVEN:
+            unloadPage_7();
+            loadPage_8();
+            currentPage = PAGE_EIGHT;
+            break;
+        case PAGE_EIGHT:
+            unloadPage_8();
+            loadPage_9();
+            currentPage = PAGE_NINE;
+            break;
+        case PAGE_NINE:
+            unloadPage_9();
+            loadPage_10();
+            currentPage = PAGE_TEN;
+            break;
+        case PAGE_TEN:
+            unloadPage_10();
+            loadPage_11();
+            currentPage = PAGE_ELEVEN;
+            break;
+        case PAGE_ELEVEN:
+            unloadPage_11();
+            loadPage_12();
+            currentPage = PAGE_TWELVE;
             nextBtn->setEnabled(false);
             finishBtn->setEnabled(true);
+            break;
         default:
             cerr << "ERROR in switch at: NewProjectGui::swapNextPage()" << endl;
     }
@@ -202,16 +251,12 @@ void ReconfigCentralWid::loadPage_1()
     outerLayout->addWidget(reconfigDashboardPtr, 0, 0);
     reconfigDashboardPtr->setVisible(true);
     reconfigDashboardPtr->setEnabled(true);
-    //reconfigPage_1Ptr->setVisible(true);
-    //reconfigPage_1Ptr->setEnabled(true);
 }
 
 
 void ReconfigCentralWid::unloadPage_1()
 {
     outerLayout->removeWidget(reconfigDashboardPtr);
-    //reconfigPage_1Ptr->setVisible(false);
-    //reconfigPage_1Ptr->setEnabled(false);
     reconfigDashboardPtr->setVisible(false);
     reconfigDashboardPtr->setEnabled(false);
 }
@@ -219,69 +264,177 @@ void ReconfigCentralWid::unloadPage_1()
 
 void ReconfigCentralWid::loadPage_2()
 {
-    outerLayout->addWidget(operationPagePtr, 0, 0);
-    //reconfigPage_2Ptr->setVisible(true);
-    //reconfigPage_2Ptr->setEnabled(true);
-    operationPagePtr->setVisible(true);
-    operationPagePtr->setVisible(true);
+    outerLayout->addWidget(initialSetupPagePtr, 0, 0);
+    initialSetupPagePtr->setVisible(true);
+    initialSetupPagePtr->setVisible(true);
 }
 
 
 void ReconfigCentralWid::unloadPage_2()
 {
-    outerLayout->removeWidget(operationPagePtr);
-    //reconfigPage_2Ptr->setVisible(false);
-    //reconfigPage_2Ptr->setEnabled(false);
-    operationPagePtr->setVisible(false);
-    operationPagePtr->setEnabled(false);
+    outerLayout->removeWidget(initialSetupPagePtr);
+    initialSetupPagePtr->setVisible(false);
+    initialSetupPagePtr->setEnabled(false);
 }
 
 
 void ReconfigCentralWid::loadPage_3()
 {
-    outerLayout->addWidget(reconfigPage_3Ptr, 0, 0);
-    reconfigPage_3Ptr->setVisible(true);
-    reconfigPage_3Ptr->setEnabled(true);
+    outerLayout->addWidget(initialOutputPagePtr, 0, 0);
+    initialOutputPagePtr->setVisible(true);
+    initialOutputPagePtr->setEnabled(true);
 }
 
 
 void ReconfigCentralWid::unloadPage_3()
 {
-    outerLayout->removeWidget(reconfigPage_3Ptr);
-    reconfigPage_3Ptr->setVisible(false);
-    reconfigPage_3Ptr->setEnabled(false);
+    outerLayout->removeWidget(initialOutputPagePtr);
+    initialOutputPagePtr->setVisible(false);
+    initialOutputPagePtr->setEnabled(false);
 }
 
 
 void ReconfigCentralWid::loadPage_4()
 {
-    outerLayout->addWidget(reconfigPage_4Ptr, 0, 0);
-    reconfigPage_4Ptr->setVisible(true);
-    reconfigPage_4Ptr->setEnabled(true);
+    outerLayout->addWidget(resultsPagePtr, 0, 0);
+    resultsPagePtr->setVisible(true);
+    resultsPagePtr->setEnabled(true);
 }
 
 
 void ReconfigCentralWid::unloadPage_4()
 {
-    outerLayout->removeWidget(reconfigPage_4Ptr);
-    reconfigPage_4Ptr->setVisible(false);
-    reconfigPage_4Ptr->setEnabled(false);
+    outerLayout->removeWidget(resultsPagePtr);
+    resultsPagePtr->setVisible(false);
+    resultsPagePtr->setEnabled(false);
 }
 
 
 void ReconfigCentralWid::loadPage_5()
 {
-    outerLayout->addWidget(reconfigPage_5Ptr, 0, 0);
-    reconfigPage_5Ptr->setVisible(true);
-    reconfigPage_5Ptr->setEnabled(true);
+    outerLayout->addWidget(convTypePagePtr, 0, 0);
+    convTypePagePtr->setVisible(true);
+    convTypePagePtr->setEnabled(true);
 }
 
 
 void ReconfigCentralWid::unloadPage_5()
 {
-    outerLayout->removeWidget(reconfigPage_5Ptr);
-    reconfigPage_5Ptr->setVisible(false);
-    reconfigPage_5Ptr->setEnabled(false);
+    outerLayout->removeWidget(convTypePagePtr);
+    convTypePagePtr->setVisible(false);
+    convTypePagePtr->setEnabled(false);
+}
+
+
+void ReconfigCentralWid::loadPage_6()
+{
+    outerLayout->addWidget(convOptPagePtr, 0, 0);
+    convOptPagePtr->setVisible(true);
+    convOptPagePtr->setEnabled(true);
+}
+        
+
+void ReconfigCentralWid::unloadPage_6()
+{
+    outerLayout->removeWidget(convOptPagePtr);
+    convOptPagePtr->setVisible(false);
+    convOptPagePtr->setEnabled(false);
+}
+
+
+void ReconfigCentralWid::loadPage_7()
+{
+    outerLayout->addWidget(subPagePtr, 0, 0);
+    subPagePtr->setVisible(true);
+    subPagePtr->setEnabled(true);
+}
+        
+
+void ReconfigCentralWid::unloadPage_7()
+{
+    outerLayout->removeWidget(subPagePtr);
+    subPagePtr->setVisible(false);
+    subPagePtr->setEnabled(false);
+}
+
+
+void ReconfigCentralWid::loadPage_8()
+{
+    outerLayout->addWidget(pubPagePtr, 0, 0);
+    pubPagePtr->setVisible(true);
+    pubPagePtr->setEnabled(true);
+}
+        
+
+void ReconfigCentralWid::unloadPage_8()
+{
+    outerLayout->removeWidget(pubPagePtr);
+    pubPagePtr->setVisible(false);
+    pubPagePtr->setEnabled(false);
+}
+
+
+void ReconfigCentralWid::loadPage_9()
+{
+    outerLayout->addWidget(creationOutputPagePtr, 0, 0);
+    creationOutputPagePtr->setVisible(true);
+    creationOutputPagePtr->setEnabled(true);
+}
+        
+
+void ReconfigCentralWid::unloadPage_9()
+{
+    outerLayout->removeWidget(creationOutputPagePtr);
+    creationOutputPagePtr->setVisible(false);
+    creationOutputPagePtr->setEnabled(false);
+}
+
+
+void ReconfigCentralWid::loadPage_10()
+{
+    outerLayout->addWidget(fileListingPagePtr, 0, 0);
+    fileListingPagePtr->setVisible(true);
+    fileListingPagePtr->setEnabled(true);
+}
+        
+
+void ReconfigCentralWid::unloadPage_10()
+{
+    outerLayout->removeWidget(fileListingPagePtr);
+    fileListingPagePtr->setVisible(false);
+    fileListingPagePtr->setEnabled(false);
+}
+
+
+void ReconfigCentralWid::loadPage_11()
+{
+    outerLayout->addWidget(buildOutputPagePtr, 0, 0);
+    buildOutputPagePtr->setVisible(true);
+    buildOutputPagePtr->setEnabled(true);
+}
+        
+
+void ReconfigCentralWid::unloadPage_11()
+{
+    outerLayout->removeWidget(buildOutputPagePtr);
+    buildOutputPagePtr->setVisible(false);
+    buildOutputPagePtr->setEnabled(false);
+}
+
+
+void ReconfigCentralWid::loadPage_12()
+{
+    outerLayout->addWidget(summaryPagePtr, 0, 0);
+    summaryPagePtr->setVisible(true);
+    summaryPagePtr->setEnabled(true);
+}
+        
+
+void ReconfigCentralWid::unloadPage_12()
+{
+    outerLayout->removeWidget(summaryPagePtr);
+    summaryPagePtr->setVisible(false);
+    summaryPagePtr->setEnabled(false);
 }
 
 
