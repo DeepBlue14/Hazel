@@ -45,13 +45,7 @@ class ReconfigCentralWid : public QWidget
     Q_OBJECT
             
     private:
-        enum Mode
-        {
-            SCAN,
-            RECONFIG
-        };
         
-        Mode currentMode;
         
         enum Page
         {

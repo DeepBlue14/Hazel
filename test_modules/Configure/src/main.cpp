@@ -3,6 +3,7 @@
  * Module: 
  * Author: james
  * Email: 
+ * File Description: 
  * 
  * See: https://metacpan.org/pod/Makefile::AST
  * 
@@ -10,6 +11,7 @@
  * Last Modified: 
  */
 
+/*
 #include <QApplication>
 
 #include "ReconfigGui.h"
@@ -36,3 +38,4 @@ int main(int argc, char *argv[]) {
 
     return app.exec();
 }
+*/

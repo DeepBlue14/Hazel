@@ -61,8 +61,16 @@ class InitialSetupPage : public QWidget
         QGridLayout* btnLayout;
         
     private slots:
+        /**
+         * 
+         */
         void handleScanMode();
+        
+        /**
+         * 
+         */
         void handleVerifyMode();
+
         /**
          * 
          */
@@ -75,6 +83,20 @@ class InitialSetupPage : public QWidget
         
     public:
         /**
+         * 
+         */
+        enum Mode
+        {
+            SCAN,
+            RECONFIG
+        };
+        
+        /**
+         * 
+         */
+        Mode currentMode; // FIXME: make this private
+        
+        /**
          * Constructor.
          * 
          * @param parent reference to parent type.
@@ -83,6 +105,12 @@ class InitialSetupPage : public QWidget
         
         
         void swapOptionMode(bool isScanMode);
+        
+        
+        void setCurrentMode(Mode currentMode);
+        
+        
+        Mode getCurrentMode();
         
         /**
          * 

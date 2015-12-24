@@ -2,6 +2,7 @@
 *List of features not yet fully implemented*
 
 
+- Make QCellWidget (module Configure) more abstract
 - NewProjectGui has stuff that relies on paths; test if this is still valid
 - Finish implementing RosReconfig frontend
 - Implement code folding: https://ui.netbeans.org/docs/ui/code_folding/cf_uispec.html

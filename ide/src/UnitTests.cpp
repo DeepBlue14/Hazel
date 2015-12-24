@@ -30,7 +30,6 @@
 #include "RTerm.h"
 #include "OptionGui.h"
 #include "PkgManagerGui.h"
-#include "ReconfigGui.h"
 #include "FetchWebSource.h"
 #include "ParseFontConfigXml.h"
 #include "XmlMaster.h"
@@ -66,7 +65,7 @@ int main(int argc, char *argv[])
          << "\n\t 7) Help GUI"
          << "\n\t 8) RTerm (standalone)"
          << "\n\t 9) Options"
-         << "\n\t10) Ros Reconfigure"
+         << "\n\t10) xxxxx"
          << "\n\t11) software center"
          << "\n\t12) parse package.xml file"
          << "\n\t13) run XmlMaster on a file"
@@ -85,7 +84,6 @@ int main(int argc, char *argv[])
     QString tmpDir("/opt/ros/indigo/share/sensor_msgs");
     RTerm rterm;
     OptionGui optionGui;
-    ReconfigCentralWid reconfigGui;
     PkgManagerGui pkgManagerGui;
     
     
@@ -145,8 +143,8 @@ int main(int argc, char *argv[])
             optionGui.show();
             return app.exec();
         case 10:
-            reconfigGui.show();
-            return app.exec();
+            //xxxx
+            break;
         case 11:
             pkgManagerGui.show();
             return app.exec();

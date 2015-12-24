@@ -109,6 +109,7 @@ void ReconfigCentralWid::swapBackPage()
             loadPage_1();
             currentPage = PAGE_ONE;
             backBtn->setEnabled(false);
+            nextBtn->setEnabled(true);
             break;
         case PAGE_THREE:
             unloadPage_3();
@@ -192,7 +193,8 @@ void ReconfigCentralWid::swapNextPage()
             unloadPage_3();
             loadPage_4();
             currentPage = PAGE_FOUR;
-            if(currentMode == SCAN)
+            
+            if(initialSetupPagePtr->getCurrentMode() == InitialSetupPage::SCAN)
             {
                 nextBtn->setEnabled(false);
                 finishBtn->setEnabled(true);
@@ -266,7 +268,7 @@ void ReconfigCentralWid::loadPage_2()
 {
     outerLayout->addWidget(initialSetupPagePtr, 0, 0);
     initialSetupPagePtr->setVisible(true);
-    initialSetupPagePtr->setVisible(true);
+    initialSetupPagePtr->setEnabled(true);
 }
 
 

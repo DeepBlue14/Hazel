@@ -15,13 +15,18 @@
 #include <QWidget>
 #include <QLabel>
 #include <QStringList>
+#include <QVector>
+#include <QIcon>
+#include <QTableWidget>
+#include <QHeaderView>
 #include <QListWidget>
 #include <QString>
 #include <QGridLayout>
-#include "RosEnv.h"
 
 #include <iostream>
 
+#include "QCellWidget.h"
+#include "RosEnv.h"
 
 using namespace std;
 
@@ -30,7 +35,8 @@ class ReconfigDashboard : public QWidget
     Q_OBJECT
             
     private:
-        QListWidget* historyLstWidPtr;
+        //QListWidget* historyLstWidPtr;
+        QTableWidget* historyTblWidPtr;
         QGridLayout* outerLayout;
         
     public:

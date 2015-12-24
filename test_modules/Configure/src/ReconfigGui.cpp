@@ -25,8 +25,8 @@ void ReconfigGui::handleReconfigActPtrSlot()
     cout << "handleReconfigActPtrSlot() pressed" << endl;
     //reconfigCentralWidPtr->hideBtns(false);
     //toolBarPtr->setVisible(false);
-    toolBarPtr->setEnabled(false);
-    reconfigCentralWidPtr->swapNextPage(); // FIXME:
+    //toolBarPtr->setEnabled(false);
+    //reconfigCentralWidPtr->swapNextPage(); // FIXME:
 }
 
 
@@ -35,8 +35,8 @@ void ReconfigGui::handleFindPkgTypeActPtrSlot()
     cout << "handleFindPkgTypeActPtrSlot() pressed" << endl;
     //reconfigCentralWidPtr->hideBtns(false);
     //toolBarPtr->setVisible(false);
-    toolBarPtr->setEnabled(false);
-    reconfigCentralWidPtr->swapNextPage(); // FIXME:
+    //toolBarPtr->setEnabled(false);
+    //reconfigCentralWidPtr->swapNextPage(); // FIXME:
 }
 
 

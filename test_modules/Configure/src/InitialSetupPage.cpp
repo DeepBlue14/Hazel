@@ -52,12 +52,14 @@ InitialSetupPage::InitialSetupPage(QWidget* parent) : QWidget(parent)
 
 void InitialSetupPage::handleScanMode()
 {
+    currentMode = SCAN;
     swapOptionMode(true);
 }
 
 
 void InitialSetupPage::handleVerifyMode()
 {
+    currentMode = RECONFIG;
     swapOptionMode(false);
 }
 
@@ -116,6 +118,18 @@ void InitialSetupPage::swapOptionMode(bool isScanMode)
             ;
     }
     
+}
+
+
+void InitialSetupPage::setCurrentMode(Mode currentMode)
+{
+    this->currentMode = currentMode;
+}
+
+
+InitialSetupPage::Mode InitialSetupPage::getCurrentMode()
+{
+    return currentMode;
 }
 
 

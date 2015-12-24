@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="95">
+<configurationDescriptor version="97">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -88,32 +88,6 @@
           <itemPath>src/ProjPropGui.h</itemPath>
           <itemPath>src/RideEnv.h</itemPath>
           <itemPath>src/RosEnv.h</itemPath>
-        </logicalFolder>
-        <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
-          <itemPath>src/AdvOptPage_1.h</itemPath>
-          <itemPath>src/AdvOptPage_2.h</itemPath>
-          <itemPath>src/AdvOptPage_3.h</itemPath>
-          <itemPath>src/AdvOptPage_4.h</itemPath>
-          <itemPath>src/AdvOptPage_5.h</itemPath>
-          <itemPath>src/AdvOptionsGui.h</itemPath>
-          <itemPath>src/CustomPkgsGui.h</itemPath>
-          <itemPath>src/Inventory.h</itemPath>
-          <itemPath>src/MakeBridge.h</itemPath>
-          <itemPath>src/ParseCMake.h</itemPath>
-          <itemPath>src/ParseMake.h</itemPath>
-          <itemPath>src/ReconfigCentralWid.h</itemPath>
-          <itemPath>src/ReconfigGui.h</itemPath>
-          <itemPath>src/ReconfigPage_1.h</itemPath>
-          <itemPath>src/ReconfigPage_2.h</itemPath>
-          <itemPath>src/ReconfigPage_3.h</itemPath>
-          <itemPath>src/ReconfigPage_4.h</itemPath>
-          <itemPath>src/ReconfigPage_5.h</itemPath>
-          <itemPath>src/ReconfigPage_6.h</itemPath>
-          <itemPath>src/ReconfigPage_7.h</itemPath>
-          <itemPath>src/ReconfigToolBar.h</itemPath>
-          <itemPath>src/ToCMake.h</itemPath>
-          <itemPath>src/ToRosMake.h</itemPath>
-          <itemPath>src/TouchSrcs.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
           <itemPath>src/RTerm.h</itemPath>
@@ -281,32 +255,6 @@
           <itemPath>src/RideEnv.cpp</itemPath>
           <itemPath>src/RosEnv.cpp</itemPath>
         </logicalFolder>
-        <logicalFolder name="f8" displayName="Reconfig" projectFiles="true">
-          <itemPath>src/AdvOptPage_1.cpp</itemPath>
-          <itemPath>src/AdvOptPage_2.cpp</itemPath>
-          <itemPath>src/AdvOptPage_3.cpp</itemPath>
-          <itemPath>src/AdvOptPage_4.cpp</itemPath>
-          <itemPath>src/AdvOptPage_5.cpp</itemPath>
-          <itemPath>src/AdvOptionsGui.cpp</itemPath>
-          <itemPath>src/CustomPkgsGui.cpp</itemPath>
-          <itemPath>src/Inventory.cpp</itemPath>
-          <itemPath>src/MakeBridge.cpp</itemPath>
-          <itemPath>src/ParseCMake.cpp</itemPath>
-          <itemPath>src/ParseMake.cpp</itemPath>
-          <itemPath>src/ReconfigCentralWid.cpp</itemPath>
-          <itemPath>src/ReconfigGui.cpp</itemPath>
-          <itemPath>src/ReconfigPage_1.cpp</itemPath>
-          <itemPath>src/ReconfigPage_2.cpp</itemPath>
-          <itemPath>src/ReconfigPage_3.cpp</itemPath>
-          <itemPath>src/ReconfigPage_4.cpp</itemPath>
-          <itemPath>src/ReconfigPage_5.cpp</itemPath>
-          <itemPath>src/ReconfigPage_6.cpp</itemPath>
-          <itemPath>src/ReconfigPage_7.cpp</itemPath>
-          <itemPath>src/ReconfigToolBar.cpp</itemPath>
-          <itemPath>src/ToCMake.cpp</itemPath>
-          <itemPath>src/ToRosMake.cpp</itemPath>
-          <itemPath>src/TouchSrcs.cpp</itemPath>
-        </logicalFolder>
         <logicalFolder name="f5" displayName="RTerm" projectFiles="true">
           <itemPath>src/RTerm.cpp</itemPath>
         </logicalFolder>
@@ -408,30 +356,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="src/AdvOptPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_1.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_2.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_3.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_4.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_5.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptionsGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptionsGui.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Build.h" ex="false" tool="3" flavor2="0">
@@ -447,10 +371,6 @@
       <item path="src/CustomMsgsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/CustomMsgsGui.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/CustomPkgsGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/CustomPkgsGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/DebugActions.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -540,10 +460,6 @@
       </item>
       <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Inventory.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/Inventory.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/LineNumberArea.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LineNumberArea.h" ex="false" tool="3" flavor2="0">
@@ -555,10 +471,6 @@
       <item path="src/LoadTemplate.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LoadTemplate.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MakeBridge.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MakeBridge.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -712,17 +624,9 @@
       </item>
       <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/ParseCMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ParseCMake.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/ParseFontConfigXml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ParseMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ParseMake.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -755,46 +659,6 @@
       <item path="src/RTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RTerm.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigCentralWid.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigCentralWid.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigGui.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_1.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigToolBar.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -871,18 +735,6 @@
       <item path="src/Timer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Timer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ToCMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ToCMake.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ToRosMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ToRosMake.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/TouchSrcs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/TouchSrcs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -942,30 +794,6 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="src/AdvOptPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_1.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_2.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_3.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_4.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptPage_5.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/AdvOptionsGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/AdvOptionsGui.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/Build.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Build.h" ex="false" tool="3" flavor2="0">
@@ -981,10 +809,6 @@
       <item path="src/CustomMsgsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/CustomMsgsGui.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/CustomPkgsGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/CustomPkgsGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/DebugActions.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1074,10 +898,6 @@
       </item>
       <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/Inventory.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/Inventory.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/LineNumberArea.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LineNumberArea.h" ex="false" tool="3" flavor2="0">
@@ -1089,10 +909,6 @@
       <item path="src/LoadTemplate.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/LoadTemplate.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/MakeBridge.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/MakeBridge.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/MasterActions.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1246,17 +1062,9 @@
       </item>
       <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/ParseCMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ParseCMake.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="src/ParseFontConfigXml.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/ParseFontConfigXml.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ParseMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ParseMake.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/PhysicalAttribLog.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1289,46 +1097,6 @@
       <item path="src/RTerm.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RTerm.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigCentralWid.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigCentralWid.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigGui.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigGui.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_1.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_1.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_2.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_3.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_4.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_5.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_6.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigPage_7.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ReconfigToolBar.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ReconfigToolBar.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -1405,18 +1173,6 @@
       <item path="src/Timer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Timer.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ToCMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ToCMake.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/ToRosMake.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/ToRosMake.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/TouchSrcs.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/TouchSrcs.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/TreeItemIconInit.cpp" ex="false" tool="1" flavor2="0">
       </item>

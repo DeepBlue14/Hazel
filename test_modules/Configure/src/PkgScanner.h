@@ -21,14 +21,19 @@
 #include <QVector>
 #include <QStringList>
 #include <QString>
+#include <QDebug>
 
 class PkgScanner
 {
     private:
-        ;
+        QString* pkgRootStrPtr;
+        
         
     public:
         PkgScanner();
+        void scan();
+        void setPkgRootStrPtr(QString* pkgRootStrPtr);
+        QString* getPkgRootStrPtr();
         QString* toString();
         ~PkgScanner();
 };
