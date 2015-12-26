@@ -17,13 +17,15 @@
 #include <QString>
 #include <QGridLayout>
 
+#include "FileGui.h"
+
 class EditorCentralWid : public QWidget
 {
     Q_OBJECT
             
     private:
-        QTextEdit* oldFileTePtr;
-        QTextEdit* newFileTePtr;
+        FileGui* oldFileGuiPtr;
+        FileGui* newFileGuiPtr;
         QGridLayout* outerLayout;
         
     public:

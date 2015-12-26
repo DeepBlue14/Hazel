@@ -3,12 +3,12 @@
 
 EditorCentralWid::EditorCentralWid(QWidget* parent) : QWidget(parent)
 {
-    oldFileTePtr = new QTextEdit();
-    newFileTePtr = new QTextEdit();
+    oldFileGuiPtr = new FileGui();
+    newFileGuiPtr = new FileGui();
     
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(oldFileTePtr, 0, 0);
-    outerLayout->addWidget(newFileTePtr, 0, 1);
+    outerLayout->addWidget(oldFileGuiPtr, 0, 0);
+    outerLayout->addWidget(newFileGuiPtr, 0, 1);
     
     this->setLayout(outerLayout);
 }

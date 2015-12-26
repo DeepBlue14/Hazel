@@ -4,12 +4,14 @@
 EditorGui::EditorGui(QMainWindow* parent) : QMainWindow(parent)
 {
     centralWidPtr = new EditorCentralWid();
-    navLstWidPtr = new QListWidget();
+    westGuiPtr = new WestGui();
     
     QDockWidget* westDock = new QDockWidget();
-    westDock->setWidget(navLstWidPtr);
+    westDock->setWidget(westGuiPtr);
     
-    this->setCentralWidget(centralWidPtr);
+    QDockWidget* centralDock = new QDockWidget();
+    centralDock->setWidget(centralWidPtr);
+    this->setCentralWidget(centralDock);
     this->addDockWidget(Qt::LeftDockWidgetArea, westDock);
 }
 
