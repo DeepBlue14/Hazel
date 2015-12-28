@@ -17,10 +17,11 @@
 #include <QListWidgetItem>
 #include <QListWidget>
 #include <QDockWidget>
+#include <QTabWidget>
 #include <QString>
 
 #include "EditorCentralWid.h"
-#include "WestGui.h"
+#include "WestTab.h"
 
 class EditorGui : public QMainWindow
 {
@@ -28,7 +29,8 @@ class EditorGui : public QMainWindow
            
     private:
         EditorCentralWid* centralWidPtr;
-        WestGui* westGuiPtr;
+        WestTab* makeWestTabPtr;
+        WestTab* pkgWestTabPtr;
         
     public:
         EditorGui(QMainWindow* parent = 0);

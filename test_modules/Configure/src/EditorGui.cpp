@@ -4,10 +4,15 @@
 EditorGui::EditorGui(QMainWindow* parent) : QMainWindow(parent)
 {
     centralWidPtr = new EditorCentralWid();
-    westGuiPtr = new WestGui();
+    makeWestTabPtr = new WestTab();
+    pkgWestTabPtr = new WestTab();
+    
+    QTabWidget* tabWidget = new QTabWidget();
+    tabWidget->addTab(makeWestTabPtr, "Make");
+    tabWidget->addTab(pkgWestTabPtr, "Pkg");
     
     QDockWidget* westDock = new QDockWidget();
-    westDock->setWidget(westGuiPtr);
+    westDock->setWidget(tabWidget);
     
     QDockWidget* centralDock = new QDockWidget();
     centralDock->setWidget(centralWidPtr);

@@ -29,7 +29,7 @@
             </logicalFolder>
             <itemPath>src/EditorCentralWid.h</itemPath>
             <itemPath>src/EditorGui.h</itemPath>
-            <itemPath>src/WestGui.h</itemPath>
+            <itemPath>src/WestTab.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="PagesUi" projectFiles="true">
             <itemPath>src/AdvOptPage_1.h</itemPath>
@@ -95,7 +95,7 @@
             </logicalFolder>
             <itemPath>src/EditorCentralWid.cpp</itemPath>
             <itemPath>src/EditorGui.cpp</itemPath>
-            <itemPath>src/WestGui.cpp</itemPath>
+            <itemPath>src/WestTab.cpp</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="PagesUi" projectFiles="true">
             <itemPath>src/AdvOptPage_1.cpp</itemPath>
@@ -298,9 +298,9 @@
       </item>
       <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/WestGui.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/WestTab.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/WestGui.h" ex="false" tool="3" flavor2="0">
+      <item path="src/WestTab.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -471,9 +471,9 @@
       </item>
       <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/WestGui.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/WestTab.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/WestGui.h" ex="false" tool="3" flavor2="0">
+      <item path="src/WestTab.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
