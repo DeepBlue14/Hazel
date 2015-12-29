@@ -22,6 +22,7 @@
 
 #include "EditorCentralWid.h"
 #include "WestTab.h"
+#include "SouthGui.h"
 
 class EditorGui : public QMainWindow
 {
@@ -31,6 +32,10 @@ class EditorGui : public QMainWindow
         EditorCentralWid* centralWidPtr;
         WestTab* makeWestTabPtr;
         WestTab* pkgWestTabPtr;
+        WestTab* hWestTabPtr;
+        WestTab* cWestTabPtr;
+        WestTab* pyWestTabPtr;
+        WestTab* miscWestTabPtr;
         
     public:
         EditorGui(QMainWindow* parent = 0);

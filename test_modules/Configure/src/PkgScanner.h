@@ -27,6 +27,11 @@ class PkgScanner
 {
     private:
         QString* pkgRootStrPtr;
+        QString* makeFileStrPtr;
+        QString* pkgFileStrPtr;
+        QVector<QFile*>* hFilePtrVecPtr;
+        QVector<QFile*>* cFilePtrVecPtr;
+        QVector<QFile*>* pyFilePtrVecPtr;
         
         
     public:

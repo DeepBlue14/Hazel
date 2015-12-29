@@ -2,6 +2,8 @@
 *List of features not yet fully implemented*
 
 
+- make ALL constructors which do type conversions explicit
+- Read this: https://google.github.io/styleguide/cppguide.html and make static vars constexpr
 - Make QCellWidget (module Configure) more abstract
 - NewProjectGui has stuff that relies on paths; test if this is still valid
 - Finish implementing RosReconfig frontend

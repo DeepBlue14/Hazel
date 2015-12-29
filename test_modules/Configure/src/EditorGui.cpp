@@ -4,12 +4,20 @@
 EditorGui::EditorGui(QMainWindow* parent) : QMainWindow(parent)
 {
     centralWidPtr = new EditorCentralWid();
-    makeWestTabPtr = new WestTab();
-    pkgWestTabPtr = new WestTab();
+    makeWestTabPtr = new WestTab(WestTab::MAKE);
+    pkgWestTabPtr = new WestTab(WestTab::BUILD);
+    hWestTabPtr = new WestTab(WestTab::HEADER);
+    cWestTabPtr = new WestTab(WestTab::SOURCE);
+    pyWestTabPtr = new WestTab(WestTab::PYTHON);
+    miscWestTabPtr = new WestTab(WestTab::MISC);
     
     QTabWidget* tabWidget = new QTabWidget();
-    tabWidget->addTab(makeWestTabPtr, "Make");
-    tabWidget->addTab(pkgWestTabPtr, "Pkg");
+    tabWidget->addTab(makeWestTabPtr, "make");
+    tabWidget->addTab(pkgWestTabPtr, "pkg");
+    tabWidget->addTab(hWestTabPtr, "inc");
+    tabWidget->addTab(cWestTabPtr, "src");
+    tabWidget->addTab(pyWestTabPtr, "py");
+    tabWidget->addTab(miscWestTabPtr, "misc");
     
     QDockWidget* westDock = new QDockWidget();
     westDock->setWidget(tabWidget);

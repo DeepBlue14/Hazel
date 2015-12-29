@@ -19,12 +19,17 @@
 #include <QListWidgetItem>
 #include <QListWidget>
 #include <QDockWidget>
+#include <QModelIndexList>
 #include <QTabWidget>
 #include <QVector>
 #include <QString>
 #include <QVBoxLayout>
 
+#include <iostream>
+
 #include "RosEnv.h"
+
+using namespace std;
 
 class WestTab : public QWidget
 {
@@ -38,11 +43,24 @@ class WestTab : public QWidget
         QVBoxLayout* outerLayout;
         
     private slots:
-        void handleOldFileSlot();
-        void handleNewFileSlot();
+        void handleNewFileSlot(QListWidgetItem* itemSelected);
+        void handleOldFileSlot(QListWidgetItem* itemSelected);
         
     public:
-        WestTab(QWidget* parent = 0);
+        enum TabType
+        {
+            MAKE,
+            BUILD,
+            HEADER,
+            SOURCE,
+            PYTHON,
+            MISC
+        };
+        
+        //TabType tabType;
+        
+        WestTab(TabType tabType, QWidget* parent = 0);
+        void initTab(TabType tabType);
         void setOldFileLstWidItemPtrVecPtr(QVector<QListWidgetItem*>* oldFileLstWidItemPtr);
         QVector<QListWidgetItem*>* getOldFileLstWidItemPtrVecPtr();
         void setNewFileLstWidItemPtrVecPtr(QVector<QListWidgetItem*>* newFileLstWidItemPtr);

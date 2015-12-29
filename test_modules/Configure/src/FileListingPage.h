@@ -1,7 +1,7 @@
 /* 
  * File:   FileListingPage.h
- * Module: 
- * Author: james
+ * Module: Configure
+ * Author: James Kuczynski
  * Email: 
  * File Description: This file lists the package.xml and CMakeLists.txt files
  *                   which (may) need to be modified.
@@ -20,6 +20,12 @@
 #include <QString>
 #include <QGridLayout>
 
+#include <iostream>
+
+#include "EditorGui.h"
+
+using namespace std;
+
 class FileListingPage : public QWidget
 {
     Q_OBJECT
@@ -29,13 +35,16 @@ class FileListingPage : public QWidget
         QListWidget* makeLstWidPtr;
         QPushButton* packagePbPtr;
         QPushButton* makePbPtr;
+        EditorGui* editorGuiPtr;
         QGridLayout* outerLayout;
         
     private slots:
-        ;
+        void handleMakeSlot();
+        void handlePkgSlot();
         
     public:
         FileListingPage(QWidget* parent = 0);
+        
         QString* toString();
         ~FileListingPage();
 };
