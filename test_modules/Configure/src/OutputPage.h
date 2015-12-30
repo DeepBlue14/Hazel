@@ -15,7 +15,9 @@
 #define	RECONFIG_PAGE_4_H
 
 #include <QWidget>
+#include <QLabel>
 #include <QTextEdit>
+#include <QString>
 #include <QGridLayout>
 
 class OutputPage : public QWidget
@@ -23,6 +25,7 @@ class OutputPage : public QWidget
     Q_OBJECT
             
     private:
+        QLabel* titleLblPtr;
         QTextEdit* outputTe;
         QGridLayout* outerLayout;
         
@@ -36,6 +39,21 @@ class OutputPage : public QWidget
          * @param parent reference to parent type.
          */
         OutputPage(QWidget* parent = 0);
+        
+        
+        void setTitleLblPtr(QLabel* titleLblPtr);
+        
+        
+        QLabel* getTitleLblPtr();
+        
+        
+        void setTitleLblText(QString* text);
+        
+        
+        QString* getTitleLblText();
+        
+        
+        QString* toString();
         
         /**
          * Destructor.

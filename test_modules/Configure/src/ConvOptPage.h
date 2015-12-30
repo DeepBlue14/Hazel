@@ -4,7 +4,10 @@
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
  * File Description: This class contains a "page" which allows the user to
- *                   select the various msgs which will be linked against...
+ *                   select the various msgs which will be linked against
+ *                   during compile-time, as well as buttons for "custom" msgs
+ *                   and "advanced" options for compiler, linker, environment
+ *                   variables, etc.
  *
  * Created on July 20, 2015, 5:11 PM
  * Last Modified: 
@@ -42,14 +45,22 @@ class ConvOptPage : public QWidget
         
     private slots:
         /**
-         * 
+         * Starts the "Custom Pkgs" GUI.
          */
         void handleCustomPkgsPbStr();
         
         /**
-         * 
+         * Starts the "Advanced Options" GUI.
          */
         void handleAdvancedOptionsPbStr();
+        
+        /**
+         * Updates this class object's *_msgs list and *_msgs list widget when
+         * the user presses the "OK" button on the custom msgs dialog window.
+         * @see #rosPkgStrLstPtr
+         * @see #rosPkgLwPtr
+         */
+        void handleAddPkgTypeSlot();
         
     public:
         /**
@@ -60,7 +71,10 @@ class ConvOptPage : public QWidget
         ConvOptPage(QWidget* parent = 0);
         
         /**
-         * 
+         * Populates the list widget with the types of ROS's *_msgs.
+         * TODO: Currently, this is hard-coded, but it would be better to
+         * read them from a configuration file, or query them from the ROS
+         * instalation on the localhost.
          */
         void initRosPkgStrLstPtr();
         

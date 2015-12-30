@@ -25,6 +25,7 @@ ConvOptPage::ConvOptPage(QWidget* parent) : QWidget(parent)
     
     connect(customPkgsPbStr, SIGNAL(released()), this, SLOT(handleCustomPkgsPbStr()));
     connect(advancedOptionsPbStr, SIGNAL(released()), this, SLOT(handleAdvancedOptionsPbStr()));
+    connect(customPkgsGuiPtr, SIGNAL(updateListSig()), this, SLOT(handleAddPkgTypeSlot()));
     
     outerLayout = new QGridLayout();
     outerLayout->addWidget(rosPkgLwPtr, 0, 0);
@@ -62,9 +63,41 @@ void ConvOptPage::initRosPkgStrLstPtr()
 }
 
 
+void ConvOptPage::handleAddPkgTypeSlot()
+{
+    cout << "SIGNAL triggered @ Configure::ConvOptPage::handleAddPkgTypeSlot()" << endl;
+    QListWidgetItem* item;
+    for(size_t i = 0; i < customPkgsGuiPtr->getDependsEnteredStrList()->size(); i++)
+    {
+        // Don't add duplicates
+        if(!rosPkgStrLstPtr->contains(customPkgsGuiPtr->getDependsEnteredStrList()->at(i), Qt::CaseSensitive) )
+        {
+            rosPkgStrLstPtr->push_back(customPkgsGuiPtr->getDependsEnteredStrList()->at(i) );
+            item = new QListWidgetItem(rosPkgStrLstPtr->back(), rosPkgLwPtr);
+            item->setFlags(item->flags() | Qt::ItemIsUserCheckable);
+            item->setCheckState(Qt::Checked);
+        }
+    }
+    
+    // This is debug info
+    /*cout << "list: " << endl;
+    for(size_t i = 0; i < rosPkgStrLstPtr->size(); i++)
+    {
+        cout << "\t- " << rosPkgStrLstPtr->at(i).toStdString() << endl;
+    }*/
+}
+
+
 QString* ConvOptPage::toString()
 {
+    QString* str = new QString("*_msgs list:");
     
+    for(size_t i = 0; i < rosPkgStrLstPtr->size(); i++)
+    {
+        str->append("\n\t-" + rosPkgStrLstPtr->at(i) );
+    }
+    
+    return str;
 }
 
 

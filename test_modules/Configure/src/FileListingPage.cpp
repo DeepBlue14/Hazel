@@ -3,6 +3,8 @@
 
 FileListingPage::FileListingPage(QWidget* parent) : QWidget(parent)
 {
+    titleLblPtr = new QLabel();
+    
     packageLstWidPtr = new QListWidget();
     makeLstWidPtr = new QListWidget();
     packagePbPtr = new QPushButton("Start");
@@ -14,10 +16,11 @@ FileListingPage::FileListingPage(QWidget* parent) : QWidget(parent)
     connect(makePbPtr, SIGNAL(pressed()), this, SLOT(handleMakeSlot()));
     
     outerLayout = new QGridLayout();
-    outerLayout->addWidget(packageLstWidPtr, 0, 0);
-    outerLayout->addWidget(makeLstWidPtr, 0, 1);
-    outerLayout->addWidget(packagePbPtr, 1, 0);
-    outerLayout->addWidget(makePbPtr, 1, 1);
+    outerLayout->addWidget(titleLblPtr, 0, 0);
+    outerLayout->addWidget(packageLstWidPtr, 1, 0);
+    outerLayout->addWidget(makeLstWidPtr, 1, 1);
+    outerLayout->addWidget(packagePbPtr, 2, 0);
+    outerLayout->addWidget(makePbPtr, 2, 1);
     
     this->setLayout(outerLayout);
 }
@@ -34,6 +37,18 @@ void FileListingPage::handlePkgSlot()
 {
     cout << "@ Configure::FileListingPage::handlePkgSlot()" << endl;
     editorGuiPtr->show();
+}
+
+
+void FileListingPage::setTitleLblText(QString* text)
+{
+    titleLblPtr->setText(*text);
+}
+
+
+QString* FileListingPage::getTitleLblPtr()
+{
+    return new QString(titleLblPtr->text() );
 }
 
 

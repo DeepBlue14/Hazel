@@ -1,7 +1,7 @@
 **TODO**
 *List of features not yet fully implemented*
 
-
+- copy SIGNAL stuff (Configure::CustomPkgsGui, Configure::ConvOptPage) --> (ide::...)
 - make ALL constructors which do type conversions explicit
 - Read this: https://google.github.io/styleguide/cppguide.html and make static vars constexpr
 - Make QCellWidget (module Configure) more abstract

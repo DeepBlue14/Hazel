@@ -71,8 +71,8 @@ class ReconfigCentralWid : public QWidget
         QPushButton* backBtn;
         QPushButton* nextBtn;
         QPushButton* finishBtn;
-        QPushButton* helpBtn;
         QPushButton* cancelBtn;
+        QPushButton* helpBtn;
         
         ReconfigDashboard* reconfigDashboardPtr;
         InitialSetupPage* initialSetupPagePtr;
@@ -114,12 +114,12 @@ class ReconfigCentralWid : public QWidget
         /**
          * 
          */
-        void handleHelpBntSlot();
+        void handleCancelBtnSlot();
         
         /**
          * 
          */
-        void handleCancelBtnSlot();
+        void handleHelpBtnSlot();
         
     public:
         /**

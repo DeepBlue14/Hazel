@@ -9,36 +9,36 @@ SubPubPage::SubPubPage(QWidget* parent) : QWidget(parent)
     specificMsgStrPtr = new QString("");
     
     msgCatagoryStrLstPtr = new QVector<QListWidgetItem*>();
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg.png"),
                                                         "std_msgs") );
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg.png"),
                                                         "sensor_msgs") );
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg.png"),
                                                         "geometry_msgs") );
 
     typesEnteredStrLstPtr = new QVector<QListWidgetItem*>();
     
     // !!!Load this stuff from an xml res file!!!
     QVector<QListWidgetItem*>* std_msgsStrLstPtr = new QVector<QListWidgetItem*>();
-    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                      "Char") );
-    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    std_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                      "String") );
     
     QVector<QListWidgetItem*>* sensor_msgsStrLstPtr = new QVector<QListWidgetItem*>();
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                         "Image") );
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                         "PointCloud") );
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                         "PointCloud2") );
-    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    sensor_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                         "Imu") );
     
     QVector<QListWidgetItem*>* geometry_msgsStrLstPtr = new QVector<QListWidgetItem*>();
-    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                         "vector2") );
-    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    geometry_msgsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                         "vector3") );
 
     specificMsgStrLstVec = new QVector<QVector<QListWidgetItem*>*>();
@@ -124,17 +124,17 @@ void SubPubPage::handleAddBtnPtrSlot()
         }
         
         // Add selection to list
-        typesEnteredStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+        typesEnteredStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                      msgCatagoryLwPtr->selectedItems().at(0)->text() +
                                                      "::" +
                                                      specificMsgLwPtr->selectedItems().at(0)->text()) );
         
         // Add selection to GUI
-        /*addedLwPtr->addItem(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+        /*addedLwPtr->addItem(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                      msgCatagoryLwPtr->selectedItems().at(0)->text() +
                                                      "::" +
                                                      specificMsgLwPtr->selectedItems().at(0)->text()) );*/
-        addedLwPtr->addItem(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+        addedLwPtr->addItem(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "data_type.png"),
                                                      typesEnteredStrLstPtr->back()->text()) );
         cout << "added to list: " << tmp->toStdString() << endl;
     }

@@ -12,11 +12,21 @@ CustomPkgsGui::CustomPkgsGui(QWidget* parent) : QWidget(parent)
     rmFromListBtnPtr->setIcon(QIcon(RosEnv::imagesInstallLoc + "RecycleBin.png"));
     rmFromListBtnPtr->setIconSize(QSize(50, 50));
     
+    okBtnPtr = new QPushButton("OK");
+    cancelBtnPtr = new QPushButton("Cancel");
+    btnLayout = new QHBoxLayout();
+    btnLayout->addWidget(okBtnPtr);
+    btnLayout->addWidget(cancelBtnPtr);
+    
+    connect(okBtnPtr, SIGNAL(released() ), this, SLOT(handleOkBtnSlot() ) );
+    connect(cancelBtnPtr, SIGNAL(released() ), this, SLOT(handleCancelBtnSlot() ) );
+    
     outerLayout = new QGridLayout();
     outerLayout->addWidget(dependsLePtr, 0, 0);
     outerLayout->addWidget(addToListBtnPtr, 0, 1);
     outerLayout->addWidget(dependsEnteredTypeLw, 0, 2);
     outerLayout->addWidget(rmFromListBtnPtr, 1, 2);
+    outerLayout->addLayout(btnLayout, 2, 2, Qt::AlignRight);
     
     connect(addToListBtnPtr, SIGNAL(released() ), this, SLOT(handleAddToListBtnPtrSlot() ) );
     connect(rmFromListBtnPtr, SIGNAL(released() ), this, SLOT(handleRmFromListBtnPtrSlot() ) );
@@ -27,6 +37,8 @@ CustomPkgsGui::CustomPkgsGui(QWidget* parent) : QWidget(parent)
 
 void CustomPkgsGui::handleAddToListBtnPtrSlot()
 {
+    cout << "@ Configure::CustomPkgsGui::handleAddToListBtnPtrSlot()" << endl;
+    
     //dependsLePtr->selectedText()
     if(dependsLePtr->text() == "")
     {
@@ -54,6 +66,8 @@ void CustomPkgsGui::handleAddToListBtnPtrSlot()
 
 void CustomPkgsGui::handleRmFromListBtnPtrSlot()
 {
+    cout << "@ Configure::CustomPkgsGui::handleRmFromListBtnPtrSlot()" << endl;
+    
     //cout << dependsEnteredTypeLw->selectedItems().at(0)->text().toStdString() << endl;
     QListWidgetItem* tmp = dependsEnteredTypeLw->selectedItems().at(0);
     dependsEnteredTypeLw->removeItemWidget(tmp);
@@ -67,6 +81,34 @@ void CustomPkgsGui::handleRmFromListBtnPtrSlot()
     }
     
     delete tmp;
+}
+
+
+void CustomPkgsGui::handleOkBtnSlot()
+{
+    cout << "@ Configure::CustomPkgsGui::handleOkBtnSlot()" << endl;
+    cout << cct::yellow("TODO!!!implement me (above line is addr)!!!") << endl;
+    
+    for(size_t i = 0; i < dependsEnteredStrList->size(); i++)
+    {
+        cout << "\t" << dependsEnteredStrList->at(i).toStdString() << endl;
+    }
+    
+    
+    
+    if(this->close() )
+    {
+        emit updateListSig();
+    }
+}
+        
+
+void CustomPkgsGui::handleCancelBtnSlot()
+{
+    cout << "@ Configure::CustomPkgsGui::handleOkBtnSlot()" << endl;
+    cout << cct::yellow("TODO!!!implement me (above line is addr)!!!") << endl;
+    
+    
 }
 
 

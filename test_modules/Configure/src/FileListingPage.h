@@ -14,6 +14,7 @@
 #define FILE_LISTING_PAGE_H
 
 #include <QWidget>
+#include <QLabel>
 #include <QStringList>
 #include <QListWidget>
 #include <QPushButton>
@@ -31,8 +32,9 @@ class FileListingPage : public QWidget
     Q_OBJECT
            
     private:
-        QListWidget* packageLstWidPtr;
-        QListWidget* makeLstWidPtr;
+        QLabel* titleLblPtr;
+        QListWidget* packageLstWidPtr;//FIXME: replace with QTreeWidget
+        QListWidget* makeLstWidPtr;//FIXME: replace with QTreeWidget
         QPushButton* packagePbPtr;
         QPushButton* makePbPtr;
         EditorGui* editorGuiPtr;
@@ -44,6 +46,8 @@ class FileListingPage : public QWidget
         
     public:
         FileListingPage(QWidget* parent = 0);
+        void setTitleLblText(QString* text);
+        QString* getTitleLblPtr();
         
         QString* toString();
         ~FileListingPage();

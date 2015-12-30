@@ -6,14 +6,20 @@ ReconfigCentralWid::ReconfigCentralWid(QWidget* parent) : QWidget(parent)
     reconfigDashboardPtr = new ReconfigDashboard();
     initialSetupPagePtr = new InitialSetupPage();
     initialOutputPagePtr = new OutputPage();
+    initialOutputPagePtr->setTitleLblText(new QString("Initial Analysis"));//TODO: change type of setTitleLblText() param
     resultsPagePtr = new ResultsPage();
     convTypePagePtr = new ConvTypePage();
     convOptPagePtr = new ConvOptPage();
     subPagePtr = new SubPubPage();
+    subPagePtr->setTitlePtrText(new QString("Select <b>subscriber</b> types") );
     pubPagePtr = new SubPubPage();
+    pubPagePtr->setTitlePtrText(new QString("Select <b>publisher</b> types") );
     creationOutputPagePtr = new OutputPage();
+    creationOutputPagePtr->setTitleLblText(new QString("Creating new package") );
     fileListingPagePtr = new FileListingPage();
+    fileListingPagePtr->setTitleLblText(new QString("Manual evaluation") );
     buildOutputPagePtr = new OutputPage();
+    buildOutputPagePtr->setTitleLblText(new QString("Building project") );
     summaryPagePtr = new SummaryPage();
     
     currentPage = PAGE_ONE;
@@ -59,15 +65,15 @@ void ReconfigCentralWid::handleFinishBtnSlot()
 }
 
 
-void ReconfigCentralWid::handleHelpBntSlot()
-{
-    ;
-}
-
-
 void ReconfigCentralWid::handleCancelBtnSlot()
 {
     this->close();
+}
+
+
+void ReconfigCentralWid::handleHelpBtnSlot()
+{
+    ;
 }
 
 void ReconfigCentralWid::initBtns()
@@ -93,7 +99,7 @@ void ReconfigCentralWid::initBtns()
     connect(backBtn, SIGNAL(released() ), this, SLOT(handleBackBtnSlot() ) );
     connect(nextBtn, SIGNAL(released() ), this, SLOT(handleNextBtnSlot() ) );
     connect(finishBtn, SIGNAL(released() ), this, SLOT(handleFinishBtnSlot() ) );
-    connect(helpBtn, SIGNAL(released() ), this, SLOT(handleHelpBntSlot() ) );
+    connect(helpBtn, SIGNAL(released() ), this, SLOT(handleHelpBtnSlot() ) );
     connect(cancelBtn, SIGNAL(released() ), this, SLOT(handleCancelBtnSlot() ) );
     
     outerLayout->addLayout(buttonLayout, 1, 0, Qt::AlignBottom);

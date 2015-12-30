@@ -44,6 +44,7 @@
             <itemPath>src/CustomMsgsPage.h</itemPath>
             <itemPath>src/CustomPkgsGui.h</itemPath>
             <itemPath>src/FileListingPage.h</itemPath>
+            <itemPath>src/HelpGui.h</itemPath>
             <itemPath>src/InitialSetupPage.h</itemPath>
             <itemPath>src/OutputPage.h</itemPath>
             <itemPath>src/QCellWidget.h</itemPath>
@@ -111,6 +112,7 @@
             <itemPath>src/CustomMsgsPage.cpp</itemPath>
             <itemPath>src/CustomPkgsGui.cpp</itemPath>
             <itemPath>src/FileListingPage.cpp</itemPath>
+            <itemPath>src/HelpGui.cpp</itemPath>
             <itemPath>src/InitialSetupPage.cpp</itemPath>
             <itemPath>src/OutputPage.cpp</itemPath>
             <itemPath>src/QCellWidget.cpp</itemPath>
@@ -221,6 +223,10 @@
       <item path="src/FileListingPage.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileListingPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HelpGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/HelpGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -398,6 +404,10 @@
       <item path="src/FileListingPage.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileListingPage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HelpGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/HelpGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
       </item>
