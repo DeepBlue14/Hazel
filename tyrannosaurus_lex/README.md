@@ -14,3 +14,12 @@ sudo apt-get install libncurses-dev
 make
 ./dist/main src/test.cpp --
 ```
+
+
+**NOTE**
+On my lab machine, the program couldn't find stdarg.h or stddef.h, so I ran
+```
+sudo cp /usr/include/c++/4.8/clang_defaults/stdarg.h /usr/include/stdarg.h
+sudo cp /usr/include/c++/4.8/clang_defaults/stddef.h /usr/include/stddef.h
+```
+This fixed the issue.
