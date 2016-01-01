@@ -7,7 +7,7 @@
  * 
  * 
  * Created on December 31, 2015, 11:22 PM
- * Last Modified: 
+ * Last Modified: 1/01/2016
  */
 
 #include <QApplication>
@@ -24,7 +24,9 @@
 
 #include <iostream>
 
-using namespace std;
+//using namespace std;
+using std::cout;
+using std::endl;
 
 // Reference: http://www.qtcentre.org/threads/32416-Update-GUI-from-another-thread
 
@@ -56,39 +58,13 @@ class Calc : public QObject
         {
             QProcess* process = new QProcess();
             this->process = process;
-            //------------------------------------------------------------------
-            /*for(int i = 1; i <= 10; ++i)
-            {
-                emit message(QString::number(i) );
-                QTime t = QTime::currentTime();
-                t = t.addSecs(2);
-                while(t > QTime::currentTime() )
-                {
-                    //spinning...
-                }
-            }*/
-            //------------------------------------------------------------------
-            
-            
-            //------------------------------------------------------------------
-            
+
             process->setWorkingDirectory("res");
             process->start("./OutputTest.bash");
             
             process->waitForStarted();
             QObject::connect(process, SIGNAL(readyReadStandardOutput()), this, SLOT(readOut()));
-            QObject::connect(process, SIGNAL(readyReadStandardError()), this, SLOT(readErr()));
-            //process.waitForFinished(-1);
-            //QString all;
-            //all.append(process.readAll() );
-            //emit message(all);
-            //cout << "Output: " << all.toStdString() << endl;
-            //all.append(process.readAllStandardOutput() );
-            //emit message(all);
-            //cout << "Output: " << all.toStdString() << endl;
-            
-            //------------------------------------------------------------------
-            
+            QObject::connect(process, SIGNAL(readyReadStandardError()), this, SLOT(readErr()));        
             
             emit message("finished!");
         }

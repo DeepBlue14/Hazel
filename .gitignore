@@ -5,3 +5,13 @@
 /test_modules/Configure/dist/
 /test_modules/ThreadTests/dist/
 /test_modules/ThreadTests/build/
+/UnixConsoleText/cct_cpp/build/
+/UnixConsoleText/cct_cpp/dist/
+/CustomizableConsoleText/cct_cpp/build/
+/CustomizableConsoleText/cct_cpp/dist/
+/CustomizableConsoleText/uct_java/build/
+/CustomizableConsoleText/uct_java/dist/
+/CustomizableConsoleText/uct_java/nbproject/private/
+/CustomizableConsoleText/cct_java/nbproject/private/
+/CustomizableConsoleText/cct_java/build/
+/CustomizableConsoleText/cct_java/dist/

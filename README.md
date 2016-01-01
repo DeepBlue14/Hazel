@@ -11,6 +11,9 @@
 
 =====
 
+###**WARNING**
+**The project is--and will continue to be--under serious renovation during the month of January 2016, as we have recently put into effect a coding standard.  Then one which we will be using is a less-rigid subversion of the Lockheed Martin Corporation's C++ Coding Standards for Joint Strike Fighter Air Vehicle System Development and Demonstration Programs**
+
 ###**Index**
 
 Subcategories in the *"Modules"* list marked with a US flag :us: can be run as independent programs or libraries.
@@ -30,7 +33,9 @@ Subcategories in the *"Modules"* list marked with a US flag :us: can be run as i
   - [mind_games](#mind-games) *(controls saving/updating physical files and "remembers" previous session data)*
   - [tyrannosaurus_lex](#tyrannosaurus_lex) *(auto-suggest)* :us:
   - [parsnip](#parsnip) *(refactor)*
-  - [project_apollo](#project_apollo) *(build/run/debug)*
+  - [project_apollo](#project-apollo) *(build/run/debug **backend**)*
+  - [skylab](#skylab) *(GUI for displaying/launching output/terminals--see #project-apollo)*
+  - [roaring_fork](#roaring-fork) *(std stream text-->adds colors/effects)*
   - [console_color_text](#console-color-text) :us:
   - [uterm](#uterm) *(universal OS terminal)* :us:
   - [bell](#bell) *(custom language)* :us:
@@ -90,12 +95,12 @@ Allows the user to utalize version control systems such as git within the IDE.
 
 ####**web_engine**
 
-...
+In order to allow GUI-facilitated instalation of ROS packages/plugins, rqt_ide must be able to query online resources in the form of websites.  This module implements this functionality.
 
 
 ####**xml**
 
-...
+Since ROS utalizes XML in its manifest (package.xml) files, this module handles XML parsing and lexical analysis.
 
 
 ####**configure**
@@ -123,6 +128,18 @@ This module consists of a refactoring program.
 This module handles the various types of execution--rosrun, launch, as well as "regular" executions.
 
 
+####**skylab**
+
+Skylab is the GUI output console and terminal container widget.  It is the frontend of project_apollo (see #project-apollo).
+
+
+####**roaring_fork**
+
+As the name may suggest, **roaring_fork** involves data streams (the original Roaring Fork is a famous American trout stream).  Specifically, this module is consered with taking string/byte array data which originated in a data stream, and add colors and/or text effects before displaying it in a Qt widget.
+
+NOTE: This differs from #console_color_test in that the later formats code to be printed *in a terminal*, while roaring_fork modifies text *from a stream* to pretty-print in a GUI.
+
+
 ####**console_color_text**
 
 This module handles the colorization of text printed out to the terminal(s).  This module can be used as a stand-alone library as well.  It currently supports the following languages:
@@ -145,7 +162,7 @@ This module is my attempt to create my own computer language--more for fun then 
 
 ####**help**
 
-...
+The help module implements a GUI with instructions and hints for using this program, as well as references to online Doxygen-generated documentation.
 
 
 ###**Dependencies**

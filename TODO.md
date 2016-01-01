@@ -1,6 +1,11 @@
 **TODO**
 *List of features not yet fully implemented*
 
+- ???use a UniversalTypes file???
+- use (**const** Obj obj) for params which will NOT be changed by the function
+- add using...see ThreadTests
+- add pre and post conditions / assertions
+- all classes w/ virtual function **shall** have a *virtual* destructor
 - copy SIGNAL stuff (Configure::CustomPkgsGui, Configure::ConvOptPage) --> (ide::...)
 - make ALL constructors which do type conversions explicit
 - Read this: https://google.github.io/styleguide/cppguide.html and make static vars constexpr
@@ -15,7 +20,7 @@
 - Finish messing with the FileTreeGui module
 - Un-hardcode @ NewFilePage_3 "add" slot
 - Implement Tyranosaurus Lex
-- Implement threading
+- Implement threading in all modules (see ThreadingTests)
 
 
 Directory Hierarchy:
