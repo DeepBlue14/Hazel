@@ -3,3 +3,5 @@
 /test_modules/OutputUi/build/
 /test_modules/Configure/build/
 /test_modules/Configure/dist/
+/test_modules/ThreadTests/dist/
+/test_modules/ThreadTests/build/

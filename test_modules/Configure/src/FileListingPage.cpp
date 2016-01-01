@@ -5,8 +5,8 @@ FileListingPage::FileListingPage(QWidget* parent) : QWidget(parent)
 {
     titleLblPtr = new QLabel();
     
-    packageLstWidPtr = new QListWidget();
-    makeLstWidPtr = new QListWidget();
+    oldPkgTreeWidPtr = new QTreeWidget();
+    newPkgTreeWidPtr = new QTreeWidget();
     packagePbPtr = new QPushButton("Start");
     makePbPtr = new QPushButton("Start");
     
@@ -17,8 +17,8 @@ FileListingPage::FileListingPage(QWidget* parent) : QWidget(parent)
     
     outerLayout = new QGridLayout();
     outerLayout->addWidget(titleLblPtr, 0, 0);
-    outerLayout->addWidget(packageLstWidPtr, 1, 0);
-    outerLayout->addWidget(makeLstWidPtr, 1, 1);
+    outerLayout->addWidget(oldPkgTreeWidPtr, 1, 0);
+    outerLayout->addWidget(newPkgTreeWidPtr, 1, 1);
     outerLayout->addWidget(packagePbPtr, 2, 0);
     outerLayout->addWidget(makePbPtr, 2, 1);
     

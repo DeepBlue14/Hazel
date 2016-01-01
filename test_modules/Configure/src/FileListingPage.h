@@ -16,7 +16,8 @@
 #include <QWidget>
 #include <QLabel>
 #include <QStringList>
-#include <QListWidget>
+//#include <QListWidget>
+#include <QTreeWidget>
 #include <QPushButton>
 #include <QString>
 #include <QGridLayout>
@@ -33,8 +34,10 @@ class FileListingPage : public QWidget
            
     private:
         QLabel* titleLblPtr;
-        QListWidget* packageLstWidPtr;//FIXME: replace with QTreeWidget
-        QListWidget* makeLstWidPtr;//FIXME: replace with QTreeWidget
+        //QListWidget* packageLstWidPtr;//FIXME: replace with QTreeWidget
+        //QListWidget* makeLstWidPtr;//FIXME: replace with QTreeWidget
+        QTreeWidget* oldPkgTreeWidPtr;
+        QTreeWidget* newPkgTreeWidPtr;
         QPushButton* packagePbPtr;
         QPushButton* makePbPtr;
         EditorGui* editorGuiPtr;
