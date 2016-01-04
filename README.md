@@ -12,7 +12,8 @@
 =====
 
 ###**WARNING**
-**The project is--and will continue to be--under serious renovation during the month of January 2016, as we have recently put into effect a coding standard.  Then one which we will be using is a less-rigid subversion of the Lockheed Martin Corporation's C++ Coding Standards for Joint Strike Fighter Air Vehicle System Development and Demonstration Programs**
+**The project is--and will continue to be--under serious renovation during the month of January 2016, as we have recently put into effect a new coding standard.  Then one which we will be using is a less-rigid subversion of the Lockheed Martin Corporation's C++ Coding Standards for Joint Strike Fighter Air Vehicle System Development and Demonstration Programs.  Thank you for your patience.**
+
 
 ###**Index**
 
@@ -33,8 +34,8 @@ Subcategories in the *"Modules"* list marked with a US flag :us: can be run as i
   - [mind_games](#mind-games) *(controls saving/updating physical files and "remembers" previous session data)*
   - [tyrannosaurus_lex](#tyrannosaurus_lex) *(auto-suggest)* :us:
   - [parsnip](#parsnip) *(refactor)*
-  - [project_apollo](#project-apollo) *(build/run/debug **backend**)*
-  - [skylab](#skylab) *(GUI for displaying/launching output/terminals--see #project-apollo)*
+  - [project_apollo](#project-apollo) *(build/run/debug backend)*
+  - [skylab](#skylab) *(GUI for displaying/launching output/terminals--see project_apollo)*
   - [roaring_fork](#roaring-fork) *(std stream text-->adds colors/effects)*
   - [console_color_text](#console-color-text) :us:
   - [uterm](#uterm) *(universal OS terminal)* :us:

@@ -24,12 +24,14 @@
 
 #include <iostream>
 
-//using namespace std;
+#include "Calc.h"
+
 using std::cout;
 using std::endl;
 
 // Reference: http://www.qtcentre.org/threads/32416-Update-GUI-from-another-thread
 
+/*
 class Calc : public QObject
 {
 
@@ -72,6 +74,7 @@ class Calc : public QObject
     signals:
         void message(QString);
 };
+*/
 
 int main(int argv, char **args)
 {
@@ -100,4 +103,4 @@ int main(int argv, char **args)
     return app.exec();
 }
 
-#include "main.moc"
+//#include "main.moc" //turn this on if you turn on commented out class in this file

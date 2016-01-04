@@ -5,7 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
-        <itemPath>src/MasterGui.h</itemPath>
+        <itemPath>src/Calc.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -16,7 +16,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
-        <itemPath>src/MasterGui.cpp</itemPath>
+        <itemPath>src/Calc.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -49,9 +49,9 @@
       </qt>
       <compileType>
       </compileType>
-      <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/Calc.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/MasterGui.h" ex="false" tool="3" flavor2="0">
+      <item path="src/Calc.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -80,9 +80,9 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="src/MasterGui.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/Calc.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/MasterGui.h" ex="false" tool="3" flavor2="0">
+      <item path="src/Calc.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
