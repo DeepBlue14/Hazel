@@ -16,14 +16,15 @@
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 namespace RosEnv
 {
-    extern QString absPathToRosWs;
-    extern QString rideInstallLoc; // Location where RIDE is installed
-    extern QString imagesInstallLoc;
-    extern QString sigilHome; // the value of $HOME
+    extern QString absPathToRosWs; /// Absolute path to the ROS workspace.
+    extern QString rideInstallLoc; /// Location where RIDE is installed.
+    extern QString imagesInstallLoc; /// Path to location of icons.
+    extern QString sigilHome; /// the value of $HOME.
     
     enum RosDistro
     {

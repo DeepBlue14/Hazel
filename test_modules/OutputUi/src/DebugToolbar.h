@@ -22,33 +22,78 @@
 #include "RosEnv.h"
 #include "AbstractOutputToolBar.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class DebugToolbar : public AbstractOutputToolBar
 {
     Q_OBJECT
-            
-    private:
-        QAction* startActPtr;
-        QAction* stopActPtr;
-        QAction* pauseActPtr;
-        QAction* stepIntoActPtr;
-        QAction* stepOverActPtr;
-        
-    private slots:
-        void handleStartActPtrSlot();
-        void handleStopActPtrSlot();
-        void handlePauseActPtrSlot();
-        void handleStepIntoActPtrSlot();
-        void handleStepOverActPtrSlot();
-        
-    public:
-        DebugToolbar(AbstractOutputToolBar* parent = 0);
-        void initActions();
-        void initBtnConnecter();
-        QString* toString();
-        ~DebugToolbar();
-            
+
+public:
+    /**
+     * 
+     * 
+     * @param parent
+     */
+    explicit DebugToolbar(AbstractOutputToolBar* parent = 0);
+    
+    /**
+     * Defines action member variables.
+     */
+    void initActions();
+    
+    /**
+     * Defines buttons and connects them to actions.
+     */
+    void initBtnConnecter();
+    
+    /**
+     * Classic toString method.
+     * 
+     * @return 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor.
+     */
+    virtual ~DebugToolbar();
+    
+    
+private slots:
+    /**
+     * Starts process being debugged in pseudo terminal.
+     */
+    void handleStartActPtrSlot();
+    
+    /**
+     * Stops process being debugged in pseudo terminal.
+     */
+    void handleStopActPtrSlot();
+    
+    /**
+     * Pauses the process being debugged in pseudo terminal.
+     */
+    void handlePauseActPtrSlot();
+    
+    /**
+     * Implements a "step into" action.
+     */
+    void handleStepIntoActPtrSlot();
+    
+    /**
+     * Implements a "step over" action.
+     */
+    void handleStepOverActPtrSlot();
+    
+    
+private:
+    QAction* startActPtr; /** Start process. */
+    QAction* stopActPtr; /** Stop process. */
+    QAction* pauseActPtr; /** Pause process. */
+    QAction* stepIntoActPtr; /** Step into. */
+    QAction* stepOverActPtr; /** Step over. */
+    
 };
 
 

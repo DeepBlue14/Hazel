@@ -27,17 +27,46 @@
 class RunDisplay : public QMainWindow
 {
     Q_OBJECT
-            
-    private:
-        RunToolBar* runToolbarPtr;
-        
-    public:
-        RunDisplay(QMainWindow* parent = 0);
-        void setup();
-        void loadTabMode();
-        void loadPanelMode();
-        QString* toString();
-        ~RunDisplay();
+
+public:
+    /**
+     * Constructor.
+     * 
+     * @param parent
+     */
+    explicit RunDisplay(QMainWindow* parent = 0);
+    
+    /**
+     * Defines member variables.
+     */
+    void setup();
+    
+    /**
+     * Configures the GUI in tab mode.
+     */
+    void loadTabMode();
+    
+    /**
+     * Configures the GUI in panel mode.
+     */
+    void loadPanelMode();
+    
+    /**
+     * Classic toString method.
+     * 
+     * @return 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor.
+     */
+    virtual ~RunDisplay();
+    
+    
+private:
+    RunToolBar* runToolbarPtr; //** Toolbar to start, terminate, etc. process in terminal. */
+    
 };
 
 #endif	/* RUN_DISPLAY_H */

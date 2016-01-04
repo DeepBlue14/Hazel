@@ -19,32 +19,73 @@
 
 #include "AbstractOutputToolBar.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 
 class RunToolBar : public AbstractOutputToolBar
 {
     Q_OBJECT
-            
-    private:
-        QAction* runActPtr;
-        QAction* controlCActPtr;
-        QAction* controlBackslashActPtr;
-        QAction* termActPtr;
-        
-        
-    private slots:
-        void handleRunActPtrSlot();
-        void handleControlCActPtrSlot();
-        void handleControlBackslashActPtrSlot();
-        void handleTermActPtrSlot();
-        
-    public:
-        RunToolBar(AbstractOutputToolBar* parent = 0);
-        void initActions();
-        void initBtnConnecter();
-        QString* toString();
-        ~RunToolBar();
+
+public:
+    /**
+     * Constructor.
+     * 
+     * @param parent
+     */
+    RunToolBar(AbstractOutputToolBar* parent = 0);
+    
+    /**
+     * Defines action member variables.
+     */
+    void initActions();
+    
+    /**
+     * Defines button members and connects them with their corresponding
+     * actions.
+     */
+    void initBtnConnecter();
+    
+    /**
+     * Classic toString method.
+     * 
+     * @return 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor.
+     */
+    ~RunToolBar();
+    
+    
+private slots:
+    /**
+     * Is triggered by the "Run" button being pressed.
+     */
+    void handleRunActPtrSlot();
+    
+    /**
+     * Is triggered by [CTRL] C.
+     */
+    void handleControlCActPtrSlot();
+    
+    /**
+     * Is triggered by [CTRL] \
+     */
+    void handleControlBackslashActPtrSlot();
+    
+    /**
+     * Is triggered by the "Terminate" button being pressed.
+     */
+    void handleTermActPtrSlot();
+    
+    
+private:
+    QAction* runActPtr; /// For "Run" button.
+    QAction* controlCActPtr; /// For [CTRL] C triggered.
+    QAction* controlBackslashActPtr; /// For [CTRL] \ triggered.
+    QAction* termActPtr; /// For "Terminate" button.
         
 };
 

@@ -25,22 +25,47 @@
 
 #include "RunToolBar.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class SigTextEdit : public QTextEdit
 {
     Q_OBJECT
-            
-    private:
-        ;
+  
+public:
+    /**
+     * Constructor.
+     * 
+     * @param parent
+     */
+    explicit SigTextEdit(QTextEdit* parent = 0);
+    
+    /**
+     * Classic toString method.
+     * 
+     * @return 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor.
+     */
+    virtual ~SigTextEdit();
         
-    protected:
-        /*virtual*/ void keyPressEvent(QKeyEvent* e);
-        
-    public:
-        SigTextEdit(QTextEdit* parent = 0);
-        QString* toString();
-        ~SigTextEdit();
+    
+protected:
+    /**
+     * Intercept and evaluate key event.  Specifically for termination key
+     * sequences.
+     * 
+     * @param e
+     */
+    /*virtual*/ void keyPressEvent(QKeyEvent* e);
+    
+                
+private:
+    ;
+    
 };
 
 #endif	/* SIG_TEXT_EDIT_H */

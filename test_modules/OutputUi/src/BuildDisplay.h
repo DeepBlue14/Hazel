@@ -23,22 +23,47 @@
 #include "SigTextEdit.h"
 #include "RunDisplay.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class BuildDisplay : public QMainWindow
-{
+{ 
     Q_OBJECT
-            
-    private:
-        QTabWidget* tabWidgetPtr;
-        SigTextEdit* textEditPtr;
-        RunDisplay* runDisplayPtr;
-        
-    public:
-        BuildDisplay(QMainWindow* parent = 0);
-        void setup();
-        QString* toString();
-        ~BuildDisplay();
+
+public:
+    /**
+     * Constructor.
+     * 
+     * @param parent
+     */
+    explicit BuildDisplay(QMainWindow* parent = 0);
+    
+    /**
+     * Defines and initializes member variables.
+     */
+    void setup();
+    
+    /**
+     * Classic toString method.
+     * @return 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor.
+     */
+    virtual ~BuildDisplay();
+
+    
+private:
+    QTabWidget* tabWidgetPtr; /** Contains "build" and "Run" tabs. */
+    /**
+     * Pseudo terminal; only responds to [CTRL] C, etc.  This is the "Build"
+     * tab.
+     */
+    SigTextEdit* textEditPtr;
+    RunDisplay* runDisplayPtr; /** Run tab; contains multiple sub-terminals. */
+
 };
 
 #endif	/* BUILD_DISPLAY_H */

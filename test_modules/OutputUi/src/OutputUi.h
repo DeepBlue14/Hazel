@@ -24,24 +24,48 @@
 #include "OutputToolBar.h"
 #include "DebugToolbar.h"
 
-using namespace std;
+using std::cout;
+using std::cerr;
+using std::endl;
+
 
 class OutputUi : public QMainWindow
 {
     Q_OBJECT
-            
-    private:
-        BuildDisplay* buildDisplayPtr;
-        OutputToolbar* outputToolbarPtr;
-        DebugToolbar* debugToolbarPtr;
-        QToolBar* outputWidPtr;
-        QToolBar* debugWidPtr;
-        
-    public:
-        OutputUi(QMainWindow* parent = 0);
-        void setup();
-        QString* toString();
-        ~OutputUi();
+
+public:
+    /**
+     * Constructor.
+     * 
+     * @param parent
+     */
+    explicit OutputUi(QMainWindow* parent = 0);
+    
+    /**
+     * Defines and connects member variables.
+     */
+    void setup();
+    
+    /**
+     * Classic toString-type method.
+     * 
+     * @return 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor.
+     */
+    virtual ~OutputUi();
+    
+    
+private:
+    BuildDisplay* buildDisplayPtr;
+    OutputToolbar* outputToolbarPtr;
+    DebugToolbar* debugToolbarPtr;
+    QToolBar* outputWidPtr;
+    QToolBar* debugWidPtr;
+    
 };
 
 #endif	/* OUTPUT_UI_H */
