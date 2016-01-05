@@ -1,5 +1,5 @@
 /* 
- * File:   NewFilePage_5.h
+ * File:   NewFilePage_4.h
  * Module: NewFile
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
@@ -8,8 +8,8 @@
  * Created on May 15, 2015, 2:56 PM
  */
 
-#ifndef NEW_FILE_PAGE_5_H
-#define	NEW_FILE_PAGE_5_H
+#ifndef NEW_FILE_PAGE_4_H
+#define	NEW_FILE_PAGE_4_H
 
 #include <QWidget>
 #include <QString>
@@ -176,4 +176,4 @@ class NewFilePage_4 : public QWidget
         
 };
 
-#endif	/* NEW_FILE_PAGE_5_H */
+#endif	/* NEW_FILE_PAGE_4_H */

@@ -19,3 +19,7 @@
 /uterm/build/
 /test_modules/configure/dist/
 /test_modules/configure/build/
+/modules/ide/new_project/dist/
+/modules/ide/new_project/build/
+/modules/ide/new_file/build/
+/modules/ide/new_file/dist/

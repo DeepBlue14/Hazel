@@ -8,8 +8,8 @@
  * Created on August 14, 2015, 1:34 PM
  */
 
-#ifndef NEW_FILE_PAGE_4_H
-#define	NEW_FILE_PAGE_4_H
+#ifndef NEW_FILE_PAGE_3_H
+#define	NEW_FILE_PAGE_3_H
 
 #include <QWidget>
 #include <QStringList>
@@ -150,4 +150,4 @@ class NewFilePage_3 : public QWidget
         ~NewFilePage_3();
 };
 
-#endif	/* NEW_FILE_PAGE_4_H */
+#endif	/* NEW_FILE_PAGE_3_H */

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/CustomMsgsGui.h</itemPath>
+        <itemPath>src/NewFileGui.h</itemPath>
+        <itemPath>src/NewFilePage_1.h</itemPath>
+        <itemPath>src/NewFilePage_2.h</itemPath>
+        <itemPath>src/NewFilePage_3.h</itemPath>
+        <itemPath>src/NewFilePage_4.h</itemPath>
+        <itemPath>src/RideEnv.h</itemPath>
+        <itemPath>src/RosEnv.h</itemPath>
+        <itemPath>src/UnixConsoleText.h</itemPath>
+        <itemPath>src/WindowsConsoleText.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/CustomMsgsGui.cpp</itemPath>
+        <itemPath>src/NewFileGui.cpp</itemPath>
+        <itemPath>src/NewFilePage_1.cpp</itemPath>
+        <itemPath>src/NewFilePage_2.cpp</itemPath>
+        <itemPath>src/NewFilePage_3.cpp</itemPath>
+        <itemPath>src/NewFilePage_4.cpp</itemPath>
+        <itemPath>src/RideEnv.cpp</itemPath>
+        <itemPath>src/RosEnv.cpp</itemPath>
+        <itemPath>src/UnixConsoleText.cpp</itemPath>
+        <itemPath>src/WindowsConsoleText.cpp</itemPath>
+        <itemPath>src/main.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+        <mocDir>src/moc</mocDir>
+      </qt>
+      <compileType>
+      </compileType>
+      <item path="src/CustomMsgsGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CustomMsgsGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="src/CustomMsgsGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CustomMsgsGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewFilePage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RideEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RideEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
