@@ -1,5 +1,0 @@
-<scout>
-    <UnixConsoleText>
-        <method NameAndParams="red(string textStrPtr" ReturnType="string"/>
-	<method NameAndParams="green(string textStrPtr" ReturnType="string"/>
-</scout>
