@@ -1,4 +1,4 @@
-![Logo](https://github.com/DeepBlue14/rqt_ide/blob/master/ide/res/images/icon.jpg)
+![Logo](https://github.com/DeepBlue14/rqt_ide/blob/master/res/images/icon.jpg)
 
 #**rqt_ide**
 *An integrated development environment for ROS*
