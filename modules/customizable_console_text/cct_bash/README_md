@@ -1,0 +1,22 @@
+#BASH
+
+
+###**Build & Run**
+
+
+
+####**Build**
+
+change the permissions of uct_bash.bash to allow execution: ```chmod +x .uct_bash.bash```
+
+
+####**Run**
+
+Here is an simple example program:
+```bash
+#!/bin/bash
+
+. ./uct_bash.bash
+
+echo -e "$red red $RESET now not red"
+```
