@@ -22,14 +22,17 @@ using namespace std;
 
 class FormatText
 {
-    private:
-        ;
     
-    public:
-        FormatText();
-        QVector<QString*> formatLsOutput(QString* outputStrPtr);
-        ~FormatText();
-        
+public:
+    FormatText();
+    QVector<QString*> formatLsOutput(QString* outputStrPtr);
+    ~FormatText();
+    
+    
+private:
+    ;
+
+
 };
 
 #endif	/* FORMATTEXT_H */

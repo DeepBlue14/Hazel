@@ -28,34 +28,39 @@
 #include "UProcess.h"
 #include "Environment.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class UTextEdit : public QPlainTextEdit
 {
-        Q_OBJECT
-            
-    private:
-        QString* userAtCompStrPtr;
-        QString* wdPathStrPtr;
-        UProcess* rProcess;
-        OsCmdSwap* osCmdSwapPtr;
-        
-    private slots:
-        ;
-        
-    public:
-        UTextEdit(QWidget* parent = 0);
-        void keyPressEvent(QKeyEvent* e);
-        QString* parseOutput(QString* outputStrPtr);
-        void fiddleWithWdPathStrPtr(QString* absPathStrPtr);
-        QString* dirFileExe(QVector<QString*> dat);
-        void setUserAtCompStrPtr(QString* userAtCompStrPtr);
-        QString* getUserAtCompStrPtr();
-        void setWdPathStrPtr(QString* wdPathStrPtr);
-        QString* getWdPathStrPtr();
-        void setOsCmdSwapPtr(OsCmdSwap* osCmdSwapPtr);
-        OsCmdSwap* getOsCmdSwapPtr();
-        ~UTextEdit();
+    Q_OBJECT
+
+public:
+    UTextEdit(QWidget* parent = 0);
+    void keyPressEvent(QKeyEvent* e);
+    QString* parseOutput(QString* outputStrPtr);
+    void fiddleWithWdPathStrPtr(QString* absPathStrPtr);
+    QString* dirFileExe(QVector<QString*> dat);
+    void setUserAtCompStrPtr(QString* userAtCompStrPtr);
+    QString* getUserAtCompStrPtr();
+    void setWdPathStrPtr(QString* wdPathStrPtr);
+    QString* getWdPathStrPtr();
+    void setOsCmdSwapPtr(OsCmdSwap* osCmdSwapPtr);
+    OsCmdSwap* getOsCmdSwapPtr();
+    ~UTextEdit();
+    
+    
+private slots:
+    ;
+    
+    
+private:
+    QString* userAtCompStrPtr;
+    QString* wdPathStrPtr;
+    UProcess* rProcess;
+    OsCmdSwap* osCmdSwapPtr;
+    
+    
 };
 
 #endif	/* UTEXTEDIT_H */

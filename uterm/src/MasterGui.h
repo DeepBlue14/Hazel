@@ -30,29 +30,35 @@
 #include "OsCmdSwap.h"
 #include "UTextEdit.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class MasterGui : public QWidget
 {
     Q_OBJECT
-            
-    private:
-        QString* osStrPtr;
-        LoadParallels* loadParallels;
-        OsCmdSwap* osCmdSwapPtr;
-        UTextEdit* uTextEdit;
-        QGridLayout* outerLayout;
-        
-    private slots:
-        ;
-        
-    public:
-        MasterGui(QWidget* parent = 0);
-        void setOsStrPtr(QString* osStrPtr);
-        QString* getOsStrPtr();
-        void setOsCmdSwapPtr(OsCmdSwap* osCmdSwapPtr);
-        OsCmdSwap* getOsCmdSwapPtr();
-        ~MasterGui();
+    
+
+public:
+    explicit MasterGui(QWidget* parent = 0);
+    void setOsStrPtr(QString* osStrPtr);
+    QString* getOsStrPtr();
+    void setOsCmdSwapPtr(OsCmdSwap* osCmdSwapPtr);
+    OsCmdSwap* getOsCmdSwapPtr();
+    virtual ~MasterGui();
+    
+
+private slots:
+    ;
+    
+    
+private:
+    QString* osStrPtr;
+    LoadParallels* loadParallels;
+    OsCmdSwap* osCmdSwapPtr;
+    UTextEdit* uTextEdit;
+    QGridLayout* outerLayout;
+    
+    
 };
 
 #endif	/* MASTER_GUI_H */

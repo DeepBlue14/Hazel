@@ -7,21 +7,21 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=GNU-Linux-x86
-CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
-CND_ARTIFACT_NAME_Debug=UTerm
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/UTerm
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Debug=UTerm.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/UTerm.tar
+CND_PLATFORM_Debug=GNU-Linux
+CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
+CND_ARTIFACT_NAME_Debug=uterm
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/uterm
+CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
+CND_PACKAGE_NAME_Debug=uterm.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/uterm.tar
 # Release configuration
-CND_PLATFORM_Release=GNU-Linux-x86
-CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
-CND_ARTIFACT_NAME_Release=UTerm
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/UTerm
-CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
-CND_PACKAGE_NAME_Release=UTerm.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/UTerm.tar
+CND_PLATFORM_Release=GNU-Linux
+CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
+CND_ARTIFACT_NAME_Release=uterm
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/uterm
+CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
+CND_PACKAGE_NAME_Release=uterm.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/uterm.tar
 #
 # include compiler specific variables
 #

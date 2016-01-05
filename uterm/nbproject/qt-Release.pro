@@ -1,8 +1,8 @@
 # This file is generated automatically. Do not edit.
 # Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
-DESTDIR = dist/Release/GNU-Linux-x86
-TARGET = UTerm
+DESTDIR = dist/Release/GNU-Linux
+TARGET = uterm
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
 CONFIG += release 
@@ -13,7 +13,7 @@ HEADERS += src/Environment.h src/FormatText.h src/LoadParallels.h src/MasterGui.
 FORMS +=
 RESOURCES +=
 TRANSLATIONS +=
-OBJECTS_DIR = build/Release/GNU-Linux-x86
+OBJECTS_DIR = build/Release/GNU-Linux
 MOC_DIR = 
 RCC_DIR = 
 UI_DIR = 

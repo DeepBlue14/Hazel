@@ -12,16 +12,20 @@
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class UnixExecution
 {
-    private:
-        ;
         
-    public:
-        UnixExecution();
-        ~UnixExecution();
+public:
+    UnixExecution();
+    ~UnixExecution();
+        
+        
+private:
+    ;
+    
 };
 
 #endif	/* UNIX_EXECUTION_H */

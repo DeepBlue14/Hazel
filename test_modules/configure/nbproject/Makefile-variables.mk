@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=Configure
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/Configure
+CND_ARTIFACT_NAME_Debug=configure
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/configure
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=Configure.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/Configure.tar
+CND_PACKAGE_NAME_Debug=configure.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/configure.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=Configure
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/Configure
+CND_ARTIFACT_NAME_Release=configure
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/configure
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=Configure.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/Configure.tar
+CND_PACKAGE_NAME_Release=configure.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/configure.tar
 #
 # include compiler specific variables
 #

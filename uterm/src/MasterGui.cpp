@@ -35,7 +35,7 @@ MasterGui::MasterGui(QWidget* parent) : QWidget(parent)
     this->ensurePolished();
 
     this->setLayout(outerLayout);
-    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/UTerm/res/terminal01.png") );
+    this->setWindowIcon(QIcon("/home/james/NetBeansProjects/rqt_ide/uterm/res/terminal01.png") );
     //this->setWindowTitle("UTerm");
     this->resize(650, 425);
 }

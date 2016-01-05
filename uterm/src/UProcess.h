@@ -32,43 +32,44 @@
 #include "UFile.h"
 #include "Environment.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class UProcess : public QProcess
 {
     Q_OBJECT
+
+public:
+    explicit UProcess();
+    void setWorkingDirStrPtr(QString* workingDirStrPtr);
+    QString* getWorkingDirStrPtr();
+    void start(const QString& program, const QStringList& arguments, OpenMode mode = ReadWrite);
+    void start(const QString& program, OpenMode mode = ReadWrite);
+    static int execute(const QString& program, const QStringList& arguments);
+    static int execute(const QString& program);
+    static bool startDetached(const QString& program, const QStringList& arguments);
+    static bool startDetached(const QString& program, const QStringList& arguments, const QString& workingDirectory, qint64* pid = 0);
+    static bool startDetached(const QString& program);
+    void setOutputStrPtr(QString* outputLocTePtr);
+    QString* getOutputStrPtr();
+    virtual ~UProcess();
     
-    private:
-        static QStringList* curInUseFileNmStrLstPtr;
-        static QList<int>* numsInUseLstPtr;
-        QString* outputStrPtr;
-        QProcess testProcess;
-        QString* workingDirStrPtr;
+    
+private slots:
+    void redirectStdOutput();
+    void redirectError();
+    
+    
+private:
+    static QStringList* curInUseFileNmStrLstPtr;
+    static QList<int>* numsInUseLstPtr;
+    QString* outputStrPtr;
+    QProcess testProcess;
+    QString* workingDirStrPtr;
 
-        static QString* genTmpFileNameStrPtr();
-        static void addHeader(UFile* tmpRideFilePtr);
-        
-        
-        
-    private slots:
-        void redirectStdOutput();
-        void redirectError();
-        
-    public:
-        UProcess();
-        void setWorkingDirStrPtr(QString* workingDirStrPtr);
-        QString* getWorkingDirStrPtr();
-        void start(const QString& program, const QStringList& arguments, OpenMode mode = ReadWrite);
-        void start(const QString& program, OpenMode mode = ReadWrite);
-        static int execute(const QString& program, const QStringList& arguments);
-        static int execute(const QString& program);
-        static bool startDetached(const QString& program, const QStringList& arguments);
-        static bool startDetached(const QString& program, const QStringList& arguments, const QString& workingDirectory, qint64* pid = 0);
-        static bool startDetached(const QString& program);
-        void setOutputStrPtr(QString* outputLocTePtr);
-        QString* getOutputStrPtr();
-
-        ~UProcess();
+    static QString* genTmpFileNameStrPtr();
+    static void addHeader(UFile* tmpRideFilePtr);
+    
 };
 
 #endif	/* UPROCESS_H */

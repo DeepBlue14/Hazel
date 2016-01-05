@@ -12,16 +12,21 @@
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class WindowsExecution
 {
-    private:
-        ;
+    
+public:
+    WindowsExecution();
+    ~WindowsExecution();
+
+    
+private:
+    ;
         
-    public:
-        WindowsExecution();
-        ~WindowsExecution();
+    
 };
 
 #endif	/* WINDOWS_EXECUTION_H */

@@ -19,21 +19,26 @@
 
 #include <iostream>
 
-using namespace std;
+using std::cout;
+using std::cerr;
+using std::endl;
 
 class LoadParallels : public QWidget
 {
     Q_OBJECT
-            
-    private:
-        QVector<QPair<QString*, QString*>*>* parallels/*VecPtrPairPtrStrPtr*/;
+
+public:
+    explicit LoadParallels(QWidget* parent = 0);
+    void load(QString* osStrPtr);
+    QVector<QPair<QString*, QString*>*>* getDat();
+    QString* toString();
+    virtual ~LoadParallels();
     
-    public:
-        LoadParallels(QWidget* parent = 0);
-        void load(QString* osStrPtr);
-        QVector<QPair<QString*, QString*>*>* getDat();
-        QString* toString();
-        ~LoadParallels();
+    
+private:
+    QVector<QPair<QString*, QString*>*>* parallels/*VecPtrPairPtrStrPtr*/;
+
+
 };
 
 #endif	/* LOADPARALLELS_H */
