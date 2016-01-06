@@ -5,6 +5,17 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/DirPropGui.h</itemPath>
+        <itemPath>src/FTDirMenu.h</itemPath>
+        <itemPath>src/FTFileMenu.h</itemPath>
+        <itemPath>src/FTProjectMenu.h</itemPath>
+        <itemPath>src/FTPropertiesGui.h</itemPath>
+        <itemPath>src/FilePropGui.h</itemPath>
+        <itemPath>src/FileTreeGui.h</itemPath>
+        <itemPath>src/RosEnv.h</itemPath>
+        <itemPath>src/TreeItemIconFactory.h</itemPath>
+        <itemPath>src/UnixConsoleText.h</itemPath>
+        <itemPath>src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -15,6 +26,17 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/DirPropGui.cpp</itemPath>
+        <itemPath>src/FTDirMenu.cpp</itemPath>
+        <itemPath>src/FTFileMenu.cpp</itemPath>
+        <itemPath>src/FTProjectMenu.cpp</itemPath>
+        <itemPath>src/FTPropertiesGui.cpp</itemPath>
+        <itemPath>src/FilePropGui.cpp</itemPath>
+        <itemPath>src/FileTreeGui.cpp</itemPath>
+        <itemPath>src/RosEnv.cpp</itemPath>
+        <itemPath>src/TreeItemIconFactory.cpp</itemPath>
+        <itemPath>src/UnixConsoleText.cpp</itemPath>
+        <itemPath>src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -47,6 +69,50 @@
       </qt>
       <compileType>
       </compileType>
+      <item path="src/DirPropGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DirPropGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTPropertiesGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTPropertiesGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FilePropGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FilePropGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconFactory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -74,6 +140,50 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/DirPropGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DirPropGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTDirMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTFileMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTProjectMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FTPropertiesGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FTPropertiesGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FilePropGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FilePropGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconFactory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/TreeItemIconFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>

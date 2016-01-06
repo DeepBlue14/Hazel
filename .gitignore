@@ -23,3 +23,9 @@
 /modules/ide/new_project/build/
 /modules/ide/new_file/build/
 /modules/ide/new_file/dist/
+/modules/ide/file_tree/dist/
+/modules/ide/file_tree/build/
+/modules/configure/build/
+/modules/configure/dist/
+/modules/ide/project_apollo/build/
+/modules/ide/project_apollo/dist/

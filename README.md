@@ -26,24 +26,24 @@ Subcategories in the *"Modules"* list marked with a US flag :us: can be run as i
   - [gui](#gui) *(frontend user interface)*
   - [editor](#editor) *(advanced embedded text ui)*
   - [backend](#backend) *(backend components; FIXME: this module may need to be divided)*
-  - [version_control](#version-control) *(version control)*
-  - [web_engine](#web-engine) *(for viewing plugins)*
-  - [qt_bridge](#qt-bridge) *(allows QT-based programs to be dynamically embedded into the IDE)*
+  - [version_control](#version_control) *(version control)*
+  - [web_engine](#web_engine) *(for viewing plugins)*
+  - [qt_bridge](#qt_bridge) *(allows QT-based programs to be dynamically embedded into the IDE)*
   - [xml](#xml) *(parser for package.xml and manifest.xml files)*
   - [configure](#configure) *(ROS-ification/migration)* :us:
-  - [mind_games](#mind-games) *(controls saving/updating physical files and "remembers" previous session data)*
+  - [mind_games](#mind_games) *(controls saving/updating physical files and "remembers" previous session data)*
   - [tyrannosaurus_lex](#tyrannosaurus_lex) *(auto-suggest)* :us:
   - [parsnip](#parsnip) *(refactor)*
-  - [project_apollo](#project-apollo) *(build/run/debug backend)*
+  - [project_apollo](#project_apollo) *(build/run/debug backend)*
   - [skylab](#skylab) *(GUI for displaying/launching output/terminals--see project_apollo)*
-  - [roaring_fork](#roaring-fork) *(std stream text-->adds colors/effects)*
-  - [console_color_text](#console-color-text) :us:
+  - [roaring_fork](#roaring_fork) *(std stream text-->adds colors/effects)*
+  - [console_color_text](#console_color_text) :us:
   - [uterm](#uterm) *(universal OS terminal)* :us:
   - [bell](#bell) *(custom language)* :us:
   - [help](#help) *(man pages and more)*
 - [Dependencies](#dependencies)
 - [Install](#install)
-- [Future Work](#future-work)
+- [Future Work](#future_work)
 
 ###**Project Synopsis**
 

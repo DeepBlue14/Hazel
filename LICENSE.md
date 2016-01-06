@@ -4,7 +4,7 @@
 
 **License**
 
-Copyright (c) 2015 James T. Kuczynski
+Copyright (c) 2015-2016 James T. Kuczynski
 
 
 

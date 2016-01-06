@@ -11,6 +11,8 @@
 
 #include <QApplication>
 
+#include "FileTreeGui.h"
+
 int main(int argc, char *argv[])
 {
     // initialize resources, if needed
@@ -19,6 +21,8 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     // create and show your widgets here
+    FileTreeGui fileTreeGui;
+    fileTreeGui.show();
 
     return app.exec();
 }

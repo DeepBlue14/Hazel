@@ -1,6 +1,7 @@
 ####**Naming Conventions**
 
-Alternatively, you may append the whole name off the type to the variable.  For other types not mentioned here, use a similar process as shown below (i.e. append a 2-4 character abbreviation to the end of the variable name) or use the aforementioned method. 
+Alternatively, you may append the whole name off the type to the variable.  For other types not mentioned here, use a similar process as shown below (i.e. append a 2-4 character abbreviation to the end of the variable name) or use the aforementioned method.  Thus, for example,
+a variable of type QVector<QString*>* could be named userNameStrPtrVecPtr.  Yeah, it's sort of long, but not nearly as bad as it would be if we were using Hungarian notation.
 
 |  Data Type           | Convention | Library |
 |:--------------------:|:----------:|:-------:|
@@ -14,7 +15,7 @@ Alternatively, you may append the whole name off the type to the variable.  For 
 | ```QLineEdit```      | Le         | *(QT)*  |
 | ```QComboBox```      | Cb         | *(QT)*  |
 | ```QTextEdit```      | Te         | *(QT)*  |
-| ```QPushButton```    | Pb         | *(QT)*  |
+| ```QPushButton```    | Pb OR Btn  | *(QT)*  |
 | ```QVector```        | Vec        | *(QT)*  |
 | ```QStringList```    | StrLst     | *(QT)*  |
 | ```QString```        | Str        | *(QT)*  |
