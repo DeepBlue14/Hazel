@@ -29,3 +29,5 @@
 /modules/configure/dist/
 /modules/ide/project_apollo/build/
 /modules/ide/project_apollo/dist/
+/modules/ide/launcher/dist/
+/modules/ide/launcher/build/
