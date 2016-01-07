@@ -31,3 +31,5 @@
 /modules/ide/project_apollo/dist/
 /modules/ide/launcher/dist/
 /modules/ide/launcher/build/
+/modules/new_file/build/
+/modules/new_file/dist/

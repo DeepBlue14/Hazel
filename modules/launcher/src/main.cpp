@@ -11,6 +11,8 @@
 
 #include <QApplication>
 
+#include "LauncherGui.h"
+
 int main(int argc, char *argv[])
 {
     // initialize resources, if needed
@@ -19,6 +21,8 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     // create and show your widgets here
+    LauncherGui launcherGui;
+    launcherGui.show();
 
     return app.exec();
 }

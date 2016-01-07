@@ -1,7 +1,8 @@
 /* 
  * File:   LauncherGui.h
  * Module: 
- * Author: james
+ * Author: James Kuczynski, jkuczyns@cs.uml.edu
+ * Maintainer: James Kuczynski, jkuczyns@cs.uml.edu
  * Maintainer:
  * File Description: This is the base class of the RunPanelGui, a fragment of
  *                   the central UI, which will (by default) by part of the
