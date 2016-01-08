@@ -1,6 +1,7 @@
 **TODO**
 *List of features not yet fully implemented*
 
+- see: http://wiki.ros.org/catkin/migrating_from_rosbuild
 - ???use a UniversalTypes file???
 - use (**const** Obj obj) for params which will NOT be changed by the function
 - add using...see ThreadTests

@@ -1,15 +1,17 @@
 /*
  * File:   main.cpp
  * Module: text_editor
- * Author: james
- * Maintainer: 
+ * Author: James Kuczynski, jkuczyns@cs.uml.edu
+ * Maintainer: James Kuczynski, jkuczyns@cs.uml.edu
  * File Description: 
  *
  * Created on January 7, 2016, 11:05 PM
- * Last Modified: s
+ * Last Modified: 
  */
 
 #include <QApplication>
+
+#include "FileGui.h"
 
 int main(int argc, char *argv[])
 {
@@ -19,6 +21,8 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     // create and show your widgets here
+    FileGui fileGui;
+    fileGui.show();
 
     return app.exec();
 }

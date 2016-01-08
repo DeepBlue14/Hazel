@@ -33,3 +33,5 @@
 /modules/ide/launcher/build/
 /modules/new_file/build/
 /modules/new_file/dist/
+/modules/text_editor/dist/
+/modules/text_editor/build/

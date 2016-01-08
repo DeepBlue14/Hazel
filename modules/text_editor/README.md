@@ -1,5 +1,3 @@
-CodeFildingArea
-FileGui
-Highlighter
-LineNumberArea
-MirrorChar
+#text_editor
+
+=====

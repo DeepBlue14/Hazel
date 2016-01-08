@@ -5,6 +5,14 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/CodeFoldingArea.h</itemPath>
+        <itemPath>src/FileGui.h</itemPath>
+        <itemPath>src/Highlighter.h</itemPath>
+        <itemPath>src/LineNumberArea.h</itemPath>
+        <itemPath>src/MirrorChar.h</itemPath>
+        <itemPath>src/RosEnv.h</itemPath>
+        <itemPath>src/UnixConsoleText.h</itemPath>
+        <itemPath>src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -15,6 +23,14 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/CodeFoldingArea.cpp</itemPath>
+        <itemPath>src/FileGui.cpp</itemPath>
+        <itemPath>src/Highlighter.cpp</itemPath>
+        <itemPath>src/LineNumberArea.cpp</itemPath>
+        <itemPath>src/MirrorChar.cpp</itemPath>
+        <itemPath>src/RosEnv.cpp</itemPath>
+        <itemPath>src/UnixConsoleText.cpp</itemPath>
+        <itemPath>src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -43,9 +59,42 @@
       </toolsSet>
       <qt>
         <modules>core gui widgets</modules>
+        <mocDir>src/moc</mocDir>
       </qt>
       <compileType>
       </compileType>
+      <item path="src/CodeFoldingArea.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CodeFoldingArea.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/LineNumberArea.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LineNumberArea.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -73,6 +122,38 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/CodeFoldingArea.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/CodeFoldingArea.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/FileGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/FileGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Highlighter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Highlighter.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/LineNumberArea.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/LineNumberArea.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/MirrorChar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
