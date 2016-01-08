@@ -1,0 +1,5 @@
+CodeFildingArea
+FileGui
+Highlighter
+LineNumberArea
+MirrorChar
