@@ -1,16 +1,16 @@
 /* 
- * File:   LineNumberArea.h
- * Module: PrettySyntax
- * Author: James Kuczynski
- * Email: jkuczyns@cs.uml.edu
- * File Description: This class handles the area along the left margin which
- *                   contains the line numbers.
- * 
- * Created on May 11, 2015, 11:21 AM
+ * File:   TextAreaInterface.h
+ * Module: text_editor
+ * Author: james, jkuczyns@cs.uml.edu
+ * Maintainer: james, jkuczyns@cs.uml.edu
+ * File Description: 
+ *
+ * Created on January 12, 2016, 5:12 PM
+ * Last Modified on January 12, 2016, 5:12 PM
  */
 
-#ifndef LINE_NUMBER_AREA_H
-#define	LINE_NUMBER_AREA_H
+#ifndef TEXT_AREA_INTERFACE_H
+#define TEXT_AREA_INTERFACE_H
 
 #include <QWidget>
 #include <QPaintEvent>
@@ -34,17 +34,17 @@ namespace cct = UnixConsoleText;
 using std::cout;
 using std::endl;
 
-class LineNumberArea : public QWidget
+class TextArea : public QWidget
 {
-    Q_OBJECT 
-
+    Q_OBJECT
+    
 public:
     /**
      * Constructor.
      * 
      * @param parent reference to parent type.
      */
-    explicit LineNumberArea(FileGui* parent = 0);
+    explicit TextArea(FileGui* parent = 0);
 
     /**
      * 
@@ -54,29 +54,37 @@ public:
     QSize sizeHint() const;
 
     /**
-     * 
+     * Updates the UI area.
      * 
      * @param event
      */
-    void paintEvent(QPaintEvent* event);
+    virtual void paintEvent(QPaintEvent* event) = 0;
 
-
-    void setFileGuiPtr(FileGui* fileGuiPtr);
-
-
-    FileGui* getFileGuiPtr();
+    /**
+     * 
+     * 
+     * @param file
+     */
+    void setFile(FileGui* file);
 
     /**
      * 
      * 
      * @return 
      */
+    FileGui* getFile() const;
+
+    /**
+     * Classic toString method.
+     * 
+     * @return 
+     */
     QString* toString();
 
     /**
-     * 
+     * Destructor.
      */
-    virtual ~LineNumberArea();
+    virtual ~TextArea();
 
 
 protected slots:
@@ -89,10 +97,9 @@ protected slots:
     void mousePressEvent(QMouseEvent* e);
 
 
+
 private:
-    FileGui* fileGuiPtr;
-    
-    
+    FileGui* file;
 };
 
-#endif	/* LINENUMBERAREA_H */
+#endif /* TEXT_AREA_INTERFACE_H */

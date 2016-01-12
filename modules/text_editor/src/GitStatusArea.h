@@ -1,16 +1,16 @@
 /* 
- * File:   LineNumberArea.h
- * Module: PrettySyntax
- * Author: James Kuczynski
- * Email: jkuczyns@cs.uml.edu
- * File Description: This class handles the area along the left margin which
- *                   contains the line numbers.
- * 
- * Created on May 11, 2015, 11:21 AM
+ * File:   GitStatusArea.h
+ * Module: text_editor
+ * Author: james, jkuczyns@cs.uml.edu
+ * Maintainer: james, jkuczyns@cs.uml.edu
+ * File Description: green = new, red = deleted, blue = modified.
+ *
+ * Created on January 12, 2016, 5:13 PM
+ * Last Modified on January 12, 2016, 5:13 PM
  */
 
-#ifndef LINE_NUMBER_AREA_H
-#define	LINE_NUMBER_AREA_H
+#ifndef GIT_STATUS_AREA_H
+#define GIT_STATUS_AREA_H
 
 #include <QWidget>
 #include <QPaintEvent>
@@ -34,17 +34,17 @@ namespace cct = UnixConsoleText;
 using std::cout;
 using std::endl;
 
-class LineNumberArea : public QWidget
+class GitStatusArea : public QWidget
 {
-    Q_OBJECT 
-
+    Q_OBJECT
+    
 public:
     /**
      * Constructor.
      * 
      * @param parent reference to parent type.
      */
-    explicit LineNumberArea(FileGui* parent = 0);
+    explicit GitStatusArea(FileGui* parent = 0);
 
     /**
      * 
@@ -61,10 +61,20 @@ public:
     void paintEvent(QPaintEvent* event);
 
 
-    void setFileGuiPtr(FileGui* fileGuiPtr);
+    /**
+     * 
+     * 
+     * @param file
+     */
+    void setFileGuiPtr(FileGui* file);
 
 
-    FileGui* getFileGuiPtr();
+    /**
+     * 
+     * 
+     * @return 
+     */
+    FileGui* getFileGuiPtr() const;
 
     /**
      * 
@@ -76,7 +86,7 @@ public:
     /**
      * 
      */
-    virtual ~LineNumberArea();
+    virtual ~GitStatusArea();
 
 
 protected slots:
@@ -89,10 +99,9 @@ protected slots:
     void mousePressEvent(QMouseEvent* e);
 
 
+
 private:
     FileGui* fileGuiPtr;
-    
-    
 };
 
-#endif	/* LINENUMBERAREA_H */
+#endif /* GIT_STATUS_AREA_H */

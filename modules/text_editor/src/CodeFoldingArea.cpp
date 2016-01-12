@@ -3,7 +3,7 @@
 
 CodeFoldingArea::CodeFoldingArea(FileGui* file) : QWidget(file)
 {
-    this->file = file;
+    this->fileGuiPtr = file;
     
 }
 
@@ -28,21 +28,22 @@ QSize CodeFoldingArea::sizeHint() const
     ;//return QSize(file->codeFoldingAreaWidth(), 0);
 }
         
+
 void CodeFoldingArea::paintEvent(QPaintEvent* event)
 {
-    file->codeFoldingAreaPaintEvent(event);
+    fileGuiPtr->codeFoldingAreaPaintEvent(event);
 }
 
 
-void CodeFoldingArea::setFile(FileGui* file)
+void CodeFoldingArea::setFileGuiPtr(FileGui* file)
 {
-    this->file = file;
+    this->fileGuiPtr = file;
 }
         
         
-FileGui* CodeFoldingArea::getFile()
+FileGui* CodeFoldingArea::getFileGuiPtr() const
 {
-    return file;
+    return fileGuiPtr;
 }
 
 

@@ -1,6 +1,7 @@
 #include "FileGui.h"
 #include "LineNumberArea.h"
 #include "CodeFoldingArea.h"
+#include "GitStatusArea.h"
 //#include "Saver.h"
 
 
@@ -12,6 +13,7 @@ FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
     
     lineNumberArea = new LineNumberArea(this);
     codeFoldArea = new CodeFoldingArea(this);
+    gitStatusArea = new GitStatusArea(this);
     
     connect(this, SIGNAL(blockCountChanged(int )), this, SLOT(updateLineNumberAreaWidth(int )) );
     connect(this, SIGNAL(updateRequest(QRect, int )), this, SLOT(updateLineNumberArea(QRect, int )) );
@@ -229,9 +231,28 @@ int FileGui::codeFoldingAreaWidth()
 }
 
 
+int FileGui::gitStatusAreaWidth()
+{
+    int digits = 1;
+    int max = qMax(1, blockCount() );
+    while(max >= 10)
+    {
+        max /= 10;
+        digits++;
+    }
+    
+    int space = 3 + fontMetrics().width(QLatin1Char('9')) * digits;
+    
+    return space;
+}
+
+
 void FileGui::updateLineNumberAreaWidth(int )
 {
-    setViewportMargins(lineNumberAreaWidth()*2, 0, 0, 0);
+    /*
+     * Makes sure that the *areas do not cover the text.
+     */
+    setViewportMargins(lineNumberAreaWidth()*3, 0, 0, 0);
 }
 
 
@@ -241,11 +262,13 @@ void FileGui::updateLineNumberArea(const QRect& rect, int dy)
     {
         lineNumberArea->scroll(0, dy);
         codeFoldArea->scroll(0, dy);
+        gitStatusArea->scroll(0, dy);
     }
     else
     {
         lineNumberArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
         codeFoldArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
+        gitStatusArea->update(0, rect.y(), lineNumberArea->width(), rect.height() );
     }
     
     if(rect.contains(viewport()->rect()) )
@@ -264,6 +287,7 @@ void FileGui::resizeEvent(QResizeEvent* e)
     QRect cr = contentsRect();
     lineNumberArea->setGeometry(QRect(cr.left(), cr.top(), lineNumberAreaWidth(), cr.height()) );
     codeFoldArea->setGeometry(QRect(lineNumberAreaWidth(), cr.top(), lineNumberAreaWidth(), cr.height()) );
+    gitStatusArea->setGeometry(QRect(lineNumberAreaWidth()*2, cr.top(), lineNumberAreaWidth(), cr.height()) );
     
 }
 
@@ -358,6 +382,36 @@ void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
         //blockNumber2++;
     }
 
+}
+
+
+void FileGui::gitStatusAreaPaintEvent(QPaintEvent* event)
+{
+    //cerr << "FileGui::gitStatusAreaPaintEvent(...) has not been implemented yet" << endl;
+    QPainter cfaPainter(gitStatusArea);
+    cfaPainter.fillRect(event->rect(), QColor(Qt::green).lighter(150) );
+    
+    
+    QTextBlock block2 = firstVisibleBlock();
+    //int blockNumber2 = block2.blockNumber();
+    int top2 = (int) blockBoundingGeometry(block2).translated(contentOffset()).top();
+    int bottom2 = top2 + (int) blockBoundingRect(block2).height();
+
+    while(block2.isValid() && top2 <= event->rect().bottom() )
+    {
+        if (block2.isVisible() && bottom2 >= event->rect().top() )
+        {
+            QPixmap pixmap;
+            pixmap.load(RosEnv::imagesInstallLoc + "plus.jpg");
+            //cfaPainter.drawPixmap(0, top2, gitStatusArea->width()/2, fontMetrics().height()/2, pixmap);
+        }
+
+        block2 = block2.next();
+        top2 = bottom2;
+        bottom2 = top2 + (int) blockBoundingRect(block2).height();
+        
+        //blockNumber2++;
+    }
 }
 
 

@@ -30,14 +30,50 @@ namespace cct = UnixConsoleText;
 namespace cct = UnixConsoleText;
 #endif
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class QTextDocument;
 
 class Highlighter : public QSyntaxHighlighter
 {
     Q_OBJECT
-
+     
+public:
+    /**
+     * Constructor.
+     * 
+     * @param parent reference to parent type.
+     */
+    explicit Highlighter(QTextDocument* parent = 0);
+    
+    /**
+     * 
+     */
+    void loadLang();
+    
+    /**
+     * Classic toString method.
+     * 
+     * @return class data. 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor.
+     */
+    virtual ~Highlighter();
+    
+    
+protected:
+    /**
+     * 
+     * 
+     * @param text
+     */
+    void highlightBlock(const QString &text);
+    
+    
 private:
     struct HighlightingRule
     {
@@ -55,39 +91,8 @@ private:
     QTextCharFormat multiLineCommentFormat;
     QTextCharFormat quotationFormat;
     QTextCharFormat functionFormat;
-     
-protected:
-    /**
-     * 
-     * 
-     * @param text
-     */
-    void highlightBlock(const QString &text);
-     
-public:
-    /**
-     * Constructor.
-     * 
-     * @param parent reference to parent type.
-     */
-    Highlighter(QTextDocument* parent = 0);
     
-    /**
-     * 
-     */
-    void loadLang();
     
-    /**
-     * Classic toString method.
-     * 
-     * @return class data. 
-     */
-    QString* toString();
-    
-    /**
-     * Destructor.
-     */
-    ~Highlighter();
 };
 
 #endif /* HIGHLIGHTER_H */

@@ -32,93 +32,99 @@ namespace cct = UnixConsoleText;
 namespace cct = UnixConsoleText;
 #endif
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class MirrorChar
 {
-    private:
-        enum Type
-        {
-            OPN_PAREN = 0,
-            CLS_PAREN,
-            OPN_CRLY_BRACE,
-            CLS_CRLY_BRACE,
-            OPN_SQR_BRACE,
-            CLS_SQR_BRACE,
-            UNKNOWN_CHAR
-        };
-        
-        Type mirrorType;
-        QChar* mirrorChar;
-        
-    public:
-        /**
-         * Constructor.
-         */
-        MirrorChar();
-        
-        /**
-         * 
-         * 
-         * @param text
-         */
-        MirrorChar(QChar* text);
-        
-        /**
-         * 
-         * 
-         * @param text
-         * @param myType
-         */
-        MirrorChar(QChar* text, Type myType);
-        
-        /**
-         * 
-         * 
-         * @param text
-         */
-        void setText(QChar* text);
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QChar* getText();
-        
-        /**
-         * 
-         * 
-         * @param myType
-         */
-        void setType(Type myType);
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        Type getType();
-        
-        /**
-         * 
-         * 
-         * @param mirrorType
-         * @return 
-         */
-        QString* typeToString(Type mirrorType);
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* toString();
-        
-        /**
-         * Destructor.
-         */
-        ~MirrorChar();
+
+
+public:
+    enum Type 
+    {
+        OPN_PAREN,
+        CLS_PAREN,
+        OPN_CRLY_BRACE,
+        CLS_CRLY_BRACE,
+        OPN_SQR_BRACE,
+        CLS_SQR_BRACE,
+        UNKNOWN_CHAR
+    };
+    
+    /**
+     * Constructor.
+     */
+    MirrorChar();
+
+    /**
+     * 
+     * 
+     * @param text
+     */
+    MirrorChar(QChar* text);
+
+    /**
+     * 
+     * 
+     * @param text
+     * @param myType
+     */
+    MirrorChar(QChar* text, Type myType);
+
+    /**
+     * 
+     * 
+     * @param text
+     */
+    void setText(QChar* text);
+
+    /**
+     * 
+     * 
+     * @return 
+     */
+    QChar* getText();
+
+    /**
+     * 
+     * 
+     * @param myType
+     */
+    void setType(Type myType);
+
+    /**
+     * 
+     * 
+     * @return 
+     */
+    Type getType();
+
+    /**
+     * 
+     * 
+     * @param mirrorType
+     * @return 
+     */
+    QString* typeToString(Type mirrorType);
+
+    /**
+     * 
+     * 
+     * @return 
+     */
+    QString* toString();
+
+    /**
+     * Destructor.
+     */
+    ~MirrorChar();
+
+    
+private:
+    Type mirrorType;
+    QChar* mirrorChar;
+    
+    
 };
 
 #endif	/* MIRROR_CHAR_H */

@@ -32,61 +32,78 @@ namespace cct = UnixConsoleText;
 namespace cct = UnixConsoleText;
 #endif
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 class CodeFoldingArea : public QWidget
 {
-    private:
-        FileGui* file;
-        
-    protected slots:
-        /**
-         * 
-         * see: http://doc.qt.io/qt-4.8/qplaintextedit.html
-         * 
-         * @param e
-         */
-        void mousePressEvent(QMouseEvent* e);
-        
-    public:
-        /**
-         * Constructor.
-         * 
-         * @param parent reference to parent type.
-         */
-        CodeFoldingArea(FileGui* parent = 0);
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QSize sizeHint() const;
-        
-        /**
-         * 
-         * 
-         * @param event
-         */
-        void paintEvent(QPaintEvent* event);
-        
-        
-        void setFile(FileGui* file);
-        
-        
-        FileGui* getFile();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* toString();
-        
-        /**
-         * 
-         */
-        ~CodeFoldingArea();
+    Q_OBJECT
+    
+public:
+    /**
+     * Constructor.
+     * 
+     * @param parent reference to parent type.
+     */
+    explicit CodeFoldingArea(FileGui* parent = 0);
+
+    /**
+     * 
+     * 
+     * @return 
+     */
+    QSize sizeHint() const;
+
+    /**
+     * 
+     * 
+     * @param event
+     */
+    void paintEvent(QPaintEvent* event);
+
+
+    /**
+     * 
+     * 
+     * @param file
+     */
+    void setFileGuiPtr(FileGui* file);
+
+
+    /**
+     * 
+     * 
+     * @return 
+     */
+    FileGui* getFileGuiPtr() const;
+
+    /**
+     * 
+     * 
+     * @return 
+     */
+    QString* toString();
+
+    /**
+     * 
+     */
+    virtual ~CodeFoldingArea();
+
+
+protected slots:
+    /**
+     * 
+     * see: http://doc.qt.io/qt-4.8/qplaintextedit.html
+     * 
+     * @param e
+     */
+    void mousePressEvent(QMouseEvent* e);
+
+
+
+private:
+    FileGui* fileGuiPtr;
+    
 };
 
 #endif	/* CODE_FOLDING_AREA_H */
