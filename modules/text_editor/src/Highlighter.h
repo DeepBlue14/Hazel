@@ -1,11 +1,12 @@
 /* 
  * File:   Highlighter.h
  * Module: PrettySyntax
- * Author: James
- * Email: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
  * Created on April 20, 2015, 11:41 PM
+ * Last Modified: 1/13/2016
  */
 
 #ifndef HIGHLIGHTER_H

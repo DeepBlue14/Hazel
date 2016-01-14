@@ -35,3 +35,5 @@
 /modules/new_file/dist/
 /modules/text_editor/dist/
 /modules/text_editor/build/
+/modules/system_tests/build/
+/modules/system_tests/dist/

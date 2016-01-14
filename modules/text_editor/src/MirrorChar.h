@@ -8,7 +8,6 @@
  *
  * Created on August 14, 2015, 4:29 PM
  * Last Modified: 8/14/2015
- * Modification: Created class. 
  */
 
 #ifndef MIRROR_CHAR_H

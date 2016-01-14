@@ -7,6 +7,7 @@
  *                   contains the line numbers.
  * 
  * Created on May 11, 2015, 11:21 AM
+ * Last Modified: 1/13/2016
  */
 
 #ifndef LINE_NUMBER_AREA_H
