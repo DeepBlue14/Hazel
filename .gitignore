@@ -37,3 +37,5 @@
 /modules/text_editor/build/
 /modules/system_tests/build/
 /modules/system_tests/dist/
+/modules/search_ui/build/
+/modules/search_ui/dist/
