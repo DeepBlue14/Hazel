@@ -2,14 +2,14 @@
 # Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
 DESTDIR = dist/Debug/GNU-Linux
-TARGET = search_ui
+TARGET = navigator_ui
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
 CONFIG += debug 
 PKGCONFIG +=
 QT = core gui widgets
-SOURCES += src/MasterGui.cpp src/RosEnv.cpp src/UnixConsoleText.cpp src/WindowsConsoleText.cpp src/main.cpp
-HEADERS += src/MasterGui.h src/RosEnv.h src/UnixConsoleText.h src/WindowsConsoleText.h
+SOURCES += src/MasterGui.cpp src/RosEnv.cpp src/UmlListWidgetItem.cpp src/UnixConsoleText.cpp src/WindowsConsoleText.cpp src/main.cpp
+HEADERS += src/MasterGui.h src/RosEnv.h src/UmlListWidgetItem.h src/UnixConsoleText.h src/WindowsConsoleText.h
 FORMS +=
 RESOURCES +=
 TRANSLATIONS +=

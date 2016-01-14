@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: james
  *
- * Created on January 9, 2016, 9:54 PM
+ * Created on January 14, 2016, 4:32 PM
  */
 
 #include <QApplication>
@@ -19,7 +19,6 @@ int main(int argc, char *argv[])
     // create and show your widgets here
     MasterGui masterGui;
     masterGui.show();
-    
-    
+
     return app.exec();
 }

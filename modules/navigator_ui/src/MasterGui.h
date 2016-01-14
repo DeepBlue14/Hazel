@@ -22,7 +22,11 @@
 
 #include <iostream>
 
+#include "UmlListWidgetItem.h"
 #include "RosEnv.h"
+
+using std::cout;
+using std::endl;
 
 class MasterGui : public QWidget
 {
@@ -30,7 +34,7 @@ class MasterGui : public QWidget
             
 public:
     explicit MasterGui(QWidget* parent = 0);
-    void loadSearchResults(QVector<QListWidgetItem*>* resultListWidItemPtrVecPtr);
+    void loadSearchResults(QVector<UmlListWidgetItem*>* resultLstWidItemPtrVecPtr);
     QString* toString();
     virtual ~MasterGui();
     
@@ -38,9 +42,7 @@ private:
     void initTestData();
     
     QListWidget* searchResultsLwPtr;
-    QVector<QListWidgetItem*>* resultLstWidItemPtrVecPtr;
-    QLineEdit* searchLePtr;
-    QPushButton* searchBtnPtr;
+    QVector<UmlListWidgetItem*>* resultLstWidItemPtrVecPtr;
     QGridLayout* outerLayout;
     
 };

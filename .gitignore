@@ -39,3 +39,5 @@
 /modules/system_tests/dist/
 /modules/search_ui/build/
 /modules/search_ui/dist/
+/modules/navigator_ui/build/
+/modules/navigator_ui/dist/
