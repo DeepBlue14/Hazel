@@ -9,38 +9,38 @@ NewFilePage_1::NewFilePage_1(QWidget* parent) : QWidget(parent)
     fileTypeStrPtr = new QString("null");
     
     langsStrLstPtr = new QVector<QListWidgetItem*>();
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile2.png"/*"cFile.png"*/), "C") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cppFile2.png"), "C++") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "pyFile.jpg"), "Python") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "javaFile.png"), "Java") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "lispFile.jpg"), "Lisp") );
-    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "shellFile.png"), "Shell Script") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "c.png"/*"cFile.png"*/), "C") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cpp.png"), "C++") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "python.png"), "Python") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "java.png"), "Java") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "lisp.png"), "Lisp") );
+    langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "shell.png"), "Shell Script") );
     langsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "file.png"), "Other") );
     
     
     
     cFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "hFile.png"),
                                                                  "Header file") );
     cFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
                                                                  "Source file") );
 
     cppFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "hppFile.png"),
                                                              "Header file") );
-    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    cppFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cppFile.png"),
                                                              "Source file") );
     
     pythonFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
-                                                             "Header file") );
-    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "pyFile.png"),
+                                                             "Source file") );
+    pythonFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cfgFile.png"),
                                                              "Dynamic Reconfiguration") );
     
     javaFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
-    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "javaFile.png"),
                                                              "Class file") );
-    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cFile.png"),
+    javaFileOptLstWidPtrVecPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "javaFile.png"),
                                                              "Interface file") );
     
     lispFileOptLstWidPtrVecPtr = new QVector<QListWidgetItem*>();
