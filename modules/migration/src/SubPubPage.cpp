@@ -9,11 +9,11 @@ SubPubPage::SubPubPage(QWidget* parent) : QWidget(parent)
     specificMsgStrPtr = new QString("");
     
     msgCatagoryStrLstPtr = new QVector<QListWidgetItem*>();
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg2.png"),
                                                         "std_msgs") );
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg2.png"),
                                                         "sensor_msgs") );
-    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg.png"),
+    msgCatagoryStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "msg2.png"),
                                                         "geometry_msgs") );
 
     typesEnteredStrLstPtr = new QVector<QListWidgetItem*>();

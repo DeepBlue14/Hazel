@@ -41,3 +41,5 @@
 /modules/search_ui/dist/
 /modules/navigator_ui/build/
 /modules/navigator_ui/dist/
+/modules/migration/build/
+/modules/migration/dist/

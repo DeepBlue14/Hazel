@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-Linux
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=configure
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/configure
+CND_ARTIFACT_NAME_Debug=migration
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/migration
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=configure.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/configure.tar
+CND_PACKAGE_NAME_Debug=migration.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/migration.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=configure
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/configure
+CND_ARTIFACT_NAME_Release=migration
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/migration
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=configure.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/configure.tar
+CND_PACKAGE_NAME_Release=migration.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/migration.tar
 #
 # include compiler specific variables
 #

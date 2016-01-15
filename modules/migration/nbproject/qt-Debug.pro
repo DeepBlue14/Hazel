@@ -1,11 +1,11 @@
 # This file is generated automatically. Do not edit.
 # Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
-DESTDIR = dist/Release/GNU-Linux
-TARGET = configure
+DESTDIR = dist/Debug/GNU-Linux
+TARGET = migration
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
-CONFIG += release 
+CONFIG += debug 
 PKGCONFIG +=
 QT = core gui widgets
 SOURCES += src/AdvOptPage_1.cpp src/AdvOptPage_2.cpp src/AdvOptPage_3.cpp src/AdvOptPage_4.cpp src/AdvOptPage_5.cpp src/AdvOptionsGui.cpp src/CodeFoldingArea.cpp src/ConvOptPage.cpp src/ConvTypePage.cpp src/CustomMsgsPage.cpp src/CustomPkgsGui.cpp src/EditorCentralWid.cpp src/EditorGui.cpp src/FileGui.cpp src/FileListingPage.cpp src/HelpGui.cpp src/Highlighter.cpp src/InitialSetupPage.cpp src/LineNumberArea.cpp src/MirrorChar.cpp src/OutputPage.cpp src/PkgScanner.cpp src/QCellWidget.cpp src/RFile.cpp src/ReconfigCentralWid.cpp src/ReconfigDashboard.cpp src/ReconfigGui.cpp src/ReconfigToolBar.cpp src/ResultsPage.cpp src/RideEnv.cpp src/RosEnv.cpp src/Saver.cpp src/SouthGui.cpp src/SubPubPage.cpp src/SummaryPage.cpp src/UnitTests.cpp src/UnixConsoleText.cpp src/WestTab.cpp src/WindowsConsoleText.cpp src/main.cpp
@@ -13,8 +13,8 @@ HEADERS += src/AdvOptPage_1.h src/AdvOptPage_2.h src/AdvOptPage_3.h src/AdvOptPa
 FORMS +=
 RESOURCES +=
 TRANSLATIONS +=
-OBJECTS_DIR = build/Release/GNU-Linux
-MOC_DIR = 
+OBJECTS_DIR = build/Debug/GNU-Linux
+MOC_DIR = src/moc
 RCC_DIR = 
 UI_DIR = 
 QMAKE_CC = gcc
