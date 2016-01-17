@@ -43,3 +43,7 @@
 /modules/navigator_ui/dist/
 /modules/migration/build/
 /modules/migration/dist/
+/modules/pkg_installer/dist/
+/modules/pkg_installer/build/
+/modules/help/dist/
+/modules/help/build/
