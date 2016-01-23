@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/AbstractOutputToolBar.h</itemPath>
+        <itemPath>src/BuildDisplay.h</itemPath>
+        <itemPath>src/DebugGui.h</itemPath>
+        <itemPath>src/DebugToolbar.h</itemPath>
+        <itemPath>src/HtmlColorFactory.h</itemPath>
+        <itemPath>src/OutputToolBar.h</itemPath>
+        <itemPath>src/OutputUi.h</itemPath>
+        <itemPath>src/RosEnv.h</itemPath>
+        <itemPath>src/RunDisplay.h</itemPath>
+        <itemPath>src/RunToolBar.h</itemPath>
+        <itemPath>src/SigTextEdit.h</itemPath>
+        <itemPath>src/SigTextToolBar.h</itemPath>
+        <itemPath>src/SigWindow.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <logicalFolder name="qss" displayName="qss" projectFiles="true">
+        <itemPath>src/qss/Classic.css</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/AbstractOutputToolBar.cpp</itemPath>
+        <itemPath>src/BuildDisplay.cpp</itemPath>
+        <itemPath>src/DebugGui.cpp</itemPath>
+        <itemPath>src/DebugToolbar.cpp</itemPath>
+        <itemPath>src/HtmlColorFactory.cpp</itemPath>
+        <itemPath>src/OutputToolBar.cpp</itemPath>
+        <itemPath>src/OutputUi.cpp</itemPath>
+        <itemPath>src/RosEnv.cpp</itemPath>
+        <itemPath>src/RunDisplay.cpp</itemPath>
+        <itemPath>src/RunToolBar.cpp</itemPath>
+        <itemPath>src/SigTextEdit.cpp</itemPath>
+        <itemPath>src/SigTextToolBar.cpp</itemPath>
+        <itemPath>src/SigWindow.cpp</itemPath>
+        <itemPath>src/main.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <modules>core gui widgets</modules>
+        <mocDir>src/moc</mocDir>
+      </qt>
+      <compileType>
+      </compileType>
+      <item path="src/AbstractOutputToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AbstractOutputToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/BuildDisplay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/BuildDisplay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DebugGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DebugGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DebugToolbar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DebugToolbar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HtmlColorFactory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/HtmlColorFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OutputToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OutputUi.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputUi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunDisplay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunDisplay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigTextEdit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigTextEdit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigTextToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigTextToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigWindow.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigWindow.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qss/Classic.css" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="4">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <qt>
+        <buildMode>1</buildMode>
+        <modules>core gui widgets</modules>
+      </qt>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="src/AbstractOutputToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/AbstractOutputToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/BuildDisplay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/BuildDisplay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DebugGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DebugGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/DebugToolbar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/DebugToolbar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/HtmlColorFactory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/HtmlColorFactory.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OutputToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OutputUi.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OutputUi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunDisplay.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunDisplay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigTextEdit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigTextEdit.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigTextToolBar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigTextToolBar.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/SigWindow.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/SigWindow.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qss/Classic.css" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

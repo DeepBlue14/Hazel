@@ -37,24 +37,28 @@ using namespace std;
 class PkgManagerTabs : public QWidget
 {
     Q_OBJECT
-            
-    private:
-        QListWidget* pkgNamesLstWidPtr;
-        QListWidget* pkgDescLstWidPtr;
-        QStringList* pkgNamesStrLstPtr; //pkg names for the current distro
-        QStringList* pkgDescStrLstPtr;
-        QGridLayout* outerLayout;
+
+public:
+    explicit PkgManagerTabs(QWidget* parent = 0);
+    void load(QString rosDistro = "indigo", int fetchOrFind = 0);
+    QString* toString();
+    virtual ~PkgManagerTabs();
+
+
+private slots:
+    ;
+
+
+private:
+    QListWidget* pkgNamesLstWidPtr;
+    QListWidget* pkgDescLstWidPtr;
+    QStringList* pkgNamesStrLstPtr; //pkg names for the current distro
+    QStringList* pkgDescStrLstPtr;
+    QGridLayout* outerLayout;
+
+    //        FetchWebSource* fetchWebSourcePtr;
         
-//        FetchWebSource* fetchWebSourcePtr;
         
-    private slots:
-        ;
-        
-    public:
-        PkgManagerTabs(QWidget* parent = 0);
-        void load(QString rosDistro = "indigo", int fetchOrFind = 0);
-        QString* toString();
-        ~PkgManagerTabs();
 };
 
 #endif	/* PKG_MANAGER_TABS_H */

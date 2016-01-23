@@ -49,60 +49,63 @@ using namespace std;
 class FetchWebSource : public QWidget
 {
     Q_OBJECT
-    
-    private:
-        QStringList* attributeValStrLstPtr;
-        QStringList* rosPkgStrLstPtr;
-        
-    private slots:
-        /**
-         * QT threads which are launched implicitly are asynchronous.
-         * Therefore, this slot is connected to the signal loadFinished(bool)
-         * to begin extracting data only after the webpage has finished loading.
-         */
-        void doStuff();
-        
-    public:
-        QWebView view;
-        
-        /**
-         * 
-         * 
-         * @param parent
-         */
-        FetchWebSource(QWidget* parent = 0);
-        
-        void loadPage();
-        
-        /**
-         * 
-         * 
-         * @param parentElement
-         */
-        void examineChildElements(const QWebElement& parentElement);
-        
-        /**
-         * 
-         */
-        QStringList* extractRosPkgs();
-        
-        void setRosPkgStrLstPtr(QStringList* rosPkgStrLstPtr);
-        
-        void addToRosPkgStrLstPtr(QString* rosPkgStrPtr);
-        
-        QStringList* getRosPkgStrLstPtr();
-        
-        /**
-         * 
-         * 
-         * @return 
-         */
-        QString* toString();
-        
-        /**
-         * Destructor.
-         */
-        ~FetchWebSource();
+
+public:
+    QWebView view;
+
+    /**
+     * 
+     * 
+     * @param parent
+     */
+    explicit FetchWebSource(QWidget* parent = 0);
+
+    /**
+     * 
+     */
+    void loadPage();
+
+    /**
+     * 
+     * 
+     * @param parentElement
+     */
+    void examineChildElements(const QWebElement& parentElement);
+
+    /**
+     * 
+     */
+    QStringList* extractRosPkgs();
+
+    void setRosPkgStrLstPtr(QStringList* rosPkgStrLstPtr);
+
+    void addToRosPkgStrLstPtr(QString* rosPkgStrPtr);
+
+    QStringList* getRosPkgStrLstPtr();
+
+    /**
+     * 
+     * 
+     * @return 
+     */
+    QString* toString();
+
+    /**
+     * Destructor.
+     */
+    virtual ~FetchWebSource();
+
+private slots:
+    /**
+     * QT threads which are launched implicitly are asynchronous.
+     * Therefore, this slot is connected to the signal loadFinished(bool)
+     * to begin extracting data only after the webpage has finished loading.
+     */
+    void doStuff();
+
+private:
+    QStringList* attributeValStrLstPtr;
+    QStringList* rosPkgStrLstPtr;
 };
 
 #endif	

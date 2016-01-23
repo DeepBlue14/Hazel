@@ -45,29 +45,47 @@ using namespace std;
 class PkgManagerGui : public QWidget
 {
     Q_OBJECT
-            
-    private:
-        QTabWidget* tabWidgetPtr;
-        QLineEdit* searchLePtr;
-        QStringList* rosVersionsStrLstPtr;
-        QComboBox* rosVersionCbPtr;
-        QPushButton* installBtnPtr;
-        QPushButton* exitBtnPtr;
-        QPushButton* helpBtnPtr;
-        QHBoxLayout* rightHLayout;
-        QHBoxLayout* btnLayout;
-        QGridLayout* outerLayout;
+
+public:
+    /**
+     * Constructor;
+     * 
+     * @param parent Pointer to parent object type.
+     */
+    explicit PkgManagerGui(QWidget* parent = 0);
+    
+    /**
+     * Classic toString-style method.
+     * 
+     * @return 
+     */
+    QString* toString();
+    
+    /**
+     * Destructor;
+     */
+    virtual ~PkgManagerGui();
+
+    
+private slots:
+    void handleDistroChangeSlot(int newIndex);
+
+    
+private:
+    QTabWidget* tabWidgetPtr;
+    QLineEdit* searchLePtr;
+    QStringList* rosVersionsStrLstPtr;
+    QComboBox* rosVersionCbPtr;
+    QPushButton* installBtnPtr;
+    QPushButton* exitBtnPtr;
+    QPushButton* helpBtnPtr;
+    QHBoxLayout* rightHLayout;
+    QHBoxLayout* btnLayout;
+    QGridLayout* outerLayout;
+
+    PkgManagerTabs* installedTab;
+    PkgManagerTabs* availableTab;
         
-        PkgManagerTabs* installedTab;
-        PkgManagerTabs* availableTab;
-       
-    private slots:
-        void handleDistroChangeSlot(int newIndex);
-        
-    public:
-        PkgManagerGui(QWidget* parent = 0);
-        QString* toString();
-        ~PkgManagerGui();
 };
 
 

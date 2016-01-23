@@ -1,0 +1,45 @@
+<conversions>
+    <red unix="\033[0m;" html="red" />
+    <green unix="" html="green" />
+    <yellow unix="" html="yellow" />
+    <blue unix="" html="blue" />
+    <purple unix="" html="purple" />
+    <cyan unix="" html="cyan" />
+    <gray unix="" html="gray" />
+    
+    <bold unix="" html="" />
+    <red_bold unix="" html="" />
+    <green_bold unix="" html="" />
+    <yellow_bold unix="" html="" />
+    <blue_bold unix="" html="" />
+    <purple_bold unix="" html="" />
+    <cyan_bold unix="" html="" />
+    <gray_bold unix="" html="" />
+    
+    <italic unix="" html="" />
+    <red_italic unix="" html="" />
+    <green_italic unix="" html="" />
+    <yellow_italic unix="" html="" />
+    <blue_italic unix="" html="" />
+    <purple_italic unix="" html="" />
+    <cyan_italic unix="" html="" />
+    <gray_italic unix="" html="" />
+    
+    <underline unix="" html="" />
+    <red_underline unix="" html="" />
+    <green_underline unix="" html="" />
+    <yellow_underline unix="" html="" />
+    <blue_underline unix="" html="" />
+    <purple_underline unix="" html="" />
+    <cyan_underline unix="" html="" />
+    <gray_underline unix="" html="" />
+    
+    <strikethrough unix="" html="" />
+    <red_strikethrough unix="" html="" />
+    <green_strikethrough unix="" html="" />
+    <yellow_strikethrough unix="" html="" />
+    <blue_strikethrough unix="" html="" />
+    <purple_strikethrough unix="" html="" />
+    <cyan_strikethrough unix="" html="" />
+    <gray_strikethrough unix="" html="" />
+</conversions>

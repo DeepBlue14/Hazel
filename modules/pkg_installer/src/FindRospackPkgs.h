@@ -34,14 +34,17 @@ using namespace std;
 
 class FindRospackPkgs
 {
-    private:
-        QStringList* rosPkgStrLstPtr;
-        
-    public:
-        FindRospackPkgs();
-        void findPkgs();
-        QString* toString();
-        ~FindRospackPkgs();
+
+public:
+    FindRospackPkgs();
+    void findPkgs();
+    QString* toString();
+    ~FindRospackPkgs();
+
+    
+private:
+    QStringList* rosPkgStrLstPtr;
+
 };
 
 #endif	/* FIND_ROSPACK_PKGS_H */

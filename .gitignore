@@ -47,3 +47,11 @@
 /modules/pkg_installer/build/
 /modules/help/dist/
 /modules/help/build/
+/modules/output_ui/build/
+/modules/output_ui/dist/
+/modules/html_style/dist/
+/modules/html_style/build/
+/modules/stream_tests/build/
+/modules/stream_tests/dist/
+/modules/stream_to_html/dist/
+/modules/stream_to_html/build/
