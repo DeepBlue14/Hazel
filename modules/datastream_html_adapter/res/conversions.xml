@@ -1,0 +1,60 @@
+<!-- 
+File:   conversions.xml
+Module: datastream_html_adapter
+Author: James Kuczynski
+Email: jkuczyns@cs.uml.edu
+File Description: This resource file contains the color/effect codes/syntax
+                  for UNIX console stream output and HTML.
+
+Created on January 20, 2016 at 12:00pm
+Last Modified: 1/23/2016
+-->
+
+
+<conversions>
+    <default unix="\033[0m" html="" />
+    
+    <red    unix="\033[0;31m" html="red" /> <!-- "red" OR "#c3f" (or something like it) -->
+    <green  unix="\033[0;32m" html="green" />
+    <yellow unix="\033[0;33m" html="yellow" />
+    <blue   unix="\033[0;34m" html="blue" />
+    <purple unix="\033[0;35m" html="purple" />
+    <cyan   unix="\033[0;36m" html="cyan" />
+    <gray   unix="\033[0;37m" html="gray" />
+    
+    <bold           unix="\033[1;30m" html="" />
+    <red_bold       unix="\033[1;31m" html="" />
+    <green_bold     unix="\033[1;32m" html="" />
+    <yellow_bold    unix="\033[1;33m" html="" />
+    <blue_bold      unix="\033[1;34m" html="" />
+    <purple_bold    unix="\033[1;35m" html="" />
+    <cyan_bold      unix="\033[1;36m" html="" />
+    <gray_bold      unix="\033[1;37m" html="" />
+    
+    <italic         unix="\033[3;30m" html="" />
+    <red_italic     unix="\033[3;31m" html="" />
+    <green_italic   unix="\033[3;32m" html="" />
+    <yellow_italic  unix="\033[3;33m" html="" />
+    <blue_italic    unix="\033[3;34m" html="" />
+    <purple_italic  unix="\033[3;35m" html="" />
+    <cyan_italic    unix="\033[3;36m" html="" />
+    <gray_italic    unix="\033[3;37m" html="" />
+    
+    <underline          unix="\033[4;30m" html="" />
+    <red_underline      unix="\033[4;31m" html="" />
+    <green_underline    unix="\033[4;32m" html="" />
+    <yellow_underline   unix="\033[4;33m" html="" />
+    <blue_underline     unix="\033[4;34m" html="" />
+    <purple_underline   unix="\033[4;35m" html="" />
+    <cyan_underline     unix="\033[4;36m" html="" />
+    <gray_underline     unix="\033[4;37m" html="" />
+    
+    <strikethrough          unix="\033[9;30m" html="" />
+    <red_strikethrough      unix="\033[9;31m" html="" />
+    <green_strikethrough    unix="\033[9;32m" html="" />
+    <yellow_strikethrough   unix="\033[9;33m" html="" />
+    <blue_strikethrough     unix="\033[9;34m" html="" />
+    <purple_strikethrough   unix="\033[9;35m" html="" />
+    <cyan_strikethrough     unix="\033[9;36m" html="" />
+    <gray_strikethrough     unix="\033[9;37m" html="" />
+</conversions>
