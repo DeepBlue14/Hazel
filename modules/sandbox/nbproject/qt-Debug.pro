@@ -1,20 +1,20 @@
 # This file is generated automatically. Do not edit.
 # Use project properties -> Build -> Qt -> Expert -> Custom Definitions.
 TEMPLATE = app
-DESTDIR = dist/Release/GNU-Linux
-TARGET = universal
+DESTDIR = dist/Debug/GNU-Linux
+TARGET = sandbox
 VERSION = 1.0.0
 CONFIG -= debug_and_release app_bundle lib_bundle
-CONFIG += release 
+CONFIG += debug 
 PKGCONFIG +=
 QT = core gui widgets
-SOURCES += src/OverriddenOperators.cpp src/RosEnv.cpp src/UnixConsoleText.cpp src/WindowsConsoleText.cpp src/main.cpp
-HEADERS += src/OverriddenOperators.h src/RosEnv.h src/UnixConsoleText.h src/WindowsConsoleText.h
+SOURCES += src/main.cpp
+HEADERS +=
 FORMS +=
 RESOURCES +=
 TRANSLATIONS +=
-OBJECTS_DIR = build/Release/GNU-Linux
-MOC_DIR = 
+OBJECTS_DIR = build/Debug/GNU-Linux
+MOC_DIR = src/moc
 RCC_DIR = 
 UI_DIR = 
 QMAKE_CC = gcc

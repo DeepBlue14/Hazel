@@ -13,6 +13,14 @@
 
 #include <QApplication>
 
+#include <iostream>
+#include <string>
+
+
+#include "OverriddenOperators.h"
+
+using namespace std;
+
 int main(int argc, char *argv[]) {
     // initialize resources, if needed
     // Q_INIT_RESOURCE(resfile);
@@ -21,5 +29,7 @@ int main(int argc, char *argv[]) {
 
     // create and show your widgets here
 
-    return app.exec();
+    
+    
+    return EXIT_SUCCESS;
 }

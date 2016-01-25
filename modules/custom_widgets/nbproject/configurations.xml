@@ -5,6 +5,11 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/RosEnv.h</itemPath>
+        <itemPath>src/RunBtnMenu.h</itemPath>
+        <itemPath>src/UmlListWidgetItem.h</itemPath>
+        <itemPath>src/UnixConsoleText.h</itemPath>
+        <itemPath>src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -15,6 +20,11 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/RosEnv.cpp</itemPath>
+        <itemPath>src/RunBtnMenu.cpp</itemPath>
+        <itemPath>src/UmlListWidgetItem.cpp</itemPath>
+        <itemPath>src/UnixConsoleText.cpp</itemPath>
+        <itemPath>src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -47,6 +57,26 @@
       </qt>
       <compileType>
       </compileType>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UmlListWidgetItem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UmlListWidgetItem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -74,6 +104,26 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/RunBtnMenu.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UmlListWidgetItem.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UmlListWidgetItem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/UnixConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/WindowsConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
