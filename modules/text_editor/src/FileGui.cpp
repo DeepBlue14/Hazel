@@ -15,14 +15,55 @@ FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
     codeFoldArea = new CodeFoldingArea(this);
     gitStatusArea = new GitStatusArea(this);
     
+    highlighter = new Highlighter(this->document() );
+    
     connect(this, SIGNAL(blockCountChanged(int )), this, SLOT(updateLineNumberAreaWidth(int )) );
     connect(this, SIGNAL(updateRequest(QRect, int )), this, SLOT(updateLineNumberArea(QRect, int )) );
     connect(this, SIGNAL(cursorPositionChanged()), this, SLOT(highlightCurrentLine()) );
     
-    //this->setMouseTracking(true);
+    this->setMouseTracking(true);
+    
+    miniCompleterFactory();
 
     updateLineNumberAreaWidth(0);
     highlightCurrentLine();
+}
+
+
+void FileGui::miniCompleterFactory()
+{
+    completerPtr = new QCompleter(this);
+    completerPtr->setModel(modelFromFile("wordlist.txt") );
+    completerPtr->setModelSorting(QCompleter::CaseInsensitivelySortedModel);
+    completerPtr->setCaseSensitivity(Qt::CaseInsensitive);
+    this->setCompleter(completerPtr);
+}
+
+
+QAbstractItemModel* FileGui::modelFromFile(const QString& fileName)
+{
+    QFile file(fileName);
+    if(!file.open(QFile::ReadOnly))
+    {
+        cout << "ERROR trying to read file" << endl;
+        return new QStringListModel(completerPtr);
+    }
+    else
+    {
+        cout << "SUCCESS reading file at NewFileGui::modelFromFile" << endl;
+    }
+        
+    QApplication::setOverrideCursor(QCursor(Qt::WaitCursor));
+    QStringList words;
+
+    while (!file.atEnd()) {
+        QByteArray line = file.readLine();
+        if (!line.isEmpty())
+            words << line.trimmed();
+    }
+
+    QApplication::restoreOverrideCursor();
+    return new QStringListModel(words, completerPtr);
 }
 
 
@@ -168,6 +209,7 @@ void FileGui::keyPressEvent(QKeyEvent* e)
             isClosingParens = false;
         }
     }
+    
     if(isClosingParens == true  && e->text() == ";")
     {
         cout << "Hop semicolon" << endl;
@@ -175,6 +217,19 @@ void FileGui::keyPressEvent(QKeyEvent* e)
         tcg.movePosition(QTextCursor::Right, QTextCursor::MoveAnchor, (tcg.block().text().size() - tcg.positionInBlock()) );
         tcg.insertText(";");
         setTextCursor(tcg);
+    }
+    
+    if(e->text() == ")")
+    {
+        cout << "remove duplicate )" << endl;
+        tcg.deleteChar();
+    }
+    
+    //insert 4 spaces instead of a tab
+    if(e->key() == Qt::Key_Tab)
+    {
+        tcg.deletePreviousChar();
+        tcg.insertText("    ");
     }
 
 
@@ -196,6 +251,15 @@ void FileGui::keyPressEvent(QKeyEvent* e)
     cr.setWidth(completerPtr->popup()->sizeHintForColumn(0)
               + completerPtr->popup()->verticalScrollBar()->sizeHint().width() );
     completerPtr->complete(cr); // popup it up!
+}
+
+
+void FileGui::mouseReleaseEvent(QMouseEvent* e)
+{
+    cout << wordUnderCursor().toStdString() << endl;
+    
+    highlighter->addTempTarget(wordUnderCursor() );
+    
 }
 
 
@@ -294,7 +358,7 @@ void FileGui::resizeEvent(QResizeEvent* e)
 
 void FileGui::highlightCurrentLine()
 {
-    QList<QTextEdit::ExtraSelection> extraSelections;
+    /*QList<QTextEdit::ExtraSelection> extraSelections;
     
     if(!isReadOnly() )
     {
@@ -318,7 +382,7 @@ void FileGui::highlightCurrentLine()
         
     }
     
-    setExtraSelections(extraSelections);
+    setExtraSelections(extraSelections);*/
 }
 
 
@@ -362,7 +426,7 @@ void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
     
     
     QTextBlock block2 = firstVisibleBlock();
-    //int blockNumber2 = block2.blockNumber();
+    int blockNumber2 = block2.blockNumber();
     int top2 = (int) blockBoundingGeometry(block2).translated(contentOffset()).top();
     int bottom2 = top2 + (int) blockBoundingRect(block2).height();
 
@@ -371,15 +435,30 @@ void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
         if (block2.isVisible() && bottom2 >= event->rect().top() )
         {
             QPixmap pixmap;
-            pixmap.load(RosEnv::imagesInstallLoc + "plus.jpg");
-            //cfaPainter.drawPixmap(0, top2, codeFoldArea->width()/2, fontMetrics().height()/2, pixmap);
+            if(blockNumber2 == 0)
+            {
+                pixmap.load(RosEnv::imagesInstallLoc + "FoldCode.png");
+                cfaPainter.drawPixmap(0, top2, codeFoldArea->width(), fontMetrics().height(), pixmap);
+            }
+            else if(blockNumber2 < 5)
+            {
+                pixmap.load(RosEnv::imagesInstallLoc + "CodeFolding4.png");
+                cfaPainter.drawPixmap(0, top2, codeFoldArea->width(), fontMetrics().height(), pixmap);
+            }
+            else if(blockNumber2 == 5)
+            {
+                pixmap.load(RosEnv::imagesInstallLoc + "CodeFolding3.png");
+                cfaPainter.drawPixmap(0, top2, codeFoldArea->width(), fontMetrics().height(), pixmap);
+            }
+  
+            
         }
 
         block2 = block2.next();
         top2 = bottom2;
         bottom2 = top2 + (int) blockBoundingRect(block2).height();
         
-        //blockNumber2++;
+        blockNumber2++;
     }
 
 }
@@ -389,11 +468,11 @@ void FileGui::gitStatusAreaPaintEvent(QPaintEvent* event)
 {
     //cerr << "FileGui::gitStatusAreaPaintEvent(...) has not been implemented yet" << endl;
     QPainter cfaPainter(gitStatusArea);
-    cfaPainter.fillRect(event->rect(), QColor(Qt::green).lighter(150) );
+    //cfaPainter.fillRect(event->rect(), QColor(Qt::green).lighter(150) );
     
     
     QTextBlock block2 = firstVisibleBlock();
-    //int blockNumber2 = block2.blockNumber();
+    int blockNumber3 = block2.blockNumber();
     int top2 = (int) blockBoundingGeometry(block2).translated(contentOffset()).top();
     int bottom2 = top2 + (int) blockBoundingRect(block2).height();
 
@@ -402,15 +481,33 @@ void FileGui::gitStatusAreaPaintEvent(QPaintEvent* event)
         if (block2.isVisible() && bottom2 >= event->rect().top() )
         {
             QPixmap pixmap;
-            pixmap.load(RosEnv::imagesInstallLoc + "plus.jpg");
+            pixmap.load(RosEnv::imagesInstallLoc + "plus.png");
             //cfaPainter.drawPixmap(0, top2, gitStatusArea->width()/2, fontMetrics().height()/2, pixmap);
         }
+        
+        if(blockNumber3 < 1)
+        {
+            cfaPainter.fillRect(event->rect(), QColor(Qt::white) );
+        }
+        else if(blockNumber3 < 2)
+        {
+            cfaPainter.fillRect(event->rect(), QColor(Qt::blue).lighter(150) );
+        }
+        else if(blockNumber3 < 5)
+        {
+            cfaPainter.fillRect(event->rect(), QColor(Qt::green).lighter(150) );
+        }
+        else
+        {
+            cfaPainter.fillRect(event->rect(), QColor(Qt::white) );
+        }
+        
 
         block2 = block2.next();
         top2 = bottom2;
         bottom2 = top2 + (int) blockBoundingRect(block2).height();
         
-        //blockNumber2++;
+        blockNumber3++;
     }
 }
 
@@ -421,14 +518,22 @@ void FileGui::closeEvent(QCloseEvent* event)
     QMessageBox::StandardButton resBtn = QMessageBox::question(this, "Ride",
             "Would you like to save before closing?\n", QMessageBox::Cancel | QMessageBox::No | QMessageBox::Yes);
     
-    if(resBtn != QMessageBox::Yes)
+    if(resBtn == QMessageBox::Cancel)
     {
         event->ignore();
     }
-    else
+    else if(resBtn == QMessageBox::No)
+    {
+        event->accept();
+    }
+    else if(resBtn == QMessageBox::Yes)
     {
 //        Saver::save(); // Save all files
         event->accept();
+    }
+    else
+    {
+        cout << "Unexpected event @ text_editor::FileGui::closeEvnet(...)" << endl;
     }
                                                                
 }

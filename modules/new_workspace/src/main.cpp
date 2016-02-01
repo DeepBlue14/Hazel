@@ -17,6 +17,8 @@
 
 #include <QApplication>
 
+#include "NewWorkspaceGui.h"
+
 int main(int argc, char *argv[])
 {
     // initialize resources, if needed
@@ -25,6 +27,7 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     // create and show your widgets here
-
+    NewWorkspaceGui newWorkspaceGui;
+    newWorkspaceGui.show();
     return app.exec();
 }

@@ -5,6 +5,12 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/ButtonGroupWidget.h</itemPath>
+        <itemPath>src/NewWorkspaceGui.h</itemPath>
+        <itemPath>src/NewWorkspacePage_1.h</itemPath>
+        <itemPath>src/NewWorkspacePage_2.h</itemPath>
+        <itemPath>src/NewWorkspacePage_3.h</itemPath>
+        <itemPath>src/NewWorkspacePage_4.h</itemPath>
         <itemPath>src/RosEnv.h</itemPath>
         <itemPath>src/UnixConsoleText.h</itemPath>
         <itemPath>src/WindowsConsoleText.h</itemPath>
@@ -18,6 +24,12 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/ButtonGroupWidget.tpp</itemPath>
+        <itemPath>src/NewWorkspaceGui.cpp</itemPath>
+        <itemPath>src/NewWorkspacePage_1.cpp</itemPath>
+        <itemPath>src/NewWorkspacePage_2.cpp</itemPath>
+        <itemPath>src/NewWorkspacePage_3.cpp</itemPath>
+        <itemPath>src/NewWorkspacePage_4.cpp</itemPath>
         <itemPath>src/RosEnv.cpp</itemPath>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
         <itemPath>src/WindowsConsoleText.cpp</itemPath>
@@ -53,6 +65,30 @@
       </qt>
       <compileType>
       </compileType>
+      <item path="src/ButtonGroupWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ButtonGroupWidget.tpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspaceGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspaceGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
@@ -92,6 +128,30 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/ButtonGroupWidget.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ButtonGroupWidget.tpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspaceGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspaceGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_1.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_4.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/NewWorkspacePage_4.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">

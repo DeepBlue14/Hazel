@@ -1,9 +1,9 @@
 /* 
  * File:   Highlighter.h
- * Module: PrettySyntax
+ * Module: text_editor
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: 
+ * File Description: This module highlights the line the cursor is on.
  *
  * Created on April 20, 2015, 11:41 PM
  * Last Modified: 1/13/2016
@@ -53,6 +53,9 @@ public:
      */
     void loadLang();
     
+    
+    void addTempTarget(const QString& text);
+    
     /**
      * Classic toString method.
      * 
@@ -72,8 +75,8 @@ protected:
      * 
      * @param text
      */
-    void highlightBlock(const QString &text);
-    
+    void highlightBlock(const QString& text);
+
     
 private:
     struct HighlightingRule
@@ -83,6 +86,8 @@ private:
     };
     QVector<HighlightingRule> highlightingRules;
 
+    HighlightingRule rule;
+    
     QRegExp commentStartExpression;
     QRegExp commentEndExpression;
 

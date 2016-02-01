@@ -2,7 +2,7 @@
 
 Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
 {
-    HighlightingRule rule;
+    //HighlightingRule rule;
 
     
     keywordFormat.setForeground(Qt::blue);
@@ -10,43 +10,43 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
     
     //http://en.cppreference.com/w/cpp/keyword
     QStringList cPlusPlusKeywordPatterns;
-    cPlusPlusKeywordPatterns << "alignas"      << "else"            << "requires"
-                             << "alignof"      << "enum"             << "return"
-                             << "and"          << "explicit"         << "short"
-                             << "and_eq"       << "export"           << "signed"
-                             << "asm"          << "extern"           << "sizeof"
-                             << "auto"         << "false"            << "static"
-                             << "bitand"       << "float"            << "static_assert"
-                             << "bitor"        << "for"              << "static_cast"
-                             << "bool"         << "friend"           << "struct"
-                             << "break"        << "goto"             << "switch"
-                             << "case"         << "if"               << "template"
-                             << "catch"        << "inline"           << "this"
-                             << "char"         << "int"              << "thread_local"
-                             << "char16_t"     << "long"             << "throw"
-                             << "char32_t"     << "mutable"          << "true"
-                             << "class"        << "namespace"        << "try"
-                             << "compl"        << "new"              << "typedef"
-                             << "concept"      << "noexcept"         << "typeid"
-                             << "const"        << "not"              << "typename"
-                             << "constexpr"    << "not_eq"           << "union"
-                             << "const_cast"   << "nullptr"          << "unsigned"
-                             << "continue"     << "operator"         << "using"
-                             << "decltype"     << "or"               << "virtual"
-                             << "default"      << "or_eq"            << "void"
-                             << "delete"       << "private"          << "volatile"
-                             << "do"           << "protected"        << "wchar_t"
-                             << "double"       << "public"           << "while"
-                             << "dynamic_cast" << "register"         << "xor"
-                                               << "reinterpret_cast" << "xor_eq";
+    cPlusPlusKeywordPatterns << "\\balignas\\b"      << "\\belse\\b"            << "\\brequires\\b"
+                             << "\\balignof\\b"      << "\\benum\\b"             << "\\breturn\\b"
+                             << "\\band\\b"          << "\\bexplicit\\b"         << "\\bshort\\b"
+                             << "\\band_eq\\b"       << "\\bexport\\b"           << "\\bsigned\\b"
+                             << "\\basm\\b"          << "\\bextern\\b"           << "\\bsizeof\\b"
+                             << "\\bauto\\b"         << "\\bfalse\\b"            << "\\bstatic\\b"
+                             << "\\bbitand\\b"       << "\\bfloat\\b"            << "\\bstatic_assert\\b"
+                             << "\\bbitor\\b"        << "\\bfor\\b"              << "\\bstatic_cast\\b"
+                             << "\\bbool\\b"         << "\\bfriend\\b"           << "\\bstruct\\b"
+                             << "\\bbreak\\b"        << "\\bgoto\\b"             << "\\bswitch\\b"
+                             << "\\bcase\\b"         << "\\bif\\b"               << "\\btemplate\\b"
+                             << "\\bcatch\\b"        << "\\binline\\b"           << "\\bthis\\b"
+                             << "\\bchar\\b"         << "\\bint\\b"              << "\\bthread_local\\b"
+                             << "\\bchar16_t\\b"     << "\\blong\\b"             << "\\bthrow\\b"
+                             << "\\bchar32_t\\b"     << "\\bmutable\\b"          << "\\btrue\\b"
+                             << "\\bclass\\b"        << "\\bnamespace\\b"        << "\\btry\\b"
+                             << "\\bcompl\\b"        << "\\bnew\\b"              << "\\btypedef\\b"
+                             << "\\bconcept\\b"      << "\\bnoexcept\\b"         << "\\btypeid\\b"
+                             << "\\bconst\\b"        << "\\bnot\\b"              << "\\btypename\\b"
+                             << "\\bconstexpr\\b"    << "\\bnot_eq\\b"           << "\\bunion\\b"
+                             << "\\bconst_cast\\b"   << "\\bnullptr\\b"          << "\\bunsigned\\b"
+                             << "\\bcontinue\\b"     << "\\boperator\\b"         << "\\busing\\b"
+                             << "\\bdecltype\\b"     << "\\bor\\b"               << "\\bvirtual\\b"
+                             << "\\bdefault\\b"      << "\\bor_eq\\b"            << "\\bvoid\\b"
+                             << "\\bdelete\\b"       << "\\bprivate\\b"          << "\\bvolatile\\b"
+                             << "\\bdo\\b"           << "\\bprotected\\b"        << "\\bwchar_t\\b"
+                             << "\\bdouble\\b"       << "\\bpublic\\b"           << "\\bwhile\\b"
+                             << "\\bdynamic_cast\\b" << "\\bregister"         << "\\bxor\\b"
+                             << "\\breinterpret_cast\\b" << "\\bxor_eq";
     QStringList cPlusPlusIdentifiers;
-    cPlusPlusIdentifiers     << "override"    << "final";
+    cPlusPlusIdentifiers     << "\\boverride\\b"    << "\\bfinal\\b";
     
     QStringList cPlusPlusPreprocessorCmds;
-    cPlusPlusPreprocessorCmds << "#elif"         << "#ifdef"            << "#include"
-                              << "#endif"        << "#ifndef"           << "#line"
-                              << "#defined"      << "#define"           << "#error"
-                                                 << "#undef"            << "#pragma";
+    cPlusPlusPreprocessorCmds << "\\b#elif\\b"         << "\\b#ifdef\\b"            << "\\b#include\\b"
+                              << "\\b#endif\\b"        << "\\b#ifndef\\b"           << "\\b#line\\b"
+                              << "\\b#defined\\b"      << "\\b#define\\b"           << "\\b#error\\b"
+                              << "#undef\\b"           << "\\b#pragma\\b";
     
     //QStringList cmakeKeywords;
     //cmakeKeywords            << "cmake_minimum_requried" << "VERSION" << "project"  
@@ -159,6 +159,7 @@ Highlighter::Highlighter(QTextDocument *parent) : QSyntaxHighlighter(parent)
     commentEndExpression = QRegExp("\\*/");
 }
 
+
 void Highlighter::highlightBlock(const QString &text)
 {
     foreach (const HighlightingRule &rule, highlightingRules)
@@ -167,9 +168,11 @@ void Highlighter::highlightBlock(const QString &text)
         int index = expression.indexIn(text);
         while (index >= 0)
         {
+            cout << cct::boldRed("stuck in an infinite loop @ text_editor::Highlighter::highlightBlock(...)") << endl;
             int length = expression.matchedLength();
             setFormat(index, length, rule.format);
             index = expression.indexIn(text, index + length);
+            cout << "index: " << index << endl;
         }
     }
     setCurrentBlockState(0);
@@ -195,6 +198,16 @@ void Highlighter::highlightBlock(const QString &text)
         setFormat(startIndex, commentLength, multiLineCommentFormat);
         startIndex = commentStartExpression.indexIn(text, startIndex + commentLength);
     }
+}
+
+
+void Highlighter::addTempTarget(const QString& text)
+{
+    cout << "@ text_editor::Highlighter::addTempTarget(...)" << endl;
+    keywordFormat.setForeground(Qt::red);
+    rule.pattern = QRegExp(text);
+    rule.format = keywordFormat;
+    highlightingRules.append(rule);
 }
 
 
