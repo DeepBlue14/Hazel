@@ -5,6 +5,12 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/OptionContainer.h</itemPath>
+        <itemPath>src/OptionTab.h</itemPath>
+        <itemPath>src/OptionsGui.h</itemPath>
+        <itemPath>../custom_widgets/src/RosEnv.h</itemPath>
+        <itemPath>../custom_widgets/src/UnixConsoleText.h</itemPath>
+        <itemPath>../custom_widgets/src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -15,6 +21,12 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/OptionContainer.cpp</itemPath>
+        <itemPath>src/OptionTab.cpp</itemPath>
+        <itemPath>src/OptionsGui.cpp</itemPath>
+        <itemPath>../custom_widgets/src/RosEnv.cpp</itemPath>
+        <itemPath>../custom_widgets/src/UnixConsoleText.cpp</itemPath>
+        <itemPath>../custom_widgets/src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -47,6 +59,42 @@
       </qt>
       <compileType>
       </compileType>
+      <item path="../custom_widgets/src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/UnixConsoleText.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/UnixConsoleText.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/WindowsConsoleText.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/WindowsConsoleText.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/OptionContainer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionContainer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OptionTab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OptionsGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionsGui.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -74,6 +122,42 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="../custom_widgets/src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/RosEnv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/UnixConsoleText.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/UnixConsoleText.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/WindowsConsoleText.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../custom_widgets/src/WindowsConsoleText.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/OptionContainer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionContainer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OptionTab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/OptionsGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/OptionsGui.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>

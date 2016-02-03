@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/PageModAbc.h</itemPath>
         <itemPath>src/RosEnv.h</itemPath>
         <itemPath>src/RunBtnMenu.h</itemPath>
         <itemPath>src/UmlListWidgetItem.h</itemPath>
@@ -20,6 +21,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/PageModAbc.cpp</itemPath>
         <itemPath>src/RosEnv.cpp</itemPath>
         <itemPath>src/RunBtnMenu.cpp</itemPath>
         <itemPath>src/UmlListWidgetItem.cpp</itemPath>
@@ -57,6 +59,10 @@
       </qt>
       <compileType>
       </compileType>
+      <item path="src/PageModAbc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
@@ -104,6 +110,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/PageModAbc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/PageModAbc.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">

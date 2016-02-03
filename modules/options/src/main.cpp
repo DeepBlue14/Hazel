@@ -11,6 +11,8 @@
 
 #include <QApplication>
 
+#include "OptionsGui.h"
+
 int main(int argc, char *argv[])
 {
     // initialize resources, if needed
@@ -19,6 +21,8 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     // create and show your widgets here
-
+    OptionsGui optionsGui;
+    optionsGui.show();
+    
     return app.exec();
 }
