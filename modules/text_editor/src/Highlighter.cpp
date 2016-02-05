@@ -166,6 +166,7 @@ void Highlighter::highlightBlock(const QString &text)
     {
         QRegExp expression(rule.pattern);
         int index = expression.indexIn(text);
+        int loopMonitor = 0;
         while (index >= 0)
         {
             cout << cct::boldRed("stuck in an infinite loop @ text_editor::Highlighter::highlightBlock(...)") << endl;
@@ -173,7 +174,20 @@ void Highlighter::highlightBlock(const QString &text)
             setFormat(index, length, rule.format);
             index = expression.indexIn(text, index + length);
             cout << "index: " << index << endl;
+            if(loopMonitor == 10)
+            {
+                loopMonitor = 0;
+                break;
+            }
+            else
+            {
+                loopMonitor++;
+            }
+            
+            
         }
+        
+        
     }
     setCurrentBlockState(0);
 
@@ -204,10 +218,16 @@ void Highlighter::highlightBlock(const QString &text)
 void Highlighter::addTempTarget(const QString& text)
 {
     cout << "@ text_editor::Highlighter::addTempTarget(...)" << endl;
+    if(highlightingRules.size() > 0)
+    {
+        highlightingRules.remove(highlightingRules.size()-1); //remove old rule
+    }
+    
+    
     keywordFormat.setForeground(Qt::red);
     rule.pattern = QRegExp(text);
     rule.format = keywordFormat;
-    highlightingRules.append(rule);
+    highlightingRules.append(rule); //add new rule
 }
 
 

@@ -60,6 +60,8 @@ class FileGui : public QPlainTextEdit
     Q_OBJECT 
 
 public:
+    QColor prevColor;
+    int rectCounter;
     /**
      * Constructor.
      * 

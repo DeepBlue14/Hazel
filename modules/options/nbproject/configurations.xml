@@ -5,8 +5,10 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/EditorFoldingTab.h</itemPath>
+        <itemPath>src/EditorGeneralTab.h</itemPath>
         <itemPath>src/OptionContainer.h</itemPath>
-        <itemPath>src/OptionTab.h</itemPath>
+        <itemPath>src/OptionTabInterface.h</itemPath>
         <itemPath>src/OptionsGui.h</itemPath>
         <itemPath>../custom_widgets/src/RosEnv.h</itemPath>
         <itemPath>../custom_widgets/src/UnixConsoleText.h</itemPath>
@@ -21,8 +23,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/EditorFoldingTab.cpp</itemPath>
+        <itemPath>src/EditorGeneralTab.cpp</itemPath>
         <itemPath>src/OptionContainer.cpp</itemPath>
-        <itemPath>src/OptionTab.cpp</itemPath>
+        <itemPath>src/OptionTabInterface.cpp</itemPath>
         <itemPath>src/OptionsGui.cpp</itemPath>
         <itemPath>../custom_widgets/src/RosEnv.cpp</itemPath>
         <itemPath>../custom_widgets/src/UnixConsoleText.cpp</itemPath>
@@ -83,13 +87,21 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="src/EditorFoldingTab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/EditorFoldingTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/EditorGeneralTab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/EditorGeneralTab.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/OptionContainer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/OptionContainer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/OptionTab.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/OptionTabInterface.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/OptionTab.h" ex="false" tool="3" flavor2="0">
+      <item path="src/OptionTabInterface.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/OptionsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -146,13 +158,21 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="src/EditorFoldingTab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/EditorFoldingTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/EditorGeneralTab.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/EditorGeneralTab.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/OptionContainer.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/OptionContainer.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="src/OptionTab.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/OptionTabInterface.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="src/OptionTab.h" ex="false" tool="3" flavor2="0">
+      <item path="src/OptionTabInterface.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/OptionsGui.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -22,6 +22,7 @@
 #include <QTabWidget>
 #include <QListWidget>
 #include <QListWidgetItem>
+#include <QToolTip>
 #include <QVector>
 #include <QGridLayout>
 #include <QString>

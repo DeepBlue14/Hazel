@@ -73,3 +73,5 @@
 /modules/new_workspace/build/
 /modules/options/build/
 /modules/options/dist/
+/modules/setup/build/
+/modules/setup/dist/

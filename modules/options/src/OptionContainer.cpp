@@ -15,7 +15,12 @@ OptionContainer::OptionContainer(QWidget* parent) : QWidget(parent)
     //this should be set from the outside, i.e. mutator method
     optionLstWidItemPtr = new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "cleanAndBuild01.png"), "General");
     optionTabWidPtr = new QTabWidget();
-    optionTabPtrVecPtr = new QVector<OptionTab*>();
+    optionTabPtrVecPtr = new QVector<OptionTabInterface*>();
+    
+    EditorGeneralTab* ed = new EditorGeneralTab();
+    EditorFoldingTab* fo = new EditorFoldingTab();
+    optionTabPtrVecPtr->push_back(ed);
+    optionTabPtrVecPtr->push_back(fo);
     
     loadTabs();
 }
@@ -23,8 +28,10 @@ OptionContainer::OptionContainer(QWidget* parent) : QWidget(parent)
 
 void OptionContainer::loadTabs()
 {
+    cout << "size: " << optionTabPtrVecPtr->size() << endl;
     for(size_t i = 0; i < optionTabPtrVecPtr->size(); i++)
     {
+        cout << "adding tab" << endl;
         optionTabWidPtr->addTab(optionTabPtrVecPtr->at(i), *optionTabPtrVecPtr->at(i)->getTabTitleStrPtr() );
     }
 }
@@ -54,13 +61,13 @@ QTabWidget* OptionContainer::getOptionTabWidPtr()
 }
 
 
-void OptionContainer::setOptionTabPtrVecPtr(QVector<OptionTab*>* optionTabPtrVecPtr)
+void OptionContainer::setOptionTabPtrVecPtr(QVector<OptionTabInterface*>* optionTabPtrVecPtr)
 {
     this->optionTabPtrVecPtr = optionTabPtrVecPtr;
 }
 
 
-QVector<OptionTab*>* OptionContainer::getOptionTabPtrVecPtr()
+QVector<OptionTabInterface*>* OptionContainer::getOptionTabPtrVecPtr()
 {
     return optionTabPtrVecPtr;
 }

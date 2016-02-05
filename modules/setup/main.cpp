@@ -1,4 +1,3 @@
-Error reading included file Templates / qtFiles / Templates / Licenses / license-default.txt
 /*
  * File:   main.cpp
  * Author: james

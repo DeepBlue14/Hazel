@@ -25,8 +25,15 @@
 #include <QVector>
 #include <QString>
 
-#include "OptionTab.h"
+#include <iostream>
+
+#include "OptionTabInterface.h"
+#include "EditorGeneralTab.h"
+#include "EditorFoldingTab.h"
 #include "RosEnv.h"
+
+using std::cout;
+using std::endl;
 
 class OptionContainer : public QWidget
 {
@@ -39,15 +46,15 @@ public:
     QListWidgetItem* getOptionLstWidItemPtr();
     void setOptionTabWidPtr(QTabWidget* optionTabWidPtr);
     QTabWidget* getOptionTabWidPtr();
-    void setOptionTabPtrVecPtr(QVector<OptionTab*>* optionTabPtrVecPtr);
-    QVector<OptionTab*>* getOptionTabPtrVecPtr();
+    void setOptionTabPtrVecPtr(QVector<OptionTabInterface*>* optionTabPtrVecPtr);
+    QVector<OptionTabInterface*>* getOptionTabPtrVecPtr();
     QString* toString();
     virtual ~OptionContainer();
     
     private:
         QListWidgetItem* optionLstWidItemPtr;
         QTabWidget* optionTabWidPtr;
-        QVector<OptionTab*>* optionTabPtrVecPtr;
+        QVector<OptionTabInterface*>* optionTabPtrVecPtr;
 };
 
 #endif /* OPTION_CONTAINER_H */

@@ -7,6 +7,7 @@
 
 FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
 {
+    rectCounter = 0;
     this->setPlainText(tr("This TextEdit provides autocompletions for words that have more than"
                           " 3 characters. You can trigger autocompletion using ") +
                           QKeySequence("Ctrl+E").toString(QKeySequence::NativeText));
@@ -358,7 +359,8 @@ void FileGui::resizeEvent(QResizeEvent* e)
 
 void FileGui::highlightCurrentLine()
 {
-    /*QList<QTextEdit::ExtraSelection> extraSelections;
+    cout << "@ text_editor::FileGui::highlightCurrentLine()" << endl;
+    QList<QTextEdit::ExtraSelection> extraSelections;
     
     if(!isReadOnly() )
     {
@@ -382,7 +384,7 @@ void FileGui::highlightCurrentLine()
         
     }
     
-    setExtraSelections(extraSelections);*/
+    setExtraSelections(extraSelections);
 }
 
 
@@ -466,7 +468,7 @@ void FileGui::codeFoldingAreaPaintEvent(QPaintEvent* event)
 
 void FileGui::gitStatusAreaPaintEvent(QPaintEvent* event)
 {
-    //cerr << "FileGui::gitStatusAreaPaintEvent(...) has not been implemented yet" << endl;
+    //cout << "@ text_editor::FileGui::gitStatusAreaPaintEvent(...)" << endl;
     QPainter cfaPainter(gitStatusArea);
     //cfaPainter.fillRect(event->rect(), QColor(Qt::green).lighter(150) );
     
@@ -485,22 +487,41 @@ void FileGui::gitStatusAreaPaintEvent(QPaintEvent* event)
             //cfaPainter.drawPixmap(0, top2, gitStatusArea->width()/2, fontMetrics().height()/2, pixmap);
         }
         
-        if(blockNumber3 < 1)
+        
+        /*if(blockNumber3 < 5)
         {
-            cfaPainter.fillRect(event->rect(), QColor(Qt::white) );
-        }
-        else if(blockNumber3 < 2)
-        {
-            cfaPainter.fillRect(event->rect(), QColor(Qt::blue).lighter(150) );
-        }
-        else if(blockNumber3 < 5)
-        {
-            cfaPainter.fillRect(event->rect(), QColor(Qt::green).lighter(150) );
+            cout << "@ blue" << endl;
+            //cfaPainter.fillRect(event->rect(), QColor(Qt::blue) );
+            cfaPainter.fillRect(QRect(event->rect().x(),
+                                      event->rect().y(),
+                                      event->rect().width(),
+                                      event->rect().height()/10 ),
+                    QColor(Qt::blue) );
         }
         else
         {
-            cfaPainter.fillRect(event->rect(), QColor(Qt::white) );
-        }
+            cout << "@ red" << endl;
+            cfaPainter.fillRect(QRect(event->rect().x(),
+                                      event->rect().y(),
+                                      event->rect().width(),
+                                      event->rect().height()/5 ),
+                    QColor(Qt::red) );
+        }*/
+        //cout << "@ blue" << endl;
+        //prevColor = QColor(Qt::blue);
+        //rectCounter += 10;
+        rectCounter = blockNumber3 * 17; //FIXME: hardcoded the number
+        //cfaPainter.fillRect(event->rect(), QColor(Qt::white) ); //swap red with prev_color
+        cfaPainter.fillRect(QRect(event->rect().x(),
+                                  0,
+                                  event->rect().width(),
+                                  rectCounter),
+                                //event->rect().height()/10*(blockNumber3 + 1) ),
+                    QColor(Qt::blue) );
+        cout << "x=" << event->rect().x()
+             << "\ny=" << event->rect().y()
+             << "\nwidth=" << event->rect().width()
+             << "\nheight=" << event->rect().height() << endl;
         
 
         block2 = block2.next();
@@ -509,6 +530,9 @@ void FileGui::gitStatusAreaPaintEvent(QPaintEvent* event)
         
         blockNumber3++;
     }
+
+
+    
 }
 
 
