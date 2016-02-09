@@ -29,7 +29,7 @@
 
 #include "OptionTabInterface.h"
 #include "EditorGeneralTab.h"
-#include "EditorFoldingTab.h"
+#include "EditorFoldTab.h"
 #include "RosEnv.h"
 
 using std::cout;

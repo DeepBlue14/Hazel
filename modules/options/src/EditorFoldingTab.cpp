@@ -5,16 +5,16 @@
  */
 
 
-#include "EditorFoldingTab.h"
+#include "EditorFoldTab.h"
 
 
-EditorFoldingTab::EditorFoldingTab(OptionTabInterface* parent) : OptionTabInterface(parent)
+EditorFoldTab::EditorFoldTab(OptionTabInterface* parent) : OptionTabInterface(parent)
 {
     setup();
 }
 
 
-void EditorFoldingTab::setup()
+void EditorFoldTab::setup()
 {
     tabTitleStrPtr = new QString("Folding");
     testLblPtr = new QLabel("testing FontsAndColorsTab");
@@ -26,19 +26,19 @@ void EditorFoldingTab::setup()
 }
 
 
-void EditorFoldingTab::setTabTitleStrPtr(QString* tabTitleStrPtr)
+void EditorFoldTab::setTabTitleStrPtr(QString* tabTitleStrPtr)
 {
     this->tabTitleStrPtr = tabTitleStrPtr;
 }
 
 
-QString*EditorFoldingTab::getTabTitleStrPtr()
+QString*EditorFoldTab::getTabTitleStrPtr()
 {
     return tabTitleStrPtr;
 }
 
 
-EditorFoldingTab::~EditorFoldingTab()
+EditorFoldTab::~EditorFoldTab()
 {
     ;
 }

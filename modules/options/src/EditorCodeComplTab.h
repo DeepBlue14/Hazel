@@ -5,38 +5,34 @@
  */
 
 /* 
- * File:   EditorTab.h
+ * File:   EditorCodeComplTab.h
  * Module: 
  * Author: james
  * Email: 
  * File Description: 
  *
- * Created on February 4, 2016, 4:54 PM
+ * Created on February 7, 2016, 3:20 PM
  * Last Modified: 
  */
 
-#ifndef EDITOR_GENERAL_TAB_H
-#define EDITOR_GENERAL_TAB_H
+#ifndef EDITORCODECOMPLTAB_H
+#define EDITORCODECOMPLTAB_H
 
-#include <QLabel>
-#include <QGridLayout>
 
 #include "OptionTabInterface.h"
 
-class EditorGeneralTab : public OptionTabInterface
+class EditorCodeComplTab : public OptionTabInterface
 {
-
+    
 public:
-    explicit EditorGeneralTab(OptionTabInterface* parent = 0);
+    explicit EditorCodeComplTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorGeneralTab();
+    virtual ~EditorCodeComplTab();
     
 private:
-    QString* tabTitleStrPtr;
-    QLabel* testLblPtr;
-    QGridLayout* outerLayout;
+    ;
 };
 
-#endif /* EDITOR_GENERAL_TAB_H */
+#endif /* EDITORCODECOMPLTAB_H */

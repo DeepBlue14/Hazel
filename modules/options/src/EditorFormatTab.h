@@ -5,38 +5,33 @@
  */
 
 /* 
- * File:   EditorTab.h
+ * File:   EditorFormattingTab.h
  * Module: 
  * Author: james
  * Email: 
  * File Description: 
  *
- * Created on February 4, 2016, 4:54 PM
+ * Created on February 7, 2016, 3:18 PM
  * Last Modified: 
  */
 
-#ifndef EDITOR_GENERAL_TAB_H
-#define EDITOR_GENERAL_TAB_H
-
-#include <QLabel>
-#include <QGridLayout>
+#ifndef EDITOR_FORMAT_TAB_H
+#define EDITOR_FORMAT_TAB_H
 
 #include "OptionTabInterface.h"
 
-class EditorGeneralTab : public OptionTabInterface
+class EditorFormatTab : public OptionTabInterface
 {
-
+    
 public:
-    explicit EditorGeneralTab(OptionTabInterface* parent = 0);
+    explicit EditorFormatTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorGeneralTab();
+    virtual ~EditorFormatTab();
     
 private:
-    QString* tabTitleStrPtr;
-    QLabel* testLblPtr;
-    QGridLayout* outerLayout;
+    ;
 };
 
-#endif /* EDITOR_GENERAL_TAB_H */
+#endif /* EDITOR_FORMAT_TAB_H */

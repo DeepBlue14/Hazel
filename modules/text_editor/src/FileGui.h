@@ -62,6 +62,7 @@ class FileGui : public QPlainTextEdit
 public:
     QColor prevColor;
     int rectCounter;
+    int maxGitHeight;
     /**
      * Constructor.
      * 

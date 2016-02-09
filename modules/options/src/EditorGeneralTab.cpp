@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-#include <qt4/QtCore/qstack.h>
 
 #include "EditorGeneralTab.h"
 

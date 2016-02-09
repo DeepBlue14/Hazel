@@ -5,38 +5,34 @@
  */
 
 /* 
- * File:   EditorTab.h
+ * File:   EditorMacrosTab.h
  * Module: 
  * Author: james
  * Email: 
  * File Description: 
  *
- * Created on February 4, 2016, 4:54 PM
+ * Created on February 7, 2016, 3:34 PM
  * Last Modified: 
  */
 
-#ifndef EDITOR_GENERAL_TAB_H
-#define EDITOR_GENERAL_TAB_H
+#ifndef EDITOR_MACROS_TAB_H
+#define EDITOR_MACROS_TAB_H
 
-#include <QLabel>
-#include <QGridLayout>
 
 #include "OptionTabInterface.h"
 
-class EditorGeneralTab : public OptionTabInterface
+class EditorMacrosTab : public OptionTabInterface
 {
-
+    
 public:
-    explicit EditorGeneralTab(OptionTabInterface* parent = 0);
+    explicit EditorMacrosTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorGeneralTab();
+    virtual ~EditorMacrosTab();
     
 private:
-    QString* tabTitleStrPtr;
-    QLabel* testLblPtr;
-    QGridLayout* outerLayout;
+    ;
 };
 
-#endif /* EDITOR_GENERAL_TAB_H */
+#endif /* EDITOR_MACROS_TAB_H */

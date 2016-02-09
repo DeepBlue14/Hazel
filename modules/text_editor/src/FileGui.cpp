@@ -7,6 +7,7 @@
 
 FileGui::FileGui(QWidget* parent) : QPlainTextEdit(parent), completerPtr(0)
 {
+    maxGitHeight = 0;
     rectCounter = 0;
     this->setPlainText(tr("This TextEdit provides autocompletions for words that have more than"
                           " 3 characters. You can trigger autocompletion using ") +
@@ -488,40 +489,27 @@ void FileGui::gitStatusAreaPaintEvent(QPaintEvent* event)
         }
         
         
-        /*if(blockNumber3 < 5)
-        {
-            cout << "@ blue" << endl;
-            //cfaPainter.fillRect(event->rect(), QColor(Qt::blue) );
-            cfaPainter.fillRect(QRect(event->rect().x(),
-                                      event->rect().y(),
-                                      event->rect().width(),
-                                      event->rect().height()/10 ),
-                    QColor(Qt::blue) );
-        }
-        else
-        {
-            cout << "@ red" << endl;
-            cfaPainter.fillRect(QRect(event->rect().x(),
-                                      event->rect().y(),
-                                      event->rect().width(),
-                                      event->rect().height()/5 ),
-                    QColor(Qt::red) );
-        }*/
         //cout << "@ blue" << endl;
         //prevColor = QColor(Qt::blue);
         //rectCounter += 10;
+        if(maxGitHeight < rectCounter )
+        {
+            maxGitHeight = rectCounter;
+        }
+        
         rectCounter = blockNumber3 * 17; //FIXME: hardcoded the number
         //cfaPainter.fillRect(event->rect(), QColor(Qt::white) ); //swap red with prev_color
         cfaPainter.fillRect(QRect(event->rect().x(),
                                   0,
                                   event->rect().width(),
-                                  rectCounter),
+                                  maxGitHeight), //old: rectCounter
                                 //event->rect().height()/10*(blockNumber3 + 1) ),
                     QColor(Qt::blue) );
         cout << "x=" << event->rect().x()
              << "\ny=" << event->rect().y()
              << "\nwidth=" << event->rect().width()
-             << "\nheight=" << event->rect().height() << endl;
+             << "\nheight=" << event->rect().height()
+             << "\nrectCounter=" << rectCounter << "\n" << endl;
         
 
         block2 = block2.next();

@@ -5,38 +5,34 @@
  */
 
 /* 
- * File:   EditorTab.h
+ * File:   EditorAutoMemTab.h
  * Module: 
  * Author: james
  * Email: 
  * File Description: 
  *
- * Created on February 4, 2016, 4:54 PM
+ * Created on February 7, 2016, 3:35 PM
  * Last Modified: 
  */
 
-#ifndef EDITOR_GENERAL_TAB_H
-#define EDITOR_GENERAL_TAB_H
+#ifndef EDITOR_AUTO_MEM_TAB_H
+#define EDITOR_AUTO_MEM_TAB_H
 
-#include <QLabel>
-#include <QGridLayout>
 
 #include "OptionTabInterface.h"
 
-class EditorGeneralTab : public OptionTabInterface
+class EditorAutoMemTab : public OptionTabInterface
 {
 
 public:
-    explicit EditorGeneralTab(OptionTabInterface* parent = 0);
+    explicit EditorAutoMemTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorGeneralTab();
+    virtual ~EditorAutoMemTab();
     
 private:
-    QString* tabTitleStrPtr;
-    QLabel* testLblPtr;
-    QGridLayout* outerLayout;
+    ;
 };
 
-#endif /* EDITOR_GENERAL_TAB_H */
+#endif /* EDITOR_AUTO_MEM_TAB_H */

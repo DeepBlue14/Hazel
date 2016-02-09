@@ -5,38 +5,34 @@
  */
 
 /* 
- * File:   EditorTab.h
+ * File:   FontNColorSyntaxTab.h
  * Module: 
  * Author: james
  * Email: 
  * File Description: 
  *
- * Created on February 4, 2016, 4:54 PM
+ * Created on February 7, 2016, 3:38 PM
  * Last Modified: 
  */
 
-#ifndef EDITOR_GENERAL_TAB_H
-#define EDITOR_GENERAL_TAB_H
+#ifndef FONT_N_COLOR_SYNTAX_TAB_H
+#define FONT_N_COLOR_SYNTAX_TAB_H
 
-#include <QLabel>
-#include <QGridLayout>
 
 #include "OptionTabInterface.h"
 
-class EditorGeneralTab : public OptionTabInterface
+class FontNColorSyntaxTab : public OptionTabInterface
 {
-
+    
 public:
-    explicit EditorGeneralTab(OptionTabInterface* parent = 0);
+    explicit FontNColorSyntaxTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorGeneralTab();
+    virtual ~FontNColorSyntaxTab();
     
 private:
-    QString* tabTitleStrPtr;
-    QLabel* testLblPtr;
-    QGridLayout* outerLayout;
+    ;
 };
 
-#endif /* EDITOR_GENERAL_TAB_H */
+#endif /* FONT_N_COLOR_SYNTAX_TAB_H */

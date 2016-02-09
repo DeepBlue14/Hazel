@@ -18,7 +18,7 @@ OptionContainer::OptionContainer(QWidget* parent) : QWidget(parent)
     optionTabPtrVecPtr = new QVector<OptionTabInterface*>();
     
     EditorGeneralTab* ed = new EditorGeneralTab();
-    EditorFoldingTab* fo = new EditorFoldingTab();
+    EditorFoldTab* fo = new EditorFoldTab();
     optionTabPtrVecPtr->push_back(ed);
     optionTabPtrVecPtr->push_back(fo);
     

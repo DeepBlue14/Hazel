@@ -15,8 +15,8 @@
  * Last Modified: 
  */
 
-#ifndef EDITOR_FOLDING_TAB_H
-#define EDITOR_FOLDING_TAB_H
+#ifndef EDITOR_FOLD_TAB_H
+#define EDITOR_FOLD_TAB_H
 
 #include <QLabel>
 #include <QGridLayout>
@@ -24,15 +24,15 @@
 #include "OptionTabInterface.h"
 
 
-class EditorFoldingTab : public OptionTabInterface
+class EditorFoldTab : public OptionTabInterface
 {
     
 public:
-    explicit EditorFoldingTab(OptionTabInterface* parent = 0);
+    explicit EditorFoldTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorFoldingTab();
+    virtual ~EditorFoldTab();
     
 private:
     QString* tabTitleStrPtr;
@@ -42,4 +42,4 @@ private:
 };
 
 
-#endif /* EDITOR_FOLDING_TAB_H */
+#endif /* EDITOR_FOLD_TAB_H */

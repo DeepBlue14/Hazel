@@ -5,38 +5,34 @@
  */
 
 /* 
- * File:   EditorTab.h
+ * File:   EditorHighlightTab.h
  * Module: 
  * Author: james
  * Email: 
  * File Description: 
  *
- * Created on February 4, 2016, 4:54 PM
+ * Created on February 7, 2016, 3:33 PM
  * Last Modified: 
  */
 
-#ifndef EDITOR_GENERAL_TAB_H
-#define EDITOR_GENERAL_TAB_H
+#ifndef EDITOR_HIGHLIGHT_TAB_H
+#define EDITOR_HIGHLIGHT_TAB_H
 
-#include <QLabel>
-#include <QGridLayout>
 
 #include "OptionTabInterface.h"
 
-class EditorGeneralTab : public OptionTabInterface
+class EditorHighlightTab : public OptionTabInterface
 {
-
+    
 public:
-    explicit EditorGeneralTab(OptionTabInterface* parent = 0);
+    explicit EditorHighlightTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorGeneralTab();
+    virtual ~EditorHighlightTab();
     
 private:
-    QString* tabTitleStrPtr;
-    QLabel* testLblPtr;
-    QGridLayout* outerLayout;
+    ;
 };
 
-#endif /* EDITOR_GENERAL_TAB_H */
+#endif /* EDITOR_HIGHLIGHT_TAB_H */
