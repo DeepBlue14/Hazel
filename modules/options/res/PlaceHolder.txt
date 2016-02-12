@@ -1,0 +1,7 @@
+**C++**
+- build tools
+- project options
+- code assistance
+- debugging options
+- file templates
+- other

@@ -5,35 +5,36 @@
  */
 
 /* 
- * File:   RosEnvVarTab.h
- * Module: 
- * Author: james
- * Email: 
+ * File:   CCppOtherTab.h
+ * Module: options
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
- * Created on February 9, 2016, 12:47 AM
+ * Created on February 9, 2016, 2:59 PM
  * Last Modified: 
  */
 
-#ifndef ROS_ENV_VAR_TAB_H
-#define ROS_ENV_VAR_TAB_H
+#ifndef C_CPP_OTHER_TAB_H
+#define C_CPP_OTHER_TAB_H
 
 
 #include "OptionTabInterface.h"
 
-class RosEnvVarTab : public OptionTabInterface
+class CCppOtherTab : public OptionTabInterface
 {
     
 public:
-    explicit RosEnvVarTab(OptionTabInterface* parent = 0);
+    explicit CCppOtherTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~RosEnvVarTab();
-
+    virtual ~CCppOtherTab();
+    
     
 private:
     ;
+    
 };
 
-#endif /* ROS_ENV_VAR_TAB_H */
+#endif /* C_CPP_OTHER_TAB_H */

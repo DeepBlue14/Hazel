@@ -5,35 +5,38 @@
  */
 
 /* 
- * File:   EditorAutoMemTab.h
+ * File:   AppearLookFeelTab.h
  * Module: options
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: This is a tab which allows the user to view and edit
- *                   the IDEs auto save and auto backup policies.
+ * File Description: 
  *
- * Created on February 7, 2016, 3:35 PM
+ * Created on February 9, 2016, 11:29 PM
  * Last Modified: 2/09/2016
  */
 
-#ifndef EDITOR_AUTO_MEM_TAB_H
-#define EDITOR_AUTO_MEM_TAB_H
+#ifndef APPEAR_LOOK_FEEL_TAB_H
+#define APPEAR_LOOK_FEEL_TAB_H
 
+#include <QGridLayout>
 
 #include "OptionTabInterface.h"
 
-class EditorAutoMemTab : public OptionTabInterface
+class AppearLookFeelTab : public OptionTabInterface
 {
 
 public:
-    explicit EditorAutoMemTab(OptionTabInterface* parent = 0);
+    explicit AppearLookFeelTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorAutoMemTab();
+    virtual ~AppearLookFeelTab();
+    
     
 private:
-    ;
+    QGridLayout* outerLayout;
+
 };
 
-#endif /* EDITOR_AUTO_MEM_TAB_H */
+
+#endif /* APPEAR_LOOK_FEEL_TAB_H */

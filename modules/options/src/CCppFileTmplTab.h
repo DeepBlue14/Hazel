@@ -5,35 +5,32 @@
  */
 
 /* 
- * File:   RosEnvVarTab.h
+ * File:   CCppFileTmplTab.h
  * Module: 
- * Author: james
- * Email: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
- * Created on February 9, 2016, 12:47 AM
+ * Created on February 9, 2016, 2:59 PM
  * Last Modified: 
  */
 
-#ifndef ROS_ENV_VAR_TAB_H
-#define ROS_ENV_VAR_TAB_H
+#ifndef C_CPP_FILE_TMPL_TAB_H
+#define C_CPP_FILE_TMPL_TAB_H
 
 
 #include "OptionTabInterface.h"
 
-class RosEnvVarTab : public OptionTabInterface
+class CCppFileTmplTab : public OptionTabInterface
 {
-    
+
 public:
-    explicit RosEnvVarTab(OptionTabInterface* parent = 0);
+    explicit CCppFileTmplTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~RosEnvVarTab();
-
-    
-private:
-    ;
+    virtual ~CCppFileTmplTab();
+        
 };
 
-#endif /* ROS_ENV_VAR_TAB_H */
+#endif /* C_CPP_FILE_TMPL_TAB_H */

@@ -6,17 +6,18 @@
 
 /* 
  * File:   EditorCodeComplTab.h
- * Module: 
- * Author: james
- * Email: 
- * File Description: 
+ * Module: options
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
+ * File Description: This class implements a tab which allows the user to
+ *                   modify the code completion settings.
  *
  * Created on February 7, 2016, 3:20 PM
- * Last Modified: 
+ * Last Modified: 2/09/2016
  */
 
-#ifndef EDITORCODECOMPLTAB_H
-#define EDITORCODECOMPLTAB_H
+#ifndef EDITOR_CODE_COMPL_TAB_H
+#define EDITOR_CODE_COMPL_TAB_H
 
 
 #include "OptionTabInterface.h"
@@ -35,4 +36,4 @@ private:
     ;
 };
 
-#endif /* EDITORCODECOMPLTAB_H */
+#endif /* EDITOR_CODE_COMPL_TAB_H */

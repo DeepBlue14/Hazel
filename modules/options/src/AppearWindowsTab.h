@@ -5,35 +5,32 @@
  */
 
 /* 
- * File:   RosEnvVarTab.h
+ * File:   AppearWindowsTab.h
  * Module: 
- * Author: james
- * Email: 
+ * Author: James Kuczynski
+ * Email: jkuczyns@cs.uml.edu
  * File Description: 
  *
- * Created on February 9, 2016, 12:47 AM
+ * Created on February 9, 2016, 11:29 PM
  * Last Modified: 
  */
 
-#ifndef ROS_ENV_VAR_TAB_H
-#define ROS_ENV_VAR_TAB_H
+#ifndef APPEAR_WINDOWS_TAB_H
+#define APPEAR_WINDOWS_TAB_H
 
+#include <QGridLayout>
 
 #include "OptionTabInterface.h"
 
-class RosEnvVarTab : public OptionTabInterface
+class AppearWindowsTab : public OptionTabInterface
 {
     
 public:
-    explicit RosEnvVarTab(OptionTabInterface* parent = 0);
+    explicit AppearWindowsTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~RosEnvVarTab();
-
-    
-private:
-    ;
+    virtual ~AppearWindowsTab();
 };
 
-#endif /* ROS_ENV_VAR_TAB_H */
+#endif /* APPEAR_WINDOWS_TAB_H */

@@ -5,6 +5,15 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/AppearEditorTabsTab.h</itemPath>
+        <itemPath>src/AppearLookFeelTab.h</itemPath>
+        <itemPath>src/AppearWindowsTab.h</itemPath>
+        <itemPath>src/CCppBuildToolsTab.h</itemPath>
+        <itemPath>src/CCppCodeAssistTab.h</itemPath>
+        <itemPath>src/CCppDebugOptionTab.h</itemPath>
+        <itemPath>src/CCppFileTmplTab.h</itemPath>
+        <itemPath>src/CCppOtherTab.h</itemPath>
+        <itemPath>src/CCppProjOptionTab.h</itemPath>
         <itemPath>src/EditorApiSrcTab.h</itemPath>
         <itemPath>src/EditorAutoMemTab.h</itemPath>
         <itemPath>src/EditorCodeComplTab.h</itemPath>
@@ -104,6 +113,24 @@
             ex="false"
             tool="3"
             flavor2="0">
+      </item>
+      <item path="src/AppearEditorTabsTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AppearLookFeelTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AppearWindowsTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppBuildToolsTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppCodeAssistTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppDebugOptionTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppFileTmplTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppOtherTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppProjOptionTab.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/EditorApiSrcTab.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -211,6 +238,24 @@
             ex="false"
             tool="3"
             flavor2="0">
+      </item>
+      <item path="src/AppearEditorTabsTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AppearLookFeelTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/AppearWindowsTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppBuildToolsTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppCodeAssistTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppDebugOptionTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppFileTmplTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppOtherTab.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/CCppProjOptionTab.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/EditorApiSrcTab.h" ex="false" tool="3" flavor2="0">
       </item>

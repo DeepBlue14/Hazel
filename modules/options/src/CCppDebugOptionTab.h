@@ -5,35 +5,34 @@
  */
 
 /* 
- * File:   EditorAutoMemTab.h
+ * File:   CCppDebugOptionTab.h
  * Module: options
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: This is a tab which allows the user to view and edit
- *                   the IDEs auto save and auto backup policies.
+ * File Description: 
  *
- * Created on February 7, 2016, 3:35 PM
+ * Created on February 9, 2016, 2:58 PM
  * Last Modified: 2/09/2016
  */
 
-#ifndef EDITOR_AUTO_MEM_TAB_H
-#define EDITOR_AUTO_MEM_TAB_H
+#ifndef C_CPP_DEBUG_OPTION_TAB_H
+#define C_CPP_DEBUG_OPTION_TAB_H
 
 
 #include "OptionTabInterface.h"
 
-class EditorAutoMemTab : public OptionTabInterface
+class CCppFileTmplTab : public OptionTabInterface
 {
 
 public:
-    explicit EditorAutoMemTab(OptionTabInterface* parent = 0);
+    explicit CCppFileTmplTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorAutoMemTab();
+    virtual ~CCppFileTmplTab();
     
 private:
     ;
 };
 
-#endif /* EDITOR_AUTO_MEM_TAB_H */
+#endif /* C_CPP_DEBUG_OPTION_TAB_H */

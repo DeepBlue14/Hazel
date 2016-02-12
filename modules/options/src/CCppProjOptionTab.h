@@ -5,34 +5,34 @@
  */
 
 /* 
- * File:   EditorApiSrcTab.h
- * Module: options
+ * File:   CCppProjOptionTab.h
+ * Module: 
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
- * File Description: This is a tab to allow the user to view, add, and modify
- *                   the text editor API sources.
+ * File Description: 
  *
- * Created on February 7, 2016, 3:35 PM
+ * Created on February 9, 2016, 2:58 PM
  * Last Modified: 2/09/2016
  */
 
-#ifndef EDITOR_API_SRC_TAB_H
-#define EDITOR_API_SRC_TAB_H
+#ifndef C_CPP_PROJ_OPTION_TAB_H
+#define C_CPP_PROJ_OPTION_TAB_H
+
 
 #include "OptionTabInterface.h"
 
-class EditorApiSrcTab : public OptionTabInterface
+class CCppCodeAssistTab : public OptionTabInterface
 {
 
 public:
-    explicit EditorApiSrcTab(OptionTabInterface* parent = 0);
+    explicit CCppCodeAssistTab(OptionTabInterface* parent = 0);
     void setup();
     void setTabTitleStrPtr(QString* tabTitleStrPtr);
     QString* getTabTitleStrPtr();
-    virtual ~EditorApiSrcTab();
+    virtual ~CCppCodeAssistTab();
     
 private:
     ;
 };
 
-#endif /* EDITOR_API_SRC_TAB_H */
+#endif /* CCPP_PROJ_OPTION_TAB_H */
