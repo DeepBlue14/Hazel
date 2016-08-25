@@ -1,3 +1,5 @@
+#include <qt4/QtCore/qfileinfo.h>
+
 #include "FTFileMenu.h"
 
 

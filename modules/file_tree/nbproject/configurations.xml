@@ -12,6 +12,7 @@
         <itemPath>src/FTPropertiesGui.h</itemPath>
         <itemPath>src/FilePropGui.h</itemPath>
         <itemPath>src/FileTreeGui.h</itemPath>
+        <itemPath>src/ProjPropGui.h</itemPath>
         <itemPath>src/RosEnv.h</itemPath>
         <itemPath>src/TreeItemIconFactory.h</itemPath>
         <itemPath>src/UnixConsoleText.h</itemPath>
@@ -33,6 +34,7 @@
         <itemPath>src/FTPropertiesGui.cpp</itemPath>
         <itemPath>src/FilePropGui.cpp</itemPath>
         <itemPath>src/FileTreeGui.cpp</itemPath>
+        <itemPath>src/ProjPropGui.cpp</itemPath>
         <itemPath>src/RosEnv.cpp</itemPath>
         <itemPath>src/TreeItemIconFactory.cpp</itemPath>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
@@ -96,6 +98,10 @@
       <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ProjPropGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ProjPropGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -167,6 +173,10 @@
       <item path="src/FileTreeGui.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/FileTreeGui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ProjPropGui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ProjPropGui.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
       </item>

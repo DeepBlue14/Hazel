@@ -27,8 +27,10 @@ namespace RosEnv
         GROOVY,
         HYDRO,
         INDIGO,
-        JADE
+        JADE,
+        KINETIC
     };
+    
 }
 
 #endif	/* ROS_ENV_H */

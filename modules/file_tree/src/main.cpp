@@ -21,8 +21,18 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
 
     // create and show your widgets here
+    
     FileTreeGui fileTreeGui;
+    fileTreeGui.setProjectRootAbsPathStrPtr(new QString("/home/james/catkin_ws/src/test_node") );
+    fileTreeGui.setProjectNameStrPtr(new QString("test_node") );
+    fileTreeGui.initTree();
+    
+    fileTreeGui.setProjectRootAbsPathStrPtr(new QString("/home/james/catkin_ws/src/chatter_test") );
+    fileTreeGui.setProjectNameStrPtr(new QString("chatter_test") );
+    fileTreeGui.initTree();
+    
     fileTreeGui.show();
-
+    
+    
     return app.exec();
 }

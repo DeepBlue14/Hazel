@@ -12,9 +12,6 @@ using namespace std;
 using namespace uct;
 
 
-/*
- * 
- */
 int main(int argc, char** argv)
 {
 
@@ -22,4 +19,3 @@ int main(int argc, char** argv)
     
     return 0;
 }
-

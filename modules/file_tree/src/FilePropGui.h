@@ -13,6 +13,8 @@
 #define	FILE_PROP_GUI_H
 
 #include <QWidget>
+#include <QFileInfo>
+#include <QDateTime>
 #include <QString>
 #include <QLabel>
 #include <QLineEdit>
@@ -38,6 +40,7 @@ public:
     QString* getFileLocStrPtr();
     void setLastModdedStrPtr(QString* lastModdedStrPtr);
     QString* getLastModdedStrPtr();
+    void updateLastModded();
     QString* toString();
     virtual ~FilePropGui();
  

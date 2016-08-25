@@ -17,13 +17,17 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
     treePtr = new QTreeWidget(splitter);
     //list = new QListView(splitter);
     
+    /*
     QTreeWidgetItem* headerItem = new QTreeWidgetItem();
     headerItem->setText(0, QString("File Name") );
-    //headerItem->setText(1, QString("Path"));
+    headerItem->setText(1, QString("Path"));
     treePtr->hideColumn(1);
     treePtr->setHeaderItem(headerItem);
+    */
+    treePtr->header()->close();
     
-    initTree();
+    
+    //initTree(); //this was moved to main()
 
     treePtr->setContextMenuPolicy(Qt::CustomContextMenu);
     
@@ -42,6 +46,7 @@ FileTreeGui::FileTreeGui(QWidget* parent) : QWidget(parent)
 
 void FileTreeGui::initTree()
 {
+    // Add the root
     QTreeWidgetItem* rootItem = new QTreeWidgetItem();
     if(*getProjectRootAbsPathStrPtr() != "null")
     {
@@ -199,7 +204,14 @@ void FileTreeGui::handleRightClickSlot(const QPoint& pos)
     }
     else if(!treePtr->selectedItems().at(0)->parent() )
     {
-        //root node
+        //right-clicked root node
+        cout << "root right-clicked" << endl;
+        FTProjectMenu myMenu;
+        QString fileName(treePtr->selectedItems().at(0)->toolTip(0).right(
+                treePtr->selectedItems().at(0)->toolTip(0).size() - (treePtr->selectedItems().at(0)->toolTip(0).lastIndexOf("/") + 1)) );
+        myMenu.setProjNameStrPtr(new QString(fileName) );
+        myMenu.setProjLocStrPtr(new QString(treePtr->selectedItems().at(0)->toolTip(0)) );
+        QAction* selectedItem = myMenu.getMenu()->exec(globalPos);
     }
     else
     {

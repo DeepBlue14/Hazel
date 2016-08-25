@@ -14,6 +14,7 @@ NewProjectPage_1::NewProjectPage_1(QWidget* parent) : QWidget(parent)
     rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "hydro.png"), "Hydro"));
     rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "indigo.png"), "Indigo"));
     rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "jade.png"), "Jade"));
+    rosVersionsStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "kinetic.png"), "Kinetic"));
     
     newOrFromExStrLstPtr = new QVector<QListWidgetItem*>();
     newOrFromExStrLstPtr->push_back(new QListWidgetItem(QIcon(RosEnv::imagesInstallLoc + "icon.jpg"), "New"));

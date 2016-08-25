@@ -1,23 +1,24 @@
 /* 
- * File:   FTProjectMenu.h
+ * File:   FTProjMenu.h
  * Module: 
  * Author: james, jkuczyns@cs.uml.edu
  * Maintainer: james, jkuczyns@cs.uml.edu
- * File Description: Menu (opened on right click) for projects listed in the
+ * File Description: Menu (opened on right click) for Projectories listed in the
  *                   tree view.
  *
- * Created on January 6, 2016, 2:54 PM
- * Last Modified on January 6, 2016, 2:54 PM
+ * Created on January 6, 2016, 2:53 PM
+ * Last Modified on January 6, 2016, 2:53 PM
  */
 
-#ifndef FT_PROJECT_MENU_H
-#define	FT_PROJECT_MENU_H
+#ifndef FT_Proj_MENU_H
+#define FT_Proj_MENU_H
 
 #include <QMenu>
 
 #include <iostream>
 
 #include "RosEnv.h"
+#include "ProjPropGui.h"
 #include "WindowsConsoleText.h"
 #include "UnixConsoleText.h"
 
@@ -34,7 +35,8 @@ using std::endl;
 
 class FTProjectMenu : public QMenu
 {
-    
+    Q_OBJECT
+
 public:
     /**
      * Constructor.
@@ -42,7 +44,7 @@ public:
     explicit FTProjectMenu();
 
     /**
-     * Inits the menu for an entire RIDE project.
+     * Initialize the Projectory menu.
      */
     void initMenu();
 
@@ -53,6 +55,14 @@ public:
      */
     QMenu* getMenu();
 
+
+    void setProjNameStrPtr(QString* ProjNameStrPtr);
+    QString* getProjNameStrPtr();
+    void setProjLocStrPtr(QString* ProjLocStrPtr);
+    QString* getProjLocStrPtr();
+    void setLastModdedStrPtr(QString* lastModdedStrPtr);
+    QString* getLastModdedStrPtr();
+
     /**
      * Destructor.
      */
@@ -62,10 +72,12 @@ public:
 private slots:
     void handleCMakeListsMenuSlot();
     void handlePackageMenuSlot();
+
     void handleNewDirMenuSlot();
     void handleBuildMenuSlot();
     void handleRunMenuSlot();
     void handleCloseMenuSlot();
+    
     void handleDeleteMenuSlot();
     void handleRenameMenuSlot();
     void handlePropertiesMenuSlot();
@@ -73,8 +85,10 @@ private slots:
     
 private:
     QMenu* menu;
-    QAction* cMakeListsAct; //sub
-    QAction* packageAct; //sub
+
+    QAction* cMakeListsAct;
+    QAction* packageAct;
+
     QAction* newDirAct;
     QAction* buildAct;
     QAction* runAct;
@@ -82,7 +96,14 @@ private:
     QAction* deleteAct;
     QAction* renameAct;
     QAction* propertiesAct;
+
+    QString* projNameStrPtr;
+    QString* projLocStrPtr;
+    QString* lastModdedStrPtr;
+
+    ProjPropGui* projPropGuiPtr;
+    
     
 };
 
-#endif	/* FT_PROJECT_MENU_H */
+#endif /* FT_PROJ_MENU_H */

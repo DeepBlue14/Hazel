@@ -32,6 +32,7 @@ ROS_DISTROS[1]="groovy"
 ROS_DISTROS[2]="hydro"
 ROS_DISTROS[3]="indigo"
 ROS_DISTROS[4]="jade"
+ROS_DISTRO[5]="kinetic"
 
 
 ## Search /opt/ros

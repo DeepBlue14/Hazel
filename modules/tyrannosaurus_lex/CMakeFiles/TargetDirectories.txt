@@ -1,0 +1,3 @@
+/home/james/CsProjects/CxxProjects/tyrannosaurus_lex/CMakeFiles/edit_cache.dir
+/home/james/CsProjects/CxxProjects/tyrannosaurus_lex/CMakeFiles/rebuild_cache.dir
+/home/james/CsProjects/CxxProjects/tyrannosaurus_lex/CMakeFiles/tyrannosaurus_lex.dir

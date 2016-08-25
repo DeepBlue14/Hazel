@@ -75,3 +75,10 @@
 /modules/options/dist/
 /modules/setup/build/
 /modules/setup/dist/
+/modules/new_project/dist/
+/modules/new_project/build/
+/modules/file_tree/dist/
+/modules/file_tree/build/
+/modules/customizable_console_text/cct_cpp/build/
+/modules/customizable_console_text/cct_cpp/dist/
+/modules/customizable_console_text/cctTester/build/

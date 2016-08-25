@@ -65,7 +65,7 @@ public:
      * Inits the file tree.
      */
     static void initTree();
-
+    
     /**
      * Adds children to a filetree.
      * 

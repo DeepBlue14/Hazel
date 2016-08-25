@@ -27,27 +27,27 @@ void FTDirMenu::initMenu()
     newFileMenu->addAction(packageAct);
     
     cHeaderAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "hFile.png"), "C/C++ header", this);
-    connect(cHeaderAct, SIGNAL(triggered()), this, SLOT(handleCHeaderMenuSLot() ) );
+    connect(cHeaderAct, SIGNAL(triggered()), this, SLOT(handleCHeaderMenuSlot() ) );
     newFileMenu->addAction(cHeaderAct);
     
     cSourceAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "cppFile.png"), "C/C++ source", this);
-    connect(cSourceAct, SIGNAL(triggered()), this, SLOT(handleCSourceMenuSLot() ) );
+    connect(cSourceAct, SIGNAL(triggered()), this, SLOT(handleCSourceMenuSlot() ) );
     newFileMenu->addAction(cSourceAct);
     
     pyAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "pyFile.jpg"), "python", this);
-    connect(pyAct, SIGNAL(triggered()), this, SLOT(handlePyMenuSLot() ) );
+    connect(pyAct, SIGNAL(triggered()), this, SLOT(handlePyMenuSlot() ) );
     newFileMenu->addAction(pyAct);
     
     cfgAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "pyFile.jpg"), "cfg", this);
-    connect(cfgAct, SIGNAL(triggered()), this, SLOT(handleCfgMenuSLot() ) );
+    connect(cfgAct, SIGNAL(triggered()), this, SLOT(handleCfgMenuSlot() ) );
     newFileMenu->addAction(cfgAct);
     
     scriptAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "shell.jpg"), "script", this);
-    connect(scriptAct, SIGNAL(triggered()), this, SLOT(handleScriptMenuSLot() ) );
+    connect(scriptAct, SIGNAL(triggered()), this, SLOT(handleScriptMenuSlot() ) );
     newFileMenu->addAction(scriptAct);
     
     launchAct = new QAction(QIcon(RosEnv::imagesInstallLoc + "rocket.jpg"), "launch", this);
-    connect(launchAct, SIGNAL(triggered()), this, SLOT(handleLaunchMenuSLot() ) );
+    connect(launchAct, SIGNAL(triggered()), this, SLOT(handleLaunchMenuSlot() ) );
     newFileMenu->addAction(launchAct);
     //--------------------
     newDirAct = new QAction(tr("&New Directory"), this);
@@ -138,7 +138,7 @@ void FTDirMenu::handleRenameMenuSlot()
 
 void FTDirMenu::handlePropertiesMenuSlot()
 {
-    //cout << "FTFileMenu::handlePropertiesMenuSlot() triggered" << endl;
+    cout << "FTFileMenu::handlePropertiesMenuSlot() triggered" << endl;
     dirPropGuiPtr->setDirNameStrPtr(dirNameStrPtr);
     dirPropGuiPtr->setDirLocStrPtr(dirLocStrPtr);
     dirPropGuiPtr->setLastModdedStrPtr(lastModdedStrPtr);

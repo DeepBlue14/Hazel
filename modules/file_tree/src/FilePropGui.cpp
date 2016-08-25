@@ -37,7 +37,9 @@ void FilePropGui::fillUiComponents()
     cout << "setting text: 2" << fileNameStrPtr->toStdString() << endl;
     fileNameLePtr->setText(*fileNameStrPtr);
     fileLocLePtr->setText(*fileLocStrPtr);
+    updateLastModded(); //need to update, in case the file was modified after this object was init'ed
     lastModdedLePtr->setText(*lastModdedStrPtr);
+    
 }
 
 
@@ -75,6 +77,14 @@ void FilePropGui::setLastModdedStrPtr(QString* lastModdedStrPtr)
 QString* FilePropGui::getLastModdedStrPtr()
 {
     return lastModdedStrPtr;
+}
+
+
+void FilePropGui::updateLastModded()
+{
+    QFileInfo info(*fileLocStrPtr);
+    this->setLastModdedStrPtr(new QString(info.lastModified().toString()) );
+    cout << "date: " << info.lastModified().toString().toStdString() << endl;
 }
 
 

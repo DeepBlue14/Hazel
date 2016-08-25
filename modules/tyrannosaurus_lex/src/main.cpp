@@ -1,56 +1,49 @@
-//Reference: https://github.com/eliben/llvm-clang-samples/blob/master/Makefile
-//           http://eli.thegreenplace.net/2014/07/29/ast-matchers-and-clang-refactoring-tools
-// This dude is awesome!
+//Reff: http://clang.llvm.org/docs/LibASTMatchersReference.html
 
-#include <string>
-
-#include <clang/AST/AST.h>
+#include <clang/Frontend/FrontendActions.h>
+#include <clang/Tooling/CommonOptionsParser.h>
+#include <clang/Tooling/Tooling.h>
+#include <clang/ASTMatchers/ASTMatchers.h>
+#include <llvm/Support/CommandLine.h>
 #include <clang/ASTMatchers/ASTMatchers.h>
 #include <clang/ASTMatchers/ASTMatchFinder.h>
-#include <clang/Basic/SourceManager.h>
-#include <clang/Frontend/TextDiagnosticPrinter.h>
-#include <clang/Tooling/CommonOptionsParser.h>
-#include <clang/Tooling/Refactoring.h>
-#include <clang/Tooling/Tooling.h>
-#include <llvm/Support/raw_ostream.h>
+#include <clang/AST/DeclCXX.h>
 
-#include "IfStmtHandler.h"
+#include <cstdio>
+#include <string>
+
+#include "MethodPrinter.hpp"
 
 using namespace clang;
 using namespace clang::ast_matchers;
-using namespace clang::driver;
 using namespace clang::tooling;
-
-static llvm::cl::OptionCategory ToolingSampleCategory("Matcher Sample");
-
-
-
+using namespace llvm;
 
 int main(int argc, const char **argv)
 {
-    CommonOptionsParser op(argc, argv, ToolingSampleCategory);
-    RefactoringTool Tool(op.getCompilations(), op.getSourcePathList() );
+    // one for variables?
+    // one for methods?
+    // one for functions?
 
-    // Set up AST matcher callbacks.
-    IfStmtHandler HandlerForIf(&Tool.getReplacements() );
+    //DeclarationMatcher varMatcher = fieldDecl(isPublic()).bind("field_decl");
+    //DeclarationMatcher varMatcher = fieldDecl(anything()).bind("field_decl");
+    //DeclarationMatcher varMatcher = methodDecl(isPublic()).bind("methods");
+    DeclarationMatcher varMatcher = methodDecl(anything()).bind("methods");
 
-    MatchFinder Finder;
-    Finder.addMatcher(ifStmt().bind("ifStmt"), &HandlerForIf);
 
-    // Run the tool and collect a list of replacements. We could call runAndSave,
-    // which would destructively overwrite the files with their new contents.
-    // However, for demonstration purposes it's interesting to show the
-    // replacements.
-    if(int Result = Tool.run(newFrontendActionFactory(&Finder).get()) )
-    {
-        return Result;
-    }
+    static cl::extrahelp CommonHelp(CommonOptionsParser::HelpMessage);
+    static cl::extrahelp MoreHelp("\nMore help text...");
 
-    llvm::outs() << "Replacements collected by the tool:\n";
-    for (auto &r : Tool.getReplacements() )
-    {
-        llvm::outs() << r.toString() << "\n";
-    }
+    cl::OptionCategory cat("myname", "mydescription");
+    CommonOptionsParser optionsParser(argc, argv, cat, 0);
 
-    return 0;
+    ClangTool tool(optionsParser.getCompilations(), optionsParser.getSourcePathList());
+
+    MethodPrinter printer;
+    MatchFinder finder;
+
+    finder.addMatcher(varMatcher, &printer);
+
+    return tool.run(&(*newFrontendActionFactory(&finder)));
 }
+
