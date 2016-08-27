@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/james/CsProjects/CxxProjects/tyrannosaurus_lex/src/MethodPrinter.hpp
+/home/james/NetBeansProjects/rqt_ide/modules/tyrannosaurus_lex/src/MethodPrinter.cpp
+MethodPrinter.hpp
+/home/james/NetBeansProjects/rqt_ide/modules/tyrannosaurus_lex/src/MethodPrinter.hpp
+
+/home/james/NetBeansProjects/rqt_ide/modules/tyrannosaurus_lex/src/MethodPrinter.hpp
 clang/Frontend/FrontendActions.h
 -
 clang/Tooling/CommonOptionsParser.h
@@ -26,7 +30,7 @@ cstdio
 iostream
 -
 
-/home/james/CsProjects/CxxProjects/tyrannosaurus_lex/src/main.cpp
+/home/james/NetBeansProjects/rqt_ide/modules/tyrannosaurus_lex/src/main.cpp
 clang/Frontend/FrontendActions.h
 -
 clang/Tooling/CommonOptionsParser.h
@@ -48,7 +52,7 @@ cstdio
 string
 -
 MethodPrinter.hpp
-/home/james/CsProjects/CxxProjects/tyrannosaurus_lex/src/MethodPrinter.hpp
+/home/james/NetBeansProjects/rqt_ide/modules/tyrannosaurus_lex/src/MethodPrinter.hpp
 
 /usr/lib/llvm-3.6/include/clang-c/BuildSystem.h
 clang-c/Platform.h

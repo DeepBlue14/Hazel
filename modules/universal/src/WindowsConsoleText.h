@@ -18,7 +18,7 @@
 
 using std::string;
 
-namespace WindowsConsoleText
+namespace windows_console_text
 {
     /**
      * Method to return red textStrPtr.

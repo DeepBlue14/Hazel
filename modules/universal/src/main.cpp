@@ -18,18 +18,23 @@
 
 
 #include "OverriddenOperators.h"
+#include "Env.h"
+#include "CustomizableConsoleText.h"
 
 using namespace std;
 
-int main(int argc, char *argv[]) {
-    // initialize resources, if needed
-    // Q_INIT_RESOURCE(resfile);
-
+int main(int argc, char *argv[])
+{
     QApplication app(argc, argv);
 
-    // create and show your widgets here
-
+    env::init();
     
+    cout << "username: " << env::username.toStdString() << endl;
+    cout << "sigilHome: " << env::sigilHome.toStdString() << endl;
+    cout << "rideInstallLoc: " << env::rideInstallLoc.toStdString() << endl;
+    cout << "imagesInstallLoc: " << env::imagesInstallLoc.toStdString() << endl;
+
+    cout << cct::blue("Hello cct!") << endl;
     
     return EXIT_SUCCESS;
 }

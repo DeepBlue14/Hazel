@@ -1,5 +1,5 @@
 /* 
- * File:   WindowsConsoleText.h
+ * File:   UnixConsoleText.h
  * Module: Unaffiliated
  * Author: James Kuczynski
  * Email: jkuczyns@cs.uml.edu
@@ -18,7 +18,7 @@
 
 using std::string;
 
-namespace UnixConsoleText
+namespace unix_console_text
 {
     /**
      * Method to return red textStrPtr.
@@ -336,4 +336,4 @@ namespace UnixConsoleText
     
 };
 
-#endif	/* UNIX_CONSOLE_TEXT_H */
+#endif	/* CUSTOMIZABLE_CONSOLE_TEXT_H */

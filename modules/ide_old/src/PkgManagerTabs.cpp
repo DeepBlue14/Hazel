@@ -1,5 +1,3 @@
-#include <qt4/QtCore/qtconcurrentrun.h>
-
 #include "PkgManagerTabs.h"
 
 

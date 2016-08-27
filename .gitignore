@@ -82,3 +82,5 @@
 /modules/customizable_console_text/cct_cpp/build/
 /modules/customizable_console_text/cct_cpp/dist/
 /modules/customizable_console_text/cctTester/build/
+/modules/shared_operations/dist/
+/modules/shared_operations/build/

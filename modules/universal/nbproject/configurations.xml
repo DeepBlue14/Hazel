@@ -5,8 +5,9 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/CustomizableConsoleText.h</itemPath>
+        <itemPath>src/Env.h</itemPath>
         <itemPath>src/OverriddenOperators.h</itemPath>
-        <itemPath>src/RosEnv.h</itemPath>
         <itemPath>src/UnixConsoleText.h</itemPath>
         <itemPath>src/WindowsConsoleText.h</itemPath>
       </logicalFolder>
@@ -19,8 +20,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="src" displayName="src" projectFiles="true">
+        <itemPath>src/Env.cpp</itemPath>
         <itemPath>src/OverriddenOperators.cpp</itemPath>
-        <itemPath>src/RosEnv.cpp</itemPath>
         <itemPath>src/UnixConsoleText.cpp</itemPath>
         <itemPath>src/WindowsConsoleText.cpp</itemPath>
         <itemPath>src/main.cpp</itemPath>
@@ -55,13 +56,15 @@
       </qt>
       <compileType>
       </compileType>
+      <item path="src/CustomizableConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Env.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Env.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/OverriddenOperators.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/OverriddenOperators.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -98,13 +101,15 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="src/CustomizableConsoleText.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Env.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Env.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/OverriddenOperators.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/OverriddenOperators.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="src/RosEnv.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="src/RosEnv.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/UnixConsoleText.cpp" ex="false" tool="1" flavor2="0">
       </item>
