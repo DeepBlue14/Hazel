@@ -31,7 +31,9 @@ void Calc::doCalc()
     this->process = process;
 
     process->setWorkingDirectory("res");
-    process->start("./OutputTest.bash");
+    
+    //process->start("./OutputTest.bash");
+    process->start("./CatkinTest.bash", QStringList() << "--color");
 
     process->waitForStarted();
     QObject::connect(process, SIGNAL(readyReadStandardOutput()), this, SLOT(readOut()));

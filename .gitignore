@@ -90,3 +90,5 @@
 /Arctic/build/
 /modules/launcher/build/
 /modules/launcher/dist/
+/modules/thread_tests/dist/
+/modules/thread_tests/build/
